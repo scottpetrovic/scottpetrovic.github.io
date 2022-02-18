@@ -5,7 +5,9 @@ The project(s) use https://aframe.io/ to build out the experiences. This library
 
 
 ## Current Test Projects
-A note about using VR experiences in web browser. Most of the time there is no easy way to get out with X, or exit button. To get out, I tap the "Oculus button" on the controller. This brings up an overlay that allows you to exit. It looks like you are exiting the entire web browser, but it only gets you out of the full experience mode. Probably a better and more user friendly way to exit out in code.
+![Image](./meta-quest-logo.png)
+
+A note about using VR experiences in web browser. Most of the time there is no easy way to get out with X, or exit button. To get out, I tap the "Oculus button" on the controller. This brings up an overlay that allows you to exit. It looks like you are exiting the entire web browser, but it only gets you out of the full experience mode. There is probably a better and more user friendly way to exit out that is less confusing.
 
 - [A-frame test project](https://scottpetrovic.github.io/aframe/min.html) - A bare bones VR experience with a static cube. If you are on an Oculus Quest 2 and visit this page, there will be a "VR" button in the bottom right in the browser. Clicking it will go full screen. See note in description about exiting.
 - TODO - Controller recognition and button triggers
