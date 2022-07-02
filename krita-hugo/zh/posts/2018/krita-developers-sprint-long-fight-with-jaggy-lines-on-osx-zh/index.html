@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 开发冲刺聚会 2018：与 Mac OSX 的斗争 | Krita Site(PRC)</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//zh">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -57,7 +57,7 @@
     </div>
 
     <p>Dmitry 按：两周前，我们在代芬特尔举办了一场振奋人心的开发冲刺聚会，来自世界各地的 Krita 开发人员齐聚一堂交流协作。Boud 已经为此撰写了<a href="https://krita.org/en/item/krita-2018-sprint-report-zh">一篇通讯</a>，所以我就不再赘述了。下面我将谈谈我在这次聚会上的主要任务：OSX 数位板问题的修复，以及这个问题的来龙去脉。</p>
-<p><a href="/images/posts/2018/krita_jagged_lines_on_osx.png"><img src="/images/posts/2018/krita_jagged_lines_on_osx.png" alt=""></a> OSX 会对输入事件进行压缩，造成线条绘制不流畅，禁用 OpenGL 问题消失</p>
+<p><a href="images/posts/2018/krita_jagged_lines_on_osx.png"><img src="images/posts/2018/krita_jagged_lines_on_osx.png" alt=""></a> OSX 会对输入事件进行压缩，造成线条绘制不流畅，禁用 OpenGL 问题消失</p>
 <h3 id="数位板事件压缩">数位板事件压缩</h3>
 <p>我们从 Krita 的第一个 OSX 版本开始就留意到了一个奇怪的问题。用户画画的动作一快，笔画就会变得不流畅，看上去它们被“掰弯”了。这个问题的成因是：数位板的压感笔输入事件在从驱动程序传输到 Krita 的过程中发生了损失。</p>
 <p>这个问题其实不是 OSX 的专利，Linux 和 Windows 平台也遇到过一些同类问题。它往往跟 Qt 的一个叫做“输入事件压缩”的功能有关。这个功能会在应用程序变慢时自动激活，然后抛弃数位板和鼠标过剩的移动事件。这个功能对常规的非绘画应用程序来说是必要的，这些程序对于输入的精确性也不敏感。如果禁用 OpenGL 画布之后线条就变得流畅，那么十有八九就是这个功能在作怪。接到这个问题在 OSX 上的报告后，我心想“老子在别的平台上都解决过多少次了，这还能难得倒我？”我自鸣得意地走在通往聚会的路上，完全没有预料到事情接下来会如何发展。</p>

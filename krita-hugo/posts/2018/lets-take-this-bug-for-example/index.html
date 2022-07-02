@@ -9,14 +9,14 @@
 
 	<title>Krita | Let&#39;s take this bug, for example... | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -68,7 +68,7 @@
 
     <p>Krita&rsquo;s <a href="https://krita.org">2018 fund raiser is all about fixing bugs!</a> And we&rsquo;re fixing bugs already. So, let&rsquo;s take a non-technical look at a bug Dmitry fixed yesterday. This is the bug: &ldquo;<a href="https://bugs.kde.org/show_bug.cgi?id=398729">key sequence ctrl+w ambiguous with photoshop compatible bindings set</a>&rdquo; And <a href="https://phabricator.kde.org/R37:f2f2be209d8d40a5e7df97f6d259e14818355a4c">this is the fix.</a></p>
 <p>So, we actually both started looking at the bug at the same time, me being Boudewijn. The issue is, if you use a custom keyboard shortcut scheme that includes a shortcut definition for &ldquo;close current image&rdquo;, then a popup would show, saying that the shortcut is ambiguous:</p>
-<p><a href="/images/posts/2018/ambiguous.png"><img src="/images/posts/2018/ambiguous.png" alt=""></a></p>
+<p><a href="images/posts/2018/ambiguous.png"><img src="images/posts/2018/ambiguous.png" alt=""></a></p>
 <p>The popup doesn&rsquo;t tell where the ambiguous definition <em>is&hellip;</em> Only that there is an ambiguous definition. Hm&hellip; Almost everything that does something in Krita that is triggered by a shortcut is an <a href="http://doc.qt.io/qt-5/qaction.html"><em>action.</em></a> And deep down, Qt keeps track of all actions, and all shortcuts, but we cannot access that list.</p>
 <p>So we went through Krita&rsquo;s source code. The action for closing an image was really created only once, inside Krita&rsquo;s code. And, another bug, Krita doesn&rsquo;t by default assign a shortcut to this action. The default shortcut should be CTRL+W on Linux and Windows, and COMMAND+W on macOS.</p>
 <p>Curiously enough, the photoshop-compatible shortcut definitions did assign that shortcut. So, if you&rsquo;d <a href="https://docs.krita.org/en/reference_manual/preferences/shortcut_settings.html">select that scheme</a>, a shortcut <em>would</em> be set.</p>

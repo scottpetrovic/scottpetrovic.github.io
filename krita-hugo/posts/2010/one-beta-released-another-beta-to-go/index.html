@@ -9,14 +9,14 @@
 
 	<title>Krita | One beta released, another beta to go | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -71,10 +71,10 @@
 <p>Anyway, even though Lukáš has joined Ixonos, he&rsquo;s still be doing stuff in his spare time. Dmitry is now our sponsored student. Sven, even though in the middle of exams has kept up his bug fixing. Cyrille, me &ndash; everyone is pulling together to make Krita 2.3 release-ready. But if it&rsquo;s necessary, we will slip the release date.</p>
 <p>Of course, release-ready doesn&rsquo;t mean that every imaginable feature has been implemented. David Revoy has asked where his mixing brush is &ndash; we will do that for 2.4. Would, actually, make a great little project for a student eager to get to know Krita development before applying for Google Summer of Code next year&hellip; The <a href="http://wiki.koffice.org/index.php?title=Schedules/KOffice/2.4/Feature_Plan#Krita">2.4 feature plan</a> is already bulking out &ndash; as I said the other day when someone asked about KDE 5, I hope we haven&rsquo;t got any big porting effort for the next ten years, but just development of features and increasing stability and performance!</p>
 <p><strong><a href="http://ndee85.blogspot.com/">Andreas Esau</a></strong> is the latest artist to discover Krita. First he produced this enormously powerful sketch:</p>
-<p><img src="/images/posts/2010/ndee_sketchbrush_small.jpg" alt=""></p>
+<p><img src="images/posts/2010/ndee_sketchbrush_small.jpg" alt=""></p>
 <p>Then followed on with one of the first screencasts for Krita 2.3. Watch and enjoy!</p>
 <p>Markku Myllymäki from Finland has been experimenting with the vector support of Krita:</p>
-<p><img src="/images/posts/2010/kritari_supherkri.png" alt=""></p>
+<p><img src="images/posts/2010/kritari_supherkri.png" alt=""></p>
 <h3 id="code">Code</h3>
 <p>We had particular trouble with the smudge brush engine in this period. The source of all our trouble is that we want to make it possible for the footprint of the smudge area to change following pressure during painting &ndash; something no other applications support.</p>
 <p><strong>Boudewijn Rempt</strong> made sure Krita 2.3 doesn&rsquo;t load incompatible plugins, fixed a crash that happeend when closing krita while the filter dialog is open, fixed some memory leaks, removed the old perspective transformation tool (the new one has the beginning of the same functionality and can be extended to provide the full functionality; the old perspective transformation tool was now too different from the normal transformation tool to be kept around). Boudewijn added an improved cross-hair cursor (nicked from the Gimp) and fixed the comic book templates icons with icons provided by Animtim.</p>

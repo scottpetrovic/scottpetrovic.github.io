@@ -9,14 +9,14 @@
 
 	<title>Krita | Last Two Weeks in Krita -- week 13 and week 14 | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -102,7 +102,7 @@
 <p>Cyrille fixed a bug when copying selections, as well as a bug in the smudge tool, several unit tests, lots of bugs when converting between color modes and finally alpha-lock painting on colormodels with high channel depths.</p>
 <p><strong>Dmitry</strong> fixed a crash that occurred when undoing after you cancelled adding a filter layer. He then went on to fix several bugs in the recomposition of the layer stack with masks.</p>
 <p><strong>Lukas</strong> added a &ldquo;default settings&rdquo; button to the brush settings popup. He expanded the hairy brush to have connected paths between bristles. There was a small issue where you wouldn&rsquo;t get feedback about the brush size when changing the size using the , and . shortcuts (those can be changed by the user, by the way), and Lukas made sure the user gets feedback now. Internally, Krita has two paint surfaces: one that autoextends, and one that is fixed. Lukas fixed a bug when using a fixed paint device as a selection mask. Finally, <strong>Enkithan</strong> created new icons for Lukas&rsquo; new brush engines, and those were committed as well.</p>
-<p><img src="/images/posts/2010/krita-default-preset.png" alt=""></p>
+<p><img src="images/posts/2010/krita-default-preset.png" alt=""></p>
 <p><strong>Sven</strong> fixed a crash and corruption when scaling a bitmap brush, made sure that the settings widgets for brush settings get deleted, fixed the outline of the hairy brush and made sure that if you create a canvas the size of your screen, it&rsquo;s in pixels, not in postscript points. Sven changed the superslider to also update the values when you move the mouse out of the widget: a really nice usability change! The popup palette didn&rsquo;t completely work with tablets yet &ndash; part of it are Qt issues, but another issue, the color selection using the embedded triangle, was fixed by Sven. Finally, Sven fixed the saving of generator layers.</p>
 <h3 id="finally">Finally</h3>
 <p>Make sure to check out <a href="http://forum.kde.org/viewtopic.php?f=138&amp;t=87088">David Revoy&rsquo;s Experiments with Krita on the forum!</a></p>

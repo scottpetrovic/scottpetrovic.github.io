@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita Sprint: long fight with jaggy lines on OSX | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -67,7 +67,7 @@
     </div>
 
     <p>Two weeks ago we had a very nice and motivating sprint in Deventer, where many members of the Krita team gathered in one place and met each other. Boud has already written a <a href="/item/krita-2018-sprint-report">good post</a> about it, so I will try to avoid repetitions and only tell a saga of my main goal for this sprint&hellip; fix OSX tablet problems!</p>
-<p><a href="/images/posts/2018/krita_jagged_lines_on_osx.png"><img src="/images/posts/2018/krita_jagged_lines_on_osx.png" alt=""></a> Jagged lines caused by OSX input events compression: main symptom – they disappear as soon as one disables openGL</p>
+<p><a href="images/posts/2018/krita_jagged_lines_on_osx.png"><img src="images/posts/2018/krita_jagged_lines_on_osx.png" alt=""></a> Jagged lines caused by OSX input events compression: main symptom – they disappear as soon as one disables openGL</p>
 <h3 id="tablet-events-compression">Tablet events compression</h3>
 <p>Since the very first release of Krita on OSX we&rsquo;ve had a weird problem. When the user painted too quickly, the strokes became jagged, or as we call it &ldquo;bent&rdquo;. The problem happened because tablet events coming from the stylus were being lost somewhere on their way from the driver to Krita.</p>
 <p>I should say that this problem has already happened in Krita multiple times on Linux and Windows. In most of the cases it was caused by a Qt update that introduced/activated &ldquo;input events compression&rdquo;: a special feature of Qt to drop extra tablet/mouse move events if the application becomes too slow to process them in time. This feature is necessary for normal non-painting applications, which do not expect so many tablet move events and can simply sink in them. The main symptom of such compression is that &ldquo;jagged lines&rdquo; almost disappear when you disable the openGL canvas, and it was reported that on OSX this symptom is also present. I have already fixed such compression problems multiple times on other systems, so I was heading to the sprint in quite an optimistic mood&hellip;</p>

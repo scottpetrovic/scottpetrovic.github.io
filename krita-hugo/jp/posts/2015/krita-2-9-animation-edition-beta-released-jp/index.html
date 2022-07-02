@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 2.9アニメーションベータ版リリース！ | Krita Site(JP)</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//jp">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -56,12 +56,12 @@
         
     </div>
 
-    <p><img src="/images/posts/2015/kiki2_ann_small.jpg" alt=""></p>
+    <p><img src="images/posts/2015/kiki2_ann_small.jpg" alt=""></p>
 <p>※ベータ版第2弾がリリースされています。<a href="https://jp.krita.org/item/second-animation-beta/">こちら</a>をご覧ください。</p>
 <p>本日は長らく待ち望まれていたアニメーション製作及びLoD機能をサポートするKritaのベータ版のリリースを発表できることを大変うれしく思います。これより<a href="https://www.kickstarter.com/projects/krita/krita-free-paint-app-lets-make-it-faster-than-phot">2015年Kickstarter</a>の一番の目玉となる機能を皆さんの手でお試しいただけます！</p>
 <p>このバージョンで新しくなったところはどこでしょう？見た目にはKritaはあまり変わっていないかもしれません。新しく<strong>アニメーション</strong>（Animation）、<strong>タイムライン</strong>（Timeline）、<strong>前後フレームの表示</strong>（Onion Skins）の3つのドッキングパネルが追加されてアニメーションフレームに関するすべてを制御できるようになり、またメニューの表示（V）からアクセスできる<strong>高速表示モード（LOD）</strong>（Instant Preview Mode。以前は詳細度（Level of Detail）と呼ばれていた機能です）により高解像度の巨大なキャンバス上でも快適にお絵かきできるようになりました。これらの機能を使用するためにはOpenGL 3.0以上をサポートするシステムが必要となります。</p>
 <p>ですがこの見た目には小さい変化の影にはKritaのカーネルコードへの山の様な変更があります。我々はレンダリングのプロセスのほとんどをバックグラウンドで行えるようKritaのカーネルコードをほとんど書き換えるところまでいきました…そのためこのバージョンでは全てのアニメーションされるフレームとキャッシュレベルの表示は皆さんがKritaをアイドルにしている（例えば次はどこを書き込もうか考えたり、新たな素晴らしいブラシを選択していたりする）間に計算されるようになっています。これらの変更により、高解像度の画像と複数のレイヤーからなる複雑なフレームからなる連番画像のリアルタイムでの再生（フレームはバックグラウンドで再計算され、キャッシュからGPUに直接アップロードされます）を効率よく行うことが可能となったのです。</p>
-<p><img src="/images/posts/2015/krita_animation_1-300x205.png" alt=""></p>
+<p><img src="images/posts/2015/krita_animation_1-300x205.png" alt=""></p>
 <p>さて、では改めて、Krita 2.9アニメーションベータ版へようこそ！（バージョンの番号にご注意ください！最終リリースはKrita 3.0に基づくものとなりますが、このバージョンは2.9安定版から作られたものです。ですが<strong>なお</strong>ベータ版です。皆さんからのフィードバックをお待ちしております！）</p>
 <p>Kritaを以前インストールしたことがある環境では、高速表示モードのメニューアイテムが表示メニューに現れないことがあります。この場合は、Kritaのリソースフォルダ(「設定&gt;リソースを管理&gt;リソースフォルダを開く」)にあるkrita.rc(注意：kritarcではありません)を削除してKritaを再起動してください。なおこの際に解凍したファイル内のshare/appsフォルダの中にあるkrita.rcファイルも同時に削除してしまうとアニメーションベータ版の方のKritaが起動しなくなってしまうので注意してください。この手順を行わなくてもShift＋Lのショートカットは利用可能です。</p>
 <p>また、初めて今回Kritaをダウンロードした方で、ウィンドウが真っ黒になってしまう場合、Intelのグラフィックカードを利用しているならIntelのグラフィックドライバが持つOpenGLのバグである可能性があります。ドライバを最新のものにアップデートしてください。</p>

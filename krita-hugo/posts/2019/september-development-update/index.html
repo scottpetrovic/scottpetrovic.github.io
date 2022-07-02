@@ -9,14 +9,14 @@
 
 	<title>Krita | September Development Update | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -67,10 +67,10 @@
     </div>
 
     <p>We&rsquo;re about to do another bug-fix release of Krita: that&rsquo;ll be 4.2.7. We&rsquo;re seeing that the number of new bug reports is dropping a bit, week over week: even though most bug reports can be closed instantly as duplicates or not bugs at all, that&rsquo;s probably a sign that our stable releases are getting more and more stable. (See <strong><a href="https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html">here</a></strong> to learn how to make good bug reports.) Though the total number of open bugs remains high, we worked really hard all September to make Krita better:</p>
-<p><a href="/images/posts/2019/bugs_september.png"><img src="/images/posts/2019/bugs_september.png" alt=""></a></p>
+<p><a href="images/posts/2019/bugs_september.png"><img src="images/posts/2019/bugs_september.png" alt=""></a></p>
 <p>We also managed make 538 changes to the code in September with 23 developers &ndash; and that excludes translations, since those aren&rsquo;t in our code repository.</p>
 <p>We also went back to the <a href="https://scan.coverity.com/projects/krita?tab=overview">Coverity Static Code analyzer</a> and started analyzing Krita again. That was good for at least a hundred potential bug fixes, and it&rsquo;s something that&rsquo;s ongoing. We hadn&rsquo;t done that for quite some time! There is still plenty to do, but the average defect density for projects the size of Krita is 0.7, so we&rsquo;re not <em>that</em> bad.</p>
-<p><a href="/images/posts/2019/Screenshot_20190930_154506.png"><img src="/images/posts/2019/Screenshot_20190930_154506.png" alt=""></a></p>
+<p><a href="images/posts/2019/Screenshot_20190930_154506.png"><img src="images/posts/2019/Screenshot_20190930_154506.png" alt=""></a></p>
 <p>Of course, focus on fixing bugs means that there&rsquo;s less time for cool new features, or extending existing features. We did merge Sharaf Zaman&rsquo;s Android port, though, which means that pretty soon we should have signed nightly Android APK&rsquo;s!</p>
 <p>Today during our weekly contributors meeting (notes are <strong><a href="https://docs.google.com/document/d/1_GLkMJTtr5o-ruFRkA-14EQLPVvvoF7hILYyLuYoips/edit#">here</a></strong>), we decided we wanted to continue and do another couple of montly bug fix releases in the 4.2 series. In what&rsquo;s currently our master branch, there are quite a few nice new features we&rsquo;d like to share, though, and we&rsquo;ll start making alpha builds of master in October, and invite everyone to help test what will become Krita 4.3.0.</p>
 <p>We had originally wanted to release 4.3.0 in October, and have a fundraiser to celebrate the release. Part of the reason we&rsquo;re postponing 4.3.0 is that we&rsquo;d like to continue for a while with the stable 4.2 releases. Another reason is that we want 4.3.0 to have a completely reworked system for loading, handling and saving things like brush presets. We&rsquo;ve been working on that for a long time now, and things are coming together, but there&rsquo;s still a lot that needs to be done.</p>

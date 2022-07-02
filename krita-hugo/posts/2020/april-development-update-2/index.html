@@ -9,14 +9,14 @@
 
 	<title>Krita | April Development Update | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -70,8 +70,8 @@
 <p>But life goes on, and we&rsquo;re on the verge of another edition of Google Summer of Code. Krita has received a bunch of excellent proposals! Let&rsquo;s keep our fingers crossed for our prospective students!</p>
 <p>And, of course, a lot is happening in <a href="https://invent.kde.org/kde/krita">Krita&rsquo;s repository</a>! About two weeks ago we merged the <a href="https://phabricator.kde.org/T379">resource management rewrite branch</a> into master. Now, let&rsquo;s unpack this in what we&rsquo;ve been doing, and what this means&hellip; For the past five years, we&rsquo;ve been working on rewriting the way Krita handles things like brush presets, brush tip and tags. This turned out to be a huge amount of work, sucking up lots and lots of energy. But in March we felt we could risk merging everything into master so it would get into the development builds.</p>
 <p>So we merged&hellip; But we all knew that the branch wasn&rsquo;t ready yet. There are bugs, there are things lacking, but it was time to take this step &ndash; now more people can look into the resource handling changes. Of course, this gave an immediate spike in the number of open bugs:</p>
-<p><a href="/images/posts/2020/Screenshot_20200402_105349.png"><img src="/images/posts/2020/Screenshot_20200402_105349.png" alt=""></a>In general, we&rsquo;re not exactly close to zero bugs&hellip; Even though we close more bugs year over year than there are reported, the number keeps climbing. There must be something wrong with my maths&hellip;</p>
-<p><a href="/images/posts/2020/Screenshot_20200402_105503.png"><img src="/images/posts/2020/Screenshot_20200402_105503.png" alt=""></a> Open, new and closed bugs in the past year.</p>
+<p><a href="images/posts/2020/Screenshot_20200402_105349.png"><img src="images/posts/2020/Screenshot_20200402_105349.png" alt=""></a>In general, we&rsquo;re not exactly close to zero bugs&hellip; Even though we close more bugs year over year than there are reported, the number keeps climbing. There must be something wrong with my maths&hellip;</p>
+<p><a href="images/posts/2020/Screenshot_20200402_105503.png"><img src="images/posts/2020/Screenshot_20200402_105503.png" alt=""></a> Open, new and closed bugs in the past year.</p>
 <p>This week we also discussed our roadmap: 4.2.9 will be the last 4.2 release. We&rsquo;ll release 4.3.0 in about two months, but it won&rsquo;t be the release with all the resource work done. What&rsquo;s currently master will be 5.0, and it will be the release where the old text tool will be finally gone. It will have the resource rework, and probably also lots of new features and summer of code work.</p>
 <p>But we&rsquo;ve been working so hard on fixing bugs, that all of us want a bit of a change, so it&rsquo;s also time to work on fun features.</p>
 <p>One of the features we&rsquo;re working on goes under the code-name &ldquo;RGBA Brushes&rdquo;. Starting with <a href="https://invent.kde.org/kde/krita/-/merge_requests/277">the work of Peter Schatz</a>, Ramon Miranda and Dmitry are creating something rather fun. You can read all about it on <a href="https://krita-artists.org/t/use-alpha-channel-in-brush-tips-or-add-an-overlay-tip/4147">Krita Artists</a>. I&rsquo;ll let Ramon show it!</p>

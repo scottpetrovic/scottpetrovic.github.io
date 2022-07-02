@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 2.9.7リリース！ | Krita Site(JP)</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//jp">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -60,7 +60,7 @@
 <h2 id="新機能">新機能</h2>
 <h4 id="接線法線ブラシエンジンtangent-normal-brush-engine">接線法線ブラシエンジン（Tangent Normal Brush Engine）</h4>
 <p>従来通り、9月に我々は最初のGoogle Summer of Codeの成果を発表します。Wolthera氏の接線法線（Tangent Normal）ブラシエンジンが遂にマージされました！</p>
-<p><img src="/images/posts/2015/tangenttiltbrush.png" alt=""><img src="/images/posts/2015/phongbum1.png" alt=""></p>
+<p><img src="images/posts/2015/tangenttiltbrush.png" alt=""><img src="images/posts/2015/phongbum1.png" alt=""></p>
 <p>これは3Dエンジンやゲームエンジンで用いられる法線マップを描くことができる特別な機能です。紹介動画をご覧ください。</p>
 <!-- raw HTML omitted -->
 <p>このプロジェクトは以下4つからなります。</p>
@@ -71,15 +71,15 @@
 <li>カーソルの新しいオプションである傾きカーソル（Tilt Cursor）</li>
 </ul>
 <h3 id="アイコンの一新">アイコンの一新</h3>
-<p>我々はアイコン一式を注意深く、完全に一新させました。全てのアイコンが明色のテーマでも暗色のテーマでも見えにくくならないように改良されました。またツールボックス内のアイコンの大きさを選べるようになりました。 <img src="/images/posts/2015/toolbox.png" alt=""> 高解像度スクリーンの場合はアイコンを大きくし、ネットブックならアイコンを小さくしましょう。ただツールボックスを右クリックするだけです。 <img src="/images/posts/2015/resize-icons.gif" alt=""> そしてツールボックスの改良の〆として、ツールティップではキーボードショートカットが表示されるようになり、またドッキングパネルメニューからツールボックスの表示・非表示を切り替えられるようになりました。</p>
+<p>我々はアイコン一式を注意深く、完全に一新させました。全てのアイコンが明色のテーマでも暗色のテーマでも見えにくくならないように改良されました。またツールボックス内のアイコンの大きさを選べるようになりました。 <img src="images/posts/2015/toolbox.png" alt=""> 高解像度スクリーンの場合はアイコンを大きくし、ネットブックならアイコンを小さくしましょう。ただツールボックスを右クリックするだけです。 <img src="images/posts/2015/resize-icons.gif" alt=""> そしてツールボックスの改良の〆として、ツールティップではキーボードショートカットが表示されるようになり、またドッキングパネルメニューからツールボックスの表示・非表示を切り替えられるようになりました。</p>
 <h3 id="ラップアラウンドモードの改良">ラップアラウンドモードの改良</h3>
-<p>シームレステクスチャを製作する人は皆、Kritaのユニークな機能であるラップアラウンドモード(Wキー)を気に入っていただいていると思います。今回、2つの制限事項を修正しました。オリジナルの中央のイメージ領域以外 からでも色のピックができるようになりました。塗りつぶしもオリジナルの領域以外のどこでも行えるようになりました！ <img src="/images/posts/2015/pickcolorwraparound.png" alt=""></p>
+<p>シームレステクスチャを製作する人は皆、Kritaのユニークな機能であるラップアラウンドモード(Wキー)を気に入っていただいていると思います。今回、2つの制限事項を修正しました。オリジナルの中央のイメージ領域以外 からでも色のピックができるようになりました。塗りつぶしもオリジナルの領域以外のどこでも行えるようになりました！ <img src="images/posts/2015/pickcolorwraparound.png" alt=""></p>
 <h3 id="新しい色空間選択ダイアログ">新しい色空間選択ダイアログ</h3>
-<p>またWolthera氏により色プロファイル選択のための新しいダイアログが追加されました。色プロファイルブラウザ（Color Profile browser）です。ただあまり複雑なことを考えずにお絵描きしたいならKritaのデフォルトで十分でしょう。ですがもっといろいろやってみたい、色管理の深みを探求してみたい、より高度な編集を行う必要がある、などという場合にはこのブラウザダイアログがカラースペースの情報について理解した上で選択をするために必要な全てを提供してくれるでしょう。 <img src="/images/posts/2015/colorspacebrowser.png" alt=""> Kritaには<a href="http://ninedegreesbelow.com/">Elle Stone氏</a>による多数の注意深く調整されたICCプロファイルが実装されています。どうした用途に、どのカラースペースを使う方がいいか、といった彼女による広範囲にわたる注釈もこの新しいプロファイルブラウザに含まれています。</p>
+<p>またWolthera氏により色プロファイル選択のための新しいダイアログが追加されました。色プロファイルブラウザ（Color Profile browser）です。ただあまり複雑なことを考えずにお絵描きしたいならKritaのデフォルトで十分でしょう。ですがもっといろいろやってみたい、色管理の深みを探求してみたい、より高度な編集を行う必要がある、などという場合にはこのブラウザダイアログがカラースペースの情報について理解した上で選択をするために必要な全てを提供してくれるでしょう。 <img src="images/posts/2015/colorspacebrowser.png" alt=""> Kritaには<a href="http://ninedegreesbelow.com/">Elle Stone氏</a>による多数の注意深く調整されたICCプロファイルが実装されています。どうした用途に、どのカラースペースを使う方がいいか、といった彼女による広範囲にわたる注釈もこの新しいプロファイルブラウザに含まれています。</p>
 <h3 id="他の世界との互換性">他の世界との互換性</h3>
 <p>我々はGimpとの互換性を改良しました。Kritaはグループレイヤーの読み込み、XCF v3ファイルの読み込み、そして遂にWindowsでのXCFファイルの読み込みが可能になっています。Photoshop PSDファイルのサポートも忘れてはいません。ビット/チャンネルCMYK・グレースケール画像、ZIP圧縮されたPSDファイル、PSDへの透過をもつ単レイヤーの改良型保存の画像の読み込みが可能になっています。</p>
 <h3 id="右クリックでの一つ前のパスポイントのやり直し">右クリックでの一つ前のパスポイントのやり直し</h3>
-<p>パス作成途中で右クリックすることで一つ前のパスポイントのやり直しができるようになりました。 <img src="/images/posts/2015/right-click-delete.gif" alt=""></p>
+<p>パス作成途中で右クリックすることで一つ前のパスポイントのやり直しができるようになりました。 <img src="images/posts/2015/right-click-delete.gif" alt=""></p>
 <h3 id="さらに">さらに…</h3>
 <ul>
 <li>フリーハンドツールの安定化モードに新たに可変平滑化（Scalable smoothness）機能が加わりました。</li>

@@ -9,14 +9,14 @@
 
 	<title>Krita | Introducing Dirty Presets, Locked Brush Settings and Cumulative Undo in Krita 2.9. | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -69,23 +69,23 @@
     <p>One of the 2014 Google Summer of Code projects for Krita is going to be in the next release, Krita 2.9. It&rsquo;s a bit complicated, so here&rsquo;s a short tutorial in using Mohit&rsquo;s Dirty Presets, Locked Brush Settings and Cumulative Undo projects!</p>
 <h2 id="1-dirty-presets">1. Dirty Presets</h2>
 <p>This is a feature a lot of people asked for: It allows Krita to remember small changes made to a preset during a session, without it saving over the original. You activate it in the brush settings window, by ticking &lsquo;Temporarily Save Tweaks To Presets&rsquo;.</p>
-<p><a href="/images/posts/2015/ditry_presets_1.png"><img src="/images/posts/2015/ditry_presets_1.png" alt="ditry_presets_1"></a></p>
+<p><a href="images/posts/2015/ditry_presets_1.png"><img src="images/posts/2015/ditry_presets_1.png" alt="ditry_presets_1"></a></p>
 <p>Then, select a preset.</p>
-<p><a href="/images/posts/2015/dirty_presets_2.png"><img src="/images/posts/2015/dirty_presets_2.png" alt="dirty_presets_2"></a></p>
+<p><a href="images/posts/2015/dirty_presets_2.png"><img src="images/posts/2015/dirty_presets_2.png" alt="dirty_presets_2"></a></p>
 <p>Now, if you tweak a setting, like, say, opacity, Krita will make the preset &lsquo;dirty&rsquo;. You can identify dirty presets by the little plus-icon on the preset icon.</p>
-<p><a href="/images/posts/2015/dirty_presets_3.png"><img src="/images/posts/2015/dirty_presets_3.png" alt="dirty_presets_3"></a></p>
+<p><a href="images/posts/2015/dirty_presets_3.png"><img src="images/posts/2015/dirty_presets_3.png" alt="dirty_presets_3"></a></p>
 <p>To get the original settings back, press the reload button.</p>
-<p><a href="/images/posts/2015/dirty_presets_4.png"><img src="/images/posts/2015/dirty_presets_4.png" alt="dirty_presets_4"></a></p>
+<p><a href="images/posts/2015/dirty_presets_4.png"><img src="images/posts/2015/dirty_presets_4.png" alt="dirty_presets_4"></a></p>
 <p>To retain these settings, just save the preset.</p>
 <h2 id="2-locked-brush-settings">2. Locked Brush Settings.</h2>
 <p>Another often requested feature, this allows you to lock to opacity, or brush-tip, or even texture.</p>
 <p>You activate it by right-clicking the lock besides a setting. Then, select &rsquo;lock&rsquo;.</p>
-<p><a href="/images/posts/2015/locksettings_1.png"><img src="/images/posts/2015/locksettings_1.png" alt="locksettings_1"></a></p>
+<p><a href="images/posts/2015/locksettings_1.png"><img src="images/posts/2015/locksettings_1.png" alt="locksettings_1"></a></p>
 <p>Now, the setting will not be reloaded every time you select a new preset.</p>
 <p>This can be used, for example, to keep the same texture over all presets.</p>
-<p><a href="/images/posts/2015/locksettings_2.png"><img src="/images/posts/2015/locksettings_2.png" alt="locksettings_2"></a></p>
+<p><a href="images/posts/2015/locksettings_2.png"><img src="images/posts/2015/locksettings_2.png" alt="locksettings_2"></a></p>
 <p>You can unlock them by right-clicking the lock-icon again.</p>
-<p><a href="/images/posts/2015/locksettings_3.png"><img src="/images/posts/2015/locksettings_3.png" alt="locksettings_3"></a> There&rsquo;s two options here.</p>
+<p><a href="images/posts/2015/locksettings_3.png"><img src="images/posts/2015/locksettings_3.png" alt="locksettings_3"></a> There&rsquo;s two options here.</p>
 <p>Unlock (Drop Locked)</p>
 <p>This will get rid of the settings of the locked parameter and take that of the active brush preset. So if your brush had no texture on, using this option will revert it to having no texture.</p>
 <p>Unlock (Keep Locked)</p>
@@ -94,9 +94,9 @@
 <h2 id="3-cumulative-undo">3. Cumulative undo.</h2>
 <p>Cumulative undo allows you to have undos merge together. This can be useful if you&rsquo;re the type to make a lot of tiny strokes, or to save memory.</p>
 <p>Cumulative undo is activated via the Undo History Docker. Right-click an undo-state to enable it.</p>
-<p><a href="/images/posts/2015/cumulative_undo_1.png"><img src="/images/posts/2015/cumulative_undo_1.png" alt="cumulative_undo_1"></a></p>
+<p><a href="images/posts/2015/cumulative_undo_1.png"><img src="images/posts/2015/cumulative_undo_1.png" alt="cumulative_undo_1"></a></p>
 <p>Afterwards, you can tweak it&rsquo;s settings by right-clicking the undo-state again.</p>
-<p><a href="/images/posts/2015/cumulative_undo_2.png"><img src="/images/posts/2015/cumulative_undo_2.png" alt="cumulative_undo_2"></a></p>
+<p><a href="images/posts/2015/cumulative_undo_2.png"><img src="images/posts/2015/cumulative_undo_2.png" alt="cumulative_undo_2"></a></p>
 <p>Start merging time</p>
 <p>The amount of seconds required to consider a group of strokes mergable. So if this is set to five, at the least five seconds must have passed for Krita to consider these strokes mergable.</p>
 <p>Group time</p>

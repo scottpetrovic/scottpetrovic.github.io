@@ -9,14 +9,14 @@
 
 	<title>Krita | Last Week in Krita -- Week 12 | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -81,7 +81,7 @@
 <p><strong>Dmitry</strong> fixed an issue where a mask updated areas outside its selection. Dmitry also added a test for convolution, showing some problems. Edward Apap was working on convolution when he got a job &ndash; and starting on a new job always takes a lot of energy and effort, so he hasn&rsquo;t been around for a while, but I&rsquo;m sure that we&rsquo;ll see him return soon. In the meantime, Dmitry fixed a bug when applying a convolution filter to a transparent layer. Finally, Dmitry fixed the order masks are applied to a layer.</p>
 <p>There&rsquo;s still plenty to do in our projection code, as well as in the display code, but there is a good chance that Dmitry will either be doing that during the Google Summer of Code, or, if he doesn&rsquo;t get a slot, sponsored by <strong>Silvio Grosso</strong>, working two months on finishing this code in time for the 2.3 release.</p>
 <p><strong>Lukáš</strong> cleaned up the curve brush brush engine &ndash; this is a fun brush engine that lets you paint wavy lines. The Sumi-E brush was renamed to &ldquo;hairy brush&rdquo;, since it is much more versatile than a chinese brush imitation, but at the same time, we wanted to honour <a href="http://portal.acm.org/citation.cfm?id=15911&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=84060571&amp;CFTOKEN=61652648">Strassman&rsquo;s seminal work</a>. Lukáš applied a patch by Pentalis, one of the Krita Google Summer of Code hopefuls, which cleaned up the gui for the hairy brush. On the brush engine front, Lukáš added some checks and limits to the settings of the hairy brush: it is possible to tweak the settings so the hairy brush becomes a <a href="http://forum.kde.org/viewtopic.php?f=138&amp;t=82755">rainy brush</a> &ndash; and it was possible to scatter the rain so widely your computer would drown the X11 server.</p>
-<p><img src="http://www.krita.org/images/stories/temp-krita-pix/pluie.jpg" alt=""></p>
+<p><img src="images/stories/temp-krita-pix/pluie.jpg" alt=""></p>
 <p>On the sponsored work front, Lukáš worked on the canvas mirroring feature. This work was done in the <a href="http://websvn.kde.org/branches/work/koffice-ko/">koffice-ko feature branch</a> since Krita 2.2 is now frozen except for bug fixes. There are still complications here: mirroring works, except when you zoom, but we&rsquo;ll be looking into this issue before merging after the freeze lifts. This weeks topic, by the way, is implementing a &ldquo;default settings&rdquo; button for the brush engines.</p>
 <p>Following attempts to make a Krita 2.2 beta 1 package for Fedora, Rex Dieter cleaned up a lot of our .desktop files.</p>
 <p><strong>Sven</strong> was on a roll fixing bugs: he fixed a crash in the filter dialog, the animation of pipe brushes, wrote a test for an issue when using a &ldquo;fixed-size&rdquo; paint device as a mask, fixed the fill method for that type of paint device, fixed using a crash when using predefined brushes in the duplicate brush engine, fixed <a href="https://bugs.kde.org/show_bug.cgi?id=228983">bug 228983</a> (inverting a selection hangs Krita) (and wrote a unittest so we can check whether there will be regressions), fixed the default extension of the preset files (.kpp, they are in ~/.kde4/share/config/krita/paintoppresets, if you want to share them with friends or on deviant-art), made sure we use the name of the preset (and if necessary, make it unique) instead of a number when saving presets.</p>

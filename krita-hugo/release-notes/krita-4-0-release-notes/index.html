@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 4.0 Release Notes | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -76,7 +76,7 @@
 </ul>
 <p>Note that on all platforms it is possible to keep Krita 3 and Krita 4 running side by side. On Windows, use the zip archive downloads, on Linux the appimages and on OSX the disk images, dragged to some other place than Applications. Krita 4 and Krita 3 share settings and resources.</p>
 <p>For 4.0, Tyson Tan has again created an awesome Kiki image. The Chinese plum blossoms symbolise overcoming hardship, so it&rsquo;s a very apposite image for the first major release of Krita after 2017&rsquo;s tribulations!</p>
-<p><a href="/images/posts/2018/kiki_4.0_sm-1-1024x463.png"><img src="/images/pages/kiki_4.0_sm-1-1024x463.png" alt=""></a></p>
+<p><a href="images/posts/2018/kiki_4.0_sm-1-1024x463.png"><img src="images/pages/kiki_4.0_sm-1-1024x463.png" alt=""></a></p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/OXvHHJUyBDg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -85,7 +85,7 @@
 <p>Video by Owly Owlet</p>
 <h2 id="svg-format-for-vector-tools">SVG Format for Vector Tools</h2>
 <p>Krita 3.0 used the OpenDocument Graphics format (ODG) for vector shapes and paths. This was originally an office document file format and not a format designed for artistic work. ODG does not work well with other applications like <a href="https://www.inkscape.org">Inkscape</a>. We rebuilt our vector tools from the ground up in Krita to use SVG. SVG is a W3C standard that can be opened by many different programs. This is going to allow for more possibilities in the future with working with other applications. Currently, Krita supports most of the SVG 1.1 standard. In the future, SVG 2 will also be supported.</p>
-<p><img src="/images/pages/vector-tools.gif" alt=""></p>
+<p><img src="images/pages/vector-tools.gif" alt=""></p>
 <p>In addition to converting the back-end to SVG we also added the following features:</p>
 <ul>
 <li>The gradient tool has been merged into the default tool for easier editing.</li>
@@ -107,11 +107,11 @@
 <li>Vector layers can be directly exported to SVG via Layers → Import/Export → Export Vector Layer to SVG.</li>
 <li>Right-click on the canvas if a vector layer is active, will give a relevant submenu for the vector tools with more options.</li>
 </ul>
-<p><img src="/images/pages/vector-library.gif" alt=""></p>
+<p><img src="images/pages/vector-library.gif" alt=""></p>
 <h2 id="new-text-tool">New Text Tool</h2>
 <p>One of the improvements funded by the 2016 kickstarter was a new text tool. With the goal of creating a tool that would be stable, dependable and simple to use, we made a lot of progress in Krita 4.0. External pressure made it impossible to implement everything we wanted for Krita 4.0, and we will be making more updates and adding new things to the text tool as the 4.x releases progress: line wrapping, fine typographic control, vertical text layout for Asian languages, as well as improvements in workflow are all still planned.</p>
 <p>Check what is possible in the manual for <a href="https://docs.krita.org/Text_Tool">the text tool</a>.</p>
-<p><img src="/images/pages/text-editor-features.gif" alt=""></p>
+<p><img src="images/pages/text-editor-features.gif" alt=""></p>
 <p>Some of the changes and things you can do with the new text tools</p>
 <ul>
 <li>Uses SVG internally</li>
@@ -128,12 +128,12 @@
 <p>Manage which python scripts are active. Located via Settings-&gt;Configure Krita-&gt;Python Plugin Manager. Activated plugins can be accessed via the tools-&gt;scripts.</p>
 <p>Note that on Windows 7 and 8 you need to install the Universal C Runtime separately. See the <a href="https://docs.krita.org/Introduction_to_Python_Scripting#Technical_Details">manual</a>.</p>
 <p>We&rsquo;ve taken several wishes from our forums and community and turned them into python scripts. Hopefully with these samples you can see the types of things you can accomplish with Python scripting. Creating these plugins also allowed us to test our own API. Let&rsquo;s take a look at some of them&hellip;</p>
-<p><img src="/images/pages/python-plugin-manager.png" alt=""></p>
+<p><img src="images/pages/python-plugin-manager.png" alt=""></p>
 <h3 id="included-scripts-highlights">Included Scripts Highlights</h3>
-<p><img src="/images/pages/ten-brushes.jpg" alt=""> <strong>Ten Brushes</strong> - Assign specific brush presets to shortcuts. You can do this with dragging and dropping the preset into the shortcut slots. Of course you can open the script up and modify how this works to your heart&rsquo;s desire!</p>
-<p><img src="/images/pages/scripter.png" alt=""> <strong>Internal Scripting Console</strong> - Run scripts while you are in Krita. Important for when you are testing things, or for when you just want to write a small script. The python editor is equipped with syntax-hightlighting and a small debugger to tell you when your code does not make sense. Created by Eliakin Almeida during his 2017 Summer fo Code project.</p>
-<p><img src="/images/pages/quick-settings-docker.gif" alt=""> <strong>Quick Settings Docker</strong> - Quickly change between brush sizes, opacity, and flow values&hellip; If you&rsquo;ve used some other applications, this&rsquo;ll be familiar to you. Once enabled can be found from Settings &gt; Dockers. Coded by Wolthera.</p>
-<p><img src="/images/pages/comic-book-manager.png" alt=""> <strong>Comic Project Management Tools</strong> - A robust plugin used for managing multiple pages for a comic project that Wolthera created. It is a great example for how to handle common tasks in pipeline scripts: opening, saving, cropping, scaling and batch changes. It even has custom exporting formats such as CBZ, EPUB, and ACBF. And the python files are abundantly documented to help you along the way and create your own pipelines!</p>
+<p><img src="images/pages/ten-brushes.jpg" alt=""> <strong>Ten Brushes</strong> - Assign specific brush presets to shortcuts. You can do this with dragging and dropping the preset into the shortcut slots. Of course you can open the script up and modify how this works to your heart&rsquo;s desire!</p>
+<p><img src="images/pages/scripter.png" alt=""> <strong>Internal Scripting Console</strong> - Run scripts while you are in Krita. Important for when you are testing things, or for when you just want to write a small script. The python editor is equipped with syntax-hightlighting and a small debugger to tell you when your code does not make sense. Created by Eliakin Almeida during his 2017 Summer fo Code project.</p>
+<p><img src="images/pages/quick-settings-docker.gif" alt=""> <strong>Quick Settings Docker</strong> - Quickly change between brush sizes, opacity, and flow values&hellip; If you&rsquo;ve used some other applications, this&rsquo;ll be familiar to you. Once enabled can be found from Settings &gt; Dockers. Coded by Wolthera.</p>
+<p><img src="images/pages/comic-book-manager.png" alt=""> <strong>Comic Project Management Tools</strong> - A robust plugin used for managing multiple pages for a comic project that Wolthera created. It is a great example for how to handle common tasks in pipeline scripts: opening, saving, cropping, scaling and batch changes. It even has custom exporting formats such as CBZ, EPUB, and ACBF. And the python files are abundantly documented to help you along the way and create your own pipelines!</p>
 <h2 id="colorize-mask-tool">Colorize Mask Tool</h2>
 <p>Simplify coloring intricate line art such as comic art. With the new colorize mask layer, you can fill a line art with a few quick strokes&hellip;and have Krita figure out how to fill it in. The normal flow is to make your line art, switch to the Colorize Mask tool in the toolbox, then make some quick strokes in the area.</p>
 <p>Press the Update button in the layers toolbox. The layer should update and fill everything in. You can either convert this later to a paint layer, or break it apart into color groups. See how it works in more detail from the manual: <a href="https://docs.krita.org/Colorize_Mask">Colorize Mask documentation</a>.</p>
@@ -145,7 +145,7 @@
 <h2 id="background-saving">Background Saving</h2>
 <p>No more freezing while you wait while Krita auto-saves every 15 minutes. Not only do we have a background worker for saving documents, but also when exporting animations. This allows you to export a large animation then keep working while Krita keeps exporting the animation in the background. And exporting animations has been made faster by fully using all the cores on your CPU to calculate fames, too!</p>
 <h2 id="new-kpl-color-palette-format--improved-palette-docker">New KPL Color Palette Format &amp; Improved Palette Docker</h2>
-<p><img src="/images/pages/krita_4_0_palette.png" alt=""></p>
+<p><img src="images/pages/krita_4_0_palette.png" alt=""></p>
 <p>The palette docker in Krita 3 can only handle 8bit sRGB. Our existing GPL color palette format was designed in a time when anything more seemed like decadence. We&rsquo;ve taken the plunge and designed a new color palette file format. The KPL fileformat can store any color that Krita can handle. This new file format also allows you to group colors! The file format is made up of a ZIP file with an xml inside. (We are nothing if not consistent!)</p>
 <p>The palette docker has also been improved with the following things:</p>
 <ul>
@@ -157,7 +157,7 @@
 </ul>
 <h2 id="brush-editor-editor-improvements-and-live-preview">Brush Editor Editor Improvements and Live Preview</h2>
 <p>We revamped the brush preset editor significantly to make it easier to use and understand. The brush editor has as preview area for you to see a live update as you are changing settings. This should make creating and editing brushes easier than only using the scratchpad. Note: There are a couple brush engines that do not have a preview because of technical limitations (shape and quick).</p>
-<p><img src="/images/pages/live-preview.gif" alt=""></p>
+<p><img src="images/pages/live-preview.gif" alt=""></p>
 <ul>
 <li>Easily rename brushes. Look for the pencil icon in the brush editor</li>
 <li>Overwriting brushes now keeps the current preview image.</li>
@@ -172,24 +172,24 @@
 <p>Speaking of performance improvements, all brushes now have an &ldquo;Instant Preview threshold&rdquo; property. This probably sounds confusing, but this speeds up a lot of smaller brushes where Instant Preview didn&rsquo;t have any performance improvement. Instant Preview will automatically turn on when a brush&rsquo;s size gets big enough. You can right click the &ldquo;Instant Preview&rdquo; checkbox in the bottom of the brush settings to change this.</p>
 <p>The work on multi-threaded brushes was sponsored by Intel.</p>
 <h2 id="larger-brush-sizes">Larger Brush Sizes</h2>
-<p><img src="/images/pages/max-brush-size.png" alt=""></p>
+<p><img src="images/pages/max-brush-size.png" alt=""></p>
 <p>In Krita 3, there is a 1,000px brush size limit. In Krita 4, you can lift that limit through the configuration and make it go up to 10,000px! This change requires a restart to take effect. Be careful with the big sizes, as a 10,000 pixel brush is about as heavy as copy-pasting an image of 10kx10k at the bitdepth of the image you are painting on. Make sure your computer can handle that!</p>
 <h2 id="masked-brushes">Masked Brushes</h2>
-<p><img src="/images/pages/waterpaint.gif" alt=""></p>
+<p><img src="images/pages/waterpaint.gif" alt=""></p>
 <p>Add a mask to your brush tip to create even a greater variety of brushes. This started out as a Kickstarter stretch goal named &lsquo;stacked brushes&rsquo;. Masked brush allows you to select a second brush tip, and define size, rotation, mirroring, scatter, and other properties to decide how it should blend with the main brush. You can also assign blending modes to your mask. The example here is using the Screen blending mode to create a watercolor appearance. See the <a href="https://docs.krita.org/Masked_Brush">manual</a> for more information!</p>
 <h2 id="updated-brush-presets">Updated Brush Presets</h2>
 <p>We have updated our brush presets after feedback from a lot of artists. We have spent time trying to improve performance and add a greater variety of brush presets. Some of the new presets show off what the new masked brush properties can achieve like the watercolor brushes. Thanks goes out to David Revoy, Ramon Miranda, Wolthera, Pablo Cazorla, Rad, Scott Petrovic, and Razvan for their contributions. Also for all the people that took our brush presets survey and gave us ideas to make them even better. The final brush preset collection has been curated by David Revoy, whose <a href="http://davidrevoy.com/article319/krita-brushkit-v8">brush kit</a> was used by more than two-thirds of respondents to the survey.</p>
 <p>Krita 3&rsquo;s brushes bundle can be enabled in the resource manager dialog.</p>
-<p><img src="/images/pages/new-brush-presets.png" alt=""></p>
+<p><img src="images/pages/new-brush-presets.png" alt=""></p>
 <h2 id="pixel-grid">Pixel grid</h2>
-<p><img src="/images/pages/pixel-grid-example.gif" alt=""></p>
+<p><img src="images/pages/pixel-grid-example.gif" alt=""></p>
 <p>Andrew Kamakin added this cool new feature: you can now see a pixel grid when you zoom in past 800% (the zoom percentage and color are configurable). Great for precision art where it is hard to tell where pixels start and end.</p>
 <p>The zoom percentage and color can be conigured in the Settings area.</p>
 <h2 id="isometric-grids">Isometric grids</h2>
 <p>Specify the angles and spacing for each axis to help with your isometric artwork. The grid area has an option for either Rectangular or Isometric grid options. There are also a few options for how they will display like color and style. This option is located in the grid docker.</p>
-<p><img src="/images/pages/isometric-grid.gif" alt=""></p>
+<p><img src="images/pages/isometric-grid.gif" alt=""></p>
 <h2 id="improvements-to-the-pop-up-palette">Improvements to the pop-up palette</h2>
-<p><img src="/images/pages/popup-palette-improvements.gif" alt=""></p>
+<p><img src="images/pages/popup-palette-improvements.gif" alt=""></p>
 <p>We have made a few changes to the pop-up palette after feedback</p>
 <ul>
 <li>A quick method for zooming with a slider</li>
@@ -203,7 +203,7 @@
 <li>Ability to change the color and opacity for assistants in the tool options</li>
 <li>Fixes for loading and saving assistants</li>
 </ul>
-<p><img src="/images/pages/assistants-opacity.gif" alt=""></p>
+<p><img src="images/pages/assistants-opacity.gif" alt=""></p>
 <h2 id="filter-improvements">Filter Improvements</h2>
 <p>New and updated filters</p>
 <ul>
@@ -213,13 +213,13 @@
 <li>The gradient map filter has been changed to create gradients on the fly and now stores this filter properly inside the kra file.</li>
 </ul>
 <h2 id="resize-thumbnails-in-presets-docker-and-show-brush-size">Resize thumbnails in presets docker and show brush size</h2>
-<p><img src="/images/pages/resize-icons.gif" alt=""></p>
+<p><img src="images/pages/resize-icons.gif" alt=""></p>
 <p>Easily resize your brush presets by the new slider. You can also quickly see a brush presets size to the right of a thumbnail now when you are in details mode</p>
 <h2 id="improved-warnings-when-saving-without-layers">Improved Warnings when Saving without layers</h2>
-<p><img src="/images/pages/krita_4_0_file_information_warning.png" alt=""></p>
+<p><img src="images/pages/krita_4_0_file_information_warning.png" alt=""></p>
 <p>Often people will save their work to an unsuitable file format, losing layers (when you save as a png image) precision and layers (when saving as a jpg image) or more esoteric features like channel depth or vector objects. For Krita 4. we implemented a warning system that will inform you which features are present in the document but cannot be saved to the chosen file format. To be extra safe, the dialog also allows you to save a simultaneous copy as a native KRA file as well.</p>
 <h2 id="new-darker-theme">New Darker Theme</h2>
-<p><img src="/images/pages/darker-theme.jpg" alt=""></p>
+<p><img src="images/pages/darker-theme.jpg" alt=""></p>
 <p>Just in case you wanted Krita even darker</p>
 <h2 id="bug-fixeschanges">Bug fixes/changes</h2>
 <p> </p>
@@ -515,7 +515,7 @@
 </ul>
 <h2 id="top-contributors">Top Contributors</h2>
 <p>Since 3.0 was released we have had a lot of people helping out making Krita better. Here is a list of the top 10 contributors for Krita for 4.0. Information taken from github during the period from June 2016 through March 2018 sorted by commit count.</p>
-<p><img src="/images/pages/boudewjin-40-github.png" alt=""> <strong>#1 Boudewjin Rempt</strong> (IRC: boud)</p>
+<p><img src="images/pages/boudewjin-40-github.png" alt=""> <strong>#1 Boudewjin Rempt</strong> (IRC: boud)</p>
 <ul>
 <li>Maintainer of Krita</li>
 <li>Project management and finances, release communication</li>
@@ -523,75 +523,75 @@
 <li>Programmed text tool, Python support and API</li>
 <li>Programmed Python Scripts: Scripter, Ten Brushes</li>
 </ul>
-<p><img src="/images/pages/dmitry-40-github.png" alt=""> <strong>#2 Dmitry Kazakov</strong> (IRC: dmitryK)</p>
+<p><img src="images/pages/dmitry-40-github.png" alt=""> <strong>#2 Dmitry Kazakov</strong> (IRC: dmitryK)</p>
 <ul>
 <li>Programmed vector tools, text tools, masked brushes</li>
 <li>Programmed multi-threaded brushes, text tool</li>
 <li>Programmed background saving, Colorize mask</li>
 </ul>
-<p><img src="/images/pages/wolthera-40-github.png" alt=""> **#3 Wolthera van Hövell tot Westerflier ** (IRC: wolthera)</p>
+<p><img src="images/pages/wolthera-40-github.png" alt=""> **#3 Wolthera van Hövell tot Westerflier ** (IRC: wolthera)</p>
 <p>★ Volunteer</p>
 <ul>
 <li>Programmed Python scripts: Comics management, Palette Docker, Settings Docker</li>
 <li>Programmed Brush Tip creator, text editor, Python API, edge detection filter</li>
 <li>Documentation on docs.krita.org and forum support</li>
 </ul>
-<p><img src="/images/pages/scott-40-github.png" alt=""> <strong>#4 Scott Petrovic</strong> (IRC: scottyp2)</p>
+<p><img src="images/pages/scott-40-github.png" alt=""> <strong>#4 Scott Petrovic</strong> (IRC: scottyp2)</p>
 <p>★ Volunteer</p>
 <ul>
 <li>UI design for vector tools, text tools, brush editor improvements, UI Polish</li>
 <li>Programmed brush editor improvements, assistants improvements, new dialog, preferences</li>
 <li>All design and programming for krita.org</li>
 </ul>
-<p><img src="/images/pages/alvin-40-github.png" alt=""> <strong>#5 Alvin Wong</strong> (IRC: windragon)</p>
+<p><img src="images/pages/alvin-40-github.png" alt=""> <strong>#5 Alvin Wong</strong> (IRC: windragon)</p>
 <p>★ Volunteer</p>
 <ul>
 <li>Better tablet support for Windows devices like Surface Pro</li>
 <li>ANGLE support to improve graphics acceleration for low end systems</li>
 <li>Helped a lot of with Windows builds and setting up nightly Windows builds</li>
 </ul>
-<p><img src="/images/pages/frederick-40-github.png" alt=""> <strong>#6 Frederic Gladhorn</strong> (IRC: fregl)</p>
+<p><img src="images/pages/frederick-40-github.png" alt=""> <strong>#6 Frederic Gladhorn</strong> (IRC: fregl)</p>
 <p>★ Volunteer</p>
 <p>Did a flurry of pointer fixes to improve memory management</p>
-<p><img src="/images/pages/timothee-40-github.png" alt=""> <strong>#7 Timothee Giet</strong> (IRC: animtim)</p>
+<p><img src="images/pages/timothee-40-github.png" alt=""> <strong>#7 Timothee Giet</strong> (IRC: animtim)</p>
 <p>★ Volunteer</p>
 <ul>
 <li>Updated and added new icons for new dialog, brush engines, warning icons and tools</li>
 <li>cleaned up SVG elements</li>
 </ul>
-<p><img src="/images/pages/allen-40-github.png" alt=""> <strong>#8 Allen Marshall</strong></p>
+<p><img src="images/pages/allen-40-github.png" alt=""> <strong>#8 Allen Marshall</strong></p>
 <p>★ Volunteer</p>
 <p>contributed a new airbrush algorithm to give much better results</p>
-<p><img src="/images/pages/eliakin-40-github.png" alt=""> <strong>#9 Eliakin Costa</strong> (IRC: eliakincosta)</p>
+<p><img src="images/pages/eliakin-40-github.png" alt=""> <strong>#9 Eliakin Costa</strong> (IRC: eliakincosta)</p>
 <p>★ Volunteer</p>
 <ul>
 <li>Google Summer of Code student</li>
 <li>Programmed and improved multiple Python scripts</li>
 <li>Programmed some of Python API</li>
 </ul>
-<p><img src="/images/pages/david-40-github.png" alt=""> <strong>#10 David Revoy</strong> (IRC: deevad) Merged his brush presets into 4.0 and polished the existing set</p>
+<p><img src="images/pages/david-40-github.png" alt=""> <strong>#10 David Revoy</strong> (IRC: deevad) Merged his brush presets into 4.0 and polished the existing set</p>
 <h2 id="artwork-made-with-krita">Artwork Made with Krita</h2>
-<p><img src="/images/pages/mod.png" alt=""> MarrHero</p>
-<p><img src="/images/pages/scoiattolottolo1.png" alt=""> Elena Pollastri</p>
-<p><img src="/images/pages/Dibujo-N%C2%B020.png" alt=""> graffted1</p>
-<p><img src="/images/pages/5-20170913-hippo.png" alt=""> Jeremy Fries</p>
-<p><img src="/images/pages/summer-A3.png" alt=""> johan jaccob</p>
-<p><img src="/images/pages/vampik-copy.jpg" alt=""> Dorota Krzyżosiak</p>
-<p><img src="/images/pages/gorillaSCR.png" alt=""> kitsune09</p>
-<p><img src="/images/pages/Earth-chan.jpg" alt=""> Gelpat Lucas</p>
-<p><img src="/images/pages/robot.png" alt=""> Tomas Marek</p>
-<p><img src="/images/pages/PTP09J1.png" alt=""> Matteo Pescarin</p>
-<p><img src="/images/pages/kinetics_1015_72dpi_rgb_v2.png" alt=""> Mauricio Hunt</p>
-<p><img src="/images/pages/bg1_1_wip6.png" alt=""> Noitibmar Tibbs</p>
-<p><img src="/images/pages/tribalFace.jpeg" alt=""> Rakesh Chakraborty</p>
-<p><img src="/images/pages/Owl_wide.jpeg" alt=""> Shannen McMorrighan</p>
-<p><img src="/images/pages/kiki4x.png" alt=""> Ramskulls Art</p>
-<p><img src="/images/pages/153-paint.png" alt=""> Răzvan Rădulescu</p>
-<p><img src="/images/pages/DV6fPpfXcAEoJH5.jpg" alt=""> Rositsa &lsquo;roz&rsquo; Zaharieva</p>
-<p><img src="/images/pages/waves-storm.png" alt=""> runend artworks</p>
-<p><img src="/images/pages/death_sylviaritter_by_sylviaritter-dbqgaeq.png" alt=""> Sylvia Ritter</p>
-<p><img src="/images/pages/IMG_0116.jpg" alt=""> Toby Willsmer</p>
-<p><img src="/images/pages/carrot-deevad.jpg" alt=""> David Revoy</p>
+<p><img src="images/pages/mod.png" alt=""> MarrHero</p>
+<p><img src="images/pages/scoiattolottolo1.png" alt=""> Elena Pollastri</p>
+<p><img src="images/pages/Dibujo-N%C2%B020.png" alt=""> graffted1</p>
+<p><img src="images/pages/5-20170913-hippo.png" alt=""> Jeremy Fries</p>
+<p><img src="images/pages/summer-A3.png" alt=""> johan jaccob</p>
+<p><img src="images/pages/vampik-copy.jpg" alt=""> Dorota Krzyżosiak</p>
+<p><img src="images/pages/gorillaSCR.png" alt=""> kitsune09</p>
+<p><img src="images/pages/Earth-chan.jpg" alt=""> Gelpat Lucas</p>
+<p><img src="images/pages/robot.png" alt=""> Tomas Marek</p>
+<p><img src="images/pages/PTP09J1.png" alt=""> Matteo Pescarin</p>
+<p><img src="images/pages/kinetics_1015_72dpi_rgb_v2.png" alt=""> Mauricio Hunt</p>
+<p><img src="images/pages/bg1_1_wip6.png" alt=""> Noitibmar Tibbs</p>
+<p><img src="images/pages/tribalFace.jpeg" alt=""> Rakesh Chakraborty</p>
+<p><img src="images/pages/Owl_wide.jpeg" alt=""> Shannen McMorrighan</p>
+<p><img src="images/pages/kiki4x.png" alt=""> Ramskulls Art</p>
+<p><img src="images/pages/153-paint.png" alt=""> Răzvan Rădulescu</p>
+<p><img src="images/pages/DV6fPpfXcAEoJH5.jpg" alt=""> Rositsa &lsquo;roz&rsquo; Zaharieva</p>
+<p><img src="images/pages/waves-storm.png" alt=""> runend artworks</p>
+<p><img src="images/pages/death_sylviaritter_by_sylviaritter-dbqgaeq.png" alt=""> Sylvia Ritter</p>
+<p><img src="images/pages/IMG_0116.jpg" alt=""> Toby Willsmer</p>
+<p><img src="images/pages/carrot-deevad.jpg" alt=""> David Revoy</p>
 
 </div>
 

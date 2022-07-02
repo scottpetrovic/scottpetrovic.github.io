@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita&#39;s 2018 Google Summer of Code | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -68,17 +68,17 @@
 
     <p>This year, we participated in Google Summer of Code with three students: <a href="https://colorathis.wordpress.com/">Ivan</a>, <a href="https://lieroz.github.io/">Andrey</a> and <a href="https://simeir.github.io/">Michael</a>. Some of the code these awesome students produced is already in Krita 4.1.1, and most of the rest has been merged already, so you can give it a whirl in the latest nightly builds for <a href="https://binary-factory.kde.org/job/Krita_Nightly_Windows_Build/">Windows</a> or <a href="https://binary-factory.kde.org/job/Krita_Nightly_Appimage_Build/">Linux</a>. So, let&rsquo;s go through what&rsquo;s been achieved this year!</p>
 <p><strong>Ivan&rsquo;s</strong> project was all about making brushes faster using vectorization. If that sounds technical, it&rsquo;s because it is! Basically, your CPU is powerful enough to do a lot of calculations at the same time, as long as it&rsquo;s the same calculation, but with different numbers. You could feed more than 200 numbers to the CPU, tell it to multiply them all, and it would do that just as fast as multiplying one number. And it just happens that calculating the way a brush looks is more or less just that sort of thing. Of course, there are complications, and Ivan is still busy figuring out how to apply the same logic to the predefined brushes. But here&rsquo;s a nice image from his <a href="https://colorathis.wordpress.com/">blog</a>:</p>
-<p><a href="/images/posts/2018/avx_cgauss_60.gif"><img src="/images/posts/2018/avx_cgauss_60.gif" alt=""></a></p>
+<p><a href="images/posts/2018/avx_cgauss_60.gif"><img src="images/posts/2018/avx_cgauss_60.gif" alt=""></a></p>
 <p>Above, how it was, underneath, what the performance is now.</p>
 <p>If Ivan&rsquo;s project was all about performance, well, so was <strong>Andrey</strong>&rsquo;s project. Andrey has been working on something just as technical and head-achey. Modern CPU&rsquo;s have many cores &ndash; some have four, and fake having eight, others have ten and fake having 20 &ndash; or even more. And unused silicon is a waste of good sand! Krita has been able to use multiple cores for a long time: it started with Dmitry Kazakov&rsquo;s <a href="http://dimula73.blogspot.com/2009/08/gsoc-krita-tile-engine-wrap-up.html">summer of code project,</a> back in 2009, which was all about the tile engine. Nine years later, Dmitry mentored Andrey&rsquo;s work on the tile engine. The tile engine is used to break up the image into smaller tiles, so every tile can be worked on independently.</p>
 <p>So when Dmitry, last year, worked on a project to let Krita use more cores and simultaneously found some places where Krita would force cores to wait on each other, he made a note: something needed to be done about that. It&rsquo;s called locking, and the solution is to get rid of those locks.</p>
 <p>So Andrey&rsquo;s project was all about making the list of tiles function without locks. And that work is done. There are still a few bugs &ndash; this stuff is amazingly complicated and tricky, so real testing is really needed. It will all be in Krita 4.2, which should be released by the end of this year. And some of it was already merged to Krita 4.1.1, too. He managed to get some really nice gains:</p>
-<p><a href="/images/posts/2018/lockless.png"><img src="/images/posts/2018/lockless-1024x506.png" alt=""></a></p>
+<p><a href="images/posts/2018/lockless.png"><img src="images/posts/2018/lockless-1024x506.png" alt=""></a></p>
 <p><strong>Michael</strong> has been working on something completely different: palette support in Krita. A palette or colorset is a set of colors &ndash; what we call a resource. Palette editing was one of the things we shared with the rest of Calligra, back then, or KOffice, even earlier on. The code is complicated and tangled and spread out. Michael&rsquo;s first task was to bring order to the chaos, and that part has already been merged to Krita 4.1.1.</p>
 <p>His next project was to work on the palette docker. His work is detailed in <a href="https://phabricator.kde.org/D14815">this Phabricator post</a>. There&rsquo;s still work in progress, but everything that was planned for the Summer of Code project has been done!</p>
-<p><a href="/images/posts/2018/listanddocker.jpg"><img src="/images/posts/2018/listanddocker-1024x512.jpg" alt=""></a></p>
+<p><a href="images/posts/2018/listanddocker.jpg"><img src="images/posts/2018/listanddocker-1024x512.jpg" alt=""></a></p>
 <p>And this is the editor:</p>
-<p><a href="/images/posts/2018/DlgPaletteEditor.png"><img src="/images/posts/2018/DlgPaletteEditor-1024x517.png" alt=""></a></p>
+<p><a href="images/posts/2018/DlgPaletteEditor.png"><img src="images/posts/2018/DlgPaletteEditor-1024x517.png" alt=""></a></p>
 
 </div>
 

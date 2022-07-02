@@ -9,14 +9,14 @@
 
 	<title>Krita | Pencils down! Or what our Summer of Code students have achieved | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -73,31 +73,31 @@
 <p>But the main work was, of course, creating the new fill layer type, making Krita preview your SeExpr script and making it possible to save scripts as resources, so you can share your scripts with others!</p>
 <!-- raw HTML omitted -->
 <p>Hugely impressive work, and real fun to play with. Everything is already in the nightly builds, too, and will be available in Krita 4.4 which we&rsquo;ll release in September! You can also read Amyspark&rsquo;s <a href="https://community.kde.org/GSoC/2020/StatusReports/LeonardoEmanuelSegovia">report,</a> or head over to the manual:</p>
-<p><a href="https://docs.krita.org/en/tutorials/seexpr.html"><img src="/images/posts/2020/1096px-SeExpr_manual_1-1024x840.jpg" alt=""></a> SeExpr Manual</p>
+<p><a href="https://docs.krita.org/en/tutorials/seexpr.html"><img src="images/posts/2020/1096px-SeExpr_manual_1-1024x840.jpg" alt=""></a> SeExpr Manual</p>
 <h2 id="integrating-the-mypaint-brush-engine-in-krita">Integrating the MyPaint Brush Engine in Krita</h2>
 <p><strong>Ashwin Daikata</strong> has successfully integrated the <a href="http://mypaint.org/">MyPaint</a> brush engine in Krita. This is actually the second time we have a MyPaint based brush engine, but the previous engine was very slow and based directly on the MyPaint internal code. When the MyPaint developers separated their brush engine into a library, it became possible to once more integrate the engine in Krita.</p>
-<p><a href="/images/posts/2020/Particules_eraser_2.png"><img src="/images/posts/2020/Particules_eraser_2.png" alt=""></a></p>
+<p><a href="images/posts/2020/Particules_eraser_2.png"><img src="images/posts/2020/Particules_eraser_2.png" alt=""></a></p>
 <p>Ashwin has done a really good job: when painting on default 8 bit RGBA layers, the brushes are as fast as in MyPaint itself.</p>
-<p><a href="/images/posts/2020/preset_selector.png"><img src="/images/posts/2020/preset_selector.png" alt=""></a>And they not only behave exactly right, you can even edit and create brushes right in Krita!</p>
-<p><a href="/images/posts/2020/Preset_editor.png"><img src="/images/posts/2020/Preset_editor-1024x568.png" alt=""></a></p>
+<p><a href="images/posts/2020/preset_selector.png"><img src="images/posts/2020/preset_selector.png" alt=""></a>And they not only behave exactly right, you can even edit and create brushes right in Krita!</p>
+<p><a href="images/posts/2020/Preset_editor.png"><img src="images/posts/2020/Preset_editor-1024x568.png" alt=""></a></p>
 <p>The MyPaint brush engine will be merged soon, and will be released Krita 5.0, planned for this year.</p>
 <p>Ashwin has prepared a <a href="https://community.kde.org/GSoC/2020/StatusReports/AshwinDhakaita">report</a> on his work, well worth a read!</p>
 <h2 id="a-storyboard-docker-for-krita">A Storyboard Docker for Krita</h2>
 <p><strong>Saurabh Kumar</strong> implemented storyboard functionality for Krita. This includes a docker to manage the storyboard, piggy-backing on Krita&rsquo;s animation feature to switch the canvas between boards and exporting the storyboards to SVG and PDF &ndash; including specifying a layout .</p>
-<p><a href="/images/posts/2020/Storyboard_custom_options.png"><img src="/images/posts/2020/Storyboard_custom_options.png" alt=""></a> Specifying a layout</p>
+<p><a href="images/posts/2020/Storyboard_custom_options.png"><img src="images/posts/2020/Storyboard_custom_options.png" alt=""></a> Specifying a layout</p>
 <p>You can view just the thumbnail, just the comments, or everything together:</p>
-<p><a href="/images/posts/2020/Storyboard_row_mode.png"><img src="/images/posts/2020/Storyboard_row_mode.png" alt=""></a> Storyboard docker in row mode</p>
+<p><a href="images/posts/2020/Storyboard_row_mode.png"><img src="images/posts/2020/Storyboard_row_mode.png" alt=""></a> Storyboard docker in row mode</p>
 <p>And Saurabh has his <a href="https://community.kde.org/GSoC/2020/StatusReports/SaurabhKumar">report</a> as well.</p>
 <h2 id="svg-mesh-gradients-in-krita">SVG Mesh Gradients in Krita</h2>
 <p><strong>Sharaf Zaman</strong> returns after his 2019 project porting Krita to Android with something completely different: the second independent implementation of mesh gradients. The first implementation was <a href="http://tavmjong.free.fr/blog/?p=316">done in Inkscape</a> by Tavmjon Bah.</p>
 <p>Of course, the trickiest part was actually rendering the gradients:</p>
-<p><a href="/images/posts/2020/Screenshot_2020-07-23_11-46-06.png"><img src="/images/posts/2020/Screenshot_2020-07-23_11-46-06.png" alt=""></a> A mesh gradient imported from Inkscape</p>
+<p><a href="images/posts/2020/Screenshot_2020-07-23_11-46-06.png"><img src="images/posts/2020/Screenshot_2020-07-23_11-46-06.png" alt=""></a> A mesh gradient imported from Inkscape</p>
 <p>The main problems with rendering were due to differences between the 2D graphics libary used to actually paint the pixels, but Sharaf overcame the issues and now Krita renders the mesh gradients just like Inkscape.</p>
 <p>But before that could be done, Sharaf had to extend Krita&rsquo;s SVG parster with support for the mesh gradient extensions. After parsing and rendering came saving.</p>
 <p>And then, of course, creating mesh gradients in Krita needed an actual UI:</p>
-<p><a href="/images/posts/2020/Handles-meshgradient.png"><img src="/images/posts/2020/Handles-meshgradient-1024x554.png" alt=""></a></p>
+<p><a href="images/posts/2020/Handles-meshgradient.png"><img src="images/posts/2020/Handles-meshgradient-1024x554.png" alt=""></a></p>
 <p>You&rsquo;ll find the the options in the vector object tool options docker:</p>
-<p><img src="/images/posts/2020/Tooloptions-meshgradient.png" alt=""></p>
+<p><img src="images/posts/2020/Tooloptions-meshgradient.png" alt=""></p>
 <p>Please check out Sharaf&rsquo;s <a href="https://community.kde.org/GSoC/2020/StatusReports/SharafZaman">final report</a> for more details!</p>
 
 </div>

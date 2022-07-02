@@ -9,14 +9,14 @@
 
 	<title>Krita | June 2019 Krita Development Update | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -69,23 +69,23 @@
     <p>Time for another development update. <a href="/item/april-development-update/">The last one was in April</a>. We skipped reporting on May, because doing a <a href="/item/krita-4-2-0-is-out/">release</a> takes a lot of time and effort and concentration! And then we had to do a <a href="/item/krita-4-2-1-released/">bugfix release</a> in the first week of June; the next release, Krita 4.2.2, will be out by the end of this month.</p>
 <p>We&rsquo;re still fixing bugs like crazy, helped by long-standing community member Ivan Yossi, who started fixing bugs full-time in May, too.</p>
 <p>But then, we&rsquo;re also getting a crazy number of bug reports. Honesty compels us to say that many of those reports are not so very valuable: there are many people with broken systems who report problems that we cannot solve in Krita, and many people report bugs without telling us anything at all. Hence we <a href="https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html">created a manual page on reporting bugs</a>! But there are also many helpful bug reports that give us a chance to improve things.</p>
-<p><a href="/images/posts/2019/bug_graph.png"><img src="/images/posts/2019/bug_graph.png" alt=""></a></p>
+<p><a href="images/posts/2019/bug_graph.png"><img src="images/posts/2019/bug_graph.png" alt=""></a></p>
 <p>So, how does Krita&rsquo;s development work these days? Well, there are the many people who work on Krita as volunteers, which has always been the mainstay of Krita development. Then there are this year&rsquo;s four Google Summer of Code students, who are all making good progress in their projects.  Krita has participated in every edition of Google Summer of Code since the beginning.</p>
 <p>But these days, there are four people working on Krita full-time, thanks to donations, the development fund (which we&rsquo;re working on to revamp a bit and make it more useful to supporters, too), the Windows Store and the Steam Store. None of us is exactly getting rich, but we&rsquo;re getting by. And we&rsquo;re doing stuff that would otherwise be hard to do: projects that take several weeks or months to complete, fixing lots of bugs all over the place, doing janitorial stuff like fixing warnings and so on.</p>
 <p>Since this is a development update, we&rsquo;ll just in passing mention all the great work that&rsquo;s been done on this website, <a href="https://docs.krita.org">the manual</a>, and all the work supporting our users on places like the <a href="https://forums.kde.org/krita">forum</a> or <a href="https://reddit.com/r/krita">reddit</a>.</p>
 <p>We&rsquo;re all hanging out on the Krita IRC channel, which is the main place where contributors to Krita come together to discuss whatever needs to be discussed. We have a weekly meeting every Monday from 14:00 to 15:00 CE(S)T &ndash; which means that if you&rsquo;ve got a question about Krita, that&rsquo;s probably not the right time to join the channel.</p>
 <p>In August, we&rsquo;ll have another <a href="https://community.kde.org/Krita/Sprint2019">Krita Sprint</a>, a big one, with 25 people attending. Half of the people coming to the Sprint are contributors, half are artists and half are both.</p>
 <p>So, that&rsquo;s how our community in general works &ndash; but what did we do specifically, since the release? Since 4.2.0, we released 4.2.1 with a bunch of bug fixes already, and the fixing has not abated. Tiar has finished most of the work on making Krita report back any and all failures when saving an image. Dmitry has been fixing some severe issues in the layer stack, GPU canvas and tool handling, Boudewijn has been fixing bugs all over the place and Ivan has been busy with animated brush tips (that is, <a href="https://gitlab.gnome.org/GNOME/gimp/blob/master/devel-docs/gih.txt">Gimp Image Hose</a> files).</p>
-<p><a href="/images/posts/2019/gih.png"><img src="/images/posts/2019/gih.png" alt=""></a> Color is random, left and right hands come one after the other, and hand direction  is dependent on drawing direction. Image by Ivan Yossi.</p>
+<p><a href="images/posts/2019/gih.png"><img src="images/posts/2019/gih.png" alt=""></a> Color is random, left and right hands come one after the other, and hand direction  is dependent on drawing direction. Image by Ivan Yossi.</p>
 <p>Not for 4.2.2, but 4.3 (which should be out in September) are two new features already: the palettize filter by <a href="https://twitter.com/not_surt/status/1137609273150623744">Carl Olsson</a>, still work in progress, but that&rsquo;s fine, 4.3 isn&rsquo;t done yet, and the High Pass filter by Miguel Lopez:</p>
-<p><a href="/images/posts/2019/palettize.jpg"><img src="/images/posts/2019/palettize.jpg" alt=""></a> Allows interactively painting in truecolour while viewing matched to palette, with optional pattern-based dithering. Image by Carl Schwan</p>
+<p><a href="images/posts/2019/palettize.jpg"><img src="images/posts/2019/palettize.jpg" alt=""></a> Allows interactively painting in truecolour while viewing matched to palette, with optional pattern-based dithering. Image by Carl Schwan</p>
 <p>At the <a href="/item/krita-at-the-2019-libre-graphics-meeting/">Libre Graphics Meeting, which was attended by Boudewijn, Wolthera and Tiar</a>, several projects presented the history of their project with cool graphs. Well, since Krita officially turned twenty on June 8th (which we completely forgot to celebrate, because of all the release work), we thought it might be interesting to analyze the history of Krita&rsquo;s codebase a bit as well.</p>
-<p><a href="/images/posts/2019/first_commit.png"><img src="/images/posts/2019/first_commit.png" alt=""></a></p>
+<p><a href="images/posts/2019/first_commit.png"><img src="images/posts/2019/first_commit.png" alt=""></a></p>
 <p>Interestingly, this commit isn&rsquo;t even in Krita&rsquo;s git repository anymore: a lot of history was lost over the years. Krita started out as KImageShop in KDE&rsquo;s CVS repository. Then, after KImageShop had been renamed to Krayon and Krita, the CVS repository was converted to Subversion. Then the subversion repository was converted to git, and the git repository <a href="https://lwn.net/Articles/419822/">split</a> into a <a href="https://cgit.kde.org/koffice.git/">KOffice</a>, a <a href="https://cgit.kde.org/calligra.git/">Calligra</a> and a <a href="https://cgit.kde.org/calligra-history.git/">Calligra-History</a> repository.  And then the <a href="https://invent.kde.org/kde/krita">Krita repository</a> was extracted from the Calligra repository. Still, let&rsquo;s take a look at what we found out.</p>
 <p>We used <a href="https://github.com/erikbern/git-of-theseus">theseus-of-git</a> to analyze the repository. Here&rsquo;s the number of lines of code written by the top twenty-five developers.</p>
-<p><a href="/images/posts/2019/25authors.png"><img src="/images/posts/2019/25authors.png" alt=""></a>Another interesting graphic shows how long code survives over the years. Just as in the previous graph, there&rsquo;s a huge peak of code that quickly disappears, and that&rsquo;s when KOffice/Calligra was being developed together with Nokia for the Maemo document viewer application. When Krita was separated from Calligra, all that code was no longer necessary.</p>
-<p><a href="/images/posts/2019/25cohorts.png"><img src="/images/posts/2019/25cohorts.png" alt=""></a>The type of files in the repository is pretty constant: it&rsquo;s .cpp and .h files, meaning, that Krita is and always has beem mostly C++. The funniest thing is maybe the enormous number of lines of code in .xmi files. That&rsquo;s <a href="https://umbrello.kde.org/">Umbrello</a>&rsquo;s file format, and it represents UML diagrams of Krita&rsquo;s codebase. Those had to be updated manually, and at one point, we just deleted them because they had gotten useless.</p>
-<p><a href="/images/posts/2019/25exts.png"><img src="/images/posts/2019/25exts.png" alt=""></a></p>
+<p><a href="images/posts/2019/25authors.png"><img src="images/posts/2019/25authors.png" alt=""></a>Another interesting graphic shows how long code survives over the years. Just as in the previous graph, there&rsquo;s a huge peak of code that quickly disappears, and that&rsquo;s when KOffice/Calligra was being developed together with Nokia for the Maemo document viewer application. When Krita was separated from Calligra, all that code was no longer necessary.</p>
+<p><a href="images/posts/2019/25cohorts.png"><img src="images/posts/2019/25cohorts.png" alt=""></a>The type of files in the repository is pretty constant: it&rsquo;s .cpp and .h files, meaning, that Krita is and always has beem mostly C++. The funniest thing is maybe the enormous number of lines of code in .xmi files. That&rsquo;s <a href="https://umbrello.kde.org/">Umbrello</a>&rsquo;s file format, and it represents UML diagrams of Krita&rsquo;s codebase. Those had to be updated manually, and at one point, we just deleted them because they had gotten useless.</p>
+<p><a href="images/posts/2019/25exts.png"><img src="images/posts/2019/25exts.png" alt=""></a></p>
 
 </div>
 

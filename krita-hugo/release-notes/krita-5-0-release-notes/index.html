@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 5.0 Release Notes | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -78,10 +78,10 @@
 <p><strong>Hey, wait! Don&rsquo;t skip this part&hellip; Krita really needs your support!</strong></p>
 <p>One of the main things that makes Krita stand out from its rivals is its <em>non-profit, open source and community-driven development model</em>. Krita is made by a global team of programmers and artists, some working professionally and others passionately contributing their talents when they can, with the shared mission of creating a powerful and expressive tool for artists everywhere. Moreover, we all believe that artists should own and control their tools, and that digital art should be just as accessible as putting a pencil to paper.</p>
 <p>What a concept, eh? But here&rsquo;s the rub: our grassroots development model means, well&hellip; <em>grassroots funding</em>.</p>
-<p><img src="/images/pages/2021-11-16_kiki-piggy-bank_krita5.png" alt="">The Krita community is the lifeblood of the project, and without ongoing support from members like you progress would grind to a screeching halt. Thanks to our many contributors over the years Krita has come a long way from its humble beginnings and we don&rsquo;t take that for granted, but in order for us to realize our goal of funding 10 full-time developers to bring Krita to the next level, we seriously need your help. <strong>So, if you can afford to chip in, please consider stepping up to become a member of the Krita Development Fund, join the discussion and get involved.</strong> There&rsquo;s no limit to the Krita we can build together, but we just can&rsquo;t do it without you&ndash;it&rsquo;s as simple as that!</p>
+<p><img src="images/pages/2021-11-16_kiki-piggy-bank_krita5.png" alt="">The Krita community is the lifeblood of the project, and without ongoing support from members like you progress would grind to a screeching halt. Thanks to our many contributors over the years Krita has come a long way from its humble beginnings and we don&rsquo;t take that for granted, but in order for us to realize our goal of funding 10 full-time developers to bring Krita to the next level, we seriously need your help. <strong>So, if you can afford to chip in, please consider stepping up to become a member of the Krita Development Fund, join the discussion and get involved.</strong> There&rsquo;s no limit to the Krita we can build together, but we just can&rsquo;t do it without you&ndash;it&rsquo;s as simple as that!</p>
 <p><a href="https://fund.krita.org/"><strong>Support our mission by joining the Krita Development Fund today!</strong></a></p>
 <video controls width="100%">
-    <source src="/videos/Video-for-store_final-30fps.mp4" type="video/mp4">
+    <source src="videos/Video-for-store_final-30fps.mp4" type="video/mp4">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
@@ -89,11 +89,11 @@
 <p> </p>
 <h2 id="faster--more-flexible-resource-system">Faster &amp; More Flexible Resource System</h2>
 <p>We have fully rewritten <a href="https://docs.krita.org/en/reference_manual/resource_management.html">Krita&rsquo;s handling of resources</a> like brush presets, gradients, palettes and more. Before we had a fragile system of models, where we should have been using a proper database, and thus, we are now using an SQLite database as the core of our resource handling. This fixes many bugs with tagging and loading resources as well as a handful of UI problems. It also makes our resource system faster and leaner. Because we are now not loading all resources at once, Krita will now start up quicker, and take up less working memory (from our tests, Krita 5.0 took up 200 mb less RAM!).</p>
-<p><img src="/images/pages/bundle-manager.png" alt=""></p>
+<p><img src="images/pages/bundle-manager.png" alt=""></p>
 <h4 id="new-bundle-manager-and-configurable-resource-locations">New bundle manager and configurable resource locations.</h4>
 <p>Krita&rsquo;s resource folder used to be hardcoded. Not any more! You can now configure which folder is the resource folder and where the cache is located. Those of us who&rsquo;d like to have their resource folder on a USB stick will now be able to do so.</p>
 <p>As well, we now support more resource libraries. We already had our own resource bundle format, but now we also support photoshop layer style libraries and brush libraries. Documents can now also be seen as a place to store resources, and though we only use it for palettes right now, we hope to extend this in the future.</p>
-<p><a href="/images/posts/2021/Manageresources.png"><img src="/images/pages/Manageresources.png" alt="Screenshot of the new resource manager."></a></p>
+<p><a href="images/posts/2021/Manageresources.png"><img src="images/pages/Manageresources.png" alt="Screenshot of the new resource manager."></a></p>
 <h4 id="new-resource-manager">New Resource Manager</h4>
 <p>This new manager allows you to mass-tag brushes as well as delete and undelete resources at will (Krita will deactivate these). It comes with nice little UI features, like a tagging widget that shows all the current tags on a resource in one quick glance.</p>
 <h4 id="layer-styles-are-now-resources">Layer styles are now resources</h4>
@@ -104,7 +104,7 @@
 <p>There was a <a href="https://conf.tube/videos/watch/b7b9f48e-606b-42a6-9dae-8def47551970">Libre Graphics Meeting talk</a> discussing the technical details.</p>
 <h4 id="wide-gamut-and-unbounded-gradients-mr-668httpsinventkdeorggraphicskrita-merge_requests668--mr-675httpsinventkdeorggraphicskrita-merge_requests675">Wide gamut and unbounded gradients (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/668">MR 668</a> , <a href="https://invent.kde.org/graphics/krita/-/merge_requests/675">MR 675</a>).</h4>
 <p>But not only the 8 bit images got love. For images in 16 and 32 bit, the gradients Krita generates will now be able to use the full scale available. Furthermore, we&rsquo;ve made it possible to store wide gamut and unbounded colors using <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stop-color">SVG 1.1 icc-color definitions</a>, meaning that you can now have radial gradients that contain rec2020 green, or whites that would only be possible in HDR images, bringing the conveniences of the gradient tool to people who work in these higher bit depths. We hope to support CSS 4 color definitions for the stop gradients when <a href="https://www.w3.org/TR/css-color-4/">it&rsquo;s draft</a> has been completed.</p>
-<p><img src="/images/pages/krita_gradient_dither.png" alt="Comparison of dithered and non-dithered gradients"> Comparison of gradients with and without dither, with an extra set of examples with increased contrast to display the difference.</p>
+<p><img src="images/pages/krita_gradient_dither.png" alt="Comparison of dithered and non-dithered gradients"> Comparison of gradients with and without dither, with an extra set of examples with increased contrast to display the difference.</p>
 <h4 id="gradient-editors-got-an-overhaul-mr-857httpsinventkdeorggraphicskrita-merge_requests857">Gradient Editors got an overhaul (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/857">MR 857</a>).</h4>
 <p>They are now more cohesive, compact and convenient, with small options left and right to make <a href="https://docs.krita.org/en/reference_manual/resource_management/resource_gradients.html">creating gradients easier than before</a>.</p>
 <ul>
@@ -113,14 +113,14 @@
 <li>New color sorting options</li>
 <li>Cycle through stops with left and right arrows</li>
 </ul>
-<p><img src="/images/pages/new-gradient-editor-web.png" alt=""></p>
+<p><img src="images/pages/new-gradient-editor-web.png" alt=""></p>
 <h4 id="faster-color-management-with-fast-float-plugin-mr-726httpsinventkdeorggraphicskrita-merge_requests726">Faster color management with fast float plugin (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/726">MR 726</a>)</h4>
 <p>With the <a href="https://www.littlecms.com/plugin/">fast float plugin</a>, the speed of color management improves drastically, especially with 32bit float. This is enabled by default. Color management via LittleCMS enables us to display colors accurately, and is also necessary for professional features like soft proofing and color model support, and is always applied to Krita&rsquo;s view of the image.</p>
-<p><img src="/images/pages/little-cms-logo.png" alt=""></p>
+<p><img src="images/pages/little-cms-logo.png" alt=""></p>
 <p>Work by artists using Krita:</p>
-<p><a href="/images/pages/birdweek-sketch1longtailedtit.png"><img src="/images/pages/birdweek-sketch1longtailedtit.png" alt="A longtail bird sitting on a tree branch."></a> by <a href="https://thimblefolio.com">Christine Garner</a> (CC-BY-NC-ND 4.0)</p>
-<p><a href="/images/pages/m_coudert_202108010.png"><img src="/images/pages/m_coudert_202108010.png" alt="A sphinx cat, the lighting making for an intimate scene"></a> <a href="https://www.makomatt.com/">*Matthieu COUDERT (MaKo)* Designer graphique</a> (CC-BY)</p>
-<p><a href="/images/pages/negeon_renj_20210401test.png"><img src="/images/pages/negeon_renj_20210401test.png" alt="A teenage girl in a sailor school girl uniform sitting on a concrete wall, enjoying the sunset. She&amp;rsquo;s joined by a tiny white creature wearing a sailor hat."></a> By Negeon Renj (CC-BY-SA)</p>
+<p><a href="images/pages/birdweek-sketch1longtailedtit.png"><img src="images/pages/birdweek-sketch1longtailedtit.png" alt="A longtail bird sitting on a tree branch."></a> by <a href="https://thimblefolio.com">Christine Garner</a> (CC-BY-NC-ND 4.0)</p>
+<p><a href="images/pages/m_coudert_202108010.png"><img src="images/pages/m_coudert_202108010.png" alt="A sphinx cat, the lighting making for an intimate scene"></a> <a href="https://www.makomatt.com/">*Matthieu COUDERT (MaKo)* Designer graphique</a> (CC-BY)</p>
+<p><a href="images/pages/negeon_renj_20210401test.png"><img src="images/pages/negeon_renj_20210401test.png" alt="A teenage girl in a sailor school girl uniform sitting on a concrete wall, enjoying the sunset. She&amp;rsquo;s joined by a tiny white creature wearing a sailor hat."></a> By Negeon Renj (CC-BY-SA)</p>
 <h2 id="faster-smudge-brushes--new-mypaint-brush-engine">Faster Smudge Brushes &amp; New MyPaint Brush Engine</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -131,32 +131,32 @@
 <p>With the pixel brush now capable of lightness and gradient mapped brush tips, the color smudge engine was to follow. This required a <a href="https://docs.krita.org/en/reference_manual/brushes/brush_engines/color_smudge_engine.html">full rewrite of how the engine works</a>, and often requested features like separation of color rate and color smudge have been added into the mix as well, plus optimization improvements!</p>
 <h4 id="mypaint-brush-engine-mr-464httpsinventkdeorggraphicskrita-merge_requests464-mr-582httpsinventkdeorggraphicskrita-merge_requests582">MyPaint Brush engine (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/464">MR 464</a>, <a href="https://invent.kde.org/graphics/krita/-/merge_requests/582">MR 582</a>)</h4>
 <p><a href="https://github.com/mypaint/libmypaint">MyPaint&rsquo;s brush engine</a> is known for its interesting experiments in how to think of brushes. Krita had some support for it in the distant past, but we had to remove that plugin. Now, Ashwin has created a new <a href="https://docs.krita.org/en/reference_manual/brushes/brush_engines/mypaint_engine.html">integration of this engine</a>, allowing for MyPaint 1.2 brushes to be loaded into Krita and used for your artworks.</p>
-<p><img src="/images/pages/new-texture-modes.png" alt=""></p>
+<p><img src="images/pages/new-texture-modes.png" alt=""></p>
 <h4 id="new-modes-for-textured-brushes-mr-806httpsinventkdeorggraphicskrita-merge_requests806">New modes for textured brushes (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/806">MR 806</a>).</h4>
 <p>Deif Lou has added a variety of new modes for <a href="https://docs.krita.org/en/reference_manual/brushes/brush_settings/texture.html">the texture option</a>. Hard Mix, Color Dodge, Color Burn, Overlay, Height, Linear Height and more will now be available for all engines supporting them, and the Hard Mix Softer mode is also available for the <a href="https://docs.krita.org/en/reference_manual/brushes/brush_settings/masked_brush.html">Masked Brush</a> blending. These are accessed through the brush editor with pixel engine brushes. Go to Texture group &gt; Pattern &gt; Options tab. The new modes have been added to the Texturing Mode drop-down.</p>
 <h2 id="animation-overhaul">Animation Overhaul</h2>
 <p><a href="https://docs.krita.org/en/reference_manual/dockers/animation_timeline.html">Our Timeline Docker</a> has a new look and a variety of improvements. We&rsquo;ve removed the old Animation Docker and moved its core functionality directly onto the Timeline. Also, animations can be paused at any time, pinning layers has been made easier, playback range automatically adapts as key frames are added, and a number of other changes have been made to improve visual clarity and the overall feel of navigation, transport and editing. (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/311">MR 311</a> <a href="https://invent.kde.org/graphics/krita/-/merge_requests/317">MR 317</a>)</p>
-<p><img src="/images/pages/animation-50-ui.png" alt=""></p>
+<p><img src="images/pages/animation-50-ui.png" alt=""></p>
 <h4 id="redesigned-animation-curves-docker-mr-601httpsinventkdeorggraphicskrita-merge_requests601">Redesigned Animation Curves Docker (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/601">MR 601</a>)</h4>
 <p>Like the Timeline Docker, <a href="https://docs.krita.org/en/reference_manual/dockers/animation_curves.html">Krita&rsquo;s Curves Docker</a> has also been updated with an emphasis on improving the overall look and feel of navigation and editing. Value key frames are now easier to edit thanks to the improved mouse controls with axis snapping, and a box for reading and writing the specific value of the selected key frame. The visibility of individual channels can be hidden or soloed. And, new navigation options like zoomable scrollbars as well as &ldquo;fit to curve&rdquo; and &ldquo;fit to channel&rdquo; buttons make it much easier to move around the new, dynamic graph view.</p>
-<p><img src="/images/pages/animation-curves-50.png" alt=""></p>
+<p><img src="images/pages/animation-curves-50.png" alt=""></p>
 <h4 id="clone-frames-mr-469httpsinventkdeorggraphicskrita-merge_requests469">Clone Frames (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/469">MR 469</a>)</h4>
 <p>Krita 5 now supports Clone Frames, a much requested feature that allows animators to reuse the exact same key frame at multiple times throughout their animation. Clone frames are great for building looping animations and finding clever other ways to save yourself time while animating. Just remember that editing one clone edits them all!</p>
 <video controls width="100%">
-    <source src="/videos/krita_anim-clones-direct.webm" type="video/webm">
+    <source src="videos/krita_anim-clones-direct.webm" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
 <h4 id="transform-mask-animation-mr-493httpsinventkdeorggraphicskrita-merge_requests493">Transform Mask Animation (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/493">MR 493</a>)</h4>
 <p>What good is a shiny Curves Docker without some new things to animate? Along with layer opacity, Krita 5 also brings the ability to animate the position, rotation, scale and shear of any layer through animated Transform Masks. Sometimes referred to as &ldquo;tweening&rdquo; in other software, this feature should help with animations that are difficult or inconvenient to do through drawing alone. With animated transform masks, moving a walking figure as shown in the video will be a piece of cake.</p>
 <video controls width="100%">
-    <source src="/images/posts/2021/krita_anim-tform-direct.webm" type="video/webm">
+    <source src="images/posts/2021/krita_anim-tform-direct.webm" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
 <h4 id="import-videos-as-animations-mr-778httpsinventkdeorggraphicskrita-merge_requests778">Import Videos as Animations (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/778">MR 778</a>)</h4>
 <p>Community contributor <strong>&ldquo;KnowZero&rdquo;</strong> has iterated on <strong>Scott Petrovic</strong>&rsquo;s feature which allows for <a href="https://docs.krita.org/en/reference_manual/import_animation.html">importing videos and animated images</a> as Krita animations. This improved importer can be used with an existing document or to create a new document, works with a wider range of formats, and also decreases disk overhead. It&rsquo;s great for studying and rotoscoping! Thank you both!</p>
-<p><img src="/images/pages/import_video.png" alt="The video import dialog."></p>
+<p><img src="images/pages/import_video.png" alt="The video import dialog."></p>
 <h4 id="even-more-animation-improvements">Even More Animation Improvements!</h4>
 <h4 id="new-options-for-exporting-gif-apng-and-webp-mr-734httpsinventkdeorggraphicskrita-merge_requests734">New Options for Exporting GIF, APNG and WEBP (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/734">MR 734</a>)</h4>
 <p>Another useful patch from &ldquo;<strong>KnowZero</strong>&rdquo; allows animated images to set configuration options while exporting, just like their video counterparts. This should make it much easier to work with animated image formats.</p>
@@ -177,21 +177,21 @@
 <h4 id="new-animation-workspace">New Animation Workspace</h4>
 <p>We&rsquo;ve put together an updated animation workspace that takes advantage of our more space-efficient dockers.</p>
 <p>Work by artists using Krita:</p>
-<p><a href="/images/pages/loentar_kuro-tt_003.gif"><img src="/images/pages/loentar_kuro-tt_003.gif" alt="A turn table of a catgirl"></a> by Dmitrii Utkin</p>
-<p><a href="/images/pages/ramon_horse_power.jpg"><img src="/images/pages/ramon_horse_power-1024x790.jpg" alt="Profile portrait of a horse, painted in a very textured manner."></a> by Ramón Miranda</p>
-<p><a href="/images/pages/simon_rollins_olivia_s_fall_dress.png"><img src="/images/pages/simon_rollins_olivia_s_fall_dress-702x1024.png" alt="An anthromorphic cat named Olivia with a yellow-orange dress."></a> By Simon Rollins (CC-BY-NC-SA)</p>
+<p><a href="images/pages/loentar_kuro-tt_003.gif"><img src="images/pages/loentar_kuro-tt_003.gif" alt="A turn table of a catgirl"></a> by Dmitrii Utkin</p>
+<p><a href="images/pages/ramon_horse_power.jpg"><img src="images/pages/ramon_horse_power-1024x790.jpg" alt="Profile portrait of a horse, painted in a very textured manner."></a> by Ramón Miranda</p>
+<p><a href="images/pages/simon_rollins_olivia_s_fall_dress.png"><img src="images/pages/simon_rollins_olivia_s_fall_dress-702x1024.png" alt="An anthromorphic cat named Olivia with a yellow-orange dress."></a> By Simon Rollins (CC-BY-NC-SA)</p>
 <h2 id="new-storyboarding-tools-and-workflow">New Storyboarding Tools and Workflow</h2>
 <p>Thanks to the help of one of our 2020 Google Summer of Code students, <strong>Saurabh &ldquo;Confifu&rdquo; Kumar</strong>, Krita now has a Storyboard Docker that can be used to plan the shots and storytelling of complex shorts or films. (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/392">MR 392</a>). This docker does not just allow you to collect and annotate scenes, but also a wide variety of export options, such as PDF and SVG. There are multiple views you can switch between (screenshot showing the row view).</p>
-<p><a href="/images/posts/2020/Storyboard_row_mode.png"><img src="/images/pages/Storyboard_row_mode.png" alt=""></a></p>
+<p><a href="images/posts/2020/Storyboard_row_mode.png"><img src="images/pages/Storyboard_row_mode.png" alt=""></a></p>
 <h4 id="flexible-storyboard-export-templating">Flexible storyboard export templating</h4>
 <p>Krita&rsquo;s new storyboard docker has a lot of options for exporting your boards, including the ability to use SVG file data to specify a completely custom layout. This advanced feature means that, with a little work, storyboards that you make in Krita can always be made to fit your project&rsquo;s needs or match existing storyboard paper.</p>
-<p><a href="/images/posts/2021/storyboard_export_template.png"><img src="/images/pages/storyboard_export_template-214x300.png" alt="Krita default svg storyboard export template"></a></p>
+<p><a href="images/posts/2021/storyboard_export_template.png"><img src="images/pages/storyboard_export_template-214x300.png" alt="Krita default svg storyboard export template"></a></p>
 <h2 id="user-interface-improvements">User Interface Improvements</h2>
-<p><a href="/images/posts/2021/krita-style-change.png"><img src="/images/pages/krita-style-change-1024x533.png" alt="Krita in the old oxygen style"></a></p>
+<p><a href="images/posts/2021/krita-style-change.png"><img src="images/pages/krita-style-change-1024x533.png" alt="Krita in the old oxygen style"></a></p>
 <p>Our icons were last refreshed for 2.9, and over the years a few hiccups had emerged. <strong>Timothée Giet</strong> was hired to give the icon set a good scrubbing, and the UI overall had all sorts of little tweaks done by <strong>Raghavendra Kamath</strong>, <strong>Pedro Reis</strong>, <strong>Scott Petrovic</strong>, <strong>Tom Tom</strong>, <strong>Simon Repp</strong>, <strong>Paul Franz</strong>, <strong>Andrei Rudenko</strong>, <strong>Daniel (Sxnic)</strong>, and <strong>Alvin Wong</strong>.</p>
 <h4 id="detach-the-brush-editor-from-the-toolbar">Detach the brush editor from the toolbar</h4>
 <p>You now have the option to make the brush editor detach to its own window, or stay as a pop-up from the toolbar. A detached brush editor can be great for brush creators that make frequent tweaks to their brushes and want to see the result. No more having to constantly show the brush editor every time you want to make a change.</p>
-<p><img src="/images/pages/detach-brush-editor.png" alt=""></p>
+<p><img src="images/pages/detach-brush-editor.png" alt=""></p>
 <h4 id="add-option-to-auto-hide-controls-in-overview-docker-mr-739httpsinventkdeorggraphicskrita-merge_requests739">Add option to auto hide controls in overview docker (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/739">MR 739</a>)</h4>
 <p>This makes it so the view controls hide in the overview docker when not in use, giving the maximum room to the overview itself.</p>
 <h4 id="support-for-user-installed-themes-on-linux-and-widget-style-selection-mr-557httpsinventkdeorggraphicskrita-merge_requests557-mr-354httpsinventkdeorggraphicskrita-merge_requests354">Support for user-installed themes on Linux and widget style selection (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/557">MR 557</a>, <a href="https://invent.kde.org/graphics/krita/-/merge_requests/354">MR 354</a>)</h4>
@@ -201,7 +201,7 @@
 <h4 id="color-selector-uses-theme-color-for-background-mr-365httpsinventkdeorggraphicskrita-merge_requests365">Color Selector Uses Theme Color for Background (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/365">MR 365</a>)</h4>
 <p>This was mid-grey to give an unbiased understanding of the color, but it can now be turned off for extra consistency.</p>
 <h2 id="new-file-formats-with-avif--webp">New File Formats with AVIF &amp; WebP</h2>
-<p><a href="/images/posts/2021/avif_import_cosmos.png"><img src="/images/pages/avif_import_cosmos-1024x425.png" alt="Image of a sunset"></a></p>
+<p><a href="images/posts/2021/avif_import_cosmos.png"><img src="images/pages/avif_import_cosmos-1024x425.png" alt="Image of a sunset"></a></p>
 <p>This avif is a frame from Cosmos Laundromat, encoded in rec 2100 pq. Krita opens files like these as 32bit float linear images, making them ready to be used with the LUT docker.</p>
 <h4 id="heif-plugin-update-and-avif-support-mr-530httpsinventkdeorggraphicskrita-merge_requests530">Heif plugin update and Avif support (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/530">MR 530</a>).</h4>
 <p>Heif and Avif are the new formats being used by mobile phone cameras, with Avif in particular being slated as a new image format for websites. Krita now supports loading and saving for both RGB and monochrome, 8 bit, 10 bit and 12 bit to these <a href="https://docs.krita.org/en/general_concepts/file_formats/file_heif.html">two file formats</a>. Color space encoding is fully supported, including the HDR options such as Rec 2100 PQ and Rec 2100 HLG. The official binaries will also ship rav1e and dav1d for speedy encoding and decoding of Avif.</p>
@@ -214,9 +214,9 @@
 <h4 id="resize-image-when-exporting-mr-710httpsinventkdeorggraphicskrita-merge_requests710">Resize image when exporting (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/710">MR 710</a>)</h4>
 <p><strong>Sachin Jindal</strong> added the option to crop and resize an image before export. When exporting images, you&rsquo;ll often want to crop and resize them before export. Some artists had however made the mistake of accidentally saving over their working file with their export file. With the new advanced export, you can avoid this problem. This can be accessed from the <strong>File &gt; Export Advanced</strong> main menu option.</p>
 <p>Work by artists using Krita:</p>
-<p><a href="/images/pages/m_coudert_202107015.png"><img src="/images/pages/m_coudert_202107015.png" alt="A study of wasps and other insects."></a> <a href="https://www.makomatt.com/">*Matthieu COUDERT (MaKo)* Designer graphique</a> (CC-BY)</p>
-<p><a href="/images/pages/marina_moroz_The_Gatherer.png"><img src="/images/pages/marina_moroz_The_Gatherer.png" alt="A mermaid like creature gathering pearls with their tentacles"></a> By Marina Moroz (CC BY SA)</p>
-<p><a href="/images/pages/alex_sabo_Dragon_Caller_Page_02-03.png"><img src="/images/pages/alex_sabo_Dragon_Caller_Page_02-03.png" alt="Page two and three depicting a younth reading a magic tome in a forest, but getting distracted by a deer."></a> <em>Dragon Caller</em> Page 2 and 3, Concept and Story by Daniel Rizea Art by Alexandru Sabo</p>
+<p><a href="images/pages/m_coudert_202107015.png"><img src="images/pages/m_coudert_202107015.png" alt="A study of wasps and other insects."></a> <a href="https://www.makomatt.com/">*Matthieu COUDERT (MaKo)* Designer graphique</a> (CC-BY)</p>
+<p><a href="images/pages/marina_moroz_The_Gatherer.png"><img src="images/pages/marina_moroz_The_Gatherer.png" alt="A mermaid like creature gathering pearls with their tentacles"></a> By Marina Moroz (CC BY SA)</p>
+<p><a href="images/pages/alex_sabo_Dragon_Caller_Page_02-03.png"><img src="images/pages/alex_sabo_Dragon_Caller_Page_02-03.png" alt="Page two and three depicting a younth reading a magic tome in a forest, but getting distracted by a deer."></a> <em>Dragon Caller</em> Page 2 and 3, Concept and Story by Daniel Rizea Art by Alexandru Sabo</p>
 <h2 id="new-tools--improvements">New Tools &amp; Improvements</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -226,7 +226,7 @@
 <h4 id="record-your-next-painting-session-mr-522httpsinventkdeorggraphicskrita-merge_requests522-mr-180httpsinventkdeorggraphicskrita-merge_requests180">Record your next painting session (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/522">MR 522</a>, <a href="https://invent.kde.org/graphics/krita/-/merge_requests/180">MR 180</a>).</h4>
 <p>Thanks to community contributor <strong>Dmitrii Utkin</strong>, Krita artists can now record a time-lapse video of their creative sessions with the <a href="https://docs.krita.org/en/reference_manual/dockers/recorder_docker.html">new Recorder Docker</a>! (Also, a quick shout out to another community contributor, <strong>Shi Yan</strong>, for their good work on this feature. Thank you both for your contributions.)</p>
 <video controls width="100%">
-    <source src="/videos/local-assistants-50.mp4" type="video/webm">
+    <source src="videos/local-assistants-50.mp4" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
@@ -235,11 +235,11 @@
 <p>Another community contributor, <strong>Nabil Maghfur Usman</strong>, has added a brand new 2 Point Perspective assistant. This assistant keeps vanishing points reasonably spaced and on the horizon line, draws a grid to help visualize perspective distortion, and is great for adding solidity and depth to your drawings.</p>
 <h4 id="limit-area-feature-for-assistants-mr-850httpsinventkdeorggraphicskrita-merge_requests850">Limit Area feature for Assistants (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/850">MR 850</a>).</h4>
 <p>The two-point and vanishing point assistants are designed so their previews and areas you can snap to draw over the whole image. With limit area, two extra handles are added so you can limit the area in which the assistant is effective, which is very useful for comic pages.</p>
-<p><img src="/images/pages/instack_transform.gif" alt="video of candle stick being transformed"></p>
+<p><img src="images/pages/instack_transform.gif" alt="video of candle stick being transformed"></p>
 <h4 id="in-stack-transform-preview">In-stack transform preview</h4>
 <p>Our transform tool preview is now composited into the layer stack. Before, Krita&rsquo;s transform preview was always hovering above all the layers in the canvas, meaning that you could not see if something aligned correctly, or what the effect would be with blending modes and filters applied.</p>
 <p>With in-stack transform, the blending modes and overlapping layers are composited on top of the transform preview. This was a feature funded by the Blender Institute.</p>
-<p><img src="/images/pages/rotate_ellipse.gif" alt="Video showing several ellipse being drawn and rotated."></p>
+<p><img src="images/pages/rotate_ellipse.gif" alt="Video showing several ellipse being drawn and rotated."></p>
 <h4 id="rotation-ability-in-the-rectangle-and-ellipse-tools-mr-768httpsinventkdeorggraphicskrita-merge_requests768">Rotation ability in the Rectangle and Ellipse Tools (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/768">MR 768</a>)</h4>
 <p>Where before rotated rectangles and ellipses required an additional transform after the fact, you can now directly draw them with their tools, using Ctrl+Alt during drawing.</p>
 <p>Ellipses and rectangles can now be rotated as you draw them.</p>
@@ -256,10 +256,10 @@
 <h2 id="layers-improvements">Layers Improvements</h2>
 <h4 id="drag-and-drop-colors-onto-the-canvas-and-layer-tree-mr-703httpsinventkdeorggraphicskrita-merge_requests703">Drag and drop colors onto the canvas and layer tree (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/703">MR 703</a>)</h4>
 <p>Colors can now be dragged and dropped from the Palette Docker to the canvas or Layers Docker. While dropping a color onto the canvas causes the selected area to be filled that that color, dropping a color onto the Layers Docker will create a new <a href="https://docs.krita.org/en/reference_manual/layers_and_masks/fill_layers.html">Fill Layer</a> containing that color.</p>
-<p><img src="/images/pages/drop-palette-on-canvas.gif" alt=""></p>
+<p><img src="images/pages/drop-palette-on-canvas.gif" alt=""></p>
 <h4 id="filter-layers-by-name-mr-292httpsinventkdeorggraphicskrita-merge_requests292">Filter Layers by Name (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/292">MR 292</a>)</h4>
 <p>Our new <a href="https://docs.krita.org/en/reference_manual/dockers/layers.html">layer filter widget</a> allows you to filter layers by name, on top of color label.</p>
-<p><img src="/images/pages/krita_layer_search.png" alt="Layer search in Krita"></p>
+<p><img src="images/pages/krita_layer_search.png" alt="Layer search in Krita"></p>
 <h4 id="isolate-active-group-mr-310httpsinventkdeorggraphicskrita-merge_requests310">Isolate Active Group (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/310">MR 310</a>)</h4>
 <p>We&rsquo;ve also added a new &ldquo;Isolate Active Group&rdquo; isolation mode. Found in the context menu when right-clicking on a layer, this mode temporarily makes the current group that you&rsquo;re working on the only thing that&rsquo;s visible.</p>
 <h4 id="paste-into-layer-mr-732httpsinventkdeorggraphicskrita-merge_requests732">Paste Into Layer (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/732">MR 732</a>)</h4>
@@ -286,11 +286,11 @@
 <h4 id="import-python-plugin-from-web-mr-612httpsinventkdeorggraphicskrita-merge_requests612">Import Python Plugin from Web (<a href="https://invent.kde.org/graphics/krita/-/merge_requests/612">MR 612</a>)</h4>
 <p>A feature contributed by <strong>Rebecca Breu</strong>, this lets you paste a URL from which to download and import the plugin.</p>
 <p>Work by artists using Krita:</p>
-<p><a href="/images/pages/Landscape-raghu.png"><img src="/images/pages/Landscape-raghu.png" alt="Landscape of a road running parallel to a river, with a line of trees separating them. The setting sun shines through the tree leaves."></a> Study by Raghukamath (CC-BY-SA-4.0)</p>
-<p><a href="/images/pages/wojtryb_cozy_tenement.png"><img src="/images/pages/wojtryb_cozy_tenement-690x1024.png" alt="City-scape showing the front of an apartment, surrounded by plants"></a> by <a href="https://www.artstation.com/wojtryb">wojtryb</a> (CC-BY)</p>
-<p><a href="/images/pages/Victor-Ide-Scopacasa-Tanuki-Manga.png"><img src="/images/pages/Victor-Ide-Scopacasa-Tanuki-Manga.png" alt="Depicted are a raccoon dog girl, as well as a set of comic pages where she is the protagonist."></a> by Victor Ide Scopacasa</p>
+<p><a href="images/pages/Landscape-raghu.png"><img src="images/pages/Landscape-raghu.png" alt="Landscape of a road running parallel to a river, with a line of trees separating them. The setting sun shines through the tree leaves."></a> Study by Raghukamath (CC-BY-SA-4.0)</p>
+<p><a href="images/pages/wojtryb_cozy_tenement.png"><img src="images/pages/wojtryb_cozy_tenement-690x1024.png" alt="City-scape showing the front of an apartment, surrounded by plants"></a> by <a href="https://www.artstation.com/wojtryb">wojtryb</a> (CC-BY)</p>
+<p><a href="images/pages/Victor-Ide-Scopacasa-Tanuki-Manga.png"><img src="images/pages/Victor-Ide-Scopacasa-Tanuki-Manga.png" alt="Depicted are a raccoon dog girl, as well as a set of comic pages where she is the protagonist."></a> by Victor Ide Scopacasa</p>
 <h2 id="and-more">&hellip;And More!</h2>
-<p><img src="/images/pages/action-menu.gif" alt=""></p>
+<p><img src="images/pages/action-menu.gif" alt=""></p>
 <h4 id="search-all-actions-pop-up">Search all Actions pop-up</h4>
 <p>Pressing CTRL + Enter while the Krita window is in focus will now give a pop-up search bar where you can search for a given action. This will help new users more easily find features, and old user to quickly get to a given feature. Command search bars are becoming more common in intricate programs like Krita, amongst which <a href="https://kate-editor.org/post/2021/2021-01-24-kate-january-2021/">Kate</a>, whose implementation we were able to reuse.</p>
 <p>With Search Actions (on CTRL+Enter), you will be able to search and access any action in Krita.</p>

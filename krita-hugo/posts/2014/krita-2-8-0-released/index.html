@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 2.8.0 Released | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -68,7 +68,7 @@
 
     <p>Today, the Krita team releases Krita 2.8. Krita 2.8 is a big milestone release, since this is the first release that is ready for end-users on Windows! Krita 2.8 has also many new features, hundreds of bug fixes, performance improvements, usability fixes and look-and-feel improvements. Let&rsquo;s join <a href="http://www.davidrevoy.com">David Revoy</a> for a tour of&hellip;</p>
 <h3 id="whats-new-in-krita-28">What&rsquo;s new in Krita 2.8?</h3>
-<p><img src="/images/posts/2014/Krita_2.8_screenshot_with_its_mascot_Kiki.png" alt=""></p>
+<p><img src="images/posts/2014/Krita_2.8_screenshot_with_its_mascot_Kiki.png" alt=""></p>
 <p>Krita 2.8 running in <a href="http://trisquel.info/">Trisquel GNU/Linux 6.0</a>, showing the default interface. The character on the canvas is Kiki the Cyber Squirrel, Krita&rsquo;s Mascot.</p>
 <p><em>Author of screenshot and mascot: Tyson Tan</em></p>
 <h3 id="krita-28-highlights">Krita 2.8 highlights:</h3>
@@ -78,7 +78,7 @@
 <h4 id="better-tablet-support">Better tablet support:</h4>
 <p>Krita has relied on Qt&rsquo;s graphics tablet support since Krita 2.0. We consciously dropped our own X11-level code in favour of the cross-platform API that Qt offered. And apart from the lack of support for non-Wacom tablets, this was mostly enough on X11. On Windows, the story was different, and we were confronted by problems with offsets, bad performance, no support for tablets with built-in digitizers like the Lenovo Helix.</p>
 <p>So, with leaden shoes, we decided to dive in, and do our own tablet support. This was mostly done by Dmitry Kazakov during a week-long visit to Deventer, sponsored by the Krita Foundation. We now have our own code on X11 and Windows, though still based on Qt&rsquo;s example. Drawing is much, much smoother because we can process much more information and issues with offsets are gone.</p>
-<p><img src="/images/posts/2014/image14.jpg" alt=""></p>
+<p><img src="images/posts/2014/image14.jpg" alt=""></p>
 <p>Photo: David Revoy testing Krita with four tablets.</p>
 <p><em>Development: Dmitry Kazakov, Boudewijn Rempt.</em></p>
 <h4 id="new-high-quality-scaling-mode-for-the-opengl-canvas">New high-quality scaling mode for the OpenGL canvas</h4>
@@ -86,7 +86,7 @@
 <p>That&rsquo;s because by default, OpenGL scales using some fast, but inaccurate algorithms. Basically, the user had the choice between grainy and blurry rendering.</p>
 <p>Again, as part of his sponsored work by the Krita Foundation, Dmitry took the lead and implemented a high-quality scaling algorithm on top of the modern, shader-based architecture Boudewijn had originally implemented.</p>
 <p>The result? Even at small zoom levels, the high-quality scaling option gives beautiful and fast results.</p>
-<p><img src="/images/posts/2014/image09.png" alt=""></p>
+<p><img src="images/posts/2014/image09.png" alt=""></p>
 <p><em>Image by Timothee Giet</em></p>
 <p><em>Development: Dmitry Kazakov, Boudewijn Rempt.</em></p>
 <h4 id="krita-gemini">Krita Gemini</h4>
@@ -104,35 +104,35 @@
 <p><em>Development: Arjen Hiemstra, Dan Leinir Turthra Jensen, Timothée Giet , Boudewijn Rempt</em></p>
 <h4 id="wrap-around-mode">Wrap Around mode</h4>
 <p>The Wrap Around mode (activate it with the W key, or in View &gt; Wrap around mode) tiles the artwork on the canvas border for easy creation of tiled textures. It is only visualized in OpenGL mode (Settings &gt; Configure Krita &gt; Display).</p>
-<p><img src="/images/posts/2014/image06.png" alt=""></p>
+<p><img src="images/posts/2014/image06.png" alt=""></p>
 <p>Development: Dmitry Kazakov.</p>
 <h4 id="new-default-presets-better-tagging-system">New default presets, better tagging system</h4>
 <p>Krita 2.8 offer a new set of brush presets, with new icons following standards. Here is a screenshot with a sample of them.</p>
 <p>Additionally, now It is easier and faster to assign tags to resources &ndash; with a single right click.</p>
-<p><img src="/images/posts/2014/image11.png" alt=""></p>
+<p><img src="images/posts/2014/image11.png" alt=""></p>
 <p><em>Development: Sascha Suelzer</em></p>
 <p><em>Resources: Timothée Giet, Ramon Miranda, Wolthera, David Revoy, and other Krita community artists.</em></p>
 <h4 id="layer-picker">Layer-picker</h4>
 <p>Directly select a layer by pressing the &lsquo;R&rsquo; key and clicking with mouse/stylus on the canvas.</p>
-<p><img src="/images/posts/2014/image10.png" alt=""></p>
+<p><img src="images/posts/2014/image10.png" alt=""></p>
 <p><em>Development: Dmitry Kazakov.</em></p>
 <p><em>Icons: David Revoy</em></p>
 <h4 id="custom-transparency-checkboxes">Custom transparency checkboxes:</h4>
 <p>Transparency checkboxes represent the transparent colors. Now the colors and size of the checkboxes are configurable: You can change it in Settings &gt; Preferences &gt; Transparency Checkboxes. Here is a demo with a dark checker theme to show the halo around the Krita 256x256 *.png logo:</p>
-<p><img src="/images/posts/2014/image05.jpg" alt=""></p>
+<p><img src="images/posts/2014/image05.jpg" alt=""></p>
 <p><em>Development: Boudewijn Rempt.</em></p>
 <h4 id="new-palette-docker">New palette docker</h4>
 <p>It’s now easier to switch palettes with the Palette docker. Adding and removing a color can be performed directly on the docker. A set of new palette presets made by talented authors are now also bundled with Krita by default. You can display the Palette docker via: Setting &gt; Docker &gt; Palette.</p>
-<p><img src="/images/posts/2014/image01.jpg" alt=""></p>
+<p><img src="images/posts/2014/image01.jpg" alt=""></p>
 <p><em>Development: Sven Langkamp</em></p>
 <p><em>Resources: Tim Von Rueden, Spencer Goldade, Richard Fhager, Kim Taylor, David Revoy.</em></p>
 <h4 id="pseudo-infinite-canvas">Pseudo Infinite canvas</h4>
 <p>If you scroll the canvas a lot in one direction, you’ll notice a big button appearing with an arrow on it on the border of the screen  A single click on this big button will extend the canvas automatically in this direction.</p>
 <p>This feature will help you to focus on drawing and never worry about the drawing surface available.</p>
-<p><img src="/images/posts/2014/image12.png" alt=""></p>
+<p><img src="images/posts/2014/image12.png" alt=""></p>
 <h4 id="additional-options-for-the-crop-tool">Additional options for the crop tool</h4>
 <p>The crop tool can now ‘grow’ (you can crop a document outside the canvas limit and extend the canvas) and also get decorations (third guidelines, middle crosshair).</p>
-<p><img src="/images/posts/2014/image02.png" alt=""></p>
+<p><img src="images/posts/2014/image02.png" alt=""></p>
 <p><em>Development: Camilla Boemann</em></p>
 <h4 id="better-color-pickers">Better color pickers</h4>
 <p>The color pickers get new icons and more options.</p>
@@ -155,7 +155,7 @@
 <h4 id="initial-support-for-gmic">Initial support for G&rsquo;mic</h4>
 <p>Use hundreds of famous Gmic filters directly in Krita. It’s a first implementation, and still experimental and unstable. Also, it does not yet take the selection into account and doesn&rsquo;t show a preview yet.</p>
 <p>You can find the feature under the menu: Layer &gt; Apply Gmic actions.</p>
-<p><img src="/images/posts/2014/image00.jpg" alt=""></p>
+<p><img src="images/posts/2014/image00.jpg" alt=""></p>
 <p><em>Development: Lukáš Tvrdý, David Tschumperlé.</em></p>
 <h4 id="clone-array-tool">Clone array tool</h4>
 <p>This new feature creates a number of clones of the current layer so you can paint on it as if the tiles were repeated. The feature is convenient for the creation of isometric tiles.</p>
@@ -170,11 +170,11 @@
 <p>Development: Dmitry Kazakov.</p>
 <h4 id="more-custom-shortcuts">More custom shortcuts</h4>
 <p>Krita gets a new panel in the preferences (Setting &gt; Configure Krita &gt; Canvas Input Settings) to offer you the possibility to customize all related canvas shortcuts. That means: all the zoom- and color picker keys are configurable now.</p>
-<p><img src="/images/posts/2014/image04.jpg" alt=""></p>
+<p><img src="images/posts/2014/image04.jpg" alt=""></p>
 <p><em>Development: Arjen Hiemstra</em></p>
 <h4 id="more-compact-better-looking">More compact, better looking</h4>
 <p>A lot of work was done to make the Krita 2.8 user interface more compact, and dim the saturation of the icons to let the user focus on the canvas.</p>
-<p><img src="/images/posts/2014/image07.jpg" alt=""></p>
+<p><img src="images/posts/2014/image07.jpg" alt=""></p>
 <h4 id="other-new-features">Other new Features:</h4>
 <ul>
 <li>Make it possible to copy the projection of a group layer</li>

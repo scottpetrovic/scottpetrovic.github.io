@@ -9,14 +9,14 @@
 
 	<title>Krita | Creating a Python Plugin for Krita: Guest Article by Zlatko Mašek | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -71,11 +71,11 @@
 <h1 id="krita-plug-in">Krita Plug-in:</h1>
 <p>Ever since Krita allowed scripting in Python, I was eyeing what I could do with it. Since it&rsquo;s using QT and I had no previous experience with it, I wanted to learn a bit about it because I&rsquo;m programming with Python as my day job. Doing image manipulation to transform images for different usages between different systems is always a fun challenge. I wanted to switch from direct image scripting to a plug-in based workflow so I didn&rsquo;t have to do too much context switching between work-time and hobby-time. Krita being cross-platform also helped because I didn&rsquo;t have to deal with installing Python on operating systems that don&rsquo;t have it pre-installed. The plug-in I made is simple enough. It slices the image and prepares tiles for the usage in a tiling library like <a href="https://leafletjs.com/">Leaflet</a>. You need to make sure that you have a flattened image <em>saved</em> beforehand and it&rsquo;s the last thing you do when preparing for an export. Also make sure that the image is rectangular if you don&rsquo;t want the plug-in to crop it by itself. The plug-in is fired up by going to the Tools -&gt; Scripts -&gt; Krita - Leaflet in the menu bar.</p>
 <blockquote>
-<p><a href="/images/posts/2019/plugin-selection.png"><img src="/images/posts/2019/plugin-selection.png" alt=""></a><img src="/images/posts/2019/plugin-selection.png" alt="plugin-selection.png"></p>
+<p><a href="images/posts/2019/plugin-selection.png"><img src="images/posts/2019/plugin-selection.png" alt=""></a><img src="images/posts/2019/plugin-selection.png" alt="plugin-selection.png"></p>
 </blockquote>
 <p>Then you pick a folder for exporting the tiles and the zoom level. I will use a low zoom level here because the higher the zoom level, the longer it takes for the plug-in to finish processing and it&rsquo;s heavier on the resource usage. You press the &ldquo;Leafletize&rdquo; button and wait for it to finish processing.</p>
 <blockquote>
-<p><img src="/images/posts/2019/plugin.png" alt="plugin.png"><a href="/images/posts/2019/plugin.png"><img src="/images/posts/2019/plugin.png" alt=""></a></p>
+<p><img src="images/posts/2019/plugin.png" alt="plugin.png"><a href="images/posts/2019/plugin.png"><img src="images/posts/2019/plugin.png" alt=""></a></p>
 </blockquote>
 <p>You&rsquo;d obviously check the output folder then and reload the image back to the saved version since the processing is destructive. The tiles are of 256x256 px dimensions separated in folders that Leaflet can use. Creating a basic JavaScript code to load them is trivial enough. Just to test it, you can create an index.html in the output folder and fill it up with this code that is using the CDN libraries so you don&rsquo;t have to download anything:</p>
 <p>&lt;!doctype html&gt;</p>
@@ -84,7 +84,7 @@
 <p>python -m SimpleHTTPServer</p>
 <p>You can fire up the browser of choice to see the results on <a href="http://localhost:8000/">http://localhost:8000/</a></p>
 <blockquote>
-<p><a href="/images/posts/2019/leaflet.png"><img src="/images/posts/2019/leaflet.png" alt=""></a><img src="/images/posts/2019/leaflet.png" alt="leaflet.png"></p>
+<p><a href="images/posts/2019/leaflet.png"><img src="images/posts/2019/leaflet.png" alt=""></a><img src="images/posts/2019/leaflet.png" alt="leaflet.png"></p>
 </blockquote>
 <p>I wanted to create that plug-in so I could tile and slice a custom map for a browser based video game that needed a map functionality. It wasn&rsquo;t going to use any fancy libraries for canvas processing, but ordinary web technologies. That&rsquo;s why I made this plug-in. You can get it from the <a href="https://bitbucket.org/zmasek/krita-leaflet/">Krita-Leaflet repository</a>.</p>
 

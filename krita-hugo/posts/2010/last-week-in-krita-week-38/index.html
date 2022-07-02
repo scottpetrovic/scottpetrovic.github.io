@@ -9,14 +9,14 @@
 
 	<title>Krita | Last week in Krita -- week 38 | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -70,14 +70,14 @@
 <p>So&hellip; Where do we stand with our release preparations. There are still quite a few hurdles to take: we are at 68 bugs now, of which there is 1 <strong>critical</strong>, 5 are major (and thus release blockers) and 14 crashes. And it goes without saying that there are some bugs we really want solved among the rest as well. Krita gets a lot of testing these days (though more is always welcome!) and that means that while we&rsquo;re resolving lots of issues, we&rsquo;re finding new ones as well. There are still a number of unittests that fail &ndash; one of them has been tracked down to a difference between version 0.6 and 0.8 of the jpeg library, but there are others. Those need to be solved before we can release as well. Finally, we might need to do some more work on the way our tools queue their actions. It&rsquo;s too early to say whether this means the release date will have to slip or not, but if it has to, then we will slip.</p>
 <p>Still, we&rsquo;re getting close to about a hundred commits a week so the pace is pretty fast!</p>
 <p>Another thing is user documentation. I&rsquo;m still working on the updated manual, but I&rsquo;ve also created something new: a Krita image that will show on the very first run and has a numbe rof layer groups, with every group explaining something cool about Krita. Unfortunately, this is only in English and I haven&rsquo;t found a good way to make translated versions. Especially since the file is rather big. We might end up only loading it when Krita run in an English locale.</p>
-<p><img src="/images/posts/2010/first_run.png" alt=""></p>
+<p><img src="images/posts/2010/first_run.png" alt=""></p>
 <p>Erm&hellip; We might want to go into the look of this a bit with some qualified artist&hellip;</p>
 <h3 id="code">Code</h3>
 <p>Everyone is really busy fixing bugs, so there are no exciting new features to report on. Still, bear with me for a report on what got fixed and what got broken!</p>
 <p><strong>Adam Celarek</strong> fixed the display of the soft-brush curve and fade sliders. He fixed a crash that occurred when switching paintops while the canvas was being updated, fixed the autoupdate for the image colors in the new color selector and optimized the speed of updating. A small new feature, in the KOffice-essen branch (which is the feature branch we open during trunk freeze): a template for new docker plugins, which was then used as the base for a docker for presets. Adam also beatified the transform/warp tool option pane. And &ndash; and this is <em>really</em> nice &ndash; fixed the scratchpad in the brush designer to work correctly in wash mode.</p>
 <p><strong>Boudewijn Rempt</strong> did some cleanup, fixed the gradient, fill and transform tool to lock the current layer while a long-running task is running, added the comic-book templates Animtim created, created the first-run picture and make it show up. Krita now also warns when you are running with a version of Qt earlier than Qt 4.6.3 &ndash; below that, you will not be able to use your tablet. In response to a requirement from Lukas, he implemented a white-list mechanism for blending modes: some brush engines, like the pixel brush can&rsquo;t do anything useful with, for instance, the COPY blending mode, while others, like deform or smudge, absolutely need those. Finally, Boudewijn made sure the quick-access palette has some default content and fixed a number of memory leaks.</p>
 <p><strong>Cyrille Berger</strong> sneaked off to present his wife to his family in Normandy &ndash; all the while thinking hard on a rounding problem in Krita&rsquo;s integer maths. He also fixed the display of the rotation feature in the pixel brush. And he painted a tree in Krita:</p>
-<p><img src="/images/posts/2010/datree.png" alt=""></p>
+<p><img src="images/posts/2010/datree.png" alt=""></p>
 <p><strong>Dmitry Kazakov</strong> in his first month of sponsored part-time development (thanks to <strong>Silvio Grosso</strong>!) moved the pan and color picking feature of the freehand tool down the tool hierarchy: all tools support pan on middle-click now, and all painting tools can also pick a color from the canvas. He fixed the brush outline updating on the QPainter-based canvas and made sure the tool decorations are also shown on the canvas outside the image boundaries. Finally, he fixed the application of masks and filters when there is a selection.</p>
 <p><strong>Jonathan Riddell</strong> proposed a patch by <strong>Emmet Hikory</strong> from Ubuntu to make it possible to compile Krita on ARM processors. This got reviewed, ported by Boudewijn, updated by Emett and then committed by Jonathan. Of course, we are heavily dependent on distributions for patches of this kind &ndash;  <strong>Ana Beatriz Guerrero López</strong> from Debian is a regualar in this blog for fixing Krita to compile on ARM.</p>
 <p><strong>José Luis Vergara</strong> spent a lot of time fixing the smudge paintop, together with Cyrille and Lukas. The problem here is that Krita is way more flexible with smudgiing than any other application: we support various blending modes for smudge, as well a variable size of the smudge area depending on tablet pressure.</p>

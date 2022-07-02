@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 4.1 Release Notes | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -93,17 +93,17 @@
 <h2 id="animation-improvements">Animation Improvements</h2>
 <p>More frame management options with animation: moving frames, adding frames, copying frames, and setting playback time. All these new actions can be assigned to shortcuts.</p>
 <h3 id="frame-actions">Frame Actions</h3>
-<p><img src="/images/pages/frame-actions.png" alt=""></p>
+<p><img src="images/pages/frame-actions.png" alt=""></p>
 <h3 id="column-actions-affects-multiple-layers"><strong>Column Actions (affects multiple layers)</strong></h3>
-<p><img src="/images/pages/column-actions.png" alt=""></p>
+<p><img src="images/pages/column-actions.png" alt=""></p>
 <p> </p>
 <h3 id="improved-animation-timeline-display">Improved animation timeline display</h3>
 <p>The <a href="https://docs.krita.org/en/reference_manual/dockers/timeline.html">timeline</a> has been improved to better communicate how long a single frame is running, and when a frame is empty or not.</p>
-<p><img src="/images/pages/improved-animation-timeline.png" alt=""></p>
+<p><img src="images/pages/improved-animation-timeline.png" alt=""></p>
 <p> </p>
 <h3 id="animation-cache-swapping-and-performance-setting-area">Animation cache swapping and performance setting area</h3>
 <p>Handle larger animations better by offloading the data to your drive instead of keeping all rendered frames in memory. To further assist playing back large animations, the new cache comes with a &lsquo;region of interest&rsquo; setting. When the region of interest is enabled, Krita will only calculate areas that have changed on within the viewed area instead of the entire canvas. You will need both &ldquo;Use region of interest&rdquo; and &ldquo;Limit cached frame size&rdquo; enabled <a href="https://docs.krita.org/en/reference_manual/preferences/performance_settings.html#animation-cache">in the performance settings</a> for it to take effect.</p>
-<p><img src="/images/pages/animation-options.png" alt=""></p>
+<p><img src="images/pages/animation-options.png" alt=""></p>
 <p> </p>
 <h2 id="better-color-picking-with-new-blending-option">Better color picking with new blending option</h2>
 <p>Inspired by how color mixing works in real life, you can now pick a <a href="https://docs.krita.org/en/reference_manual/tools/color_selector.html">small amount of color to mix</a> with your existing color. Thanks to Emmet and Eoin O&rsquo;Neill for contributing this patch.</p>
@@ -114,7 +114,7 @@
 
 <h2 id="improved-vanishing-point-assistants-and-custom-colors">Improved vanishing point assistants and custom colors</h2>
 <p>Vanishing points can display reference lines where you can control the density. And you can control the <a href="https://docs.krita.org/en/reference_manual/tools/assistant.html#tool-options">color of each assistant individually</a>, while before all painting assistants shared one and the same color.</p>
-<p><img src="/images/pages/vanishing-point-assistant.png" alt=""></p>
+<p><img src="images/pages/vanishing-point-assistant.png" alt=""></p>
 <h2 id="python-2-support-and-updated-packages">Python 2 Support and updated packages</h2>
 <p>Jeroen Hoolmans has made it possible to build Krita with python 2, which is necessary for VFX studios that depend on a Python 2 pipeline. Note that the Linux appimage and the Windows builds use Python 3.</p>
 <h4 id="updated-packaged-scripts">Updated packaged scripts</h4>
@@ -137,7 +137,7 @@
 <h2 id="faster-brushes-first-google-summer-of-code-results">Faster Brushes: First Google Summer of Code Results</h2>
 <p>The Circular Gaussian and Soft Brush tips are now up to 10 times faster. Ivan Yossi&rsquo;s project to speed up the Gaussian and Softbrush tips with AVX shows its first results in this release.</p>
 <h2 id="cross-channel-adjustment-filter-and-color-adjustment-improvement">Cross Channel Adjustment Filter and color adjustment improvement</h2>
-<p><img src="/images/pages/cross-channel-adjustment.png" alt=""></p>
+<p><img src="images/pages/cross-channel-adjustment.png" alt=""></p>
 <p>The <a href="https://docs.krita.org/en/reference_manual/filters/adjust.html#cross-channel-color-adjustment">Cross Channel Adjustment filter</a> allow you to &lsquo;drive&rsquo; a color adjustment by another channel. What can you do with this? For instance,</p>
 <ul>
 <li>increase the redness of only the lighter pixels</li>
@@ -147,7 +147,7 @@
 <p>The Color Adjustment (curves) filter also now has support for Hue and Saturation curves on top of the existing channel, alpha and lightness curves.</p>
 <h2 id="better-debugging-with-new-tablet-tester">Better Debugging with new tablet tester</h2>
 <p>To make debugging tablet errors easier, we&rsquo;ve copied Drawpile&rsquo;s Tablet Tester. This little dialog is accessible from <a href="https://docs.krita.org/en/reference_manual/preferences/tablet_settings.html#tablet-tester">settings-&gt;configure Krita-&gt;tablet-&gt;tablet tester</a>. It allows you to check if Krita can see your tablet at all. If it can&rsquo;t, you can sure you have a driver problem.</p>
-<p><img src="/images/pages/tablet-tester.png" alt=""></p>
+<p><img src="images/pages/tablet-tester.png" alt=""></p>
 <p> </p>
 <p>Miscellaneous improvements:</p>
 <ul>

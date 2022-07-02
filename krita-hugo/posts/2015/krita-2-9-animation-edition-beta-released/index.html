@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 2.9 Animation Edition Beta released! | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -66,12 +66,12 @@
         
     </div>
 
-    <p><a href="/images/posts/2015/kiki2_ann_small.jpg"><img src="/images/posts/2015/kiki2_ann_small.jpg" alt="kiki2_ann_small"></a></p>
+    <p><a href="images/posts/2015/kiki2_ann_small.jpg"><img src="images/posts/2015/kiki2_ann_small.jpg" alt="kiki2_ann_small"></a></p>
 <p>Today we are happy to announce the long awaited beta-version of Krita with Animation and Instant Preview support! Based on Krita 2.9, you can now try out the implementation of the big 2015 <a href="https://www.kickstarter.com/projects/krita/krita-free-paint-app-lets-make-it-faster-than-phot">kickstarter</a> features!</p>
 <p>What&rsquo;s new in this version? From the user point of view Krita didn&rsquo;t change much. There are three new dockers: <strong>Animation</strong>, <strong>Timeline</strong> and <strong>Onion Skins</strong>, which let you control everything about your animation frames and one new menu item <strong>View-&gt;Instant Preview Mode</strong> (previously known as Level of Detail) allowing painting on huge canvases. For both features, you need a system that supports OpenGL 3.0 or higher.</p>
 <p>For people who previously installed Krita, to get Instant Preview to show up on the view menu, delete the krita.rc(not kritarc) file in your resource folder(which can be accessed quickly via Settings-&gt;Manage Resources-&gt;Open Resource Folder) and restart Krita. Or just use the hotkey <strong>Shift</strong>+<strong>L</strong>.</p>
 <p>But under these visually tiny changes hides a heap of work done to the Krita kernel code. We almost rewritten it to allow most of the rendering processes run in the background. So now all animated frames and view cache planes are calculated in the moments of time when the user is idle (thinks, or chooses a new awesome brush). Thanks to these changes now it is possible to efficiently work with huge images and play a sequence of complex multi-layered frames in real time (the frames are recalculated in the background and are uploaded to you GPU directly from the cache).</p>
-<p><a href="/images/posts/2015/krita_animation_1.png"><img src="/images/posts/2015/krita_animation_1-300x205.png" alt="krita_animation_1"></a></p>
+<p><a href="images/posts/2015/krita_animation_1.png"><img src="images/posts/2015/krita_animation_1-300x205.png" alt="krita_animation_1"></a></p>
 <p>So, finally, welcome Krita 2.9 Animation Edition Beta! (Note the version number! The final release will be based on Krita 3.0, this version is created from the 2.9 stable release, but it is <em>still</em> beta. We welcome your feedback!</p>
 <h4 id="video-tutorial-from-timothee-giet">Video tutorial from Timothee Giet:</h4>
 <p>A short video introduction into Krita animation features is available <a href="http://timotheegiet.com/blog/anim/krita-2-9-animation-edition-beta.html">here</a>.</p>

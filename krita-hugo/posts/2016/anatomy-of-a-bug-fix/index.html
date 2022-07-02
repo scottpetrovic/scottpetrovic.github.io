@@ -9,14 +9,14 @@
 
 	<title>Krita | Anatomy of a bug fix | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -82,7 +82,7 @@
 <p>Anyway, last week we found a second-hand Trust tablet for sale. Since we&rsquo;ve had at least six reports of crashes with just that particular brand, we got it. We installed a fresh Windows 10, installed the driver Trust fortunately still provides despite having discontinued its tablets, installed Krita, started Krita, brought pen to tablet and&hellip; Nothing happened. No crash, and Krita painted a shoddy, shakey, pressure sensitive line.</p>
 <p>Dash it, 30 euros down the drain.</p>
 <p>Next, we got an old Genius tablet and installed Windows 7. And bingo! A crash, and the same suspicious values in the tablet log. Now we&rsquo;re talking! Unfortunately, the crash happened right inside the &ldquo;Genius&rdquo; wintab driver. Either we&rsquo;re using the Wintab API wrong, or Genius implemented it wrong, but we cannot see the code. This is what Dmitry was looking at now:</p>
-<p><a href="/images/posts/2016/disassembly.png"><img src="/images/posts/2016/disassembly-1024x576.png" alt="Gibberish&amp;hellip;"></a> Gibberish&hellip;</p>
+<p><a href="images/posts/2016/disassembly.png"><img src="images/posts/2016/disassembly-1024x576.png" alt="Gibberish&amp;hellip;"></a> Gibberish&hellip;</p>
 <p>But it gave the hint we needed. It <em>is</em> a bug in the Wintab driver, and we are guessing that since all these drivers give us the same weird context information, they all share the same codebase, come from the same manufacturer in fact, and have the same bug.</p>
 <p>It turned out that when we added support for the Surface Pro 3, which has an N-Trig pen, we needed a couple of workarounds for its weirder features. We wrote code that would query the wintab dll for the <em>name</em> of the tablet, and if that was an N-Trig, we set the workaround flag:</p>
 <p>UINT nameLength = m_winTab32DLL.wTInfo(WTI_DEVICES, DVC_NAME, 0);

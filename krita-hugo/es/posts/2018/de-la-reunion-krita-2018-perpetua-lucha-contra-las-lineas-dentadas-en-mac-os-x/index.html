@@ -9,14 +9,14 @@
 
 	<title>Krita | De la reunión Krita 2018: Perpetua lucha contra las lineas dentadas en Mac OS X | Krita Site(ES)</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//es">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -57,7 +57,7 @@
     </div>
 
     <p>Hace dos semanas que tubimos una muy buena y motivante reunion in Deventer, donde varios miembros del equipo de Krita se juntaron y conocieron. Boud ya nos escribio un <a href="https://krita.org/en/item/krita-2018-sprint-report">artículo</a> al respecto, por lo que trataremos de evitar repeticion y solo nos enfocaremos en uno de las metas de esta reunion&hellip; el corregir los problemas con las tabletas en Mac OS X.</p>
-<p><a href="/images/posts/2018/krita_jagged_lines_on_osx.png"><img src="/images/posts/2018/krita_jagged_lines_on_osx.png" alt=""></a> Lineas dentadas causadas por la compresión de los eventos de entrada, relacionado con el uso del OpenGL.</p>
+<p><a href="images/posts/2018/krita_jagged_lines_on_osx.png"><img src="images/posts/2018/krita_jagged_lines_on_osx.png" alt=""></a> Lineas dentadas causadas por la compresión de los eventos de entrada, relacionado con el uso del OpenGL.</p>
 <h3 id="compresión-de-los-eventos-de-las-tabletas">Compresión de los eventos de las tabletas</h3>
 <p>Desde la primera versión de Krita disponible para Mac OS X, hemos tenido un problema raro. Cuando el usuario pinta rápidamente, los trazos están dentados, también les llamamos torcidas, ésto sucede dado a que los eventos de tableta que vienen del stylus se perdían a cierto punto antes de llegar a Krita.</p>
 <p>Debo mencionar que éste problema ya ha sucedido en Krita varias veces en Linux y Windows. En la mayoría de los casos era causado por una actualización de Qt que introducía o activaba la compresión de los eventos: una función especial de Qt que elimina eventos de movimientos extras del ratón o de las tabletas si el programa que los esta usando se hace muy lento al procesarlos a tiempo. Ésta función es necesaria para programas regulares que no se usan para arte digital de pintura, mismos que esperan una gran cantidad de eventos de movimiento y por lo tanto pueden ignorar alguno de ellos. El síntoma principal de ésta compresión son las lineas dentadas, mismas que desaparecen cuando se desactiva el OpenGL, y se ha reportado que en Mac OS X ésto también aplica. Ya he corregido éste problema muchas veces anteriormente en otros sistemas, lo cual me hizo sentir optimista mientras me dirigía a la reunión&hellip;</p>

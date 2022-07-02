@@ -9,14 +9,14 @@
 
 	<title>Krita | Kickstarterを終えて | Krita Site(JP)</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//jp">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -88,18 +88,18 @@
 <li>追加目標 10. ベクター図形を補助線に：28</li>
 </ol>
 <p>Pythonスクリプトが明らかにリードしていますが、我々はPythonスクリプトを2015年度分の残りのKickstarter追加目標、例えばパレット・色見本ドッキングパネル等の実装に使えるのではないかと考え、既にその開発を開始しています。Pythonスクリプトは既にある程度動作しています；ドッキングパネルやメニューの中身を追加できるKritaのプラグインをPythonで作れるようになっており、そしてこれがKrita Python APIが利用可能なKritaからPythonスクリプトを走らせることを可能にするPythonプラグインです。これは現在のところ開いているウィンドウの数を数えるだけの機能しかありませんが、まだまだこれからです！</p>
-<p><a href="/images/posts/2016/scripter.png"><img src="/images/posts/2016/scripter-1024x582.png" alt="scripter"></a></p>
+<p><a href="images/posts/2016/scripter.png"><img src="images/posts/2016/scripter-1024x582.png" alt="scripter"></a></p>
 <h3 id="google-summer-of-code">Google Summer of Code</h3>
 <p>Google Summer of Codeの学生に中間審査がありました!幸運にも全員がパスすることができました。全員がすばらしい成果をあげています。Woltheraはソフトプルーフの実装をほぼ完了しました。既に<a href="https://docs.krita.org/Soft_Proofing">マニュアルページ</a> も書き上げて、現在広範囲のテストを行っています。テストで問題がなく良い感じなら、ソフトプルーフ機能はKrita 3.0.1に追加されます。再び、KritaはGoogle Summer of Codeで一番最初に成果をリリースするプロジェクトになります!ソフトプルーフには、編集可能な色域(gamut)警告、ホワイトポイント調整スライダが含まれて、画像に対する紙の影響をチェックすることができます。Kritaはプルーフプロファイルをグローバル設定ではなく画像に保存するので、特定のプリンタ向けのテンプレートファイルを作成するといったことも可能になります。また、プルーフ前とプルーフ後の画像を同時に表示することもできます。</p>
-<p><a href="/images/posts/2016/gamut_alarms_fast.png"><img src="/images/posts/2016/gamut_alarms_fast-1024x553.png" alt="gamut_alarms_fast"></a></p>
+<p><a href="images/posts/2016/gamut_alarms_fast.png"><img src="images/posts/2016/gamut_alarms_fast-1024x553.png" alt="gamut_alarms_fast"></a></p>
 <p>Julian ThijsenはOpenGL QPainterの修正に熱心に取り組んでいます。 <a href="http://kritadev.blogspot.nl/">彼のブログの記事</a>には、どのような道筋で挑戦しているのかの詳細があります。まだやるべきことは多く残っていますが、作業は活発です。彼の成果はQtに提出されQtの一部となることになり、みんながその恩恵をうけられるようになります。現在の目標はQtのQPainterクラスに対するOpenGL backendを修正し、カーソル、補助線、グラデーションツールの線といった Kritaのすべてのツールが描画できるようにすることです。</p>
-<p><a href="/images/posts/2016/Working_01.png"><img src="/images/posts/2016/Working_01.png" alt="Working_01"></a></p>
+<p><a href="images/posts/2016/Working_01.png"><img src="images/posts/2016/Working_01.png" alt="Working_01"></a></p>
 <p>Jouni Pentikainenは補間カーブの作業を行っています。透明度といった変化を自動的に、スムーズにアニメーションできるようにするためのものです。また、変形マスクをフレーム間でアニメーションできるようにする開発も行っています。アニメーターにさらなる自由を与えます！詳細については彼の<a href="http://kritaanimation.blogspot.nl/">blog</a>を参照してください。以下は、インタラクションやユーザ体験デザインを議論する際に作成したモックアップです:</p>
-<p><a href="/images/posts/2016/interpolation-mockup.png"><img src="/images/posts/2016/interpolation-mockup.png" alt="interpolation-mockup"></a></p>
+<p><a href="images/posts/2016/interpolation-mockup.png"><img src="images/posts/2016/interpolation-mockup.png" alt="interpolation-mockup"></a></p>
 <h3 id="リリース">リリース</h3>
 <p>次のリリースのスケジュールはもう決まっています。3.0.1は7月15日にリリース予定です。たくさんのバグ修正、例えば<a href="https://krita.org/jp/item/anatomy-of-a-bug-fix-jp/">一部の安価なブランドのペンタブでクラッシュが発生する問題</a>や前後フレームの表示、Windowsでのレイヤーのドラッグ&amp;ドロップでの問題はもちろん、多くの新機能追加が行われる予定です。Michael AbrahamsはWindowsでフルスクリーンモードを復活させ、Eugene Ingermanはヒストグラムダイアログのルック&amp;フィールを改良しました（そしてヒストグラムドッキングパネルが追加され、チャンネル及びレイヤードッキングパネルのサムネイルとキャンバスプレビュードッキングパネルのレンダリングの改善が行われています）大リファクタリングが順調にいけば、2015年度の追加目標である機能、<a href="https://phabricator.kde.org/T116">Kritaからアニメーションを直接アニメーションGIF及びその他いくつかの動画フォーマットで出力する</a>機能が実装されているはずです。また2015年度の追加目標<a href="https://phabricator.kde.org/T166">ファジーストローク</a>も実装される予定です。そしておそらくソフトプルーフも実装されるはずです。</p>
 <p>そしてKrita 3.0のリリース後、日本のプロアニメーター<a href="https://twitter.com/motoaki_saisho">税所一輝</a>氏がKritaを自分の使用ツールの一つに採用してくれました。作品制作のために彼が作成したテンプレートファイルをKritaのアニメテンプレートとしてぜひいただきたいという我々の要望を、彼は快く承諾してくれました。彼のテンプレートは日本のアニメスタジオで使われている実際のアニメ製作工程に基づいています―このテンプレートもKrita 3.0.1で実装されます：</p>
-<p><a href="/images/posts/2016/animation_template.png"><img src="/images/posts/2016/animation_template-1024x577.png" alt="animation_template"></a></p>
+<p><a href="images/posts/2016/animation_template.png"><img src="images/posts/2016/animation_template-1024x577.png" alt="animation_template"></a></p>
 <p>3.0.1リリースは非常にエキサイティングなものになるでしょう！</p>
 <p>新バージョンのリリースは3.0シリーズで毎月行われ、2015年度の追加目標を全て実装した段階で3.1をリリースする予定です―そしてもしさらに多くの追加目標の実装に使えるようになっていたならおそらく3.1でPythonスクリプトプラグインの最初のバージョンが実装されるはずです。</p>
 <h3 id="スプリント">スプリント</h3>

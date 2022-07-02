@@ -9,14 +9,14 @@
 
 	<title>Krita | Release Notes for Krita 3.1 | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -73,26 +73,26 @@
 </div>
 
 <h3 id="full-support-for-osx">Full Support for OSX</h3>
-<p><img src="/images/pages/krita3osx.jpg" alt="krita_texture_bg"></p>
+<p><img src="images/pages/krita3osx.jpg" alt="krita_texture_bg"></p>
 <p>Julian Thijssen&rsquo;s Google Summer of code project for 2016 gives us the power to run openGL on OSX! This was the biggest blocker for full OSX support! OpenGL is a special type of code that allows us to use your graphics card for operations like rotating, zooming and panning the canvas. Graphics cards are typically super good at this, meaning it makes the canvas really fast, no matter what kind of image you have before you. Apple devices are super picky about which version of OpenGL they can run, so Julian had to rewrite a part of QT to upgrade it all to openGL 3, ensuring our OSX users can finally enjoy Krita without bizare glitches when navigating!</p>
 <h3 id="render-animation">Render Animation</h3>
 <video controls width="100%">
-    <source src="/videos/animation-challenge.mp4" type="video/mp4">
+    <source src="videos/animation-challenge.mp4" type="video/mp4">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
 <p>Finally, you can now export your animations to the following animation formats: animated GIF, MP4, MKV, OGG, giving a range of small sized files for your favourite blogging site to high quality formats to show off on your favourite video sharing site! This requires the ffmpeg library. <a href="https://docs.krita.org/Render_Animation">See instructions on on how to set this up here</a>!</p>
 <h3 id="animation-curves-and-opacity">Animation Curves and Opacity</h3>
-<p><img src="/images/pages/krita_animation_3_0_2.gif" alt="krita_texture_bg"></p>
+<p><img src="images/pages/krita_animation_3_0_2.gif" alt="krita_texture_bg"></p>
 <p>Jouni Pentikäinen Google Summer of code project has been merged as well! Its biggest feature is the ground work laid for automated tweening of properties. There is now a animation curves docker to allow making opacity tweens, and we hope to allow transformation mask tweens in the future! <a href="https://docs.krita.org/Animation_Curves">Documentation here.</a> But that is not all! Other raster like layers like filter layers, fill layers, transparency masks and filter masks can now have their raster content animated, allowing for raster animating transparency or a filter effect! Furthermore, you can now color code frames, which can be used to mark the most important frames in an animation, so you can find them back more easily.</p>
 <h3 id="new-internalcolor-picker">New Internal Color Picker</h3>
-<p><img src="/images/pages/16-bit-color.png" alt="krita_texture_bg"></p>
+<p><img src="images/pages/16-bit-color.png" alt="krita_texture_bg"></p>
 <p>Thanks to Wolthera&rsquo;s Google Summer of Code work, Krita now has a new internal color selector for selecting wide-gamut values! This means that you can finally break free from the limited gamut of your screen(sRGB) and use wide gamut spaces. Other features include easy access to the palette and the ability to type in HDR values in floating space without any extra toggles and buttons. You can access this new dialog from the current color patch in the toolbar. Furthermore, the pop-up palette will also grant access to this new selector, if you enable it by adding the popuppalette/usevisualcolorselector=true line to the kritarc configuration file. The other color selector dockers are untouched for now, but hopefully they&rsquo;ll be able to be extended in the same way soon!</p>
 <h3 id="new-quick-brush-engine">New Quick Brush Engine</h3>
 <!-- raw HTML omitted -->
 <p>In the ever continuing quest for speed on big documents, we developed the quick brush engine! One of the ways how a brush engine can be super slow is due to all the extra options available. Removing those and changing the way how we calculate brushes, gives a sharp edged, extremely simple but super fast brush that doesn&rsquo;t require openGL 3.1 but can tackle high resolution canvases with ease! <a href="https://docs.krita.org/Quick_Brush">See documentation&hellip;</a></p>
 <h3 id="stop-based-gradient-editor">Stop-Based Gradient Editor</h3>
-<p><img src="/images/pages/stop-based-gradients.png" alt="krita_texture_bg"></p>
+<p><img src="images/pages/stop-based-gradients.png" alt="krita_texture_bg"></p>
 <p>Sven Langkamp brought us a secret suprise in the form of a stop-based gradient editor! Krita&rsquo;s segment based gradient editor is based on Gimp&rsquo;s model, but the stopbased format is far more common and easier to understand! <a href="https://docs.krita.org/Managing_Gradients">See the docs on how to use it.</a></p>
 <h3 id="lazy-brushcolorize-mask">Lazy Brush/Colorize Mask</h3>
 <p>The lazy/brush colorize mask feature is technically complete, but it&rsquo;s too slow to be useful in practice. We need a different algorithm&hellip; But if you want to play with it, you can enable it by adding the following line to your kritarc configuration file:</p>

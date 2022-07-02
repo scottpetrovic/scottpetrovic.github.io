@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 4.4.0 正式版已经推出 | Krita Site(PRC)</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//zh">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -64,20 +64,20 @@
 <h3 id="填充图层的多线程支持">填充图层的多线程支持</h3>
 <p>Krita 的填充图层现在已经支持多线程，将填充操作拆分成多个部分交由不同的 CPU 进程进行处理，在多核心 CPU 环境下可以带来显著的处理速度提升。</p>
 <h3 id="图案填充的变形功能">图案填充的变形功能</h3>
-<p><a href="/images/posts/2020/krita_4_4_texture_example.png"><img src="/images/posts/2020/krita_4_4_texture_example.png" alt=""></a></p>
+<p><a href="images/posts/2020/krita_4_4_texture_example.png"><img src="images/posts/2020/krita_4_4_texture_example.png" alt=""></a></p>
 <p><a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/pattern_fill.html">填充图层在填充图案时</a> 可以对填充的图案进行变形操作，包括缩放、旋转等。几何形状绘制工具、填充工具中的图案功能也得到了相同的改进。</p>
 <h3 id="网点填充">网点填充</h3>
-<p><a href="/images/posts/2020/fill_layer_screentone_postprocessing.png"><img src="/images/posts/2020/fill_layer_screentone_postprocessing.png" alt=""></a></p>
+<p><a href="images/posts/2020/fill_layer_screentone_postprocessing.png"><img src="images/posts/2020/fill_layer_screentone_postprocessing.png" alt=""></a></p>
 <p>填充图层新增了 <a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/screentone.html">网点填充</a> 模式，它可以向图层填充圆点、方点、直线、波浪线等简单的图案，如同黑白漫画中的网点纸一样，也可以用来模拟半调等印刷效果。</p>
 <h3 id="多维网格填充">多维网格填充</h3>
-<p><a href="/images/posts/2020/multigrid-color-examples.png"><img src="/images/posts/2020/multigrid-color-examples.png" alt=""></a></p>
+<p><a href="images/posts/2020/multigrid-color-examples.png"><img src="images/posts/2020/multigrid-color-examples.png" alt=""></a></p>
 <p>填充图层新增了 <a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/multigrid.html">多维网格填充</a> 模式，可以生成包括 <a href="https://en.wikipedia.org/wiki/Penrose_tiling">彭罗斯镶嵌图案</a> 在内的各种准晶体结构图案。这种填充图案是非周期性的，且在旋转方向上对称，图案中的每个晶格都不会发生重复。本模式的灵感来自后面即将介绍的 SeExpr 填充模式。</p>
 <h3 id="seexpr-填充图层">SeExpr 填充图层</h3>
-<p><a href="/images/posts/2020/1096px-SeExpr_manual_1.jpg"><img src="/images/posts/2020/1096px-SeExpr_manual_1.jpg" alt=""></a></p>
+<p><a href="images/posts/2020/1096px-SeExpr_manual_1.jpg"><img src="images/posts/2020/1096px-SeExpr_manual_1.jpg" alt=""></a></p>
 <p>迪士尼动画工作室开发的 <a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/seexpr.html">SeExpr 表达式语言库</a> 已经通过 Amyspark 所负责的谷歌编程之夏工程整合到了 Krita。SeExpr 是一种小型着色器语言，迪士尼动画工作室用它来生成图案等素材。Krita 可以用它来生成填充图层，并且已经内建了一些效果不错的示例预设。</p>
 <h2 id="笔刷引擎">笔刷引擎</h2>
 <p>继 Krita 4.3 版新增的笔尖亮度模式之后，我们又为 4.4 版的笔刷引擎开发了更多的新功能。</p>
-<p><a href="/images/posts/2020/flowers_gradients_lightness.png"><img src="/images/posts/2020/flowers_gradients_lightness.png" alt=""></a></p>
+<p><a href="images/posts/2020/flowers_gradients_lightness.png"><img src="images/posts/2020/flowers_gradients_lightness.png" alt=""></a></p>
 <p>上图笔画效果：搭配使用新亮度参数和混合参数 下图笔画效果：使用纹理的效果强度参数来混合渐变映射模式下的笔尖图像和纹理</p>
 <h3 id="笔尖图像的渐变映射模式">笔尖图像的渐变映射模式</h3>
 <p>如果笔尖图像的亮度模式效果不够细腻，你可以使用全新的笔尖图像全局 <a href="https://docs.krita.org/zh_CN/reference_manual/brushes/brush_settings/brush_tips.html">渐变映射模式</a>，它在绘制重复的物体，如花草树叶等时特别有用。</p>
@@ -85,10 +85,10 @@
 <p>笔刷的纹理参数也可以使用 <a href="https://docs.krita.org/zh_CN/reference_manual/brushes/brush_settings/texture.html">亮度和渐变映射模式</a>。</p>
 <h3 id="mypaint-拾色器的对角线拾色条-shiftm">MyPaint 拾色器的对角线拾色条 (Shift+M)</h3>
 <p>对角线拾色条可以同时对当前颜色的亮度和饱和度进行改变。</p>
-<p><a href="/images/posts/2020/mypaint_selector_diagonal.png"><img src="/images/posts/2020/mypaint_selector_diagonal.png" alt="Diagonal lines in MyPaint Color Selector (Shift+M)"></a></p>
+<p><a href="images/posts/2020/mypaint_selector_diagonal.png"><img src="images/posts/2020/mypaint_selector_diagonal.png" alt="Diagonal lines in MyPaint Color Selector (Shift+M)"></a></p>
 <h2 id="在-gimp-渐变和图层样式中实时调用当前颜色">在 GIMP 渐变和图层样式中实时调用当前颜色</h2>
 <p>GIMP 渐变格式和图层样式中的<a href="https://docs.krita.org/zh_CN/reference_manual/resource_management/resource_gradients.html">渐变</a>现在可以实时调用当前的前景色和背景色。相关的几个自带渐变预设已经对此作出调整，可以更轻松地配合前景色和背景色生成光斑等特效。</p>
-<p><a href="/images/posts/2020/fg_changing_gradients_for_sparkles.png"><img src="/images/posts/2020/fg_changing_gradients_for_sparkles.png" alt=""></a></p>
+<p><a href="images/posts/2020/fg_changing_gradients_for_sparkles.png"><img src="images/posts/2020/fg_changing_gradients_for_sparkles.png" alt=""></a></p>
 <p>上图为通过 GPS glare 渐变的默认值绘制的径向渐变光斑，不同颜色的光斑反映了绘制时的活动前景色。</p>
 <h2 id="下载">下载</h2>
 <h3 id="中文版信息">中文版信息</h3>

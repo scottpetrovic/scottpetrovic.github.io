@@ -9,14 +9,14 @@
 
 	<title>Krita | New Test Builds: changes to Flow and Saving/Loading | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -70,12 +70,12 @@
 <p><strong>DO NOT USE THIS FOR REAL WORK. ONLY FOR TESTING.</strong></p>
 <p><strong>YOU MIGHT LOSE YOUR WORK!</strong></p>
 <p>First, following <a href="https://forum.kde.org/viewtopic.php?f=288&amp;t=136165">two discussions</a> on <a href="https://forum.kde.org/viewtopic.php?f=139&amp;t=152017">the forum</a>, William Brown created his <a href="https://phabricator.kde.org/D18467">very first patch for Krita</a>. This changes the way flow and opacitiy interact:</p>
-<p><a href="/images/posts/2019/image.png"><img src="/images/posts/2019/image-1024x768.png" alt=""></a> Comparison of new and old Flow handling</p>
+<p><a href="images/posts/2019/image.png"><img src="images/posts/2019/image-1024x768.png" alt=""></a> Comparison of new and old Flow handling</p>
 <p>Now these changes really touch the core of what Krita does, that is painting, so we&rsquo;d like all of you to go out, download a test build and play with it.</p>
 <p>The second change is even scarier&hellip; We swapped out the engine that encodes and decodes Krita files.</p>
 <p>Krita&rsquo;s .kra format is actually a simple zip file. And simple zip files have a limit: they cannot be bigger than 4GiB.  And it turns out that people working with animations sometimes do make files bigger than that&hellip;</p>
 <p>So we are now using a new library, <a href="https://stachenov.github.io/quazip/">quazip</a>, that supports the Zip64 standard. But we use that library now wherever we load and save .kra files, but also <a href="https://www.openraster.org/">OpenRaster</a> files, resource bundles &ndash; everything that&rsquo;s a zip file. By default, Zip64 is disabled: if you&rsquo;re working on big animations, you need to manually enable Zip64 functionality:</p>
-<p><a href="/images/posts/2019/zip64.png"><img src="/images/posts/2019/zip64.png" alt=""></a>Note that Zip64 files cannot be loaded in older versions of Krita! But we also need you test whether everything is okay when Zip64 is disabled.</p>
+<p><a href="images/posts/2019/zip64.png"><img src="images/posts/2019/zip64.png" alt=""></a>Note that Zip64 files cannot be loaded in older versions of Krita! But we also need you test whether everything is okay when Zip64 is disabled.</p>
 <h3 id="feedback">Feedback</h3>
 <p><a href="https://docs.google.com/forms/d/1TsmYcfM6Gp9FOAl9ybSPRM5sOdaztwaTvjoboaIq4Ec">Please give us feedback</a>!</p>
 <h2 id="download">Download</h2>

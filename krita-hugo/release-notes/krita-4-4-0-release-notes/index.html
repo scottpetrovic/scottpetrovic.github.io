@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 4.4.0 Release Notes | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -73,23 +73,23 @@
 <h3 id="multi-threading-for-fill-layers">Multi-threading for fill layers</h3>
 <p>Fill layers can now make use of multi-threading. This means that if your computer has multiple cores, Krita can subdivide the calculation work for making fill layers between them. This makes fill layers a lot faster.</p>
 <h3 id="transformations-for-the-pattern-fill">Transformations for the pattern fill</h3>
-<p><a href="/images/posts/2020/krita_4_4_texture_example.png"><img src="/images/pages/krita_4_4_texture_example.png" alt=""></a></p>
+<p><a href="images/posts/2020/krita_4_4_texture_example.png"><img src="images/pages/krita_4_4_texture_example.png" alt=""></a></p>
 <p>The different pattern transforms possible now.</p>
 <p>The <a href="https://docs.krita.org/en/reference_manual/layers_and_masks/fill_layer_generators/pattern_fill.html">patterns of fill layers</a> can now be transformed, allowing you to amongst others, rotate the patterns. This has also been implemented for the shape drawing tools and the bucket fill, and had been long on the to-do list.</p>
 <h3 id="screentone">Screentone</h3>
-<p><a href="/images/posts/2020/fill_layer_screentone_postprocessing.png"><img src="/images/pages/fill_layer_screentone_postprocessing.png" alt=""></a></p>
+<p><a href="images/posts/2020/fill_layer_screentone_postprocessing.png"><img src="images/pages/fill_layer_screentone_postprocessing.png" alt=""></a></p>
 <p><a href="https://docs.krita.org/en/reference_manual/layers_and_masks/fill_layer_generators/screentone.html">A new fill layer option</a> specialized in filling the whole screen with dots, squares, lines, waves or more. This fill layer allows you to quickly generate the simple pattern you need on the fly, which is very useful for those doing comic book illustration or similar highly graphics styles.</p>
 <h3 id="multigrid">Multigrid</h3>
-<p><a href="/images/posts/2020/multigrid-color-examples.png"><img src="/images/pages/multigrid-color-examples.png" alt=""></a></p>
+<p><a href="images/posts/2020/multigrid-color-examples.png"><img src="images/pages/multigrid-color-examples.png" alt=""></a></p>
 <p><a href="https://docs.krita.org/en/reference_manual/layers_and_masks/fill_layer_generators/multigrid.html">A fill layer that generates</a>, among others, <a href="https://en.wikipedia.org/wiki/Penrose_tiling">Penrose tilings</a>, as well as Quasicrystal structures. The results are rotationally symmetric, but aperiodic, meaning these rhomb patterns don&rsquo;t repeat themselves.</p>
 <p>This filter was inspired by the next item on the list&hellip;</p>
 <h3 id="seexpr">SeExpr</h3>
-<p><a href="/images/posts/2020/1096px-SeExpr_manual_1.jpg"><img src="/images/pages/1096px-SeExpr_manual_1.jpg" alt=""></a></p>
+<p><a href="images/posts/2020/1096px-SeExpr_manual_1.jpg"><img src="images/pages/1096px-SeExpr_manual_1.jpg" alt=""></a></p>
 <p>SeExpr Manual</p>
 <p>Amyspark&rsquo;s Google Summer of Code project, the integration of Disney Animation&rsquo;s <a href="https://docs.krita.org/en/reference_manual/layers_and_masks/fill_layer_generators/seexpr.html">SeExpr</a> expression language. SeExpr is in effect a tiny shader language that is used by Walt Disney Animation Studios itself to generate textures and materials on the fly for their animations. Within Krita, this allows you to code your own fill layers. We&rsquo;ve also tried to come up with a good set of defaults to work off from and included them.</p>
 <h2 id="brushes">Brushes</h2>
 <p>Following the addition of the lightness mode in 4.3, this release sees another round of features for the brush engines.</p>
-<p><a href="/images/posts/2020/flowers_gradients_lightness.png"><img src="/images/pages/flowers_gradients_lightness.png" alt=""></a></p>
+<p><a href="images/posts/2020/flowers_gradients_lightness.png"><img src="images/pages/flowers_gradients_lightness.png" alt=""></a></p>
 <p>Top stroke: using a combination of the new lightness parameter with the mix parameter. Bottom stroke: using the texture strength parameter to mix gradient mapped brush tips and textures.</p>
 <h3 id="gradient-map-mode-for-brush-tips">Gradient Map mode for Brush-tips</h3>
 <p>If lightness mode is not subtle enough for you, you can now also use the global <a href="https://docs.krita.org/en/reference_manual/brushes/brush_settings/brush_tips.html">gradient to color a brush tip</a>. Especially useful with small repeating objects like flowers and leaves.</p>
@@ -97,11 +97,11 @@
 <p>Brushes now have the ability to use <a href="https://docs.krita.org/en/reference_manual/brushes/brush_settings/texture.html">lightness and the gradients for textures</a> as well.</p>
 <h3 id="diagonal-selection-lines-in-mypaint-color-selector-shiftm">Diagonal selection lines in MyPaint color selector (Shift+M)</h3>
 <p>Diagonal lines allow modifying <em>lightness and saturation</em> of the currently active color at the same time.</p>
-<p><a href="/images/posts/2020/mypaint_selector_diagonal.png"><img src="/images/pages/mypaint_selector_diagonal.png" alt="Diagonal lines in MyPaint Color Selector (Shift+M)"></a></p>
+<p><a href="images/posts/2020/mypaint_selector_diagonal.png"><img src="images/pages/mypaint_selector_diagonal.png" alt="Diagonal lines in MyPaint Color Selector (Shift+M)"></a></p>
 <p>Diagonal lines in MyPaint Color Selector (Shift+M)</p>
 <h2 id="support-for-dynamic-use-of-currently-selected-colors-in-gradients">Support for dynamic use of currently selected colors in gradients.</h2>
 <p>While Krita had support for the GIMP Gradient format, we never supported the dynamic changing of <a href="https://docs.krita.org/en/reference_manual/resource_management/resource_gradients.html">gradients</a> based on the current fore and background colors. Nor did we do so for the layer styles. This has now been added. Several of the bundled presets use the foreground color to easily create sparks, haze and other effects.</p>
-<p><a href="/images/posts/2020/fg_changing_gradients_for_sparkles.png"><img src="/images/pages/fg_changing_gradients_for_sparkles.png" alt=""></a></p>
+<p><a href="images/posts/2020/fg_changing_gradients_for_sparkles.png"><img src="images/pages/fg_changing_gradients_for_sparkles.png" alt=""></a></p>
 <p> </p>
 <p>Little sparkles added with the &lsquo;GPS glare&rsquo; default, different colors are a different foreground color.</p>
 <h2 id="animation">Animation</h2>
@@ -130,7 +130,7 @@
 <li>New widget bindings: <a href="https://api.kde.org/appscomplete-api/krita-apidocs/libs/libkis/html/classScratchpad.html">scratchpad</a>. See an example of a <a href="https://invent.kde.org/scottpetrovic/krita-scratchpad-docker">scratchpad docker built using python.</a></li>
 </ul>
 <h3 id="new-python-scripting-website">New Python scripting website</h3>
-<p><img src="/images/pages/scripting-school-1024x387.png" alt=""></p>
+<p><img src="images/pages/scripting-school-1024x387.png" alt=""></p>
 <p>To learn about the new scripting APIs, or learn how to script with Krita in general, <a href="https://scripting.krita.org/">a new website was made</a> to assist. It is broken apart into various sections of what scripting can do.</p>
 <h2 id="other">Other</h2>
 <ul>

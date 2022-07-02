@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 4.2 Release Notes | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -94,14 +94,14 @@
 <li>Feature - <a href="https://docs.krita.org/en/reference_manual/hdr_display.html">https://docs.krita.org/en/reference_manual/hdr_display.html</a></li>
 <li>Background Knowledge - <a href="https://docs.krita.org/en/general_concepts/colors/scene_linear_painting.html">https://docs.krita.org/en/general_concepts/colors/scene_linear_painting.html</a></li>
 </ul>
-<p><img src="/images/pages/intel-logo.png" alt=""> This work was possible through cooperating with Intel. The work also involved helping these HDR changes get pushed into the development framework Krita uses, Qt. This can allow other applications to take advantange of these features.</p>
+<p><img src="images/pages/intel-logo.png" alt=""> This work was possible through cooperating with Intel. The work also involved helping these HDR changes get pushed into the development framework Krita uses, Qt. This can allow other applications to take advantange of these features.</p>
 <h2 id="improved-brush-speed-performance-with-vectorization-and-lock-free-programming">Improved brush speed performance with vectorization and lock-free programming</h2>
-<p><img src="/images/pages/avx_cgauss_60.gif" alt=""></p>
-<p><img src="/images/pages/lockless.png" alt=""></p>
+<p><img src="images/pages/avx_cgauss_60.gif" alt=""></p>
+<p><img src="images/pages/lockless.png" alt=""></p>
 <p>Two of our 2018 Google Summer of Code students sped up Krita with programming techniques called lock-free hashmap for managing the pixel data (Andrey Kamakin) and GPU vectorization  (Ivan Yossi). The lock-free hashmap should improve Krita&rsquo;s speed with multithreading, the chart shows the performance gains based off your CPU core count. Vectorization for the Gaussian and Soft-brush tips optimizes Krita by taking advantage of your processor&rsquo;s ability to do similar calculations really quickly, the gif above showing the speed difference for the gaussian brush tip.</p>
 <p>The left axis on the graph is time in milliseconds. You can see the painting operations go from 1.5 seconds down to about 1 second with the lock-free hashmap. The blue line shows how Krita previously worked.</p>
 <h2 id="improved-color-palette-docker">Improved Color Palette Docker</h2>
-<p><img src="/images/pages/color-palette-improvements.png" alt=""> An improved color palette from one of our Google Summer of Code students for 2018 &ndash; Michael Zhou. It is more stable as well as some of the following changes:</p>
+<p><img src="images/pages/color-palette-improvements.png" alt=""> An improved color palette from one of our Google Summer of Code students for 2018 &ndash; Michael Zhou. It is more stable as well as some of the following changes:</p>
 <ol>
 <li>Instead of an entry-based docker, a rows and column based docker.</li>
 <li>It can hold empty entries, which is useful for organizing.</li>
@@ -126,18 +126,18 @@
 <p>A couple plugins have already been created that are using some of these functions. There was also another fix to the Node/Layer API where the &ldquo;scaleNode&rdquo; call was passing the wrong parameter</p>
 <p><strong>Animator Video Reference and importer</strong> - <a href="https://github.com/scottpetrovic/animator-video-reference">https://github.com/scottpetrovic/animator-video-reference</a> <strong>Sprite Sheet manager</strong> - <a href="https://github.com/Falano/kritaSpritesheetManager">https://github.com/Falano/kritaSpritesheetManager</a></p>
 <h2 id="configure-file-backups">Configure File backups</h2>
-<p><img src="/images/pages/4-2-file-backup-options.png" alt=""> Options to control how your backups are done. You can even control if you want your backup files to be stored in a different location. These settings are found in the &ldquo;Configure Krita&rdquo; main menu under the General section.</p>
+<p><img src="images/pages/4-2-file-backup-options.png" alt=""> Options to control how your backups are done. You can even control if you want your backup files to be stored in a different location. These settings are found in the &ldquo;Configure Krita&rdquo; main menu under the General section.</p>
 <p>If you have very large files and are have issues saving, you can enable the Zip64 options.</p>
 <h2 id="color-gamut-masking">Color Gamut Masking</h2>
-<p><img src="/images/pages/4-2-gamut-mask.png" alt=""></p>
+<p><img src="images/pages/4-2-gamut-mask.png" alt=""></p>
 <p>A new color gamut docker where you can limit your colors shown. New contributor Anna Medonosova has added this. This feature is available with the artistic color selector and the circle advanced color docker displays. Note: The default triangle selector doesn&rsquo;t allow this feature.</p>
 <p>You can also rotate the gamut mask by using the slider. Create new masks and edit existing ones through the Gamut Mask docker. You can disable the mask with the selector icon at the top as shown to the left of the rotation slider.</p>
 <h2 id="news-about-krita">News about Krita</h2>
-<p><img src="/images/pages/news-widget-splash-screen-2.png" alt=""> A news widget has been added to the startup screen that allows Krita to fetch the latest news coming from krita.org. Now, if there&rsquo;s something interesting, like a new release, you&rsquo;ll be in the front row! Clicking on a news item will take you to the web page. This is off by default, so you will need to turn it on. Special thanks goes out to Alvin Wong on getting the OpenSSL library included to make this work.</p>
+<p><img src="images/pages/news-widget-splash-screen-2.png" alt=""> A news widget has been added to the startup screen that allows Krita to fetch the latest news coming from krita.org. Now, if there&rsquo;s something interesting, like a new release, you&rsquo;ll be in the front row! Clicking on a news item will take you to the web page. This is off by default, so you will need to turn it on. Special thanks goes out to Alvin Wong on getting the OpenSSL library included to make this work.</p>
 <h2 id="improved-artistic-color-selector">Improved Artistic Color Selector</h2>
-<p><img src="/images/pages/improved-artistic-color-selector.png" alt=""> More options and cleaned up Artistic Color Selector. There is now a &ldquo;continuous mode&rdquo; (infinity symbol) that allows you to remove the stepping with certain attributes. Additional options for new gamut masking. Anna Medonosova has added this great feature.</p>
+<p><img src="images/pages/improved-artistic-color-selector.png" alt=""> More options and cleaned up Artistic Color Selector. There is now a &ldquo;continuous mode&rdquo; (infinity symbol) that allows you to remove the stepping with certain attributes. Additional options for new gamut masking. Anna Medonosova has added this great feature.</p>
 <h2 id="undo-operations-with-move-tool">Undo operations with move tool</h2>
-<p><img src="/images/pages/undo-move-feature.gif" alt=""> Move tool operations are now part part of the undo history. This means you can undo multiple moves in a row while you are using the move tool.</p>
+<p><img src="images/pages/undo-move-feature.gif" alt=""> Move tool operations are now part part of the undo history. This means you can undo multiple moves in a row while you are using the move tool.</p>
 <h2 id="move-and-transform-selections">Move and transform selections</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -146,29 +146,29 @@
 
 <p>Easily move, rotate, or transform the selection by itself. You can even edit the anchor points with how the selection is made to do things like rounding corners.</p>
 <h2 id="improve-display-of-memory-usage">Improve display of memory usage</h2>
-<p><img src="/images/pages/image.png" alt=""> Give a better indication when your computer is running out of memory. This can be useful as well when making an animation and you won&rsquo;t have enough memory to actually render it. This bar already exists in the status bar, but should help warn people better.</p>
+<p><img src="images/pages/image.png" alt=""> Give a better indication when your computer is running out of memory. This can be useful as well when making an animation and you won&rsquo;t have enough memory to actually render it. This bar already exists in the status bar, but should help warn people better.</p>
 <h2 id="overview-docker-improvements">Overview Docker improvements</h2>
-<p><img src="/images/pages/4-2-rotate-flip.png" alt=""> Rotate and mirror canvas quickly from the docker. The Overview docker now also better preserves the aspect ratio and doesn&rsquo;t stretch when some layers are hidden.</p>
+<p><img src="images/pages/4-2-rotate-flip.png" alt=""> Rotate and mirror canvas quickly from the docker. The Overview docker now also better preserves the aspect ratio and doesn&rsquo;t stretch when some layers are hidden.</p>
 <h2 id="resize-layer-thumbnails">Resize layer thumbnails</h2>
 <video controls width="100%">
-    <source src="/videos/resize-thumbnail.mp4" type="video/mp4">
+    <source src="videos/resize-thumbnail.mp4" type="video/mp4">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
 <p>There is a new slider on the layers docker that allows you to resize the layer thumbnails to see them larger. The size is saved for when you return back to Krita the next time.</p>
 <h2 id="multibrush-improvements">Multibrush improvements</h2>
-<p><img src="/images/pages/4-2-multi-brush-preview.png" alt=""> Better preview when showing multiple axes.</p>
+<p><img src="images/pages/4-2-multi-brush-preview.png" alt=""> Better preview when showing multiple axes.</p>
 <p>There is also a new &ldquo;Copy Translate&rdquo; mode. This allows you to specify multiple cursors on the screen to paint or draw with at the same time. This is accessed and used through the Tool options like the other modes.</p>
 <h2 id="painting-mask-performance-improvement">Painting mask performance improvement</h2>
 <video controls width="100%">
-    <source src="/videos/painting_selection_mask.webm" type="video/webm">
+    <source src="videos/painting_selection_mask.webm" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
 <p>You can create a selection with your normal brushes using the Global Selection option. This has previously been a slow area until now. They are now significantly faster. A small workflow change was made as well. If you show the Global Selection mask with no selection, everything will be selected by default.</p>
 <h2 id="improvement-to-select-opaque">Improvement to Select Opaque</h2>
 <video controls width="100%">
-    <source src="/videos/select_opque_improvements.webm" type="video/webm">
+    <source src="videos/select_opque_improvements.webm" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
@@ -180,28 +180,28 @@
 <li>Ctrl+shift+alt+click = intersect selection</li>
 </ul>
 <h2 id="sharpness-changes">Sharpness Changes</h2>
-<p><a href="/images/posts/2019/sharpness_in_motion.gif"><img src="/images/pages/sharpness_in_motion.gif" alt=""></a></p>
+<p><a href="images/posts/2019/sharpness_in_motion.gif"><img src="images/pages/sharpness_in_motion.gif" alt=""></a></p>
 <p>The sharpness option, which sets a threshold filter on the current brushtip now allows controlling this threshold with pressure, making it easy to create bristle like brushes from any with the pixel brush.</p>
 <h2 id="flowopacity-changes">Flow/Opacity Changes</h2>
-<p><a href="/images/posts/2019/flow_opacity_adapt_flow_preset.gif"><img src="/images/pages/flow_opacity_adapt_flow_preset.gif" alt=""></a></p>
+<p><a href="images/posts/2019/flow_opacity_adapt_flow_preset.gif"><img src="images/pages/flow_opacity_adapt_flow_preset.gif" alt=""></a></p>
 <p>Flow and Opacity now interact more like in other programs. The above gif shows how to adapt a brush which uses the new behaviour to go back to the old behaviour. The new behaviour should make it a lot easier to make delicate strokes. For now you can still go back to using the old behaviour globally by going to Configure Krita → General → Tools → Flow Mode</p>
 <h2 id="clone-brush---reset-origin">Clone Brush - Reset Origin</h2>
 <video controls width="100%">
-    <source src="/videos/clone_brush-v2.webm" type="video/webm">
+    <source src="videos/clone_brush-v2.webm" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
 <p>A new option was added to the clone brush that allows you to reset the origin after every brush stroke.</p>
 <h2 id="simplex-noise-generator">Simplex Noise Generator</h2>
 <video controls width="100%">
-    <source src="/videos/fill_simplex_noise.webm" type="video/webm">
+    <source src="videos/fill_simplex_noise.webm" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
 <p>Add ability to dynamically add noise to your document. There are also options to make the noise tileable.</p>
 <h2 id="new-blend-modes">New Blend modes</h2>
 <video controls width="100%">
-    <source src="/videos/blend_modes.webm" type="video/webm">
+    <source src="videos/blend_modes.webm" type="video/webm">
     There should have been a video here but your browser does not seem
     to support it.
 </video>

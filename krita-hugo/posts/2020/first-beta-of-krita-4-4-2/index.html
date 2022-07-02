@@ -9,14 +9,14 @@
 
 	<title>Krita | First beta of Krita 4.4.2 | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -71,9 +71,9 @@
 <h2 id="new-features">New Features</h2>
 <h3 id="mesh-gradients">Mesh Gradients</h3>
 <p>Sharaf Zaman&rsquo;s Google Summer of Code project has landed in this release! Compatible with Inkscape, Krita now provides the second independent implementation of SVG Mesh Gradients. Mesh gradients are used on vector objects and can deliver really natural looking results:</p>
-<p><a href="/images/posts/2020/Handles-meshgradient.png"><img src="/images/posts/2020/Handles-meshgradient-1024x554.png" alt="Mesh Gradients"></a> Mesh Gradients</p>
+<p><a href="images/posts/2020/Handles-meshgradient.png"><img src="images/posts/2020/Handles-meshgradient-1024x554.png" alt="Mesh Gradients"></a> Mesh Gradients</p>
 <h3 id="mesh-transform">Mesh Transform</h3>
-<p><a href="/images/posts/2020/krita_4_4_2_mesh_gradients.png"><img src="/images/posts/2020/krita_4_4_2_mesh_gradients.png" alt="Image showing how useful mesh transforms can be"></a> Mesh transforms will greatly speed up your concept by allowing complex transformations, such as the half-rounded grate on this window!</p>
+<p><a href="images/posts/2020/krita_4_4_2_mesh_gradients.png"><img src="images/posts/2020/krita_4_4_2_mesh_gradients.png" alt="Image showing how useful mesh transforms can be"></a> Mesh transforms will greatly speed up your concept by allowing complex transformations, such as the half-rounded grate on this window!</p>
 <p>But the gradients are not the only mesh related feature! This release also sees the first iteration of the mesh-transform. Like the gradient mesh, the mesh transform consists of bezier patches that can be individually shaped to create precise transforms, especially useful for rounded objects. Not shown in the above screenshot: you can optionally show the handles of each bezier curve making up the mesh for even more precision and control!</p>
 <p>We&rsquo;re still tweaking this one, but currently the shortcuts are the following:</p>
 <ol>
@@ -85,11 +85,11 @@
 <li>Empty area outside mesh: - click+drag &mdash; rotate mesh or selection - ctrl+click+drag &mdash; scale mesh or selection - shift+click+drag &mdash; move mesh or selection</li>
 </ol>
 <h3 id="gradient-fill-layer-and-new-gradient-editor">Gradient Fill Layer and new Gradient Editor</h3>
-<p><a href="/images/posts/2020/krita_4_4_2_new_gradient_editor_and_fill_layer.png"><img src="/images/posts/2020/krita_4_4_2_new_gradient_editor_and_fill_layer.png" alt="Showing the gradient fill layer and the new gradient editor."></a> The gradient fill layer and the new gradient editor in action.</p>
+<p><a href="images/posts/2020/krita_4_4_2_new_gradient_editor_and_fill_layer.png"><img src="images/posts/2020/krita_4_4_2_new_gradient_editor_and_fill_layer.png" alt="Showing the gradient fill layer and the new gradient editor."></a> The gradient fill layer and the new gradient editor in action.</p>
 <p>Deif Lou added a new gradient fill layer type, this one will make it easy to quickly create a variety of gradients non-destructively. With it, he also made an important usability fix: Gradients in Krita could be either segment type, or stop type, with different features each, and different editors each. That could get quite annoying if you were working on a gradient, but you realized you had the wrong type! This is now fixed, as both gradient types can now be edited by the same editor, which also converts between the two.</p>
 <h3 id="improved-halftone-filter">Improved Halftone Filter</h3>
 <p>Deif Lou also created a new halftone filter. The old filter was slow and could not be used as a filter mask, and could only show dots.</p>
-<p><a href="/images/posts/2020/krita_4_4_2_halftone_filter.png"><img src="/images/posts/2020/krita_4_4_2_halftone_filter.png" alt="Our splash screen as filtered by the half tone filter"></a> The new halftone filter can do per-channel filtering, useful for vintag effects and maybe even printing!</p>
+<p><a href="images/posts/2020/krita_4_4_2_halftone_filter.png"><img src="images/posts/2020/krita_4_4_2_halftone_filter.png" alt="Our splash screen as filtered by the half tone filter"></a> The new halftone filter can do per-channel filtering, useful for vintag effects and maybe even printing!</p>
 <p>The new filter can handle being applied as filter layer, per-channel filtering, and the pattern itself can be generated with any of the fill layer options, giving endless combinations.</p>
 <h3 id="updated-macos-integration-plugins">Updated macOS integration plugins</h3>
 <p>Amyspark improved the quicklook plugin by adding thumbnailing support (needs macOS 10.15 or higher) and added metadata support for Spotlight.</p>
@@ -97,11 +97,11 @@
 <p>A small feature that allows you to only paste the style of the copied vector shape onto other selected vector shapes. This feature can be found under the edit menu, or assigned a shortcut in the shortcut settings.</p>
 <h3 id="a-toolbar-button-for-wraparound-mode">A Toolbar Button for Wraparound Mode</h3>
 <p>Originally, we had a shortcut, W, that enabled Krita&rsquo;s Wraparound mode, one of the features Adobe copied this year for the next release of Photoshop.</p>
-<p><a href="/images/posts/2014/wrap-around-mode.jpg"><img src="/images/posts/2020/wrap-around-mode.jpg" alt=""></a></p>
+<p><a href="images/posts/2014/wrap-around-mode.jpg"><img src="images/posts/2020/wrap-around-mode.jpg" alt=""></a></p>
 <p>But too many people pressed the shortcut by accident and were then confused and thought Krita had gone crazy&hellip; So we removed the shortcut, but now nobody could find it anymore. That&rsquo;s why in this release, we have added a button to the toolbar that activates wraparound:</p>
-<p><a href="/images/posts/2020/wraparound_button.png"><img src="/images/posts/2020/wraparound_button.png" alt=""></a>Please don&rsquo;t press it by accident!</p>
+<p><a href="images/posts/2020/wraparound_button.png"><img src="images/posts/2020/wraparound_button.png" alt=""></a>Please don&rsquo;t press it by accident!</p>
 <h3 id="hidpi-support">HiDPI Support</h3>
-<p><img src="/images/posts/2020/popup_palette_comparison.png" alt="This image shows the difference between the old popup palette and the new one on 4k display with 200% UI scaling. Note that it also shows a new button and custom UI text."> Agata Cacko improved HiDPI rendering (<a href="https://bugs.kde.org/show_bug.cgi?id=411118">BUG:411118</a>) of</p>
+<p><img src="images/posts/2020/popup_palette_comparison.png" alt="This image shows the difference between the old popup palette and the new one on 4k display with 200% UI scaling. Note that it also shows a new button and custom UI text."> Agata Cacko improved HiDPI rendering (<a href="https://bugs.kde.org/show_bug.cgi?id=411118">BUG:411118</a>) of</p>
 <ul>
 <li>Pixelart previews</li>
 <li>Reference images</li>

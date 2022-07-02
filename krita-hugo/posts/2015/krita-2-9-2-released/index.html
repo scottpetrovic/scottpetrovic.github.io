@@ -9,14 +9,14 @@
 
 	<title>Krita | Krita 2.9.2 Released | Krita Site</title>
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 
-	<link href="/images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+	<link href="images/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
-	<script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
 </head>
@@ -25,7 +25,7 @@
 
 <header class="site-header"><nav class="site-nav max-content-width">
    <a class="logo" href="https://scottpetrovic.github.io/krita-hugo//en">
-      <img src="https://scottpetrovic.github.io/krita-hugo//images/krita-logo.png" style="width: 7.5rem" />
+      <img src="images/krita-logo.png" style="width: 7.5rem" />
     </a>
 
     <ul class="main-menu">
@@ -99,7 +99,7 @@
 <p>Most work in the past month has gone into the Qt 5 port (Krita now starts, yay! But it doesn&rsquo;t work yet&hellip;) and most of all the Photoshop-style Layerstyle feature. We&rsquo;ve got most of the effects implemented, most of the dialog box, too &ndash; only the contour selector, the style library selector and the blending mode page is still missing. Loading and saving is still to be done.</p>
 <p>But here&rsquo;s a <em>teaser</em> screenshot of of a layer style on a <em>vector</em> layer (layer styles work on all types of layers, paint layers, vector, group, clone, file&hellip;)</p>
 <p> </p>
-<p><a href="/images/posts/2015/layerstyle.png"><img src="/images/posts/2015/layerstyle-1024x314.png" alt="layerstyle"></a></p>
+<p><a href="images/posts/2015/layerstyle.png"><img src="images/posts/2015/layerstyle-1024x314.png" alt="layerstyle"></a></p>
 <p>We hope the loading and saving will be ready in time for 2.9.3!</p>
 <p><strong>Note on G’Mic on Windows</strong>: Lukas, David and Boudewijn are trying to figure out how to make G’Mic stable on Windows. The 32 bits 2.9.1 Windows build doesn’t include G’Mic at all. The 64 bits build does, and on a large enough system, most of the filters are stable. We’re currently trying different compilers because it seems that most problems are causes by Microsoft Visual Studio 2012 generating buggy code. We’re working like crazy to figure out how to fix this, but please, for now, on 64 bits Windows treat G’Mic as entirely experimental. We still haven&rsquo;t managed to find a combination of compilers that will let us build Krita and G&rsquo;Mic and make it work reliable.</p>
 <p>If you&rsquo;ve got experience cross-compiling from Linux to Windows and want to help out: that&rsquo;s about the last thing we haven&rsquo;t done. I&rsquo;ve tried to create a cross-compilation setup, but got stuck on making Qt build with OpenGL support for Windows on Linux. <strong>If you can help, please join us on #krita</strong>.</p>
