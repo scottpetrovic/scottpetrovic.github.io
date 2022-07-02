@@ -8,7 +8,7 @@
 
 	<base href="https://scottpetrovic.github.io/krita-hugo/">
 
-	<title>Krita | Krita Site(ES)</title>
+	<title>Krita (ES)  </title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -87,14 +87,21 @@
     }
 
     .hero-credits {
-        height: 50px; 
-        width: 100%; 
         background: #324148; 
         padding: 0.75rem; 
+    }
+    .hero-credits div, .hero-credits a {
         color: #bab8b8;
     }
-    .hero-credits span, .hero-credits a {
-        color: #bab8b8;
+
+    .hero-credits img {
+        height: 20px;
+    }
+    .social-media a {
+        text-decoration: none;
+    }
+    .social-media a:hover {
+        opacity: 0.7;
     }
 
 </style>
@@ -106,18 +113,50 @@
 
         <p>Krita is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone. </p>
 
-        <a href="/download" class="button">Download</a>
+        <a href="download" class="button">Download</a>
         <img src="images/pages/os-supported-icons-all.png" height="50" />
     </span>   
 
 </div>
 
 <div class="hero-credits"> 
-    Powered by <a href="https://kde.org" target="_blank"><img src="images/pages/kde-logo.png" style="height: 100%" /></a>
 
-    <span style="float: right; font-size: 1rem; font-style: italic;">Art by 
-        <a href="https://twitter.com/tysontanx" target="_blank">Tyson Tan</a>
-    </span>
+    <div class="row">
+        <div class="col-md-4">
+                Powered by <a href="https://kde.org" target="_blank">
+                <img src="images/pages/kde-logo.png"  />
+            </a>
+        </div>
+        <div class="col-md-5 social-media">
+            <a href="https://krita-free-art-app.deviantart.com/" target="_blank">
+                <img src="images/social-media/social-deviantart.png" />
+            </a>
+            <a href="https://www.facebook.com/pages/Krita-Foundation/511943358879536" target="_blank">
+                <img src="images/social-media/social-facebook.png" />
+            </a>
+            <a href="https://www.instagram.com/krita_foundation/" target="_blank">
+                <img src="images/social-media/social-instagram.png" />
+            </a>
+            <a href="https://mastodon.art/@krita" target="_blank">
+                <img src="images/social-media/social-mastodon.png" />
+            </a>
+            <a href="https://www.reddit.com/r/krita/" target="_blank">
+                <img src="images/social-media/social-reddit.png" />
+            </a>
+            <a href="https://twitter.com/Krita_Painting" target="_blank">
+                <img src="images/social-media/social-twitter.png" />
+            </a>
+            <a href="https://vk.com/ilovefreeart" target="_blank">
+                <img src="images/social-media/social-vk.png" />
+            </a>
+        </div>
+        
+        <div class="col-md-3" style="text-align: right">
+            Artwork by <a href="https://twitter.com/tysontanx" target="_blank">Tyson Tan</a>
+        </div>
+
+    </div>
+
 </div>
 
 
@@ -249,7 +288,7 @@ Este es un lanzamiento gigante, con muchísimas mejoras, una gran cantidad de ca
     <h2>Free and Open Source</h2>
     <span style="max-width: 530px; display: inline-block;">        
         <p>Krita is a public project licensed as GNU GPL, owned by its contributors. For that reason Krita is Free and Open Source software, forever.</p>
-        <a href="/about/license/" style="color: white">See details about license usage</a> 
+        <a href="about/license/" style="color: white">See details about license usage</a> 
     </span>
 </div>
 
