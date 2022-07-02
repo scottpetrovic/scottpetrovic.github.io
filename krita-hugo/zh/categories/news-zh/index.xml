@@ -2,187 +2,187 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>news-zh on Krita Site(PRC)</title>
-    <link>https://scottpetrovic.github.io/krita-hugo/zh/categories/news-zh/</link>
+    <link>https://scottpetrovic.github.io/zh/categories/news-zh/</link>
     <description>Recent content in news-zh on Krita Site(PRC)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/zh/categories/news-zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/zh/categories/news-zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Krita 5.0.2 正式版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2022/krita-5-0-2-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2022/krita-5-0-2-zh/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2022/krita-5-0-2-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2022/krita-5-0-2-zh/</guid>
       <description>紧随 Krita 5.0.0 的步伐，我们今天为大家带来了 Krita 5.0</description>
     </item>
     
     <item>
       <title>Krita 5.0 正式版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-5-0-released-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-5-0-released-zh/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-5-0-released-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-5-0-released-zh/</guid>
       <description>经过漫长而艰苦的开发，今天 Krita 5.0 终于正式发</description>
     </item>
     
     <item>
       <title>Krita 5.0 公开测试第 5 版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-5-0-0-beta-5-released-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-5-0-0-beta-5-released-zh/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-5-0-0-beta-5-released-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-5-0-0-beta-5-released-zh/</guid>
       <description>今天我们为大家带来了 Krita 5.0 公开测试第 5 版。</description>
     </item>
     
     <item>
       <title>Krita 4.4.8 正式版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-8-released-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-8-released-zh/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-8-released-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-8-released-zh/</guid>
       <description>Krita 4.4.8 版已经发布。它修复了一些程序缺陷，包</description>
     </item>
     
     <item>
       <title>Krita 5.0 公开测试第 1 版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/first-beta-for-krita-5-0-released-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/first-beta-for-krita-5-0-released-zh/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/first-beta-for-krita-5-0-released-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/first-beta-for-krita-5-0-released-zh/</guid>
       <description>今天 Krita 开发团队为大家带来了 Krita 5.0 的公开测试</description>
     </item>
     
     <item>
       <title>Krita 4.4.5 正式版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-5-released-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-5-released-zh/</link>
       <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-5-released-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-5-released-zh/</guid>
       <description>今天 Krita 团队推出了 Krita 4.4.5，它是 5.0 发布</description>
     </item>
     
     <item>
       <title>请支持新版 Krita 开发基金</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/join-the-new-development-fund-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/join-the-new-development-fund-zh/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/join-the-new-development-fund-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/join-the-new-development-fund-zh/</guid>
       <description>2021 年 5 月，Krita 正式成立了新版的开发</description>
     </item>
     
     <item>
       <title>Krita 上架 Epic 游戏商城</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-arrives-in-the-epic-store-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-arrives-in-the-epic-store-zh/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-arrives-in-the-epic-store-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-arrives-in-the-epic-store-zh/</guid>
       <description>Krita 在 Epic 游戏商城正式上架了。Epic 过去曾</description>
     </item>
     
     <item>
       <title>Krita 4.4.3 正式版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-3-released-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-3-released-zh/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-3-released-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-3-released-zh/</guid>
       <description>今天 Krita 开发团队发布了 Krita 4.4.3 正式版。此版软件</description>
     </item>
     
     <item>
       <title>Krita 4.4.3 公开测试第 2 版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-3-second-beta-release-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-3-second-beta-release-zh/</link>
       <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-4-4-3-second-beta-release-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-4-4-3-second-beta-release-zh/</guid>
       <description>今天 Krita 开发团队发布了 Krita 4.4.3 的第 2 个公开测试</description>
     </item>
     
     <item>
       <title>Krita 4.4.3 公开测试第 1 版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/first-beta-release-for-krita-4-4-3-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/first-beta-release-for-krita-4-4-3-zh/</link>
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/first-beta-release-for-krita-4-4-3-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/first-beta-release-for-krita-4-4-3-zh/</guid>
       <description>Krita 开发团队已经推出了 Krita 4.4.3 公开测试第 1 版。</description>
     </item>
     
     <item>
       <title>Krita 2020 年工作回顾</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-in-2020-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2021/krita-in-2020-zh/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2021/krita-in-2020-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2021/krita-in-2020-zh/</guid>
       <description>伴随着新年的钟声，2020 这个多灾多难的</description>
     </item>
     
     <item>
       <title>Krita 4.4.2 公开测试第 1 版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/first-beta-of-krita-4-4-2-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2020/first-beta-of-krita-4-4-2-zh/</link>
       <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/first-beta-of-krita-4-4-2-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2020/first-beta-of-krita-4-4-2-zh/</guid>
       <description>今天 Krita 团队推出了 Krita 4.4.2 的第 1 个公开测试版本</description>
     </item>
     
     <item>
       <title>KSeExpr 程序库 4.0.0 版已经推出</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/kseexpr-4-0-0-released-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2020/kseexpr-4-0-0-released-zh/</link>
       <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/kseexpr-4-0-0-released-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2020/kseexpr-4-0-0-released-zh/</guid>
       <description>今天，KSeExpr 程序库 4.0.0 版正式发布了</description>
     </item>
     
     <item>
       <title>2020 年谷歌代码之夏 Krita 项目课题报告</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/pencils-down-or-what-our-summer-of-code-students-have-achieved-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2020/pencils-down-or-what-our-summer-of-code-students-have-achieved-zh/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/pencils-down-or-what-our-summer-of-code-students-have-achieved-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2020/pencils-down-or-what-our-summer-of-code-students-have-achieved-zh/</guid>
       <description>2020 年谷歌代码之夏活动已经进入课题评估环节</description>
     </item>
     
     <item>
       <title>Krita 脚本编程教学网站上线</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/announcing-kritas-scripting-school-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2020/announcing-kritas-scripting-school-zh/</link>
       <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/announcing-kritas-scripting-school-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2020/announcing-kritas-scripting-school-zh/</guid>
       <description>Krita 在很久以前曾经加入过脚本编程支持，但当</description>
     </item>
     
     <item>
       <title>2020 年谷歌编程之夏 Krita 入选学生和项目</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/presenting-our-google-summer-of-code-students-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2020/presenting-our-google-summer-of-code-students-zh/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2020/presenting-our-google-summer-of-code-students-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2020/presenting-our-google-summer-of-code-students-zh/</guid>
       <description>基于文章重要程度、翻译人员时间用途的判断</description>
     </item>
     
     <item>
       <title>Krita 画师交流网站上线</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2019/introducing-krita-artists-org-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2019/introducing-krita-artists-org-zh/</link>
       <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2019/introducing-krita-artists-org-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2019/introducing-krita-artists-org-zh/</guid>
       <description>从 2019 年 Blender 峰会归来后, Krita 项目负责人 Boudewijn Rempt 表达</description>
     </item>
     
     <item>
       <title>2018 年 Krita 项目统计数据</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2018/statistics-are-fun-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2018/statistics-are-fun-zh/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2018/statistics-are-fun-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2018/statistics-are-fun-zh/</guid>
       <description>在 2018 年的最后一天，让我们用统计数据说话，</description>
     </item>
     
     <item>
       <title>Krita 2018 年回顾与 2019 年展望</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh/posts/2018/krita-in-2018-and-2019-zh/</link>
+      <link>https://scottpetrovic.github.io/zh/posts/2018/krita-in-2018-and-2019-zh/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh/posts/2018/krita-in-2018-and-2019-zh/</guid>
+      <guid>https://scottpetrovic.github.io/zh/posts/2018/krita-in-2018-and-2019-zh/</guid>
       <description>转眼间又到了一年的年底，正如我们去年回顾</description>
     </item>
     

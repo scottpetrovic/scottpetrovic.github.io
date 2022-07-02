@@ -2,151 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Krita Site</title>
-    <link>https://scottpetrovic.github.io/krita-hugo/tags/</link>
+    <link>https://scottpetrovic.github.io/tags/</link>
     <description>Recent content in Tags on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>book</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/book/</link>
+      <link>https://scottpetrovic.github.io/tags/book/</link>
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/book/</guid>
+      <guid>https://scottpetrovic.github.io/tags/book/</guid>
       <description></description>
     </item>
     
     <item>
       <title>krita</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/krita/</link>
+      <link>https://scottpetrovic.github.io/tags/krita/</link>
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/krita/</guid>
+      <guid>https://scottpetrovic.github.io/tags/krita/</guid>
       <description></description>
     </item>
     
     <item>
       <title>animation</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/animation/</link>
+      <link>https://scottpetrovic.github.io/tags/animation/</link>
       <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/animation/</guid>
+      <guid>https://scottpetrovic.github.io/tags/animation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>release</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/release/</link>
+      <link>https://scottpetrovic.github.io/tags/release/</link>
       <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/release/</guid>
+      <guid>https://scottpetrovic.github.io/tags/release/</guid>
       <description></description>
     </item>
     
     <item>
       <title>krita-2-9</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/krita-2-9/</link>
+      <link>https://scottpetrovic.github.io/tags/krita-2-9/</link>
       <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/krita-2-9/</guid>
+      <guid>https://scottpetrovic.github.io/tags/krita-2-9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>c21-webshop</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/c21-webshop/</link>
+      <link>https://scottpetrovic.github.io/tags/c21-webshop/</link>
       <pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/c21-webshop/</guid>
+      <guid>https://scottpetrovic.github.io/tags/c21-webshop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>krita-webshop</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/krita-webshop/</link>
+      <link>https://scottpetrovic.github.io/tags/krita-webshop/</link>
       <pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/krita-webshop/</guid>
+      <guid>https://scottpetrovic.github.io/tags/krita-webshop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>zazzle</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/zazzle/</link>
+      <link>https://scottpetrovic.github.io/tags/zazzle/</link>
       <pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/zazzle/</guid>
+      <guid>https://scottpetrovic.github.io/tags/zazzle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>brush</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/brush/</link>
+      <link>https://scottpetrovic.github.io/tags/brush/</link>
       <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/brush/</guid>
+      <guid>https://scottpetrovic.github.io/tags/brush/</guid>
       <description></description>
     </item>
     
     <item>
       <title>demo</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/demo/</link>
+      <link>https://scottpetrovic.github.io/tags/demo/</link>
       <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/demo/</guid>
+      <guid>https://scottpetrovic.github.io/tags/demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>oriental</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/oriental/</link>
+      <link>https://scottpetrovic.github.io/tags/oriental/</link>
       <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/oriental/</guid>
+      <guid>https://scottpetrovic.github.io/tags/oriental/</guid>
       <description></description>
     </item>
     
     <item>
       <title>setting</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/setting/</link>
+      <link>https://scottpetrovic.github.io/tags/setting/</link>
       <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/setting/</guid>
+      <guid>https://scottpetrovic.github.io/tags/setting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>texture</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/texture/</link>
+      <link>https://scottpetrovic.github.io/tags/texture/</link>
       <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/texture/</guid>
+      <guid>https://scottpetrovic.github.io/tags/texture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>featured</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/featured/</link>
+      <link>https://scottpetrovic.github.io/tags/featured/</link>
       <pubDate>Wed, 11 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/featured/</guid>
+      <guid>https://scottpetrovic.github.io/tags/featured/</guid>
       <description></description>
     </item>
     
     <item>
       <title>krita23</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/krita23/</link>
+      <link>https://scottpetrovic.github.io/tags/krita23/</link>
       <pubDate>Wed, 11 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/krita23/</guid>
+      <guid>https://scottpetrovic.github.io/tags/krita23/</guid>
       <description></description>
     </item>
     
     <item>
       <title>krita24</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/tags/krita24/</link>
+      <link>https://scottpetrovic.github.io/tags/krita24/</link>
       <pubDate>Wed, 11 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/tags/krita24/</guid>
+      <guid>https://scottpetrovic.github.io/tags/krita24/</guid>
       <description></description>
     </item>
     

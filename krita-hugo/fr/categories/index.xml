@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Krita Site (FR Version)</title>
-    <link>https://scottpetrovic.github.io/krita-hugo/fr/categories/</link>
+    <link>https://scottpetrovic.github.io/fr/categories/</link>
     <description>Recent content in Categories on Krita Site (FR Version)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/fr/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/fr/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>uncategorized-fr</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/fr/categories/uncategorized-fr/</link>
+      <link>https://scottpetrovic.github.io/fr/categories/uncategorized-fr/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/fr/categories/uncategorized-fr/</guid>
+      <guid>https://scottpetrovic.github.io/fr/categories/uncategorized-fr/</guid>
       <description></description>
     </item>
     

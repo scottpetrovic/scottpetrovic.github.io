@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Krita Site(TW)</title>
-    <link>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/</link>
+    <link>https://scottpetrovic.github.io/zh-tw/categories/</link>
     <description>Recent content in Categories on Krita Site(TW)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/zh-tw/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>news_zh-tw</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/news_zh-tw/</link>
+      <link>https://scottpetrovic.github.io/zh-tw/categories/news_zh-tw/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/news_zh-tw/</guid>
+      <guid>https://scottpetrovic.github.io/zh-tw/categories/news_zh-tw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>officialrelease_zh-tw</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/officialrelease_zh-tw/</link>
+      <link>https://scottpetrovic.github.io/zh-tw/categories/officialrelease_zh-tw/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/officialrelease_zh-tw/</guid>
+      <guid>https://scottpetrovic.github.io/zh-tw/categories/officialrelease_zh-tw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development-builds_zh-tw</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/development-builds_zh-tw/</link>
+      <link>https://scottpetrovic.github.io/zh-tw/categories/development-builds_zh-tw/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/development-builds_zh-tw/</guid>
+      <guid>https://scottpetrovic.github.io/zh-tw/categories/development-builds_zh-tw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>uncategorized-zh-tw</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/uncategorized-zh-tw/</link>
+      <link>https://scottpetrovic.github.io/zh-tw/categories/uncategorized-zh-tw/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/uncategorized-zh-tw/</guid>
+      <guid>https://scottpetrovic.github.io/zh-tw/categories/uncategorized-zh-tw/</guid>
       <description></description>
     </item>
     

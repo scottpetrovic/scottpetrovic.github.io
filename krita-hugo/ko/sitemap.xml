@@ -2,130 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://scottpetrovic.github.io/krita-hugo/ko/</loc>
+    <loc>https://scottpetrovic.github.io/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scottpetrovic.github.io/krita-hugo/"
+                href="https://scottpetrovic.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://scottpetrovic.github.io/krita-hugo/fr/"
+                href="https://scottpetrovic.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://scottpetrovic.github.io/krita-hugo/zh/"
+                href="https://scottpetrovic.github.io/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hk"
-                href="https://scottpetrovic.github.io/krita-hugo/zh-hk/"
+                href="https://scottpetrovic.github.io/zh-hk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://scottpetrovic.github.io/krita-hugo/zh-tw/"
+                href="https://scottpetrovic.github.io/zh-tw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="jp"
-                href="https://scottpetrovic.github.io/krita-hugo/jp/"
+                href="https://scottpetrovic.github.io/jp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://scottpetrovic.github.io/krita-hugo/es/"
+                href="https://scottpetrovic.github.io/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://scottpetrovic.github.io/krita-hugo/ko/"
+                href="https://scottpetrovic.github.io/ko/"
                 />
   </url><url>
-    <loc>https://scottpetrovic.github.io/krita-hugo/ko/categories/</loc>
+    <loc>https://scottpetrovic.github.io/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scottpetrovic.github.io/krita-hugo/categories/"
+                href="https://scottpetrovic.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://scottpetrovic.github.io/krita-hugo/fr/categories/"
+                href="https://scottpetrovic.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://scottpetrovic.github.io/krita-hugo/zh/categories/"
+                href="https://scottpetrovic.github.io/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hk"
-                href="https://scottpetrovic.github.io/krita-hugo/zh-hk/categories/"
+                href="https://scottpetrovic.github.io/zh-hk/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://scottpetrovic.github.io/krita-hugo/zh-tw/categories/"
+                href="https://scottpetrovic.github.io/zh-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="jp"
-                href="https://scottpetrovic.github.io/krita-hugo/jp/categories/"
+                href="https://scottpetrovic.github.io/jp/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://scottpetrovic.github.io/krita-hugo/es/categories/"
+                href="https://scottpetrovic.github.io/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://scottpetrovic.github.io/krita-hugo/ko/categories/"
+                href="https://scottpetrovic.github.io/ko/categories/"
                 />
   </url><url>
-    <loc>https://scottpetrovic.github.io/krita-hugo/ko/tags/</loc>
+    <loc>https://scottpetrovic.github.io/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scottpetrovic.github.io/krita-hugo/tags/"
+                href="https://scottpetrovic.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://scottpetrovic.github.io/krita-hugo/fr/tags/"
+                href="https://scottpetrovic.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://scottpetrovic.github.io/krita-hugo/zh/tags/"
+                href="https://scottpetrovic.github.io/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hk"
-                href="https://scottpetrovic.github.io/krita-hugo/zh-hk/tags/"
+                href="https://scottpetrovic.github.io/zh-hk/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://scottpetrovic.github.io/krita-hugo/zh-tw/tags/"
+                href="https://scottpetrovic.github.io/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="jp"
-                href="https://scottpetrovic.github.io/krita-hugo/jp/tags/"
+                href="https://scottpetrovic.github.io/jp/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://scottpetrovic.github.io/krita-hugo/es/tags/"
+                href="https://scottpetrovic.github.io/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://scottpetrovic.github.io/krita-hugo/ko/tags/"
+                href="https://scottpetrovic.github.io/ko/tags/"
                 />
   </url>
 </urlset>

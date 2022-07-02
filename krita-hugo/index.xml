@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Krita Site</title>
-    <link>https://scottpetrovic.github.io/krita-hugo/</link>
+    <link>https://scottpetrovic.github.io/</link>
     <description>Recent content on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Video by Ramon: The Recorder Docker</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2022/new-video-by-ramon-the-recorder-docker/</link>
+      <link>https://scottpetrovic.github.io/posts/2022/new-video-by-ramon-the-recorder-docker/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2022/new-video-by-ramon-the-recorder-docker/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2022/new-video-by-ramon-the-recorder-docker/</guid>
       <description>One of the exciting new features in Krita 5 is the recorder docker. Ramon shows you how to use it in this new video:</description>
     </item>
     
     <item>
       <title>Multiple Perspective</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2022/multiple-perspective/</link>
+      <link>https://scottpetrovic.github.io/posts/2022/multiple-perspective/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2022/multiple-perspective/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2022/multiple-perspective/</guid>
       <description>We&amp;rsquo;ve released a new video! Ramon talks about the new perspective assistant in Krita 5:
   </description>
     </item>
     
     <item>
       <title>Krita 5.0.2</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2022/krita-5-0-2/</link>
+      <link>https://scottpetrovic.github.io/posts/2022/krita-5-0-2/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2022/krita-5-0-2/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2022/krita-5-0-2/</guid>
       <description>Hot on the heels of Krita 5.0.0, we&amp;rsquo;re releasing the first bugfix release of Krita 5! It&amp;rsquo;s 5.0.2 because if you upload a beta with the version number 5.</description>
     </item>
     
     <item>
       <title>Krita in 2021 and 2022</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2022/krita-in-2021-and-2022/</link>
+      <link>https://scottpetrovic.github.io/posts/2022/krita-in-2021-and-2022/</link>
       <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2022/krita-in-2021-and-2022/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2022/krita-in-2021-and-2022/</guid>
       <description>A bit later than planned&amp;hellip; Our overview of last year and a look forward to this year! We&amp;rsquo;re all still alive and working hard &amp;ndash; sometimes a bit too hard.</description>
     </item>
     
     <item>
       <title>Interview with Simon Rollins</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2022/interview-with-simon-rollins/</link>
+      <link>https://scottpetrovic.github.io/posts/2022/interview-with-simon-rollins/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2022/interview-with-simon-rollins/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2022/interview-with-simon-rollins/</guid>
       <description>Could you tell us something about yourself? My full name is Simon Sterling Rollins. Most people call me Simon. I was born in July 2005 in the state of Georgia.</description>
     </item>
     
     <item>
       <title>Krita 5.0 released!</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-5-0-released/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/krita-5-0-released/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-5-0-released/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/krita-5-0-released/</guid>
       <description>Krita 5.0 is here!
 This is a huge release, with a lot of new features and improvements. Some highlights:
  The way Krita handles things like brushes, gradients and palettes, as well as tagging, has been completely revamped.</description>
@@ -65,129 +65,129 @@ This is a huge release, with a lot of new features and improvements. Some highli
     
     <item>
       <title>Krita 5.0.0 beta 5 released</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-5-0-0-beta-5-released/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/krita-5-0-0-beta-5-released/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-5-0-0-beta-5-released/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/krita-5-0-0-beta-5-released/</guid>
       <description>Following the botched macOS build yesterday, we&amp;rsquo;re releasing Krita 5.0.0 beta 5. Beta 4 didn&amp;rsquo;t happen: while it was building, Dmitry Kazakov fixed an issue which we really wanted tested right away.</description>
     </item>
     
     <item>
       <title>Third beta for Krita 5.0</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/third-beta-for-krita-5-0/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/third-beta-for-krita-5-0/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/third-beta-for-krita-5-0/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/third-beta-for-krita-5-0/</guid>
       <description>Today we&amp;rsquo;re releasing the third beta for Krita 5. There are a lot of fixes compared to beta 2. We&amp;rsquo;re aiming to release Krita 5 before Christmas, and are beginning to feel a bit confident about that.</description>
     </item>
     
     <item>
       <title>New course on using Krita to create a 2D film</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-course-on-using-krita-to-create-a-film/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/new-course-on-using-krita-to-create-a-film/</link>
       <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-course-on-using-krita-to-create-a-film/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/new-course-on-using-krita-to-create-a-film/</guid>
       <description>Today we&amp;rsquo;ve got a guest post by Andria Jackson who has created a new course on using Krita to create a 2D film!</description>
     </item>
     
     <item>
       <title>New Video by Ramon:</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-video-by-ramon-2/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/new-video-by-ramon-2/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-video-by-ramon-2/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/new-video-by-ramon-2/</guid>
       <description>Check out Ramon&amp;rsquo;s latest video, showing off Krita 5&amp;rsquo;s awesome new brush capabilities.
   Ramon has created another bundle of impasto brush presets to go with this video.</description>
     </item>
     
     <item>
       <title>Second Beta for Krita 5.0</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/second-beta-for-krita-5-0/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/second-beta-for-krita-5-0/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/second-beta-for-krita-5-0/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/second-beta-for-krita-5-0/</guid>
       <description>A bit later than planned &amp;ndash; after a year and a half of isolation meeting people spreads really bad colds &amp;ndash; we&amp;rsquo;re releasing the second beta of Krita 5.</description>
     </item>
     
     <item>
       <title>Bumping the Store Prices for Krita 5.0</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/bumping-the-store-prices-for-krita-5-0/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/bumping-the-store-prices-for-krita-5-0/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/bumping-the-store-prices-for-krita-5-0/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/bumping-the-store-prices-for-krita-5-0/</guid>
       <description>We started selling Krita in the Steam Store in 2014. In 2017, the Windows Store followed, then in 2021 the Epic Store.</description>
     </item>
     
     <item>
       <title>New Book: Krita Secrets by Bohdan Kornienko</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-book-krita-secrets-by-bohdan-kornienko/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/new-book-krita-secrets-by-bohdan-kornienko/</link>
       <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-book-krita-secrets-by-bohdan-kornienko/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/new-book-krita-secrets-by-bohdan-kornienko/</guid>
       <description>&amp;ldquo;Krita Secrets&amp;rdquo; is a book that aims to deliver as short tutorials as possible. Each tutorial covers one specific action with its result.</description>
     </item>
     
     <item>
       <title>September Development Update</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/september-development-update-2/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/september-development-update-2/</link>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/september-development-update-2/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/september-development-update-2/</guid>
       <description>Not directly development related, but the scammers who registered krita.io, krita.app and getkrita.com for ransomware attacks have lost those domains. Let&amp;rsquo;s hope that also means the scammers decide they have had enough and stop spamming people.</description>
     </item>
     
     <item>
       <title>Interview with Ali Bahabadi</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/interview-with-ali-bahabadi/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/interview-with-ali-bahabadi/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/interview-with-ali-bahabadi/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/interview-with-ali-bahabadi/</guid>
       <description>Could you tell us something about yourself? My full name is Mohammad-Ali Bahabadi, but I sign with my shortened version of my name, Ali Bahabadi.</description>
     </item>
     
     <item>
       <title>Krita 4.4.8 Released</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-8-released/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/krita-4-4-8-released/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-8-released/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/krita-4-4-8-released/</guid>
       <description>This is strictly a bug fix release. There are two changes: we fixed an issue with saving a .kra file with an embedded palette, which was broken leading to dataloss, and, for Windows, support for fractional HiDPI display scaling is now disabled by default.</description>
     </item>
     
     <item>
       <title>WARNING: scam mails about krita and youtube coming from krita.io</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/warning-scam-mails-about-krita-and-youtube-coming-from-krita-io/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/warning-scam-mails-about-krita-and-youtube-coming-from-krita-io/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/warning-scam-mails-about-krita-and-youtube-coming-from-krita-io/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/warning-scam-mails-about-krita-and-youtube-coming-from-krita-io/</guid>
       <description>AND THEY ARE BACK&amp;hellip; This time with krita.studio
 ANOTHER UPDATE: there are now also fake installers that you are asked to run.</description>
     </item>
     
     <item>
       <title>First Beta for Krita 5.0 released</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/first-beta-for-krita-5-0-released/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/first-beta-for-krita-5-0-released/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/first-beta-for-krita-5-0-released/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/first-beta-for-krita-5-0-released/</guid>
       <description>Today, the Krita team releases the first beta for Krita 5.0. Krita 5.0 is a major release, with a lot of new features and a lot of changes.</description>
     </item>
     
     <item>
       <title>New Krita Video by Ramon Miranda: Crayons: Comment Timelapse</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-krita-video-by-ramon-miranda-crayons-comment-timelapse/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/new-krita-video-by-ramon-miranda-crayons-comment-timelapse/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/new-krita-video-by-ramon-miranda-crayons-comment-timelapse/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/new-krita-video-by-ramon-miranda-crayons-comment-timelapse/</guid>
       <description>We&amp;rsquo;ve got a new video for you! Ramon Miranda uses the set of crayons brush brush presets to make a drawing, and tells you what he&amp;rsquo;s doing along the way.</description>
     </item>
     
     <item>
       <title>Krita 4.4.7 Released</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-7-released/</link>
+      <link>https://scottpetrovic.github.io/posts/2021/krita-4-4-7-released/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-7-released/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2021/krita-4-4-7-released/</guid>
       <description>This is strictly a bug fix release. The most important reason for this release is a fix for a performance regression in Krita 4.</description>
     </item>
     

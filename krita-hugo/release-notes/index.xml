@@ -2,126 +2,126 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Release-notes on Krita Site</title>
-    <link>https://scottpetrovic.github.io/krita-hugo/release-notes/</link>
+    <link>https://scottpetrovic.github.io/release-notes/</link>
     <description>Recent content in Release-notes on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/release-notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Krita 5.0 Release Notes</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-5-0-release-notes/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-5-0-release-notes/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-5-0-release-notes/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-5-0-release-notes/</guid>
       <description>Krita 5.0 Release Notes Note on File Compatibility with Krita 4.x and Krita 3.x files:
  Krita 5.0 is a major release of Krita.</description>
     </item>
     
     <item>
       <title>Krita 4.4.0 Release Notes</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-4-0-release-notes/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-4-4-0-release-notes/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-4-0-release-notes/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-4-4-0-release-notes/</guid>
       <description>Krita 4.4.0 Release Notes If we had to give a theme to this release, it would be textures and patterns. This was half by coincidence, one of our GSoC students this year focused on getting SeExpr integration going, one of the mentors decided to work in the same area, and two volunteer contributors also came up with pattern and texture related features.</description>
     </item>
     
     <item>
       <title>Krita 4.3 Release Notes</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-3-release-notes/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-4-3-release-notes/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-3-release-notes/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-4-3-release-notes/</guid>
       <description>Krita 4.3 Release Notes Krita 4.3.0, coming a year after the release of Krita 4.2.0, is packed with new features but mostly many, many bug fixes.</description>
     </item>
     
     <item>
       <title>Krita 4.2 Release Notes</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-2-release-notes/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-4-2-release-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-2-release-notes/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-4-2-release-notes/</guid>
       <description>Krita 4.2 Release Notes Krita 4.2 has been released on May 29th, 2019. While the core team focused on stability and performance, this release also includes many new features and the performance work and the work on handling palettes done during the 2018 Google Summer of Code.</description>
     </item>
     
     <item>
       <title>Krita 4.1 Release Notes</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-1-release-notes/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-4-1-release-notes/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-1-release-notes/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-4-1-release-notes/</guid>
       <description>Krita 4.1 Release Notes Krita 4.1 is the second feature release in the Krita 4 series and is released only three months after 4.</description>
     </item>
     
     <item>
       <title>Krita 4.0 Release Notes</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-0-release-notes/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-4-0-release-notes/</link>
       <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-4-0-release-notes/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-4-0-release-notes/</guid>
       <description>Krita 4.0 release notes With a complete rewrite of the vector layer file format, the addition of Python scripting, a new text tool and much more, Krita 4.</description>
     </item>
     
     <item>
       <title>Release Notes for Krita 3.2</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-krita-3-2/</link>
+      <link>https://scottpetrovic.github.io/release-notes/release-notes-for-krita-3-2/</link>
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-krita-3-2/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/release-notes-for-krita-3-2/</guid>
       <description>Release Notes for Krita 3.2 There are numerous bug fixes and some very cool new features since Krita 3.1.4. Check out GDQuest&amp;rsquo;s overview video below with all the changes:</description>
     </item>
     
     <item>
       <title>Release Notes for 3.1.3</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-3-1-3/</link>
+      <link>https://scottpetrovic.github.io/release-notes/release-notes-for-3-1-3/</link>
       <pubDate>Fri, 31 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-3-1-3/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/release-notes-for-3-1-3/</guid>
       <description>Release Notes for 3.1.3 Krita 3.1.3 is mainly a bug fix release with some new features. Every user is strongly recommended to update.</description>
     </item>
     
     <item>
       <title>Krita 3.1.2</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-3-1-2/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-3-1-2/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-3-1-2/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-3-1-2/</guid>
       <description>Esta es una versión intermedia con la corrección de errores de código &amp;ldquo;bugs&amp;rdquo; como objetivo principal, pero con algunas funciones extras como ya es acostumbrado en estos últimos lanzamientos.</description>
     </item>
     
     <item>
       <title>Release Notes for 3.1.2</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-3-1-2/</link>
+      <link>https://scottpetrovic.github.io/release-notes/release-notes-for-3-1-2/</link>
       <pubDate>Fri, 27 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-3-1-2/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/release-notes-for-3-1-2/</guid>
       <description>Release Notes for Krita 3.1.2 Krita 3.1.2, released on January 31st 2017, is a bugfix release with a few extra features thrown in for good measure.</description>
     </item>
     
     <item>
       <title>Release Notes for Krita 3.1</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-krita-3-1/</link>
+      <link>https://scottpetrovic.github.io/release-notes/release-notes-for-krita-3-1/</link>
       <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/release-notes-for-krita-3-1/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/release-notes-for-krita-3-1/</guid>
       <description>A quick video overview of all of the major features and fixes that are being shaipped with Krita 3.1.
   Full Support for OSX Julian Thijssen&amp;rsquo;s Google Summer of code project for 2016 gives us the power to run openGL on OSX!</description>
     </item>
     
     <item>
       <title>Krita 3.0: The Animation Release</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-3-0-release-notes/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-3-0-release-notes/</link>
       <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-3-0-release-notes/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-3-0-release-notes/</guid>
       <description>Krita 3.0 is finally here! Releasing round version-number releases is always exciting for any kind of project. It&amp;rsquo;s like the</description>
     </item>
     
     <item>
       <title>Krita 2.9: The Kickstarter Release</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-2-9-the-kickstarter-release/</link>
+      <link>https://scottpetrovic.github.io/release-notes/krita-2-9-the-kickstarter-release/</link>
       <pubDate>Sat, 21 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/release-notes/krita-2-9-the-kickstarter-release/</guid>
+      <guid>https://scottpetrovic.github.io/release-notes/krita-2-9-the-kickstarter-release/</guid>
       <description>The culmination of over eight months of work, Krita 2.9, is the biggest Krita release until now! It&amp;rsquo;s so big, we can&amp;rsquo;t just do the release announcement in only one page, we&amp;rsquo;ve had to split it up into separate pages!</description>
     </item>
     

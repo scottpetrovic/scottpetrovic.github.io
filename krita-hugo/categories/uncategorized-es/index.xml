@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>uncategorized-es on Krita Site</title>
-    <link>https://scottpetrovic.github.io/krita-hugo/categories/uncategorized-es/</link>
+    <link>https://scottpetrovic.github.io/categories/uncategorized-es/</link>
     <description>Recent content in uncategorized-es on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/categories/uncategorized-es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/categories/uncategorized-es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Krita en Goolge Summer of Code 2018</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2018/krita-en-goolge-summer-of-code-2018/</link>
+      <link>https://scottpetrovic.github.io/posts/2018/krita-en-goolge-summer-of-code-2018/</link>
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2018/krita-en-goolge-summer-of-code-2018/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2018/krita-en-goolge-summer-of-code-2018/</guid>
       <description>Éste año, hemos participado en el evento Google Summer of Code con tres estudiantes: Ivan, Andrey y Michael. Parte de el código que estos gran estudiantes han producido ya se encuentra en la versión 4.</description>
     </item>
     
     <item>
       <title>Asamblea de desarrollo - Krita 2017</title>
-      <link>https://scottpetrovic.github.io/krita-hugo/posts/2017/asamblea-de-desarrollo-krita-2017/</link>
+      <link>https://scottpetrovic.github.io/posts/2017/asamblea-de-desarrollo-krita-2017/</link>
       <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2017/asamblea-de-desarrollo-krita-2017/</guid>
+      <guid>https://scottpetrovic.github.io/posts/2017/asamblea-de-desarrollo-krita-2017/</guid>
       <description>Durante los primeros meses del 2017, una serie de problemas de impuestos y financieros nos dejaron sin la capacidad de planear una reunión entre los desarrolladores.</description>
     </item>
     
