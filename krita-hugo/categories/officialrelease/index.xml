@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>officialrelease on Krita Site</title>
-    <link>https://scottpetrovic.github.io/categories/officialrelease/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/categories/officialrelease/</link>
     <description>Recent content in officialrelease on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/categories/officialrelease/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/categories/officialrelease/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Krita 5.0.2</title>
-      <link>https://scottpetrovic.github.io/posts/2022/krita-5-0-2/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2022/krita-5-0-2/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2022/krita-5-0-2/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2022/krita-5-0-2/</guid>
       <description>Hot on the heels of Krita 5.0.0, we&amp;rsquo;re releasing the first bugfix release of Krita 5! It&amp;rsquo;s 5.0.2 because if you upload a beta with the version number 5.</description>
     </item>
     
     <item>
       <title>Krita 5.0 released!</title>
-      <link>https://scottpetrovic.github.io/posts/2021/krita-5-0-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-5-0-released/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2021/krita-5-0-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-5-0-released/</guid>
       <description>Krita 5.0 is here!
 This is a huge release, with a lot of new features and improvements. Some highlights:
  The way Krita handles things like brushes, gradients and palettes, as well as tagging, has been completely revamped.</description>
@@ -28,165 +28,165 @@ This is a huge release, with a lot of new features and improvements. Some highli
     
     <item>
       <title>Krita 4.4.8 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2021/krita-4-4-8-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-8-released/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2021/krita-4-4-8-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-8-released/</guid>
       <description>This is strictly a bug fix release. There are two changes: we fixed an issue with saving a .kra file with an embedded palette, which was broken leading to dataloss, and, for Windows, support for fractional HiDPI display scaling is now disabled by default.</description>
     </item>
     
     <item>
       <title>First Beta for Krita 5.0 released</title>
-      <link>https://scottpetrovic.github.io/posts/2021/first-beta-for-krita-5-0-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/first-beta-for-krita-5-0-released/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2021/first-beta-for-krita-5-0-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/first-beta-for-krita-5-0-released/</guid>
       <description>Today, the Krita team releases the first beta for Krita 5.0. Krita 5.0 is a major release, with a lot of new features and a lot of changes.</description>
     </item>
     
     <item>
       <title>Krita 4.4.7 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2021/krita-4-4-7-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-7-released/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2021/krita-4-4-7-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-7-released/</guid>
       <description>This is strictly a bug fix release. The most important reason for this release is a fix for a performance regression in Krita 4.</description>
     </item>
     
     <item>
       <title>Krita 4.4.5 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2021/krita-4-4-5-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-5-released/</link>
       <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2021/krita-4-4-5-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-5-released/</guid>
       <description>One last bugfix release before Krita 5.0! We found a nasty bug on MacOS, and while we&amp;rsquo;re on the cusp of finishing up Krita 5.</description>
     </item>
     
     <item>
       <title>Krita 4.4.3 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2021/krita-4-4-3-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-3-released/</link>
       <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2021/krita-4-4-3-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-3-released/</guid>
       <description>Today, we&amp;rsquo;re releasing Krita 4.4.3. This is strictly a bugfix release. We spend two beta&amp;rsquo;s worth of testing trying to make this a really stable release, because from now on, we&amp;rsquo;re focusing on Krita 5!</description>
     </item>
     
     <item>
       <title>Krita 4.4.2 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2021/krita-4-4-2-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-2-released/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2021/krita-4-4-2-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2021/krita-4-4-2-released/</guid>
       <description>Today, the Krita team has released Krita 4.4.2. With over 300 changes, this is mainly a bugfix release, though some key new features, too!</description>
     </item>
     
     <item>
       <title>KSeExpr 4.0.0 Released!</title>
-      <link>https://scottpetrovic.github.io/posts/2020/kseexpr-4-0-0-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2020/kseexpr-4-0-0-released/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2020/kseexpr-4-0-0-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2020/kseexpr-4-0-0-released/</guid>
       <description>Today, we&amp;rsquo;re happy to announce the release of KSeExpr 4.0.0!
 KSeExpr is the fork of Disney Animation&amp;rsquo;s SeExpr expression language library that we ship with Krita.</description>
     </item>
     
     <item>
       <title>Krita 4.4.1 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2020/krita-4-4-1-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-4-1-released/</link>
       <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2020/krita-4-4-1-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-4-1-released/</guid>
       <description>Despite an extra-long beta period during which we got awesome feedback from our community, 4.4.0 was released with several regressions, that is, bugs that weren&amp;rsquo;t present in 4.</description>
     </item>
     
     <item>
       <title>Krita 4.4.0 released!</title>
-      <link>https://scottpetrovic.github.io/posts/2020/krita-4-4-0-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-4-0-released/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2020/krita-4-4-0-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-4-0-released/</guid>
       <description>Today, we&amp;rsquo;re releasing Krita 4.4.0!
 Only a little later than we had planned, this is the next feature release of Krita!</description>
     </item>
     
     <item>
       <title>Krita 4.3.0 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2020/krita-4-3-0-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-3-0-released/</link>
       <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2020/krita-4-3-0-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-3-0-released/</guid>
       <description>Three months after the release of Krita 4.2.9, we&amp;rsquo;ve got a major new feature release for you: Krita 4.3.0! We&amp;rsquo;ve spent the past year not just fixing bugs, even though we fixed over a thousand issues, but have also been busy adding cool new stuff to play with.</description>
     </item>
     
     <item>
       <title>Krita 4.2.9 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2020/krita-4-2-9-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-2-9-released/</link>
       <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2020/krita-4-2-9-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2020/krita-4-2-9-released/</guid>
       <description>Today we&amp;rsquo;re finally releasing Krita 4.2.9! It&amp;rsquo;s been one of the most complicated releases we&amp;rsquo;ve ever attempted. When we updated the version of Python that&amp;rsquo;s embedded in Krita, scripting broke on Windows.</description>
     </item>
     
     <item>
       <title>Krita 4.2.8 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2019/krita-4-2-8-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-8-released/</link>
       <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2019/krita-4-2-8-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-8-released/</guid>
       <description>The Krita team is pleased to announce another bug fix release of Krita 4.2: Krita 4.2.8. Part of Krita&amp;rsquo;s core team is now working on rewriting the way Krita loads and saves resources like brushes or gradients.</description>
     </item>
     
     <item>
       <title>Krita 4.2.8 Beta</title>
-      <link>https://scottpetrovic.github.io/posts/2019/krita-4-2-8-beta/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-8-beta/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2019/krita-4-2-8-beta/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-8-beta/</guid>
       <description>We had to skip the October release because we were working on a bunch of issues that took longer to resolve than planned, but that means that this release has more fixes than ever.</description>
     </item>
     
     <item>
       <title>Krita 4.2.7 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2019/krita-4-2-7-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-7-released/</link>
       <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2019/krita-4-2-7-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-7-released/</guid>
       <description>Today, we&amp;rsquo;re releasing the sixth bug fix release of Krita 4.2. As discussed in our development update, we intend to release a few more monthly 4.</description>
     </item>
     
     <item>
       <title>Let&#39;s Test Krita 4.2.7 Beta!</title>
-      <link>https://scottpetrovic.github.io/posts/2019/lets-test-krita-4-2-7-beta/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2019/lets-test-krita-4-2-7-beta/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2019/lets-test-krita-4-2-7-beta/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2019/lets-test-krita-4-2-7-beta/</guid>
       <description>We&amp;rsquo;re almost ready for a new release of Krita, with lots of bug fixes! So, please help with testing. As with 4.</description>
     </item>
     
     <item>
       <title>Krita 4.2.6 released</title>
-      <link>https://scottpetrovic.github.io/posts/2019/krita-4-2-6-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-6-released/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2019/krita-4-2-6-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-6-released/</guid>
       <description>A bit later than expected, because of a regression found during beta testing, we&amp;rsquo;re releasing Krita 4.2.6. Over 120 people have participated in the beta test survey, so this is something we&amp;rsquo;ll repeat for the next release.</description>
     </item>
     
     <item>
       <title>Krita 4.2.5 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2019/krita-4-2-5-released/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-5-released/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2019/krita-4-2-5-released/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-5-released/</guid>
       <description>We found that Krita 4.2.4 still had a bug handling shortcuts when certain tools were active. We&amp;rsquo;ve worked hard to fix that bug as quickly as possible, and as a consequence, we&amp;rsquo;re releasing Krita 4.</description>
     </item>
     
     <item>
       <title>Krita 4.2.4 Released</title>
-      <link>https://scottpetrovic.github.io/posts/2019/krita-4-2-4/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-4/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2019/krita-4-2-4/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2019/krita-4-2-4/</guid>
       <description>We&amp;rsquo;re releasing Krita 4.2.4 today. The most important fixes are to the shortcut input system and the saving system. Krita 4.</description>
     </item>
     

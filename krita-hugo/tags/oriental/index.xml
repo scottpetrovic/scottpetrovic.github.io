@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oriental on Krita Site</title>
-    <link>https://scottpetrovic.github.io/tags/oriental/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/tags/oriental/</link>
     <description>Recent content in oriental on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 17 Feb 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/tags/oriental/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Feb 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/tags/oriental/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Brush demo 2.7pre-alpha : &#34;Prunus Oriental Flower&#34;</title>
-      <link>https://scottpetrovic.github.io/posts/2013/brush-demo-2-7pre-alpha-prunus-oriental-flower/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2013/brush-demo-2-7pre-alpha-prunus-oriental-flower/</link>
       <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2013/brush-demo-2-7pre-alpha-prunus-oriental-flower/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2013/brush-demo-2-7pre-alpha-prunus-oriental-flower/</guid>
       <description>( if the video doesn&amp;rsquo;t display, you can watch it here )
 Since end January, Krita 2.7pre-alpha get a new major feature : Texture .</description>
     </item>

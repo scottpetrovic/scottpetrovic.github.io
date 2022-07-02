@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>book on Krita Site</title>
-    <link>https://scottpetrovic.github.io/tags/book/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/tags/book/</link>
     <description>Recent content in book on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Krita Book in French!</title>
-      <link>https://scottpetrovic.github.io/posts/2016/first-krita-book-in-french/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/posts/2016/first-krita-book-in-french/</link>
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/posts/2016/first-krita-book-in-french/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/posts/2016/first-krita-book-in-french/</guid>
       <description>After Japanese and English, here is the first book for french-speaking people who want to get started using Krita! The author is Timothée Giet, long time user and contributor and the creator of two of acclaimed training DVDs for the Krita Foundation, Comics with Krita and Secrets of Krita.</description>
     </item>
     

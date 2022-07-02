@@ -2,189 +2,189 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>uncategorized-es on Krita Site(ES)</title>
-    <link>https://scottpetrovic.github.io/es/categories/uncategorized-es/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/es/categories/uncategorized-es/</link>
     <description>Recent content in uncategorized-es on Krita Site(ES)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/es/categories/uncategorized-es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/es/categories/uncategorized-es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>¡Publicado Krita 5.0!</title>
-      <link>https://scottpetrovic.github.io/es/posts/2021/publicado-krita-5-0/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2021/publicado-krita-5-0/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2021/publicado-krita-5-0/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2021/publicado-krita-5-0/</guid>
       <description>¡Krita 5.0 ha llegado!
 Este es un lanzamiento gigante, con muchísimas mejoras, una gran cantidad de características nuevas y mejoras. Podemos resaltar algunas de sus nuevas características:</description>
     </item>
     
     <item>
       <title>Krita 4.2.1</title>
-      <link>https://scottpetrovic.github.io/es/posts/2019/krita-4-2-1/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2019/krita-4-2-1/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2019/krita-4-2-1/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2019/krita-4-2-1/</guid>
       <description>Krita 4.2.1 Apenas unos días después de lanzar la versión 4.2.0 ponemos a disposición la 4.2.1. En ésta se ha resuelto el problema donde después de usar Krita por un tiempo, el dibujar se hace bastante lento, esto por que las entradas de &amp;ldquo;deshacer&amp;rdquo; se hacían infinitas.</description>
     </item>
     
     <item>
       <title>Se da de baja el sitio ask.krita.org</title>
-      <link>https://scottpetrovic.github.io/es/posts/2019/se-da-de-baja-el-sitio-ask-krita-org/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2019/se-da-de-baja-el-sitio-ask-krita-org/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2019/se-da-de-baja-el-sitio-ask-krita-org/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2019/se-da-de-baja-el-sitio-ask-krita-org/</guid>
       <description>Hace un año, mas o menos, creamos el sitio web ask.krita.org. La idea era el tener un espacio similar a stack-exchange, donde los usuarios pudieran buscar si alguien mas tenia el mismo problema que ellos, ver si había soluciones a los mismos y si no, podían reportarlos.</description>
     </item>
     
     <item>
       <title>Lo interesante de nuestras estadísticas</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/lo-interesante-de-nuestras-estadisticas/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/lo-interesante-de-nuestras-estadisticas/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/lo-interesante-de-nuestras-estadisticas/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/lo-interesante-de-nuestras-estadisticas/</guid>
       <description>Es el ultimo día del año, veamos los números de nuestro proyecto.
 Código Hicimos 10 lanzamientos. Durante los pasados 12, 47 personas aportaron un total de 2,842 aportaciones de código el la rama maestra (versión de prueba) de Krita.</description>
     </item>
     
     <item>
       <title>Krita en el 2018 y hacia el 2019</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/krita-en-el-2018-y-hacia-el-2019/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-en-el-2018-y-hacia-el-2019/</link>
       <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/krita-en-el-2018-y-hacia-el-2019/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-en-el-2018-y-hacia-el-2019/</guid>
       <description>Al final del 2017 le dimos una mirada retrospectiva al año nuevo y pasado, es tiempo de darle un nuevo vistazo, después de todo el 2018 fue mucho mejor que el 2017 y logramos mas metas que el año previo.</description>
     </item>
     
     <item>
       <title>Krita 4.1.7</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/krita-4-1-7/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-4-1-7/</link>
       <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/krita-4-1-7/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-4-1-7/</guid>
       <description>Ya tenemos la nueva versión de Krita disponible la cual se enfoca en la corrección de ciertos problemas presentes en la versión previa dentro de la misma serie 4.</description>
     </item>
     
     <item>
       <title>ask.krita.org - el nuevo sitio para preguntas y respuestas de Krita</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/ask-krita-org-el-nuevo-sitio-para-preguntas-y-respuestas-de-krita/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/ask-krita-org-el-nuevo-sitio-para-preguntas-y-respuestas-de-krita/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/ask-krita-org-el-nuevo-sitio-para-preguntas-y-respuestas-de-krita/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/ask-krita-org-el-nuevo-sitio-para-preguntas-y-respuestas-de-krita/</guid>
       <description>Con la gran ayuda de el equipo de administradores de KDE, Scott Petrovic ha creado https://ask.krita.org - el nuevo sitio interactivo de preguntas y respuestas de Krita.</description>
     </item>
     
     <item>
       <title>Actualización de Krita en Steam</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/actualizacion-de-krita-en-steam/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/actualizacion-de-krita-en-steam/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/actualizacion-de-krita-en-steam/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/actualizacion-de-krita-en-steam/</guid>
       <description>Finalmente hemos logrado averiguar el como actualizar Krita en Steam poniendo a disposición la ultima versión. Ofrecemos nuestras mas sinceras disculpas por habernos tomado tanto tiempo en lograrlo, pero desde ahora siempre encontraras las versión mas nueva.</description>
     </item>
     
     <item>
       <title>¡Novedades en la tienda de Krita!</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/novedades-en-la-tienda-de-krita/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/novedades-en-la-tienda-de-krita/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/novedades-en-la-tienda-de-krita/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/novedades-en-la-tienda-de-krita/</guid>
       <description>Durante el pasado evento de la recaudación de fondos, prometimos poner a la venta el paquete de pinceles &amp;ldquo;Digital Atelier&amp;rdquo;, unos días después de lo planeado ya lo tenemos en la tienda como paquete con instrucciones y cursos educativos:</description>
     </item>
     
     <item>
       <title>Finalizando nuestro evento de recaudación de fondos para Krita 2018</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/finalizando-nuestro-evento-de-recaudacion-de-fondos-para-krita-2018/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/finalizando-nuestro-evento-de-recaudacion-de-fondos-para-krita-2018/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/finalizando-nuestro-evento-de-recaudacion-de-fondos-para-krita-2018/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/finalizando-nuestro-evento-de-recaudacion-de-fondos-para-krita-2018/</guid>
       <description>Ayer fue el ultimo día de la reunión de desarrolladores así como de nuestro evento de recaudación de fondos. Acabamos en buen tiempo y cansados, pero la nuestro evento logro recaudar ¡26,426 euros!</description>
     </item>
     
     <item>
       <title>Krita 4.1.5</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/krita-4-1-5/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-4-1-5/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/krita-4-1-5/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-4-1-5/</guid>
       <description>Apenas al poco tiempo de la distribución de la versión 4.1.3, ponemos a disposición la versión de krita 4.1.5, esto en gran parte dado al desafortunado accidente con el controlador TIFF.</description>
     </item>
     
     <item>
       <title>Reunión del equipo de Krita - Octobre 2018</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/reunion-del-equipo-de-krita-octobre-2018/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/reunion-del-equipo-de-krita-octobre-2018/</link>
       <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/reunion-del-equipo-de-krita-octobre-2018/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/reunion-del-equipo-de-krita-octobre-2018/</guid>
       <description>Éste pasado sábado, los primeros miembros de nuestro equipo comenzaron a llegar para la reunión de desarrollo. Es ademas la ultima semana de nuestro evento de recaudación de fondos, ya casi estamos a cinco meses costeados para la corrección de errores de código.</description>
     </item>
     
     <item>
       <title>¡Hacia la nueva versión de Krita: 4.2!</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/hacia-la-nueva-version-de-krita-4-2/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/hacia-la-nueva-version-de-krita-4-2/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/hacia-la-nueva-version-de-krita-4-2/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/hacia-la-nueva-version-de-krita-4-2/</guid>
       <description>El equipo de Krita esta trabajando arduamente en lo que será la nueva versión 4.2. En ésta ocasión presentamos un adelanto de lo que encontrarás en ella.</description>
     </item>
     
     <item>
       <title>¡Un adelanto del conteo de votos!</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/un-adelanto-del-conteo-de-votos/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/un-adelanto-del-conteo-de-votos/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/un-adelanto-del-conteo-de-votos/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/un-adelanto-del-conteo-de-votos/</guid>
       <description>Ya vamos terminando la primera semana de nuestro evento, y con casi 9000 euros listos para corregir los &amp;ldquo;bichos&amp;rdquo;. Por lo que queremos darle un vistazo al numero de votos de cada área, y por supuesto ¡Compartir el conteo con ustedes!</description>
     </item>
     
     <item>
       <title>Un ejemplo de como se corrige un error de código</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/un-ejemplo-de-como-se-corrige-un-error-de-codigo/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/un-ejemplo-de-como-se-corrige-un-error-de-codigo/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/un-ejemplo-de-como-se-corrige-un-error-de-codigo/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/un-ejemplo-de-como-se-corrige-un-error-de-codigo/</guid>
       <description>El evento de recaudación de fondos para Krita en el 2018 se basa en la corrección de errores. De hecho ya estamos adentrados en el trabajo, por lo que podemos darle un vistazo no muy técnico al proceso en el que Dmitry corrigió uno de estos &amp;ldquo;bichos&amp;rdquo; el dia de ayer.</description>
     </item>
     
     <item>
       <title>¡El evento de recaudación de fondos del 2018 ha comenzado!</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/el-evento-de-recaudacion-de-fondos-del-2018-ha-comenzado/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/el-evento-de-recaudacion-de-fondos-del-2018-ha-comenzado/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/el-evento-de-recaudacion-de-fondos-del-2018-ha-comenzado/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/el-evento-de-recaudacion-de-fondos-del-2018-ha-comenzado/</guid>
       <description>¡Estamos listos para el nuevo evento de Krita! Éste año nuestra meta es el hacer posible que nuestro equipo se enfoque un un solo trabajo: Estabilidad de Krita.</description>
     </item>
     
     <item>
       <title>Presentamos el taller de pintura digital, Juego de pinceles y curso especial de Ramón Miranda</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/presentamos-el-taller-de-pintura-digital-juego-de-pinceles-y-curso-especial-de-ramon-miranda/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/presentamos-el-taller-de-pintura-digital-juego-de-pinceles-y-curso-especial-de-ramon-miranda/</link>
       <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/presentamos-el-taller-de-pintura-digital-juego-de-pinceles-y-curso-especial-de-ramon-miranda/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/presentamos-el-taller-de-pintura-digital-juego-de-pinceles-y-curso-especial-de-ramon-miranda/</guid>
       <description>Durante los últimos meses, Ramón Miranda, conocido por su gran curso a la introducción de la pintura digital Muses, ha trabajado en la creación de un juego de pinceles nuevo y completo llamado Atelier (Taller de arte en ingles) No solo contiene mas de cincuenta pinceles, si no, ademas mas de treinta puntas de pincel y veinte patrones y texturas.</description>
     </item>
     
     <item>
       <title>Novedades del mes de Agosto 2018</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/novedades-agosto-2018/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/novedades-agosto-2018/</link>
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/novedades-agosto-2018/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/novedades-agosto-2018/</guid>
       <description>Anteriormente teníamos novedades semanales referentes al desarrollo de Krita, sin embargo el enfocarnos directamente en el desarrollo mismo no nos permite el crear una publicación semanal lo cual es una lastima.</description>
     </item>
     
     <item>
       <title>Notas acerca de Krita en Microsoft Store</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/notas-acerca-de-krita-en-microsoft-store/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/notas-acerca-de-krita-en-microsoft-store/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/notas-acerca-de-krita-en-microsoft-store/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/notas-acerca-de-krita-en-microsoft-store/</guid>
       <description>Ya hace poco menos de un año que hemos estado poniendo a disposición Krita en Microsoft Store, y a pesar del poco tiempo, hemos actualizado la información alrededor de unas veinte veces.</description>
     </item>
     
     <item>
       <title>Krita 4.1.1</title>
-      <link>https://scottpetrovic.github.io/es/posts/2018/krita-4-1-1/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-4-1-1/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/posts/2018/krita-4-1-1/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/posts/2018/krita-4-1-1/</guid>
       <description>Ésta es la primera versión de correcciones de la serie 4.1.x, lo cual incluye:
  Corrección en el cargado de PyKrita cuando se usa PyQt 5.</description>
     </item>

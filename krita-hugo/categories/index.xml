@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Krita Site</title>
-    <link>https://scottpetrovic.github.io/categories/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/categories/</link>
     <description>Recent content in Categories on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>news</title>
-      <link>https://scottpetrovic.github.io/categories/news/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/categories/news/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/categories/news/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/categories/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorials</title>
-      <link>https://scottpetrovic.github.io/categories/tutorials/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/categories/tutorials/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/categories/tutorials/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/categories/tutorials/</guid>
       <description></description>
     </item>
     
     <item>
       <title>officialrelease</title>
-      <link>https://scottpetrovic.github.io/categories/officialrelease/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/categories/officialrelease/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/categories/officialrelease/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/categories/officialrelease/</guid>
       <description></description>
     </item>
     
     <item>
       <title>artist-interview</title>
-      <link>https://scottpetrovic.github.io/categories/artist-interview/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/categories/artist-interview/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/categories/artist-interview/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/categories/artist-interview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development-builds</title>
-      <link>https://scottpetrovic.github.io/categories/development-builds/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/categories/development-builds/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/categories/development-builds/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/categories/development-builds/</guid>
       <description></description>
     </item>
     
     <item>
       <title>uncategorized-es</title>
-      <link>https://scottpetrovic.github.io/categories/uncategorized-es/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/categories/uncategorized-es/</link>
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/categories/uncategorized-es/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/categories/uncategorized-es/</guid>
       <description></description>
     </item>
     

@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Krita Site(ES)</title>
-    <link>https://scottpetrovic.github.io/es/categories/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/es/categories/</link>
     <description>Recent content in Categories on Krita Site(ES)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/es/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/es/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>uncategorized-es</title>
-      <link>https://scottpetrovic.github.io/es/categories/uncategorized-es/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/categories/uncategorized-es/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/categories/uncategorized-es/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/categories/uncategorized-es/</guid>
       <description></description>
     </item>
     
     <item>
       <title>noticias</title>
-      <link>https://scottpetrovic.github.io/es/categories/noticias/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/categories/noticias/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/categories/noticias/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/categories/noticias/</guid>
       <description></description>
     </item>
     
     <item>
       <title>news</title>
-      <link>https://scottpetrovic.github.io/es/categories/news/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/categories/news/</link>
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/categories/news/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/categories/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>artist-interview-es</title>
-      <link>https://scottpetrovic.github.io/es/categories/artist-interview-es/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/categories/artist-interview-es/</link>
       <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/categories/artist-interview-es/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/categories/artist-interview-es/</guid>
       <description></description>
     </item>
     
     <item>
       <title>news-es</title>
-      <link>https://scottpetrovic.github.io/es/categories/news-es/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/es/categories/news-es/</link>
       <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scottpetrovic.github.io/es/categories/news-es/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/es/categories/news-es/</guid>
       <description></description>
     </item>
     
