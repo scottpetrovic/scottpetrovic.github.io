@@ -2,151 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>news-jp on Krita Site(JP)</title>
-    <link>https://krita.org/jp/categories/news-jp/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/jp/categories/news-jp/</link>
     <description>Recent content in news-jp on Krita Site(JP)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/jp/categories/news-jp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/jp/categories/news-jp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Krita 4.4.3がリリースされました</title>
-      <link>https://krita.org/jp/posts/2021/krita-4-4-3-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2021/krita-4-4-3-released-jp/</link>
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2021/krita-4-4-3-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2021/krita-4-4-3-released-jp/</guid>
       <description>Krita 4.4.3をリリースしました。これはバ</description>
     </item>
     
     <item>
       <title>Kritaの2018年の振り返りと2019年の展望</title>
-      <link>https://krita.org/jp/posts/2018/krita-in-2018-and-2019-ja/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-in-2018-and-2019-ja/</link>
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-in-2018-and-2019-ja/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-in-2018-and-2019-ja/</guid>
       <description>去年の最後には2017年を振り返り、20</description>
     </item>
     
     <item>
       <title>Krita 4.1.7 リリース</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-1-7-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-7-released-jp/</link>
       <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-1-7-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-7-released-jp/</guid>
       <description>Krita 4.1シリーズのバグ修正リリースである</description>
     </item>
     
     <item>
       <title>ask.krita.org -- KritaのQ&amp;Aサイトオープン</title>
-      <link>https://krita.org/jp/posts/2018/ask-krita-org-the-krita-question-and-answers-site-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/ask-krita-org-the-krita-question-and-answers-site-jp/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/ask-krita-org-the-krita-question-and-answers-site-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/ask-krita-org-the-krita-question-and-answers-site-jp/</guid>
       <description>素晴らしいKDEのシステムアドミンチーム</description>
     </item>
     
     <item>
       <title>Steam版Kritaの更新</title>
-      <link>https://krita.org/jp/posts/2018/krita-updated-on-steam-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-updated-on-steam-jp/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-updated-on-steam-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-updated-on-steam-jp/</guid>
       <description>ようやくSteamのKritaを最新バー</description>
     </item>
     
     <item>
       <title>Krita 4.1.3 がリリースされました</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-1-3-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-3-released-jp/</link>
       <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-1-3-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-3-released-jp/</guid>
       <description>Kritaの最新バージョンをリリースしま</description>
     </item>
     
     <item>
       <title>Digital Atelierの紹介: Ramon Mirandaによる絵画的ブラシセットとチュートリアル動画！</title>
-      <link>https://krita.org/jp/posts/2018/introducing-digital-atelier-a-painterly-brush-preset-pack-by-ramon-miranda-with-tutorial-videos-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/introducing-digital-atelier-a-painterly-brush-preset-pack-by-ramon-miranda-with-tutorial-videos-jp/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/introducing-digital-atelier-a-painterly-brush-preset-pack-by-ramon-miranda-with-tutorial-videos-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/introducing-digital-atelier-a-painterly-brush-preset-pack-by-ramon-miranda-with-tutorial-videos-jp/</guid>
       <description>Digital Atelier、Ramon Mirand</description>
     </item>
     
     <item>
       <title>Kritaの2018年Google Summer of Code</title>
-      <link>https://krita.org/jp/posts/2018/kritas-2018-google-summer-of-code-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/kritas-2018-google-summer-of-code-jp/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/kritas-2018-google-summer-of-code-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/kritas-2018-google-summer-of-code-jp/</guid>
       <description>今年もKritaは3人の学生とGoogl</description>
     </item>
     
     <item>
       <title>Kritaの開発進捗：2018年8月</title>
-      <link>https://krita.org/jp/posts/2018/last-month-in-krita-august-2018-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/last-month-in-krita-august-2018-jp/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/last-month-in-krita-august-2018-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/last-month-in-krita-august-2018-jp/</guid>
       <description>昔は毎週の開発についての投稿をしていまし</description>
     </item>
     
     <item>
       <title>Krita 4.1.1 リリース</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-1-1-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-1-released-jp/</link>
       <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-1-1-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-1-released-jp/</guid>
       <description>Krita 4.1.0のバグ修正リリースであるKr</description>
     </item>
     
     <item>
       <title>Krita 4.1.0 リリース</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-1-0-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-0-released-jp/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-1-0-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-1-0-released-jp/</guid>
       <description>Krita 4.0のリリースから3か月が経ちました</description>
     </item>
     
     <item>
       <title>Krita 2018スプリントの報告</title>
-      <link>https://krita.org/jp/posts/2018/krita-2018-sprint-report-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-2018-sprint-report-jp/</link>
       <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-2018-sprint-report-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-2018-sprint-report-jp/</guid>
       <description>この週末に、世界中からKritaの開発者</description>
     </item>
     
     <item>
       <title>Krita 4.0.2リリース！</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-0-2-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-2-released-jp/</link>
       <pubDate>Sun, 13 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-0-2-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-2-released-jp/</guid>
       <description>KritaチームはKrita4.0.0の</description>
     </item>
     
     <item>
       <title>Krita 4.0.3リリース！</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-0-3-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-3-released-jp/</link>
       <pubDate>Sun, 13 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-0-3-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-3-released-jp/</guid>
       <description>KritaチームはKrita4.0.0の</description>
     </item>
     
     <item>
       <title>Krita 4.0.1がリリースされました</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-0-1-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-1-released-jp/</link>
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-0-1-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-1-released-jp/</guid>
       <description>KritaチームはKrita4.0.0の</description>
     </item>
     
     <item>
       <title>Krita 4.0.0がリリースされました!</title>
-      <link>https://krita.org/jp/posts/2018/krita-4-0-0-released-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-0-released-jp/</link>
       <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/posts/2018/krita-4-0-0-released-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/posts/2018/krita-4-0-0-released-jp/</guid>
       <description>今日Krita 4.0をリリースしました!</description>
     </item>
     

@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Krita Site(JP)</title>
-    <link>https://krita.org/jp/categories/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/jp/categories/</link>
     <description>Recent content in Categories on Krita Site(JP)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/jp/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/jp/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>news-jp</title>
-      <link>https://krita.org/jp/categories/news-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/categories/news-jp/</link>
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/categories/news-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/categories/news-jp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>officialrelease-jp</title>
-      <link>https://krita.org/jp/categories/officialrelease-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/categories/officialrelease-jp/</link>
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/categories/officialrelease-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/categories/officialrelease-jp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>uncategorized-jp</title>
-      <link>https://krita.org/jp/categories/uncategorized-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/categories/uncategorized-jp/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/categories/uncategorized-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/categories/uncategorized-jp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>artist-interview-jp</title>
-      <link>https://krita.org/jp/categories/artist-interview-jp/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/jp/categories/artist-interview-jp/</link>
       <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/jp/categories/artist-interview-jp/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/jp/categories/artist-interview-jp/</guid>
       <description></description>
     </item>
     

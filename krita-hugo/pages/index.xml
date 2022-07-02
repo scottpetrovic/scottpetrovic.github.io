@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Krita Site</title>
-    <link>https://krita.org/pages/</link>
+    <link>https://scottpetrovic.github.io/krita-hugo/pages/</link>
     <description>Recent content in Pages on Krita Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://scottpetrovic.github.io/krita-hugo/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mailing Lists</title>
-      <link>https://krita.org/pages/mailing-lists/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/pages/mailing-lists/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/pages/mailing-lists/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/pages/mailing-lists/</guid>
       <description>Krita&amp;rsquo;s Development Mailing List Krita uses a KDE mailing list for all developer and user communication At one time, Krita was called &amp;ldquo;KImageShop&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Donations</title>
-      <link>https://krita.org/pages/donations/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/pages/donations/</link>
       <pubDate>Sun, 13 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/pages/donations/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/pages/donations/</guid>
       <description>Krita is a Free and Open Source application. Krita is mostly developed by an international team of enthusiastic volunteers. We welcome donations from Krita users to support all the work we’re doing!</description>
     </item>
     
     <item>
       <title>Artist Interviews</title>
-      <link>https://krita.org/pages/artist-interviews/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/pages/artist-interviews/</link>
       <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/pages/artist-interviews/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/pages/artist-interviews/</guid>
       <description>Krita Artist Interviews We host interviews with artists who use Krita as their main creative tool. We ask questions like what they are doing, their stories with art, and how they feel about using Krita.</description>
     </item>
     
     <item>
       <title>Contracting</title>
-      <link>https://krita.org/pages/contracting/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/pages/contracting/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/pages/contracting/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/pages/contracting/</guid>
       <description>Development Contracting Boudewijn Rempt Software has worked with several companies and studios to develop features and improvements to Krita. This is a commercial service, and we do not take feature requests or suggestions without signing a contract.</description>
     </item>
     
     <item>
       <title>Monthly Subscription</title>
-      <link>https://krita.org/pages/monthly-subscription/</link>
+      <link>https://scottpetrovic.github.io/krita-hugo/pages/monthly-subscription/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://krita.org/pages/monthly-subscription/</guid>
+      <guid>https://scottpetrovic.github.io/krita-hugo/pages/monthly-subscription/</guid>
       <description>Why a Monthly Subscription? Individual donations are great, but the development fund gives us a regular income, which makes it possible to plan for the future.</description>
     </item>
     
