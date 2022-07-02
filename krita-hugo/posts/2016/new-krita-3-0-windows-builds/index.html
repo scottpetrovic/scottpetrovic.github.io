@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | New Krita 3.0 Alpha/Development Windows Builds | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">New Krita 3.0 Alpha/Development Windows Builds</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>April 19, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>2 min</em></span> 
+        
+        
+    </div>
+
+    <p>Until now, we have made all Windows releases of Krita with Microsoft&rsquo;s Visual C++ compiler. Krita 2.9 was built with the 2012 version, 3.0 with the 2015 version of Visual C++. Both compilers have problems building the <a href="http://gmic.eu/">G&rsquo;Mic library</a>, and, recently, the latest version of the <a href="https://github.com/VcDevel/">Vc library</a>. G&rsquo;Mic provides a wide range of filters and Vc lets us optimize the code that blends pixels and creates brush masks.</p>
+<p>We cannot fix the libraries, we cannot fix the Microsoft compiler, and we don&rsquo;t want to make Krita slower and less functional, so there was only one solution left: find a different compiler. That is pretty scary so late in the development cycle, because every compiler has different quirks and bugs. We are actually <a href="http://www.valdyas.org/fading/index.cgi/hacking/krita/mxe_krita.html">making these builds on Linux</a>.</p>
+<p>We have now prepared new builds for you to test. There are four builds: with and without debugging information, and for 32 and 64 bits Windows. If you encounter a crash, please download the debug build and try to reproduce the crash. Compared to 3.0 alpha, a number of bugs are fixed. These builds also have more features: the camera raw import plugin and the PDF import/export plugin are included. The 32 bits build now also includes G&rsquo;Mic, which was completely impossible with Visual Studio. The only feature present on Linux that is still not available on Windows is OpenJPEG support, for loading and saving .jp2 files (not jpeg files, that is present and correct).</p>
+<p>You can find all builds here: <a href="http://files.kde.org/krita/3/windows/devbuilds">http://files.kde.org/krita/3/windows/devbuilds</a>. You can verify your downloads with the sha1 checksum files. Direct downloads of the non-debug builds:</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/windows/devbuilds/krita-master-f38b47e-x86.zip">32 bits</a></li>
+<li><a href="http://files.kde.org/krita/3/windows/devbuilds/krita-master-f38b47e-x64.zip">64 bits</a></li>
+</ul>
+<p>To run, simply extract the zip file somewhere and navigate into the bin folder, there execute krita.exe. There is no need anymore for Visual Studion C runtimes! Krita 3.0 looks in a different location for its configuration and resource files, so your existing 2.9 installation is completely untouched.</p>
+<p>Setting up the builds was easier than expected, thanks to the <a href="http://mxe.cc/">MXE</a> project, but it still took time away from fixing bugs, so we&rsquo;re considering extending the 3.0 release schedule with another month. if you&rsquo;re on Windows, please give these builds a good, thorough work-out!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

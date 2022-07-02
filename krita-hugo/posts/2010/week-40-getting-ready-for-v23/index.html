@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last Week in Krita -- up to week 37 and almost the first 2.3 beta! | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last Week in Krita -- up to week 37 and almost the first 2.3 beta!</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>September 15, 2010</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>5 min</em></span> 
+        
+        
+    </div>
+
+    <p>Hey everyone! Bugsbane filling in here for Boud, this time so hopefully you&rsquo;ll forgive the inevitable errors and omissions&hellip; especially if you coded what I omitted! Anyway, caveats aside it&rsquo;s been an *active* couple of weeks in Krita-land. Where to even begin&hellip;</p>
+<p>First up, Krita is now in feature freeze preparing for the big 2.3 release soon. (Artists&hellip; start your tablets!) Having put in the new stuff you&rsquo;ll read about below, developers have been shifting gears to making Krita stable and functional by squashing as many bugs as possible, starting with Bugday on the 22&rsquo;nd last month.</p>
+<h5 id="bugday">Bugday</h5>
+<p>Krita&rsquo;s Bugday had a small, committed group turn out to triage and try and recreate 21 particularly troublesome bugs that had been hard to recreate before. 14 of them are now resolved one way or the other with many being fixed outright. Many thanks to Lemma and Boud for coordinating as well as all our testers for turning out and helping make 2.3 the best Krita release ever!</p>
+<h3 id="enhancements">Enhancements:</h3>
+<p>While we&rsquo;re in feature freeze now though, Krita dev&rsquo;s still managed to squeeze in some last minute goodies for you to enjoy beforehand. For example:</p>
+<p>If you&rsquo;re a new user, you&rsquo;ll find getting started with Krita easier now, thanks to <strong>Boud</strong>&rsquo;s new tutorial image that will open up on Krita&rsquo;s first-run (<a href="http://websvn.kde.org/trunk/koffice/krita/AUTHORS?revision=1170649&amp;view=markup" title="See revision 1170649">revision 1170649</a>). Boud also added a soft light and hard light blending mode for your layering and painting pleasure (<a href="http://websvn.kde.org/trunk/koffice/krita/AUTHORS?revision=1170511&amp;view=markup" title="See revision 1170511">revision 1170511</a>) as well adding hard-light to Krita&rsquo;s Gimp (.xcf) import (<a href="http://websvn.kde.org/trunk/koffice/krita/AUTHORS?revision=1170649&amp;view=markup" title="See revision 1170649">revision 1170649</a>).</p>
+<p>Not content with that, he&rsquo;s been refining the main user interface bar for the 2.3 release, incorporating suggestions from pro artist David Reevoy (concept designer for Blender&rsquo;s next movie Sintel). With preparations for 2.3&rsquo;s release coming to a close, we&rsquo;re getting ready for the next chapter with Boud disabling plugins destined for future releases and working more on importing MyPaint brushes. In a future release it should be possible to have them show up as just another Krita preset.</p>
+<p>Your community contributions to Krita&rsquo;s fundraiser powered <strong>Lukas</strong> as he sped up painting with predefined brushes by 15%-30% and made the brush outline dynamic so it changes shape with pressure, rotation, angle etc r1168475. He also improved Krita&rsquo;s new Harmony-like brush called the sketch brush as seen in <a href="http://forum.kde.org/memberlist.php?mode=viewprofile&amp;u=29566" title="AnimTim's Profile on the Forums">AnimTim</a>&rsquo;s painting Tribal Warrior in the <a href="showcase" title="Krita Showcase">Showcase</a>. If you want a beautifully organic, hand drawn look to your illustrations, the Sketch Brush is definitely worth trying! Stay tuned for a blog post from Lukas, coming soon. </p>
+<p>Working with Lukas, <strong>Pentalis</strong> introduced a more elegant way of having brush strokes stay within selections where they exist. He also gave Krita&rsquo;s KisPainter code a &ldquo;full facelift&rdquo; which he&rsquo;s shy about sharing, but deserves credit for anyway. ;-)</p>
+<p>In a smaller, but &ldquo;close-to-my-artists-heart&rdquo; commit, <strong>Slangkamp</strong> added the ability to pan the canvas, zoom in and out, with only the middle mouse button / tablet pen. This is similar to Gimp / Inkscape, however without needing to hold Ctrl to zoom (or use the keyboard at all). For me personally, this almost doubles my workflow speed. Give it a try now. Trust me. You&rsquo;ll like it. :)</p>
+<p>Speaking of panning, some artists have wished for a way to be able to pan beyond the edge of the canvas. Your wish has now been granted with <strong>Dmitry&rsquo;s</strong> new feature he <a href="http://dimula73.blogspot.com/2010/09/krita-free-scrolling-and-masks.html">blogged</a> about &ldquo;vast scrolling&rdquo;. Now any part of the canvas can be moved anywhere. Combined with middle mouse scroll and pan, you now have a very fast, easy navigation workflow.</p>
+<p>Last, but not least <strong>CyrilleB</strong> has been busy improving many things with some thorough bug squashing, in areas as diverse as subpixelisation, correcting autobrush positioning, keeping Krita running through missing brushes, it&rsquo;s memory usage controlled and dealing with YCbCr colorspaces.</p>
+<p>We&rsquo;re determined to make Krita as stable and free of bugs as possible for 2.3, so we&rsquo;re all grateful for the bugs squashed, including the many others not listed here by the whole team.</p>
+<h3 id="the-wider-krita-world">The Wider Krita World</h3>
+<h5 id="aaron-siego-puts-out-a-call-for-the-perfect-natural-elegant-krita-made-wallpaper">Aaron Siego Puts out a Call For the Perfect Natural, Elegant, Krita-Made Wallpaper</h5>
+<p>In his own words:</p>
+<p>&ldquo;looking at the increasingly impressive Krita showcase page, a pondering occurred to me: [&hellip;] would it be possible to create an image that would work as a desktop wallpaper using Krita? If so, could we also make a splash screen background that matches it for the log in process that was more elegant than what we have right now?&rdquo;</p>
+<p>Checkout <a href="http://forum.kde.org/viewtopic.php?f=137&amp;t=90247" title="Aarons call for Krita Wallpapers">the thread here</a> to see more details of what&rsquo;s needed, for a chance to see your artwork shipping with KDE workspaces worldwide!</p>
+<h5 id="krita-is-on-deviantart">Krita is on DeviantArt!</h5>
+<p>As we get ready to gear up for our first release designed to take Krita out into the wider world of artists we&rsquo;ve set up a <a href="http://krita-free-art-app.deviantart.com/" title="Krita's DeviantArt group">group for Krita over at DeviantArt</a>. It&rsquo;s young now, but take a look at the <a href="http://krita-free-art-app.deviantart.com/favourites/" title="Krita's Gallery on DeviantArt">budding gallery of artwork</a> that has used Krita already up and suggest anything that you know has used Krita somewhere. This is a great opportunity to spread free and open source software outside the traditional tech circles, and we need your artistic help!</p>
+<p>*Phew!* While there&rsquo;s actually a *lot* more we could write about here, I need to stop somewhere! Even as I&rsquo;ve been typing this I see new enhancements happening on IRC faster than I can write about them, so if you really want the full news #krita and <a href="http://forum.kde.org/krita" title="The Krita Forums">the forums</a> are the places to be. See you there!</p>
+<p>And this is what Krita currently looks like &ndash; very close, but not quite to the final release:</p>
+<p><img src="/images/posts/2010/krita_girl_in_blossom_by_enrico_guarniere.png" alt=""></p>
+<p>Image is &ldquo;Girl in Bloom&rdquo; By Enrico Guarnieri (Ico-dY), July 10,2010<br>
+Krita file available from the <a href="http://Krita.org/showcase" title="Krita showcase">Krita.org/showcase</a></p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

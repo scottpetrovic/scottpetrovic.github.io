@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita en Goolge Summer of Code 2018 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita en Goolge Summer of Code 2018</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>September 5, 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Éste año, hemos participado en el evento Google Summer of Code con tres estudiantes: <a href="https://colorathis.wordpress.com/">Ivan</a>, <a href="https://lieroz.github.io/">Andrey</a> y <a href="https://simeir.github.io/">Michael</a>. Parte de el código que estos gran estudiantes han producido ya se encuentra en la versión 4.1.1 de Krita, y la mayoría del resto del código en la versión inestable, por lo que ya puedes ponerlo a prueba en las versiones &ldquo;diarias&rdquo; (Nightly Builds) disponibles para <a href="https://binary-factory.kde.org/job/Krita_Nightly_Windows_Build/">Windows</a> y <a href="https://binary-factory.kde.org/job/Krita_Nightly_Appimage_Build/">Linux</a>. A continuación explicamos lo que se ha logrado éste año.</p>
+<p><strong>El proyecto  de Ivan</strong> se trata de hacer que las brochas actúen con mayor rapidez usando vectores.  Si ésto suena un tanto técnico, ¡Es por que lo es! Básicamente, el CPU es lo suficientemente fuerte para hacer bastantes cálculos al mismo tiempo, siempre y cuando sea el mismo tipo de operación, aun con números diferentes. Se le puede dar mas de 200 cifras al CPU, hacer que las multiplique, y lo hará tan rápido como el multiplicar una sola cifra. Y resulta que el producir el trazo de una brocha usa mas o menos el mismo calculo. Como todo proyecto, éste tiene también sus propias complicaciones y Ivan se ha dedicado a resolver estos problemas usando la misma lógica en brochas de Krita. Aquí mostramos una imagen con la comparación desde su <a href="https://colorathis.wordpress.com/">blog</a>:</p>
+<p><a href="/images/posts/2018/avx_cgauss_60.gif"><img src="/images/posts/2018/avx_cgauss_60.gif" alt=""></a></p>
+<p>Arriba, trazo anterior; abajo, rapidez actual del trazo.</p>
+<p>Si el proyecto de Ivan se trata de la rapidez, bueno, también lo es el de <strong>Andrey</strong>. Andrey ha estado trabajando en algo igual de técnico y complicado. Los CPU modernos tienen varios núcleos (Cores), algunos tienen cuatro pero virtualizan ocho, otros tienen diez y virtualizan veinte o mas. Y un silicio que no es usado, es prácticamente desperdiciado, por lo que Krita ha tenido la capacidad desde hace un tiempo de utilizar múltiples núcleos, desde que Dmitry Kazakov hizo su <a href="http://dimula73.blogspot.com/2009/08/gsoc-krita-tile-engine-wrap-up.html">proyecto del Google Summer of Code,</a> en el 2009, el cual se baso en el motor del &ldquo;tile&rdquo;. Nueve años después, Dmitry guía y supervisa el trabajo de Andrey de la misma índole. El motor de &ldquo;tile&rdquo; (pequeñas fracciones de una imagen, por lo que su nombre en ingles se basa en la semejanza de un &ldquo;ladrillo&rdquo; o &ldquo;azulejo&rdquo;) fracciona las imágenes y el procesador trabaja independientemente en cada una de las piezas fraccionadas.</p>
+<p>Por lo que cuando Dmitry, trabajo el año pasado en el uso de núcleos múltiples en Krita, descubrió que en ciertas circunstancias Krita hace que los núcleos trabajen de uno por uno y no de manera simultanea, por lo que recomendó el resolver este problema, al que se le llama &ldquo;bloqueado&rdquo; y cuya solución es el eliminarlo.</p>
+<p>Así que el proyecto de Andrey es el hacer que la serie de de &ldquo;tiles&rdquo; funcionen sin bloqueo. Y tal trabajo ya se ha completado, todavía existen algunos problemas del código ya que esta parte es bastante complicada, por lo que se necesita bastante el poner a prueba estos cambios. Éste trabajo sera incluido en la versión 4.2 de Krita la cual estará lista al final de este año, parte del código ya se ha incluido en 4.1.1, ya que Andrey ha logrado bastantes mejoras con el mismo:</p>
+<p><a href="/images/posts/2018/lockless.png"><img src="/images/posts/2018/lockless-1024x506.png" alt=""></a></p>
+<p><strong>Michael</strong> ha estado trabajando en algo completamente diferente: La compatibilidad de paletas de color. Las paletas son una serie de colores, los cuales nosotros llamamos recursos. El manipular las paletas era hecho mediante el código proveniente de Calligra en las versiones previas y KOffice en las mas antiguas. El código es complicado y difícil de entender por lo que el primer objetivo de Michael fue el ponerlo en orden, y esta parte ya se ha terminado y es parte de la versión 4.1.1 de Krita.</p>
+<p>El siguiente paso de su proyecto fue el trabajar en el panel de paletas, mismo cuyos detalles se encuentran en <a href="https://phabricator.kde.org/D14815">ésta sección en Phabricator</a>. Aun queda trabajo por realizar, sin embargo el trabajo planeado para el Google Summer of Code ya está completo.</p>
+<p><a href="/images/posts/2018/listanddocker.jpg"><img src="/images/posts/2018/listanddocker-1024x512.jpg" alt=""></a></p>
+<p>Éste el el dialogo de preferencias:</p>
+<p><a href="/images/posts/2018/DlgPaletteEditor.png"><img src="/images/posts/2018/DlgPaletteEditor-1024x517.png" alt=""></a></p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

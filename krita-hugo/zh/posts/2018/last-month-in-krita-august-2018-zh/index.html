@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 项目 2018 年 8 月开发工作报告 | Krita Site(PRC)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/zh">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 项目 2018 年 8 月开发工作报告</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>2018年9月9日</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>Krita 项目曾经会每周发布一次开发工作报告，但随着开发任务变得愈发繁重，维持每周报告开始变得不太现实。虽然大家也可以通过 <a href="https://github.com/KDE/krita">git 历史</a>来查看开发进度，但它欠缺条理。现在我们决定以每月一期的形式来总结开发工作近况。</p>
+<p>八月份的一项重要工作是为新一轮大规模筹款活动进行准备，我们将在九月中旬到十月中旬为下一轮的 Krita 开发工作募集资金。我们之前的筹款活动围绕着新功能展开，而这次筹款将围绕着稳定性和细节优化展开。“程序零问题”是我们的口号，尽管实现它不太可能。我们正在迁移到一个新的付款服务提供商，这将带来在 Paypal 和银行汇款之外的更多捐赠途径，如信用卡和其他电子支付系统，甚至包括比特币。部分新功能已经在<a href="/support-us/donations/">我们的捐款页面上线</a>。</p>
+<p>前述的稳定性和细节优化工作已经开始，我们修复了大量曾经失败的单元测试 (unittests)。单元测试是一些短小的代码片段，用于测试 Krita 的各项功能。我们通过运行单元测试来检验开发产生的新代码是否对已有的部分造成负面影响。除此之外我们也修复了近百个程序问题。今年 Krita 在 <a href="https://krita.org/en/item/kritas-2018-google-summer-of-code/">Google Summer of Code</a> 的开发工作也已经完成。</p>
+<p>下面我们展开说明几个较为重要的改进：</p>
+<h3 id="持续优化代码质量">持续优化代码质量</h3>
+<p>在将 Krita 移植到 Qt5 之后，我们发现有相当数量的单元测试无法正常工作。它们要么无法编译，要么在运行时挂起，要么给出错误的结果，甚至干脆造成崩溃。八月的高温炙烤着大脑，不利于创造性思维，所以我们把精力主要放在修复这些已知问题上面。</p>
+<h3 id="改进选区工具">改进选区工具</h3>
+<p>Dmitry 是我们的核心开发人员之一。在大家的捐赠的帮助下，他得以为 Krita 项目全职工作。最近数周他一直在<a href="https://phabricator.kde.org/T3920">改进 Krita 的选区工具</a>。Krita 的选区与其他同类软件不同，它同时具备本地和全局选区功能，选区可以通过蚂蚁线或蒙版方式进行可视化，选区可以是像素的，也可以是矢量对象。Dmitry 的改进包括：</p>
+<ul>
+<li>在选区蒙版上实时绘制</li>
+<li>支持一个以上的本地选区</li>
+<li>全局选区支持新增、相交、移除不透明区域</li>
+<li>选中“现实全局选区”后自动创建一个选区</li>
+<li>支持矢量和像素选区的相互转换</li>
+<li>支持对选区本身进行调整</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=gWv--Do9L0E">https://www.youtube.com/watch?v=gWv--Do9L0E</a></p>
+<h3 id="重写资源管理系统">重写资源管理系统</h3>
+<p>Krita 资源包括笔尖形状、笔刷预设、渐变和图案预设、工作空间预设等。Krita 自带了一些资源，用户也可以创建自己的资源，或者使用网上下载到的现成资源。Krita 的资源管理系统是在遥远的二十世纪编写的老古董了，当时人们加载几个直径 50 px 的笔刷，再加上几块 128 px 见方的图案，就觉得很了不起了。而现在，直径 1000 px 的笔刷，5000 px 见方的图案到处都是，人们把大量的这种巨型资源往资源库里塞。时代已经改变，旧系统已经无法满足新时代用户的需求。</p>
+<p>在 Krita 主体一再脱胎换骨的同时，老旧的资源管理系统却被落在了后面。二十几年来我们缝缝补补将就着用，把它的代码搞得乱七八糟。有些程序员认为<a href="https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/">重写是不好的习惯</a>，但我们觉得重写是最好的选择。Boudewijn 已经进行了大量的工作，不过它们尚未进入用户视野，你可以在<a href="https://phabricator.kde.org/T379">相关的 Phabricator 任务</a>中查看详情。我们已经为此进行了周密的计划和长期的讨论。如果一切按计划进行，与资源的标签、添加、移除、更改相关的程序问题将会被一举解决。</p>
+<p><a href="/images/posts/2018/resource_db_explorer.png"><img src="/images/posts/2018/resource_db_explorer-300x145.png" alt=""></a></p>
+<h3 id="新功能和小惊喜">新功能和小惊喜</h3>
+<p>Anna Medonosova 开发了一个相当有趣的新功能：色域蒙版。它可以被应用到艺术颜色选择器，也可以对已有的色域蒙版进行编辑。详情可参考 <a href="https://gurneyjourney.blogspot.com/2008/01/color-wheel-masking-part-1.html">James Gurney 的博客文章</a>。</p>
+<p><a href="/images/posts/2018/gamut.png"><img src="/images/posts/2018/gamut-300x300.png" alt=""></a></p>
+<p>新增调试日志工具面板，这样 Windows 用户就再也不必与 Debug View 打交道了。</p>
+<p><a href="/images/posts/2018/log-docker.png"><img src="/images/posts/2018/log-docker-300x300.png" alt=""></a></p>
+<p>(图画作者 <a href="http://LifeFinalEdited.pl">Iza Ka</a>)</p>
+<p>除此之外，Reptorian 创建了一系列新的混合模式，他现在正在开发新的选区相交模式。Jouni 正在处理参考图像工具面板的问题，并且为动画功能实现了<a href="https://phabricator.kde.org/T8764">克隆帧</a>。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgzh/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgzh/roadmap">Roadmap</a>
+			<a href="https://krita.orgzh/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/zh/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgzh/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/zh/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgzh/about">About</a>
+			<a href="https://krita.orgzh/donations">Donations</a>
+			<a href="https://krita.orgzh/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/zh">What is KDE</a>
+			<a href="https://krita.orgzh/website">Website Licenses</a>
+			<a href="https://krita.orgzh/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

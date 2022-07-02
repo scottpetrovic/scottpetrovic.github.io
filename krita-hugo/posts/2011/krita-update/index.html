@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita Update! | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita Update!</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>February 2, 2011</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>Calligra moved to git december 12, 2010. We&rsquo;re in February now, and since then there have been 2222 commits &ndash; not counting various branch merges. There are now 37 active feature branches. Not all of that work is for Krita, but in the onslaught it&rsquo;s getting difficult to actually keep track of all the work!</p>
+<p>Lukáš Tvrdý has taken over the job of planning the next Krita sprint from me &ndash; I was just too overloaded to actually do anything. With the team growing, I&rsquo;m sure this sprint will rock as much as the previous one. Just don&rsquo;t forget the <a href="http://forum.kde.org/viewtopic.php?f=137&amp;t=92453">t-shirt design effort</a>!</p>
+<p>Kubuntiac a.k.a. Bugsbane, webmaster of krita.org is busy working on a <a href="http://community.kde.org/Krita/v2.3CompleteFeatureList">feature overview of Krita.</a> We need screenshots to show off!</p>
+<p>There&rsquo;s one lovely design by Animtim already, featuring a squirrel. During GCI, Heroid told us in #krita that &ldquo;kirta&rdquo; is Albanian for squirrel and asked us what we thought of a painting squirrel as a Krita mascot, the whole team rather fancied the idea.</p>
+<p>New Krita user Rachepatty showed <a href="http://forum.kde.org/viewtopic.php?f=138&amp;t=92885">this strong self portrait in the forum gallery</a>:</p>
+<p><img src="/images/posts/2011/kritaselfportrait1s.jpg" alt=""></p>
+<h3 id="lgm">LGM</h3>
+<p>KDE e.V. has accepted the proposal to send Lukáš, me and Animtim to <a href="http://www.libregraphicsmeeting.org">LGM</a>. Animtim will hold a workshop centered around drawing comics using Krita. Lukáš intends to present the state of the art in Krita, while I want to man a booth with one or computers running the latest Krita, introducing everyone who&rsquo;s interested to Krita in the proposed LGM lab area.</p>
+<h3 id="code">Code</h3>
+<p>Not content with fixing bugs, for instance in the experimental paintop and the mirroring feature beloved by Animtim, Deevad and other artists, <strong>Lukáš</strong> (who is now also working profesionally on Calligra for Ixonos) has been having a lot of fun exerimenting with mirroring, in his multihand branch. For now, there is hardcoded symetry mode with the axis point in center with six brushes. Lots of fun to be had!</p>
+<p><img src="/images/posts/2011/krita_symmetry.jpg" alt=""></p>
+<p><strong>Cyrille Berger</strong> has started work on making it possible to have multiple inputs for every brush preset parameter &ndash; like having both &ldquo;pressure&rdquo; and &ldquo;random&rdquo; (still called fuzzy, I think) influence the size or opacity of your brush footprint. He improved recording, in repsonse to queries by a user on the forum and made it possible to use gradients or patterns as a color source for painting. Krita 2.3 already feels old now&hellip;</p>
+<p><strong>Boudewijn Rempt</strong> has mostly worked on fixing bugs for Krita 2.3.x &ndash; improving memory handling and backporting fixes from git.</p>
+<p><strong>Silvio Heinrich</strong> has been working on implementing new blending modes. Look at this before and after screenshot (the first is with regular Krita, the second with his new blending modes enabled).</p>
+<p>before&hellip;</p>
+<p><img src="/images/posts/2011/composite_modes_before.jpg" alt=""></p>
+<p>and after&hellip;</p>
+<p><img src="/images/posts/2011/composite_modes_after.jpg" alt=""></p>
+<p>(his own artwork, by the way!)</p>
+<p>Silvio has also worked on improving the canvas rotation, mirror and zoom, and on improving the smudge brush.</p>
+<p><strong>Sven Langkamp</strong> has been chipping away at user interaction niggles, imprving the toolbox, moving the mirror options to the brushes toolbar, fixing shortcuts for tools and lots more bugs. And then for kicks and giggles added a channels docker and a basic workspace manager!</p>
+<p><strong>Geoffry</strong> <strong>Song</strong> has improved the assistants &ndash; freely placable guides on the canvas that make painting along lines and shapes much easier &ndash; beyond all recognition.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>While there are some regressions &ndash; and we&rsquo;re on top of those &ndash; and some severe bugs have been discovered after the 2.3 release, Krita really seems to fulfil its promise now; it&rsquo;s really quite stable under most circumstances, the performance is good and the features and improvements keep coming in. So get out your wacom and start painting. We need new entries in the showcase and the forum gallery!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

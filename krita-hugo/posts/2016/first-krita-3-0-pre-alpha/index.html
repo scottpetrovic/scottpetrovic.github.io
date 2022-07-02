@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | First Krita 3.0 pre-alpha! | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">First Krita 3.0 pre-alpha!</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>January 17, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>7 min</em></span> 
+        
+        
+    </div>
+
+    <p>More than a year in the making&hellip; We proudly present the first pre-alpha version of Krita 3.0 you can actually try to run! So what is Krita 3.0 pre-alpha? It&rsquo;s the Qt5 port, with animation, instant preview, a handful of new features and portable packages for everyone! When we feel everything is nice and stable we&rsquo;ll release Krita 3.1, and we&rsquo;ll keep on releasing new versions as and when we finish <a href="https://www.kickstarter.com/projects/krita/krita-free-paint-app-lets-make-it-faster-than-phot">Kickstarter stretch goals</a>. So keep in mind: Krita 3.0 is <em>experimental</em>.</p>
+<p>This &ldquo;release&rdquo; includes the latest version of the animation and the instant-preview performance work, plus there are a number of stretch goals from the Kickstarter already available, too. And it is a major upgrade of the core technology that Krita runs on: from Qt4 to Qt5. The latter wasn&rsquo;t something that was a lot of fun, but it&rsquo;s needed to keep Krita code healthy for the future! Whatever may come, we&rsquo;re ready for it!</p>
+<p><a href="/images/posts/2016/Kiki_Krita_86.gif"><img src="/images/posts/2016/Kiki_Krita_86.gif" alt="Kiki_Krita_86"></a></p>
+<p>The port to Qt5 meant a complete rewrite of our tablet and display code, which, combined with animation and the instant preview means that Krita is really unstable right now! And that means that we need <em>you</em> to help us test!</p>
+<p>Another little project was updating our build-systems for Windows, OSX, and Linux. We fully intend to make Krita 3.0 as supported on OSX as on Windows and Linux, and to that end, we got <a href="http://www.valdyas.org/fading/index.cgi/hardware/macbookpro.html">ourselves a faster Mac</a>.</p>
+<p>One of the cool things coming from this system is that for Krita 3.0 we can have portable packages for all three systems! We have <a href="http://appimage.org/">AppImages</a> for Linux, DMG&rsquo;s for OSX and a portable zip file for 64 bits Windows. Sorry, no 32 bits Windows builds yet&hellip;</p>
+<p><a href="/images/posts/2016/krita3-prealpha.png"><img src="/images/posts/2016/krita3-prealpha-1024x621.png" alt="krita3-prealpha"></a></p>
+<h3 id="download-instructions">Download Instructions</h3>
+<p><strong>Windows</strong></p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/windows/krita3-prealpha-b4bac8d.zip">krita3-prealpha-b4bac8d.zip</a></li>
+</ul>
+<p>Download the zip file. <a href="http://windows.microsoft.com/en-us/windows-10/zip-and-unzip-files#v1h=tab02">Unzip the zip file where you want to put Krita.</a>.</p>
+<p>Run the vcredist_x64.exe installer to install Microsoft&rsquo;s Visual Studio runtime.</p>
+<p>Then double-click the krita link.</p>
+<p>Known issues on Windows:</p>
+<ul>
+<li>The location of the configuration files has changed: configuration data and custom resources, and the new location isn&rsquo;t correct yet. The settings are in %APPDATA%\Local\kritarc and the resources in %APPDATA%\Roaming\Krita\krita\krita</li>
+<li>If the entire window goes black, disable OpenGL for now. We&rsquo;ve figured out the reason, now we only need to write a fix. It&rsquo;s a bug in the Intel driver, but we know how to work around it now.</li>
+</ul>
+<p><strong>OSX</strong></p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/osx/krita3-prealpha-ee7b252.dmg">krita3-prealpha-ee7b252.dmg</a></li>
+</ul>
+<p>Download the DMG file and open it. Then drag the krita app bundle to the Applications folder, or any other location you might prefer. Double-click to start Krita.</p>
+<p>Known issues on OSX:</p>
+<ul>
+<li>We built Krita on El Capitan. The bundle is tested to work on a mid 2011 Mac Mini running Mavericks. It looks like you will need hardware that is capable of running El Captitan to run this build, but you <em>do not have to have</em> El Capitan, you can try running on an earlier version of OSX.</li>
+<li>You will <em>not</em> see a brush outline cursor or any other tool that draws on the canvas, for instance the gradient tool. This is known, we&rsquo;re working on it, it needs the same fix as the black screen you can get with some Intel drivers.</li>
+</ul>
+<p><strong>Linux</strong></p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/linux/krita3-prealpha-f7f43f2-x86_64.appimage">krita3-prealpha-f7f43f2-x86_64.appimage</a></li>
+</ul>
+<p>For the Linux builds we now have Appimages! These are completely distribution-independent. To use the AppImage, download it, and make it an executable in your terminal or using the file properties dialog of your file manager,Another change is that configuration and custom resources are now stored in the .config/krita.org/kritarc and .local/share/krita.org/ folders of the user home folder, instead of .kde or .kde4.</p>
+<p>Known issues on Linux:</p>
+<ul>
+<li>Your distribution needs to have Fuse enabled</li>
+<li>On some distributions or installations, you can only run an AppImage as root because the Fuse system is locked down. Since an AppImage is a simple iso, you can still mount it as a loopback device and execute Krita directly using the AppRun executable in the top folder.</li>
+</ul>
+<h3 id="whats-next">What&rsquo;s Next?</h3>
+<p>More alpha builds! We&rsquo;ll keep fixing bugs and implementing features, and keep making releases! Right now, we&rsquo;re aiming for an update every week. Remember that Krita 3.0 will not include all of the features from the last Kickstarter. We still have a ways to go with adding the rest of the stretch goals, but with this release you&rsquo;ll get&hellip;</p>
+<h3 id="change-log">Change Log</h3>
+<p><strong>All the animation features from the Animation Beta</strong></p>
+<p>And more animation goodness:</p>
+<p><strong>Animation Drop Frame Support</strong></p>
+<p>We implemented a &ldquo;Drop Frames&rdquo; mode for Krita and made it default option. Now you can switch on the &ldquo;Drop Frames&rdquo; mode in the Animation Docker to ensure your animation is playing with the requested frame rate, even when the GPU cannot handle this amount of data to be shown.</p>
+<p>Show the current frames per second (fps) and whether the frames are dropped in the tooltip of the drop frames button.</p>
+<p>The animation playback buttons become red if the frames are dropped. The tool tip shows the following values:</p>
+<ul>
+<li>  Effective FPS - the visible speed of the clip</li>
+<li>  Real FPS - how many real frames per second is shown (always smaller)</li>
+<li>  Frames dropped - percentage of the frames dropped</li>
+</ul>
+<p><strong>Other Animation Features</strong></p>
+<ul>
+<li>Allow switching frames using arrow keys (canvas input setting)</li>
+<li>Add &ldquo;Show in Timeline&rdquo; action to the Layers Docker</li>
+<li>Fix Duplicate Layer feature for animated layers</li>
+<li>Let the current frame spin box have a higher limit as well/ Let the user choose the start frame higher than 99</li>
+<li>Fix crashes with cropped animations, the move tool and changed backgrounds.</li>
+<li>Fix loading of the animation playback properties</li>
+<li>Fix initialization of the offset of the frame when it is duplicated</li>
+<li>Fix crash when loading a file with Onion Skins activated</li>
+<li>Frames import: Under file-&gt;import animation. This requires that you have removed the krita.rc in the resource folder(settings-&gt;manage resources-&gt;open resource folder) if you had a previous version of Krita installed. Only has a filebrowser that&rsquo;ll allow you to select multiple files for now, but we&rsquo;ll enhance the UI in the future.</li>
+</ul>
+<p><strong>Tablet handling</strong></p>
+<ul>
+<li>We rewrote our tablet handling. If tablets didn&rsquo;t work for you with 2.9 or even crashed, check out the 3.0 branch.</li>
+<li>On Windows, we should better support display scaling</li>
+<li>On Windows, support tablet screen rotation</li>
+</ul>
+<p><strong>Tool Improvements</strong></p>
+<ul>
+<li>Move increment keys for the move tool! This is still under development, but we are sure it&rsquo;s basic form is appreciated.</li>
+</ul>
+<p><strong>Layer Improvements</strong></p>
+<ul>
+<li>We removed the &lsquo;move in/out of group layer&rsquo; buttons. Moving a layer up and down will also pass it into the group.</li>
+<li>Duplication of multiple layers</li>
+<li>Shift+Delete shortcut to the Remove Layer action</li>
+<li>Move Up/Down actions for multiple layer selections</li>
+<li>Make Merge Down for multiple layers and selecting the right merged layer afterwards</li>
+<li>Ctrl+G when having multiple layers selected now groups them</li>
+<li>Ctrl+Shift+G will now have the currently selected layer put into a group with a alpha inherited layer above it, not unlike Photoshop clipping masks.</li>
+<li>Copy-paste layer actions. This is a little different from regular copy-paste, as the latter copies pixels onto the clipboard, while copy-paste layers copies full layers onto the clipboard</li>
+<li>Implemented Select All/Visible/Locked layers actions. By default they have no shortcuts, but you can assign any to them</li>
+<li>Mass editing of layers. Select multiple layers and press the layer properties to mass-edit or rename them</li>
+<li>properties and renaming layers now have hotkeys: F2 and F3</li>
+</ul>
+<p><strong>Shortcuts</strong></p>
+<ul>
+<li>Our shortcut system is now ordered into groups.</li>
+<li>You can now save and share custom versions of your shortcuts.</li>
+<li>Krita now has Photoshop and Painttool Sai compatible shortcuts included by default.</li>
+<li>You can now switch the selection modifiers to use ctrl instead of alt. Useful if you are on Linux, or prefer ctrl to alt.</li>
+<li>Reset Canvas Rotation had gotten lost in 2.9, it&rsquo;s now back and visible under view-&gt;canvas</li>
+</ul>
+<p><strong>Other features</strong></p>
+<ul>
+<li>Add import/export of GBR and GIH brush files, generating from animated .kra files is still coming.</li>
+<li>Show editing time of a document in the document information dialog, useful for proffesional illustrators, speedpainters and other commision-takers. It detects when you haven&rsquo;t performed actions for a while, and has a precision of +- 60 seconds. You can empty it in the document info dialog and of course by unzipping you .kra file and editing the meta-data there.</li>
+</ul>
+<p><strong>Minor changes</strong></p>
+<ul>
+<li>The popup palette now has anti-aliased edges (but it&rsquo;s square on OSX&hellip;)</li>
+<li>simple color selector now has white on top and black on the bottom.</li>
+<li>updated ICC profiles.</li>
+<li>Added a Smudge_water preset to make smudging easier.</li>
+<li>Added printing of the current FPS on canvas when the debugging is activated</li>
+</ul>
+<p>Because our release is so fresh and fragile, we are, for once not going to ask you to report bugs. Instead, we have a</p>
+<h1 id="surveyhttpswwwsurveymonkeycomrw87rx6x"><strong><a href="https://www.surveymonkey.com/r/W87RX6X">Survey</a></strong></h1>
+<p>With that in mind, it shouldn&rsquo;t be surprising that we don&rsquo;t recommend using this version for production work! Right now, Krita is in the &ldquo;may eat your cat&rdquo;-stage&hellip; But it is sure fun to play with!</p>
+<p><a href="/images/posts/2016/DanceGirl_SEQ_small.gif"><img src="/images/posts/2016/DanceGirl_SEQ_small.gif" alt="DanceGirl_SEQ_small"></a></p>
+<p>(Animations created by <a href="http://akill-blazard.blogspot.fr/">Achille</a>, thanks!)</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

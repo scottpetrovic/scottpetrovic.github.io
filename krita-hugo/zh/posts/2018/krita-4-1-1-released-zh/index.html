@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.1.1 发布 | Krita Site(PRC)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/zh">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.1.1 发布</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>2018年7月19日</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>今天我们为大家带来了 Krita 4.1.1，这是 Krita 4.1.0 系列的第一个问题修正版本。</p>
+<ul>
+<li>修复了在使用 PyQt 5.11 时 PyKrita 的加载问题 (补丁由 Antonio Rojas 提供，谢谢!) (<a href="https://bugs.kde.org/show_bug.cgi?id=396381">BUG:396381</a>)</li>
+<li>修复了在处理矢量对象时可能发生的崩溃 (<a href="https://bugs.kde.org/show_bug.cgi?id=396145">BUG:396145</a>)</li>
+<li>修复了在笔刷编辑器中缩放像素笔刷大小时的一个问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=396136">BUG:396136</a>)</li>
+<li>修复了在 macOS 下启用了多个语言时加载系统语言</li>
+<li>在矢量对象属性工具面板中不显示尚未实现的拾色器按钮 (<a href="https://bugs.kde.org/show_bug.cgi?id=389525">BUG:389525</a>)</li>
+<li>修复了在一次修改、保存、修改周期后自动保存时间的激活问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=393266">BUG:393266</a>)</li>
+<li>修复了跨通道曲线滤镜的超出范围的数据抬头 (<a href="https://bugs.kde.org/show_bug.cgi?id=396244">BUG:396244</a>)</li>
+<li>修复了一个当按下 PageUp 切换至参考图像图层时的判断参数</li>
+<li>修复了在孤立图层模式下合并图层时的一个崩溃 (<a href="https://bugs.kde.org/show_bug.cgi?id=395981">BUG:395981</a>)</li>
+<li>修复了使用自由变形模式的变形蒙版的文件加载问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=395979">BUG:395979</a>)</li>
+<li>修复了自由变形模式被选中时变形工具的激活问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=395979">BUG:395979</a>)</li>
+<li>当使用不受支持的 Windows 版本时警告用户</li>
+<li>修复了在隐藏最近一个可见通道时的崩溃问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=395301">BUG:395301</a>)</li>
+<li>实现了对非规范 GPL 调色板的加载，如 <a href="https://lospec.com/palette-list/endesga-16">https://lospec.com/palette-list/endesga-16</a></li>
+<li>简化了网面变形模式下的网格显示</li>
+<li>修复了反向选择菜单项的显示 (<a href="https://bugs.kde.org/show_bug.cgi?id=395764">BUG:395764</a>)</li>
+<li>使用 KFormat 显示带格式的数字 (补丁由 Pino Toscano 提供，谢谢!)</li>
+<li>隐藏颜色滑动条的设置页面</li>
+<li>不从完全透明的参考图像上拾取颜色 (<a href="https://bugs.kde.org/show_bug.cgi?id=396358">BUG:396358</a>)</li>
+<li>修复了嵌入参考图像时的一个崩溃</li>
+<li>修复了保存和加载参考图像时的一些问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=396143">BUG:396143</a>)</li>
+<li>修复了拾色器工具在参考图像上不工作的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=396144">BUG:396144</a>)</li>
+<li>将画布视图的平移范围扩展至包含参考图像</li>
+</ul>
+<h2 id="下载">下载</h2>
+<h3 id="windows-版本">Windows 版本</h3>
+<p>Windows 用户请注意：如果你遇到了崩溃，请遵循<a href="https://docs.krita.org/en/reference_manual/dr_minw_debugger.html#dr-minw">此处的说明</a>使用软件调试符号包，这样可以帮助我们找到崩溃的原因。</p>
+<ul>
+<li>
+<p>64 位 Windows 安装程序：<a href="https://download.kde.org/stable/krita/4.1.1/krita-x64-4.1.1-setup.exe">krita-x64-4.1.1-setup.exe</a></p>
+</li>
+<li>
+<p>64 位 Windows 压缩包：<a href="https://download.kde.org/stable/krita/4.1.1/krita-x64-4.1.1.zip">krita-x64-4.1.1.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.1.1/krita-x64-4.1.1-dbg.zip">64 位软件调试符号包</a> (解压到 Krita 的安装目录)</p>
+</li>
+<li>
+<p>32 位 Windows 安装程序：<a href="https://download.kde.org/stable/krita/4.1.1/krita-x86-4.1.1-setup.exe">krita-x86-4.1.1-setup.exe</a></p>
+</li>
+<li>
+<p>32 位 Windows 压缩包：<a href="https://download.kde.org/stable/krita/4.1.1/krita-x86-4.1.1.zip">krita-x86-4.1.1.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.1.1/krita-x86-4.1.1-dbg.zip">32 位软件调试符号包</a> (解压到 Krita 的安装目录)</p>
+</li>
+</ul>
+<h3 id="linux-版本">Linux 版本</h3>
+<ul>
+<li>64 位 AppImage：<a href="https://download.kde.org/stable/krita/4.1.1/krita-4.1.1-x86_64.appimage">krita-4.1.1-x86_64.appimage</a></li>
+<li>64 位 G&rsquo;Mic-Qt 插件 AppImage：<a href="https://download.kde.org/stable/krita/4.1.1/gmic_krita_qt-x86_64.appimage">G&rsquo;Mic-Qt 插件 appimage</a></li>
+</ul>
+<p>(如果 Firefox 把下载文件当作文本打开，请在连接上点击右键/另存为)</p>
+<p>你也可以在 <a href="https://launchpad.net/%7Ekritalime/+archive/ubuntu/ppa">Krita Lime PPA</a> 更新之后用它在 Ubuntu 以及它的派生版本上面安装最新版本的 Krita。我们也在准备 Snap 形式的更新版本。</p>
+<h3 id="osx-版本">OSX 版本</h3>
+<ul>
+<li>OSX 磁盘映像文件：<a href="https://download.kde.org/stable/krita/4.1.1/krita-4.1.1.dmg">krita-4.1.1.dmg</a></li>
+</ul>
+<p>注意：触控工具面板、gmic-qt、Python 插件在 OSX 上暂不可用。</p>
+<h3 id="源代码">源代码</h3>
+<ul>
+<li>源代码：<a href="https://download.kde.org/stable/krita/4.1.1/krita-4.1.1.tar.gz">krita-4.1.1.tar.gz</a></li>
+</ul>
+<h3 id="md5sum">md5sum</h3>
+<p>所有下载文件的 md5sum：</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.1.1/md5sum.txt">md5sum.txt</a></li>
+</ul>
+<h3 id="密钥和签名">密钥和签名</h3>
+<p>Linux 的 AppImage 软件包和源代码 Tar 压缩包都已签名。 你可以在此通过 https 连接下载公共密钥： <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a> 和 <a href="http://download.kde.org/stable/krita/4.1.1/">签名文件</a> (文件名后缀为.sig)。</p>
+<h2 id="资助-krita-项目">资助 Krita 项目</h2>
+<p>Krita 是一个自由、免费、开源的软件项目。请通过<a href="https://krita.org/en/support-us/donations/">捐款</a>、<a href="https://krita.org/en/support-us/shop">购买教学材料和画册</a>等方式资助我们。有了你的资助，我们才能保持核心开发团队为项目全职工作。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgzh/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgzh/roadmap">Roadmap</a>
+			<a href="https://krita.orgzh/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/zh/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgzh/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/zh/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgzh/about">About</a>
+			<a href="https://krita.orgzh/donations">Donations</a>
+			<a href="https://krita.orgzh/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/zh">What is KDE</a>
+			<a href="https://krita.orgzh/website">Website Licenses</a>
+			<a href="https://krita.orgzh/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

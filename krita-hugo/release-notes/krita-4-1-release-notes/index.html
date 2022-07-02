@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.1 Release Notes | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.1 Release Notes</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>June 13, 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>6 min</em></span> 
+        
+        
+    </div>
+
+    <h1 id="krita-41-release-notes">Krita 4.1 Release Notes</h1>
+<p>Krita 4.1 is the second feature release in the Krita 4 series and is released only three months after 4.0. But there is still a heap of interesting new things and improvements to check out!</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/N6oHLuICrHM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="note">Note!</h2>
+<p>We found a bug where activating the transform tool will cause a crash if you had selected the Box filter previously. if you experience a crash when enabling the transform tool in krita 4.1.0, go to your kritarc file (<a href="https://docs.krita.org/en/KritaFAQ.html#where-are-the-configuration-files-stored" title="https://docs.krita.org/en/KritaFAQ.html#where-are-the-configuration-files-stored">https://docs.krita.org/en/KritaFAQ.html#where-are-the-configuration-files-stored …</a>) and remove the line that says &ldquo;filterId=Box&rdquo; in the [KisToolTransform] section. Sorry for the inconvenience. We will bring out a bug fix release as soon as possible.</p>
+<h2 id="reference-images-tool">Reference images tool</h2>
+<p>Reference images are back in Krita&hellip; Now more powerful and useful than ever! No longer a docker with postage stamp-sized images, this is now a tool in the toolbox. Look for the pin icon in the same group as the assistant and ruler tools. With this tool, you can</p>
+<ul>
+<li>add multiple images at one time</li>
+<li>move one or multiple images around or outside the canvas</li>
+<li>scale and rotate each image</li>
+<li>control the opacity and saturation of each image.</li>
+<li>embed or link the reference images to your KRA file.</li>
+</ul>
+<p>Take a look at the video Wolthera made to see the new <a href="https://docs.krita.org/en/reference_manual/tools/reference_images_tool.html">reference images tool</a> in action:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/LWpjlyUlBiA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="animation-improvements">Animation Improvements</h2>
+<p>More frame management options with animation: moving frames, adding frames, copying frames, and setting playback time. All these new actions can be assigned to shortcuts.</p>
+<h3 id="frame-actions">Frame Actions</h3>
+<p><img src="/images/pages/frame-actions.png" alt=""></p>
+<h3 id="column-actions-affects-multiple-layers"><strong>Column Actions (affects multiple layers)</strong></h3>
+<p><img src="/images/pages/column-actions.png" alt=""></p>
+<p> </p>
+<h3 id="improved-animation-timeline-display">Improved animation timeline display</h3>
+<p>The <a href="https://docs.krita.org/en/reference_manual/dockers/timeline.html">timeline</a> has been improved to better communicate how long a single frame is running, and when a frame is empty or not.</p>
+<p><img src="/images/pages/improved-animation-timeline.png" alt=""></p>
+<p> </p>
+<h3 id="animation-cache-swapping-and-performance-setting-area">Animation cache swapping and performance setting area</h3>
+<p>Handle larger animations better by offloading the data to your drive instead of keeping all rendered frames in memory. To further assist playing back large animations, the new cache comes with a &lsquo;region of interest&rsquo; setting. When the region of interest is enabled, Krita will only calculate areas that have changed on within the viewed area instead of the entire canvas. You will need both &ldquo;Use region of interest&rdquo; and &ldquo;Limit cached frame size&rdquo; enabled <a href="https://docs.krita.org/en/reference_manual/preferences/performance_settings.html#animation-cache">in the performance settings</a> for it to take effect.</p>
+<p><img src="/images/pages/animation-options.png" alt=""></p>
+<p> </p>
+<h2 id="better-color-picking-with-new-blending-option">Better color picking with new blending option</h2>
+<p>Inspired by how color mixing works in real life, you can now pick a <a href="https://docs.krita.org/en/reference_manual/tools/color_selector.html">small amount of color to mix</a> with your existing color. Thanks to Emmet and Eoin O&rsquo;Neill for contributing this patch.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/D6_scO-rVgE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="improved-vanishing-point-assistants-and-custom-colors">Improved vanishing point assistants and custom colors</h2>
+<p>Vanishing points can display reference lines where you can control the density. And you can control the <a href="https://docs.krita.org/en/reference_manual/tools/assistant.html#tool-options">color of each assistant individually</a>, while before all painting assistants shared one and the same color.</p>
+<p><img src="/images/pages/vanishing-point-assistant.png" alt=""></p>
+<h2 id="python-2-support-and-updated-packages">Python 2 Support and updated packages</h2>
+<p>Jeroen Hoolmans has made it possible to build Krita with python 2, which is necessary for VFX studios that depend on a Python 2 pipeline. Note that the Linux appimage and the Windows builds use Python 3.</p>
+<h4 id="updated-packaged-scripts">Updated packaged scripts</h4>
+<ul>
+<li>The Krita Script starter got updated.</li>
+<li>The Comic Project Management tools got some major updates: rewritten page viewer for better drag and drop, pot extraction for translating comics, comic viewer improvements, and much better ACBF generation support and much much more. Check the manual in the Plugin Manager for the list of changes.</li>
+</ul>
+<h2 id="sessions-and-window-layouts">Sessions and Window Layouts</h2>
+<p>Krita already had workspaces, which contained information about the location of dockers. However, those were per-window, and if you work with multiple monitors that is a bit limiting. So Krita 4.1 now introduces ‘<a href="https://docs.krita.org/en/reference_manual/resource_management/resource_workspace.html#sessions">sessions</a>’ and ‘<a href="https://docs.krita.org/en/reference_manual/resource_management/resource_workspace.html#window-layouts">window layouts</a>’.</p>
+<p>Sessions remember your open windows and documents, allowing you to pick up again where you were previously. Krita can also automatically open your previous session upon startup or show the session manager for you to select one.</p>
+<p>Window layouts extend on the idea of workspaces. However, instead of storing just the layout within a window, they can store multiple windows, their layouts, sizes and positions on the screen. They can be especially useful if you work with multiple monitors or changing configurations, such as a laptop and an external monitor.</p>
+<p>Window layouts also come with two options to help working with multiple windows:</p>
+<ul>
+<li>‘Show active image in all windows’. With this enabled any new image you open or switch to will appear in all windows. For example, to can keep an overview of the image on a secondary screen.</li>
+<li>‘Primary workspace follows focus’. This option keeps your primary workspace on which ever window is currently active, swapping it across as the focus changes.</li>
+</ul>
+<p>You can find the session manager via File -&gt; Sessions, and window layouts via the Workspace dropdown on the toolbar.</p>
+<h2 id="more-raw-formats-supported">More RAW formats supported</h2>
+<p>Krita now accepts the following RAW formats: bay, bmq, cr2, cs1, dc2, dcr, dng, erf, fff, hdr, mdc, mos, mrw, nef, orf, pxn, raf, raw, rdc, sr2, srf, x3f, 3fr, cine, ia, kc2, mef, nrw, qtk, sti, rwl, srw. Thanks to L.E. Segovia for the patch!</p>
+<h2 id="faster-brushes-first-google-summer-of-code-results">Faster Brushes: First Google Summer of Code Results</h2>
+<p>The Circular Gaussian and Soft Brush tips are now up to 10 times faster. Ivan Yossi&rsquo;s project to speed up the Gaussian and Softbrush tips with AVX shows its first results in this release.</p>
+<h2 id="cross-channel-adjustment-filter-and-color-adjustment-improvement">Cross Channel Adjustment Filter and color adjustment improvement</h2>
+<p><img src="/images/pages/cross-channel-adjustment.png" alt=""></p>
+<p>The <a href="https://docs.krita.org/en/reference_manual/filters/adjust.html#cross-channel-color-adjustment">Cross Channel Adjustment filter</a> allow you to &lsquo;drive&rsquo; a color adjustment by another channel. What can you do with this? For instance,</p>
+<ul>
+<li>increase the redness of only the lighter pixels</li>
+<li>desaturate everything but a single hue</li>
+<li>shift the hue on the darker pixels.</li>
+</ul>
+<p>The Color Adjustment (curves) filter also now has support for Hue and Saturation curves on top of the existing channel, alpha and lightness curves.</p>
+<h2 id="better-debugging-with-new-tablet-tester">Better Debugging with new tablet tester</h2>
+<p>To make debugging tablet errors easier, we&rsquo;ve copied Drawpile&rsquo;s Tablet Tester. This little dialog is accessible from <a href="https://docs.krita.org/en/reference_manual/preferences/tablet_settings.html#tablet-tester">settings-&gt;configure Krita-&gt;tablet-&gt;tablet tester</a>. It allows you to check if Krita can see your tablet at all. If it can&rsquo;t, you can sure you have a driver problem.</p>
+<p><img src="/images/pages/tablet-tester.png" alt=""></p>
+<p> </p>
+<p>Miscellaneous improvements:</p>
+<ul>
+<li>Added context menu (right click) options for transform tool. This makes it easier to change your transform type between perspective, free, warp, etc.</li>
+<li>Added context menu (right click) options for crop. This makes it easier to use without needing the tool options open.</li>
+<li>New Cursor option. Force brush outline to always be shown at 100%</li>
+<li>HEIF file format can now be opened and saved to. Thanks to a patch by Dirk Farin. Note that this is not enabled in the default builds because the libraries needed to build the import/export filter are very new.</li>
+<li>Ask the user what DPI they want their SVG images imported with</li>
+<li>Multibrush tool now accepts decimals for the angle</li>
+<li>Fixes to links for new documentation site</li>
+<li>Fix for animation docker so closing the docker doesn&rsquo;t make the animation stuck on stop</li>
+<li>Improve text describing 8 bits/integer channel depth</li>
+<li>Update g&rsquo;mic plugin to 2.3.0 (was at 2.2.0)</li>
+</ul>
+<p>There are many bug fixes as well, but most of those were already released in the stable releases for Krita 4.0.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

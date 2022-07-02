@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>release on Krita Site</title>
+    <link>https://krita.org/tags/release/</link>
+    <description>Recent content in release on Krita Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 25 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/tags/release/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Krita 2.9 Animation Edition Beta released!</title>
+      <link>https://krita.org/posts/2015/krita-2-9-animation-edition-beta-released/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2015/krita-2-9-animation-edition-beta-released/</guid>
+      <description>Today we are happy to announce the long awaited beta-version of Krita with Animation and Instant Preview support! Based on Krita 2.</description>
+    </item>
+    
+  </channel>
+</rss>

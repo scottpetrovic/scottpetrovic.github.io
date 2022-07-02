@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 3.0.1開発版 | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 3.0.1開発版</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>July 23, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>予期せぬ事情により、今回はリリースのスケジュールを再調整せざるを得ず、昨週はリリースを行いませんでした。ですが、現在は9月5日に予定されている3.0.1のリリースで実装される予定のもののいくつかをぜひ皆さんにも体験してほしいと思っています。バグ修正（ファイルの名前にピリオドが二つ付いてしまうバグや安価なタブレットでクラッシュが発生する問題が修正され、グラフィックカードでメモリリークが発生する大きな問題も修正されました）から新機能（ソフトプルーフ等）までたくさんあります。もしかしたらバグがあるかもしれませんし、新機能がすべてうまく動くとも限りません。アニメGIF・動画の出力は現在も開発中で、多分開発者のPC以外では上手く動かないようです。</p>
+<p>つまりこれは開発版です。ですが試してみて下さい。多くの観点で既に3.0安定版よりもいいものになっているはずです！</p>
+<p>OSXでも既にいくつかの進展がありました。この開発版はOSX 10.9以降で動くはずです。全てのライブラリも最新版に合わせてアップデートされました。</p>
+<h4 id="windows">Windows</h4>
+<p>WindowsではKritaはWacom、Huion、Yiynovaのタブレット及びSurface Proシリーズのタブレットをサポートしています。ポータブルZIPファイル版は解凍してショートカットkritaをダブルクリックして起動してください。</p>
+<p>Windows版KritaはWindows 7、8、10でテストされています。現在は64ビット版のみです。DrMingwデバッガと一緒に使うことでクラッシュの原因を見つけられるデバッグビルドも用意されています。くわしくは<a href="https://docs.krita.org/KritaFAQ#How_can_I_produce_a_backtrace_on_Windows.3F">よくある質問の当該項（※英語）</a>をご覧ください。このビルドにはベクトル化による最適化が適用されていないため、通常のビルドより低速である恐れがあります。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/windows/devbuilds/krita-3.0.1-Alpha-ef558bb-x64.zip">krita-3.0.1-Alpha-ef558bb-x64.zip</a> (MD5: b4e4bc6563fdf1fd62f2b90ba66b3b6e)</li>
+<li><a href="http://files.kde.org/krita/3/windows/debugbuilds/krita3-x64-dbg-latest.zip">krita3-x64-dbg-latest.zip</a> (MD5: c039820a78272f2502cc3270b1cc7307</li>
+</ul>
+<p> </p>
+<h4 id="linux">Linux</h4>
+<p>Linuxについてはあらゆる最近のLinuxディストリビューションで動作するはずの<a href="http://appimage.org/">AppImage</a>版を提供します。AppImageをダウンロードして、実行可能にして起動してください。インストールは必要ありません。現時点では64ビット版のみです。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/linux/devbuilds/krita-3.0.1-Alpha-4c91a18-x86_64.appimage">krita-3.0.1-Alpha-4c91a18-x86_64.appimage</a> (MD5: 772ca9e719cf00d4de49fe68c226c41f)</li>
+</ul>
+<h4 id="osxおよびmacos">OSXおよびMacOS</h4>
+<p>OSX版Kritaは3.1でフルサポートが実現される予定です。OSX版Krita 3.0にはまだ高速プレビューと高品質キャンバス表示が実装されていません。また画像のレンダリングの問題もあります―この問題はApple社がOpenGL互換性プロファイルのサポートを自社製品のディスプレイドライバとタッチパッドとタブレットのサポートの配布で打ち切ったことによるものです。現在Krita開発はこれらの機能のOpenGL 3.0コアプロファイルを使用した再実装を行っています。今のところはOSX版Kritaを何らかの生産的作業に使う際はOpenGLを無効にすることを推奨します。OSX版Kritaは10.9、10.10、10.11で動作し、MacOSでも動くことが報告されています。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/osx/devbuilds/krita-3.0.1-Alpha-4c91a18.dmg">krita-3.0.1-Alpha-4c91a18.dmg</a> (MD5: 1d0faca3c92a36527c6fae048e442ce8)</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

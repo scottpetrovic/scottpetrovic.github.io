@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 的首个 macOS “已公证”版本 | Krita Site(PRC)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/zh">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 的首个 macOS “已公证”版本</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>2019年11月6日</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>2 min</em></span> 
+        
+        
+    </div>
+
+    <p>近日媒体报道猪瘟横扫中日韩三国导致肉价飞涨。苹果公司 (NASDAQ: AAPL) 貌似觉得事先检疫审查在苹果电脑上运行的一切应用程序是一个好主意。他们在 macOS Catalina 上出台了所谓的“公证（notarization）”制度，却在配套文档上缺斤短两，和他们的<a href="https://nooverviewavailable.com/">开发者文档一脉相承</a>。</p>
+<p>我们依然设法鼓捣出了这套系统的玩法。根据苹果公司的心情好坏业务繁忙程度，完成“公证”需要在正常的编译和发布流程的基础上额外消耗半小时到一小时。</p>
+<p>那么这个所谓的“公证”都要做些什么呢？我们先选择一个良辰吉日，编译好 Krita，打包成 krita.app 应用程序，用 zip 打包压缩，然后把 zip 文件发送给苹果，让他们仔细审查 Krita 有否调用禁断的 API、有否窝藏私家的 HTML 渲染引擎、有否挟带其他有可能弄哭一台可爱的苹果电脑的天理不容的代码等。苹果会赐给你一串数字和字母组合，“等叫号”。审查的过程时快时慢，大家怀着既紧张又兴奋的心情狂刷自己的号，店内外充满了快活的空气。通过“公证”后我们可以执行一个指令，给软件包打上“已检疫公证”的标记。</p>
+<p>你是不是觉得到这里就万事大吉了呢？天真！接下来让我们把这个软件包再打包成磁盘镜像……又双叒叕给苹果发一遍，让他们再仔细端详一番。这到底是几个意思？直接检查这个磁盘镜像不行吗？为什么非得换着姿势检两次？难道是我们的送检的姿势不正确吗？……不管怎样，在望穿秋水再次等来苹果的“恩准”后，我们终于可以给软件包的磁盘镜像文件打上另一个“已公证”的标记。开光后“已公证”的软件包磁盘镜像文件会被上传到网站供广大人民群众下载。</p>
+<p>已“公证”的 Krita 最新 macOS 稳定版：</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.2.7.1/b/krita-4.2.7.1.dmg">krita-4.2.7.1.dmg</a></li>
+</ul>
+<p><strong>注意：不要勾选“启用系统原生文件对话框”选项，否则苹果不让你保存文件哦！</strong></p>
+<p>这又是为什么呢？让我们看看……嗯，保存文件的权限检查貌似在文件对话框进行，而不是文件系统里？有意思。……算了以后再说吧。哦对了，已检疫开光“公证”的软件包在首次启动时貌似要等很长时间，难道保鲜温度太低，得先解冻？</p>
+<p>行将末路的 macOS OpenGL 驱动支持，步步进逼的苹果私有 API，让应用程序开发者筋疲力尽的无穷滋扰，越来越脑路清奇的硬件工程……那一天，人类终于回想起了苹果统治的恐怖。万策已尽，如何是好？孙子有云，走为上计。如果情况继续恶化下去，那么放弃支持苹果和它的 macOS 平台或许是一个值得考虑的选项。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgzh/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgzh/roadmap">Roadmap</a>
+			<a href="https://krita.orgzh/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/zh/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgzh/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/zh/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgzh/about">About</a>
+			<a href="https://krita.orgzh/donations">Donations</a>
+			<a href="https://krita.orgzh/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/zh">What is KDE</a>
+			<a href="https://krita.orgzh/website">Website Licenses</a>
+			<a href="https://krita.orgzh/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

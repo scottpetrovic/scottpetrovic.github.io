@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Looking Forward | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Looking Forward</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>December 16, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>We have just <a href="/item/krita-3-1-released-and-looking-forward/">released Krita 3.1</a>, but we are already deep into coding again! We will continue releasing bug fix versions of Krita 3.1.x until it&rsquo;s time to release 3.2 (or maybe 4.0&hellip;). And, as with 2.9, some bug fix releases might even contain new features, if they&rsquo;re small and safe enough. But we&rsquo;ll also start making development builds soon, and there&rsquo;s also the  <a href="https://ci.appveyor.com/project/alvinhochun/krita-packaging/build/artifacts">daily build for Windows</a>.</p>
+<p><strong>For the 2015 kickstarter features, we&rsquo;re working on the following items:</strong></p>
+<ul>
+<li>Lazy Brush: the interactive colorizing tool. We spent a lot of time to get this to work, and it <em>does</em> work and can be enabled in 3.1 (add <strong>disableColorizeMaskFeature=false</strong> to the kritarc file). The algorithm we implemented is simply too slow to be useful. We will keep the existing user interface for it, but will work on a faster algorithm.</li>
+<li>Improved palette handling: we&rsquo;ve started work on adding support for two new palette formats that can handle color correctly already. We intend to rewrite the palette editor in Python, and for that we need 2016&rsquo;s Python scripting to be done. That is moving along quite nicely! More information on that below.</li>
+<li>Stacked brushes: This functionally works and is pretty innovative, even! But it is difficult to configure stacked brushes with the existing brush editor UI design. We&rsquo;ve started re-working the brush editor already to make way for this feature. When that work is done this feature can land. The new brush editor UI is still being refined:</li>
+</ul>
+<p><a href="/images/posts/2016/Screenshot_20161213_143102.png"><img src="/images/posts/2016/Screenshot_20161213_143102-300x180.png" alt="screenshot_20161213_143102"></a></p>
+<p><strong>For the 2016 Kickstarter features, we&rsquo;re working on the following items:</strong></p>
+<ul>
+<li>SVG Support: We&rsquo;ve started on the vector file format rewrite. We&rsquo;re now at a stage where Krita can load and save the SVG format instead of ODG &ndash; though a bit of work remains to be done. We can then start hooking up the functionality to the redesigned tools on the UI.</li>
+<li>Python Scripting: The API has been defined on what it will do. Everything builds and works. Most of the API still needs to be hooked up for things to work still, but you an already iterate through the layers and masks in an image and save them.  There is also a separate command-line utility to run scripts, without needing to start the entire gui. But we need to figure out how to build and bundle Python on OSX and Windows! And Eliakin Costa, a Season of KDE student is working on a gui to create, run and save scripts from within the gui.</li>
+<li>Text Tools: We have had some discussion about what features will be included and how it will fit into the application&rsquo;s UI design &ndash; but no coding done yet. The text tools will be using SVG, so we need to wait until that is done before we start digging too deep into this.</li>
+<li>Reference Images Docker: we&rsquo;re also considering rewriting this docker completely, in Python.</li>
+</ul>
+<p>And of course this is just what we&rsquo;ve <em>planned</em>. With outside people making code changes and new people joining, it will be an adventure to see what actually happens. There will no doubt be more exciting features coming along the way in 2017!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

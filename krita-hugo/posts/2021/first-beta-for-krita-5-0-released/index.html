@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | First Beta for Krita 5.0 released | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">First Beta for Krita 5.0 released</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>August 18, 2021</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Today, the Krita team releases the first beta for Krita 5.0. Krita 5.0 is a major release, with a lot of new features and a lot of changes.</p>
+<p><img src="/images/posts/2021/electrichearts_20201224A_kiki_c1_1080P-1024x512.png" alt=""> The new splash screen, by Tyson Tan</p>
+<p>First some <strong>warnings</strong>:</p>
+<ul>
+<li>Krita 5 has a completely new resource system. Krita no longer loads all brushes, patterns, gradients and so on start-up, but caches the information during the first run. Krita 5 will be slower starting on the first run, quicker on subsequent runs.</li>
+<li>The way Krita 5 keeps a version history for resources that are edited by the user is not compatible with Krita 4. After using Krita 5, going back to Krita 4 might cause Krita 4 to show duplicate resources.</li>
+<li>Krita 5 can no longer load vector layers created in Krita 3 and older.</li>
+<li>Krita files (.kra) and krita brush preset files (.kpp) created with Krita 5.0 are <strong>not</strong> guaranteed to be compatible with Krita 4!</li>
+<li>Krita 5.0 fixed <a href="/krita-5-0-release-notes/#text_size_dpi_issue_fix">an issue with text size in documents</a>. However, opening files created with earlier versions of Krita may require <a href="https://docs.krita.org/en/reference_manual/preferences/general_settings.html#miscellaneous">changing a setting</a> to get the originally expected text size.</li>
+<li>Known issue with this beta: If you run a G&rsquo;Mic filter, Krita&rsquo;s settings are temporary reset to default: the settings will be the customized once again after restarting Krita.</li>
+</ul>
+<p>Now, what&rsquo;s in it? <a href="/krita-5-0-release-notes/">The answer is a lot</a>! Check out the full <a href="/krita-5-0-release-notes/">release notes</a> for all the detail, but here&rsquo;s short list of highlights:</p>
+<ul>
+<li>The new resource system that we have worked on for five years</li>
+<li>Gradient dithering and wide-gamut gradients</li>
+<li>Performance improvements, thanks to the LittleCMS fastfloat plugin</li>
+<li>The all-new MyPaint brush engine</li>
+<li>A completely rewritten color smudge brush engine</li>
+<li>A redesigned animation timeline docker</li>
+<li>Clone frames for animation</li>
+<li>Updated animation curves docker</li>
+<li>Transform mask animation</li>
+<li>The new storyboarding feature</li>
+<li>Refreshed icons and UI polish</li>
+<li>Support for HEIF, AVIF, WebP file formats</li>
+<li>Improved TIFF support</li>
+<li>A new painting recorder</li>
+<li>A new 2-point perspective assistant and a limit area feature for assistants</li>
+<li>In-stack transform tool preview</li>
+<li>Paste into a layer instead of pasting the clip as a new layer</li>
+<li>G&rsquo;Mic for macOS</li>
+</ul>
+<p>And a host of smaller improvements, smaller features and lots of performance improvements!</p>
+<p><a href="/images/posts/2021/krita-style-change.png"><img src="/images/posts/2021/krita-style-change-1024x533.png" alt="Krita in the old oxygen style"></a></p>
+<p>We intend to release the final version in September, but that is <em>not</em> a hard promise! We will continue fixing issues that come in from testing the beta and the nightly builds so we can release a solid Krita 5. Please consider supporting Krita&rsquo;s development through the <a href="https://fund.krita.org/">development fund</a>:</p>
+<p><a href="https://fund.krita.org"><img src="/images/posts/2021/devfund-1024x346.png" alt=""></a></p>
+<h2 id="download">Download</h2>
+<h3 id="windows">Windows</h3>
+<p>If you&rsquo;re using the portable zip files, just open the zip file in Explorer and drag the folder somewhere convenient, then double-click on the krita icon in the folder. This will not impact an installed version of Krita, though it will share your settings and custom resources with your regular installed version of Krita. For reporting crashes, also get the debug symbols folder.</p>
+<p>Note that from this release on we are not making 32 bits Windows builds anymore.</p>
+<ul>
+<li>64 bits Windows Installer: <a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-x64-5.0.0-beta1-setup.exe">krita-x64-5.0.0-beta1-setup.exe</a></li>
+<li>Portable 64 bits Windows: <a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-x64-5.0.0-beta1.zip">krita-x64-5.0.0-beta1.zip</a></li>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-x64-5.0.0-beta1-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></li>
+</ul>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>64 bits Linux: <a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-5.0.0-beta1-x86_64.appimage">krita-5.0.0-beta1-x86_64.appimage</a></li>
+</ul>
+<p>The separate gmic-qt appimage is no longer needed.</p>
+<p>(If, for some reason, Firefox thinks it needs to load this as text: to download, right-click on the link.)</p>
+<h3 id="macos">macOS</h3>
+<p>Note: if you use macOS Sierra or High Sierra, please <a href="https://www.youtube.com/watch?v=3py0kgq95Hk">check this video</a> to learn how to enable starting developer-signed binaries, instead of just Apple Store binaries.</p>
+<ul>
+<li>macOS disk image: <a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-5.0.0-beta1.dmg">krita-5.0.0-beta1.dmg</a></li>
+</ul>
+<h3 id="android">Android</h3>
+<p>This time, the Android releases are made from the release tarball, so there are translations. We consider Krita on ChromeOS and Android still <strong><em>beta</em></strong>. There are many things that don&rsquo;t work and other things that are impossible without a real keyboard.</p>
+<ul>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-x86_64-5.0.0-beta1-release-signed.apk">64 bits Intel CPU APK</a></li>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-x86-5.0.0-beta1-release-signed.apk">32 bits Intel CPU APK</a></li>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-arm64-v8a-5.0.0-beta1-release-signed.apk">64 bits Arm CPU APK</a></li>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-armeabi-v7a-5.0.0-beta1-release-signed.apk">32 bits Arm CPU APK</a></li>
+</ul>
+<h3 id="source-code">Source code</h3>
+<ul>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-5.0.0-beta1.tar.gz">krita-5.0.0-beta1.tar.gz</a></li>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/krita-5.0.0-beta1.tar.xz">krita-5.0.0-beta1.tar.xz</a></li>
+</ul>
+<h3 id="md5sum">md5sum</h3>
+<p>For all downloads:</p>
+<ul>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta1/md5sum.txt">md5sum.txt</a></li>
+</ul>
+<h3 id="key">Key</h3>
+<p>The Linux appimage and the source .tar.gz and .tar.xz tarballs are signed. You can retrieve the public key <a href="https://files.kde.org/krita/4DA79EDA231C852B">here</a>. The signatures are <a href="https://download.kde.org/unstable/krita/5.0.0-beta1/">here</a> (filenames ending in .sig).</p>
+<h2 id="support-krita">Support Krita</h2>
+<p>Krita is a free and open source project. Please consider supporting the project with <a href="https://fund.krita.org">donations</a> or by <a href="/shop/">buying training videos!</a> With your support, we can keep the core team working on Krita full-time.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

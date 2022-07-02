@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Kritaを支援する方法：実装してほしい機能を提案する | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Kritaを支援する方法：実装してほしい機能を提案する</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>March 30, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>10 min</em></span> 
+        
+        
+    </div>
+
+    <p><em>なんちゃらっていうソフトにはかんちゃらってツールがある！Kritaにもそのかんちゃらってツールを実装しなきゃダメだ！</em></p>
+<p>オープンソースのいいところの一つに自分自身の手で機能を追加することができるということがあります。そしてたとえ自分はプログラミングができなくても、自分の作業に必要な機能について開発者に直談判することも可能です。これはオープンソースでない商用ソフトウェアでは不可能なことです！ですが、実際のところしばしばその話し合いはユーザーは素晴らしいアイディアを、プログラマはむずがゆさと煮え切らない気分を抱えたまま物別れに終わってしまいます。</p>
+<p>この記事は、まずは他のアーティストと、そして開発者とどのように機能の提案をするか、彼らが最終的に実装に応じてくれるような機能提案を行えばいいかについて特集します。</p>
+<p>しばしば我々開発者は機能の提案を読むことが難しい時があり、そして既に我々は_実に_膨大な数のやりたいこと一覧（<a href="https://bugs.kde.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;list_id=1344843&amp;product=krita&amp;query_format=advanced">この記事を書いている段階で、我々自身のやりたいことも含めて600以上あります</a>）を抱え込んでいます。ですので、きちんと書かれた機能提案は我々にとって_非常に_助けになりますし、そのアイディアは我々の印象によく残るでしょう。逆に、なんちゃらってソフトにはあるからかんちゃらっていうツールが欲しい、Kritaもそれを実装すべきだ、というようなものはあまりいい結果を生まないでしょう。</p>
+<p>提案を書くのはそれ自体少し芸術表現のようなところがあり、ちゃんとやるのは結構難しいものです！ただ他のソフトにある機能のコピーを要求するだけでは絶対にうまくいかないでしょう。なぜならこのやり方では我々に一番大切なことが伝わっていないからです。</p>
+<p><em>我々が一番知る必要のあることは<strong>どのように</strong>その機能を使いたいのかということです。これは最も重要な事です。Kritaの機能は全てその機能が影響するワークフローに関して注意深く考慮されており、どの機能についてもその機能がなぜ有用なのか、正確にはどのように用いられるか我々が理解しない限り我々が着手することはありません。さらに、どのように使われる機能か我々が理解できれば、我々開発者はワークフローをもっと円滑に行えるように他にできることはないか考え始めることができます。</em></p>
+<p>このアプローチでいくつかあげられる良い例は、ポップアップパレットにタグを使えるようにする、3.0で行われるレイヤードッキングパネルのデザイン一新、前後フレームの表示ドッキングパネル、タイムラインドッキングパネル、補助線などがあげられます。</p>
+<p>機能の提案は他のアーティストが同調意見を言えるようまず<a href="http://forum.kde.org/viewforum.php?f=136">ユーザーフォーラム</a>で行うべきです。我々が欲しいのはワークフローについての、ユースケースについてユーザーの皆さんの意見の一致、その後UXを担当する開発者が理解し、デザインを作れるような何かです。設計が固まってしまえば、我々は実装の試みを始め、それに対してテストが必要になってきます。</p>
+<p>自分が考えている機能についてのユーザーフォーラムへの投稿を書く際には、以下の一覧を確認しておきましょう</p>
+<ul>
+<li>まず問題となった機能について、Kritaには既に似たような機能がないか、その機能を拡張すれば問題は解決しないかを調査しておくのは決して無駄にはならないでしょう。実のところ皆さんは機能の提案をする前にある程度の期間Kritaを使っているものと我々はどちらかと言えばそう仮定してやっています。まずは<a href="https://docs.krita.org/">マニュアル</a>をチェックしましょう！</li>
+<li>英語は苦手、あるいはどう言って説明すればいいかわからない場合は、図を描いて説明してみましょう。絵を描くといえば、Kritaってプログラムが中々いいらしいですよ？</li>
+<li>実際、モックアップは非常に役に立ちます！作らない理由があるでしょうか？Kritaはアーティストのために作られたペイントツールであり、我々開発者自身の多くもアーティストです。さらに、これは「コミュニケーション問題」という大きな問題を回避するのにも役立ちます（追記：photobucketやpasteboard、imgurなどからの画像をフォーラムの投稿に用いたい場合は、[thumb=][/thumb]を使って画像を埋め込むことをお勧めします。我々のユーザーフォーラムは画像のサイズに関してはかなり制限があるのですが、thumbタグを使えばこの問題を回避できます）</li>
+<li>ワークフローに注意しましょう。自分はあるイラストやコミック、マットペイントを作る必要がある、そうした時、もしこういうことができたらもっと(もっと)生産性が上がるのに―何であれ、皆さんの問題を共有して他のユーザーからも別のやり方や提案を募集しましょう。機能の提案とは可能性の探求であり、決定した事項の要求ではないのです。</li>
+<li>提案文が長くなればなるほど、書式をちゃんと整える必要があります。我々開発陣の中には長くてわかりにくい文章を読むのがすこぶる得意な人もいますが、殆どの人はそうではありません。Accuracy (正確さ)、Brevity (簡潔さ)、そしてClarity (明瞭さ)のABCを崩さないようにしましょう。提案の書式を整えれば我々開発陣はもっと早く読めますし、正確にフィードバックを行うのにもっと多く時間をかけることができます。またそうすると他のユーザーにも理解されやすく、もっと詳細なフィードバックを行いやすくなります。提案文は最終的に複数ページのPDFになる場合もあり得ます。</li>
+<li>ゼロから始めるより、他の人の提案を読んでそちらにリプライする方が我々には好ましいです。アニメーション制作機能はフレームのインポート、フレームの参照、音声トラックの実装などの提案が何度も、時には同じスレッド内で行われています。我々開発陣としてはそれらの提案をその他のより新しい提案と一緒にリストに追加するよりむしろ皆さんが誰かほかの人のポストにリプライする（古いポストにリプライすることも可能です）方がいいです。これはそれをしてしまうとそれらの提案を他の提案と区別するのが難しくなり、我々開発陣はプログラミングの時間をブックマークに削られてしまいます。</li>
+</ul>
+<p>覚えておいてほしいことはKritaの開発陣は非常に忙しいということです。我々はそんな大企業でありません。その殆どが既にKritaのために開いている時間を割きすぎているようなボランティアからなる小さなグループなのです。私たちから時間が欲しいというなら、我々の生活をできる限り楽にできるのはあなたたちしかいないのです！</p>
+<p>ですので、そのような機能提案はKritaの助けにはならないでしょう。</p>
+<p>以下の様な文章はその機能提案を重要そうな風に見せますが、実のところ非常に役に立たないし時に不作法ともなるものです。</p>
+<ul>
+<li>「<strong>このアプリケーションにはこの機能がある、だからKritaにもこの機能を実装すべきだ</strong>」上記参照。「工業規格」という言葉を使うとさらに減点、Adobeのファイルフォーマットに言及したら二倍減点です。 申し訳ありませんがAというアプリケーションがBという機能を持っていようと、特にその機能をどう使うかを説明してくれない場合、我々としては知ったこっちゃありません。 今あなたは、この問題を解決する最適策を得るために我々ができることは何かを考えずに「おお神よ、私はAというアプリケーションのコピーを発見し、その機能を一つ一つ全て明らかにするため一晩中テストを行わなければならない…私にそんな時間はありません」という思考に陥ってしまっています。 我々が気付いたことなのですが、「なんたらっていうソフトにかんたらっていうツールでこれを使っていたので、Kritaにかんたらってツールが必要です」とは言わずに代わりにワークフローに関して考えることはほとんどの人にとって非常に難しいようです―しかし、そのようなレベルを越えていい例を作れるよう機能の提案を考えるのは皆さんの責務です：我々は読心術で遊んでいる暇はないのです。</li>
+<li>「<strong>みんなこれを必要としています</strong>」上と全く同じ理由です。なぜそれが必要なのですか、そして「みんな」とはいったい誰ですか？これとは、正確に言うと必要としているものは何ですか？</li>
+<li>「<strong>Kritaになんちゃらかんちゃらフィルタがないと、誰もKritaをまともなツールだとは考えてくれないでしょう</strong>」…ええ、はいはい。Kritaは何十万のアーティストに使用されている実にまともなツールですよ。この文が機能提案の中に入っていたら、我々は些か脅迫めいたものを感じるでしょう。この文は我々をせかし、その機能を開発させようとしています。私たちがこれでどういう気分になるか考えてください。</li>
+<li>「<strong>これは実装が簡単なはずです</strong>」ええ、Kritaのコードは公開されていますし、優良なビルドガイドもありますし、それならなぜ自分で作ったパッチを添えて機能提案をしないのでしょうか？その機能の実装は実際のところ全く簡単ではない可能性が非常に高いでしょう。その機能で解決しようとしていることが自分にとっては非常に大きい問題だと言うのではなく、Kritaのアーキテクチャへの推測に基づいてどのように機能を実装すればいいかを話してください！ このいい例が、KritaはOpenGLアクセラレーションキャンバスがあるからフィルタの演算をGPUで行わせるようにするのも簡単でしょう？という意見です。全く違います。GPU支援キャンバスは現在のところ相当の部分が1Wayプロセスで、フィルタはおそらく2Wayプロセスになります。この2Wayプロセスは非常に難しく、またGPUフィルタが通常のフィルタより高速というのと通常のフィルタが使い物にならないというのとは違った話です。そしてこの問題は氷山の一角に過ぎません。</li>
+</ul>
+<p>その他に注意しておくといいこと</p>
+<ul>
+<li>Kickstarterスプリントとは別に自分が必要な機能をKrita財団を通して直接寄付することで実装させることは実際可能です。krita.orgに載っている公式のEmailアドレスからご連絡ください。</li>
+<li>Kritaを自分でいじってパッチを作ることもまた可能です。それには許可も何も必要ありません！</li>
+<li>開発者が既にその問題の機能をずっと前から認知している場合が時々あります。おそらく開発者はその問題について既に深く調査・考察しており、そして「まずこれをやらなきゃいけません」とか非常に難解な技術的な話を始めたりします。これは開発者が深い思考の中に沈んだ状態で返事をしているからです。もし返事にあまりに専門用語が多い場合は噛み砕いての説明を求めることもできます…</li>
+<li>既に我々が忙しいということは述べましたっけ？我々が機能実装に踏み切るには1年2年、3年かかってしまうことも稀ではありません。しかしこれはある意味結構なことです。なぜなら設計案からそこに至るまでの過程も1か月から1年はかけなけらばならないからです！</li>
+</ul>
+<p>まとめると、よい機能提案とは</p>
+<ul>
+<li>他のアプリケーションにある機能がKritaにはないからではなく、ある特定のワークフローを効率化する必要性から始まっている</li>
+<li>他のアーティストとフォーラムでちゃんと議論されている</li>
+<li>モックアップや例が図化されている</li>
+<li>UXを担当する開発者と議論されている</li>
+<li>最終的には計画として準備される</li>
+<li>そうして実装の時をいつにするかという段になります！</li>
+<li>そうなれば実際に実装されたものを皆さんでもテストする必要があります</li>
+</ul>
+<p>（開発者の一人である<a href="https://forum.kde.org/viewtopic.php?f=288&amp;t=131448">Woltheraさんのフォーラムへの投稿</a>より）</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

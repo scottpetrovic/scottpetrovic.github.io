@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | New 3.0 development builds! (With a cool little new feature as well) | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">New 3.0 development builds! (With a cool little new feature as well)</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>May 13, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>Our <a href="http://www.krita.org/2016kickstarter">kickstarter campaign</a> has been running four days now, and we&rsquo;re only 2000 euros short of being at 50% funded! Of course it&rsquo;s Kickstarter, so it&rsquo;s 100% or nothing, so we&rsquo;ve still got work to do!</p>
+<p>In the meantime, Dmitry published an <a href="https://geektimes.ru/post/275530/#comment_9247098">article on Geektimes</a> and one of the comments had a tantalizing suggestion about locking the brush angles that when Wolthera, David Revoy and Raghukamath, resident artists on the Krita chat channel, saw the mockup of, they all cried, we want that!</p>
+<p>Since we could implement it without adding new strings, Dmitry took half a day off from bug fixing and added it! And David Revoy let himself be inspired by Cezanna and produced this introduction video:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/bbL7qeVAaC8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>And then, among other things, we fixed the application icon on Windows, fixed issues with translations on Windows, fixed issues with the color picker, finished the <a href="https://brashmonkey.com/">Spriter scml export</a> plugin, worked around some bugs in Qt that made popups and dialogs show on the wrong monitor, made sure author and title info gets saved to PNG images, fixed display artefacts when using Instant Preview, fixed the direction of the fade, distance and time brush engine sensors, fixed reading the random offset parameter in brush engines, improved custom shortcut handling and fixed some crashes. Oh, and we fixed the <a href="https://launchpad.net/~dimula73/+archive/ubuntu/krita">Krita Lime repository builds for Ubuntu 16.04</a>, so you can replace the ancient 2.9.7 build Ubuntu provides with a shiny 2.9.11</p>
+<p>Krita 3.0 is getting stabler all the time; a new beta will be released next week, but we feel it&rsquo;s good enough that we&rsquo;ve added Bleeding Edge download links to the <a href="http://krita.org/download">download page</a>, too! For your convenience, here are the links to the latest builds:</p>
+<p>Windows Shell Extension package by Alvin Wong. Just install it and Windows Explorer will start showing preview and meta information for Krita files. (Disregard any warnings by virus checkers, because this package is built with the NSIS installer maker, some virus checkers always think it&rsquo;s infected, it&rsquo;s not.)</p>
+<ul>
+<li>Installation package: <a href="http://files.kde.org/krita/3/windows/kritashellex_1.1.0.1_setup.exe">kritashellex_1.1.0.1_setup.exe</a></li>
+</ul>
+<p><strong>Windows:</strong> Unzip and run the bin/krita.exe executable!</p>
+<ul>
+<li>Zip archive: <a href="http://files.kde.org/krita/3/windows/devbuilds/krita-3.0-Beta-master-d330a4a-x64.zip">krita-3.0-Beta-master-d330a4a-x64.zip (64 bits)</a></li>
+<li>Zip archive: <a href="http://files.kde.org/krita/3/windows/devbuilds/krita-3.0-Beta-master-d330a4a-x86.zip">krita-3.0-Beta-master-d330a4a-x86.zip (32 bits)</a></li>
+</ul>
+<p><strong>The OSX disk image</strong> still has the known issue that if OpenGL is enabled, the brush outline cursor, grids, guides and so on are not visible. We’re working on that, but don’t expect to have rewritten the canvas before 3.0 will be released.</p>
+<ul>
+<li>Disk Image: <a href="http://files.kde.org/krita/3/osx/devbuilds/krita3-beta1-ad04a1c.dmg">http://files.kde.org/krita/3/osx/devbuilds/krita3-beta1-ad04a1c.dmg</a></li>
+</ul>
+<p>**The Linux appimage:**After downloading, make the appimage executable and run it. No installation is needed. For CentOS 6 and Ubuntu 12.04, a separate appimage is provided with g&rsquo;mic built without OpenMP (which makes it much slower)</p>
+<ul>
+<li>AppImage <a href="http://files.kde.org/krita/3/linux/devbuilds/krita-3.0-Beta-master-562442e-x86_64.appimage">krita-3.0-Beta-master-562442e-x86_64.appimage</a> for modern distributions</li>
+<li>AppImage <a href="http://files.kde.org/krita/3/linux/devbuilds/krita-3.0-Beta-master-562442e-no-openmp-x86_64.appimage">krita-3.0-Beta-master-562442e-no-openmp-x86_64.appimage</a> for ancient distributions</li>
+</ul>
+<p>(As usual, you can use these builds without affecting your 2.9 installation.)</p>
+<p>Let&rsquo;s finish up with <a href="https://twitter.com/ramskullsart/status/730023741711777792/photo/1">cute Kiki!</a></p>
+<p><a href="/images/posts/2016/kiki.jpg"><img src="/images/posts/2016/kiki-782x1024.jpg" alt="kiki"></a></p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

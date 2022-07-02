@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 5.0 公开测试第 2 版已经推出 | Krita Site(PRC)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/zh">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 5.0 公开测试第 2 版已经推出</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>2021年10月11日</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>6 min</em></span> 
+        
+        
+    </div>
+
+    <p>今天我们为大家带来了 Krita 5.0 的第二个公开测试版。此次发布比原计划的要晚，原因是因为一些开发人员在长达一年半的隔离解封后迫不及待地线下碰头，却不小心得了重感冒。</p>
+<p>Krita 公开测试第 2 版与第 1 版一样存在<a href="https://krita.org/zh/item/first-beta-for-krita-5-0-released-zh/">一些需要旧版用户注意的事项</a>，请在充分了解情况后才进行使用。</p>
+<p>公开测试第 2 版在第 1 版的基础上修复了超过 700 项程序缺陷。现在我们至少还需要解决<a href="https://bugs.kde.org/buglist.cgi?bug_severity=critical&amp;bug_severity=grave&amp;bug_severity=major&amp;bug_severity=crash&amp;bug_severity=normal&amp;bug_severity=minor&amp;bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;keywords=regression%2C%20release_blocker%2C%20&amp;keywords_type=anywords&amp;list_id=1918546&amp;product=krita&amp;query_format=advanced">这些程序缺陷</a>后才能正式发布 Krita 5.0。此版软件还包含了重构的 GPU 加速画布程序，大幅改善了在 HiDPI 和 macOS 环境下的性能。</p>
+<p><a href="/images/posts/2021/electrichearts_20201224A_kiki_c1_1080P.png"><img src="/images/posts/2021/electrichearts_20201224A_kiki_c1_1080P-1024x512.png" alt=""></a> Tyson Tan (钛山) 绘制的新版启动图</p>
+<p>下面是自公开测试第 1 版以来的比较值得一提的更新：</p>
+<ul>
+<li>Dmitry Kazakov 和 Ivan Yossi 实现了一套上传纹理到 GPU 的新方案，改善了画布性能，尤其是 macOS 下的性能。</li>
+<li>Michał Chojnowski 修复了色域蒙版工具栏的一处崩溃 (<a href="https://bugs.kde.org/show_bug.cgi?id=441122">BUG:441122</a>)</li>
+<li>Alvin Wong 大幅改善了 Krita 的可翻译性，并对繁体中文的翻译进行了大量改进。</li>
+<li>Tyson Tan 也大幅改善了 Krita 的可翻译性，并对简体中文的翻译进行了大量改进。</li>
+<li>Amyspark 修复了一个在使用 G&rsquo;Mic-Qt 插件时会造成设置重置的程序缺陷。G&rsquo;Mic 也已经更新到了最新版本。</li>
+<li>Deif Lou 修复了滤镜笔刷引擎中存在的数个问题。</li>
+<li>Amyspark 重构了图层元数据框架 (<a href="https://bugs.kde.org/show_bug.cgi?id=410341">BUG:410341</a>)</li>
+<li>Agata Cacko 修复了颜色历史按钮布局 (<a href="https://bugs.kde.org/show_bug.cgi?id=434915">BUG:434915</a>)</li>
+<li>Alan North 修复了笔刷编辑器中调整共享曲线时会发生的问题。</li>
+<li>Agata Cacko 改进了 Adobe 样式库文件支持，现在可以加载唯一 ID 冲突的 ASL 文件。</li>
+<li>Alvin Wong 修复了画布浮动缩放水平消息的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=429569">BUG:429569</a>)</li>
+<li>Tom Tom Tom 修复了西文书法工具中的一处程序缺陷</li>
+<li>Eoin O&rsquo;Neill 修复了分镜头脚本面板中的一处崩溃 (<a href="https://bugs.kde.org/show_bug.cgi?id=441592">BUG:441592</a>)</li>
+<li>Emmet O&rsquo;Neill 改进了分镜头脚本面板的易用性 (<a href="https://bugs.kde.org/show_bug.cgi?id=441593">BUG:441593</a>)</li>
+<li>Sharaf Zaman 修复了安卓/ChromeOS 版的欢迎页面。</li>
+<li>Matthias Wein 修复了面板标题栏的数个问题。</li>
+<li>Alvin Wong 修复了 Windows 版显示弹窗时的一些问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=441935">BUG:441935</a>)</li>
+<li>Alvin Wong 修复了触控平移手势在移动太快时会出错的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=441706">BUG:441706</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 修复了使用 Lab 色彩空间定义的 KPL 色板的加载失败问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=441139">BUG:441139</a>)</li>
+<li>Alvin Wong 修复了导航器面板的一处性能问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=442075">BUG:442075</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 修复了通道面板的一处崩溃 (<a href="https://bugs.kde.org/show_bug.cgi?id=442117">BUG:442117</a>)</li>
+<li>Matthias Wein 修复了通道面板的一处性能问题</li>
+<li>Alvin Wong 改进了 Krita 在多文档模式下的易用性 (<a href="https://bugs.kde.org/show_bug.cgi?id=441644">BUG:441644</a>)</li>
+<li>Halla Rempt 修复了操作流程面板在执行已禁用操作时的崩溃 (<a href="https://bugs.kde.org/show_bug.cgi?id=441638">BUG:441638</a>)</li>
+<li>Halla Rempt 修复了 Qt 字体数据库在字体名称中角括号中间存在空格时导致解析器出错的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=430220">BUG:430220</a>)</li>
+<li>Agata Cacko 修复了多种辅助尺形状的预览问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=441212">BUG:441212</a>)</li>
+<li>Alvin Wong 修复了在使用 Windows Ink 或 Wintab 时某些驱动程序会重复发送数位板事件，从而激活一个鼠标事件的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=441687">BUG:441687</a>)</li>
+<li>Matthias Weind 修复了一个会导致新图像尺寸计算错误的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=442124">BUG:442124</a>)</li>
+<li>Sharaf Zaman 修复了安卓版的增量备份保存功能 (<a href="https://bugs.kde.org/show_bug.cgi?id=427042">BUG:427042</a>)</li>
+<li>Halla Rempt 修复了系统日志的滚动更新功能</li>
+<li>Halla Rempt 将默认撤销次数从 30 改为 200</li>
+<li>Agata Cacko 修复了渐变编辑后预览的更新问题</li>
+<li>Amyspark 修复了LittleCMS 的 32 位浮点 RGB (<a href="https://bugs.kde.org/show_bug.cgi?id=442004">BUG:442004</a>, <a href="https://bugs.kde.org/show_bug.cgi?id=439947">BUG:439947</a>, <a href="https://bugs.kde.org/show_bug.cgi?id=437429">BUG:437429</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 修复了透明度通道分离到单独图层功能 (<a href="https://bugs.kde.org/show_bug.cgi?id=434288">BUG:434288</a>)</li>
+<li>Halla Rempt 为创建矢量图层新增了一个默认快捷键：CTRL+Insert (<a href="https://bugs.kde.org/show_bug.cgi?id=442585">BUG:442585</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 实现了在作为 Krita 图像编辑笔刷时加载 GIMP 笔刷或 GIMP 图像水管笔刷作为彩色图像，并修复了这类笔刷的保存问题  (<a href="https://bugs.kde.org/show_bug.cgi?id=442316">BUG:442316</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 为自动笔刷空间增加了一个重置选项 (<a href="https://bugs.kde.org/show_bug.cgi?id=437006">BUG:437006</a>)</li>
+<li>Halla Rempt 修复了快捷键定义文件遗失，造成菜单项显示为空白的程序缺陷 (<a href="https://bugs.kde.org/show_bug.cgi?id=428453">BUG:428453</a>)</li>
+<li>Eoin O&rsquo;Neill 为分镜头脚本面板编写了全新的导出界面。</li>
+<li>Eoin O&rsquo;Neill 修复了在动画蒙版上使用移动工具时的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=441974">BUG:441974</a>)</li>
+<li>Eoin O&rsquo;Neill 修复了裁剪工具在克隆的动画帧中不正常工作的程序缺陷 (<a href="https://bugs.kde.org/show_bug.cgi?id=441369">BUG:441369</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 改进了时间轴面板，现在可以对蒙版分配色标并固定到时间轴面板 (<a href="https://bugs.kde.org/show_bug.cgi?id=438124">BUG:438124</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 修复了操作流程面板的外观问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=442185">BUG:442185</a>)</li>
+<li>Alvin Wong 修复了非正数倍显示缩放倍率的一系列问题</li>
+<li>Sharaf Zaman 修复了安卓版更改光标图标时的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=431859">BUG:431859</a>)</li>
+<li>Reinold Rojas 为拾色器工具启用了颜色采样预览功能 (<a href="https://bugs.kde.org/show_bug.cgi?id=396490">BUG:396490</a>)</li>
+<li>Reinold Rojas 修复了隐藏面板模式的全屏状态问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=437932">BUG:437932</a>)</li>
+<li>Halla Rempt 为变形工具新增了一个工具预览选项，方便用户在快速预览和图层混合模式之间切换。</li>
+<li>Black Cat 修复了在文字工具中应用字体风格的问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=392343">BUG:392343</a>)</li>
+<li>Agata Cacko 修复了局部辅助尺的预览问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=442619">BUG:442619</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 修复了裁剪工具的一系列文问题 (<a href="https://bugs.kde.org/show_bug.cgi?id=442827">BUG:442827</a>, <a href="https://bugs.kde.org/show_bug.cgi?id=442959">BUG:442959</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 修复了合并克隆阵列的问题，现在合并后的图层能处在正确的位置 (<a href="https://bugs.kde.org/show_bug.cgi?id=437431">BUG:437431</a>)</li>
+<li>Wolthera van Hövell tot Westerflier 修复了颜色调整滤镜蒙版的一处可能的崩溃 (<a href="https://bugs.kde.org/show_bug.cgi?id=428349">BUG:428349</a>)</li>
+<li>Agata Cacko 修复了创建资源包时的渐变预览图</li>
+<li>Agata Cacko 修复了资源标签系统中的一系列问题</li>
+<li>Dmitry Kazakov 改进了蒙版笔刷的性能</li>
+<li>Halla Rempt 实现了用户定义标签的保存功能</li>
+<li>Dmitry Kazakov 改进了当前笔尖非常大时起笔时的性能 (<a href="https://bugs.kde.org/show_bug.cgi?id=436731">BUG:436731</a>)</li>
+<li>Sharaf Zaman 改进了安卓或 ChromeOS 下文字工具的易用性。</li>
+<li>Dmitry Kazakov 修复了属于一个已变形图层组中的形状更新 (<a href="https://bugs.kde.org/show_bug.cgi?id=443161">BUG:443161</a>)</li>
+<li>Dmitry Kazakov 修复了四方连续模式下的画布更新 (<a href="https://bugs.kde.org/show_bug.cgi?id=442796">BUG:442796</a>)</li>
+<li>Dmitry Kazakov 修复了颜色涂抹笔刷引擎的色相感应程序造成的杂色 (<a href="https://bugs.kde.org/show_bug.cgi?id=441755">BUG:441755</a>)</li>
+<li>Matthias Wein 修复了创建新图像对话框的一处内存泄漏问题</li>
+<li>Halla Rempt 修复了通知程序脚本类的一个初始化问题</li>
+<li>Agata Cacko 改进了透视辅助尺的性能</li>
+</ul>
+<p>我们将继续修复在公开测试版和每日构建版中发现的问题，以确保在发布 Krita 5.0 正式版时程序的可靠性。</p>
+<p>如果条件允许，请考虑通过 <a href="https://fund.krita.org/">Krita 开发基金</a>支持我们的工作：</p>
+<p><a href="https://fund.krita.org"><img src="/images/posts/2021/devfund-1024x346.png" alt=""></a></p>
+<h2 id="下载">下载</h2>
+<h3 id="中文版信息">中文版信息</h3>
+<ul>
+<li>中文支持：Krita 的所有软件包均内建中文支持，首次安装时会自动设置为操作系统的语言。</li>
+<li>手动设置：菜单栏 &ndash;&gt; Settings &ndash;&gt; Switch Application Language (倒数第二项) &ndash;&gt; 下拉选单 &ndash;&gt; 中文 (底部)，重启程序生效。</li>
+<li>插件翻译：G&rsquo;MIC 插件<a href="https://share.weiyun.com/SBopNjOn">需要下载翻译包</a></li>
+<li>网盘下载：请在官网下载困难时使用，更新时间可能滞后。</li>
+</ul>
+<h3 id="windows-版本">Windows 版本</h3>
+<ul>
+<li>
+<p><strong>64 位 Windows 安装程序</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-x64-5.0.0-beta2-setup.exe">本站下载</a> | <a href="https://share.weiyun.com/60HLzj6I">网盘下载</a></p>
+</li>
+<li>
+<p><strong>64 位 Windows 免安装包</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-x64-5.0.0-beta2.zip">本站下载</a> | <a href="https://share.weiyun.com/60HLzj6I">网盘下载</a></p>
+</li>
+<li>
+<p><strong>64 位程序崩溃调试包</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-x64-5.0.0-beta2-dbg.zip">本站下载</a> | <a href="https://share.weiyun.com/60HLzj6I">网盘下载</a></p>
+</li>
+<li>
+<p><strong>配套网盘资源 (中文社区维护)</strong> <a href="https://share.weiyun.com/Dea2uj0M">中文离线文档</a> | <a href="https://share.weiyun.com/6tH13bVC">FFmpeg 软件包</a> | <a href="https://share.weiyun.com/SBopNjOn">G&rsquo;Mic 滤镜汉化</a> |</p>
+</li>
+<li>
+<p>32 位支持：最后一版支持 32 位 Windows 的 Krita 为 4.4.3，<a href="https://download.kde.org/stable/krita/4.4.3/krita-x86-4.4.3-setup.exe">本站下载</a> | <a href="https://share.weiyun.com/wdMnx1WB">网盘下载</a>。</p>
+</li>
+<li>
+<p>免安装包：解压到任意位置，运行目录中的 Krita 快捷方式。不带文件管理器缩略图插件，与已安装版本共用配置文件和资源，但程序本身相互独立。</p>
+</li>
+<li>
+<p>程序崩溃调试包：解压到 Krita 的安装目录，在报告程序崩溃问题时用于获取回溯追踪数据。日常使用无需下载此包。</p>
+</li>
+</ul>
+<h3 id="linux-版本">Linux 版本</h3>
+<ul>
+<li><strong>64 位 Linux AppImage 程序包</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-5.0.0-beta2-x86_64.appimage">本站下载</a> | <a href="https://share.weiyun.com/C0gZ6joR">网盘下载</a></li>
+<li>从此版开始，G&rsquo;Mic 插件已经整合到主程序包中</li>
+<li>如果浏览器把链接作为文本打开，请右键点击链接另存为文件。</li>
+</ul>
+<h3 id="macos-版本">macOS 版本</h3>
+<ul>
+<li>
+<p><strong>macOS 程序映像</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-5.0.0-beta2.dmg">本站下载</a> | <a href="https://share.weiyun.com/gVg0CI53">网盘下载</a></p>
+</li>
+<li>
+<p>如果您还在使用 OSX Sierra 或者 High Sierra，请<a href="https://www.youtube.com/watch?v=3py0kgq95Hk">观看此视频</a>了解如何启动由开发人员签名的可执行软件包。</p>
+</li>
+</ul>
+<h3 id="安卓版本">安卓版本</h3>
+<p>安卓版本目前尚处于早期测试阶段，整体功能与桌面版本几乎完全相同。它仅为安卓平板和 ChromeBook 类设备进行了初步适配，大部分功能依然需要搭配键盘使用，还有不少功能无法正常工作。</p>
+<ul>
+<li><strong>64 位 Intel CPU APK 安装包</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-x86_64-5.0.0-beta2-release-signed.apk">本站下载</a> | <a href="https://share.weiyun.com/AKSomiNJ">网盘下载</a></li>
+<li><strong>32 位 Intel CPU APK 安装包</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-x86-5.0.0-beta2-release-signed.apk">本站下载</a> | <a href="https://share.weiyun.com/AKSomiNJ">网盘下载</a></li>
+<li><strong>64 位 ARM CPU APK 安装包</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-arm64-v8a-5.0.0-beta2-release-signed.apk">本站下载</a> | <a href="https://share.weiyun.com/GCKrtN0F">网盘下载</a></li>
+<li><strong>32 位 ARM CPU APK 安装包</strong> <a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-armeabi-v7a-5.0.0-beta2-release-signed.apk">本站下载</a> | <a href="https://share.weiyun.com/GCKrtN0F">网盘下载</a></li>
+</ul>
+<h3 id="源代码">源代码</h3>
+<ul>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-5.0.0-beta2.tar.gz">TAR.GZ 格式源代码包</a></li>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta2/krita-5.0.0-beta2.tar.xz">TAR.XZ 格式源代码包</a></li>
+</ul>
+<h3 id="md5sum-校验码">md5sum 校验码</h3>
+<p>适用于上述所有软件包，用于校验下载文件的完整性，不了解文件校验请忽略：</p>
+<ul>
+<li><a href="https://download.kde.org/unstable/krita/5.0.0-beta2/md5sum.txt">ms5sum 校验码文本文件</a></li>
+</ul>
+<h3 id="文件完整性验证密钥">文件完整性验证密钥</h3>
+<p>Linux 的 Appimage 可执行文件包和源代码的 .tar.gz 和 .tar.xz tarballs 压缩包已经经过数字签名。您可以<a href="https://files.kde.org/krita/4DA79EDA231C852B">在此下载公钥</a>，还可以在此下载<a href="https://download.kde.org/unstable/krita/5.0.0-beta2/">数字签名的 SIG 文件</a>。</p>
+<h2 id="请支持-krita">请支持 Krita</h2>
+<p>Krita 是一个自由和开源的软件项目。如果条件允许，请考虑通过 <a href="https://fund.krita.org/">捐款</a> 或者 <a href="https://krita.org/en/shop/">购买培训教程和画册</a> 等方式支持我们的存续和发展，这样我们才能支持开发人员为 Krita 全职工作。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgzh/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgzh/roadmap">Roadmap</a>
+			<a href="https://krita.orgzh/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/zh/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgzh/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/zh/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgzh/about">About</a>
+			<a href="https://krita.orgzh/donations">Donations</a>
+			<a href="https://krita.orgzh/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/zh">What is KDE</a>
+			<a href="https://krita.orgzh/website">Website Licenses</a>
+			<a href="https://krita.orgzh/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

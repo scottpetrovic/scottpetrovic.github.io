@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 3.0: First Alpha Release | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 3.0: First Alpha Release</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>April 9, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>On the road to Krita 3.0, we&rsquo;re releasing today the first alpha version. This has all the features that will be in 3.0, and contains the translations, but is still unstable. We&rsquo;re fixing bugs all the time, but there&rsquo;s still plenty to fix! That said, we think we nailed the worst problems and we&rsquo;d love for you all to give this version a try! The final release is planned for May 1st.</p>
+<p><a href="/images/posts/2016/Screenshot_20160409_212626.png"><img src="/images/posts/2016/Screenshot_20160409_212626-1024x576.png" alt="Screenshot_20160409_212626"></a></p>
+<h3 id="whats-new">What&rsquo;s new?</h3>
+<p>A short overview of new features compared to Krita 2.9:</p>
+<ul>
+<li>Tools for creating hand-drawn animations</li>
+<li>Instant Preview for working with big brushes and large canvases</li>
+<li>Rulers, guides, grids and snapping</li>
+<li>Revamped layer panel</li>
+<li>loading and saving gimp brushes</li>
+<li>and much, much more&hellip;</li>
+</ul>
+<p>Krita 3.0 is also based on Qt 5 and the KF5 Framework libraries.</p>
+<p>Since the last <a href="/posts/3-0-pre-alpha-3-is-out/">development build</a>, we focused on fixing bugs and improving performance.</p>
+<p>There are some changes and improvements that we made outside of the mountain of fixes that were done. This is a list of improvements since the last pre-alpha that was released.</p>
+<h3 id="new-features">New Features</h3>
+<ul>
+<li>You can now move multiple selected layers at once</li>
+<li>And move masks with Ctrl + PgUp/PgDn</li>
+<li>Updated to G&rsquo;MIC 1.7 (<a href="https://discuss.pixls.us/t/release-of-gmic-1-7-0/835">see release notes</a>)</li>
+<li>Updated Design templates</li>
+</ul>
+<p>We also removed the print and print preview options; printing in Krita has never worked well, and after porting to Qt5 broke completely.</p>
+<h3 id="user-interface-and-usability-improvements">User Interface and Usability Improvements</h3>
+<ul>
+<li>Splash screen shows what area is loading on startup</li>
+<li>Updated Grids and Guides Tool Options UI elements</li>
+<li>Some checkboxes have been replaced with lock icons like the crop and geometry tool options</li>
+<li>Global Input pressure curve now has labels with the axes. ( Settings &gt; Configure Krita &gt; Tablet Settings ).</li>
+<li>Use highlighted color for the selected tool in toolbox (easier to see)</li>
+<li>Resource manager has separate buttons for importing resources now. This improves the stability with this area.</li>
+</ul>
+<p><a href="/images/posts/2016/Screenshot_20160409_212649.png"><img src="/images/posts/2016/Screenshot_20160409_212649-1024x576.png" alt="Screenshot_20160409_212649"></a></p>
+<h3 id="known-issues">Known Issues</h3>
+<p>We&rsquo;re fixing bugs like crazy, but there are still a <a href="https://bugs.kde.org/buglist.cgi?bug_severity=critical&amp;bug_severity=grave&amp;bug_severity=major&amp;bug_severity=crash&amp;bug_severity=normal&amp;bug_severity=minor&amp;bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;list_id=1348442&amp;product=krita&amp;query_format=advanced">number of known bugs</a>. Please help us by testing this alpha release and checking whether those bugs are still valid! <a href="/posts/ways-to-help-krita-bug-triaging/">Bug triaging</a> is an awesome way of becoming part of our community.</p>
+<h3 id="download">Download</h3>
+<p><strong>There are two Windows versions</strong>: an msi installer and a portable zip archive. The MSI installer also contains an explorer shell extension that allows you to see thumbnails of krita files in explorer. The shell extension was written by Alvin Wong.</p>
+<ul>
+<li>Zip archive: <a href="#">Windows 64-bit Alpha 1 (zip)</a></li>
+<li>MSI installer: <a href="#">Windows 64-bit Alpha 1 (msi)</a> <strong>WARNING</strong>: the installer will <em>replace</em> older versions of Krita!</li>
+</ul>
+<p><strong>The OSX disk image</strong> still has the known issue that if OpenGL is enabled, the brush outline cursor, grids, guides and so on are not visible. We&rsquo;re working on that, but don&rsquo;t expect to have rewritten the canvas before 3.0 will be released.</p>
+<ul>
+<li>Disk Image: <a href="#">OSX Alpha 1</a></li>
+</ul>
+<p><strong>The Linux appimage</strong> should run on any Linux distribution released since 2012. After downloading, make the appimage executable and run it. No installation is needed.</p>
+<ul>
+<li>AppImage <a href="#">Linux AppImage Alpha 1</a></li>
+</ul>
+<p>Since this is the first official 3.0 release, we also have source code!</p>
+<ul>
+<li><a href="http://download.kde.org/unstable/krita/2.99.89/">krita_2.99.89</a></li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Anatomy of a bug fix | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Anatomy of a bug fix</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>June 3, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>7 min</em></span> 
+        
+        
+    </div>
+
+    <p><strong>Updated builds with the fix are here: <a href="https://www.kickstarter.com/projects/krita/krita-2016-lets-make-text-and-vector-art-awesome/posts/1594853">https://www.kickstarter.com/projects/krita/krita-2016-lets-make-text-and-vector-art-awesome/posts/1594853</a></strong>!</p>
+<p>People sometimes assume that free software developers are only interested in adding cool new features, getting their few pixels of screenspace fame, and don&rsquo;t care about fixing bugs. That&rsquo;s not true - otherwise we wouldn&rsquo;t have fixed about a thousand bugs in the past year (though it would be better if we hadn&rsquo;t created the bugs in the first place). But sometimes bug fixing is just fun: sherlocking through the code, trying to come up with a mental model of what might be going wrong, hacking the code, discovering that you were right. Heady stuff, everyone should try it some time! Just head over to bugzilla and pick yourself a <a href="https://bugs.kde.org/buglist.cgi?bug_severity=crash&amp;bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;list_id=1361297&amp;product=krita&amp;query_format=advanced">crash</a> (crash bugs are among the easiest to fix).</p>
+<p>But let&rsquo;s take a look at a particularly nasty bug, one that we couldn&rsquo;t fix for ages. Ever since Krita 2.9.6, we have received crash reports about Krita crashing when people were using drawing tablets. Not just any drawing tablets, but obscure tablets with names like Trust, Peritab, Adesso, Waltop, Aiptek, Genius &ndash; and others. Not the tablets that we do support because the companies have donated test hardware to Krita, like Wacom, Yiynova and Huion.</p>
+<p>Also, not tablets that are readily available: most of these brands only produce hardware for a short time, flog it to unsuspecting punters and disappear. I.e., we couldn&rsquo;t just go to the local computer shop and get one, or find one online and have it delivered. And since all these tablets have one thing in common, namely their <em>cheapness</em>, the users who bought them in all likelihood not all that flush, otherwise they would have bought a better tablet. So they couldn&rsquo;t afford to donate their tablet to the project.</p>
+<p>A hardware related bug without hardware to test with, that&rsquo;s nearly impossible to fix. We had four &ldquo;facts&rdquo; to start with:</p>
+<ul>
+<li>The bug started appearing after Krita 2.9.6 &ndash; unfortunately, that was when we rewrote a lot of the tablet support to allow Krita to work with tablets like the Surface Pro, and it was impossible to pinpoint which change was responsible for the crash.</li>
+<li>All these tablets show the same suspicious values when we were querying them for dimensions</li>
+<li>All these crashes happened after that query for the tablet dimensions</li>
+<li>All crashes happen on Windows only</li>
+</ul>
+<p>Now, on Windows, you talk to tablets through something called the &ldquo;<a href="http://www.wacomeng.com/windows/docs/Wintab_v140.htm">Wintab</a>&rdquo; API. The tablet manufacturer, or more likely, the manufacturer of the chip that that the tablet manufacturer uses, writes an implementation of this API in the form of a Wintab driver.</p>
+<p>Wintab is ancient: it started out in the 16 bits Windows 3.0 times. It&rsquo;s gnarly, it&rsquo;s illogical, it&rsquo;s hoary. You can only have one wintab driver dll on your system, which means that you cannot, like on Linux plug in a Huion, test, plug in a Wacom test, plug in a Yiynova and test &ndash; you need to install and uninstall the driver every time.</p>
+<p>Anyway, last week we found a second-hand Trust tablet for sale. Since we&rsquo;ve had at least six reports of crashes with just that particular brand, we got it. We installed a fresh Windows 10, installed the driver Trust fortunately still provides despite having discontinued its tablets, installed Krita, started Krita, brought pen to tablet and&hellip; Nothing happened. No crash, and Krita painted a shoddy, shakey, pressure sensitive line.</p>
+<p>Dash it, 30 euros down the drain.</p>
+<p>Next, we got an old Genius tablet and installed Windows 7. And bingo! A crash, and the same suspicious values in the tablet log. Now we&rsquo;re talking! Unfortunately, the crash happened right inside the &ldquo;Genius&rdquo; wintab driver. Either we&rsquo;re using the Wintab API wrong, or Genius implemented it wrong, but we cannot see the code. This is what Dmitry was looking at now:</p>
+<p><a href="/images/posts/2016/disassembly.png"><img src="/images/posts/2016/disassembly-1024x576.png" alt="Gibberish&amp;hellip;"></a> Gibberish&hellip;</p>
+<p>But it gave the hint we needed. It <em>is</em> a bug in the Wintab driver, and we are guessing that since all these drivers give us the same weird context information, they all share the same codebase, come from the same manufacturer in fact, and have the same bug.</p>
+<p>It turned out that when we added support for the Surface Pro 3, which has an N-Trig pen, we needed a couple of workarounds for its weirder features. We wrote code that would query the wintab dll for the <em>name</em> of the tablet, and if that was an N-Trig, we set the workaround flag:</p>
+<p>UINT nameLength = m_winTab32DLL.wTInfo(WTI_DEVICES, DVC_NAME, 0);
+TCHAR* dvcName = new TCHAR[nameLength + 1];
+UINT returnLength = m_winTab32DLL.wTInfo(WTI_DEVICES, DVC_NAME, dvcName);
+Q_ASSERT(nameLength == returnLength);
+QString qDvcName = QString::fromWCharArray((const wchar_t*)dvcName);
+// Name changed between older and newer Surface Pro 3 drivers
+if (qDvcName == QString::fromLatin1(&ldquo;N-trig DuoSense device&rdquo;) ||
+            qDvcName == QString::fromLatin1(&ldquo;Microsoft device&rdquo;)) {
+    isSurfacePro3 = true;
+}
+delete[] dvcName;</p>
+<p>Now follow me closely: the first line gets some info (wTInfo) from the wintab driver. It&rsquo;s a call and has three parameters: the first says we want info about devices, the second says we want a name, and third one is <strong>0</strong>. That is, zero. Null.  The second call is exactly the same, but passes something called dvcName, that is a pointer to a bit or memory where the wintab driver will write the name of the device. It&rsquo;s a number, significantly bigger than 0.  The Wintab API says that if you pass 0 (null) as the third parameter, the driver should return the length of what it will return if you would pass it the length. Follow me? If you ask for  the name with 0 for length, it tells you the length; if you ask for the name with the right length, it gives you the name.</p>
+<p>See for yourself: <a href="http://www.wacomeng.com/windows/docs/Wintab_v140.htm#_Toc275759816">http://www.wacomeng.com/windows/docs/Wintab_v140.htm#_Toc275759816</a></p>
+<p>You have to go through this hoop to set apart a chunk of memory big enough for Wintab to copy the tablet name in. Too short, and you get a crash: that&rsquo;s what happens when you write out of bounds. Too long, and you waste space, and besides, how can you know how long a tablet name could be?</p>
+<p>Okay, there&rsquo;s one other way to crash, other than writing too much stuff in too small a chunk of memory. And that&rsquo;s trying to write to Very Special Memory Adress 0. That&rsquo;s zero, the first location in the memory of your computer. In fact, writing to location 0 (zero) is so extremely forbidden that programmers use it to flag, meaning &ldquo;don&rsquo;t write here&rdquo;. A competent programmer will always check for 0 (zero) before writing to memory.</p>
+<p>If you&rsquo;re still here, I&rsquo;m sure you&rsquo;re getting <em>suspicious</em> now.</p>
+<p>Yes, you&rsquo;re right. The people who wrote the driver for the tablets that Trust, Genius, Adesso, Peritab, Aiptek and all their ilk repackaged, rebranded and resold were not competent. They did not check for zero; they blithely started writing the name of the tablet into the address provided.</p>
+<p>And poof! Krita crashes, we get the bug reports &ndash; because after all, it must be Krita&rsquo;s fault? The tablet works with Photoshop! Whereas it&rsquo;s entirely likely that the people who cobbled together the driver didn&rsquo;t even read the Wintab spec, but just fiddled with their driver until Photoshop more or less worked, before they called it a day and went to drown their sorrows in baijiu.</p>
+<p>Enfin, we have now &ldquo;fixed&rdquo; the bug &ndash; we provide 1024 characters of space for the driver to write the name of the tablet in, and hope for the best&hellip;</p>
+<p>Note that this doesn&rsquo;t mean that your Trust, Genius or whatever tablet will work well and give satisfaction: these are still seriously badly put together products. After fixing the bug, we tried drawing with the Genius tablet and got weird, shaky lines. Then we tested with Photoshop, and after a while, saw the same weird shaky lines there. It almost looks as if the tablet driver developers didn&rsquo;t really care about their product and just returned some randomly rounded numbers for the pen position.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

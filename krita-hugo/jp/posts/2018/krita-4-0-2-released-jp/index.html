@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.0.2リリース！ | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.0.2リリース！</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>May 13, 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>6 min</em></span> 
+        
+        
+    </div>
+
+    <p>KritaチームはKrita4.0.0のバグ修正リリースであるKrita 4.0.2をリリースしました。Krita 4.0.0リリースから50以上のバグを修正しました!修正された問題のリストは以下です。また二人の新しい貢献者による修正も含んでいます: Emmet O&rsquo;NeilさんとSeoras Macdonaldさんです。ようこそ!</p>
+<p>注意してください:</p>
+<ul>
+<li>参照画像ドッキングパネルは削除されました。Krita 4.1.0に新しい参照画像ツールが追加されます。作成中のツールはWindowsとLinuxのナイトリービルドでテスト可能です。Antoine Rouxさんの<a href="https://github.com/antoine-roux/krita-plugin-reference">reference images docker</a>Pythonプラグインも利用可能です。</li>
+<li>翻訳がいろいろな意味で壊れています。Linuxでは正しく動いているはずです。Windowsでは、設定の「アプリケーションの言語を切り替え」で予備言語にも設定したい言語を指定する必要があるかもしれません。macOSでも起きているかもしれません。</li>
+<li>macOSバイナリには署名が追加されましたが、G&rsquo;MicとPythonスクリプト機能はありません。</li>
+</ul>
+<p>新しい問題を見つけたときは、報告をする前に、この<a href="https://phabricator.kde.org/T7492">バグ報告についてのドラフト</a>をまず参照してください。4.0リリースの後、150以上のバグ報告がありましたが、そのほとんどは重複であったり、助けを求めるものや、まったく役に立たないものだったりしました。こうしたものは開発者への大きな負担になります。そして実際にKritaの改善に使う時間を減らしてしまいます。協力をおねがいします!</p>
+<p><a href="/images/posts/2018/kiki_4.0_sm-1-1024x463.png"><img src="/images/posts/2018/kiki_4.0_sm-1-1024x463.png" alt=""></a></p>
+<h2 id="改善点">改善点</h2>
+<h3 id="windows">Windows</h3>
+<ul>
+<li>QSaveFileにパッチを当てて、ネットワーク同期されたフォルダ(dropboxやgoogle drive)での作業を安全になるようにしました<a href="https://bugs.kde.org/show_bug.cgi?id=392408">BUG:392408</a></li>
+<li>WinTabが読み込めない時にWinInkを有効にするか聞くプロンプトを出すようにしました</li>
+</ul>
+<h3 id="アニメーション">アニメーション</h3>
+<ul>
+<li>アニメーションがキャッシュにレンダリングされているときのキャンバス更新問題を修正しました。<a href="https://bugs.kde.org/show_bug.cgi?id=392069">BUG:392969</a></li>
+<li>指定レイヤーのみを表示モードでの再生を修正しました<a href="https://bugs.kde.org/show_bug.cgi?id=392559">BUG:392559</a></li>
+<li>アニメーションした透明マスク、フィルタマスク、調整レイヤの保存を修正しました <a href="https://bugs.kde.org/show_bug.cgi?id=393302">BUG:393302</a></li>
+<li>set size for a few timeline icons as it is painfully small on Windows</li>
+<li>アニメーションを持つレイヤーからのピクセルデータのコピーペーストを修正しました <a href="https://bugs.kde.org/show_bug.cgi?id=364162">BUG:364162</a></li>
+</ul>
+<h3 id="ブラシ">ブラシ</h3>
+<ul>
+<li>ブラシ保存時に消しゴム切り替えサイズ・透明度オプションを保持するように修正<a href="https://bugs.kde.org/show_bug.cgi?id=393499">BUG:393499</a></li>
+<li>デフォルトプリセットを作成したときのプリセットエディタGUIの更新を修正<a href="https://bugs.kde.org/show_bug.cgi?id=392869">BUG:392869</a></li>
+<li>ブラシエディタの強度、不透明度スライダを0から100パーセントになるように変更</li>
+</ul>
+<h3 id="ファイル形式サポート">ファイル形式サポート</h3>
+<ul>
+<li>選択マスクの状態の.kraへの保存を修正</li>
+<li>Nukeによって保存されたマルチレイヤーEXRファイルの読み込み <a href="https://bugs.kde.org/show_bug.cgi?id=393771">BUG:393771</a></li>
+<li>PSD: カラー空間がサポートされていない場合は画像を変換</li>
+<li>オートセーブが実行中のアクションをキャンセルしないように修正</li>
+</ul>
+<h3 id="グリッド">グリッド</h3>
+<ul>
+<li>ピクセルグリッド閾値の範囲を増加</li>
+<li>OpenGLが有効な場合のみ等角投影グリッドが使用できるように変更 <a href="https://bugs.kde.org/show_bug.cgi?id=392526">BUG:392526</a></li>
+</ul>
+<h3 id="クラッシュ">クラッシュ</h3>
+<ul>
+<li>画像保存時のハングアップを修正 <a href="https://bugs.kde.org/show_bug.cgi?id=393916">BUG:393916</a></li>
+<li>アクティブなグローバル選択マスクを複製した時のクラッシュを修正 <a href="https://bugs.kde.org/show_bug.cgi?id=382315">BUG:382315</a></li>
+<li>ベクターパスポイント操作のUndo/Redoのクラッシュを修正 <a href="https://bugs.kde.org/show_bug.cgi?id=393209">BUG:393209</a>, <a href="https://bugs.kde.org/show_bug.cgi?id=393087">BUG:393087</a></li>
+<li>パレット削除時のクラッシュを修正e <a href="https://bugs.kde.org/show_bug.cgi?id=393353">BUG:393353</a></li>
+<li>シェイプ選択ツールのツールオプションのサイズを変更した時のクラッシュを修正 <a href="https://bugs.kde.org/show_bug.cgi?id=393217">BUG:393217</a></li>
+</ul>
+<h3 id="ユーザインタフェース">ユーザインタフェース</h3>
+<ul>
+<li>レイヤプロパティダイアログで実際のレイヤーのバウンドを表示</li>
+<li>円状ラインを表示するオプションを消失点補助線ツールに追加</li>
+<li>値が100の色をピックした時に彩度スライダーを更新するように修正 <a href="https://bugs.kde.org/show_bug.cgi?id=391934">BUG:391934</a></li>
+<li>閉じたパスで&quot;セグメントの分割が正しく機能するように修正</li>
+<li>ポップアップパレット上での右クリックを無効化 <a href="https://bugs.kde.org/show_bug.cgi?id=391696">BUG:391696</a>, <a href="https://bugs.kde.org/show_bug.cgi?id=378484">BUG:378484</a></li>
+<li>右ボタンが押されてもカラーラベルウィジェットのラベルが変にならないように修正<a href="https://bugs.kde.org/show_bug.cgi?id=392815">BUG:392815</a></li>
+<li>ポップアップパレット回転リセット時のキャンバス位置がおかしくなる問題を修正<a href="https://bugs.kde.org/show_bug.cgi?id=391921">BUG:391921</a> ( Emmet O&rsquo;Neilさんによるパッチです、ありがとうございます！)</li>
+<li>レイヤー追加ボタンの挙動の変更 <a href="https://bugs.kde.org/show_bug.cgi?id=385050">BUG:385050</a> (Seoras Macdonaldさんによるパッチです、ありがとうございます！)</li>
+<li>プレビューボックス外をクリックするとビューがその場所まで移動 <a href="https://bugs.kde.org/show_bug.cgi?id=384687">BUG:384687</a> (Seoras Macdonaldさんによるパッチです、ありがとうございます！)</li>
+<li>連続移動モードをキャンセルするダブルESCキー押しのショートカットの実装<a href="https://bugs.kde.org/show_bug.cgi?id=361852">BUG:361852</a></li>
+<li>ツールバーでの不透明度の表示を0から1ではなくパーセント表示に変更</li>
+</ul>
+<h3 id="その他">その他</h3>
+<ul>
+<li>ARMでのビルドを修正 <a href="https://bugs.kde.org/show_bug.cgi?id=393010">BUG:393010</a></li>
+<li><a href="https://www.viva64.com/en/pvs-studio/">PVS-Studio</a>による多数の警告を修正</li>
+</ul>
+<h2 id="ダウンロード">ダウンロード</h2>
+<h3 id="windows-1">Windows</h3>
+<p>Windowsユーザーの皆さんへ：もしクラッシュする事案に遭遇した場合は、<a href="https://docs.krita.org/Dr._Mingw_debugger">この案内（英語）</a> に従いデバッグシンボルをKritaに追加してください。これによってKritaがクラッシュした原因をログから解析できるようになります。</p>
+<ul>
+<li>
+<p>64ビットWindows版: <a href="https://download.kde.org/stable/krita/4.0.2/krita-x64-4.0.2-setup.exe">krita-x64-4.0.2-setup.exe</a></p>
+</li>
+<li>
+<p>64ビットWindowsポータブル版: <a href="https://download.kde.org/stable/krita/4.0.2/krita-x64-4.0.2.zip">krita-x64-4.0.2.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.0.2/krita-x64-4.0.2-dbg.zip">32ビット版向けデバッグシンボル(Kritaをインストールしたフォルダに展開して使用)</a></p>
+</li>
+<li>
+<p>32ビットWindows版: <a href="https://download.kde.org/stable/krita/4.0.2/krita-x86-4.0.2-setup.exe">krita-4.0.2-x86-setup.exe</a></p>
+</li>
+<li>
+<p>32ビットWindowsポータブル版: <a href="https://download.kde.org/stable/krita/4.0.2/krita-x86-4.0.2.zip">krita-x86-4.0.2.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.0.2/krita-x86-4.0.2-dbg.zip">32ビット版向けデバッグシンボル(Kritaをインストールしたフォルダに展開して使用)</a></p>
+</li>
+</ul>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>64ビットLinux用AppImage版: <a href="https://download.kde.org/stable/krita/4.0.2/krita-4.0.2-x86_64.appimage">krita-4.0.2-x86_64.appimage</a></li>
+</ul>
+<p>(なぜかFirefoxはテキストとして読み込もうとするようです。ダウンロードするにはリンクの右クリックから保存してください) 更新がされると、Ubuntuと派生ディストリビューションでは<a href="https://launchpad.net/%7Ekritalime/+archive/ubuntu/ppa">Krita Lime PPA</a>からもKrita 4.0.2をインストールできるようになります。snapの更新については作業中です。</p>
+<h3 id="osx">OSX</h3>
+<ul>
+<li>OSXディスクイメージ版: <a href="https://download.kde.org/stable/krita/4.0.2/krita-4.0.2.dmg">krita-4.0.2.dmg</a></li>
+</ul>
+<p>注意: gmic-qtとPythonプラグインはOSXで利用できません。</p>
+<h3 id="ソースコード">ソースコード</h3>
+<ul>
+<li>ソースコード: <a href="https://download.kde.org/stable/krita/4.0.2/krita-4.0.2.tar.gz">krita-4.0.2.tar.gz</a></li>
+</ul>
+<h3 id="md5sum">md5sum</h3>
+<p>すべてのダウンロード向け:</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.0.2/md5sum.txt">md5sum.txt</a></li>
+</ul>
+<h3 id="キー">キー</h3>
+<p>Linux appimageとソースのtarボールは署名されています。パブリックキーをhttps経由で取得できます: <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a> 署名は <a href="http://download.kde.org/stable/krita/4.0.2/">こちら</a>です (.sigのファイルです)</p>
+<h2 id="kritaを支援してください">Kritaを支援してください</h2>
+<p>Kritaは自由なオープンソースのプロジェクトです。<a href="https://krita.org/jp/support-us-jp/donations-jp/">寄付</a>や<a href="https://krita.org/jp/support-us-jp/shop-jp/">トレーニングビデオやアートブックの購入</a>で、プロジェクトを支援することを検討してみてください！皆様の支援によって、コアチームがフルタイムでKritaの開発作業を続けることが可能になります。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Release Notes for Krita 3.1 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Release Notes for Krita 3.1</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>October 3, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>7 min</em></span> 
+        
+        
+    </div>
+
+    <p>A quick video overview of all of the major features and fixes that are being shaipped with Krita 3.1.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/0eHNll7lPKk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="full-support-for-osx">Full Support for OSX</h3>
+<p><img src="/images/pages/krita3osx.jpg" alt="krita_texture_bg"></p>
+<p>Julian Thijssen&rsquo;s Google Summer of code project for 2016 gives us the power to run openGL on OSX! This was the biggest blocker for full OSX support! OpenGL is a special type of code that allows us to use your graphics card for operations like rotating, zooming and panning the canvas. Graphics cards are typically super good at this, meaning it makes the canvas really fast, no matter what kind of image you have before you. Apple devices are super picky about which version of OpenGL they can run, so Julian had to rewrite a part of QT to upgrade it all to openGL 3, ensuring our OSX users can finally enjoy Krita without bizare glitches when navigating!</p>
+<h3 id="render-animation">Render Animation</h3>
+<video controls width="100%">
+    <source src="/videos/animation-challenge.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<p>Finally, you can now export your animations to the following animation formats: animated GIF, MP4, MKV, OGG, giving a range of small sized files for your favourite blogging site to high quality formats to show off on your favourite video sharing site! This requires the ffmpeg library. <a href="https://docs.krita.org/Render_Animation">See instructions on on how to set this up here</a>!</p>
+<h3 id="animation-curves-and-opacity">Animation Curves and Opacity</h3>
+<p><img src="/images/pages/krita_animation_3_0_2.gif" alt="krita_texture_bg"></p>
+<p>Jouni Pentikäinen Google Summer of code project has been merged as well! Its biggest feature is the ground work laid for automated tweening of properties. There is now a animation curves docker to allow making opacity tweens, and we hope to allow transformation mask tweens in the future! <a href="https://docs.krita.org/Animation_Curves">Documentation here.</a> But that is not all! Other raster like layers like filter layers, fill layers, transparency masks and filter masks can now have their raster content animated, allowing for raster animating transparency or a filter effect! Furthermore, you can now color code frames, which can be used to mark the most important frames in an animation, so you can find them back more easily.</p>
+<h3 id="new-internalcolor-picker">New Internal Color Picker</h3>
+<p><img src="/images/pages/16-bit-color.png" alt="krita_texture_bg"></p>
+<p>Thanks to Wolthera&rsquo;s Google Summer of Code work, Krita now has a new internal color selector for selecting wide-gamut values! This means that you can finally break free from the limited gamut of your screen(sRGB) and use wide gamut spaces. Other features include easy access to the palette and the ability to type in HDR values in floating space without any extra toggles and buttons. You can access this new dialog from the current color patch in the toolbar. Furthermore, the pop-up palette will also grant access to this new selector, if you enable it by adding the popuppalette/usevisualcolorselector=true line to the kritarc configuration file. The other color selector dockers are untouched for now, but hopefully they&rsquo;ll be able to be extended in the same way soon!</p>
+<h3 id="new-quick-brush-engine">New Quick Brush Engine</h3>
+<!-- raw HTML omitted -->
+<p>In the ever continuing quest for speed on big documents, we developed the quick brush engine! One of the ways how a brush engine can be super slow is due to all the extra options available. Removing those and changing the way how we calculate brushes, gives a sharp edged, extremely simple but super fast brush that doesn&rsquo;t require openGL 3.1 but can tackle high resolution canvases with ease! <a href="https://docs.krita.org/Quick_Brush">See documentation&hellip;</a></p>
+<h3 id="stop-based-gradient-editor">Stop-Based Gradient Editor</h3>
+<p><img src="/images/pages/stop-based-gradients.png" alt="krita_texture_bg"></p>
+<p>Sven Langkamp brought us a secret suprise in the form of a stop-based gradient editor! Krita&rsquo;s segment based gradient editor is based on Gimp&rsquo;s model, but the stopbased format is far more common and easier to understand! <a href="https://docs.krita.org/Managing_Gradients">See the docs on how to use it.</a></p>
+<h3 id="lazy-brushcolorize-mask">Lazy Brush/Colorize Mask</h3>
+<p>The lazy/brush colorize mask feature is technically complete, but it&rsquo;s too slow to be useful in practice. We need a different algorithm&hellip; But if you want to play with it, you can enable it by adding the following line to your kritarc configuration file:</p>
+<p><strong>disableColorizeMaskFeature=false</strong></p>
+<h3 id="other-new-features">Other New Features</h3>
+<ul>
+<li>Create a stroke around your selection (<a href="https://docs.krita.org/Stroke_Selection">https://docs.krita.org/Stroke_Selection</a>)</li>
+<li>Halftone filter added. Find it in the main menu: Filters &gt; Artistic.</li>
+<li>add a new Eraser Switch Opacity feature, similar to the Eraser Switch Size one.</li>
+<li>new layer from visible option in layer menu</li>
+<li>OSX: add quicklook plugin</li>
+<li>Added support for loading Scribus XML palettes.</li>
+</ul>
+<h3 id="fixeschanges">Fixes/Changes</h3>
+<ul>
+<li>Fixed loading the templates</li>
+<li>brush resize slow-down fixed</li>
+<li>fixes when creating and saving custom shortcuts</li>
+<li>Fixes with stabilizer including finishing line segments and bent lines</li>
+<li>Auto-saving while working is more stable. Fixed race condition while saving.</li>
+<li>Do not install the majority of extra ICC profiles. This helps Krita&rsquo;s startup speed a lot</li>
+<li>fix transform handles from resizing while doing transforms (349666)</li>
+<li>All shortcuts can be configurable now before a document is open</li>
+<li>Fix for a crash when saving a document after adding a text shape</li>
+<li>ORA: convert the projection for the mergedimage when necessary</li>
+<li>History docker right-click options have been moved to a button since right-clicking wasn&rsquo;t working</li>
+<li>Escape key gets out of of picking a color on the screen</li>
+<li>fix crash when copying an animation keyframe to frame zero</li>
+<li>Fix exporting images on the command line</li>
+<li>OCIO: fix filling in values if a config is loaded</li>
+<li>BUG: 372171 Save show-in-timeline not depending on the animated status of the layer</li>
+<li>fix crash when moving filter masks</li>
+<li>added a &ldquo;demo&rdquo; brush tag</li>
+<li>removed a help button that didn&rsquo;t do anything in the preferences</li>
+<li>Disable transform tool on vector layers. This cannot be done and created issues</li>
+<li>fix crash is second window with a view into the first window is closed</li>
+<li>fix crash when creating a new document</li>
+<li>Fill painter tool can now fill 8-bit color on a 16-bit device</li>
+<li>Updated the transform tool options icons</li>
+<li>BUG:372110 Fix hiding Tool Options widgets when a new window is created</li>
+<li>fix crash when filter layer needs to create a LAB color space for filtering (368648)</li>
+<li>fix potential memory leak in the popup action</li>
+<li>fix crash when using the filter brush</li>
+<li>Show a message box when saving fails because the target directory does not exist</li>
+<li>Prevent rulers from flashing on and off with a new document</li>
+<li>BUG:372545 Fix isotropic spacing when working on a mirrored canvas</li>
+<li>BUG: 372171 - Mark image as modified when the user changes frame rate or animation range</li>
+<li>BUG:373205 Disable the quick-group actions if the active node is a mask</li>
+<li>assistants combobox is now ordered by name</li>
+<li>BUG: 373077 Select the mimetype of split images by default to the mimetype of the current image</li>
+<li>BUG:372613 Fix the out-of-gamut warning color configuration</li>
+<li>BUG:373342 Correctly save the visibility of a vector layer</li>
+<li>CCBUG:373077 Image split: show error dialogs only once</li>
+<li>fix potential crash when using the scratchpad</li>
+<li>BUG:373267 Always save the merged image as 8 bit sRGB, no profile. This improves the compatibility with other applications</li>
+<li>Remove tags assocated with bundles when needed</li>
+<li>disabled the spriter plugin for now as it is having issues</li>
+<li>Fix layout of monitor profiles by using a QFormLayout</li>
+<li>D3525: Fix floating point Lab color space values</li>
+<li>BUG:373334 Fix installing proifles with complex filenames</li>
+<li>Splash screen loading progress text is more accurate</li>
+<li>fix regression when using the hatching and sketch brush engines</li>
+<li>fix crash with LUT docker not managing pointers well (368764)</li>
+<li>fix sobel filter to display correctly</li>
+<li>BUG:372893 Fix painting of the sliderspinbox</li>
+<li>BUG:366289, 369451 - Fix Tilt-elevation to work with rotated/mirrored canvas</li>
+<li>Disabled the big brother plugin</li>
+<li>fix clone brush from copy/paste error</li>
+<li>fixed isue with the brush editor not updating correctly (T3578)</li>
+<li>fix crash using &ldquo;Create Copy from Current Image&rdquo; (351106)</li>
+<li>fix clipping issue with auto brush (367804)</li>
+<li>UI fix for the transform tool options</li>
+<li>Updated zoom menu icons</li>
+<li>fix potential crash when closing the window</li>
+<li>unify colors on all SVG icons</li>
+<li>fix drag and drop crash with clone layer (20405)</li>
+<li>fix memory leak when Cumulative undo is turned on (365992)</li>
+<li>fix tablet no pressure bug when closing the brush editor (369114)</li>
+<li>fix crash when changing the canvas type while showing the pop up palette</li>
+<li>fixed saving thumbnails when auto-saving</li>
+<li>Don&rsquo;t crash when using split layer in another language</li>
+<li>PgUp/PgDown fix when moving around layer masks</li>
+<li>fixed brush property Color: Mix doesnt work right with the default colorspace in 16 Bits (369882)</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

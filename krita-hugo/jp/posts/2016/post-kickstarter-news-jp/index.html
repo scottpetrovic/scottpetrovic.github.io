@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Kickstarterを終えて | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Kickstarterを終えて</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>June 25, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>8 min</em></span> 
+        
+        
+    </div>
+
+    <p>Kickstarterキャンペーンの季節は終わり、我々はゆっくりと回復しつつ、コーディングその他の生産的な作業を再開し始めています。KickstarterからKritaの銀行口座に34,594.37ユーロが送付され、我々は既に次のリリースの計画の練り始めています。更新の時間です！</p>
+<h3 id="kickstarter追加目標投票">Kickstarter追加目標投票</h3>
+<p>皆さんからの投票がどんどん届いています！既に何人ものアーティストに連絡して投資報酬用の作品を注文しています。Kickstarterの投資報酬については約束通りその作品にお金を払っています！キャラクターの絵が欲しい投資者は既にその仕事を志願してくれたアーティストと連絡を取っています！アートブックのみは作品を公募します。参加者募集の記事をご覧ください（プリンターからICCプロファイルを取り出すべく作業中です―理由は下を読めばわかります！）</p>
+<p>既に大部分の投資者が投票を完了しており、最終的な追加目標のランキングをほぼ確実に予想できるようになっています。Pythonスクリプトが第1位、SVGのインポート/エクスポートが第2位です！これらの追加目標が実際に開発されることになれば、残りの追加目標は来年までお預けとなります（あるいは恐れを知らぬボランティアによって実装される場合もあります―その例の一つが<a href="https://phabricator.kde.org/D1875">16. 数値入力欄での簡単な計算式の使用を可能にする</a>です。結局この機能はどうやら3.1で実装されそうです！）</p>
+<p>こちらが得票数内訳です</p>
+<ol>
+<li><strong>追加目標 24. Pythonスクリプトプラグイン：587票</strong></li>
+<li><strong>追加目標 8. SVGのインポートとエクスポート：544</strong></li>
+<li>追加目標 1. ピボットを中心にした変形：258</li>
+<li>追加目標 21. ページ管理機能：251</li>
+<li>追加目標 2. 構図基準線：239</li>
+<li>追加目標 7. ベクターレイヤーをマスクとして使用：182</li>
+<li>追加目標 15. よりスムーズなグラデーション：175</li>
+<li>追加目標 13. レイヤーの整列：167</li>
+<li>追加目標 23. 音声のインポート：164</li>
+<li>追加目標 19. カリグラフィーツールの劇的な改良：152</li>
+<li>追加目標 6. 参照画像ドッキングパネル：134</li>
+<li>追加目標 5. タグをバンドルとしてエクスポート：123</li>
+<li>追加目標 17. ベクター曲線パスをブラシでなぞる：113</li>
+<li>追加目標 3. テクスチャブラシへのグローバルテクスチャの実装：110</li>
+<li>追加目標 4. バンドルをよりわかりやすく、もっと使いやすいインターフェースにする：101</li>
+<li>追加目標 11. 高さマップを法線マップに変換：100</li>
+<li>追加目標 20. 色ストップを用いたグラデーションエディタ：87</li>
+<li>追加目標 22. 回転・拡大縮小が可能なパターン：71</li>
+<li>追加目標 18. ベクター図形アウトライナー：62</li>
+<li>追加目標 16. 数値入力欄での簡単な計算式の使用を可能にする：45</li>
+<li>追加目標 12. LUT焼き込み：34</li>
+<li>追加目標 9. 補助線レイヤーの実装：32</li>
+<li>追加目標 14. レイヤー選択ツール使用時にキャンバス上にレイヤーのツールチップを表示：31</li>
+<li>追加目標 10. ベクター図形を補助線に：28</li>
+</ol>
+<p>Pythonスクリプトが明らかにリードしていますが、我々はPythonスクリプトを2015年度分の残りのKickstarter追加目標、例えばパレット・色見本ドッキングパネル等の実装に使えるのではないかと考え、既にその開発を開始しています。Pythonスクリプトは既にある程度動作しています；ドッキングパネルやメニューの中身を追加できるKritaのプラグインをPythonで作れるようになっており、そしてこれがKrita Python APIが利用可能なKritaからPythonスクリプトを走らせることを可能にするPythonプラグインです。これは現在のところ開いているウィンドウの数を数えるだけの機能しかありませんが、まだまだこれからです！</p>
+<p><a href="/images/posts/2016/scripter.png"><img src="/images/posts/2016/scripter-1024x582.png" alt="scripter"></a></p>
+<h3 id="google-summer-of-code">Google Summer of Code</h3>
+<p>Google Summer of Codeの学生に中間審査がありました!幸運にも全員がパスすることができました。全員がすばらしい成果をあげています。Woltheraはソフトプルーフの実装をほぼ完了しました。既に<a href="https://docs.krita.org/Soft_Proofing">マニュアルページ</a> も書き上げて、現在広範囲のテストを行っています。テストで問題がなく良い感じなら、ソフトプルーフ機能はKrita 3.0.1に追加されます。再び、KritaはGoogle Summer of Codeで一番最初に成果をリリースするプロジェクトになります!ソフトプルーフには、編集可能な色域(gamut)警告、ホワイトポイント調整スライダが含まれて、画像に対する紙の影響をチェックすることができます。Kritaはプルーフプロファイルをグローバル設定ではなく画像に保存するので、特定のプリンタ向けのテンプレートファイルを作成するといったことも可能になります。また、プルーフ前とプルーフ後の画像を同時に表示することもできます。</p>
+<p><a href="/images/posts/2016/gamut_alarms_fast.png"><img src="/images/posts/2016/gamut_alarms_fast-1024x553.png" alt="gamut_alarms_fast"></a></p>
+<p>Julian ThijsenはOpenGL QPainterの修正に熱心に取り組んでいます。 <a href="http://kritadev.blogspot.nl/">彼のブログの記事</a>には、どのような道筋で挑戦しているのかの詳細があります。まだやるべきことは多く残っていますが、作業は活発です。彼の成果はQtに提出されQtの一部となることになり、みんながその恩恵をうけられるようになります。現在の目標はQtのQPainterクラスに対するOpenGL backendを修正し、カーソル、補助線、グラデーションツールの線といった Kritaのすべてのツールが描画できるようにすることです。</p>
+<p><a href="/images/posts/2016/Working_01.png"><img src="/images/posts/2016/Working_01.png" alt="Working_01"></a></p>
+<p>Jouni Pentikainenは補間カーブの作業を行っています。透明度といった変化を自動的に、スムーズにアニメーションできるようにするためのものです。また、変形マスクをフレーム間でアニメーションできるようにする開発も行っています。アニメーターにさらなる自由を与えます！詳細については彼の<a href="http://kritaanimation.blogspot.nl/">blog</a>を参照してください。以下は、インタラクションやユーザ体験デザインを議論する際に作成したモックアップです:</p>
+<p><a href="/images/posts/2016/interpolation-mockup.png"><img src="/images/posts/2016/interpolation-mockup.png" alt="interpolation-mockup"></a></p>
+<h3 id="リリース">リリース</h3>
+<p>次のリリースのスケジュールはもう決まっています。3.0.1は7月15日にリリース予定です。たくさんのバグ修正、例えば<a href="https://krita.org/jp/item/anatomy-of-a-bug-fix-jp/">一部の安価なブランドのペンタブでクラッシュが発生する問題</a>や前後フレームの表示、Windowsでのレイヤーのドラッグ&amp;ドロップでの問題はもちろん、多くの新機能追加が行われる予定です。Michael AbrahamsはWindowsでフルスクリーンモードを復活させ、Eugene Ingermanはヒストグラムダイアログのルック&amp;フィールを改良しました（そしてヒストグラムドッキングパネルが追加され、チャンネル及びレイヤードッキングパネルのサムネイルとキャンバスプレビュードッキングパネルのレンダリングの改善が行われています）大リファクタリングが順調にいけば、2015年度の追加目標である機能、<a href="https://phabricator.kde.org/T116">Kritaからアニメーションを直接アニメーションGIF及びその他いくつかの動画フォーマットで出力する</a>機能が実装されているはずです。また2015年度の追加目標<a href="https://phabricator.kde.org/T166">ファジーストローク</a>も実装される予定です。そしておそらくソフトプルーフも実装されるはずです。</p>
+<p>そしてKrita 3.0のリリース後、日本のプロアニメーター<a href="https://twitter.com/motoaki_saisho">税所一輝</a>氏がKritaを自分の使用ツールの一つに採用してくれました。作品制作のために彼が作成したテンプレートファイルをKritaのアニメテンプレートとしてぜひいただきたいという我々の要望を、彼は快く承諾してくれました。彼のテンプレートは日本のアニメスタジオで使われている実際のアニメ製作工程に基づいています―このテンプレートもKrita 3.0.1で実装されます：</p>
+<p><a href="/images/posts/2016/animation_template.png"><img src="/images/posts/2016/animation_template-1024x577.png" alt="animation_template"></a></p>
+<p>3.0.1リリースは非常にエキサイティングなものになるでしょう！</p>
+<p>新バージョンのリリースは3.0シリーズで毎月行われ、2015年度の追加目標を全て実装した段階で3.1をリリースする予定です―そしてもしさらに多くの追加目標の実装に使えるようになっていたならおそらく3.1でPythonスクリプトプラグインの最初のバージョンが実装されるはずです。</p>
+<h3 id="スプリント">スプリント</h3>
+<p>毎年1度のペースでKrita開発のプログラマとアーティストは夏にオランダのデーフェンテルに集まり、このプロジェクトの方向性と目標について議論し、一緒にプログラミングを行い、優先事項として互いに連絡を取り合います。これらのスプリントは非常に生産的です。<a href="https://dot.kde.org/2014/06/04/2014-krita-sprint-deventer-netherlands">最後に行われたのは2014年</a>なので、そろそろ次のスプリントを実施すべきときでしょう。今回のスプリントは8月末に行われる予定です。旅費は我々が所属しているコミュニティであるKDEがスポンサーとして一部を負担してくれます。KDEは現在我々の様に募金キャンペーンを開催中です―皆さんもぜひ<a href="https://www.kde.org/fundraisers/randameetings2016/">ここをクリックして募金してあげましょう</a>！Krita財団は旅費を負担します―我々はできる限りの人数を財団本部に宿泊させる予定ですが、今回はベッドが足りなくなりそうです！</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

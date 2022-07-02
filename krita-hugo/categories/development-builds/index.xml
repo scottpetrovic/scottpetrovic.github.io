@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development-builds on Krita Site</title>
+    <link>https://krita.org/categories/development-builds/</link>
+    <description>Recent content in development-builds on Krita Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 03 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/categories/development-builds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Krita 5.0.0 beta 5 released</title>
+      <link>https://krita.org/posts/2021/krita-5-0-0-beta-5-released/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2021/krita-5-0-0-beta-5-released/</guid>
+      <description>Following the botched macOS build yesterday, we&amp;rsquo;re releasing Krita 5.0.0 beta 5. Beta 4 didn&amp;rsquo;t happen: while it was building, Dmitry Kazakov fixed an issue which we really wanted tested right away.</description>
+    </item>
+    
+    <item>
+      <title>Third beta for Krita 5.0</title>
+      <link>https://krita.org/posts/2021/third-beta-for-krita-5-0/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2021/third-beta-for-krita-5-0/</guid>
+      <description>Today we&amp;rsquo;re releasing the third beta for Krita 5. There are a lot of fixes compared to beta 2. We&amp;rsquo;re aiming to release Krita 5 before Christmas, and are beginning to feel a bit confident about that.</description>
+    </item>
+    
+    <item>
+      <title>Second Beta for Krita 5.0</title>
+      <link>https://krita.org/posts/2021/second-beta-for-krita-5-0/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2021/second-beta-for-krita-5-0/</guid>
+      <description>A bit later than planned &amp;ndash; after a year and a half of isolation meeting people spreads really bad colds &amp;ndash; we&amp;rsquo;re releasing the second beta of Krita 5.</description>
+    </item>
+    
+    <item>
+      <title>September Development Update</title>
+      <link>https://krita.org/posts/2021/september-development-update-2/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2021/september-development-update-2/</guid>
+      <description>Not directly development related, but the scammers who registered krita.io, krita.app and getkrita.com for ransomware attacks have lost those domains. Let&amp;rsquo;s hope that also means the scammers decide they have had enough and stop spamming people.</description>
+    </item>
+    
+    <item>
+      <title>First Beta for Krita 5.0 released</title>
+      <link>https://krita.org/posts/2021/first-beta-for-krita-5-0-released/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2021/first-beta-for-krita-5-0-released/</guid>
+      <description>Today, the Krita team releases the first beta for Krita 5.0. Krita 5.0 is a major release, with a lot of new features and a lot of changes.</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.4.3: Second Beta Release</title>
+      <link>https://krita.org/posts/2021/krita-4-4-3-second-beta-release/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2021/krita-4-4-3-second-beta-release/</guid>
+      <description>We&amp;rsquo;re releasing the second beta for Krita 4.4.3 today. This version only fixes regressions found in the first beta, but it still needs testing!</description>
+    </item>
+    
+    <item>
+      <title>First Beta Release for Krita 4.4.3</title>
+      <link>https://krita.org/posts/2021/first-beta-release-for-krita-4-4-3/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2021/first-beta-release-for-krita-4-4-3/</guid>
+      <description>The Krita team is releasing the first beta of Krita 4.4.3. This is purely a bugfix release.
+Bug Fixes Android  Crash when back button was pressed on splash screen Crash when loading files while app is still booting Use lastUpdateTime for copying assets Provide host so pathPattern could be effective Fix color selector covering entire screen (BUG:432459) Saved configs aren&amp;rsquo;t loaded after restart (BUG:432433) Add key functions to psd_layer_effects_shadow_base (BUG:432904) Fix reloading presets from user-imported bundles (BUG:432488)  Crashes  Fix crash in halftone filter due to an access to an invalid pointer Fix crash when reapplying a filter with reprompting Fix crash when painting on a filter mask created from a vector selection (BUG:432329)  MacOS  MacOS: fix the finder plugins for showing a thumbnail or a quick look preview (BUG:432328)  Scripting  Fix handling the channel flags.</description>
+    </item>
+    
+    <item>
+      <title>Second Beta for Krita 4.4.2</title>
+      <link>https://krita.org/posts/2020/second-beta-for-krita-4-4-2/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/second-beta-for-krita-4-4-2/</guid>
+      <description>The Krita team is releasing the second beta of Krita 4.4.2. Ramon Miranda has just released a video of one of the star features of this release: mesh transforms:</description>
+    </item>
+    
+    <item>
+      <title>First beta of Krita 4.4.2</title>
+      <link>https://krita.org/posts/2020/first-beta-of-krita-4-4-2/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/first-beta-of-krita-4-4-2/</guid>
+      <description>The Krita team is releasing the first beta of Krita 4.4.2. With over 300 changes, this is mainly a bugfix release, though some key new features, too!</description>
+    </item>
+    
+    <item>
+      <title>Second Beta out for Krita 4.4.0</title>
+      <link>https://krita.org/posts/2020/second-beta-out-for-krita-4-4-0/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/second-beta-out-for-krita-4-4-0/</guid>
+      <description>Today, we&amp;rsquo;re releasing Krita 4.4.0 beta 2: we found a number of regressions and release blocking bugs.
+This beta has Android builds too, since we fixed many issues with accessing files on Android: however, because we now add translations the APK files are too big for the Play Store, and you will have to download them from download.</description>
+    </item>
+    
+    <item>
+      <title>First beta out for Krita 4.4</title>
+      <link>https://krita.org/posts/2020/first-beta-out-for-krita-4-4/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/first-beta-out-for-krita-4-4/</guid>
+      <description>The summer has come and gone since the 4.3 release, but we have not been sitting still. We had four Summer of Code Students this year, each of which completed their project.</description>
+    </item>
+    
+    <item>
+      <title>Second Beta for Krita 4.3.0 Released</title>
+      <link>https://krita.org/posts/2020/second-beta-for-krita-4-3-0-released/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/second-beta-for-krita-4-3-0-released/</guid>
+      <description>This is the second beta release for Krita 4.3.0. It&amp;rsquo;s later than expected because our system for making release builds was temporarily unavailable.</description>
+    </item>
+    
+    <item>
+      <title>First Krita Beta for Android and ChromeOS in Play Store</title>
+      <link>https://krita.org/posts/2020/first-krita-beta-for-android-and-chromeos-in-play-store/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/first-krita-beta-for-android-and-chromeos-in-play-store/</guid>
+      <description>Thanks to the hard work of Sharaf Zaman, Krita is now available in the Google Play Store for Android tablets and Chromebooks (not for Android phones).</description>
+    </item>
+    
+    <item>
+      <title>First Beta of Krita 4.3.0 Released</title>
+      <link>https://krita.org/posts/2020/first-beta-of-krita-4-3-0-released/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/first-beta-of-krita-4-3-0-released/</guid>
+      <description>Krita 4.3.0 will be the next full feature release of Krita. We&amp;rsquo;ve worked for a year on this new version of Krita, focusing especially on stability and performance.</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.2.9 beta released!</title>
+      <link>https://krita.org/posts/2020/krita-4-2-9-beta-released/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2020/krita-4-2-9-beta-released/</guid>
+      <description>Much later than we wanted to, we&amp;rsquo;ve finally gotten the beta ready for Krita 4.2.9! One of the reasons it took so long is that an update to Python 3.</description>
+    </item>
+    
+    <item>
+      <title>First Notarized macOS Build of Krita</title>
+      <link>https://krita.org/posts/2019/first-notarized-macos-build-of-krita/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2019/first-notarized-macos-build-of-krita/</guid>
+      <description>Apple having decided it wants to deep inspect any application you might want to run on your Apple computer, has made what it calls &amp;ldquo;notarization&amp;rdquo; mandatory with macOS Catalina.</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.2.0 Beta Released</title>
+      <link>https://krita.org/posts/2019/krita-4-2-0-beta-released/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2019/krita-4-2-0-beta-released/</guid>
+      <description>We&amp;rsquo;re still on track to release Krita 4.2.0 this month! Compared to the alpha release, we fixed over thirty issues. This release also has a fresh splash screen by Tyson Tan and restores Python support to the Linux AppImage.</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.2.0-alpha Released</title>
+      <link>https://krita.org/posts/2019/krita-4-2-0-alpha-released/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2019/krita-4-2-0-alpha-released/</guid>
+      <description>We&amp;rsquo;re on track to release Krita 4.2.0 this month, and today we&amp;rsquo;re releasing the alpha! That means that we&amp;rsquo;re still fixing bugs like crazy &amp;ndash; just check what we&amp;rsquo;ve been doing this month:</description>
+    </item>
+    
+    <item>
+      <title>Krita Nightly Builds for macOS</title>
+      <link>https://krita.org/posts/2019/krita-nightly-builds-for-macos/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2019/krita-nightly-builds-for-macos/</guid>
+      <description>Thanks to the hard work of Ivan Yossi and KDE system admin Ben Cooksley, we&amp;rsquo;ve got nightly builds for macOS now!</description>
+    </item>
+    
+    <item>
+      <title>New Test Builds: changes to Flow and Saving/Loading</title>
+      <link>https://krita.org/posts/2019/new-test-builds-changes-to-flow-and-saving-loading/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2019/new-test-builds-changes-to-flow-and-saving-loading/</guid>
+      <description>Krita needs you! We&amp;rsquo;ve new test builds of what will become Krita 4.2. There are two changes that we really would like everyone to test!</description>
+    </item>
+    
+  </channel>
+</rss>

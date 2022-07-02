@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | September Update | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">September Update</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>September 23, 2012</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>It&rsquo;s been some time since I last gave an update on what&rsquo;s happening with Krita. And that&rsquo;s not because nothing is going on, but rather because of extreme business. Well, that and some real life. But there are some pretty exciting developments that will hopefull result in a great 2.6 release!</p>
+<p>Using the very cool <a href="http://code.compeng.uni-frankfurt.de/projects/vc">Vc library</a> by KDE hacker Matthias Kretz, <strong>Sven Langkamp</strong>has started to vectorize parts of Krita. That means that finally we&rsquo;ve started to use the modern capabilities of CPU&rsquo;s to do several calculations at the same time: MMX, SSE, AltiVec, AVX and so on. Vc nicely abstracts this for us. In the first place, the calculation of the autobrush masks was optimized. This made painting a lot smoother already. Next up, Sven is looking into optimizing the color blending code.</p>
+<p><a href="http://www.littlecms.com/">LittleCMS 2.4</a> supports both 16 and 32 bits floating point now, in addition to 8 and 16 bit integer. This means that the HDR colorspaces Krita has had since 1.5 can now be handled by LittleCMS. Previously we were using the <a href="http://www.opengtl.org">OpenCTL</a> library created by Cyrille Berger for this. While this library is an amazing free software equivalent to the non-free CTL library used by movie studios, the colorspace implementations we wrote for Krita were not too complete, missing a lot of blending modes. Now that we are using LittleCMS instead, we get all these blending modes for free, plus a nice performance improvement. Next, I need to fix the the OpenColorIO integration which I somehow broke.</p>
+<p><strong>Dmitry Kazakov</strong>came back from the summer camp and immediately got pushed a lot of fixes for zooming in Krita. There are still some issues left, but zooming in and out feels a lot more natural now. More fixes are upcoming. Dmitry also started his next period of sponsored work, and more about that in another post!</p>
+<p><strong>Torio Mlshi</strong> came back after a period of absence has started working on the animation plugin again! This is great news &ndash; there&rsquo;s a lot of demand for a good, supported animation mode in paint applications. Just check the <a href="http://forum.kde.org/viewtopic.php?f=156&amp;t=94646&amp;start=45&amp;hilit=animation">forum</a>!</p>
+<p>The summer came and went, with all the Krita Google Summer of Code students passing their final grading! There is some clean up work needed, but <a href="http://pedepinico.blogspot.nl/">Carlos Licea&rsquo;s sand painting brush</a> looks likely to be included in 2.6, as does the <a href="http://blog.shrrikrishnaholla.in">infinite canvas implemented by Shrikrishna Holla</a>. Shivaraman Ayer&rsquo;s work on integrating the perspective grid into the perspective assistant is nearly done. The 3D model assistant needs more work &ndash; but then, that was always an enormous amount of work! <a href="http://jsimon3.wordpress.com/">Joe Simon&rsquo;s printing dialog</a> needs a number of new dependencies which most distributions don&rsquo;t pack yet. But his work is done, too, and we&rsquo;ll try to get it into 2.6.</p>
+<p>In the meantime, work on Krita Sketch proceeds at a frenzied pace. The initial interaction design by <strong>Arjen Hiemstra</strong> was fleshed out with a full graphical design by <strong>Timothee Giet</strong>. Arjen is now implementing the core functionality: canvas, gestures, multi-touch, while <strong>Dan Jensen</strong> is implementing the design in Qt Quick. Me, I&rsquo;m working on implementing the <a href="http://www.deviantart.com">Deviant Art</a><a href="http://www.deviantart.com">stash API, both for Krita Sketch and for Krita Desktop.</a></p>
+<p>Also a subject for another post: <a href="http://www.kogmbh.com">KO GmbH</a> is preparing itself to offer commercial support for professional users of Krita. We&rsquo;re still working on a website (with Timothee Giet) and trying to figure out how much to charge&hellip; But the goal is to give, for example, studios, access to a professional, high bit depth painting application in a way that gives them peace of mind. <strong>Simon Legrand</strong> has been helping us figure out how to go about it. Let&rsquo;s see where this leads!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

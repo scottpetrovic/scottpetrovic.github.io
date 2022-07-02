@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 开发冲刺聚会 2018：与 Mac OSX 的斗争 | Krita Site(PRC)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/zh">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 开发冲刺聚会 2018：与 Mac OSX 的斗争</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>2018年6月6日</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Dmitry 按：两周前，我们在代芬特尔举办了一场振奋人心的开发冲刺聚会，来自世界各地的 Krita 开发人员齐聚一堂交流协作。Boud 已经为此撰写了<a href="https://krita.org/en/item/krita-2018-sprint-report-zh">一篇通讯</a>，所以我就不再赘述了。下面我将谈谈我在这次聚会上的主要任务：OSX 数位板问题的修复，以及这个问题的来龙去脉。</p>
+<p><a href="/images/posts/2018/krita_jagged_lines_on_osx.png"><img src="/images/posts/2018/krita_jagged_lines_on_osx.png" alt=""></a> OSX 会对输入事件进行压缩，造成线条绘制不流畅，禁用 OpenGL 问题消失</p>
+<h3 id="数位板事件压缩">数位板事件压缩</h3>
+<p>我们从 Krita 的第一个 OSX 版本开始就留意到了一个奇怪的问题。用户画画的动作一快，笔画就会变得不流畅，看上去它们被“掰弯”了。这个问题的成因是：数位板的压感笔输入事件在从驱动程序传输到 Krita 的过程中发生了损失。</p>
+<p>这个问题其实不是 OSX 的专利，Linux 和 Windows 平台也遇到过一些同类问题。它往往跟 Qt 的一个叫做“输入事件压缩”的功能有关。这个功能会在应用程序变慢时自动激活，然后抛弃数位板和鼠标过剩的移动事件。这个功能对常规的非绘画应用程序来说是必要的，这些程序对于输入的精确性也不敏感。如果禁用 OpenGL 画布之后线条就变得流畅，那么十有八九就是这个功能在作怪。接到这个问题在 OSX 上的报告后，我心想“老子在别的平台上都解决过多少次了，这还能难得倒我？”我自鸣得意地走在通往聚会的路上，完全没有预料到事情接下来会如何发展。</p>
+<p>到了聚会现场我就没那么得意了：我检查了 Qt 的源代码，发现它在 OSX 上面压根就没有输入事件压缩这个功能！什么鬼？测试表明 Qt 收到的输入事件都会原封不动地传输给 Krita。这可是万万没想到。既然不是 Qt，那么就只有一个可能：在程序执行周期提取队列中的输入事件之前，OSX 自己就迫不及待地把事件给抛弃掉了。我现在依然是这样理解的。</p>
+<p>如果压缩发生在操作系统和驱动程序内部，我们就无法彻底关掉它了。但我们可以设法加快 Krita 主图形界面线程的响应速度，在输入事件被系统抛弃之前将它们提取出来。但这里却有一个问题：OpenGL！</p>
+<h3 id="opengl-和-krita-的图形界面线程">OpenGL 和 Krita 的图形界面线程</h3>
+<p>那么为什么 OpenGL 会跟输入事件压缩有关呢？这还要从 Krita 的渲染流程说起。我们的标准渲染流程如下，它非常简洁：</p>
+<ol>
+<li>笔刷对图像进行了更改</li>
+<li>图形界面线程将材质通过 glTexImage2D 或者 glTexSubImage2D 上传到 GPU</li>
+<li>图形界面线程呼叫 QOpenGLWidget::update()，开始新的渲染周期</li>
+<li>Qt 呼叫 QOpenGLWidget::paintGL()，它为已更新的材质生成贴图并把它们渲染到屏幕。</li>
+</ol>
+<p>这个流程在其他平台上都工作得很好，除了 OSX。在 OSX 下面它的环节会被打乱执行，导致 Krita 渲染材质的时候发生<strong>贴图损坏</strong>。几年前我们第一次遇到这个问题的时候，抓破头皮也没搞懂到底是什么原因。到了最后只好用一个恶心的小把戏来变通：我们把 glFinish()插入到上传材质环节和渲染环节之间，然后 OSX 特有的渲染流程就变成了这样：</p>
+<ol>
+<li>图像更新</li>
+<li>上传材质</li>
+<li><strong>呼叫 glFinish()/* 慢——————得要死 */</strong></li>
+<li>呼叫 QOpenGLWidget::update()</li>
+<li>生成贴图并渲染材质</li>
+</ol>
+<p>OpenGL 有时需要较长时间来上传已更新的材质并渲染画布，因此我们的小把戏虽然解决了贴图损坏的问题，却拖慢了渲染流程的速度。我们用 <a href="https://github.com/apitrace/apitrace">apitrace</a> 分析过 Krita，发现这个 glFinish()的把戏会长时间挡在输入事件周期的前面，OSX 等不及了就开始抛弃队列里面的输入事件，因此我们必需移除它。</p>
+<p>可是话说回来，我们为什么会需要 glFinish()呢？OpenGL 的 GPU 呼叫应该会按照时间顺序执行，可为什么偏偏在这里会被重新排序？我在开发冲刺聚会上花了差不多两天时间研究这个问题，回到家之后又继续鼓捣了两天。我甚至想过会不会是 OSX 的 OpenGL 实现方式有问题。但事情实际上比这简单得多。</p>
+<p>我们在 Krita 里面使用了两个不同的 OpenGL 语境来渲染图像：一个是 Qt 用来上传材质的，另一个是 QOpenGLWidget 的。这两个 OpenGL 语境共享资源，所以我们之前也理所当然地把它们当作同一语境。然而事实并非如此，两者虽然共享了全部资源，但是它们处理 CPU 指令队列的方式却另有文章：在 Linux 和 Windows 下面它们共享指令队列并按序执行；在 OSX 下面它们的队列相互独立。这样在 OSX 下面同时含有两者的流程就会被打乱，贴图也因此损坏。</p>
+<p>发生上述问题时，我们的流程是这样的：</p>
+<ol>
+<li><strong>[OpenGL 语境 1]</strong> 更新图像</li>
+<li><strong>[OpenGL 语境 1]</strong> 上传材质</li>
+<li><strong>[OpenGL 语境 2]</strong> 呼叫 QOpenGLWidget::update()</li>
+<li><strong>[OpenGL 语境 2]</strong> 生成贴图并渲染材质 /* 这时语境 1 中的材质还没完成上传，因此发生贴图损坏 */</li>
+</ol>
+<p>因此，我们只需要把上传材质的环节放到正确的 OpenGL 语境里，问题也就迎刃而解了。<a href="https://phabricator.kde.org/R37:fb43d4e5be6112c7d9df2ee3f33697d07a614ca6">相关补丁</a>已经进入主分支，它会随 Krita 4.0.4 发布！</p>
+<h3 id="经验教训">经验教训</h3>
+<p>我们要当心用于访问 GPU 的 OpenGL 语境。除非是在 QOpenGLWidget::paintGL()里面，否则语境很可能是随机分配的！</p>
+<p>附： 这个补丁并没有从根本上解决数位板的问题。输入事件压缩依然会在 OSX 内部发生，但它的影响已经可以忽略了！:)</p>
+<p>再附： 2018 年度的 Krita 开发冲刺聚会由 KDE e.V. 赞助差旅费用，由 Krita 基金会赞助住宿和餐饮费用。</p>
+<p>一附再附： Apple <a href="https://developer.apple.com/macos/whats-new/">准备弃用</a> OpenGL 了……</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgzh/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgzh/roadmap">Roadmap</a>
+			<a href="https://krita.orgzh/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/zh/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgzh/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/zh/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgzh/about">About</a>
+			<a href="https://krita.orgzh/donations">Donations</a>
+			<a href="https://krita.orgzh/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/zh">What is KDE</a>
+			<a href="https://krita.orgzh/website">Website Licenses</a>
+			<a href="https://krita.orgzh/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

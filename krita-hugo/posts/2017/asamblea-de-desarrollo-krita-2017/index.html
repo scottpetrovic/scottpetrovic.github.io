@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Asamblea de desarrollo - Krita 2017 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Asamblea de desarrollo - Krita 2017</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>November 27, 2017</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>6 min</em></span> 
+        
+        
+    </div>
+
+    <p>Durante los primeros meses del 2017, una serie de problemas de impuestos y financieros nos dejaron sin la capacidad de planear una reunión entre los desarrolladores. Sin embargo con el plan de lanzar una versión nueva en unas cuantas semanas, nos es de suma importancia el poder colaborar y expresar el trabajo hecho y por realizar en persona, por lo que finalmente pudimos hacer una reunión, mucho mas pequeña que las anteriores, pero igualmente productiva, la cual tuvo lugar en Deventer, Holanda, del 23 al 26 de noviembre.</p>
+<p>La ultima asamblea fue en agosto del año pasado <a href="/item/2016-krita-sprint-day-1/">2016</a>, lo que a dado lugar a la acumulación de una gran cantidad ideas, planes y proyectos, ademas que la cantidad de errores de código a los que se tiene que atender se ha incrementado de manera significante.</p>
+<p>Enseguida se muestra un resumen de la asamblea Krita 2017.</p>
+<p>En el rastreador de errores de código (bug tracker), se logro el eliminar alrededor de 120 reportes, es de entenderse que varios de estos reportes no corresponden a verdaderos problemas en el código, si no que son el resultado de algunos usuarios que han confundido el sistema para pedir ayuda del uso de Krita. También existen aquellos reportes que son duplicados de el mismo problema, por lo que se requiere que se enlacen. al final de la tarea se corrigieron mas de una docena de verdaderos errores de código, lo cual es bastante productivo:</p>
+<p><a href="/images/posts/2017/bugs_november_sprint.png"><img src="/images/posts/2017/bugs_november_sprint-874x1024.png" alt=""></a></p>
+<h3 id="krita-40">Krita 4.0</h3>
+<p>La lista de nuevas funciones y modificaciones para la versión 4.x se ha terminado, por lo que ademas se ha programado el tiempo y la fecha de desarrollo y lanzamiento, dado los problemas antes mencionados, el plan de finalizar esta versión durante este año ha sido imposible, por lo tanto se ha propuesto marzo del 2018.</p>
+<p>entre las funciones que aun deseamos adoptar para ésta versión están:</p>
+<ul>
+<li>El pincel perezoso (Lazy brush) el cual facilita el colorear de manera mas rápida. (ya funciona, simplemente requiere de que se ponga a prueba)</li>
+<li>Pinceles apilados, la idea original ha sido descartada, se implementado una nueva versión, la cual funcionara de diferente forma.</li>
+<li>La nueva herramienta de texto, al igual que los pinceles apilados, se ha decidido el simplificar las ideas originales, Boudewijn aun esta trabajando en la orientación vertical del texto con Qt, pero no se espera el que este listo para el lanzamiento, por lo que se a decidido el hacer una herramienta simple pero que funcione correctamente para la mayoría de los usuarios.</li>
+<li>Algunas nuevas funciones como el controlador de Python y el nuevo editor de pinceles solo requieren de algunos ajustes por lo que se consideran casi listos.</li>
+</ul>
+<p>Se han encontrando problemas al tratar de implementar ciertas funciones, tales como la falta de Python y GStreamer en las appimages para Linux, ademas que la forma en la que se añade G&rsquo;Mic, no funciona correctamente; En OSX, G&rsquo;Mic simplemente no funciona, ademas que no se pueden importar documentos PDF. Por el momento la solución a estos problemas esta mas allá de lo que el equipo de Krita puede hacer, por lo que se hace un llamado a conocedores en la materia, los cuales pueden ayudar corregir tal código.</p>
+<p>El programa designado al lanzamiento sigue de la siguiente forma:</p>
+<ul>
+<li>El 31 de diciembre: Congelamiento, no se puede añadir nada extra, los componentes de Krita a este punto, son los que se lanzaran.</li>
+<li>El 3 de enero: Se lanza la primer versión de prueba beta.</li>
+<li>El 10 de enero: Se lanza la segunda versión de prueba beta, 4.0beta-1</li>
+<li>A partir del 10 de enero se proobeerá de versión de prueba diaria (siempre y cuando exista la facilidad de hacerlo)</li>
+<li>Tambien durante este tiempo mencionado, el equipo de dedicará casi exclusivamente a la correcion del codigo.</li>
+<li>El 7 de marzo: se lanza la primer prueba de los que sera la versión final de Krita 4.0</li>
+<li>El 14 de marzo: se lanza Krita 4.0</li>
+</ul>
+<p>Dada la capacidad del equipo, es necesario el enfocarse en la versión 4.0, por lo que los errores reportados de la versión anterior tendrán menor prioridad.</p>
+<h4 id="uso-del-hdr">Uso del HDR</h4>
+<p>Se han recibido varias veces, peticiones para que Krita se compatible con pantallas HDR, las cuales son diferentes a las de 10 bits por canal que son las que Krita puede funciona normalmente. La situación actual es que aun cuando los desarrolladores pueden que Krita detecte estos componentes, no hay mano de obra que se le pueda dedicar, ademas que el API parece ser algo que solo se usa en Windows.</p>
+<h4 id="get-hot-new-stuff">&ldquo;Get Hot New Stuff&rdquo;</h4>
+<p>es el sistema en que los programas y el software de KDE comparten archivos, estos se pueden descargar directamente del programa tal como lo fuera Krita, desafortunadamente, cuando ya casi se tenía implementado, se cambio el método en el que funciona el servidor por lo que por lo pronto ésta función quedara en pausa hasta que se descubra que es lo que esta fallando, es muy posible que no será parte de la versión 4.0</p>
+<h4 id="python-api">Python API</h4>
+<p>Durante el verano pasado, se recopilo una gran cantidad de experiencia con el uso del controlador Python en Krita, uno de los estudiantes del &ldquo;Google Summmer of Code&rdquo; a colaborado de gran manera abriendo las posibilidades en las que puede ser implementado.</p>
+<h4 id="summer-of-code">Summer of Code</h4>
+<p>Krita a participado en éste evento desde que se inició, y algunos de los desarrolladores de Krita comenzaron precisamente en este evento. Durante la asamblea se planeo como mejorar la participación del proyecto así como la forma de retener a los estudiantes aun cuando el evento se haya terminado. Uno de los problemas de éste evento es el limite impuesto en los estudiantes, los cuales solo pueden participar dos veces. sería mucho mejor y mas significante si se les permitiera participar durante todo el tiempo que cursan la universidad, lo cual ayuda que se mantengan activos con los proyectos como Krita.</p>
+<p>Para que las futuras participaciones sean mas substanciales, se ha decidido cambiar el método de elección de estudiantes. Se han creado una serie de tareas con diferentes valores (del 1 al 3), y solo los candidatos que logren por lo menos 6 puntos tendrán la oportunidad de sus entradas sean puestas en revisión. Ademas se desea que los participantes puedan navegar la estructura del código por lo que se requiere que hagan un diagrama de cualquier subsistema.</p>
+<h4 id="telemetría">Telemetría</h4>
+<p>Otra de las contribuciones del &ldquo;Google Summer of Code&rdquo; a sido el implementar una plataforma en la que se puede obtener información directamente del programa la cual muestra como es que se usa, se ha progresado en esta función pero no esta lista para ser implementada, su creador está haciendo su tesis en éste proyecto, lo cual lo mantiene en movimiento.</p>
+<h4 id="guía-de-contribución">Guía de contribución</h4>
+<p>Actualmente, la información acerca de como contribuir al código de Krita se encuentra dispersa entre el sitio web, el manual y el wiki de KDE, Jouni ha creado una <a href="https://docs.google.com/document/d/1xIhmocYvbNf4FsW6k9LuerFi0ojDrTGiYR6UsXYVVFo/edit?ts=5a16ab20">serie de reglas</a> la cual sera parte del manual. De hecho ya se ha comenzado con algunas partes: &ldquo;<a href="https://phabricator.kde.org/T7492">Como usar el rastreador de errores de código</a>&quot;(en ingles).</p>
+<p>Por lo pronto estos son los planes mas nuevos y vigentes del equipo de Krita. De antemano gracias a todos los usuarios por su apoyo, comprensión y esperamos sigan disfrutando de Krita.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 3.0.1 Beta Builds | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 3.0.1 Beta Builds</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>August 23, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>We&rsquo;ve made a new set of development builds in the road to Krita 3.0.1. Here are the most important bug fixes:</p>
+<ul>
+<li>Saving and exporting is much more robust (but make sure your temp folder has space)</li>
+<li>Using the threshold filter as a mask and the threshold filter preview for colorspaces other than 8 bits RGBA have been fixed.</li>
+<li>The 3_texture brush tip has been fixed</li>
+<li>Saving templates works again</li>
+<li>The color labels in the layer box look better</li>
+<li>The layout of the grids and guides docker is fixed</li>
+<li>Multi-threading in general has been improved, thanks to a patch by Andrew Savonichev</li>
+<li>Scaling is done before transformation of a brush so the new ratio option now looks more correct</li>
+<li>Some display issues (black screens) when using assistants on NVida GPU&rsquo;s have been fixed</li>
+<li>Switching brushes is much faster and doesn&rsquo;t leak memory</li>
+</ul>
+<p>In other news, the Krita team will get together in Deventer, the Netherlands, this weekend to meet in person! We&rsquo;ll be fixing bugs, discussing and planning new features and plans for new training videos and more!</p>
+<h4 id="windows">Windows</h4>
+<p>On Windows, Krita supports Wacom, Huion and Yiynova tablets, as well as the Surface Pro series of tablets. The portable zip file builds can be unzipped and run by double-clicking the krita link.</p>
+<p>Krita on Windows is tested on Windows 7, Windows 8 and Windows 10. There is only a Windows 64 bits build for now. Also, there is debug build that together with the DrMingw debugger can help with finding the cause of crashes. See the new <a href="https://docs.krita.org/KritaFAQ#How_can_I_produce_a_backtrace_on_Windows.3F">FAQ entry</a>. The Windows builds can be slower than usual because vectorization is disabled.</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/windows/devbuilds/krita-3.0.99.90-x64-beta.zip">krita-3.0.99.90-x64-beta.zip</a> (MD5 e98b07a732e05bcb86ba038badcb44a4)</li>
+<li><a href="http://files.kde.org/krita/3/windows/debugbuilds/krita3-x64-dbg-latest.zip">krita3-x64-dbg-latest.zip</a> (MD5 65220e9f12ead3bf2752c4db989634f4)</li>
+</ul>
+<h4 id="linux">Linux</h4>
+<p>For Linux, we offer <a href="http://appimage.org/">AppImages</a> that should run on any reasonable recent Linux distribution. You can download the appimage, make it executable and run it in place. No installation is needed. At this moment, we only have appimages for 64 bits versions of Linux. This appimage has experimental desktop integration.</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/linux/devbuilds/krita-3.0.99.90-x64.appimage">krita-3.0.99.90-x64.appimage</a> (MD5 2a39fddc1dece779ea36c3d03d08bb60)</li>
+</ul>
+<p>You can also get Krita from <a href="https://uappexplorer.com/app/krita.krita">Ubuntu’s App Store in snap format</a>. This version includes the translations for Krita itself. Install with</p>
+<p>snap install &ndash;beta krita</p>
+<h4 id="osx-and-macos">OSX and MacOS</h4>
+<p>Krita on OSX will be fully supported with version 3.1. Krita 3.0 for OSX is still missing Instant Preview and High Quality Canvas scaling. There are also some issues with rendering the image — these issues follow from Apple’s decision to drop support for the OpenGL 3.0 compatibility profile in their display drivers and issue with touchpad and tablet support. We are working to reimplement these features using OpenGL 3.0 Core profile. For now, we recommend disabling OpenGL when using Krita on OSX for production work. Krita for OSX runs on 10.9, 10.10, 10.11 and is reported to work on MacOS too.</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/osx/devbuilds/krita-3.0.99.90.dmg">krita-3.0.99.90.dmg</a> (a4c2dc7c51aa43adee7acceacaf82164)</li>
+</ul>
+<h4 id="source">Source</h4>
+<ul>
+<li><a href="http://files.kde.org/krita/3/source/krita-3.0.99.90.tar.gz">krita-3.0.99.90.tar.gz</a> (MD5 e5b50274b617cb5356030aa22cbcdf1b)</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

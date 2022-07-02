@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last Month in Krita: August 2018 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last Month in Krita: August 2018</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>September 7, 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>We used to do a weekly development news post&hellip; Last Week in Krita. But then we got too busy doing development to maintain that, and that&rsquo;s kind of a pity. Still, we&rsquo;d like to share what we&rsquo;re doing with you all &ndash; and not just through the <a href="https://github.com/KDE/krita">git history</a>! So, let&rsquo;s try to revive the tradition&hellip;</p>
+<p>In August, we started preparing for our next big Fund Raiser. Mid-September to mid-October, we&rsquo;ll be raising funds for the next round of Krita development. The last fund raisers were all about features: this will be all about stability and polish. <strong>Zero Bugs</strong>, while obviously unattainable, is to be the rallying cry! We&rsquo;re moving to a new payment provider, to make it possible to <a href="/support-us/donations/">donate</a> to Krita with other options than paypal or a direct bank transfer. Credit cards, various national e-payment systems and even bitcoin will become possible. It&rsquo;s up already <a href="/support-us/donations/">on our donation page</a>!</p>
+<p>We&rsquo;ve already made a good start on stability and polish by fixing our unittests &ndash; small bits of code that test one or another function of Krita and that we run to see whether new code breaks something. We also fixed almost a hundred bugs. And, of course, the <a href="/item/kritas-2018-google-summer-of-code/">Google Summer of Code</a> came to an end.</p>
+<p>But let&rsquo;s look at some highlights in a bit more detail:</p>
+<h3 id="polish-polish-polish">Polish, polish, polish</h3>
+<p>After porting Krita to Qt5, we were left with dozens of unittests that didn&rsquo;t work anymore. They wouldn&rsquo;t build, they would hang, they would give the wrong results or even crash. August was almost too warm to really work on anything too complicated, so all we did was fix stuff. Well, apart from all the other work we&rsquo;ve been doing, of course&hellip;</p>
+<h3 id="improving-selections">Improving Selections</h3>
+<p>Dmitry, one of our core developers, whose work is funded by your donations, has been working for a couple of weeks on <a href="https://phabricator.kde.org/T3920">improving selections</a> in Krita. Selections in Krita are a bit different from other applications, since we have both local and global selections, and selections can be visualized with marching ants or as a mask. And a selection can either consist of pixels, or of vector objects. So, he has worked on like:</p>
+<ul>
+<li>Painting on the selection mask in realtime</li>
+<li>Make it possible to have more than one local selection</li>
+<li>Adding opaque, intersect opaque and remove opaque from the global selection</li>
+<li>A selection is automatically created when you select &ldquo;show global selection&rdquo;.</li>
+<li>Conversions between vector and pixel selections</li>
+<li>Making it possible to modify selections</li>
+</ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/gWv--Do9L0E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="rewriting-resource-management">Rewriting Resource Management</h3>
+<p>Resources are things you want to use with Krita. Brush tips for instance, or brush presets. Or gradients, or patterns, or workspaces. Some resources come with Krita by default, some you&rsquo;ll create yourself, some you&rsquo;ll want to download. Krita&rsquo;s resource system dates back to the 20th century, or, if you prefer, the previous millennium. It was designed in the days when a 50 pixel brush was <strong>BIG</strong>, and patterns would be 128 x 128 pixels. These days, people want to use 1000 pixel brushes, 5000 pixel patterns and lots of them.</p>
+<p>The original design for handling resources doesn&rsquo;t scale any more! And besides, after over twenty years of hack work, it&rsquo;s a mess. Doing a rewrite is <a href="https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/">almost always a mistake</a>, but&hellip; We&rsquo;re working on rewriting that part of Krita anyway. Boudewijn is making lots of progress, but nothing much that anyone can see, except for <a href="https://phabricator.kde.org/T379">the Phabricator task</a>. It&rsquo;s been something we&rsquo;ve been planning and discussing for a long time. All bugs with tagging, adding, removing and changing resources should be fixed in one big bang!</p>
+<p>That&rsquo;s the plan at least&hellip;  There&rsquo;s still a way to go!</p>
+<p><a href="/images/posts/2018/resource_db_explorer.png"><img src="/images/posts/2018/resource_db_explorer-300x145.png" alt=""></a></p>
+<p>And then, there were the usual surprises and little extras:</p>
+<h3 id="new-and-unexpected">New and unexpected</h3>
+<p>A pretty amazing new feature is the gamut mask, created by Anna Medonosova. This includes both editing and applying of the mask to the artistic color selector. See <a href="https://gurneyjourney.blogspot.com/2008/01/color-wheel-masking-part-1.html">James Gurney&rsquo;s blog post for some background information</a>.</p>
+<p><a href="/images/posts/2018/gamut.png"><img src="/images/posts/2018/gamut-300x300.png" alt=""></a></p>
+<p>There&rsquo;s now also a debug log docker, so Windows users don&rsquo;t have to mess with debug view again:</p>
+<p><a href="/images/posts/2018/log-docker.png"><img src="/images/posts/2018/log-docker-300x300.png" alt=""></a>(Artwork by <a href="http://LifeFinalEdited.pl">Iza Ka</a>)</p>
+<p>And there&rsquo;s more, of course! Reptorian has created a bunch of new blending modes and is now working on a new selection intersection mode. Jouni has been fixing issues to the reference images docker and has implemented <a href="https://phabricator.kde.org/T8764">clone frames for animation</a>!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

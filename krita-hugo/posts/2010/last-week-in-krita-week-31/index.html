@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last Week in Krita -- week 31 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last Week in Krita -- week 31</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>August 10, 2010</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>The most memorable occasion in the past weekend was also a very joyous one: Cyrille Berger were married in Kalix, Sweden! I am sure that every reader will join me in a round of congratulations and wishes for happiness! Cyrille is one of the pillars of Krita, of course, and Hanna has committed to Krita as well!</p>
+<p>We&rsquo;re nearing the end of the Summer of Code time and are beginning the long, hard slog towards a useful release. Silvio Grosso has once again offered to extend Lukáš Tvrdý&rsquo;s full-time involvement in Krita &ndash; one reason I am very confident about this release! I have started writing for the manual for real, writing reams of text. David Revoy has prepared a big, multi-page pdf showing exactly where he thinks we still have usability issues. Reassuringly, many of his points coincide with Peter Sikking&rsquo;s ideas. And we&rsquo;ve begun the process of identifying what needs to be fixed and what will need to be disabled.</p>
+<p>I am already excited about the things artists will be able to do with 2.3 &ndash; if you all help us by testing Krita throughout this period.</p>
+<p>On that note, I am pleased to announce that there will be a Krita Bug Day (or rather weekend) August 21 and 22. More details will follow, but what we need there is go through our bugs and verify those on as many different systems as possible.</p>
+<h3 id="blogs-and-press">Blogs and press</h3>
+<p><a href="http://www.linux-magazin.de/">Linux Magazin</a> has published a very nice 1-page article on Krita. Boudewijn is mentioned as co-author, but all he did was deliver screenshots and a fact sheet &ndash; the following choice quote is from the main author &ldquo;Fur den anspruchsvollen Digital-Kunstler, der seine Werke am Rechner entwirft und bearbeited, bleiben bij Krita fast keine Wunsche offten.&rdquo;!</p>
+<ul>
+<li>
+<p><a href="http://pentalis.org/kritablog/?p=225">Pentalis: Phong bumpmaps, and using the deform brush to make molten gold</a></p>
+</li>
+<li>
+<p><a href="http://lukast.mediablog.sk/log/?p=313">Lukas Tvrdy: Week 31: Fixing custom and predefined brushes</a></p>
+</li>
+</ul>
+<h3 id="code">Code</h3>
+<p><strong>Adam Celarek</strong> was again busy with his Summer of Code project: the Next Generation Color Selector. David Revoy remarked about it:</p>
+<blockquote>
+<p>&hellip; this color selector is simply the best color selector for me.<br>
+I love this tool, configured this way: auto palette from the image on right, color shade on bottom, and last picked color on the very bottom.</p>
+</blockquote>
+<p>Most of Adam&rsquo;s work has gone into the minimal shade selector, adding shortcuts and polishing. Adam also fixed display issues with the canvas rulers that occurred when a selection was active.</p>
+<p><img src="/images/posts/2010/colorsel_ng.png" alt=""></p>
+<p><strong>Boudewijn Rempt</strong> finally had most of a Saturday to himself. He first enabled a preview of the integrated brush designer, a one-stop place for selecting the brush engine, configuring the settings for a preset and a preset. Some people like it, but there are still issues with spit and polish there. Also, Boudewijn fixed a memory leak.</p>
+<p><strong>José Luis Vergara</strong> fixed the a bug both in the smudge brush as in the hatching brush: neither respected the selection when painting. At the same time, the code for the smudging brush was cleaned up considerably. Then he went on with his Google Summer of Code project: the impasto effect. Now the phong bump map filter is fast enough to use as an adjustment layer, and there&rsquo;s a gui to configure the filter. Next step &ndash; the impasto effect?</p>
+<p><strong>Lukáš Tvrdý</strong> was in bug-fixing mode this week, mainly focussed on fixing issues when painting with colored brushes as masks, then fixing bugs in the on-canvas brush scaling feature, fixing the scaling of Gimp Image Hose (.gih) brushes &ndash; we use those a lot now, with David Revoy&rsquo;s Chaos and Evolutions brush set being our default. Finally he fixed issues with the brush outline cursor.</p>
+<p><strong>Marc Pegon</strong> finished the warp transformation mode and started designing the free transform user interface, implemented undo/redo for warp transform and prepared the way for two more methods of warping the image on-canvas.</p>
+<p><strong>Sven Langkamp</strong> fixed a very nasty bug: it turned out that when using the pixel selection mode (opposed to the vector selection mode) the rightmost column and bottom-most row of pixels couldn&rsquo;t be selected.</p>
+<h3 id="envoi">Envoi</h3>
+<p>Krita is beginning to look <em>good</em>&hellip; Give it a try yourself!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita Features | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita Features</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>December 24, 2009</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Krita is an application for image creation and image manipulation. We focus on painting, illustration, concept art and other creative work. This is a short an incomplete list of the most important features Krita provides. </p>
+<p>Krita provides an OpenGL based canvas in addition to an unaccelerated canvas. Krita&rsquo;s filters, histogram computation and image recomposion are multi-threaded and make use of multiple cores if available. The effect of filters is previewed on-canvas.</p>
+<p>Scripting and recording are works in progress.</p>
+<h2 id="file-formats">File Formats</h2>
+<p>Krita has support for a variety of file formats. Not all file formats are supported equally well, and for some there is only import, not export. Krita supports metadata for kra, ora, tiff, jpeg and png file formats.</p>
+<ul>
+<li>bmp: export only</li>
+<li>jp2: export, import</li>
+<li>jpeg: export, import</li>
+<li>ora: export, import</li>
+<li>pdf: import only</li>
+<li>png: export, import</li>
+<li>ppm: export, import</li>
+<li>raw: import only (based on dcraw)</li>
+<li>tiff: export, import</li>
+<li>xcf: import only</li>
+</ul>
+<p>In preparation are support for gif, psd (only up to Photoshop 7) and eps.</p>
+<h2 id="color-models">Color models</h2>
+<p>Krita does not support indexed color models. In general, Krita does not support color models without an alpha channel. Krita supports different channel depths, from 8 bits integer to 32 bits floating point per channel.</p>
+<ul>
+<li>RGB: 8, 16 bits integer, 16, 32 bits floating point</li>
+<li>CMYK: 8, 16 bits integer</li>
+<li>Grayscale: 8, 16 bits integer</li>
+<li>La*b*: 16 bits integer</li>
+<li>YCbCr: 8, 16 bits integer</li>
+<li>XYZ: 16 bits integer, 16, 32 bits floating point</li>
+<li>Painterly colorspaces: colorspaces that represent 3-10 wavelength channels in 16/32 bits floating</li>
+</ul>
+<h2 id="layer-types">Layer types</h2>
+<p>Krita supports the both layers and masks. Masks are associated with a single layer, while layers are grouped in a hierarchy.</p>
+<ul>
+<li>group layer: groups layers toegether in a hierarchy</li>
+<li>paint layer: contains raster image data</li>
+<li>filter layer: non-destructively filters all the layers underneath the filter layer in the current group</li>
+<li>clone layer: puts a duplicate of the original layer in a different place in the layer stack</li>
+<li>vector layer: contains vector data, such as vectors, text or complex objecs such as charts</li>
+<li>transparency mask: mask out parts of the associated layer</li>
+<li>filter mask: non-destructively filter parts of the associated layer</li>
+<li>local selection mask: make parts of the associated layer uneditable without masking those parts out</li>
+</ul>
+<h2 id="tools">Tools</h2>
+<p>There are several types of tools: vector tools, raster tools, guidance tools, canvas tools and selection tools. Note some types of content are not implement as tools but as &ldquo;shapes&rdquo; that can be inserted, for instance richt text, text-on-a-path or geometric shapes.</p>
+<h3 id="vector-tools">Vector tools</h3>
+<ul>
+<li>object manipulation tool</li>
+<li>connection tool</li>
+<li>path tool</li>
+<li>freehand path tool</li>
+<li>pattern tool</li>
+<li>vector shape filter tool</li>
+<li>calligraphy tool</li>
+<li>gradient tool</li>
+<li>zoom tool</li>
+<li>pan tool</li>
+</ul>
+<h3 id="raster-tools">Raster Tools</h3>
+<ul>
+<li>freehand paint</li>
+<li>line</li>
+<li>rectangle</li>
+<li>ellipse</li>
+<li>polygon</li>
+<li>polyline</li>
+<li>start</li>
+<li>stroked path (non-editable)</li>
+<li>dynatool</li>
+<li>fill with pattern or color<br>
+color selector<br>
+gradient</li>
+</ul>
+<h3 id="canvas-tools">Canvas Tools</h3>
+<ul>
+<li>crop</li>
+<li>move layer</li>
+<li>transform tool</li>
+<li>distance calculation</li>
+</ul>
+<h3 id="guidance-tools">Guidance Tools</h3>
+<ul>
+<li>ruler assistant</li>
+<li>perspective grid</li>
+<li>grid</li>
+</ul>
+<h3 id="selection-tools">Selection Tools</h3>
+<ul>
+<li>rectangle select</li>
+<li>elliptical select</li>
+<li>polygon select</li>
+<li>outline select</li>
+<li>fill select</li>
+<li>select similar colors</li>
+<li>path select</li>
+</ul>
+<p>(There is no magnetic outline selection tool at the moment)</p>
+<h2 id="brush-engines">Brush engines</h2>
+<p>Krita is different from other applications in that it supports brush engine plugins. These brush engines are used in the pixel tools to stroke your painting.</p>
+<ul>
+<li>pixel brush: compatible with Gimp&rsquo;s .gbr and .gih brushes, as well as custom brush tips and text</li>
+<li>duplicate: duplicate pixels from the current or another layer</li>
+<li>deform: deform existing pixels</li>
+<li>dyna: paint with movement strength</li>
+<li>spray: spray pixels or images</li>
+<li>filter: paint with a filter</li>
+<li>sumi-e: model a hairy brush</li>
+<li>airbrush: deposit color at a rate</li>
+<li>smudge: smudge existing pixels</li>
+<li>eraser: erase pixels</li>
+<li>grid: paint a grid of pixels</li>
+<li>mixing: mix colors on the canvas</li>
+<li>curve: random jitter and curving along the stroke</li>
+<li>chalk: model drawing with chalk</li>
+<li>pencil: draw aliased lines</li>
+</ul>
+<p>In preparation is a brush engine plugin that is compatible with MyPaint&rsquo;s brush definitions.</p>
+<h2 id="filters">Filters</h2>
+<p>Krita provides filters that can be used directly, i.e. destructively on the pixels of a layer, when painting, or dynamically as a filter layer or filter mask.</p>
+<ul>
+<li>dodge, burn</li>
+<li>levels</li>
+<li>color adjustment curves</li>
+<li>brightness contrast curves</li>
+<li>desaturate</li>
+<li>invert</li>
+<li>autocontrast</li>
+<li>hsv adjust</li>
+<li>cubism</li>
+<li>pixelize</li>
+<li>raindrops</li>
+<li>oilpaint</li>
+<li>blur, gaussian blur</li>
+<li>color to alpha</li>
+<li>color transfer</li>
+<li>minimize, maximize channel</li>
+<li>top, left, bottom, right, sobel edge detection</li>
+<li>sharpen, mean removal, unsharp mask, gaussian and wavelet noise reducer</li>
+<li>various emboss</li>
+<li>small tiles</li>
+<li>bumpmap</li>
+<li>wave</li>
+<li>random noise</li>
+<li>lens correction</li>
+<li>random pick</li>
+<li>random</li>
+<li>OpenShiva-based filters</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

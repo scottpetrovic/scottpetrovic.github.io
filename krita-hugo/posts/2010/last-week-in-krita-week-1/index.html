@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last week in Krita -- week 1 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last week in Krita -- week 1</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>January 11, 2010</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>6 min</em></span> 
+        
+        
+    </div>
+
+    <p>Wheee! Week 1! This week turned out to be a sort of flying start of 2010 for Krita, with lots happening in the source, preparations being made for the February sprint and some work on the manual being done.</p>
+<h4 id="code">Code</h4>
+<p>There have been about 70 commits this week, which is kind of a record.</p>
+<p>The week started with Cyrille Berger starting work on a new OpenEXR import/export plugin. OpenEXR is kind of a complex library, and the previous import/export plugin was using API&rsquo;s that made it impossible to handle multi-layer OpenEXR images. The new plugin has been designed from the start to do just that. While working on this plugin, Cyrille noticed that we are having some problems with memory consumption. This was partly caused by <a href="http://opengtl.org">OpenGTL</a> leaking memory, so Cyrille committed lots of fixes in that library as well. We&rsquo;re still not done, though: Dmitry is looking into some leakage problems in the tiles engine, and LLVM is still using way too much memory. Cyrille also fixed a number of crashes in the bracketing-to-hdr feature.</p>
+<p>Boudewijn Rempt finished the import side of the new gif filter. Actually, I&rsquo;m not sure whether Krita ever could <em>load</em> gifs &ndash; I think the old GraphicsMagick-based filter only provided export for gif. Boudewijn is now working on making export to gif work again &ndash; but it is a bit of a why-bother thing. Krita simply doesn&rsquo;t support and won&rsquo;t ever (probably&hellip;) support indexed images, so Krita will never be the tool of choice for creating animated smileys. But it&rsquo;s not much code, since we can follow the lead of Shawn Rutledge&rsquo;s read/write qimgio <a href="http://gitorious.org/qt-gif-plugin">gif plugin</a>. This code adds a new dependecy to Krita, namely <a href="http://sourceforge.net/projects/giflib/">giflib</a>. Boudewijn also did some work on the Photoshop filter, but there&rsquo;s nothing finished there yet, and he implemented a unittest that shows that the mypaint-compatible brush engine is beginning to come together. (I still need to find a voice here&hellip; First person, third person&hellip;)</p>
+<p>Adrian Page fixed a lot of problems with OpenGL on Windows. Krita now uses the OpenGL 2.0 core API for our shaders. Kai-uwe Behrmann started a discussion on the mailing list about why Krita doesn&rsquo;t use the full capabilities of the 30-bit displays that are becoming available. Boudewijn provided a first patch to make that work, which was reviewed by Adrian and needs more work. It looks like it <em>will</em> be possible, but it might cause OpenGL to take some slow paths: there&rsquo;s some more work to be done here. Adrian also did some much-needed janitorial work removing deprecated constructs from almost all Krita plugins.</p>
+<p>Marc Pegon joined us on #krita and started working on a very annoying bug: drag and drop of images from konqueror would work, but if you tried to drag an image from Firefox, nothing would happen. Marc sleuthed his way through the code and managed to produce his first patch just in time for inclusion in this weeks&rsquo; Last Week in Krita. It&rsquo;ll be committed today. Welcome to the team, Marc!</p>
+<p>Adam Celarek came back from his holiday in Tyrol and committed a big cleanup of the selection tools. The selection and paint tools now share the same common behaviour and the settings for the selection tools are represented by nice new icons created by Enkithan. Note that the shortcut for hiding the dockers is now ctrl-h, not Escape, since Adam discovered that setting the shortcut to Escape hid the most obvious way to close a patch in the polygon tools.</p>
+<p>Lukáš Tvrdý was busy with his exams, but still managed to commit a new brush engine, the Soft Brush, which gives a very nice cloudy and almost-wet effect when using the right settings.</p>
+<p>Those brush settings&hellip; There are so many now that it might be easier to write your own brush engine than to discover the best settings for some engines. We&rsquo;ve long wanted to introduce the concept of presets, so you can save and load particular settings for particular brush engines. Well, Sven Langkamp is this weeks hero because he started working on that and came a long way towards this goal. He cleaned out reams of duplicate code in the brush engines to begin with and then continued to make saving and loading of presets work. There is still a lot to do, but the progress is enormous.</p>
+<p><img src="http://krita2d.org/images/stories/krita-feature-images/krita-presets-1.png" alt=""></p>
+<h4 id="manual">Manual</h4>
+<p>A quality application needs a quality manual. Krita 1.6 had a pretty good manual, one that went beyond the usual listings of menu items and dialog screens. Unfortunately, Krita 2 is really and thoroughly a different application from 1.6: we might be able to salvage a paragraph here and there, but that&rsquo;s it. So I&rsquo;ve started a new manual on <a href="http://userbase.kde.org">Userbase</a>, which is the current place for application documentation. And since userbase is a wiki, anyone can grab a chapter and write a few lines! The goal with this manual is once again to produce a useful manual that teaches people how to use Krita. Please go through <a href="http://userbase.kde.org/Krita/Manual/">the table of contents</a>! We also want to integrate video tutorials in this manual, for instance by hosting the videos on vimeo or something like that, and embedding them in the manual.</p>
+<p>I hardly dare to say this&hellip; But I really expect that by this time next year the first books about Krita will start being written.</p>
+<h4 id="bugs">Bugs</h4>
+<p>Erm&hellip; We&rsquo;re at 87 bugs at the time of writing, despite a good number being closed this week. And our unittests aren&rsquo;t too hot either&hellip; And, as said above, we have to watch our memory consumption a bit. But that&rsquo;s par for course in this stage of development: everyone is rushing to get the <a href="http://wiki.koffice.org/index.php?title=Schedules/KOffice/2.2/Feature_Plan#Krita">promised features</a> (check it out, the plan has got colors now) in before the <a href="http://wiki.koffice.org/index.php?title=Schedules/KOffice/2.2/Release_Plan#Soft-freeze.2C_January.2C_13th_2010">soft freeze</a> hits us. (Which is a weird thing to say, since it&rsquo;s been a hard freeze all over Europe for weeks now!)</p>
+<h4 id="sprint">Sprint</h4>
+<p>Well, the sprint is coming closer and closer. I&rsquo;ve booked accomodation now, since there&rsquo;s no way I can fit all the attendants in my house &ndash; and for the vision session, we even might have to find an alternative to the kitchen table!</p>
+<p>And since a good sprint is a sprint with a t-shirt, I&rsquo;ve <a href="http://www.valdyas.org/fading/index.cgi/software/krita/krita-hackathon-2010-shirt.html">made a call for designs</a>. Our webmaster Kubuntiac has replied with <a href="http://forum.kde.org/viewtopic.php?f=137&amp;t=85022">a very cool design</a>, but the issue is still wide open, of course, and no artist should feel prevented from joining in the fray! Just a note: black t-shirts seem favoured by most hackers&hellip;</p>
+<p>That all for now &ndash; if you have comments, hie yourself to our <a href="http://forum.kde.org/viewforum.php?f=136">forums&gt;</a> and discuss!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

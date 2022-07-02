@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Marley was dead: to begin with. There is no doubt whatever about that. | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Marley was dead: to begin with. There is no doubt whatever about that.</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>December 21, 2014</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Well, <a href="http://www.gutenberg.org/ebooks/46">Marley might be dead</a>, but Krita ain&rsquo;t! So, here&rsquo;s what&rsquo;ll be the last beta build of Krita before the festive season really breaks lose. Apart from building, the Krita hackers have had a <em>pretty</em> good week, with lots of deep discussions on animation and coding safety, too.</p>
+<p>Oh &ndash; and there&rsquo;s a <a href="http://www.patreon.com/davidrevoy">seasonal surprise</a> for you, if you start one of these builds!</p>
+<p>In the new builds, not quite beta 2 yet, just another build in between the last beta and the next beta, there are the following fixes:</p>
+<ul>
+<li>Stefano Bonicatti fixed a bunch of memory issues, and is tracking more and more of them &ndash; also threading issues, and issues with AMD graphics cards.</li>
+<li>Boudewijn added a new option to use Krita to convert images: <strong>krita bla.png &ndash;export &ndash;export-filename bla.jpg</strong> will convert bla.png to bla.jpg. This replaces the calligraconverter utility.</li>
+<li>The &lsquo;hairy brush&rsquo; is now called the &lsquo;bristle brush&rsquo;</li>
+<li>PDF export has been fixed to export landscape as landscape and portrait as portrait, instead of everything as portrait, when using any paper size except A4. (A4 already worked fine).</li>
+<li>The filter dialog (filters, filter layers, filter masks) no longer show a big thumbnail. The thumbnail was getting in the way of the filter&rsquo;s name, and frequently didn&rsquo;t get rendered correctly/.</li>
+<li>Deleting the last node (layer or mask) in a group would lead Krita to having no node selected, causing crashes in filters. That got fixed, too.</li>
+<li>On loading or creating the first image, the default tool is once again the freehand brush, and besides, the tool options are now shown.</li>
+<li>Select-all is back</li>
+<li>In tab-mode, the tabs now keep the right caption</li>
+<li>A crash when flattening layers was fixed</li>
+<li>Jouni Pentikäinen fixed the outline cursor preview of a rotating brush</li>
+<li>Selecting a document size specified in anything but pixels was broken; that works now, too. Thanks to Joe for the detailed bug report!</li>
+<li>Every open subwindow can now have its own exposure and gamma settings, when a HDR image is  loaded an OpenColorIO is active</li>
+<li>A bunch of fixes to the tablet subsystem were committed by Dmitry. Painting should be much smoother now &ndash; and we&rsquo;ve also figured out why some n-trig devices do weird stuff. They tell us their maximum pressure is 255, but then send us tablet strokes with pressure in the 0 to 1024 range!</li>
+<li>Wolthera fixed an issue with darkening around the color smudge brush&rsquo;s radius</li>
+<li>Dmitry made it possible to drag &amp; drop layers from one subwindow to another.</li>
+<li>And made it possible again to drag &amp; drop images from web-browsers</li>
+<li>The locked status of docking panels now is kept properly</li>
+<li>(But on Windows, the minimum width of the toolbox now is three icons &ndash; investgations are ongoing)</li>
+<li>Scott cleaned up the precision setting in the brush editor</li>
+<li>Lukáš worked like a beaver on the G&rsquo;Mic plugin and updated it to the latest version, added proper layer synchronization &ndash; and, tada! &ndash; on Linux/X11 enabled the interactive filter feature. Interactive Colorize now works on Linux, from within Krita. Press Space for the best effect!</li>
+<li>Sven and Stefano fixed a crash when opening one image after closing another and changing the OpenGL settings in between.</li>
+<li>Timothée Giet updated all color-smudge brush presets</li>
+<li>Dmitry fixed a crash in the duplicate brush engine when using a tablet device</li>
+<li>Sven fixed loading brush presets from bundles</li>
+</ul>
+<p>And that ties in with a lot of work Wolthera has done. Building on Victor Lafon&rsquo;s work earlier this year to make it possible to package resources &ndash; brushes, gradients, patterns, everything &ndash; in bundles, she&rsquo;s hit her stride and figured out what was broken and what needs to be added. But&hellip; It&rsquo;s already possible to load a bundle into Krita, and use the resources!</p>
+<p><a href="/images/posts/2014/resources.png"><img src="/images/posts/2014/resources-300x204.png" alt="resources"></a></p>
+<p>And here&rsquo;s the <a href="https://www.dropbox.com/s/4nj8t4538f5wx2s/Wolthera_Inking_Pack.bundle?dl=0">first bundle, with inking brushes</a>! If you want to get into the game, remember, this is still barely ripe. Also check the <a href="https://community.kde.org/Krita/Brushes_Preset_Preview">brush preset guidelines</a>!</p>
+<h3 id="downloads">Downloads</h3>
+<p>There are still  <a href="https://bugs.kde.org/buglist.cgi?bug_severity=critical&amp;bug_severity=grave&amp;bug_severity=major&amp;bug_severity=crash&amp;bug_severity=normal&amp;bug_severity=minor&amp;bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;list_id=1167792&amp;product=krita&amp;query_format=advanced">230 bugs</a> at the moment, down from 234, even though we fixed more than thirty bugs! Some of these bugs might cause dataloss, so users are recommended to use the beta builds for testing, not for critical work!</p>
+<p>For Linux users, Krita Lime will be updated on Monday. Remember that launchpad is very strict about the versions of Ubuntu it supports. So the update is only available for 14.04 and up.</p>
+<p>OpenSUSE users can use the new OBS repositories created by Leinir:</p>
+<ul>
+<li><a href="http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.1/">http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.1/</a></li>
+<li><a href="http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.2/">http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.2/</a></li>
+<li><a href="http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_Factory/">http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_Factory/</a></li>
+</ul>
+<p>Windows users can choose between an installer and the zip file. You can unzip the zip file anywhere and start Krita by executing bin/krita.exe: this only works if you have the right Microsoft Visual Studio C runtime library. Otherwise, use the MSI file. We only have 64 bits Windows builds at the moment, we’re working on fixing a problem with the 32 bits build.</p>
+<ul>
+<li><a href="http://files.kde.org/krita/windows/krita_x64_2.8.90.2.zip">http://files.kde.org/krita/windows/krita_x64_2.8.90.2.zip</a></li>
+<li><a href="http://files.kde.org/krita/windows/krita_x64_2.8.90.2.msi">http://files.kde.org/krita/windows/krita_x64_2.8.90.2.msi</a></li>
+</ul>
+<p>OSX users can open the dmg and copy krita.app where they want. Note that OSX still is <em>not</em> supported. There are OSX-specific bugs and some features are missing.</p>
+<ul>
+<li><a href="http://files.kde.org/krita/osx/krita-2.8.80.2.dmg">http://files.kde.org/krita/osx/krita-2.8.80.2.dmg</a></li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

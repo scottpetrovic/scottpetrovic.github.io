@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Krita Site</title>
+    <link>https://krita.org/categories/</link>
+    <description>Recent content in Categories on Krita Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>news</title>
+      <link>https://krita.org/categories/news/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/categories/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorials</title>
+      <link>https://krita.org/categories/tutorials/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>officialrelease</title>
+      <link>https://krita.org/categories/officialrelease/</link>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/categories/officialrelease/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>artist-interview</title>
+      <link>https://krita.org/categories/artist-interview/</link>
+      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/categories/artist-interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development-builds</title>
+      <link>https://krita.org/categories/development-builds/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/categories/development-builds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uncategorized-es</title>
+      <link>https://krita.org/categories/uncategorized-es/</link>
+      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/categories/uncategorized-es/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

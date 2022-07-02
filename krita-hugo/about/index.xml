@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>History on Krita Site</title>
+    <link>https://krita.org/about/</link>
+    <description>Recent content in History on Krita Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 16 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Krita Foundation</title>
+      <link>https://krita.org/about/krita-foundation/</link>
+      <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/about/krita-foundation/</guid>
+      <description>Krita Foundation The Krita project was started by the KDE community in 1998. Krita is still part of the KDE community: all Krita contributors are KDE community members!</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://krita.org/about/license/</link>
+      <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/about/license/</guid>
+      <description>License for usage Krita Application Krita is licensed under the GNU General Public License (GPL), version 3. This license gives you the following rights:</description>
+    </item>
+    
+    <item>
+      <title>Mascot</title>
+      <link>https://krita.org/about/mascot/</link>
+      <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/about/mascot/</guid>
+      <description>Kiki the Mascot Kiki the Cyber Squirel, or just Kiki, is Krita&amp;rsquo;s mascot. We chose a squirrel because the word &amp;ldquo;krita&amp;rdquo; means &amp;ldquo;squirrel&amp;rdquo; in Albanian.</description>
+    </item>
+    
+    <item>
+      <title>Press</title>
+      <link>https://krita.org/about/press/</link>
+      <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/about/press/</guid>
+      <description>Press Krita is the full-featured free digital painting studio for artists who want to create professional work from start to end.</description>
+    </item>
+    
+  </channel>
+</rss>

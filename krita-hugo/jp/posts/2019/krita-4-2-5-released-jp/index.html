@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.2.5リリース | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.2.5リリース</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>August 5, 2019</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>2 min</em></span> 
+        
+        
+    </div>
+
+    <p>Krita 4.2.4には特定のツールがアクティブな場合においてショートカットの処理のバグが残っていることが判明しました。できる限り早くそのバグを修正するよう作業しました。その結果のKrita 4.2.5をリリースします。この新しいリリースへの更新を強く推奨します。</p>
+<h2 id="修正されたバグ">修正されたバグ</h2>
+<ul>
+<li>Fix an assert in the transform tool when working with a tablet and touch</li>
+<li>Fix continued transformation in the transform tool</li>
+<li>Fix updates in the transform tool</li>
+<li>Show the publication time in the welcome page news ticker in the user&rsquo;s preferred short date/time format</li>
+<li>Fix using the tangent-normal brush when the canvas is rotated or mirrored (<a href="https://bugs.kde.org/show_bug.cgi?id=404408">BUG:404408</a>)</li>
+<li>Make it possible again to create new palettes and save them in the resource folder, instead of the current document (<a href="https://bugs.kde.org/show_bug.cgi?id=410137">BUG:410137</a>)</li>
+<li>Make Krita not gobble up all available memory when loading a JPG file with specific metadata (<a href="https://bugs.kde.org/show_bug.cgi?id=410242">BUG:410242</a>)</li>
+<li>Constrain assistant editors to the viewport, so they can always be manipulated</li>
+<li>Make sure Krita stores changes to brush presets in the current session by default (<a href="https://bugs.kde.org/show_bug.cgi?id=410463">BUG:410463</a>)</li>
+<li>Remove an assert that could be triggered when opening the first image in a session</li>
+<li>Update the version of the default input settings profile, so the rotate/zoom action will be activated even if the user already had a local kritadefault.profile file</li>
+<li>Fix a crash on using the move tool while the image is being opened (<a href="https://bugs.kde.org/show_bug.cgi?id=398968">BUG:398968</a>)</li>
+<li>Make sure the painting tools don&rsquo;t block anymore (BUG:409968,408826,409275)</li>
+<li>Make the shortcut handling system more tolerant when shortcuts overlap (<a href="https://bugs.kde.org/show_bug.cgi?id=409968">BUG:409968</a>)</li>
+<li>Fix a crash in the transform tool</li>
+<li>Make the transform tool and the move tool more responsive</li>
+</ul>
+<h2 id="ダウンロード">ダウンロード</h2>
+<h3 id="windows">Windows</h3>
+<p>Windowsユーザーの皆さんへ：もしクラッシュする事案に遭遇した場合は、<a href="https://docs.krita.org/en/reference_manual/dr_minw_debugger.html#dr-minw">この案内（英語）</a> に従いデバッグシンボルをKritaに追加してください。これによってKritaがクラッシュした原因をログから解析できるようになります。</p>
+<ul>
+<li>
+<p>64 bits Windows: <a href="https://download.kde.org/stable/krita/4.2.5/krita-x64-4.2.5-setup.exe">krita-x64-4.2.5-setup.exe</a></p>
+</li>
+<li>
+<p>Portable 64 bits Windows: <a href="https://download.kde.org/stable/krita/4.2.5/krita-x64-4.2.5.zip">krita-x64-4.2.5.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.2.5/krita-x64-4.2.5-dbg.zip">デバッグシンボル(Kritaをインストールしたフォルダに展開して使用)</a></p>
+</li>
+<li>
+<p>32 bits Windows: <a href="https://download.kde.org/stable/krita/4.2.5/krita-x86-4.2.5-setup.exe">krita-x86-4.2.5-setup.exe</a></p>
+</li>
+<li>
+<p>Portable 32 bits Windows: <a href="https://download.kde.org/stable/krita/4.2.5/krita-x86-4.2.5.zip">krita-x86-4.2.5.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.2.5/krita-x86-4.2.5-dbg.zip">デバッグシンボル(Kritaをインストールしたフォルダに展開して使用)</a></p>
+</li>
+</ul>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>64 bits Linux: <a href="https://download.kde.org/stable/krita/4.2.5/krita-4.2.5-x86_64.appimage">krita-4.2.5-x86_64.appimage</a></li>
+<li>64ビットLinux <a href="https://download.kde.org/stable/krita/4.2.5/gmic_krita_qt-x86_64.appimage">G&rsquo;Mic-Qt plugin appimage</a></li>
+</ul>
+<p>(なぜかFirefoxはテキストとして読み込もうとするようです。ダウンロードするにはリンクの右クリックから保存してください)</p>
+<h3 id="osx">OSX</h3>
+<ul>
+<li>OSX disk image: <a href="https://download.kde.org/stable/krita/4.2.5/krita-4.2.5.dmg">krita-4.2.5.dmg</a></li>
+</ul>
+<p>注意: gmic-qtはOSXで利用できません。</p>
+<h3 id="ソースコード">ソースコード</h3>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.2.5/krita-4.2.5.tar.gz">krita-4.2.5.tar.gz</a></li>
+<li><a href="https://download.kde.org/stable/krita/4.2.5/krita-4.2.5.tar.xz">krita-4.2.5.tar.xz</a></li>
+</ul>
+<h3 id="md5sum">md5sum</h3>
+<p>すべてのダウンロード向け:</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.2.5/md5sum.txt">md5sum.txt</a></li>
+</ul>
+<h3 id="キー">キー</h3>
+<p>Linux appimageとソースの.tar.gz tarballは署名されています。パブリックキーをhttps経由で取得できます: <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a> 署名は <a href="http://download.kde.org/unstable/krita/4.2.0-beta2/">こちら</a>です (.sigのファイルです)</p>
+<h2 id="kritaを支援してください">Kritaを支援してください</h2>
+<p>Kritaは自由なオープンソースのプロジェクトです。<a href="https://krita.org/jp/support-us-jp/donations-jp/">寄付</a>や<a href="https://krita.org/jp/support-us-jp/shop-jp/">トレーニングビデオやアートブックの購入</a>で、プロジェクトを支援することを検討してみてください！皆様の支援によって、コアチームがフルタイムでKritaの開発作業を続けることが可能になります。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

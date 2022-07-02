@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Se han aceptado 3 estudiantes para el evento Google Summer of Code del 2018 | Krita Site(ES)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/es">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Se han aceptado 3 estudiantes para el evento Google Summer of Code del 2018</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>8 de mayo de 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>Desde el 2006, Google nos ha ofrecido la oportunidad de patrocinar estudiantes para que éstos desarrollen proyectos con Krita. Para el 2018 tenemos tres estudiantes muy talentosos los cuales participaran durante éste verano, ellos comenzaran a familiarizarse primero con el código base de Krita, luego nos mostraran mediante blogs sus experiencias y expectativas mientras trabajan en sus proyectos.</p>
+<p>A continuación mostramos su presentación.</p>
+<p> </p>
+<h3 id="ivan-yossi---optimizar-la-generación-de-mascaras-de-pinceles-tipo-soft-gaussian-y-stamp-para-que-se-pueda-usar-el-avx-con-los-archivos-vc">Ivan Yossi - Optimizar la generación de mascaras de pinceles tipo Soft, Gaussian y Stamp para que se pueda usar el AVX con los archivos Vc</h3>
+<p>Krita requiere de una respuesta rápida en el uso de pinceles para ofrecer un rutina mas natural. Una linea dibujada consta de miles de imágenes acomodadas una tras otra, la creación de la mascara tiene que ser bastante rápida ya que se ejecuta miles de veces por segundo. Si el proceso que aplica éstas imágenes en el lienzo no es lo suficientemente rápido, la experiencia se arruina y el gusto de pintar con Krita puede disminuir drásticamente.</p>
+<p>El optimizar la creación de las mascaras se puede hacer con el juego de instrucciones de AVX para poder aplicar las modificaciones en vectores en un solo paso. En este caso la información son las coordenadas que componen la imagen y a la vez la mascara. La programación de AVX se puede lograr con un archivo Vc, el cual maneja niveles bajos de manera optimizada y adaptada al uso de los procesadores. Sin embargo la información tiene que ser preparada para vida de poder optimizarse. De hecho ya se ha optimizado el motor de mascaras de pinceles principal, el cual es hasta cinco veces mas rápido que el actual motor de mascaras Gaussian.</p>
+<p>Éste proyecto esta enfocado en proveer un mejor rendimiento al pintar implementando el código de AVX para las mascaras Gauss circular, Soft circular, Gaussian rectangular, Soft rectangular y Stamp.</p>
+<h3 id="michael-zhou---un-panel-de-muestras-de-color-swatches-para-krita">Michael Zhou - Un panel de muestras de color &ldquo;Swatches&rdquo; para Krita</h3>
+<p>Éste proyecto se enfoca en la creación de un panel de muestras de color para Krita, Parecido al panel de paletas de color que ya existe, pero con las siguientes ventajas:</p>
+<ul>
+<li>Los usuarios podrán fácilmente añadir, mover y remover colores, lo que ordenara visualmente de mejor manera los colores y la forma de usarlos.</li>
+<li>Los usuarios podrán guardar paletas de color con cada documento lo cual asegura que los colores usados estén siempre disponibles.</li>
+<li>Tendrá una interfaz mas intuitiva.</li>
+</ul>
+<h3 id="andrey-kamakin-optimizar-el-uso-múltiple-de-procesos-en-el-administrador-de-tiles-de-krita">Andrey Kamakin Optimizar el uso múltiple de procesos en el administrador de &ldquo;tiles&rdquo; de Krita</h3>
+<p>Éste proyecto se enfoca en mejorar de manera general el rendimiento de Krita introduciendo un &ldquo;hash table&rdquo; sin bloqueo que guarda &ldquo;tiles&rdquo; y mejora los bloqueos.</p>
+<p>El problema: En la ejecución de procesos individuales de un programa, no se requiere de monitorear ningún recurso compartido ya que es garantizado que solo un proceso tendrá acceso a un recurso. En procesos múltiples entrelazados, es común el que los recursos se compartan entre ellos, por lo que en situaciones como &ldquo;dirty read&rdquo;, etc. éstos tienen que ser excluidos del programa para un comportamiento normal. La forma mas simple de solucionar éste problema es el poner un bloqueo en las &ldquo;hash tables&rdquo; para que sus operaciones se limiten a un solo recurso por proceso.</p>
+<p>--</p>
+<p>¡Les deseamos a todos los participantes mucha suerte y la mejor de las experiencias éste verano!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orges/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orges/roadmap">Roadmap</a>
+			<a href="https://krita.orges/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/es/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orges/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/es/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orges/about">About</a>
+			<a href="https://krita.orges/donations">Donations</a>
+			<a href="https://krita.orges/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/es">What is KDE</a>
+			<a href="https://krita.orges/website">Website Licenses</a>
+			<a href="https://krita.orges/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

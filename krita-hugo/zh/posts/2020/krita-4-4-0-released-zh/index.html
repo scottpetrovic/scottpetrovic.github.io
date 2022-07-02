@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.4.0 正式版已经推出 | Krita Site(PRC)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/zh">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.4.0 正式版已经推出</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>2020年10月13日</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>5 min</em></span> 
+        
+        
+    </div>
+
+    <p>虽然比原定时间晚了几天，但 Krita 4.4.0 正式版终于在今天推出了！</p>
+<p>Krita 4.4.0 版带来了诸多全新功能，包括但不限于：一系列新型填充图层，包括基于迪士尼 Seexpr 语言的可编程填充图层；配合彩色笔尖图像、纹理使用的全新亮度、渐变映射模式；渐变支持直接使用前景色、背景色；导出 webm 格式动画；新的 Python 编程接口功能；修复了数百个程序缺陷，包括针对安卓版文件读写缺陷的一系列关键修复等。</p>
+<p>下面就一般用户比较关注的新功能展开介绍，更多更新细节，请查看 <a href="https://krita.org/zh/krita-4-4-0-release-notes-zh/">Krita 4.4 版完整新版说明页面</a>。</p>
+<h2 id="填充图层">填充图层</h2>
+<p>此版本的 Krita 对填充图层功能进行了大量改进。</p>
+<h3 id="填充图层的多线程支持">填充图层的多线程支持</h3>
+<p>Krita 的填充图层现在已经支持多线程，将填充操作拆分成多个部分交由不同的 CPU 进程进行处理，在多核心 CPU 环境下可以带来显著的处理速度提升。</p>
+<h3 id="图案填充的变形功能">图案填充的变形功能</h3>
+<p><a href="/images/posts/2020/krita_4_4_texture_example.png"><img src="/images/posts/2020/krita_4_4_texture_example.png" alt=""></a></p>
+<p><a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/pattern_fill.html">填充图层在填充图案时</a> 可以对填充的图案进行变形操作，包括缩放、旋转等。几何形状绘制工具、填充工具中的图案功能也得到了相同的改进。</p>
+<h3 id="网点填充">网点填充</h3>
+<p><a href="/images/posts/2020/fill_layer_screentone_postprocessing.png"><img src="/images/posts/2020/fill_layer_screentone_postprocessing.png" alt=""></a></p>
+<p>填充图层新增了 <a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/screentone.html">网点填充</a> 模式，它可以向图层填充圆点、方点、直线、波浪线等简单的图案，如同黑白漫画中的网点纸一样，也可以用来模拟半调等印刷效果。</p>
+<h3 id="多维网格填充">多维网格填充</h3>
+<p><a href="/images/posts/2020/multigrid-color-examples.png"><img src="/images/posts/2020/multigrid-color-examples.png" alt=""></a></p>
+<p>填充图层新增了 <a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/multigrid.html">多维网格填充</a> 模式，可以生成包括 <a href="https://en.wikipedia.org/wiki/Penrose_tiling">彭罗斯镶嵌图案</a> 在内的各种准晶体结构图案。这种填充图案是非周期性的，且在旋转方向上对称，图案中的每个晶格都不会发生重复。本模式的灵感来自后面即将介绍的 SeExpr 填充模式。</p>
+<h3 id="seexpr-填充图层">SeExpr 填充图层</h3>
+<p><a href="/images/posts/2020/1096px-SeExpr_manual_1.jpg"><img src="/images/posts/2020/1096px-SeExpr_manual_1.jpg" alt=""></a></p>
+<p>迪士尼动画工作室开发的 <a href="https://docs.krita.org/zh_CN/reference_manual/layers_and_masks/fill_layer_generators/seexpr.html">SeExpr 表达式语言库</a> 已经通过 Amyspark 所负责的谷歌编程之夏工程整合到了 Krita。SeExpr 是一种小型着色器语言，迪士尼动画工作室用它来生成图案等素材。Krita 可以用它来生成填充图层，并且已经内建了一些效果不错的示例预设。</p>
+<h2 id="笔刷引擎">笔刷引擎</h2>
+<p>继 Krita 4.3 版新增的笔尖亮度模式之后，我们又为 4.4 版的笔刷引擎开发了更多的新功能。</p>
+<p><a href="/images/posts/2020/flowers_gradients_lightness.png"><img src="/images/posts/2020/flowers_gradients_lightness.png" alt=""></a></p>
+<p>上图笔画效果：搭配使用新亮度参数和混合参数 下图笔画效果：使用纹理的效果强度参数来混合渐变映射模式下的笔尖图像和纹理</p>
+<h3 id="笔尖图像的渐变映射模式">笔尖图像的渐变映射模式</h3>
+<p>如果笔尖图像的亮度模式效果不够细腻，你可以使用全新的笔尖图像全局 <a href="https://docs.krita.org/zh_CN/reference_manual/brushes/brush_settings/brush_tips.html">渐变映射模式</a>，它在绘制重复的物体，如花草树叶等时特别有用。</p>
+<h3 id="笔刷纹理参数的亮度和渐变映射模式">笔刷纹理参数的亮度和渐变映射模式</h3>
+<p>笔刷的纹理参数也可以使用 <a href="https://docs.krita.org/zh_CN/reference_manual/brushes/brush_settings/texture.html">亮度和渐变映射模式</a>。</p>
+<h3 id="mypaint-拾色器的对角线拾色条-shiftm">MyPaint 拾色器的对角线拾色条 (Shift+M)</h3>
+<p>对角线拾色条可以同时对当前颜色的亮度和饱和度进行改变。</p>
+<p><a href="/images/posts/2020/mypaint_selector_diagonal.png"><img src="/images/posts/2020/mypaint_selector_diagonal.png" alt="Diagonal lines in MyPaint Color Selector (Shift+M)"></a></p>
+<h2 id="在-gimp-渐变和图层样式中实时调用当前颜色">在 GIMP 渐变和图层样式中实时调用当前颜色</h2>
+<p>GIMP 渐变格式和图层样式中的<a href="https://docs.krita.org/zh_CN/reference_manual/resource_management/resource_gradients.html">渐变</a>现在可以实时调用当前的前景色和背景色。相关的几个自带渐变预设已经对此作出调整，可以更轻松地配合前景色和背景色生成光斑等特效。</p>
+<p><a href="/images/posts/2020/fg_changing_gradients_for_sparkles.png"><img src="/images/posts/2020/fg_changing_gradients_for_sparkles.png" alt=""></a></p>
+<p>上图为通过 GPS glare 渐变的默认值绘制的径向渐变光斑，不同颜色的光斑反映了绘制时的活动前景色。</p>
+<h2 id="下载">下载</h2>
+<h3 id="中文版信息">中文版信息</h3>
+<ul>
+<li>中文支持：Krita 的正式版本、通过官方新闻发布的公开测试版本 (beta) 均已内建中文支持。</li>
+<li>自动检测：Krita 在首次安装时会自动设置为操作系统的语言。</li>
+<li>手动设置：菜单栏 &ndash;&gt; Settings 菜单 &ndash;&gt; Switch Application Language (倒数第二项) &ndash;&gt; 下拉选单 &ndash;&gt; 中文 (底部)，重启程序生效。</li>
+<li>插件翻译：部分内置，G&rsquo;MIC 插件<a href="https://share.weiyun.com/SBopNjOn">需要下载翻译包</a></li>
+<li>网盘下载：请在官网下载困难时使用。</li>
+</ul>
+<h3 id="windows-版本">Windows 版本</h3>
+<p><strong>注意：微软最近更改了 Windows 的数字安全证书信任策略，仅默认信任 Digicert 颁发的证书。Krita 的证书并非由 Digicert 颁发，因此软件包会可能在刚刚发布时遭到系统的 SmartScreen 智能安全筛选功能阻止。如果在下载、运行软件时见到“Windows 已经保护了你的电脑”、“此下载可能危害你的电脑”之类的信息，请点击“更多信息”或者“&hellip;”展开，然后点击“保留”或者“仍要运行”按钮。在一定数量的用户通过上述方式允许 Krita 下载运行后，SmartScreen 将不会再阻止它，直到下一个新版发布。</strong></p>
+<ul>
+<li>
+<p><strong>64 位 Windows 安装程序</strong> (推荐) <a href="https://download.kde.org/stable/krita/4.4.0/krita-x64-4.4.0-setup.exe">本站下载</a> | <a href="https://share.weiyun.com/aVyf2PXQ">网盘下载</a></p>
+</li>
+<li>
+<p><strong>64 位 Windows 免安装包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-x64-4.4.0.zip">本站下载</a> | <a href="https://share.weiyun.com/aVyf2PXQ">网盘下载</a></p>
+</li>
+<li>
+<p><strong>64 位程序崩溃调试包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-x64-4.4.0-dbg.zip">本站下载</a> | <a href="https://share.weiyun.com/aVyf2PXQ">网盘下载</a></p>
+</li>
+<li>
+<p><strong>32 位 Windows 安装程序</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-x86-4.4.0-setup.exe">本站下载</a> | <a href="https://share.weiyun.com/wdMnx1WB">网盘下载</a></p>
+</li>
+<li>
+<p><strong>32 位 Windows 免安装包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-x86-4.4.0.zip">本站下载</a> | <a href="https://share.weiyun.com/wdMnx1WB">网盘下载</a></p>
+</li>
+<li>
+<p><strong>32 位程序崩溃调试包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-x86-4.4.0-dbg.zip">本站下载</a> | <a href="https://share.weiyun.com/wdMnx1WB">网盘下载</a></p>
+</li>
+<li>
+<p><strong>配套网盘资源 (中文社区维护)</strong> <a href="https://share.weiyun.com/Dea2uj0M">中文离线文档</a> | <a href="https://share.weiyun.com/6tH13bVC">FFmpeg 软件包</a> | <a href="https://share.weiyun.com/SBopNjOn">G&rsquo;Mic 滤镜汉化</a> |</p>
+</li>
+<li>
+<p>免安装包：解压到任意位置，运行目录中的 Krita 快捷方式。不带文件管理器缩略图插件。与已安装版本共用配置文件和资源，但程序本身相互独立。</p>
+</li>
+<li>
+<p>程序崩溃调试包：解压到 Krita 的安装目录，在报告程序崩溃问题时用于获取回溯追踪数据。日常使用无需下载此包。</p>
+</li>
+</ul>
+<h3 id="linux-版本">Linux 版本</h3>
+<ul>
+<li><strong>64 位 Linux AppImage 主程序包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-4.4.0-x86_64.appimage">本站下载</a> | <a href="https://share.weiyun.com/j7Vrjx2m">网盘下载</a></li>
+<li><strong>64 位 Linux AppImage G&rsquo;Mic-Qt 插件包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/gmic_krita_qt-x86_64.appimage">本站下载</a> | <a href="https://share.weiyun.com/j7Vrjx2m">网盘下载</a></li>
+<li>如果浏览器把链接作为文本打开，请右键点击链接另存为文件。</li>
+</ul>
+<h3 id="macos-版本">macOS 版本</h3>
+<ul>
+<li>
+<p><strong>macOS 主程序映像</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-4.4.0.1.dmg">本站下载</a> | <a href="https://share.weiyun.com/jc82ykle">网盘下载</a></p>
+</li>
+<li>
+<p>G&rsquo;Mic-qt 软件包、触摸屏辅助面板在 macOS 下不可用。</p>
+</li>
+</ul>
+<h3 id="安卓版本">安卓版本</h3>
+<p>安卓版本目前尚处于早期测试阶段，它的功能和普通版本完全相同，仅为平板设备和 ChromeBook 进行了初步优化，许多功能依然必须搭配键盘使用。由于屏幕比例和大小造成界面显示不全，尽管它能够在一般智能手机上安装，我们依然不建议你在智能手机上使用它。从此版开始，安卓版本已经合并到主源代码分支，且通过统一流程进行构建，因此它包含多语言支持文件，但因为某些原因尚未能显示翻译。</p>
+<ul>
+<li><strong>64 位 Intel CPU APK 安装包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-x86_64-4.4.0-release.apk">本站下载</a> | <a href="https://share.weiyun.com/he1kczpd">网盘下载</a></li>
+<li><strong>32 位 Intel CPU APK 安装包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-x86-4.4.0-release.apk">本站下载</a> | <a href="https://share.weiyun.com/he1kczpd">网盘下载</a></li>
+<li><strong>64 位 ARM CPU APK 安装包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-arm64-4.4.0-release.apk">本站下载</a> | <a href="https://share.weiyun.com/he1kczpd">网盘下载</a></li>
+<li><strong>32 位 ARM CPU APK 安装包</strong> <a href="https://download.kde.org/stable/krita/4.4.0/krita-arm32-4.4.0-release.apk">本站下载</a> | <a href="https://share.weiyun.com/he1kczpd">网盘下载</a></li>
+</ul>
+<h3 id="源代码">源代码</h3>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.4.0/krita-4.4.0.tar.gz">TAR.GZ 格式源代码包</a></li>
+<li><a href="https://download.kde.org/stable/krita/4.4.0/krita-4.4.0.tar.xz">TAR.XZ 格式源代码包</a></li>
+</ul>
+<h3 id="md5sum-校验码">md5sum 校验码</h3>
+<p>适用于上述所有软件包，用于校验下载文件的完整性，不了解文件校验请忽略：</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.4.0/md5sum.txt">ms5sum 校验码文本文件</a></li>
+</ul>
+<h2 id="支持-krita">支持 Krita</h2>
+<p>Krita 是一个自由和开源的软件项目。如果条件允许，请考虑通过 <a href="https://krita.org/zh/support-us-zh/donation-zh/">捐款</a> 或者 <a href="https://krita.org/en/support-us/shop">购买培训教程和画册</a> 等方式支持我们的存续和发展，这样我们才能支持开发人员为 Krita 全职工作。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgzh/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgzh/roadmap">Roadmap</a>
+			<a href="https://krita.orgzh/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/zh/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgzh/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/zh/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgzh/about">About</a>
+			<a href="https://krita.orgzh/donations">Donations</a>
+			<a href="https://krita.orgzh/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/zh">What is KDE</a>
+			<a href="https://krita.orgzh/website">Website Licenses</a>
+			<a href="https://krita.orgzh/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

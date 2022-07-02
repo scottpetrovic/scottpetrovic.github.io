@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 2020 年工作回顾 | Krita Site(PRC)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/zh">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 2020 年工作回顾</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>2021年1月1日</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>5 min</em></span> 
+        
+        
+    </div>
+
+    <p>伴随着新年的钟声，2020 这个多灾多难的年份终于成为了过去。虽然在过去的一年中许多 Krita 开发人员都要面对严峻的生活和心理挑战，无法以最好的状态开展工作，但至少没有任何一位 Krita 开发人员不幸因病离世，这或许能够给人一丝宽慰。就在这一切发生之前，我们还刚刚在 2 月份进行了一次开发冲刺活动。谁又能想到在此之后会发生如此巨大的变故呢？</p>
+<h3 id="新版软件的发布状况">新版软件的发布状况</h3>
+<p>我们在 2020 年一共为 Krita 发布了 <a href="https://krita.org/zh/item/krita-4-2-9-released-zh/">4.2.9</a>、<a href="https://krita.org/zh/item/krita-4-3-0-released-zh/">4.3.0</a>、<a href="https://krita.org/zh/item/krita-4-4-0-released-zh/">4.4.0</a> 和 <a href="https://krita.org/zh/item/krita-4-4-1-released-zh/">4.4.1</a> 等 4 个新版软件。我们当前正在为 <a href="https://krita.org/zh/item/second-beta-for-krita-4-4-2-zh/">4.4.2</a> 版的发布进行准备工作。同时 Krita 在 2020 年也开始支持安卓平板和 ChromeOS 类设备。（中国大陆用户要科学上网才能查看下面的视频）</p>
+<p><a href="https://youtu.be/VTlh2KhkOM4">https://youtu.be/VTlh2KhkOM4</a></p>
+<p>2020 年发布的新版 Krita 软件改进了手绘笔刷工具的笔刷轮廓显示、为像素、颜色涂抹笔刷引擎新增了大量新功能、新增了一套水彩笔刷预设、新增并重写了一些重要的滤镜、增强了 Python 脚本插件的支持、新增了图像快照面板、重写了磁性选区工具、为填充图层新增了渐变和 Seexpr 等大量实用的新生成器、全面改善了渐变功能、实现了矢量曲线网格渐变、曲线网格变形，以及其他大量的新功能和改进。</p>
+<h3 id="程序缺陷修复状况">程序缺陷修复状况</h3>
+<p><a href="/images/posts/2020/bugs_2020.png"><img src="/images/posts/2021/bugs_2020-1024x135.png" alt=""></a></p>
+<p>2020 年的 Krita 的程序缺陷报告平台依然“<a href="https://valdyas.org/fading/hacking/krita-hacking/nightmares-and-bugs/">风起云涌</a>”。许多报告实际上不是程序缺陷而是新功能请求，程序缺陷的鉴别和清理工作就像一场没完没了的噩梦，就像是在前面这个链接里 Boud 讲述的故事一样。</p>
+<h3 id="开发工作状况">开发工作状况</h3>
+<p>我们在 2020 年进行了大量的编程工作。Krita 代码仓库的所有分支在 2020 年里一共提交了 5486 次代码修改。这些代码除了在新版中化作已经实现的新功能外，还有大量代码贡献给了尚未面世的功能，例如：MyPaint 笔刷引擎支持、可更新的 appimage 软件包、用于录制绘画过程的新插件、分镜头面板、动画功能的大幅升级……当然，还有我们已经折腾了整整 3 年的资源框架重写工作。</p>
+<p>你可以在 <a href="https://binary-factory.kde.org/">KDE 的每夜版本自动构建平台</a> 下载到已经启用这些新功能的测试版本——该平台的启用为我们的开发测试流程带来了质的改善。同时 KDE 的开发工作也迁移到了 Gitlab，大幅提高了我们的工作和协作效率。</p>
+<p><a href="https://invent.kde.org/graphics/krita/"><img src="/images/posts/2021/invent-1024x361.png" alt="https://invent.kde.org"></a></p>
+<p>资源框架的重写工作虽然还没结束，但所有重要的部分都已经大体完成，就差将原本的资源 (笔刷、渐变、图案等预设) 转换至新的系统了。话是这么说，但因为我们企图一次性改变太多东西，以至于实际的工作量远超当初的预想，为本来就已经神经紧绷的团队带来了太大压力。<a href="https://krita.org/en/item/krita-in-2019-and-2020/">2019 年如此</a>，2020 年也是如此。2 月份的开发冲刺原本是打算开启资源系统重写的最终战役的，不料从 3 月开始世情便开始急转直下，打乱了我们的阵脚。</p>
+<p>这样一来，资源管理框架的重写工作就不得不被拖进到新的一年里了。只有在 5.0 版正式发布，这场战斗彻底结束之后，我们才能松一口气，开始转向其他更值得期待的方面——例如文字工具、基于机器学习的图像缩放、新型抖动和 HDR 渐变，还有其他更引人注目的新功能。</p>
+<p>在 2020 年的谷歌编程之夏活动中我们有四位学生：Sharaf Zaman (曲线网格渐变)、Amyspark (Seexpr 表达式语言可编程填充生成器)、Saurabh Kumar (分镜头面板和配套工具)、Ashwin Daikata (MyPaint 笔刷引擎支持)。前两位学生的工程已经随新版软件面世，后两位学生的工程也已经合并到了 Krita 的主分支，将随 Krita 5.0 一同发布。</p>
+<h3 id="社区建设">社区建设</h3>
+<p>在 2020 年中，Krita 软件一共从官方网站被下载了 <strong>4,856,435</strong> 次，2019 年则是 <strong>2,346,618</strong> 次。还有大量并非从官方网站下载的次数无法统计。</p>
+<p>我们在 2020 年开始赞助 Ramon Miranda 在 <a href="https://www.youtube.com/channel/UCkIccKaHDGA8lYVmUerLhag">Krita 的 Youtube 频道</a> 定期发布教程和介绍视频 (大陆用户需要科学上网)：</p>
+<p><a href="https://www.youtube.com/channel/UCkIccKaHDGA8lYVmUerLhag"><img src="/images/posts/2021/youtube-1024x957.png" alt=""></a></p>
+<p>除了上述视频外，Ramon 还为 Krita 制作了许多使用的笔刷预设和模板，全部可以<a href="https://files.kde.org/krita/extras/">免费下载</a>，自由使用！</p>
+<p>不过 2020 年社区工作的最大亮点还要数 Raghukamath 发起的 <a href="https://krita-artists.org">Krita 国际画师交流论坛</a>。截止年底该论坛已有 5 万多帖子，数百名活跃用户，人们围绕着改进 Krita 的软件界面、编写 Python 插件、作品交流等方面进行了许多有趣的讨论。最重要的是——这里终于成为了一处 Krita 用户社区守望相助的场所。</p>
+<h3 id="krita-artists-websiteimagesposts2021krita-artists-1024x894pnghttpskrita-artistsorg"><a href="https://krita-artists.org"><img src="/images/posts/2021/krita-artists-1024x894.png" alt="krita-artists website"></a></h3>
+<h3 id="经费状况">经费状况</h3>
+<p>我们正在参考 Blender 的经验筹划新的开发经费模式，甚至干脆就直接使用 Blender 社区那边的代码了！它将在 2021 年上线。我们现在正忙着为网站的设计润色，并计划具体的宣传方式。由于我们在筹备 Kickstarter 的时期一直习惯于在 Krita 的代芬特尔总舵面对面地讨论和协作，现在忽然要远程地进行这一切，一下子还真的有点不习惯。</p>
+<p>Krita 的捐款在整个 2020 年都保持着良好的态势，总共收到来自世界各国 €45,672.41 欧元的捐款 (2019 为 €29,715.20 欧元)，不但足以赞助我们的首席程序员 Dmitry 全职工作，还赞助了文档内容的持续更新。其他的开发人员也通过 Microsoft Store 和 Steam 版本的收入得到了充分的赞助。现在我们已经有 9 位开发人员得到赞助全职为 Krita 进行工作。他们在动画、安卓版本、文档、修复程序缺陷、管理构建平台和新功能开发等方面积极工作。虽说这份工作不会为我们带来物质上的暴富，但只要想到每个月都有三、四百万位用户正在使用自己辛勤开发的软件，我们在心灵上已经感到相当富足。</p>
+<h3 id="未来展望">未来展望</h3>
+<p>我们希望能尽快发布 Krita 5.0 版，为此我们必须要尽快完成资源框架的重写工作。这将是 2021 年 Krita 团队工作的重中之重。如果实在忙不过来的话，我们可能会干脆跳过 4.4.3 版的发布。</p>
+<p>我们还将为苹果那炙手可热的新宝贝——装有 M1 处理器的 Macbook 发布兼容的 Krita 版本。当然，我们也预见了苹果会通过他们的奇葩政策继续给我们这些程序员喂翔。</p>
+<p>在启动新版开发经费筹款活动后，或许可以有足够经费赞助 Krita 开发能够登陆 macOS 应用商店 (并非 iPadOS 应用商店) 的版本。不过话又说回来，目前 Krita 团队的规模已经是 Krita 项目负责人可以管理的极限了。</p>
+<p>最后，<a href="https://www.qt.io/blog/qt-6.0-released">Qt 6 也已经发布了</a>。新版的 Qt <a href="https://valdyas.org/fading/hacking/krita-hacking/krita-opengl-and-qt/">改变了 GPU 图形加速的处理方式</a>，使得 Krita 的 Qt 6 移植工作将面临严峻挑战，更别提那些被更改和<a href="https://lists.qt-project.org/pipermail/development/2020-April/039278.html">弃用的特性</a>了。虽然说在 2021 年内完成 Qt 6 的移植基本上是不可能的，但我们也不得开始着手准备，这意味着用于处理那些用户急切需要解决的缺陷和新功能的时间和精力更少了。</p>
+<p>如果可以有一个奇迹，我们希望 2021 年我们可以再次进行面对面的开发冲刺活动！最后祝大家新年快乐！</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgzh/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgzh/roadmap">Roadmap</a>
+			<a href="https://krita.orgzh/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/zh/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgzh/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/zh/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgzh/about">About</a>
+			<a href="https://krita.orgzh/donations">Donations</a>
+			<a href="https://krita.orgzh/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/zh">What is KDE</a>
+			<a href="https://krita.orgzh/website">Website Licenses</a>
+			<a href="https://krita.orgzh/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

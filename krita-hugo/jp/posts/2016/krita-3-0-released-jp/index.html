@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 3.0リリース | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 3.0リリース</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>May 31, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>5 min</em></span> 
+        
+        
+    </div>
+
+    <p>本日、アニメーション製作機能を目玉とするKrita 3.0をリリースしました。1年間の開発の結果、3.0はKritaのコアに統合されたアニメーションのサポート、大きなブラシを大きなキャンバスで使用した際のパフォーマンスを大幅に向上させる高速プレビュー、最新版のQtへの移植、そして非常にたくさんの新機能及び改良からなる非常に大きなリリースとなっています！</p>
+<p><a href="/images/posts/2016/krita-3.0.png"><img src="/images/posts/2016/krita-3.0-1024x559.png" alt="krita-3.0"></a></p>
+<p>これらの新機能の多くが<a href="https://www.kickstarter.com/projects/krita/krita-free-paint-app-lets-make-it-faster-than-phot?ref=users">2015年のKickstarterキャンペーン</a>での支援によるものです。残りの追加目標は今年の後半を使ってKrita 3.1で実装されることになります。そして<a href="https://krita.org/krita-kickstarter-2016-jp/">今年のKickstarterキャンペーン</a>は後7日間です！目標金額30000ユーロ達成に後一歩のところまで来ています。皆さんの支援があれば今年も追加目標を加えられる可能性もまだ残っています！</p>
+<p>この記事に改良点の一覧の全ては収まりきりませんでした。<a href="https://krita.org/jp/krita-3-0-release-notes-jp/">今回の3.0での追加機能、改良点の完全な一覧</a>を別ページに用意したのでぜひそちらをご覧ください！</p>
+<p>※Krita 3.0は設定とリソースを2.9とは異なる場所から読み込んでいるため、二つのバージョンを競合なしに一緒に使うことが可能になっています。<a href="https://docs.krita.org/KritaFAQ#My_resource_dissapeared_with_installing_3.0.21_Did_Krita_delete_them.3F">リソースの移動についてのチュートリアル(訳注：英語)</a>を用意したのでぜひご覧ください。</p>
+<h3 id="ダウンロード">ダウンロード</h3>
+<h4 id="windows">Windows</h4>
+<p>Windowsでは、KritaはWacom、Huion、Yiynova製のペンタブレット及びSurface Proシリーズのタブレットをサポートしています。Trust、Bosto、Genius、Peritab及びそれと同様のペンタブレットについては報告されたバグを再現するために必要なハードウェアが開発にないため、現時点ではサポートしていません。</p>
+<p>ZIP版は解凍したのち、フォルダ内のショートカットファイルkritaをダブルクリックしてください。インストーラ版を使いたい場合はまずKrita 2.9のアンインストールをお願いします。</p>
+<p>Windows版にはAlvin Hochungさんによるファイルエクスプローラでkritaのネイティブフォーマットである.kraファイルのサムネイルを表示させる<a href="https://github.com/alvinhochun/KritaShellExtension">シェル拡張</a>が用意されています。インストール版ではオプションとしてKritaのインストールと同時にインストールできます。ZIP版の場合は下のリンクから別個にインストールしてください。</p>
+<p>もしウィルススキャナーやその他のセキュリティソフトにインストールが待ったをかけられた場合は下に書かれている<a href="https://ja.wikipedia.org/wiki/SHA-1#.E3.83.87.E3.83.BC.E3.82.BF.E5.AE.8C.E5.85.A8.E6.80.A7">SHA-1チェックサム</a>を確認してください。もしこのチェックサムを通過するなら、そのファイルは安全ということです。</p>
+<p>Windows版KritaはWindows 7、Windows 8及びWindows 10の動作が確認されています。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/windows/krita-3.0-x64.zip">krita-3.0-x64.zip</a> (8d0b3819a94e2731bfa6265a573526bb65f0e568)</li>
+<li><a href="http://files.kde.org/krita/3/windows/krita-3.0-x86.zip">krita-3.0-x86.zip</a> (0cd0ebb41e17163e26928affc9bf4bfbe7b315c0)</li>
+<li><a href="http://files.kde.org/krita/3/windows/krita-3.0-x64-setup.exe">krita-3.0-x64-setup.exe</a> (c47285e1457c1492c7ee184835ea70d9ac26fdc5)</li>
+<li><a href="http://files.kde.org/krita/3/windows/krita-3.0-x86-setup.exe">krita-3.0-x86-setup.exe</a> (82f68755eeeb28dbbaa7f29db15338a98b07f4a6)</li>
+<li><a href="http://files.kde.org/krita/3/windows/kritashellex-1.1.0.2-setup.exe">kritashellex_1.1.0.1_setup.exe</a> (4fb24f073b0dfccae79050423bc8596e3218ae7d)</li>
+</ul>
+<h4 id="linux">Linux</h4>
+<p>Linuxでは最近のあらゆるLinuxディストリビューションで動く<a href="http://appimage.org/">AppImage</a>版を提供します。Ubuntu 12.04及びCentOS 6.xではOpenMPのサポートのないAppImage版を使用する必要があります。Krita Limeレポジトリについては現在作業中です。今のところ、Krita Limeレポジトリからはkrita3-testing buildをインストールすることができます。Helio Castroさんによる<a href="http://www.heliocastro.info/?p=241">Redhat/CentOS/Fedora向けのKritaパッケージ</a>もあります。</p>
+<p>AppImageをダウンロードしたら、実行可能にしてその場で起動してください。インストールは必要ありません。現在のところ、AppImage版の提供は64ビット版のみです。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/linux/krita-3.0-x86_64.appimage">krita-3.0-x86_64.appimage</a>  (cc4d007aff15369d7ae90160649f9594f256ec2c)</li>
+<li><a href="http://files.kde.org/krita/3/linux/krita-3.0-no-openmp-x86_64.appimage">krita-3.0-no-openmp-x86_64.appimage</a> (39d6d14d0607b7db37ea70b7057ebbaebca19a27)</li>
+</ul>
+<p>Michael HallさんによってUbuntu Snap Image版のKritaが提供されています。Snap Imageを「snap install krita_3.0-snap7_amd64.snap」でターミナルからインストールできます。このSnap Image版は型落ちのQt 5.6を使用しているため、ペンタブのサポートは完璧なものではないことに注意してください。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/linux/krita_3.0-snap7_amd64.snap">krita_3.0-snap7_amd64.snap</a> (f80852826e2dd58ca3615744940aa63371078dbf)</li>
+</ul>
+<h4 id="osx">OSX</h4>
+<p>KritaのOSXでのフルサポートはバージョン3.1で実現する予定です。OSX版Krita 3.0はまだ高速プレビューと高品質でのキャンバスの表示倍率変更がない状態です。また画像のレンダリングに一部問題があります―この問題はApple社が自社製品のディスプレイドライバへのOpenGL 3.0互換性プロファイルのサポートを打ち切ったことによって発生しているものです。現在我々はこれらの機能をOpenGL 3.0コアプロファイルを使って再実装すべく開発を続行中です。現在のところ、OSX版Kritaを創作作業に使用する際は設定からOpenGLを無効にしておくことを推奨します。OSX版Kritaは10.9(Mavericks)及び10.11(El Capitan)のみでテストされています。これは我々が他のバージョンのOSXにアクセスできないからです。 6/4追記：日本語環境のOSXでKrita3.0が起動時に「プリセットが見つからない」エラーで終了してしまう問題に対応した<a href="http://files.kde.org/krita/3/osx/devbuilds/">開発中ビルド</a>が利用可能です。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/osx/krita-3.0.dmg">krita-3.0.dmg</a> (dcf9a5bd31efe3a2ce89dff77f7e10e23b704f54)</li>
+</ul>
+<h4 id="ソースコード">ソースコード</h4>
+<p>Krita 3.0をパッケージしたいディストリビューションの皆さん用にソースアーカイブを用意されています。もし興味があるならソースアーカイブの代わりにgitレポジトリから直接Kritaをビルドしてみることをお勧めします。これによって日々の修正が反映された最新のコードにアクセスできます。David Revoyさんの<a href="http://www.davidrevoy.com/article193/guide-building-krita-on-linux-for-cats">初めてKritaをビルドするに当たってのガイド</a>もご覧ください。Kritaをソースコードからビルドするにあたって自分の持っているQtのバージョンがQt 5.6.1より古い場合はkrita/3rdparty/ext_qtにあるパッチを使ってQtもリビルドする必要があります。</p>
+<ul>
+<li><a href="http://download.kde.org/stable/krita/3.0/krita-3.0.tgz.mirrorlist">krita-3.0.tgz</a> (6e0f7763e2ed5e266d916e7f76fadbaaf2c84eb5)</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

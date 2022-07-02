@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brush on Krita Site</title>
+    <link>https://krita.org/tags/brush/</link>
+    <description>Recent content in brush on Krita Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 17 Feb 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/tags/brush/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brush demo 2.7pre-alpha : &#34;Prunus Oriental Flower&#34;</title>
+      <link>https://krita.org/posts/2013/brush-demo-2-7pre-alpha-prunus-oriental-flower/</link>
+      <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2013/brush-demo-2-7pre-alpha-prunus-oriental-flower/</guid>
+      <description>( if the video doesn&amp;rsquo;t display, you can watch it here )
+Since end January, Krita 2.7pre-alpha get a new major feature : Texture .</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | First Target Reached! | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">First Target Reached!</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>May 18, 2015</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>On Sunday, we made the base target for our Kickstarter! Unless too many backers decide to cancel their pledges, funding for making Krita really, really fast and animation support is secure! Now, of course, is not the time to fold the hands and lean back: it would be a pity if we don&rsquo;t manage to reach a handful or even more stretch goals!</p>
+<p>But having reached this milestone, it&rsquo;s time to make it easy to back the project through paypal:</p>
+<ul>
+<li><strong><a href="https://krita.org/2015-kickstarter/">https://krita.org/2015-kickstarter/</a></strong></li>
+</ul>
+<p>You can choose your reward level in the comment, and from 15 euros you&rsquo;ll get your stretch goal voting rights, of course!</p>
+<p>Talking about stretch goals&hellip; Michael Abrahams surprised us all by submitting a <a href="https://git.reviewboard.kde.org/r/123833/">patch on reviewboard</a> that implemented most of the selection tools improvement stretch goal! Shift, alt, shift all, ctrl have been implemented for the polygonal, elliptical and rectangular selection tools. The rest is still todo, so it&rsquo;s not ready for a build yet.</p>
+<p>We&rsquo;ve been busy working on fixing other issues as well:</p>
+<ul>
+<li>Dmitry implemented Pass-Through mode for group layers (note: filter, transform and transparency masks and pass-through mode don&rsquo;t work together yet, but loading and saving from and to PSD does!</li>
+<li>When using Krita with a translation active on windows, the delay on starting a stroke is a bit less, but we&rsquo;re still working on eliminating that delay completely</li>
+<li>The color picker cursor now shows the currently picked and previous color.</li>
+<li>We now can load layerstyles (with some limitations) from PSD files. Saving is coming next!</li>
+<li>Layer styles can now be used with inherit-alpha</li>
+<li>Fix some issues with finding templates</li>
+<li>Work around an issue in the oxygen widget style that would crash the OpenGL-based canvas due to double initialization</li>
+<li>Don&rsquo;t toggle the layer options when right-clicking on a layer icon to get the context menu (patch by Victor Wåhlström)</li>
+<li>Update the Window menu when a subwindow closes</li>
+<li>Load newer PSD-generated JPG files correctly by reading the resolution information from the TIFF tags as well. (Yes, JPG resolution is marked in the exiv metadata using TFF tags&hellip;)</li>
+<li>Show the image name in the window menu if it hasn&rsquo;t been saved yet.</li>
+<li>Don&rsquo;t crash when trying to apply isolate-layer on a transform mask</li>
+<li>Add webp support (at least on Linux, untested on Windows)</li>
+<li>Use the right Krita blending mode when a PSD image contains Color Burn.</li>
+<li>Add Lighter Color and Darker Color blending modes and load them from PSD.</li>
+<li>Add a shortcut to edit/paste into a new image. Patch by Tiffany!</li>
+<li>Fix the autosave recovery dialog on Windows for unnamed autosaves</li>
+</ul>
+<p>Unfortunately, all this has left our codebase in a <em>slightly</em> unstable state&hellip;  We tried to make new builds, but they just aren&rsquo;t good enough yet to share! Working on that, though, and hopefully we&rsquo;ll get there by Wednesday!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

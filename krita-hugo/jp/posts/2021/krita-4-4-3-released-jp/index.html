@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.4.3がリリースされました | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.4.3がリリースされました</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>March 28, 2021</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Krita 4.4.3をリリースしました。これはバグ修正のみのリリースです。2回のベータを通じて、非常に安定なリリースを目指しました。このあとはKrita 5に集中することになります！</p>
+<p>また、これが32ビットWindowsでの最終のKritaリリースになります。これからは64ビット版のみリリースします。</p>
+<p>macOSでの初のユニバーサルバイナリリリースになります。DMGにARMビルドとX64ビルドの両方が含まれています。ただ、macOS版のKritaの一番の問題であるOpenGLフレーム再描画が入力キューに割り込むという問題は、どちらのアーキテクチャにおいても依然として起こります。</p>
+<h2 id="修正されたバグ">修正されたバグ</h2>
+<h3 id="android">Android</h3>
+<ul>
+<li>スプラッシュスクリーンでバックボタンを押したときのクラッシュ</li>
+<li>アプリケーション起動中にファイルを読み込ませた場合のクラッシュ</li>
+<li>アセットコピーにlastUpdateTimeを使用</li>
+<li>pathPatternが有効になるようにホストを提供</li>
+<li>画面全体をカバーする色選択を修正<a href="https://bugs.kde.org/show_bug.cgi?id=432459">BUG:432459</a>)</li>
+<li>保存したコンフィグが再起動後に読み込まれない問題 (<a href="https://bugs.kde.org/show_bug.cgi?id=432433">BUG:432433</a>)</li>
+<li>psd_layer_effects_shadow_baseにキー関数を追加 (<a href="https://bugs.kde.org/show_bug.cgi?id=432904">BUG:432904</a>)</li>
+<li>ユーザーがインポートしたバンドルからのプリセットリロードを修正 (<a href="https://bugs.kde.org/show_bug.cgi?id=432488">BUG:432488</a>)</li>
+</ul>
+<h3 id="クラッシュ">クラッシュ</h3>
+<ul>
+<li>不正なポインタにアクセスして起きていたハーフトーンフィルタのクラッシュを修正</li>
+<li>プロンプトを再表示してフィルタを再適用する際のクラッシュを修正</li>
+<li>ベクター選択から作られたフィルタマスクでペイントする際のクラッシュを修正(<a href="https://bugs.kde.org/show_bug.cgi?id=432329">BUG:432329</a>)</li>
+</ul>
+<h3 id="macos">MacOS</h3>
+<ul>
+<li>MacOS: サムネイル表示やクイックルックプレビューを行うFinderプラグインを修正 (<a href="https://bugs.kde.org/show_bug.cgi?id=432328">BUG:432328</a>)</li>
+</ul>
+<h3 id="スクリプティング">スクリプティング</h3>
+<ul>
+<li>チャンネルフラグの扱いを修正Chris Venterさんのパッチです、ありがとうございます！(<a href="https://bugs.kde.org/show_bug.cgi?id=432226">BUG:432226</a>)</li>
+</ul>
+<h3 id="安定性とパフォーマンス">安定性とパフォーマンス</h3>
+<ul>
+<li>キャンバスとスクラッチパッドのズームレベル同期を修正</li>
+<li>スマートパッチツールの正規化を修正 (<a href="https://bugs.kde.org/show_bug.cgi?id=430953">BUG:430953</a>)</li>
+<li>前景/背景色ボタンのパフォーマンス問題を修正(<a href="https://bugs.kde.org/show_bug.cgi?id=432936">BUG:432936</a>)</li>
+<li>インクリメンタルバックアップ保存を修正(<a href="https://bugs.kde.org/show_bug.cgi?id=432701">BUG:432701</a>)</li>
+<li>スクラッチパッドが反応しなくなる問題を修正(<a href="https://bugs.kde.org/show_bug.cgi?id=431708">BUG:431708</a>)</li>
+<li>カスタムブラシ、クリップボードブラシでの色をアルファに、アルファ保護を修正(<a href="https://bugs.kde.org/show_bug.cgi?id=432274">BUG:432274</a>)</li>
+<li>RGBA_brushesバンドルを修正し、Kritaが起動時に再生成を試みることがなくなりました <a href="https://bugs.kde.org/show_bug.cgi?id=431832">(BUG:431832</a>)</li>
+<li>KisAngleSelectorのスタイルの扱いを修正。スピンボックスがフラット表示に、新しい角度選択がどこでも使用されるようになりました。</li>
+</ul>
+<h2 id="ダウンロード">ダウンロード</h2>
+<h3 id="windows">Windows</h3>
+<p>ポータブルZipファイルを使う場合は、Zipファイルをエクスプローラーで開いてフォルダを適当な場所に移動して展開し、フォルダ内のKritaアイコンをダブルクリックして起動してください。インストール済みのKritaには影響はありませんが、設定とカスタムリソースは通常のインストール済みのKritaと共有されることに気を付けてください。. クラッシュの報告をするには、デバッグシンボルフォルダもインストールしてください。</p>
+<ul>
+<li>
+<p>64ビットWindowsインストーラー: <a href="https://download.kde.org/stable/krita/4.4.3/krita-x64-4.4.3-setup.exe">krita-x64-4.4.3-setup.exe</a></p>
+</li>
+<li>
+<p>64ビットWindowsポータブル版: <a href="https://download.kde.org/stable/krita/4.4.3/krita-x64-4.4.3.zip">krita-x64-4.4.3.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.4.3/krita-x64-4.4.3-dbg.zip">デバッグシンボル(Kritaをインストールしたフォルダに展開して使用)</a></p>
+</li>
+<li>
+<p>32ビットWindowsインストーラー: <a href="https://download.kde.org/stable/krita/4.4.3/krita-x86-4.4.3-setup.exe">krita-x86-4.4.3-setup.exe</a></p>
+</li>
+<li>
+<p>32ビットWindowsポータブル版: <a href="https://download.kde.org/stable/krita/4.4.3/krita-x86-4.4.3.zip">krita-x86-4.4.3.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.4.3/krita-x86-4.4.3-dbg.zip">デバッグシンボル(Kritaをインストールしたフォルダに展開して使用)</a></p>
+</li>
+</ul>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>64ビットLinux版: <a href="https://download.kde.org/stable/krita/4.4.3/krita-4.4.3-x86_64.appimage">krita-4.4.3-x86_64.appimage</a></li>
+<li>64ビットLinux <a href="https://download.kde.org/stable/krita/4.4.3/gmic_krita_qt-x86_64.appimage">G&rsquo;Mic-Qt plugin appimage</a></li>
+</ul>
+<p>(もしFirefoがはテキストとして読み込もうとした場合:ダウンロードするにはリンクの右クリックから保存してください)</p>
+<h3 id="osx">OSX</h3>
+<ul>
+<li>OSXディスクイメージ版: <a href="https://download.kde.org/stable/krita/4.4.3/krita-4.4.3.dmg">krita-4.4.3.dmg</a></li>
+</ul>
+<p>注意: gmic-qtはOSXで利用できません。</p>
+<h3 id="android-1">Android</h3>
+<p>今回はAndroidリリースはリリースtarballから作成されたので翻訳も含まれています。ChromeOS版とAndroid版のKritaはまだ **<em>ベータ</em>**状態と考えています。動かない部分も多数あり、キーボードがなければ操作できないものもあります。<a href="https://play.google.com/store/apps/details?id=org.krita">Google Play</a>からのKrita 4.4.3の入手も可能です。</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.4.3/krita_x86_64_apk-release.apk">64 ビット Intel CPU APK</a></li>
+<li><a href="https://download.kde.org/stable/krita/4.4.3/krita_x86_apk-release.apk">32 ビット Intel CPU APK</a></li>
+<li><a href="https://download.kde.org/stable/krita/4.4.3/krita_arm64-v8a_apk-release.apk">64 ビット Arm CPU APK</a></li>
+<li><a href="https://download.kde.org/stable/krita/4.4.3/krita_armeabi-v7a_apk-release.apk">32 ビット Arm CPU APK</a></li>
+</ul>
+<h3 id="ソースコード">ソースコード</h3>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.4.3/krita-4.4.3.tar.gz">krita-4.4.3.tar.gz</a></li>
+<li><a href="https://download.kde.org/stable/krita/4.4.3/krita-4.4.3.tar.xz">krita-4.4.3.tar.xz</a></li>
+</ul>
+<h3 id="md5sum">md5sum</h3>
+<p>すべてのダウンロード向け:</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.4.3/md5sum.txt">md5sum.txt</a></li>
+</ul>
+<h3 id="キー">キー</h3>
+<p>Linux appimageとソースの.tar.gzと.tar.xzのtarballsは署名されています。パブリックキーはgpg経由で取得できます: &ldquo;gpg &ndash;recv-key 7468332F&rdquo;. 署名は <!-- raw HTML omitted -->こちら<!-- raw HTML omitted -->です (.sigのファイルです)</p>
+<h2 id="kritaを支援してください">Kritaを支援してください</h2>
+<p>Kritaは自由なオープンソースのプロジェクトです。<a href="https://krita.org/jp/support-us-jp/donations-jp/">寄付</a>や<a href="https://krita.org/jp/support-us-jp/shop-jp/">トレーニングビデオの購入</a>で、プロジェクトを支援することを検討してみてください！皆様の支援によって、コアチームがフルタイムでKritaの開発作業を続けることが可能になります。</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

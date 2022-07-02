@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.0.0がリリースされました! | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.0.0がリリースされました!</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>March 26, 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>今日Krita 4.0をリリースしました!これは大きな新機能と機能改善を含む大きなリリースです。ベクターツールの改良、SVGサポート、新しいテキストツール、Pythonスクリプト機能に、それ以外にも本当に様々な追加と改良がされています!</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/a-CY4hmkg_I" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Tyson TanによるKrita4.0の新しいスプラッシュスクリーンは、Kikiと梅の開花を描いたものです。Krita 4を昨年中にリリースしたいと思っていましたが、<a href="https://krita.org/en/item/krita-foundation-update/">試練と苦難</a>に見舞われて、大幅に遅れてしまいました。ですが、一番寒いときに花を咲かせる梅のように、 私たちは苦難を乗り越え、Krita 4はようやくリリース準備ができました!</p>
+<p><a href="/images/posts/2018/kiki_4.0_sm-1-1024x463.png"><img src="/images/posts/2018/kiki_4.0_sm-1-1024x463.png" alt=""></a></p>
+<h3 id="ハイライト">ハイライト</h3>
+<p>いつものように、Krita 4でのすべての新機能と機能向上について説明した長い長いページを作成しました。</p>
+<p><a href="https://krita.org/jp/krita-4-0-release-notes-jp/">完全版のリリースノートはこちらです!</a></p>
+<p>SVGサポート、新しいテキストツール、Pythonスクリプト機能については既に紹介したので、それ以外のハイライトを説明します:</p>
+<ul>
+<li>新しい自動塗り分けマスクツールで簡単に線画の塗り分けが行えます。<a href="https://docs.krita.org/Colorize_Mask">詳しくはマニュアルを参照してください</a>!</li>
+</ul>
+<p><a href="/images/posts/2018/colorize-mask.png"><img src="/images/posts/2018/colorize-mask.png" alt=""></a></p>
+<ul>
+<li>Masked brushes: ブラシ先端にマスクを適用して、より生き生きとした描画効果を得ることができます。これでとてもクールなことができるようになります!</li>
+</ul>
+<p><a href="/images/posts/2018/waterpaint.gif"><img src="/images/posts/2018/waterpaint.gif" alt=""></a></p>
+<ul>
+<li>新しいブラシプリセット!Krita 4ではブラシセット全体を見直しました。また、ブラシプリセットはバンドルとしてパッケージされるようになりました。Krita 3のブラシセットも用意されていますが、デフォルトでは無効になっています。</li>
+</ul>
+<p><a href="/images/posts/2018/bundles.png"><img src="/images/posts/2018/bundles.png" alt=""></a></p>
+<h3 id="既知の問題">既知の問題</h3>
+<p>Krita 4は、3.0リリースほど大きくないとしても、Kritaプロジェクトでの大きな一歩です。 そのためいくつか既知の問題と注意事項があります:</p>
+<ul>
+<li>Krita 4はベクターレイヤーでSVGを使用しています。つまり、Krita 3のファイルでベクターレイヤーを使用しているものは完全に正しく読み込まれない可能性があります。バックアップを消さないでください!</li>
+<li>Krita 4の新しいテキストツールはもともと実装したかったツールに比べると限定されています。今回はコミックのセリフを作る、という一つの簡単な使用ケースに特化して、ベースとなるシステムを作りました。これからさらにテキストツールを改良して拡張していくつもりです。</li>
+<li>WindowsとLinux向けに新しいバイナリビルドファクトリーを用意しました。残念ながら、現時点ではWindows向けの32ビット版のビルドがありません。</li>
+<li>macOSでは共有メモリセグメントの制限が非常に厳しいため、G&rsquo;Micは現時点でmacOSでは機能しません。</li>
+<li>参照画像ドッキングパネルは削除されました。不正な画像があると簡単にクラッシュする原因になっていました。Krita 4.1で新しい参照画像ツールを追加して置き換える予定です。</li>
+</ul>
+<h3 id="ダウンロード">ダウンロード</h3>
+<h4 id="windows">Windows</h4>
+<p>Windowsユーザーの皆さんへ：もしクラッシュする事案に遭遇した場合は、<a href="https://docs.krita.org/Dr._Mingw_debugger">この案内（英語）</a> に従いデバッグシンボルをKritaに追加してください。これによってKritaがクラッシュした原因をログから解析できるようになります。</p>
+<ul>
+<li>64ビットWindows版: <a href="https://download.kde.org/stable/krita/4.0.0/krita-x64-4.0.0-setup.exe">krita-x64-4.0.0-setup.exe</a></li>
+<li>64ビットWindowsポータブル版: <a href="https://download.kde.org/stable/krita/4.0.0/krita-x64-4.0.0.zip">krita-x64-4.0.0.zip</a></li>
+<li><a href="https://download.kde.org/stable/krita/4.0.0/krita-x64-4.0.0-dbg.zip">64ビット版向けデバッグシンボル(Kritaをインストールしたフォルダに展開して使用)</a></li>
+</ul>
+<p>現時点ではWindows向けの32ビット版のビルドがありません。注意：Windows 7と8ではPythonスクリプト機能を有効にするには、別にUniversal C Runtimeをインストールする必要があります。<a href="https://docs.krita.org/Introduction_to_Python_Scripting#Technical_Details">マニュアル</a>を参照してください。</p>
+<h4 id="linux">Linux</h4>
+<ul>
+<li>
+<ul>
+<li>64ビットLinux用AppImage版: <a href="https://download.kde.org/stable/krita/4.0.0/krita-4.0.0-x86_64.appimage">krita-4.0.0-x86_64.appimage</a></li>
+</ul>
+</li>
+</ul>
+<p>現時点ではappimageには機能する翻訳が含まれていません。(なぜかFirefoxはテキストとして読み込もうとするようです。ダウンロードするにはリンクの右クリックから保存してください) またUbuntuと派生ディストリビューションでは<a href="https://launchpad.net/%7Ekritalime/+archive/ubuntu/ppa">Krita Lime PPA</a>からKrita 4.0.0をインストールすることもできます。snapの更新については作業中です。</p>
+<h4 id="osx">OSX</h4>
+<ul>
+<li>macOS ディスクイメージ版: <a href="https://download.kde.org/stable/krita/4.0.0/krita-4.0.0.dmg">krita-4.0.0.dmg</a></li>
+</ul>
+<p>注意: gmic-qtとPythonプラグインはmacOSで利用できません。</p>
+<h3 id="ソースコード">ソースコード</h3>
+<ul>
+<li>ソースコード: <a href="https://download.kde.org/stable/krita/4.0.0/krita-4.0.0.tar.gz">krita-4.0.0.tar.gz</a></li>
+</ul>
+<h4 id="md5sums">md5sums</h4>
+<p>すべてのダウンロード向け:</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.0.0/md5sums.txt">md5sums.txt</a></li>
+</ul>
+<h4 id="キー">キー</h4>
+<p>Linux appimageとソースのtarボールは署名されています。パブリックキーをhttps経由で取得できます: <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a> 署名は <a href="http://download.kde.org/stable/krita/4.0.0/">こちら</a></p>
+<h3 id="kritaを支援してください">Kritaを支援してください</h3>
+<p>Kritaは自由なオープンソースのプロジェクトです。<a href="https://krita.org/jp/support-us-jp/donations-jp/">寄付</a>や<a href="https://krita.org/jp/support-us-jp/shop-jp/">トレーニングビデオやアートブックの購入</a>で、プロジェクトを支援することを検討してみてください！皆様の支援によって、コアチームがフルタイムでKritaの開発作業を続けることが可能になります。</p>
+<p><a href="/images/posts/2018/Krita4_Alegoric_final.png"><img src="/images/posts/2018/Krita4_Alegoric_final.png" alt=""></a> Artwork by Ramon Miranda</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

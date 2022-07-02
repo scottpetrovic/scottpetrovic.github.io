@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last Two Weeks in Krita -- week 29 and 30 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last Two Weeks in Krita -- week 29 and 30</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>August 6, 2010</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>A period of relative quiet, when most Google Summer of Code students were busy working on the algorithms for the second part of gsoc project: Marc Pegon on warping, José Luis Vergara on bumpmapping. Boudewijn was in Bangalore hacking on the core architecture of KOffice, Cyrille was still moving and Sven preparing for his exams.</p>
+<p><a href="http://animtim.deviantart.com/art/Tribal-Warrior-172587048"><img src="http://fc01.deviantart.net/fs71/i/2010/205/1/7/Tribal_Warrior_by_Animtim.png" alt=""></a></p>
+<p>Art by Animtim</p>
+<h3 id="blogs">Blogs</h3>
+<p>It&rsquo;s hard to keep up &ndash; witness this irregular update on what&rsquo;s going on in Krita! &ndash; but most of the summer of code students blog regularly. And Lukas is regular as clockwork &ndash; every Monday morning an update on what happened last week!</p>
+<ul>
+<li><a href="http://lukast.mediablog.sk/log/?p=298">Lukas: Week 29: Performance and bugs</a></li>
+<li><a href="http://lukast.mediablog.sk/log/?p=309">Lukas: Week 30: Custom Brush Works</a></li>
+<li><a href="http://pentalis.org/kritablog/?p=157">Pentalis: Impasto and the halftone brush beta</a></li>
+<li><a href="http://pentalis.org/kritablog/?p=222">Pentalis: Impasto in Krita</a></li>
+<li><a href="http://www.kdedevelopers.org/node/4296">Marc: At Last, Image Warping!</a></li>
+</ul>
+<h3 id="code">Code</h3>
+<p>Eighty-seven commits in two weeks &ndash; where week 28 had 68. Still, lots of good progress as you can already see from the blogs. We&rsquo;re in the last stages of the Google Summer of Code period, and much time goes either into polish or into setting up the last features from the plan.</p>
+<p><strong>Adam Celarek</strong> is mostly done with the features for the Next Generation color selectors. He spent these weeks polishing, bugfixing, improving support with the various colorspaces Krita supports, implemented a history of recently used colors, synchronizing the current color with the rest of the KOffice system, and a minimal shade selector.</p>
+<p><strong>Ana Beatriz Guerrero López</strong> (who <a href="http://www.koffice.org/news/last-two-weeks-in-koffice-week-29-and-30/">did the same for Karbon</a>, fixed building Krita on ARM platforms.</p>
+<p><strong>Boudewijn</strong> fixed a usability bug in Krita, noted by Fabian: a pasted layer was not made active, ported Krita to the new QWidget-agnostic canvas code in KOffice and started working on a combined brush engine selector/brush settings/preset selector popup &ndash; without any concrete results, though.</p>
+<p><strong>Burkhard Lück</strong> fixed some problems with marking user-visible texts for translation.</p>
+<p><strong>Dmitry Kazakov</strong> implemented a swapper for image data. Krita is now on its fifth or so tile engine, and this is the second tile engine that includes swapping to a file. Bart Coppens and Casper Boemann implemented the first swapfile implementation, back in the single-thread days of Krita. The new one first starts swapping out undo information, and then, if memory is still tight, swaps out current image tiles. This sounds very simple &ndash; but the actual implementation is quite hairy, especially since Dmitry has made Krita very aggressivly multi-threaded!</p>
+<p><strong>José Luis Vergara</strong> implemented a new bumpmap filter, the Phong-bummapper. It&rsquo;s pretty fast, and the first step to a proper impasto effect &ndash; which is very similar to bumpmapping. Paint creates ridges and valleys, and light from single sources creates shadows over this height map. Animtim showed some work using the hatching brush on the <a href="http://forum.kde.org/viewtopic.php?f=138&amp;t=89406">forum</a>:</p>
+<p><img src="http://fc00.deviantart.net/fs71/f/2010/213/c/5/TiteElfe_Hachures_by_Animtim.png" alt=""></p>
+<p><strong>Lukáš Tvrdý</strong> fixed the brush outline for predefined bitmap brushes when scaling is applied, fixed the origin of the duplicate paintop, hacked for fun on the sketch brush, adding another mode, Chrome, fixed the sensors that determine many brush parameters, like size, and improved the performance of using the predefined brushes. Now <a href="http://www.davidrevoy.com/?article29/free-brush-kit-for-chaos-and-evolutions">Deevad&rsquo;s brush set</a>, which is default in Krita, works really well! Then he went on to optimize the line-drawing algorithm Krita uses, improved the performance of the autobrush by checking whether we really use some randomness in the computation. Lukáš next task was fixing the issues we have with creating custom brushes. This is something <strong>you</strong> (yes, I&rsquo;m looking at you, google analytics is all-powerful!) can help us test. We need input here from everyone on what works, what&rsquo;s cool, what&rsquo;s confusing since it is very nearly a completely new feature. Get compiling! If you have trouble, ask on the forum, ask here, ask on the mailing list or irc, but don&rsquo;t hesitate. We&rsquo;ll help you get a working Krita so you can help us create a great Krita.</p>
+<p><strong>Marc Pegon</strong> started working on perspective transformation in his new transform tool. He added the following instructions, which I should copy into the manual I am writing:</p>
+<p>Hold Meta key and move the mouse to apply a 3D rotation to the selection + a perspective projection. Horizontal movement rotates around the Y axis, and vertical movement rotates around the X axis.</p>
+<p>He also added some gui polish (<strong>testing needed!</strong>), progress information&hellip; And then begon to work on the warp mode. This is so cool, so much fun to play with:</p>
+<p><img src="/images/posts/2010/krita_warp.png" alt=""></p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

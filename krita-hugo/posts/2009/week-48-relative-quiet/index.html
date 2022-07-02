@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Week 48: Relative Quiet | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Week 48: Relative Quiet</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>November 30, 2009</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>A relatively quiet week, with only 42 commits. This no doubt was because five Krita hackers were travelling to Oslo for a KOffice sprint weekend! Boudewijn, Cyrille, Sven, Lukas and Dmitry met together with about a dozen other KOffice hackers in the Nokia offices, home to the Qt hackers.</p>
+<p>Despite a lack of commits, it was a productive weekend in its own right. Oslo being an expensive city, we spend the evenings in the hotel breakfast room drinking tea, munching chocolates (thanks go to Lukas for getting a big bag of all-sorts, and to Dmitry for bringing some excellent chocolate from home) and enjoying some high-bandwidth communication. And still, by Sunday we had managed to bring the bug count for trunk down to 60, but Cyrille then created a new bug&hellip; But another got fixed, and at the time of writing, we&rsquo;re still at 60.</p>
+<p>Another reason for the quiet might have been the release of Krita (and KOffice) 2.1 this week. The release was generally speak well-received in the press, judging from my bag of google alerts. However, Heise still felt Krita 2.1 to be a rather crash-happy, which was disappointing. Please! Test Krita 2.1 and report any crashes you might encounter. We&rsquo;ll try to fix them for 2.1.1! Any communication medium is okay with me: bugzilla, mail, irc, pigeon, paper letters, texting my n900&hellip;</p>
+<p>So, what got done last week?</p>
+<p>Vera Lukman has been trying to make the popup-palette for quick brush and color selection look nice.</p>
+<p><img src="http://krita2d.org/images/stories/krita-feature-images/popup_palette.png" alt=""></p>
+<p>Boudewijn Rempt continued trying to get Photoshop files to load. He has discovered another open source project for reading PSD files, <a href="http://www.telegraphics.com.au/svn/psdparse">psdparse</a>, which showed some additional color modes that appear to be present in Photoshop CS and which Krita already supports natively, so conversion should be easy. We&rsquo;re really close to loading our first Photoshop images now: as Cyrille Berger remarked, removing GraphicsMagick has given an enormous impetus to the development of file format filters.</p>
+<p>Adrian Page made the brand-new XCF work on Windows, where a standard KDE idiom needs a slightly different twist. Plus there were some issues with the library we are using, <a href="http://henning.makholm.net/software">XCFTools</a>.</p>
+<p>Cyrille Berger made Krita compatible with the latest, still unreleased version of OpenGTL. He also fixed the loading of OpenCTL-based color transformations.</p>
+<p>Dmitry Kazakov fixed a two bugs in trunk, namely <a href="https://bugs.kde.org/show_bug.cgi?id=215180">[Bug 215180] Undo in tile engine clears rects</a>, and <a href="https://bugs.kde.org/show_bug.cgi?id=212912">[Bug 212912] undoing transform tool actions doesn&rsquo;t update pixels</a>, making it much easier to work with our (currently still unstable) trunk.</p>
+<p>Sven Langkamp fixed <a href="https://bugs.kde.org/show_bug.cgi?id=195618">bug 195618</a>, so when you crop an image that has vector layers, all the vector shapes are now correctly placed again.</p>
+<p>Lukáš Tvrdý improved the dyna brush code-wise, but for the user little changed. Then did some more work on the spray brush: you can now load fairly big images and the spray brush will scale them according to the particle size. He demonstrated this in his <a href="http://lukast.mediablog.sk/log/?p=121">blog</a>.</p>
+<p><img src="http://krita2d.org/images/stories/krita-feature-images/spray-kde-hackers-planet.jpg" alt=""></p>
+<p>Feel free to comment on this article at the <a href="http://forum.kde.org/viewtopic.php?f=137&amp;t=84201">Krita Forums</a>.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

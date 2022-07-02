@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | The Inside View: How Krita is Developed | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">The Inside View: How Krita is Developed</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>August 2, 2019</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>6 min</em></span> 
+        
+        
+    </div>
+
+    <p>In this post, I want to share with you how we&rsquo;re developing Krita. Of course, the post&rsquo;s title is already nonsense, since there&rsquo;s no &ldquo;inside&rdquo; and &ldquo;outside&rdquo; when it comes to Krita. Krita is a free software project, and as open as it can be. If you use Krita, report issues, help people who are using Krita, show off your work, well, you&rsquo;re already part of this community that makes life better for everyone who uses Krita.</p>
+<p>That said, you might&rsquo;ve been using Krita for years, and still being a bit vague on who develops this application, how that&rsquo;s organized, why people are spending time on it and what resources we have for developing Krita.</p>
+<h3 id="who-are-the-developers">Who are the developers</h3>
+<p>Until <a href="https://en.wikipedia.org/wiki/Google_Summer_of_Code">2005</a>, all Krita development was done by volunteers, in their spare time. That year, Google started the Google Summer of Code program. Then we had students working full-time on Krita for three months; mentored by the existing volunteer team.</p>
+<p>For me, Krita maintainer since 2003, there was nothing more satisfying than working on Krita. In contrast with my day jobs, we actually started <a href="/about/krita-releases-overview/">releasing</a> in 2004!</p>
+<p>But it was clear that there was only so much that could be done by a purely volunteer, unsponsored team. Time is money, money buys development time, so since <a href="https://dot.kde.org/2009/12/02/krita-team-seeking-sponsorship-take-krita-next-level">2009</a>, we&rsquo;ve tried to sponsor development beyond Google Summer of Code. Some argued that this would kill the volunteer element in the community, but we&rsquo;ve never seen a trace of that.</p>
+<p>So, these days, there are four people working full-time on Krita. There is Dmitry, since 2012, sponsored by the <a href="/about/krita-foundation/">Krita Foundation</a> through donations and fund raisers.</p>
+<p>Me, Boudewijn, has been funded working on Krita through a combination of donations, special projects for third-party organizations and, since 2017, the income from the Windows Store. I don&rsquo;t do just coding, but pretty much all project management.</p>
+<p>Agata and Ivan started working full-time on Krita this year, and are funded through the income from the Steam Store. Agata is well-known as Tiar and has been supporting other Krita users for ages. Ivan has been around in the Krita community for more than ten years, first producing things like shortcut cheat sheets, and completing a Google Summer of Code project successfully in 2018.</p>
+<p>This year, there are <a href="/item/our-2019-google-summer-of-code-students/?utm_source=dlvr.it&amp;utm_medium=twitter">four Google Summer of Code students</a> working on Krita: Sharaf, Tusooa, Kuntal and Alberto.</p>
+<p>Any given week, <a href="https://github.com/KDE/krita/pulse">there are a dozen people committing</a> to Krita, so only a small part of the development community is funded. There are volunteers from many places in the world, some developing just one feature they need and asking for it to be included in Krita, others providing smaller and bigger features, bug fixes and UX improvements.</p>
+<p>The group of volunteers is more or less fleeting: people often come and go, but there are people who have been around for a long time. Wolthera manages our <a href="https://docs.krita.org">manual</a>, with help from Raghukamath. Scott maintains the website and helps out with UX design and GUI polish. Anna codes complicated stuff, like the gamut mask feature or more recently, the hardening of the saving code.   Ahabgraybeard helps other users on the <a href="https://forums.kde.org/krita">forum</a>, Timothee designs icons, Maria makes release videos, Irina handles the bi-weekly artist interviews.</p>
+<p>Of course, this is who were are&hellip; Developers, manual writers, artists. It&rsquo;s also important to realize what there isn&rsquo;t: there isn&rsquo;t a quality assurance team, so we&rsquo;re counting on our users to test the nightlies and the beta releases to find issues. There isn&rsquo;t a user support team, so we&rsquo;re again counting  on our users to help each other out. We don&rsquo;t have customer support or a marketing department. There isn&rsquo;t an office, and there isn&rsquo;t a legal department.</p>
+<h3 id="hows-development-organized">How&rsquo;s development organized</h3>
+<p>Our main communication channel is <a href="/irc/">irc</a>, internet relay chat. Yes, it&rsquo;s old-fashioned compared to something like <a href="https://webchat.kde.org/">Matrix</a>, but it works in a timely and dependable way.</p>
+<p>We have a weekly meeting at 14:00 CE(S)T every Monday. The meeting doesn&rsquo;t take more than an hour, and we&rsquo;ll discuss various topics and make a report. The reports are archived on <a href="https://files.kde.org/krita/krita_meeting_docs/">files.kde.org</a>.</p>
+<p>New code can be put up for review on KDE&rsquo;s gitlab instance, <a href="https://invent.kde.org/kde/krita/merge_requests">invent</a>. Everyone with a KDE identity account can fork Krita on gitlab and create pull requests.</p>
+<p>Right now, all full-time developers are working on fixing bugs for Krita 4.3, but volunteers can choose what they work on to a very large extent. The only limitation is that it must fit within Krita&rsquo;s <a href="/item/kritas-updated-vision/">vision</a>.</p>
+<p>And next week we&rsquo;ll have our <a href="https://community.kde.org/Krita/Sprint2019">2019 Krita Sprint</a>. We try to get together at least once a year. Not just the Krita contributors, but we also invite artists to our sprints. The only way to learn how people use our application is by watching them work! Sprints are intense, but also lots of fun.</p>
+<h3 id="what-are-kritas-resources">What are Krita&rsquo;s resources</h3>
+<p>Financially, we&rsquo;ve got several sources of income and support. The donation page you see after downloading Krita brings in about 2000 to 2700 euros a month; the median donation is 10 euros. This goes to the Krita Foundation. The yearly fundraiser brings in between 20,000 and 40,000 euros, and this also goes to the Krita Foundation. The income from the special projects, like the HDR project, is variable, but that, like the income from the Windows Store and the Steam Store, goes to a separate company for tax reasons. All of this is around 6,000 to 10,000 euros a month, and growing.</p>
+<p>As you can see, nobody who is working full-time on Krita is getting filthy rich, but it does make it possible for the four full-time developers to work on a project that&rsquo;s really worth it :-)</p>
+<p>Our non-financial resources are provided by the wider <a href="https://www.kde.org">KDE community:</a></p>
+<ul>
+<li>continuous integration system (<a href="https://build.kde.org/job/Extragear/job/krita/">Jenkins</a>)</li>
+<li>the binary factory that creates nightly builds for <a href="https://binary-factory.kde.org/job/Krita_Nightly_Windows_Build/">Windows</a>, <a href="https://binary-factory.kde.org/job/Krita_Nightly_Appimage_Build/">Linux</a> and <a href="https://binary-factory.kde.org/job/Krita_Nightly_MacOS_Build/">macOS</a> and releases for Windows and Linux</li>
+<li>these websites krita.org and our documentation site docs.krita.org</li>
+<li><a href="https://mail.kde.org/pipermail/kimageshop/">mailing list</a> (which doesn&rsquo;t see so much usage anymore, but if you go back to 2003, you&rsquo;ll find many interesting discussions)</li>
+<li>the <a href="https://forum.kde.org/viewforum.php?f=136">forum</a></li>
+<li><a href="https://bugs.kde.org/weekly-bug-summary.cgi">bug tracker</a></li>
+</ul>
+<p>And of course a broad community full of people who are experts on C++, CMake, Qt and community management. And a <a href="https://l10n.kde.org/">big translator community</a>.</p>
+<h3 id="future-development">Future development</h3>
+<p>While the developers and volunteers communicate mostly online, we occasionally get together in person with sprints. We discuss Krita of course, but we also socialize and just have a fun time! Next week we are meeting in the Netherlands for one of these sprints. We are going to be discussing many topics such as the future of Krita as well as taking a side trip to a <a href="https://openluchtmuseum.nl/en">local museum</a>. Many of our developers are artists as well, so there is sure to be a lot of sketch pads and painting flying around.</p>
+<p>if this sounds something you might want to be a part of, we are always welcoming new contributors. There are a lot of different areas that we have people volunteering and developing, not just hardcore programmers. We have a <a href="/get-involved/overview/">getting involved section</a> that outlines some of the areas such as testing and creating brush resources. We also have a lot of documentation on building krita and being involved with our <a href="https://docs.krita.org/en/contributors_manual/community.html#">updated contributor&rsquo;s manual</a>.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

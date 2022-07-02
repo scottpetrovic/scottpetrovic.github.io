@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.1.1 | Krita Site(ES)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/es">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.1.1</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>18 de julio de 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>Ésta es la primera versión de correcciones de la serie 4.1.x, lo cual incluye:</p>
+<ul>
+<li>Corrección en el cargado de PyKrita cuando se usa PyQt 5.11 (colaboracion de Antonio Rojas, ¡Gracias!) (<a href="https://bugs.kde.org/show_bug.cgi?id=396381">BUG:396381</a>)</li>
+<li>Corrección de cerrado del programa inesperadamente al usar objetos de vectores.  (<a href="https://bugs.kde.org/show_bug.cgi?id=396145">BUG:396145</a>)</li>
+<li>Corrección al cambiar el tamaño de un pincel del motor de pixel en el editor de pinceles. (<a href="https://bugs.kde.org/show_bug.cgi?id=396136">BUG:396136</a>)</li>
+<li>Corrección al usar el lenguaje del sistema en MacOS cuando mas de un lenguaje esta activado.</li>
+<li>Ya no se muestra el botón inhabilitado para seleccionar un color en el panel de las opciones de herramientas de vector. (<a href="https://bugs.kde.org/show_bug.cgi?id=389525">BUG:389525</a>)</li>
+<li>Corrección en el sistema de auto-guardado. (<a href="https://bugs.kde.org/show_bug.cgi?id=393266">BUG:393266</a>)</li>
+<li>Corrección en la curva del filtro de los canales de color. (<a href="https://bugs.kde.org/show_bug.cgi?id=396244">BUG:396244</a>)</li>
+<li>Corrección en la capa que usa la herramienta de imágenes de referencia.</li>
+<li>Corrección al juntar capas en modo aislado. (<a href="https://bugs.kde.org/show_bug.cgi?id=395981">BUG:395981</a>)</li>
+<li>Corrección al abrir documentos con mascaras tipo transformación que usan el filtro tipo caja. (<a href="https://bugs.kde.org/show_bug.cgi?id=395979">BUG:395979</a>)</li>
+<li>Ahora se alerta al usuario cuando se quiere usar Krita en una versión de Windows que ya no es compatible.</li>
+<li>Corrección del cerrado inesperado cuando se oculta el ultimo canal de color disponible. (<a href="https://bugs.kde.org/show_bug.cgi?id=395301">BUG:395301</a>)</li>
+<li>Ahora es posible el cargar paletas que no son compatibles con la licencia GPL tal como <a href="https://lospec.com/palette-list/endesga-16">https://lospec.com/palette-list/endesga-16</a></li>
+<li>Reincorporar en el menú la opción &ldquo;Selección invertida&rdquo;. (<a href="https://bugs.kde.org/show_bug.cgi?id=395764">BUG:395764</a>)</li>
+<li>Ahora se usa KFormat para mostrar números con formatos (contribución de Pino Toscano, ¡Gracias!</li>
+<li>Se ha ocultado la pagina de configuración de los controles deslizantes de color.</li>
+<li>Ahora ya no se puede seleccionar ningún color de una imagen de referencia si ésta es cien por ciento transparente. (<a href="https://bugs.kde.org/show_bug.cgi?id=396358">BUG:396358</a>)</li>
+<li>Se ha corregido el cierre inesperado cuando se enclava una imagen de referencia en un documento.</li>
+<li>Se han corregido algunos problemas al guardar y abrir imágenes de referencia. (<a href="https://bugs.kde.org/show_bug.cgi?id=396143">BUG:396143</a>)</li>
+<li>La herramienta de selección de color ahora funciona con las imágenes de referencia. (<a href="https://bugs.kde.org/show_bug.cgi?id=396144">BUG:396144</a>)</li>
+<li>Se ha extendido el rango del panorama para poder incluir cualquier tipo de imágenes de referencia.</li>
+</ul>
+<h2 id="descargas">Descargas</h2>
+<h3 id="windows">Windows</h3>
+<p>En Windows, si se encuentran el cerrado del programa inesperadamente, favor de seguir <a href="https://docs.krita.org/Dr._Mingw_debugger">las siguientes instrucciones</a> (en ingles) para encontrar los errores y así poder entender por qué suceden.</p>
+<ul>
+<li>
+<p>64 bits Windows: <a href="https://download.kde.org/stable/krita/4.1.1/krita-x64-4.1.1-setup.exe">krita-x64-4.1.1-setup.exe</a></p>
+</li>
+<li>
+<p>Portable 64 bits Windows: <a href="https://download.kde.org/stable/krita/4.1.1/krita-x64-4.1.1.zip">krita-x64-4.1.1.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.1.1/krita-x64-4.1.1-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></p>
+</li>
+<li>
+<p>32 bits Windows: <a href="https://download.kde.org/stable/krita/4.1.1/krita-x86-4.1.1-setup.exe">krita-x86-4.1.1-setup.exe</a></p>
+</li>
+<li>
+<p>Portable 32 bits Windows: <a href="https://download.kde.org/stable/krita/4.1.1/krita-x86-4.1.1.zip">krita-x86-4.1.1.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/4.1.1/krita-x86-4.1.1-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></p>
+</li>
+</ul>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>64 bits Linux: <a href="https://download.kde.org/stable/krita/4.1.1/krita-4.1.1-x86_64.appimage">krita-4.1.1-x86_64.appimage</a></li>
+<li>64 bits Linux <a href="https://download.kde.org/stable/krita/4.1.1/gmic_krita_qt-x86_64.appimage">G&rsquo;Mic-Qt plugin appimage</a>.</li>
+</ul>
+<p>En ocasiones Firefox trata el enlace como texto, para descargar el paquete simplemente has un clic a la derecha en el mismo enlace.</p>
+<p>Cuando se actualice, se podrá usar el repositorio de <a href="https://launchpad.net/~kritalime/+archive/ubuntu/ppa">Krita Lime PPA</a> para instalar Krita 4.1.1 en Ubuntu y sus derivados. Se está elaborando también un Snap.</p>
+<h3 id="osx">OSX</h3>
+<ul>
+<li>OSX disk image: <a href="https://download.kde.org/stable/krita/4.1.1/krita-4.1.1.dmg">krita-4.1.1.dmg</a></li>
+</ul>
+<p>Nota: El panel de dibujo táctil, el controlador de gmic-qt y el de PDF no están disponibles en Mac OS X.</p>
+<h3 id="código-fuente">Código fuente</h3>
+<ul>
+<li>Código fuente: <a href="https://download.kde.org/stable/krita/4.1.1/krita-4.1.1.tar.gz">krita-4.1.1.tar.gz</a></li>
+</ul>
+<h3 id="md5sum">md5sum</h3>
+<p>Para todas las descargas:</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/4.1.1/md5sum.txt">md5sum.txt</a></li>
+</ul>
+<h3 id="llave">Llave</h3>
+<p>El appimage y la fuente tarbal han sido firmadas, la llave pública se encuentra en el siguiente enlace: <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a>.</p>
+<p>Las firmas están <a href="http://download.kde.org/unstable/krita/3.1.3-beta.1">aquí</a>.</p>
+<h3 id="también-puedes-apoyarnos">También puedes apoyarnos</h3>
+<p>Krita es un programa no solo de código libre si no ademas está a disposición de manera gratuita, éste proyecto solo es posible gracias a las donaciones hechas por nuestros usuarios, por favor considera la posibilidad de ayudarnos con una <a href="https://krita.org/en/support-us/donations/">donación</a> o comprando <a href="https://krita.org/es/item/krita-3-2-0/%22https://krita.org/en/support-us/shop">videos instructivos o nuestro libro de arte Made With Krita</a>, solo con tu ayuda podremos mantener a nuestro pequeño grupo desarrollando Krita en tiempo completo, ¡Gracias!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orges/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orges/roadmap">Roadmap</a>
+			<a href="https://krita.orges/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/es/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orges/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/es/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orges/about">About</a>
+			<a href="https://krita.orges/donations">Donations</a>
+			<a href="https://krita.orges/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/es">What is KDE</a>
+			<a href="https://krita.orges/website">Website Licenses</a>
+			<a href="https://krita.orges/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last week in Krita -- week 45 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last week in Krita -- week 45</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>November 9, 2009</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Krita 2.1 has been branched, so trunk is open again. This means that developers have pushed all their pent-up changes into trunk, as well as re-enabled all the features that didn&rsquo;t make the cut for 2.1. For some of those features that was because they were crashy, and this means that trunk is once again not for the faint of heart! So, if you want to test-drive krita and report bugs, you should switch to the 2.1 branch, where we are still fixing bugs for the release.</p>
+<p>So, what&rsquo;s new in trunk? Adrian Page fixed bug <a href="https://bugs.kde.org/show_bug.cgi?id=209652">209652</a> and that means that Windows users can open JPEG files. The fix is also applied to the 2.1 Windows build.</p>
+<p>Lukas Tvrdy made it possible to change the size of the currently used autobrush by pressing shift and dragging the cursor over the canvas. Lukas has also added a very cool grid-based brush engine and improved the spray brush engine by generalizing the color source. See his <a href="http://lukast.mediablog.sk/log/">blog</a>!</p>
+<p><img src="http://krita2d.org/images/stories/screenshots/krita_grid_brush.png" alt="Using the Grid Brush" title="Grid Brush"></p>
+<p>Dmitry Kazakov has fixed a very long-standing bug in the convolution code. Now the alpha channel in the destination paint device is updated correctly, and that made it possible to remove some ugly hacks in Krita. Another cool feature landing in trunk this week Dmitry coded: masks now have an opacity and a blending mode setting. As Dmitry said in his commit message &ldquo;It makes sense in some circumstances&rdquo;. Dmitry also fixed <a href="https://bugs.kde.org/show_bug.cgi?id=212235">bug 212235</a>, which prevented newly created custom images from being displayed correctly when Krita uses it&rsquo;s new tile manager. Great work &ndash; now we need a similar fix for loading images! The new tile manager, by the way, despite being a bit buggy here and there, has been enabled in trunk so it gets a good testing. Compared to the old tile manager, it has zero lock contention, measured with <a href="http://git.0pointer.de/?p=mutrace.git">mutrace</a>.</p>
+<p>Matthew Woehlke has improved the random generator. An application like Krita has a very special requirement of its random generator, namely that it is repeatably random (so, for instance, a noise filter layer always is the same until the settings change.) His improvements have been backported to the 2.1 branch.</p>
+<p>Cyrille Berger (who has just finished writing his Phd thesis &ndash; congratulations!) fixed a number of bugs: both jpeg and png export filters now correctly save the resolution of the image, the shiva filter extension has been improved, painting in the high channel-depth <a href="http://www.opengtl.org/">OpenCTL colorspaces</a> is fixed. And Cyrille has started on a new color mixer docker, the digital color mixer, which looks a bit like the Krita 1.6 color docker, but promises to be much improved.</p>
+<p>Sven Langkamp has implemented a new feature: if you use Krita shape tools on vector layers, shapes are created. They don&rsquo;t yet use the Krita brushes to draw themselves, but that might just be the next step.</p>
+<p>Vera Lukman, who started working on Krita as part of the Season of KDE initiative hasn&rsquo;t yet committed to trunk, but she has been working assiduously on a new gui concept: <a href="http://wiki.koffice.org/index.php?title=Krita/Quick_sketch_Pallete">quick brush and color selection palette</a> in a working branch in svn.</p>
+<p>Boudewijn Rempt extended the paint tool with a pan feature: press space, click and drag to pan the image. You don&rsquo;t even need to keep the spacebar pressed down. Another new feature Boudewijn added: pressing the escape key toggles the visibility of the toolbox and dockers. Great for his X61t tablet, where in tablet mode, escape and the cursor keys are the only keys available. A long-standing wish, namely being able to select a color from the canvas without switching to the powerful color picker tool was implemented as well, after some <a href="http://forum.kde.org/viewtopic.php?f=139&amp;t=83497">discussion</a> on the forum. This lead to some discussion, since we are running out of keyboard modifiers in the default tool. People with dual screen setups: please test trunk! Boudewijn has attempted to fix bug 186944, but he hasn&rsquo;t a dual screen setup, so he cannot test! Boudewijn has put in some work on making Krita compatible with the .myb brush format from <a href="http://mypaint.intilinux.com/"></a>. Result: Version 2.0 brushes load correctly, but painting hasn&rsquo;t been implemented yet. The painterly color mixer, originally implemented by Emanuele Tamponi, doesn&rsquo;t crash anymore (<a href="https://bugs.kde.org/show_bug.cgi?id=211918">bug 211918</a>), but it also doesn&rsquo;t mix yet. Boudewijn is trying to fix that issue, more news next week.</p>
+<p>To finish off with some statistics: we had about 80 messages on our mailing list and 78 commits to subversion. We&rsquo;re now at 61 bugs, of which 20 are crash bugs. There are also 100 wishes open. See you next week!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

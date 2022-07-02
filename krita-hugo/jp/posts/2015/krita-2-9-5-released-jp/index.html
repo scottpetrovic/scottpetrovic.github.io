@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 2.9.5 リリース！ | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 2.9.5 リリース！</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>June 10, 2015</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Kickstarterキャンペーンが成功した後も、新しい機能追加とバグ修正は続きます！グループレイヤーへのパススルーモードの追加、すべてのレイヤータイプでのアルファ相続のサポート、PSDサポートの向上、ピックしたカラーのキャンバス上でのプレビューの追加などに進捗がありました。新しく、ブラシプリセット履歴ドッキングパネルも追加しました！リリースノートは以下になります。</p>
+<p><strong>Krita 2.9.5は2.9.4.7に存在したクリティカルなバグの修正も含んでいます。Kritaを再起動した時にクラッシュする現象が起こっている場合は、2.9.5にアップデートをお願いします。</strong></p>
+<h3 id="新機能">新機能:</h3>
+<ul>
+<li>チャンネルごとのフィルタに明度カーブを追加 (bug 324332)</li>
+<li>ブラシプリセット履歴ドッキングパネルを追加 (bug 322425)</li>
+<li>ファイルを開くダイアログに、すべての種類を表示するオプションを追加</li>
+<li>レイヤースタイル機能にグローバルライトを追加 (bug 348178)</li>
+<li>タグ情報のないPNG画像に対するプロファイルをユーザが選択できるように変更 (bug 345913, 348014)</li>
+<li>パフォーマンスロギング機能を追加</li>
+<li>デフォルトブラシプリセットへのタグ付けを追加(デフォルトタグの削除は現時点ではできません！)</li>
+<li>.kraファイルに作者プロフィール機能(デフォルト、匿名、カスタム)を追加</li>
+<li>レイヤードッキングパネルにレイヤースタイルのボタンと操作を追加</li>
+<li>フィルタの再適用をするCtrl-Fショートカットの追加 (bug 348119)</li>
+<li>Intelユーザへのディスプレイドライバを更新する必要について警告を追加</li>
+<li>PSDファイルのレイヤースタイルの読み込み、保存を実装</li>
+<li>レイヤースタイルでのパターンの読み込み、保存のサポートを追加</li>
+<li>すべての種類のレイヤーでアルファ相続をサポート</li>
+<li>グループレイヤーにパススルーモードスイッチを追加 (bug 347746, 185448)</li>
+<li>PSDファイルへのグループレイヤーの保存を実装</li>
+<li>WebP (Linux環境)サポートを追加</li>
+<li>新しい画像に貼りつけ機能のショートカット (Ctrl-Shift-N)を追加 (bug 344750)</li>
+<li>色のピック時の、キャンバス上プレビューを追加 (bug 338128)</li>
+<li>mypaintスタイルの円形ブラシアウトラインを追加</li>
+<li>カーソル形状の設定を、アウトライン部分の設定と、カーソル形状の設定に分離</li>
+<li>PSDグループの透明マスクの読み込み、保存を追加</li>
+</ul>
+<h3 id="パフォーマンス向上">パフォーマンス向上:</h3>
+<ul>
+<li>翻訳UIを使用している場合のストローク開始遅れの除去</li>
+</ul>
+<h3 id="バグ修正">バグ修正:</h3>
+<ul>
+<li>ビュー回転メニューの修正。回転アクションの追加。</li>
+<li>グローバル選択マスクを複製しようとした場合のクラッシュの修正 (bug 348461)</li>
+<li>詳細色選択ドッキングパネルに設定アイコンを追加(レンチのアイコンです)</li>
+<li>ポップアップのお気に入りプリセット数がリセットされる問題の修正(bug 344610)</li>
+<li>クリアアクションに適切な起動フラグを設定 (bug 34838)</li>
+<li>複数画像、ビュー、ウィンドウの扱いのバグを数個修正(bug 348341, bug 348162)</li>
+<li>ドキュメント解像度の制限を修正 (bug 348339)</li>
+<li>.kraファイルにレイヤースタイルを持つ複数レイヤーを保存する時の問題を修正 (bug 348178)</li>
+<li>16 bitチャンネルRGB画像の表示を修正 (bug 343765)</li>
+<li>P_Graphite_Pencil_grain.gihペン先ファイルの修正</li>
+<li>レイヤー削除をUndoした時のプロジェクション更新の問題を修正 (bug 345600)</li>
+<li>コマンドライン引数の扱いを改善</li>
+<li>Windows上でのオートセーブ回復ダイアログを修正</li>
+<li>現在の画像からのテンプレート作成を修正 (bug 348021)</li>
+<li>レイヤースタイルとアルファ相続を修正 (bug 347120)</li>
+<li>アニメーションをオンにしたときのOxygenウィジェットスタイルのクラッシュの回避策を追加 (bug 347367)</li>
+<li>Photoshopで保存されたJPEG画像を読み込む時に、メタデータの解像度情報を確認するように修正 (bug 347572)</li>
+<li>変形マスクを独立表示しようとした時にもクラッシュしないように修正 (変形マスクには描きこむことはできません) (bug 347622)</li>
+<li>PSDからの焼き込み、ColorBurn(焼き込みカラー)ブレンドモードを正しく読み込むように修正 (bug 333454)</li>
+<li>グループレイヤーの不透明部分を選択できるように修正(bug 347500)</li>
+<li>アウトライン表示をしない設定の場合も、クローンブラシのアウトラインを表示するように修正 (bug 288194)</li>
+<li>レイヤースタイルのグラデーション保存を修正</li>
+<li>ツールバーのスライダーレイアウトの改善</li>
+<li>浮動小数点TIFFファイルの読み込みを修正 (bug 344334)</li>
+</ul>
+<p><strong>ダウンロード</strong></p>
+<ul>
+<li>Linux:
+<ul>
+<li>各ディストリビューションは各ディストリビューションでのbleeding edgeレポジトリからパッケージを作成することを期待されています。</li>
+<li>UbuntuとUbuntu派生ディストリビューションでは通常通りKrita Limeを使用できます: <a href="https://launchpad.net/~dimula73/+archive/ubuntu/krita">https://launchpad.net/~dimula73/+archive/ubuntu/krita</a>.</li>
+<li>OpenSUSEユーザはKDE:Extraレポジトリ: <a href="http://download.opensuse.org/repositories/KDE:/Extra/">http://download.opensuse.org/repositories/KDE:/Extra/</a> もしくはVcサポート付でビルドされたKrita(ペイントが高速化)を含むLeinir’s OBS repositoriesを使用できます:
+<ul>
+<li><a href="http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.1/">http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.1/</a></li>
+<li><a href="http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.2/">http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_13.2/</a></li>
+<li><a href="http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_Factory/">http://download.opensuse.org/repositories/home:/leinir:/calligragemini/openSUSE_Factory/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>WindowsとOSX
+<ul>
+<li>更新された<a href="https://jp.krita.org/download/krita-desktop/" title="Krita Desktop">ダウンロードページ</a>から新しいビルドがダウンロードできます。</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

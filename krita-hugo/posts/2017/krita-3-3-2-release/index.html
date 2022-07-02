@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 3.3.2 Released | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 3.3.2 Released</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>November 3, 2017</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>3 min</em></span> 
+        
+        
+    </div>
+
+    <p>Today we are releasing Krita 3.3.2, a bugfix release for Krita 3.3.0. This release fixes two important regressions:</p>
+<ul>
+<li>Krita 3.3.1 would read brush presets with textures incorrectly. This is now fixed.</li>
+<li>Windows 1709 broke wintab and Windows Ink tablet handling in various ways; we worked around that and it works again in this version of Krita.</li>
+</ul>
+<p>Additionally, there are the following fixes and improvements:</p>
+<ul>
+<li>Animation: make it possible to export empty frames after the end of the animation.</li>
+<li>Animation: make it possible to render up to a 10,000 frames</li>
+<li>Add a command-line option to start Krita with a new, empty image: krita &ndash;new-image RGBA,8,5000,3000</li>
+<li>Performance: improved caching for effect and selection masks</li>
+<li>Performance: Fix a leak in the smudge brush</li>
+<li>Performance: Improve performance when using the hardware-accelerated canvas</li>
+<li>Performance, Windows: improve the performance when loading icons</li>
+<li>macOS: render the frames-per-second overlay widget correctly</li>
+<li>Filters: it&rsquo;s now possible to edit the filter&rsquo;s settings directly in the xml that is used to save filter definitions to .krita files.</li>
+<li>Filters: a new ASC_CDL color balance filter was added, with Slope, Offset and Power options.</li>
+<li>Crashes: fix a crash that happened when closing a second document with infinite canvas active</li>
+<li>Layers: Make it possible to copy group layers</li>
+<li>UI: make it possible to use the scroll-wheel to scroll through patterns when the patterns palette is very narrow.</li>
+<li>UI: Improve drag and drop feedback in the layer panel</li>
+<li>UI: Hide the lock and collapse titlebar icons when a panel is floating</li>
+<li>G&rsquo;Mic: the included G&rsquo;Mic is updated to the latest release.</li>
+</ul>
+<h3 id="download">Download</h3>
+<h4 id="windows">Windows</h4>
+<p>Note for Windows users: if you encounter crashes, please follow <a href="https://docs.krita.org/Dr._Mingw_debugger">these instructions</a> to use the debug symbols so we can figure out where Krita crashes.</p>
+<ul>
+<li>
+<p>64 bits Windows: <a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2-x64-setup.exe">krita-3.3.2-x64-setup.exe</a></p>
+</li>
+<li>
+<p>Portable 64 bits Windows: <a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2.1-x64.zip">krita-3.3.2.1-x64.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2.1-x64-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></p>
+</li>
+<li>
+<p>32 bits Windows: <a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2-x86-setup.exe">krita-3.3.2-x86-setup.exe</a></p>
+</li>
+<li>
+<p>Portable 32 bits Windows: <a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2.1-x86.zip">krita-3.3.2.1-x86.zip</a></p>
+</li>
+<li>
+<p><a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2.1-x86-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></p>
+</li>
+<li>
+<p>Explorer Shell extension: <a href="https://download.kde.org/stable/krita/KritaShellExtension-v1.2.4-setup.exe">kritashellex-1.2.4.0-setup.exe</a></p>
+</li>
+</ul>
+<h4 id="linux">Linux</h4>
+<ul>
+<li>64 bits Linux: <a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2-x86_64.appimage">krita-3.3.2-x86_64.appimage</a></li>
+</ul>
+<p>(If, for some reason, Firefox thinks it needs to load this as text: to download, right-click on the link.)</p>
+<p>When it is updated, you can also use the <a href="https://launchpad.net/%7Ekritalime/+archive/ubuntu/ppa">Krita Lime PPA</a> to install Krita 3.3.2 on Ubuntu and derivatives. There is also an updated snap.</p>
+<h4 id="osx">OSX</h4>
+<ul>
+<li>OSX disk image: <a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2.dmg">krita-3.3.2.dmg</a></li>
+</ul>
+<p>Note: the gmic-qt and pdf plugins are not available on OSX.</p>
+<h3 id="source-code">Source code</h3>
+<ul>
+<li>Source code: <a href="https://download.kde.org/stable/krita/3.3.2/krita-3.3.2.1.tar.xz">krita-3.3.2.1.tar.xz</a></li>
+</ul>
+<h4 id="md5sums">md5sums</h4>
+<p>For all downloads:</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/3.3.2/md5sums.txt">md5sums.txt</a></li>
+</ul>
+<h4 id="key">Key</h4>
+<p>The Linux appimage and the source tarball are signed. You can retrieve the public key over https here: <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a>. The signatures are <a href="http://download.kde.org/stable/krita/3.3.2/">here</a>.</p>
+<h4 id="support-krita">Support Krita</h4>
+<p>Krita is a free and open source project. Please consider supporting the project with <a href="/support-us/donations/">donations</a> or by <a href="/support-us/shop">buying training videos or the artbook!</a> With your support, we can keep the core team working on Krita full-time.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

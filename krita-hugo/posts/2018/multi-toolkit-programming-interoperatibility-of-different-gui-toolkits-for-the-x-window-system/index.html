@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Multi Toolkit Programming: Interoperatibility of different GUI toolkits for the X Window System | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Multi Toolkit Programming: Interoperatibility of different GUI toolkits for the X Window System</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>March 2, 2018</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p> </p>
+<p>(Archived from <a href="http://www.linux-kongress.org/1998/abstracts.html">http://www.linux-kongress.org/1998/abstracts.html</a>)</p>
+<h2 id="multi-toolkit-programming-interoperatibility-of-different-gui-toolkits-for-the-x-window-system">Multi Toolkit Programming: Interoperatibility of different GUI toolkits for the X Window System</h2>
+<h3 id="freitag-56-1215-1300">Freitag, 5.6. 12:15-13:00</h3>
+<p>Matthias Ettrich <a href="mailto:ettrich@kde.org">ettrich@kde.org</a>Thanks to the KDE Desktop Environment Project there is finally some movement inside the freeware community regarding graphical user interfaces. The ergonomical standards for graphical applications grow and an increasing number of users is no longer satisfied with a chaotically patched desktop. I clearly realized that with another project of mine: The LyX document processor, a kind of wordprocessor based on the LaTeX typesetting system. Only six months after the foundation of the KDE Desktop Project I recieved more and more emails of long-term LyX users &ldquo;complaining&rdquo; that their wordprocessor did no longer fit into their new desktop, but was more and more difficult to use. I could not believe that at first, until I created a larger document with my own program after a break of several months. And really: After only one year of KDE-usage it was remarkably more difficult for me to get used to the different behaviour of apparently well-known controls again, especially scrollbars and pulldown menus. &ldquo;The forces I set free&hellip;.&rdquo; came out against me, that must not be! Also things began to bother me which I considered entirely normal before: The configuration by editing a complex file named lyxrc with a texteditor, complex dialog popups instead of dynamic toolbars, missing session management, missing drag&rsquo;n&rsquo;drop and all those further KDE benefits. In addition, the toolkit used by LyX - named xforms - differed very much from Motif in respect of usage, and therefore also from the OS/2 workplace shell, Macintosh and MS-Windows. This was no real problem in the times of chaotic X-desktops - Athena is even more unusable - but these times are luckily over.</p>
+<p>Everything cried for a port! And due to the urging of Kalle Dallheimer, who was in seek for a comfortable wordprocessor for his wife, we found ourselves sitting in front of two X-terminals. Equiped with a couple of cans of caffeinated chocolate (too much coffee is bad for the stomach), we set ourselves a limit of 24 hours for a port.</p>
+<p>A first &ldquo;grep&rdquo; over the sources, which are not too small with 80.000 lines of C++, was not very encouraging: Over 50 complex dialogs and far more than 5000 calls of xforms-functions. It was obvious that the trivial method of porting &mdash; replacing all xforms related code with KDE/Qt-code and recompile &mdash; was neither possible within 24 hours nor very amusing. The pure thought about the need to debug several thousand lines of new GUI-code at once after a couple of days hard work, took the last bit of fun away. And fun should be the most important motivation to create free software.</p>
+<p>The ideal solution to cope with such a huge task of porting is obvious: Simply set one foot after the other. That means replacing function call for function call, dialog for dialog without breaking the functionality of the whole. This model of porting is similar to a complete renovation of a house while you still live in it. In one word: The solution is multi toolkit programming.</p>
+<p>In fact: only few lines of modified code made it possible to add new Qt-GUI-controls additionally to the current xforms stuff. LyX simply used both toolkits at the same time!</p>
+<p>In my talk I will try to explain how and why something like this works:</p>
+<ul>
+<li>X Basics: Displays and drawables</li>
+<li>the classical X11 event loop</li>
+<li>variations and extensions in legacy toolkits</li>
+<li>slots, places for interoperability</li>
+</ul>
+<p>One the one hand multi toolkit programming has several advantages for the porting of applications: (a) It is easier, (b) it can be done within a larger timeframe, (c) it can be distributed on many shoulders. All these are important points for free software development. On the other hand it becomes possible to borrow controls and functionaliy from other toolkits. And example might be a GTK-application which want to use the KApplication-class from the KDE Desktop Environment to get access to a comfortable data base, desktop configuration events, session management, iconloader and much more.</p>
+<p>My investigation will cover the popular ( = many applications available) tookits like Qt, Tk, Motif, Athena and XForms. I might also have a look at a framework like wxWindows and &mdash; with regard to a possible Gimp-to-KDE-port &mdash; GTK.</p>
+<p>The target audience of the talk are mainly programmers who already have some X11-experiences. But also all others may hopefully gain some useful knowledge about the X Window System and event driven programming in general.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

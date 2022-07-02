@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development-builds_zh-hk on Krita Site(HK)</title>
+    <link>https://krita.org/zh-hk/categories/development-builds_zh-hk/</link>
+    <description>Recent content in development-builds_zh-hk on Krita Site(HK)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 03 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/zh-hk/categories/development-builds_zh-hk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>發佈 Krita 5.0 嘅第五個測試版本 (Beta 5)</title>
+      <link>https://krita.org/zh-hk/posts/2021/krita-5-0-0-beta-5-released_zh-hk/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2021/krita-5-0-0-beta-5-released_zh-hk/</guid>
+      <description>因為先前 Beta 3 嘅 macOS 版本建置出現咗問題，所以</description>
+    </item>
+    
+    <item>
+      <title>發佈 Krita 5.0 嘅第三個測試版本 (Beta 3)</title>
+      <link>https://krita.org/zh-hk/posts/2021/third-beta-for-krita-5-0_zh-hk/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2021/third-beta-for-krita-5-0_zh-hk/</guid>
+      <description>今日，我哋推出咗 Krita 5 嘅第三個 Beta 測試版本。</description>
+    </item>
+    
+    <item>
+      <title>發佈 Krita 5.0 嘅第二個測試版本 (Beta 2)</title>
+      <link>https://krita.org/zh-hk/posts/2021/second-beta-for-krita-5-0_zh-hk/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2021/second-beta-for-krita-5-0_zh-hk/</guid>
+      <description>雖然比我哋本來預期遲咗啲，但係我哋依家終</description>
+    </item>
+    
+    <item>
+      <title>現已發佈 Krita 5.0 嘅首個測試版本 (Beta 1)</title>
+      <link>https://krita.org/zh-hk/posts/2021/first-beta-for-krita-5-0-released_zh-hk/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2021/first-beta-for-krita-5-0-released_zh-hk/</guid>
+      <description>今日，Krita 開發團隊推出咗 Krita 5.0 嘅首個</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.4.3 第二測試版本 (beta 2) 已推出</title>
+      <link>https://krita.org/zh-hk/posts/2021/krita-4-4-3-beta-2-release_zh-hk/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2021/krita-4-4-3-beta-2-release_zh-hk/</guid>
+      <description>Krita 開發團隊推出咗 Krita 4.4.3 嘅第二個測試版本。依</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.4.3 測試版本 (beta 1) 已推出</title>
+      <link>https://krita.org/zh-hk/posts/2021/krita-4-4-3-beta-1-release_zh-hk/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2021/krita-4-4-3-beta-1-release_zh-hk/</guid>
+      <description>Krita 開發團隊推出咗 Krita 4.4.3 嘅首個測試版本。依個</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.4.2 第二測試版本 (beta 2) 已推出</title>
+      <link>https://krita.org/zh-hk/posts/2020/krita-4-4-2-beta-2_zh-hk/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2020/krita-4-4-2-beta-2_zh-hk/</guid>
+      <description>Krita 開發團隊依家推出咗 Krita 4.4.2 嘅第二個測試版本</description>
+    </item>
+    
+    <item>
+      <title>Krita 4.4.2 測試版本 (beta 1) 已推出</title>
+      <link>https://krita.org/zh-hk/posts/2020/krita-4-4-2-beta-1_zh-hk/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/zh-hk/posts/2020/krita-4-4-2-beta-1_zh-hk/</guid>
+      <description>Krita 開發團隊推出咗 Krita 4.4.2 嘅首個測試版本。依個</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>krita on Krita Site</title>
+    <link>https://krita.org/tags/krita/</link>
+    <description>Recent content in krita on Krita Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 16 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://krita.org/tags/krita/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Krita Book in French!</title>
+      <link>https://krita.org/posts/2016/first-krita-book-in-french/</link>
+      <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2016/first-krita-book-in-french/</guid>
+      <description>After Japanese and English, here is the first book for french-speaking people who want to get started using Krita! The author is Timothée Giet, long time user and contributor and the creator of two of acclaimed training DVDs for the Krita Foundation, Comics with Krita and Secrets of Krita.</description>
+    </item>
+    
+    <item>
+      <title>Krita 2.9 Animation Edition Beta released!</title>
+      <link>https://krita.org/posts/2015/krita-2-9-animation-edition-beta-released/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2015/krita-2-9-animation-edition-beta-released/</guid>
+      <description>Today we are happy to announce the long awaited beta-version of Krita with Animation and Instant Preview support! Based on Krita 2.</description>
+    </item>
+    
+    <item>
+      <title>Krita Webshop: New Designs!</title>
+      <link>https://krita.org/posts/2013/krita-webshop-new-designs/</link>
+      <pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://krita.org/posts/2013/krita-webshop-new-designs/</guid>
+      <description>The wait is finally over! We are here with a new set of merchandise designs which features artworks contributed by some of our own artists.</description>
+    </item>
+    
+  </channel>
+</rss>

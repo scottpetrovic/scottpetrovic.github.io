@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 3.0.1ベータ版開発ビルド | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 3.0.1ベータ版開発ビルド</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>August 24, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>Krita 3.0.1に向け、新しい開発ビルドを作りました。今回修正されたバグの中でも重要なものは以下の通りです。</p>
+<ul>
+<li>保存及びエクスポートがもっと安定しました（ただしTempフォルダにちゃんと空きがある必要があります）</li>
+<li>二値化フィルタについて、マスクを使った時と8ビットRGBA以外の色空間でのプレビューの問題が修正されました。</li>
+<li>3_textureブラシ形状の問題が修正されました</li>
+<li>テンプレートの保存が再びちゃんと働くようになりました</li>
+<li>レイヤードッキングパネルの色ラベルの見た目が修正されました</li>
+<li>グリッドと基準線ドッキングパネルのレイアウトが修正されました</li>
+<li>マルチスレッド処理が全体的に改良されました。Andrew Savonichevさんのパッチに感謝を</li>
+<li>倍率変更がブラシの変形の前に行われるようになり、新しい縦横比オプションはより正しく見えるようになりました</li>
+<li>NVidiaのGPUで補助線を使用した際に発生する表示の問題（画面が真っ暗になる等）が修正されました</li>
+<li>ブラシの切り替えがより速やかに行えるようになり、その際にメモリリークも起こらなくなりました</li>
+</ul>
+<p>別のニュースとして、Krita開発チームは今週末オランダのデーフェンテルで実際に会っての会合を開きます。バグを修正し、新しい機能と新しいトレーニングビデオの企画等について話し合うことになります！</p>
+<h4 id="windows">Windows</h4>
+<p>WindowsではKritaはWacom、Huion、Yiynovaのタブレット及びSurface Proシリーズのタブレットをサポートしています。ポータブルZIPファイル版は解凍してショートカットkritaをダブルクリックして起動してください。</p>
+<p>Windows版KritaはWindows 7、8、10でテストされています。現在は64ビット版のみです。DrMingwデバッガと一緒に使うことでクラッシュの原因を見つけられるデバッグビルドも用意されています。くわしくは<a href="https://docs.krita.org/KritaFAQ#How_can_I_produce_a_backtrace_on_Windows.3F">よくある質問の当該項（※英語）</a>をご覧ください。このビルドにはベクトル化による最適化が適用されていないため、通常のビルドより低速である恐れがあります。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/windows/devbuilds/krita-3.0.99.90-x64-beta.zip">krita-3.0.99.90-x64-beta.zip</a> (MD5 e98b07a732e05bcb86ba038badcb44a4)</li>
+<li><a href="http://files.kde.org/krita/3/windows/debugbuilds/krita3-x64-dbg-latest.zip">krita3-x64-dbg-latest.zip</a> (MD5 65220e9f12ead3bf2752c4db989634f4)</li>
+</ul>
+<h4 id="linux">Linux</h4>
+<p>Linuxについてはあらゆる最近のLinuxディストリビューションで動作するはずの<a href="http://appimage.org/">AppImage</a>版を提供します。AppImageをダウンロードして、実行可能にして起動してください。インストールは必要ありません。現時点では64ビット版のみです。このappimageは実験的なデスクトップ統合を含んでいます。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/linux/devbuilds/krita-3.0.99.90-x64.appimage">krita-3.0.99.90-x64.appimage</a> (MD5 2a39fddc1dece779ea36c3d03d08bb60)</li>
+</ul>
+<p>また <a href="https://uappexplorer.com/app/krita.krita">UbuntuのApp Storeからsnap format</a>でKritaを手に入れることもできます（※NVidiaのプロプライエタリドライバを使っている場合、Ubuntuの制限によりSnap版Kritaは使えません）このバージョンにはKrita自体への翻訳も含まれています。</p>
+<h4 id="osx及びmacos">OSX及びMacOS</h4>
+<p>OSX版Kritaは3.1でフルサポートが実現される予定です。OSX版Krita 3.0にはまだ高速プレビューと高品質キャンバス表示が実装されていません。また画像のレンダリングの問題もあります―この問題はApple社が OpenGL互換性プロファイルのサポートを自社製品のディスプレイドライバとタッチパッドとタブレットのサポートの配布で打ち切ったことによるもので す。現在Krita開発はこれらの機能のOpenGL 3.0コアプロファイルを使用した再実装を行っています。今のところはOSX版Kritaを何らかの製作作業に使う際はOpenGLを無効にすることを 推奨します。OSX版Kritaは10.9、10.10、10.11で動作し、MacOSでも動くことが報告されています。</p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/osx/devbuilds/krita-3.0.99.90.dmg">krita-3.0.99.90.dmg</a> (a4c2dc7c51aa43adee7acceacaf82164)</li>
+</ul>
+<h4 id="ソースコード">ソースコード</h4>
+<ul>
+<li><a href="http://files.kde.org/krita/3/source/krita-3.0.99.90.tar.gz">krita-3.0.99.90.tar.gz</a> (MD5 e5b50274b617cb5356030aa22cbcdf1b)</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Krita 4.0 versión de prueba | Krita Site(ES)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/es">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Krita 4.0 versión de prueba</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>9 de noviembre de 2017</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>7 min</em></span> 
+        
+        
+    </div>
+
+    <p>No hemos tenido la oportunidad de mostrar la version en desarrollo de Krita 4.0, las razones son multiples, mas que nada el estar continuamente mejorando y corrigiendo todas las versiones disponibles.</p>
+<p>Entre los trabajos que se han estado realizando tenemos lo que hemos añadido de la versión en desarrollo a las estables 3.2 y 3.3, tal como Windows8 Pointer API, el uso de la reproducción de ANGLE Direct3D, el nuevo controlador de efectos G&rsquo;Mic, las nuevas opciones en la linea de comando, el poder pintar de manera táctil, nuevos pinceles y modos de mezclado, entre otros trabajos que no se podrán mostrar en la versión 3.x, si no asta que se lance la 4.x.</p>
+<p> </p>
+<p>La pasada version de prueba de Krita 4.0 fue en junio del 2017, <a href="https://krita.org/en/item/first-development-builds-for-krita-4-0/">ésta versión</a> ya posee un gran numero de nuevas funciones:</p>
+<ul>
+<li>Las capas basadas en SVG con mejores herramientas.</li>
+<li>El nuevo motor de pincel tipo aerógrafo de Allan Marshall.</li>
+<li>El pincel de restauración de Eugene Ingerman.</li>
+<li>Un nuevo sistema que advierte al usuario si Krita no puede guardar el documento en el tipo de formato deseado, <strong>ademas que ahora guardar documentos ocurre en el fondo</strong>, esto es puedes guardar y seguir pintando mientras el proceso ocurre sin distracción.</li>
+<li>El nuevo panel de paletas de color de Wolthera.</li>
+<li>La programación con Python (solo disponible en Windows: se necesita de voluntarios para otros sistemas). Eliakin y Wolthera han añadido durante todo el verano pasado nuevos controladores de Python que poseen funciones especiales, esto a la ves que siguen desarrollando y mejorando éste sistema, tales como:
+<ul>
+<li>Diez pinceles - Te permite añadir hasta diez pinceles de tu gusto y se les asigna un atajo del teclado, lo cual hace su acceso fácil y rápido.</li>
+<li>Panel de ajustes rápidos - Con botones de valor predefinido del tamaño, opacidad y flujo.</li>
+<li>Herramientas para la organización de historietas &ldquo;comics&rdquo;.</li>
+</ul>
+</li>
+</ul>
+<h2 id="nuevas-adiciones-en-krita-40">Nuevas adiciones en Krita 4.0</h2>
+<h3 id="se-ha-mejorado-su-desempeño-de-manera-significante">Se ha mejorado su desempeño de manera significante.</h3>
+<p><img src="/images/posts/2017/gripes.png" alt=""></p>
+<p>Tras la respuesta de la encuesta del uso de Krita, uno de los problemas principales resulto ser la lentitud, lo cual puede significar varias cosas, siempre habra sierto tipo de pinceles y o funciones que no pueden operar de manera instantanea, lo cual es normal. Aun así, se tuvo la oportunidad de trabajar en un proyecto específico al desempeño de Krita. Aun cuando esto significa que el lanzamiento de Krita se retardará un poco, se considera que este mejoramiento tendrá bastante significado y aceptación para los usuarios, esto incluye:</p>
+<ul>
+<li>Uso múltiple de los núcleos del CPU para el motor de pincel &ldquo;pixel&rdquo;, alrededor del 80% de los pinceles pertenecen a éste motor.</li>
+<li>Mayor rapidez en el estampado de los trazos de cada pincel.</li>
+<li>Mayor capacidad de cacheo, lo que optimiza la reproducción de los pinceles.</li>
+</ul>
+<p>Este video de Wolthera muestra el motor de pincel con uso múltiple de los núcleos del CPU.</p>
+<p><a href="https://www.youtube.com/watch?v=wnPUtYo2Y9Y">https://www.youtube.com/watch?v=wnPUtYo2Y9Y</a></p>
+<h3 id="punto-de-referencia-sobre-el-desempeño-de-krita">Punto de referencia sobre el desempeño de Krita</h3>
+<p>Se ha añadido el sistema de punto de referencia lo cual nos permite ver el comportamiento de los pinceles, lo cual nos ayuda a crearlos de mejor manera:</p>
+<p><img src="/images/posts/2017/performance-benchmarking.gif" alt=""></p>
+<p> </p>
+<p> </p>
+<h3 id="cuadriculado-de-un-pixel">Cuadriculado de un Pixel</h3>
+<p>Andrey Kamakin a añadido la opcion de mostrar el cuadriculado de cada píxel cuando se hace un acercamiento del lienzo:</p>
+<p><img src="/images/posts/2017/pixel-grid-example.gif" alt=""></p>
+<h3 id="vista-previa-instantánea-del-pincel">Vista previa instantánea del pincel</h3>
+<p>Scott Petrovic ha estado trabajando junto a algunos artista en el diseño del editor de pinceles. Ya se han hecho bastantes cambios, la manera de nombrar y guardar es totalmente nueva. Ademas de la vista previa instantánea al cambiar cada parámetro del pincel.  Ahora también se puede disminuir los espacios de cada lado de la ventana para acomodarla en pantallas mas pequeñas.</p>
+<p><img src="/images/posts/2017/live-preview.gif" alt=""></p>
+<h3 id="cuadriculado-isométrico">Cuadriculado Isométrico</h3>
+<p>Ésta nueva funcion puede ser controlada y modificada mediante el panel de cuadriculado:</p>
+<p><a href="/images/posts/2017/isometric.png"><img src="/images/posts/2017/isometric-1024x715.png" alt=""></a></p>
+<h2 id="filtros">Filtros</h2>
+<ul>
+<li>Nuevos
+<ul>
+<li>Filtro de detecto de borde.</li>
+<li>Filtro de mapeo de altura hacia normal.</li>
+<li>Filtro de balance de color ASC-CDL, con parámetros de inclinación, compensación y fuerza.</li>
+</ul>
+</li>
+<li>Filtro de mapeo de gradientes mejorado.</li>
+</ul>
+<h3 id="capas">Capas</h3>
+<ul>
+<li>Las capas archivo ahora pueden ser cambiadas de lugar.</li>
+<li>Una conversión de capas ha sido añadida, lo cual guarda las capas regulares reemplazándolas con capas archivo.</li>
+</ul>
+<h3 id="paneles">Paneles</h3>
+<ul>
+<li>Un nuevo panel para uso de pantallas tactiles, con botones mas grandes similares que asemejan los de una tableta Wacom.</li>
+</ul>
+<h3 id="y-mucho-mas">Y mucho mas</h3>
+<p>Por supuesto se han corregido un gran numero de errores de código, se ha mejorado la interfaz, etc. Hay <a href="https://krita.org/en/krita-4-0-release-notes/">una lista mas detallada</a> que se está elaborando (en ingles por lo pronto) y mostrará todas las novedades del próximo lanzamiento de Krita.</p>
+<h3 id="nuevas-funciones-en-desarrollo">Nuevas funciones en desarrollo</h3>
+<p>Existen nuevas funciones que aun no están totalmente terminadas pero que se espera puedan ser incorporadas en Krita 4.0:</p>
+<ul>
+<li>La nueva herramienta de texto (apenas se ha comenzado, por lo que falta mucho trabajo por delante).</li>
+<li>Una capa mascara de coloreado mas rápida (ya existe, pero es muy lenta para ser usada).</li>
+<li>Pinceles encimados, donde se podrán poner mas de un tipo de punta de pincel y usarse al mismo tiempo.</li>
+</ul>
+<p>Todo ésto bajo construcción, habrá muchos errores de código todavía ya que se está trabajando en ellos, ésta es una versión de prueba, se han hecho los paquetes listos para instalarse pero ten en consideración lo siguiente:</p>
+<p><em><strong>Esto es</strong> <strong>código</strong> <strong>pre-alfa. El programa se cerrará inesperadamente, se comportará de manera rara, puede inclusive destruir las</strong> <strong>imágenes</strong> <strong>en las que</strong> <strong>estés</strong> <strong>trabajando al tratar de guardarlas.</strong></em></p>
+<p><em><strong>ADEMAS: ¡LOS DOCUMENTOS CON CAPAS DE VECTORES GUARDADOS EN KRITA 4.0 NO PODRAN SER EDITADOS EN KRITA3.x!</strong></em></p>
+<p>Puedes tener ambas versiones en el mismo sistema, pero las dos usarán la misma configuración, (por lo pronto, ya que ésto puede cambiar), lo que significa que cualquiera de las dos puede confundirse al tratar de usar los mismos archivos, pinceles y otros parámetros establecidos personalmente.</p>
+<h3 id="descargas">Descargas</h3>
+<p>Por lo pronto, todos los paquetes, excepto por el Lime PPA, son creados y administrados por el director del proyecto Krita: Boudewijn Rempt, lo cual no es sustentable. Solo una persona extra ha ayudado a mantener los códigos para la creación del paquete de Windows. Se necesita realmente de voluntarios que puedan mantener los paquetes de Linux y MacOS/OSX vigentes. Lo que sugiere:</p>
+<ul>
+<li>El <strong>Appimage</strong> carece de <strong>Python</strong> y <strong>sonido</strong>, puede que también carezca del panel de pintura tactil basado en QML. No hemos logrado encontrar la forma de añadir éstas funciones en el Appimage, el cual para construirlo, requiere de un codigo que ya está anticuado, y Boudewijn no tiene tiempo nesesario para mejorarlo, con todo el resto del proyecto bajo su cuidado. <strong>Por lo que necesitamos de  un mantenedor para los paquetes de Linux</strong>.</li>
+<li>El <strong>OSX/MacOS</strong> carece de <strong>DMG</strong>, ademas de <strong>Python</strong>, el uso de <strong>PDF</strong> externos y el controlador <strong>G&rsquo;Mic</strong>. Boudewijn simplemente no tiene el conocimiento detrás de estos sistemas para lograr integrar tales funciones. El desarrollo de Krita en OSX se ha mejorado gracias a Berhhard Liebl, pero aun con su ayuda <strong>se necesita de un mantenedor para MacOS/OSX</strong>.</li>
+</ul>
+<p> </p>
+<h3 id="descargas-1">Descargas</h3>
+<h4 id="windows">Windows</h4>
+<p>En Windows, si se encuentran con cierres del programa inesperados, favor de seguir <a href="https://docs.krita.org/Dr._Mingw_debugger">las siguientes instrucciones</a> (en ingles) para encontrar los errores y así poder entender por que suceden.</p>
+<p>No hay paquetes de 32 bits en Windows, tampoco un instalador.</p>
+<ul>
+<li>Portable 64 bits Windows: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha.2/krita-4.0.0-prealpha.2c.zip">krita-4.0.0-prealpha.2c.zip</a></li>
+<li><a href="https://download.kde.org/unstable/krita/4.0.0-prealpha.2/krita-4.0.0-prealpha.2c-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></li>
+</ul>
+<h4 id="linux">Linux</h4>
+<ul>
+<li>64 bits Linux: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha.2/krita-4.0.0-pre-alpha-x86_64.appimage">krita-4.0.0-pre-alpha-x86_64.appimage</a></li>
+</ul>
+<p>(En ocasiones Firefox trata el enlace como texto, para descargar el paquete simplemente has un clic a la derecha en el mismo enlace.)</p>
+<h4 id="osx">OSX</h4>
+<ul>
+<li>OSX disk image: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha.2/krita-4.0.0-prealpha.2b.dmg">krita-4.0.0-prealpha.2b.dmg</a></li>
+</ul>
+<p>Nota: El controlador de gmic-qt y de PDF no está disponible en OSX.</p>
+<h3 id="código-fuente">Código fuente</h3>
+<ul>
+<li>Código fuente: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha.2/krita-4.0.0-prealpha.2.tar.gz">krita-4.0.0-prealpha.2.tar.gz</a></li>
+</ul>
+<h4 id="md5sums">md5sums</h4>
+<p>Para todas las descargas:</p>
+<ul>
+<li><a href="https://download.kde.org/unstable/krita/3.2.0-beta.1/md5sums.txt">md5sums.txt</a></li>
+</ul>
+<h4 id="llave">Llave</h4>
+<p>El appimage y la fuente tarbal han sido firmadas, la llave pública se encuentra en el siguiente enlace: <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a>.</p>
+<p>Las firmas están <a href="http://download.kde.org/unstable/krita/3.1.3-beta.1">aquí</a>.</p>
+<h4 id="también-puedes-apoyarnos">También puedes apoyarnos</h4>
+<p>Krita es un programa no solo de código libre si no ademas está a disposición de manera gratuita, éste proyecto solo es posible gracias a las donaciones hechas por nuestros usuarios, por favor considera la posibilidad de ayudarnos con una <a href="https://krita.org/en/support-us/donations/">donación</a> o comprando <a href="https://krita.org/es/item/krita-3-2-0/%22https://krita.org/en/support-us/shop">videos instructivos o nuestro libro de arte Made With Krita</a>, solo con tu ayuda podremos mantener a nuestro pequeño grupo desarrollando Krita en tiempo completo, ¡Gracias!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orges/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orges/roadmap">Roadmap</a>
+			<a href="https://krita.orges/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/es/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orges/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/es/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orges/about">About</a>
+			<a href="https://krita.orges/donations">Donations</a>
+			<a href="https://krita.orges/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/es">What is KDE</a>
+			<a href="https://krita.orges/website">Website Licenses</a>
+			<a href="https://krita.orges/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

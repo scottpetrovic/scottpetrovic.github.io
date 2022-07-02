@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last Week in Krita -- Week 12 | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last Week in Krita -- Week 12</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>March 30, 2010</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>9 min</em></span> 
+        
+        
+    </div>
+
+    <p>This week, we dived under sixty bugs! Well, that&rsquo;s a fib, it was actually yesterday, Monday that we reached that milestone, and this report runs from Monday to Sunday, but I don&rsquo;t want to wait until next week to gloat! We had about sixty commits (though about half a dozen were Timothy Pearson fixing stuff for his <a href="http://trinity.pearsoncomputing.net/">trinity branch</a>, a resurrection of KDE 3).</p>
+<p>Lukáš spent most of last week working on <a href="http://lukast.mediablog.sk/log/?p=244">canvas mirroring</a> &ndash; but also on improving <a href="http://lukast.mediablog.sk/log/?p=248">his brush engines</a>. In fact, when he was improving his brush engines in his spare time, he actually <em>should</em> have been writing text for his university thesis on Krita Brush Engines. The lure of the code is too strong and the brush engines are too much fun to play with! However, this meant we had to do some shuffling to make it possible for Lukáš to finish his thesis on time. Instead of working on Krita during the last three weeks of April, Lukáš will write on his thesis, after doing a yum remove gcc to avoid any and all temptation. After Lukáš&rsquo; last exams in June, he will start working on Krita again, first putting in his three April weeks and then going on with the second period, the run up to the 2.3 release. This will also give me a chance to refine the <a href="http://wiki.koffice.org/index.php?title=Krita/ActionPlan">Action Plan</a>, since the rapid pace of Krita development has obsoleted large parts of it!</p>
+<p>With the growth of the Krita community, some of our resources are getting a bit strained &ndash; like the set of Intuos graphics tablets we have to loan to developers. So we&rsquo;ve not only <a href="http://www.zazzle.com/kritashop">opened shop</a>, but if you look closely, there&rsquo;s also a neat little donation button replacing the pledgie campaign near the top of this page. Don&rsquo;t hesitate to click on it!</p>
+<h3 id="release">Release</h3>
+<p>Last week, the Krita source repository was frozen for the impending 2.2 release. This means only bugfixes are allowed. Lukáš is continuing his work in the koffice-ko work branch, where he implemented the first version of canvas mirroring. The first beta for Krita 2.2 will be released this week.</p>
+<p>It&rsquo;s quite a big improvement over 2.1, but it still isn&rsquo;t the release we&rsquo;re working towards, but an interim thing. There are big performance improvements, but we still have those sixty bugs, we still have a big issue with memory leaks, and we still need to do a lot of gui polishing.</p>
+<p>So 2.2 is going to be a great release for people who want to help the Krita team make 2.3 really polished and user-ready: we need your feedback! Don&rsquo;t hesitate to report bugs &ndash; feel free to ask questions on the <a href="http://forum.kde.org/viewforum.php?f=136">forums</a>, on the <a href="http://mail.kde.org/mailman/listinfo/kimageshop">mailing list</a>, on #krita on irc.freenode.net or to report your bugs directly. Don&rsquo;t worry too much about duplicates &ndash; we can do the filtering for you. Get testing!</p>
+<h3 id="code">Code</h3>
+<p><strong>Boudewijn</strong> fixed a crash when switching tools — actually just a quick hack for a regression. That was all he had time for that week, unfortunately &ndash; on Saturday, the moment Boudewijn sat down to start fixing some bugs, his washing machine made ominous sounds and then failed. So he had to go out and get a new one, in order to retain for Krita the distinction of &ldquo;Least Niffy Free Graphics Application&rdquo;. (A difficult feat in the face of failing shower cabins and now failing washing machines!)</p>
+<p><strong>Cyrille</strong> fixed the display of selections, tool overlays, grids and assistants on the OpenGL canvas. There is still an issue with Qt 4.6 and the OpenGL canvas for some people: this is a combination of a bug in Qt and issues with graphics drivers. Cyrille also refactored the way PigmentCMS stores the information about color channels for colorspaces. The metadata editor in Krita uses a Qt library (QtUiTools) that is only available as a static library, and if you try to run Krita compiled against one build of Qt, and then run Krita against another build, you&rsquo;d get a crash &ndash; Cyrille added a check for that and now doesn&rsquo;t load the metadata plugin anymore under those circumstances.</p>
+<p>We had a very nasty crash happening when you&rsquo;d try to undo painting after converting your image to another color space: fixed! An issue with starting to pan while painting got fixed: this fix was actually the cause of the crash Boudewijn fixed — such is life on the edge. A very subtle issue was present where the first footprint of a brush could be painted twice, and Cyrille solved that as well, as well as an issue where the drawing angle sensor was initialized incorrectly.</p>
+<p>The new, faster smudge op wasn&rsquo;t quite perfect yet: there were ways to get a corrupted stroke, this got fixed as well. Finally, Cyrille fixed a <a href="https://bugs.kde.org/show_bug.cgi?id=232441">bug 232441</a> &ndash; krita freezes when using the crop tool on new images.</p>
+<p><strong>Dmitry</strong> fixed an issue where a mask updated areas outside its selection. Dmitry also added a test for convolution, showing some problems. Edward Apap was working on convolution when he got a job &ndash; and starting on a new job always takes a lot of energy and effort, so he hasn&rsquo;t been around for a while, but I&rsquo;m sure that we&rsquo;ll see him return soon. In the meantime, Dmitry fixed a bug when applying a convolution filter to a transparent layer. Finally, Dmitry fixed the order masks are applied to a layer.</p>
+<p>There&rsquo;s still plenty to do in our projection code, as well as in the display code, but there is a good chance that Dmitry will either be doing that during the Google Summer of Code, or, if he doesn&rsquo;t get a slot, sponsored by <strong>Silvio Grosso</strong>, working two months on finishing this code in time for the 2.3 release.</p>
+<p><strong>Lukáš</strong> cleaned up the curve brush brush engine &ndash; this is a fun brush engine that lets you paint wavy lines. The Sumi-E brush was renamed to &ldquo;hairy brush&rdquo;, since it is much more versatile than a chinese brush imitation, but at the same time, we wanted to honour <a href="http://portal.acm.org/citation.cfm?id=15911&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=84060571&amp;CFTOKEN=61652648">Strassman&rsquo;s seminal work</a>. Lukáš applied a patch by Pentalis, one of the Krita Google Summer of Code hopefuls, which cleaned up the gui for the hairy brush. On the brush engine front, Lukáš added some checks and limits to the settings of the hairy brush: it is possible to tweak the settings so the hairy brush becomes a <a href="http://forum.kde.org/viewtopic.php?f=138&amp;t=82755">rainy brush</a> &ndash; and it was possible to scatter the rain so widely your computer would drown the X11 server.</p>
+<p><img src="http://www.krita.org/images/stories/temp-krita-pix/pluie.jpg" alt=""></p>
+<p>On the sponsored work front, Lukáš worked on the canvas mirroring feature. This work was done in the <a href="http://websvn.kde.org/branches/work/koffice-ko/">koffice-ko feature branch</a> since Krita 2.2 is now frozen except for bug fixes. There are still complications here: mirroring works, except when you zoom, but we&rsquo;ll be looking into this issue before merging after the freeze lifts. This weeks topic, by the way, is implementing a &ldquo;default settings&rdquo; button for the brush engines.</p>
+<p>Following attempts to make a Krita 2.2 beta 1 package for Fedora, Rex Dieter cleaned up a lot of our .desktop files.</p>
+<p><strong>Sven</strong> was on a roll fixing bugs: he fixed a crash in the filter dialog, the animation of pipe brushes, wrote a test for an issue when using a &ldquo;fixed-size&rdquo; paint device as a mask, fixed the fill method for that type of paint device, fixed using a crash when using predefined brushes in the duplicate brush engine, fixed <a href="https://bugs.kde.org/show_bug.cgi?id=228983">bug 228983</a> (inverting a selection hangs Krita) (and wrote a unittest so we can check whether there will be regressions), fixed the default extension of the preset files (.kpp, they are in ~/.kde4/share/config/krita/paintoppresets, if you want to share them with friends or on deviant-art), made sure we use the name of the preset (and if necessary, make it unique) instead of a number when saving presets.</p>
+<p>Sven also fixed a crash on inserting a selection, replaced an ordinary slider with the new super slider in the text brush, fixed the text brush itself, made sure the super slider updates while dragging again, replaced ordinary sliders with super sliders in the predifined brush settings page, made sure you see at least something when using brush outline cursor while painting with brush engines that don&rsquo;t have an outline, like the curve or particle brush. The cursor outline for the hairy brush was broken: Sven fixed that as well. He cleaned up the layout of the autbrush widget, and finally fixed a really annoying bug: at one point, we&rsquo;d broken the bounds check in the super slider, which meant that you could enter any number, and as I said above, that could make it rain all over Europe, drown your computer and make X11 abort.</p>
+<h3 id="extensions">Extensions</h3>
+<p>One of the things we promised when we <a href="http://www.valdyas.org/fading/index.cgi/hacking/lastweekend.html">first unfolded our vision</a> was an extensions project where all the cool stuff that isn&rsquo;t ready for inclusion in Krita or doesn&rsquo;t fit in the vision can go. Enter <a href="http://gitorious.org/krita-extensions">Krita Extensions</a>! The code in this repository <a href="http://extensions.krita.org/buildreport">is recompiled against Krita trunk regularly so it doesn&rsquo;t bitrot</a>. Currently, it contains all the code from the old krita-plugins and krita2-plugins projects. If anyone wants to do something totally experiment or something that won&rsquo;t fit the vision, like clearly photo-oriented stuff, feel free to ask <a href="mailto:boud@valdyas.org">me</a> or Cyrille Berger to create a repository for you. Of course, everyone is always free to work on their stuff outside krita or the krita extensions project. It&rsquo;s just that it&rsquo;s more fun to be involved with us! Anyone with questions is, of course, free to join us on #krita on irc.freenode.org, on the <a href="http://mail.kde.org/mailman/listinfo/kimageshop">mailing list</a> or the <a href="http://forum.kde.org/viewforum.php?f=136">krita forums</a> &ndash; or through a gitorious.org merge request!</p>
+<p>Four Krita plugins have been lost: the panorama plugin, which, despite having been a blast to develop for Cyrille is completely obsoleted by the advances in <a href="http://hugin.sourceforge.net/">Hugin</a> and the expand, contract and binarize filters which are being ported to <a href="http://www.opengtl.org/Shiva.html">OpenShiva</a>. We might move other plugins that are currently in Krita there as well.</p>
+<p>As you can <a href="http://extensions.krita.org/buildreport/">see</a>, there are plenty of build failures at the moment: some of these plugins were never even ported to Krita2.</p>
+<h3 id="summer-of-code">Summer of Code</h3>
+<p>Currently, five people have approached the Krita team about the Google Summer of Code: Dmitry Kazakov, long-lost Krita hacker Emanuele Tamponi, of painterly colorspaces fame, Adam Celarek, Marc Pegon and Pentalis. We&rsquo;re all enthusiastic about the possiblities this summer. Now is the time for entering applications. If you think of also having a pop, remember this: you simply haven&rsquo;t got any chance at all to be selected if you don&rsquo;t communicate with the Krita team beforehand on irc.freenode.net, #krita. Given the strong field, we won&rsquo;t back any unknown horses &ndash; and even if the field weren&rsquo;t so strong, we wouldn&rsquo;t do that anyway.</p>
+<p>I guess it&rsquo;s the same for other projects; you need to establish contact with the project members beforehand. The way Pentalis has done this is quite exemplary, he even managed to show us his first Krita brush engine already! That sort of thing inspires confidence! Of course, Dmitry, Marc, Adam and Emanuele have already shown their involvement.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

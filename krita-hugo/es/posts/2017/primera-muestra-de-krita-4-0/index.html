@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Primera muestra de Krita 4.0 | Krita Site(ES)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/es">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Primera muestra de Krita 4.0</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>15 de junio de 2017</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <h4 id="advertencia">¡Advertencia!</h4>
+<p>Ésta es una muestra bastante prematura de lo que será la versión 4.x de Krita, la intención es el de descubrir con tu ayuda, errores de código comunes que no hemos detectado en nuestros sistemas y así podremos continuar de manera mas eficaz. Ésta versión &ldquo;pre-alfa&rdquo; no es recomendada para ningún tipo de trabajo artístico, serio o especial, ya que se pueden perder o corromper documentos e imágenes, aun cuando hay usuarios que tienen la suerte de crear arte sin problemas con ésta versión, ésto no indica que el mismo resultado estará presente en todos los sistemas. Si has deseado poner a prueba la versión y encuentras errores de código, por favor de reportarlos en <a href="https://bugs.kde.org">bugs.kde.org!</a></p>
+<p><strong>Éstos son los nuevos cambios en ésta versión:</strong></p>
+<p>Uno de los cambios mas importantes y complicados, mas aun que el paso de la versión 2.9 a la 3.0 es el reemplazo completo de el sistema de imágenes de vector, pasando de el <a href="https://docs.oasis-open.org/office/v1.2/OpenDocument-v1.2.html">Open Document Graphics</a> al formato <a href="https://www.w3.org/TR/SVG/">SVG</a> para guardar la información de los vectores. Ésto hace de Krita un programa con mayor compatibilidad hacia otros programas tales como <a href="https://inkscape.org">inkscape</a>. Krita puede aun abrir y cargar documentos que ya han sido creados en ODG con vectores, pero solo tendrá la capacidad de guardar en SVG. <strong>Nótese que una ves que Krita 4.0 guarda un documento ODG en SVG, éste no podrá ser usado en Krita 3.0, por lo que se recomienda duplicar los documentos a experimentar.</strong>.</p>
+<p><a href="/images/posts/2017/vector.png"><img src="/images/posts/2017/vector-934x1024.png" alt=""></a></p>
+<p>Se ha recreado la manera en que se interactuar con los vectores lo que debe facilitar su uso, esperamos los comentarios de nuestros usuarios al respecto, ya que se desea que el eso de los vectores sea tan productivo y satisfactorio como el resto de los componentes de Krita.</p>
+<p>Otro cambio importante es el nuevo motor de pincel de aerógrafos &ldquo;airbrush&rdquo;, desarrollado por Allen Marshall, motor que reemplaza completamente el anterior, ésto afectará todos los pinceles creados con el mismo, sin embargo el nuevo motor es mucho mejor.</p>
+<p>Eugene Ingerman ha añadido un pincel de compostura &ldquo;Healing Brush&rdquo;, el cual puede cubrir o completar partes de una imagen automáticamente, muy útil para la manipulación de fotografías entre otros.</p>
+<p><a href="https://youtu.be/jI87VzDtkPY">https://youtu.be/jI87VzDtkPY</a></p>
+<p>l nuevo sistema de guardado de archivos es mas seguro ya que avisa al usuario si el formato que se escoge producirá la perdida de información o componentes creados en Krita, tal como guardar en PNG o JPEG, perderá las capas, etc. Nótese que Guardar un archivo no es lo mismo que exportarlo, para mas información ver el manual.</p>
+<p><a href="/images/posts/2017/warnings.png"><img src="/images/posts/2017/warnings.png" alt=""></a></p>
+<p>El panel de las paletas de color ha sido mejorado por Wolthera van Hövell tot Westerflier, ahora te permite organizar las paletas en grupos de color, arrastrar y colocar colores y modificar los grupos con un doble clic.</p>
+<p><a href="/images/posts/2017/palette_dnd.png"><img src="/images/posts/2017/palette_dnd.png" alt=""></a></p>
+<p>También se ha creado un nuevo panel con símbolos en SVG que puedes añadir como figuras predefinidas, tales como diálogos para historietas, de hecho se ha incluido la serie creada por David para &ldquo;Pepper and Carrot&rdquo; la cual te dará bastantes opciones.</p>
+<p><a href="/images/posts/2017/symbol.png"><img src="/images/posts/2017/symbol.png" alt=""></a></p>
+<p>Todo esto ademas de muchos detalles por doquier los cuales puedes encontrar explorando la interfaz y las funciones, estamos trabajando también en la herramienta de texto, la cual está apenas en sus inicios, y próximamente en las versiones de prueba de Krita.</p>
+<p>De igual manera ya tenemos la base de el adaptador de Python, el cual estamos poniendo a prueba, tenemos sin embargo un problema con el mismo, no hemos logrado encontrar la manera de juntar Python con sus módulos para lograr que estos funcionen. Ademas solo se ha logrado incorporar el adaptador en Krita para Linux, pero no así para Windows o OSX. <strong>Si tienes experiencia y te gustaría ayudar con estos problemas, por favor contáctanos, ¡Gracias!</strong></p>
+<p><a href="/images/posts/2017/scripter.png"><img src="/images/posts/2017/scripter.png" alt=""></a> The Scripter &ndash; ad-hoc scripting in Krita, created by Eliakin Costa.</p>
+<h4 id="descargas">Descargas</h4>
+<h4 id="windows">Windows</h4>
+<p>En Windows, si se encuentran con cierres del programa inesperados, favor de seguir <a href="https://docs.krita.org/Dr._Mingw_debugger">las siguientes instrucciones</a> (en ingles) para encontrar los errores y así poder entender por que suceden.</p>
+<p>Estas versiones de prueba solo están disponibles en 64 bits, windows portable zip files, Linux appimages y en OSX disk images.</p>
+<ul>
+<li>Portable 64 bits Windows: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha/krita-4.0.0-prealpha.1-x64.zip">krita-4.0.0-prealpha.1-x64.zip</a></li>
+<li><a href="https://download.kde.org/unstable/krita/4.0.0-prealpha/krita-4.0.0-prealpha.1-x64-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></li>
+<li>Portable 32 bits Windows: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha/krita-4.0.0-prealpha-x86.zip">krita-4.0.0-prealpha-x86.zip</a></li>
+<li><a href="https://download.kde.org/unstable/krita/4.0.0-prealpha/krita-4.0.0-prealpha-x86-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></li>
+</ul>
+<h4 id="linux">Linux</h4>
+<ul>
+<li>64 bits Linux: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha/krita-4.0.0-pre-alpha-x86_64.appimage">krita-4.0.0-prealpha-x86_64.appimage</a></li>
+</ul>
+<h4 id="osx">OSX</h4>
+<ul>
+<li>OSX disk image: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha/krita-4.0.0-prealpha.dmg">krita-4.0.0-pre-alpha.dmg</a></li>
+</ul>
+<h3 id="source-code">Source code</h3>
+<ul>
+<li>Source code: <a href="https://download.kde.org/unstable/krita/4.0.0-prealpha/krita-4.0.0-prealpha.tar.gz">krita-4.0.0-pre-alpha.tar.gz</a></li>
+</ul>
+<h4 id="md5sums">md5sums</h4>
+<p>For all downloads:</p>
+<ul>
+<li><a href="https://download.kde.org/stable/krita/3.1.4/md5sums.txt">md5sums.txt</a></li>
+</ul>
+<h4 id="llave">Llave</h4>
+<p>El appimage y la fuente tarbal han sido firmadas, la llave pública se encuentra en el siguiente enlace: <a href="https://share.kde.org/index.php/s/fJ99V5mZvuyD0z8">0x58b9596c722ea3bd.asc</a>.</p>
+<p>Las firmas están <a href="http://download.kde.org/unstable/krita/3.1.3-beta.1">aquí</a>.</p>
+<h4 id="también-puedes-apoyarnos">También puedes apoyarnos</h4>
+<p>Krita es un programa no solo de código libre si no ademas está a disposición de manera gratuita, éste proyecto solo es posible gracias a las donaciones hechas por nuestros usuarios, por favor considera la posibilidad de ayudarnos con una <a href="https://krita.org/en/support-us/donations/">donación</a> o comprando <a href="https://krita.org/es/item/krita-3-1-4/%22https://krita.org/en/support-us/shop">videos instructivos o nuestro libro de arte Made With Krita</a>, solo con tu ayuda podremos mantener a nuestro pequeño grupo desarrollando Krita en tiempo completo, ¡Gracias!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orges/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orges/roadmap">Roadmap</a>
+			<a href="https://krita.orges/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/es/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orges/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/es/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orges/about">About</a>
+			<a href="https://krita.orges/donations">Donations</a>
+			<a href="https://krita.orges/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/es">What is KDE</a>
+			<a href="https://krita.orges/website">Website Licenses</a>
+			<a href="https://krita.orges/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

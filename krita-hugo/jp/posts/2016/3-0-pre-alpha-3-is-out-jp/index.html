@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | 3.0プリアルファ第3版リリース！ | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">3.0プリアルファ第3版リリース！</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>March 15, 2016</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>9 min</em></span> 
+        
+        
+    </div>
+
+    <p>今日はKritaプロジェクトにとって大事な日です。本日から機能凍結のフェーズに入りました！つまり、これから4月27日に予定しているKrita 3.0のリリースまで、新しい機能は追加せずに、バグの修正に集中することになります！バグを見つけ出し分類することでKrita開発を助けたい、という人はこの記事を参照してくだされば幸いです:「<a href="https://jp.krita.org/item/ways-to-help-krita-bug-triaging/">Kritaを支援する方法：バグの分類</a>」この記事はKritaを成長させ、改善していくための方法を説明した記事シリーズの第一弾です。</p>
+<p>Krita 3.0の機能は凍結されたので、3.0に含まれるKickstarterとストレッチゴール機能と、3.1と続くリリースを予定する機能も決まりました。Krita3.0には以下が含まれます: 高速プレビュー、アニメーション機能、補助線とガイド、グリッドドッキングパネル、レイヤー複数選択操作の向上、Gimpブラシの読み込みと画像としての保存、そして完全に改良されたレイヤー管理パネルです！さらに追加として、Kickstarterストレッチゴールには含まれていませんでしたが、ガイドとグリッドへのスナップも実装されました！キャンバス上のブラシ設定エディタ(HUD)、スタックブラシエンジン、自動塗り分けブラシ(アニメ塗り)ツールの開発もはじまっています。</p>
+<p>また、Krita3.0はQt5に移行しています。これは膨大な作業が必要で、想定よりかなり大仕事でした。Krita3がOSXを完全にサポートするようにしたいと考えていますが、まだ多くの作業を必要としています。Kickstarterの一部ではなかった多くの機能がKrita3には含まれています。世界中のボランティアが多くの素晴らしい新機能を追加しています。4月に完全なリリースアナウンスを書くのは大変な仕事になりそうです！</p>
+<p>何はともあれ… 前回の<a href="https://jp.krita.org/item/krita-2-9-11-and-the-second-3-0-alpha-build/">プリアルファビルド</a>からの変更点のハイライトはこちらです:</p>
+<h3 id="レイヤードッキングパネルの改善">レイヤードッキングパネルの改善</h3>
+<p>2015年のKickstarterストレッチのゴールの1つとして、新しいレイヤードッキングパネルの開発に多くの作業を行いました！</p>
+<ul>
+<li>使いやすさを考えた、簡潔でクリーンな見た目</li>
+<li>レイヤーに色を割り当てて、色によるレイヤー表示フィルタリングが可能になりました</li>
+<li>レイヤーのグループ化、移動、複数レイヤー操作のための多くの新しいショートカット</li>
+<li>Ctrl+Alt+Gで簡単にグループレイヤーの解除が行えます！(下のビデオでは紹介されていません)</li>
+</ul>
+<p>Nathan Lovatoさんによる機能紹介はこちらです:</p>
+<!-- raw HTML omitted -->
+<h3 id="グリッドの扱いの改善">グリッドの扱いの改善</h3>
+<p>以前のグリッドツールを削除しました。そして新しいグリッドドッキングパネルを作成し、グリッドとガイドの設定をこのパネルから使用できるようにしました。これでグリッドの操作がわかりやすく簡単になりました。グリッド周りでは機能整理を行い、遠近法グリッドツールを削除し(より強力な遠近法グリッドは描画アシスタントから利用できます)、スナップ設定ドッキングパネルも削除しました。</p>
+<p> </p>
+<p><a href="/images/posts/2016/gridsguidessnapping.png"><img src="/images/posts/2016/gridsguidessnapping-1024x569.png" alt="gridsguidessnapping"></a> … スナップ設定はスナップ設定ポップアップ(shift+S)で置き換えられることになります！</p>
+<h3 id="スナップ">スナップ</h3>
+<p>グリッドとガイドへのスナップ機能は元々予定していないもので、2016年のKickstarterのストレッチゴールにすることも考えていましたのですが、今回、ベクター、選択、ラスターツールでのスナップを実装しました！ただし、計測ツールおよび、フリーハンドブラシ、マルチブラシ、ダイナミックブラシ、フリーハンドパスといったフリーハンドツールは例外です。</p>
+<h2 id="出力フィルタの追加">出力フィルタの追加</h2>
+<p>2つの出力フィルタ(エクスポータ)を追加しました:</p>
+<ul>
+<li>ラスターベース・トウィーン形式の2Dアニメーション制作ソフトである<a href="https://brashmonkey.com/spriter-features/">Spriter</a>向けエクスポータ！<a href="https://brashmonkey.com/">BrashMonkey</a>さんと共同で、Kritaの画像からスプライトマップを作成する出力フィルタを作成しました。Photoshop向けプラグインを元にしたもので、まだ初期段階です。既知の不具合もまだ多くありますが、とても期待できる内容です。</li>
+<li>ラスターベース・フレームバイフレーム形式の2Dアニメーション制作ソフトであるTVPaintとの互換性のために、FazekさんがCSVベースのレイヤー階層アニメーションプロジェクトを生成できる新しいエクスポータを作成しました。</li>
+</ul>
+<h3 id="グラデーションマップフィルタ">グラデーションマップフィルタ</h3>
+<p>グレースケール画像を、グラデーションマップフィルタでカラーにすることができます。実装予定はなかったのですが、突然スペシャルゲストコーダーのSpencer Brownさんがこの機能追加を提出しました！Spencerさんに感謝です！この機能をフィルタレイヤーとして使えるようにしたいと思っていますが、それはまだ実現していません。</p>
+<p><img src="/images/posts/2016/gradientmapfilter-1024x635.png" alt="gradientmapfilter"></p>
+<h3 id="greater増アルファ合成モード">「Greater（増アルファ）」合成モード</h3>
+<p><a href="/images/posts/2016/greaterblendmode.gif"><img src="/images/posts/2016/greaterblendmode.gif" alt="greaterblendmode"></a> Nicolas Guttenberg氏によって半透明のブラシでの描画をもっと簡単に行える「Greater（増アルファ）」合成モードが実装されました。</p>
+<h3 id="移動ツール">移動ツール</h3>
+<p>移動ツールにはなおいくつか既存のバグがありますが、新たな素晴らしい機能も追加されました：移動ツールへの移動増分乗数です（Shift+矢印キーで使用できます）</p>
+<h3 id="その他のツール">その他のツール</h3>
+<p>切り取りツール、補助線編集ツールと直線ツールのインターフェースが改良され、直線ツールのキャンバス上でのプレビュー表示も改良されました。</p>
+<p><a href="/images/posts/2016/Screenshot-from-2016-03-12-18-15-58.png"><img src="/images/posts/2016/Screenshot-from-2016-03-12-18-15-58-1024x691.png" alt="Screenshot from 2016-03-12 18-15-58"></a></p>
+<h3 id="その他">その他…</h3>
+<p>他にも数多くの改善がされています。</p>
+<ul>
+<li>ショートカット設定が、他の設定と同じ場所に移動しました。</li>
+<li>設定から、明度変更といったパラメータ変更のホットキーでの変更度合を調整できるようになりました。</li>
+<li>HSYセレクタでのガンマが設定から変更できるようになりました！</li>
+<li>新しいカーソル表示オプションの追加: 黒または白の単独のピクセル。何が何でも正確さが必要なんだという人向けです。</li>
+<li>ドット絵用ブラシプリセットの追加（訳注：PixelArtから始まる名前の3つのブラシプリセットがそれにあたります。ブラシのアイコンには大きく「P」と書かれているのでわかりやすいと思います。具体的には描画した際にアンチエイリアスがかからないブラシプリセットです）</li>
+<li>そして数多くのバグ修正が行われています！</li>
+</ul>
+<h3 id="次の予定">次の予定</h3>
+<p>次回のリリースは、本当のアルファリリースになる予定です！開発中ビルドは毎週作成する予定です。開発中ビルドは <a href="http://files.kde.org/krita/3">files.kde.org/krita/3/</a>にgitハッシュを含むバージョン名でアップロードされる予定です。また、Windows向けにAlvin Wongさんが作成した新しい <a href="https://github.com/alvinhochun/KritaShellExtension">Krita Shell Extension</a> のパッケージを作成することを予定しています。これがあればWindowsのエクスプローラから.kraファイルのサムネイルが見られるようになります。そして私たちはバグを修正し、さらに修正を行います。より多くのバグを修正します！</p>
+<h3 id="ダウンロード">ダウンロード</h3>
+<p>(バージョン番号について…これはKrita 3で、プリアルファです。まだアルファ以前の、開発中ビルドです。このビルドはプリアルファの第3版リリースで、プリアルファとしては最後になります。後ろについている数字入りの文字列は、ビルドの元になったソースコードバージョンを示すものです。)</p>
+<p><strong>Windows</strong></p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/windows/krita3-prealpha3-de0d43d.zip">krita3-prealpha3-de0d43d.zip</a></li>
+</ul>
+<p>ZIPファイルがダウンロードされます。<a href="http://windows.microsoft.com/en-us/windows-10/zip-and-unzip-files#v1h=tab02">そしてZIPファイルをKritaを置きたいフォルダに展開してください…</a></p>
+<p>まずMicrosoft’s Visual Studio runtimeをインストールするためにこのZIPファイルに同封されているvcredist_x64.exeを動かしてください。（すでにこの操作をやっている人はこの工程を飛ばしてください）</p>
+<p>そうしたらこれもこのZIPファイルに入っているショートカットKritaをダブルクリックしてください。</p>
+<p>Windows版での注意すべき事項：</p>
+<ul>
+<li>KritaがOpenGLを有効にしていると特定のIntelのGPUとドライバの組み合わせでウィンドウが真っ黒になって何も表示されない問題は今回で解決されたはずです。</li>
+<li>上記のSpriterエクスポートプラグインが見つからないかもしれません</li>
+</ul>
+<p><strong>OSX</strong></p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/osx/krita3-prealpha3-de0d43d.dmg">krita3-prealpha3-de0d43d.dmg</a></li>
+</ul>
+<p>DMGファイルをダウンロードして開いてください。そうしたらkrita app bundleをアプリケーションフォルダ（Applications folder）かそれともどこか自分がいいと思った場所にドラッグしてください。そうしたらダブルクリックしてKritaを起動してください。</p>
+<p>OSXでの注意すべき事項：</p>
+<ul>
+<li>我々はKritaをEl Capitanでビルドしました。このバンドルはMavericksで動くMac mini (Mid 2011)でテストされています。このビルドを動かすにはEl Captitanを動かせるだけのハードウェアが必要と思われるかもしれませんが、別にEl Captitanを使用する必要はありません。それ以前のバージョンのOSXでも動かしてみることが可能です。</li>
+<li>ブラシ輪郭カーソルや、例えばグラデーションツールなどのその他のキャンバス上に描画するツールが表示され<strong>ない</strong>はずです。我々はこの問題をすでに把握しており、Windows版KritaのいくつかのIntelのグラフィックドライバでウィンドウが真っ黒になる問題と同じ修正が必要です。端的に言うと、Appleが自社製品のドライバにOpenGL互換性プロファイルを実装することを拒絶しているため、我々はQtの機能性のコアチャンクを新しいバージョンのOpenGLに移植する必要があります。</li>
+</ul>
+<p><strong>Linux</strong></p>
+<ul>
+<li><a href="http://files.kde.org/krita/3/linux/krita3-prealpha3-de0d43d-x86_64.appimage">krita3-prealpha3-de0d43d-x86_64.appimage</a></li>
+</ul>
+<p>Linuxのビルドには今回からAppimagesを使用することとしました！Appimagesは完全に独立したディストリビューションです。AppImageを使用するにはこれをダウンロードして、ターミナルかファイルマネージャのファイルプロパティダイアログを使ってこれを実行可能にしてください。もう一つの変更点として設定とリソースが今回からは.kdeや.kde4ではなくユーザーホームフォルダ（user home folder）内の.config/krita.org/kritarcと.local/share/krita.org/に保存されるようになりました。</p>
+<p>Linuxでの既知の事項：</p>
+<ul>
+<li>このビルドを動かすには使用しているディストリビューションでFuseが有効である必要があります。</li>
+<li>いくつかのディストリビューション、インスタレーションではFuseシステムがロックされているためAppImageがルートとしてしか動かせない場合があります。ですがAppImageはシンプルなisoですのでループバックデバイスとしてマウントしてトップフォルダで実行可能なAppRunを使用してKritaを直接実行することも可能です。</li>
+</ul>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

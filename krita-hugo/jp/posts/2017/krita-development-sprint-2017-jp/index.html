@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | 2017年Krita開発スプリント | Krita Site(JP)</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/jp">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">2017年Krita開発スプリント</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>December 3, 2017</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>5 min</em></span> 
+        
+        
+    </div>
+
+    <p>2017年のプロジェクトの大混乱のため、今年は顔を合わせたミーティングができないような様子でした。でもそれは4つ目のメジャーリリースを控えたプロジェクトにはよいことではありません！同じ場所で話し合う必要があると感じて、とうとう、いつもよりは小規模ではあるものの、とても生産的な開発スプリントを11月23日から26日までオランダのデーフェンテルで行いました。</p>
+<p><a href="https://krita.org/jp/item/2016-krita-sprint-day-1-jp/">2016年の8月</a>からひさしぶりだったため、話し合う内容のバックログは膨大でした。また新しいコードを長期間作業していたため、<a href="https://bugs.kde.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;list_id=1478186&amp;product=krita&amp;query_format=advanced">バグトラッカー</a>もデータベースが巨大化してゆっくりと死にかけている状態でした。</p>
+<p>まずバグトラッカーからです。120ものバグをクローズしました！すべてのバグが修正済みとしてクローズされたわけではありません。多くのバグ報告は実際はユーザからのヘルプ要請であり、残りの多くは重複や、Kritaとは関係ない機能のリクエストであったりしました。それでも、オープン状態と未確認状態のバグレポートをトリアージで取り分ける過程で、実際のバグも1ダース以上修正することができました。</p>
+<p>これがその証拠です:</p>
+<p><a href="/images/posts/2017/bugs_november_sprint.png"><img src="/images/posts/2017/bugs_november_sprint-874x1024.png" alt=""></a>では他の<a href="https://docs.google.com/document/d/1TnrwAqLPfjPO-0VES2FaJQTgxgQNYSX4UiPPNjAE0aE/edit#heading=h.qum3twq1ypdv">議論された</a>トピックに移ります&hellip;</p>
+<h3 id="krita-40">Krita 4.0</h3>
+<p>4.0で完成させたい機能のリストを決定し、スケジュールを設定しました。元々は4.0を今年リリースしたいと思っていたのですが、まったく不可能です&hellip;</p>
+<p>まだ以下を追加したいと思っています:</p>
+<ul>
+<li>簡単に線画の塗分けをするレイジーブラシ(ほぼ機能しますが、テストとバグ修正が必要です)</li>
+<li>スタックブラシ、バージョン2。最初の実装は2016年にあったのですが、それは破棄して別の方法で作り直すことにしました。</li>
+<li>新しいテキストツール。元々の計画からはかなり単純化したものになりそうです&hellip; BoudewijnはQtで縦書きテキストが動くよう作業を続けていますが、まだ準備が整いません。ツール自体は、Kritaでの主な使用ケースについては、単純で使いやすいものになるでしょう。</li>
+<li>ほぼ完成した機能にもまだ少し足りていない部分があります。Pythonプラグインマネージャ、ブラシエディタの再デザインの仕上げなどです。</li>
+</ul>
+<p>またプラットホームでの問題もあります。LinuxではPythonとGStreamerをAppimageにパッケージする動作するスクリプトがまだありません。G&rsquo;Micのパッケージ方法も間違っています。OSXでは、G&rsquo;Micがまったく動作していない状態で、PDFインポートもサポートされていません。助けを必要としています！</p>
+<p>現在のリリーススケジュールは以下です:</p>
+<ul>
+<li>12月31日: フリーズ。文字列、機能追加はこの時点からは受け入れません</li>
+<li>1月3日: 最初のベータ1テストビルド</li>
+<li>1月10日: Krita 4.0 ベータ1</li>
+<li>自動化ができればこの時点から毎週開発ビルドをリリースします</li>
+<li>バグ修正、バグ修正、バグ修正</li>
+<li>3月7日: Krita 4.0の最初のリリース候補版</li>
+<li>3月14日: Krita 4.0</li>
+</ul>
+<p>今はKrita4.0のリリースに集中しています。そのためKrita3.3.xバグ修正リリースは今のところ計画がありません。ただ、バックポート可能な修正はいろいろ存在しています。</p>
+<h3 id="hdrサポート">HDRサポート</h3>
+<p>KritaでのHDRスクリーンサポートについてコンタクトを受けました。これは既にKritaが一部システムでサポートしている10 bits/チャンネル画面サポートとは異なるものです。ただハードウェアにアクセスすることができても、作業をする時間がありません。またそのAPIもWindowsのみのようです。</p>
+<h3 id="新しいリソースの入手">新しいリソースの入手</h3>
+<p>これは2017年のGoogle Summer of Codeプロジェクトでした。ほぼ動作する実装があったのですが、サーバ側で変更があったため、今は何も機能していません。何が起こっているのかを解明するのは難しいことがわかっていて、このshare.krita.orgからリソースをダウンロードするダイアログはKrita 4.0には含まれない可能性が高いです。</p>
+<h3 id="python-api">Python API</h3>
+<p>夏の間に、我々自身のPython APIについての経験を大いに得ることができました。これはGoogle Summer of Codeの学生のEliakinのおかげでもあります。現在のAPIで拡張が必要な部分が見つかり、拡張を実行しようと思っています&hellip;</p>
+<h3 id="google-summer-of-code">Google Summer of Code</h3>
+<p>Kritaはこれまで毎回 Google Summer of Codeに参加し、今の開発者の多くも GSOCでKritaのコードベースにはじめの一歩を踏み出しました。どのように参加を改善し、プロジェクト後にもKritaに学生が残るようにするにはどのようにできるかを話し合いました。一つの問題は、新しいルールです。学生は2回までしか参加できない、というものです。これまでの経験では、学生が大学にいる間引き続き参加できるようにしたほうがよかったからです。</p>
+<p>また基準を少し引き上げることにしました。今の必須条件である3個のパッチ、という条件を1行のパッチを3個提出することでクリアする候補者を見てきました。レーティング(1点から3点)がついたタスクのリストを作り、6点以上を達成した候補者だけを受け入れます。またコードベースを読む能力を見るために、特定のサブシステムの図解でテストするつもりです。</p>
+<h3 id="テレメトリ">テレメトリ</h3>
+<p>Summer of Codeのテレメトリプロジェクトでは機能するコードと機能するサーバ が作成されましたが、Kritaにマージするには十分ではありません。まだ、Kritaがどのように使用されているのかを知ることには興味はあります。またこの学生も学位論文でこのトピックに取り組みたいと考えている状態です。</p>
+<h3 id="貢献者ガイド">貢献者ガイド</h3>
+<p>今のところ、Kritaに貢献するための情報はウェブサイト、マニュアル、KDEコミュニティWiki、ソースコードレポジトリ、外部ウェブサイトなどに散らかっています。Jouniはマニュアルサイトに追加するための<a href="https://docs.google.com/document/d/1xIhmocYvbNf4FsW6k9LuerFi0ojDrTGiYR6UsXYVVFo/edit?ts=5a16ab20">プロジェクトに貢献するためのマニュアル概要</a>を作成中です。<a href="https://phabricator.kde.org/T7492">バグトラッカーHowTo</a>などの一部の作業は既にはじまっています!</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+   
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgjp/report-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgjp/roadmap">Roadmap</a>
+			<a href="https://krita.orgjp/release-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/jp/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgjp/privacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/jp/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgjp/about">About</a>
+			<a href="https://krita.orgjp/donations">Donations</a>
+			<a href="https://krita.orgjp/get-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/jp">What is KDE</a>
+			<a href="https://krita.orgjp/website">Website Licenses</a>
+			<a href="https://krita.orgjp/contact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+

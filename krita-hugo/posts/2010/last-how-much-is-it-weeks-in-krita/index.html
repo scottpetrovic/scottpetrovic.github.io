@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Krita | Last -- how much is it? -- weeks in Krita | Krita Site</title>
+
+	<link href="https://krita.orgcss/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://krita.orgcss/style.css" type="text/css" media="all" />
+
+	<link href="https://krita.orgimages/favicon.ico" rel="shortcut icon" type=image/vnd.microsoft.icon>
+
+	<link rel="alternate" type="application/rss+xml" href="https://krita.orgindex.xml" title="Site Title">
+
+	<script src="https://krita.org/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		
+	
+</head>
+
+<body>
+
+<header class="site-header"><nav class="site-nav max-content-width">
+   <a class="logo" href="https://krita.org/en">
+      <img src="https://krita.org/images/krita-logo.png" style="width: 7.5rem" />
+    </a>
+
+    <ul class="main-menu">
+      <li class="">
+          <a href="https://krita.org/features">Features</a>
+      </li><li class="">
+          <a href="https://krita.org/download">Download</a>
+      </li><li class="">
+          <a href="https://docs.krita.org">Learn</a>
+      </li><li class="">
+          <a href="https://krita.org/get-involved">Get Involved</a>
+      </li><li class="">
+          <a href="https://krita.org/shop">Shop</a>
+      </li>
+
+      <li class="donate-button">
+        <a href="https://fund.krita.org" class="button">Donate</a>
+      </li>
+
+     
+
+  </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<div class="post">
+    <h1 style="margin-bottom: 0.5rem">Last -- how much is it? -- weeks in Krita</h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <span>May 12, 2010</span> 
+        <span class="vertical-divider">|</span>
+        <span> Reading time: <em>4 min</em></span> 
+        
+        
+    </div>
+
+    <p>I&rsquo;m really late with Last Week in Krita, am I not? Yes, I am&hellip; There are a couple of reasons, most of them concerned with plain business. Last week I was in Bangalore, <a href="http://www.valdyas.org/fading/index.cgi/urlaub/bangalore_1.html">helping students find their way through the KOffice source code</a>. The week before, I was in Helsinki, trying to figure out which bugs in KOffice should have priority together with Tasos and Lassi from the Nokia mobile office team. The week before that, I was in Magdeburg, for a KO GmbH Board meeting. And in the meantime, a release candidate happened, which is always a reason for a slowdown of development, <em>and</em> we were busy with the Google Summer of Code preparations.</p>
+<p>Still, let&rsquo;s get updated on the state of Krita! Since the last instalment, we&rsquo;ve had a mere 50 or so commits. And we&rsquo;re at 59 bugs. Well, Lukáš was finishing his thesis and Cyrille was hunting for a research post at a university and everyone was preparing the 2.2 release &ndash; still, work should pick up when the Summer of Code students get started!</p>
+<h3 id="summer-of-code">Summer of Code</h3>
+<p>I already mentioned it on my <a href="http://www.valdyas.org/fading/index.cgi/software/gsoc2010.html">blog</a>, but there are <em>four</em> Krita Google Summer of Code projects this year. At the Krita sprint, we weren&rsquo;t sure whether we could handle a single project, since we really want to push for user-readiness for Krita 2.3. But that idea evaporated in the face of the enthousiasm of the students. <strong>Marc Pegon</strong>, mentored by <strong>Sven Langkamp</strong> is going to create a great new transformation tool for Krita &ndash; one of the real must-haves for our vision. <strong>Adam Celarek</strong>, mentored by <strong>Boudewijn Rempt</strong> is going to work on new an innovative color choosers for Krita &ndash; and Karbon. <strong>Pentalis a.k.a. Jose Luis Vergara Toloza</strong>, mentored by double gsoc alumnus <strong>Lukáš Tvrdý</strong> is going to add a new brush engine meant for comics and impasto to Krita. Impasto will also, if done right, be <a href="http://forum.kde.org/viewtopic.php?f=137&amp;t=87460&amp;p=156018&amp;hilit=texturing+game#p156018">very useful for texturing</a>. <strong>Dmitry Kazakov</strong>, mentored by Krita veteran Bart Coppens, is going to make Krita&rsquo;s image recomposition and display multi-threaded.</p>
+<p>Coding will start in two weeks!</p>
+<h3 id="conferences">Conferences</h3>
+<p>Lukáš Tvrdý will speak about brush engines and working on Krita at the <a href="http://www.libregraphicsmeeting.org">Libre Graphics Meeting</a> in Brussels as well as at <a href="http://akademy.kde.org/">Akademy 2010</a>. Boudewijn will be at the LGM as well, and probably at Akademy, and Cyrille intends to visit Akademy this year, but not the LGM.</p>
+<h3 id="code">Code</h3>
+<p>We didn&rsquo;t have a record number of commits, but we had a very pleasingly large number of contributors!</p>
+<p><strong>Adam Celarek</strong> worked on the magnetic selection tool, adding another algorithm for edge detection.</p>
+<p><strong>Ana</strong> cleaned up some of our desktop files.</p>
+<p><strong>Boudewijn</strong> fixed warnings in the code (a six hour train journey to Magdeburg is suitable for little else&hellip;), fixed the preset toolbar button for the preset popup and reenabled the things he was working that weren&rsquo;t ready for 2.2: psd import, mypaint-compatible paintop and the color mixer.</p>
+<p><strong>Cyrille Berger</strong> added a benchmark for the mask generator, fixed randomness in the autobrush masks, made the spacing slider exponential, added support for HSV transformations to the normal brush. He also divided the brush options into categories, a very welcome improvement. Radians and degrees don&rsquo;t mix &ndash; so there was a little bug to be fixed there as well.</p>
+<p><strong>Dmitry Kazakov</strong> fixed a bug when showing transparency around the edges of an image, removed a bad memory leak in the memento manager (which keeps the image undo information) and generally started cleaning up Krita&rsquo;s tile manager core in preparation for his summer of code project</p>
+<p><strong>Edward Apap</strong> made the convolution code about twice as fast, fixed a problem with noise in the convolution painter, then increased the performance of the convolution code again, added a motion blur filter, made the convolution code report progress to the user (which reminds me: we still need to do the same for the load/save/import/export code!) and he finally started a lens blur filter.</p>
+<p><strong>Lukáš Tvrdý</strong> doubled the performance for spray paintop and did some other cleanups while finishing his thesis.</p>
+<p><strong>Vera Lukman</strong> made the popup color selector more precise and fixed a bug that occurred when hovering over the popup palette.</p>
+
+</div>
+
+
+</main>
+
+
+<style>
+
+	footer {
+		margin-top: 5rem;
+		text-align: center;
+		background: #324148;
+		padding: 1rem;
+	}
+
+	footer p {
+		color: #a8a5a5;
+	}
+
+	footer a {
+		display: block;
+		text-align: left;
+		color: #91b3c3;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #91b3c3; 
+	}
+
+	footer h4 {
+		text-align: left;
+		color: white;
+	}
+</style>
+
+
+
+
+
+
+<footer>
+
+<div  class="container-padding">
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Software</h4>
+			<a href="https://krita.orgreport-a-bug">Report a Bug</a>	
+			<a href="https://krita.orgroadmap">Roadmap</a>
+			<a href="https://krita.orgrelease-history">Release History</a>	
+
+		</div>
+		<div class="col-md-3">
+			<h4>Education</h4>
+			<a href="https://docs.krita.org/en/">Documentation</a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
+			<a href="https://krita.orgprivacy-statement">Privacy Statement</a>	
+			<a href="https://docs.krita.org/en/tutorials.html">Tutorials</a>
+
+		</div>
+		<div class="col-md-4">
+			<h4>Foundation</h4>
+			<a href="https://krita.orgabout">About</a>
+			<a href="https://krita.orgdonations">Donations</a>
+			<a href="https://krita.orgget-involved">Get Involved</a>
+			
+			<a href="https://userbase.kde.org/What_is_KDE/en">What is KDE</a>
+			<a href="https://krita.orgwebsite">Website Licenses</a>
+			<a href="https://krita.orgcontact">Contact</a>
+
+
+		</div>
+
+		<div class="col-md-2">
+			<select onchange="languageSwitched(this)" >
+				<option value="">Language</option>
+				
+					<option value="https://krita.org/">English</option>
+				
+					<option value="https://krita.org/fr/">French</option>
+				
+					<option value="https://krita.org/zh/">Chinese</option>
+				
+					<option value="https://krita.org/zh-hk/">Chinese (HK)</option>
+				
+					<option value="https://krita.org/zh-tw/">Chinese (TW)</option>
+				
+					<option value="https://krita.org/jp/">Japanese</option>
+				
+					<option value="https://krita.org/es/">Spanish</option>
+				
+					<option value="https://krita.org/ko/">Korean</option>
+				
+			</select>
+			
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<style>
+	select {
+		background: none;
+		border: 1px solid grey;
+		padding: 0.25rem;
+		border-radius: 3px;
+		color: white;
+	}
+</style>
+
+<script>
+	function languageSwitched (selectedObject) {
+		location.href = selectedObject.value; 
+	};
+</script>
+
+
+
+
+</footer>
+
+</body>
+</html>
+
