@@ -322,6 +322,7 @@ a.button {
   color: white;
   box-shadow: 2px 2px 3px #82aac7;
   text-transform: uppercase;
+
 }
 a.button:hover {
   background: -webkit-linear-gradient(top, #6bb9f5 1%, #0078f9 100%);
@@ -353,4 +354,105 @@ iframe{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+/* homepage styles */
+.homepage-hero-content {
+  background: white;
+  padding: 1rem;
+  margin: 1rem;
+  display: inline-block;
+  max-width: 24rem;
+  position: absolute;
+  top: 10rem;
+  right: 1rem;
+}
+
+.homepage-card {
+  background: #c6e9f3;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.homepage-card p {
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
+}
+.homepage-card a {
+  margin: 1rem
+}
+
+.full-width-panel {
+  padding: 2rem;
+  color: white;
+  background: #324148;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+.full-width-panel h2 {
+  font-size: 3.5rem;
+}
+.full-width-panel p {
+  color: white;
+}
+
+.hero-credits {
+  background: #324148; 
+  padding: 0.75rem; 
+}
+.hero-credits div, .hero-credits a {
+  color: #bab8b8;
+}
+
+.hero-credits img {
+  height: 20px;
+}
+.social-media a {
+  text-decoration: none;
+}
+.social-media a:hover {
+  opacity: 0.7;
+}
+
+
+
+/* footer styles */
+footer {
+  margin-top: 5rem;
+  background: #324148;
+  padding: 1rem;
+}
+
+footer p {
+  color: #a8a5a5;
+}
+
+footer a {
+  display: block;
+  text-align: left;
+  color: #91b3c3;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #91b3c3; 
+}
+
+footer h4 {
+  text-align: left;
+  color: white;
+}
+
+.footer-section {
+  margin-bottom: 2rem;
+}
+
+#dropdownMenuLangauge {
+  background: none;
+  border: 1px solid grey;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  color: white;
 }

@@ -16,6 +16,7 @@
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
+	<script src="js/popper.min.js" crossorigin="anonymous"></script>  	
 	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
@@ -38,7 +39,7 @@
       </li>
 
       <li class="donate-button">
-        <a href="https://fund.krita.org" class="button">Donate(FR)</a>
+        <a href="https://fund.krita.org" class="button">Donate (FR)</a>
       </li>
 
      
@@ -97,6 +98,19 @@
         text-decoration: underline;
     }
 
+    .feature-section {
+        margin-bottom: 2rem;
+    }
+    .feature-section img {
+        margin: 1rem 0;
+        padding: 0;
+        border-radius: 3px;
+    }
+    .productivity-section {
+        margin-bottom: 3rem;
+    }
+
+
     .productivity img {
         width: auto;
         display: inline-block;
@@ -153,21 +167,21 @@
     <h2>All the tools you need</h2>
 
     <div class="row" >
-        <div class="col-md-4">
+        <div class="col-md-4 feature-section">
             <img src="images/pages/brush-presets.png" />
             <h3>Beautiful Brushes</h3>
             <p>Over 100 professionally made brushes that come preloaded. These brushes give a good range of effects so you can see the variety of brushes that Krita has to offer.</p>
             <a href="https://docs.krita.org/en/reference_manual/krita_4_preset_bundle.html" class="button">Learn more</a>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 feature-section">
             <img src="images/pages/brush-stabilizer.png" />
             <h3>Brush Stabilizers</h3>
             <p>Have a shaky hand? Add a stabilizer to your brush to smoothen it out. Krita includes 3 different ways to smooth and stabilize your brush strokes. There is even a dedicated Dynamic Brush tool where you can add drag and mass.</p>
             <a href="https://docs.krita.org/en/reference_manual/tools/freehand_brush.html" class="button">Learn more</a>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 feature-section">
             <img src="images/pages/vector-libraries.png" />
             <h3>Vector & Text</h3>
             <p>Built-in vector tools help you create comic panels. Select a word bubble template from the vector library and drag it on your canvas. Change the anchor points to create your own shapes and libraries. Add text to your artwork as well with the text tool. Krita uses SVG to manage its vector format.</p>
@@ -177,21 +191,21 @@
 
 
     <div class="row" style="margin-top: 5rem;" >
-        <div class="col-md-4">
+        <div class="col-md-4 feature-section">
             <img src="images/pages/brush-engines.jpg" />
             <h3>Brush Engines</h3>
             <p>Customize your brushes with over 9 unique brush engines. Each engine has a large amount of settings to customize your brush. Each brush engine is made to satisfy a specific need such as the Color Smudge engine, Shape engine, Particle engine, and even a filter engine. Once you are done creating your brushes, you can save them and organize them with Krita's unique tagging system.</p>
             <a href="https://docs.krita.org/en/reference_manual/brushes/brush_engines.html" class="button">Learn more</a>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 feature-section">
             <img src="images/pages/wrap-around-mode.jpg" />
             <h3>Wrap-around mode</h3>
             <p>It is easy to create seamless textures and patterns now. The image will make references of itself along the x and y axis. Continue painting and watch all of the references update instantly. No more clunky offsetting to see how your image repeats itself.</p>
             <a href="https://docs.krita.org/en/user_manual/introduction_from_other_software/introduction_from_sai.html#multibrush-mirror-symmetry-and-wrap-around" class="button">Learn more</a>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 feature-section">
             <img src="images/pages/resource-manager.jpg" />
             <h3>Resource Manager</h3>
             <p>Import brush and texture packs from other artists to expand your tool set. If you create some brushes that you love, share them with the world by creating your own bundles. Check out the brush packs that are available in the <a href="https://krita.org/learn/resources/">Resources</a> area.</p>
@@ -247,67 +261,67 @@
     <h2>Productivity features</h2>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/drawing-assistants.png" />
             <h4>Drawing Assistants</h4>
             <p>Use a drawing aid to assist you with vanishing points and straight lines. The Assistant Tool comes with 9 unique assistants to help you make that perfect shape. These tools range from drawing ellipses to creating curvilinear perspective with the Fisheye Point tool. Use multiple assistants at the same time when drawing.</p>
-            <a href="https://docs.krita.org/en/user_manual/painting_with_assistants.html">Learn more</a>
+            <a href="https://docs.krita.org/en/user_manual/painting_with_assistants.html" class="button">Learn more</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/layer-management.png" />
             <h4>Layer Management</h4>
             <p>In addition to painting, Krita comes with vector, filter, group, and file layers. Combine, order, and flatten layers to help your artwork stay organized.</p>
-            <a href="https://docs.krita.org/en/user_manual/layers_and_masks.html">Learn more</a>
+            <a href="https://docs.krita.org/en/user_manual/layers_and_masks.html" class="button">Learn more</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/selections.png" />
             <h4>Select & Transform</h4>
             <p>Highlight a portion of your drawing to work on. There are additional features that allow you to add and remove from the selection. You can further modify your selection by feathering and inverting it. Paint a selection with the Global Selection Mask.</p>
-            <a href="https://docs.krita.org/en/user_manual/selections.html">Learn more</a>
+            <a href="https://docs.krita.org/en/user_manual/selections.html" class="button">Learn more</a>
         </div>
     </div>
 
 
     <div class="row spacer">
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/color-management.png" />
             <h4>Full Color Management</h4> 
             <p>Krita supports full color management through LCMS for ICC and OpenColor IO for EXR, allowing you to incorporate Krita into your existing color management pipeline. Or let it be the start of one: Krita comes with a wide variety of icc working space profiles for every need, with a color space browser to visualise and explore them.</p>
-            <a href="https://docs.krita.org/en/general_concepts/colors/color_managed_workflow.html">Learn more</a>
+            <a href="https://docs.krita.org/en/general_concepts/colors/color_managed_workflow.html" class="button">Learn more</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/open-gl.png" />
             <h4>OpenGL</h4>
             <p>Enhanced Krita takes advantage of OpenGL for some of its operations. With OpenGL enabled, you will see increased canvas rotation and zooming speed. The canvas will also look better when zoomed out. (The Windows version also supports Direct3D 11 in place of OpenGL, via the ANGLE compatibility layer.)</p>
-            <a href="https://docs.krita.org/en/reference_manual/preferences/display_settings.html#opengl">Learn more</a>
+            <a href="https://docs.krita.org/en/reference_manual/preferences/display_settings.html#opengl" class="button">Learn more</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/psd-support.png" />
             <h4>PSD Support</h4> 
             <p>Open PSD files that even Photoshop cannot open. Load and save to PSD when you need to take your artwork across different programs.</p>
-            <a href="https://docs.krita.org/en/general_concepts/file_formats/file_psd.html">Learn more</a>
+            <a href="https://docs.krita.org/en/general_concepts/file_formats/file_psd.html" class="button">Learn more</a>
         </div>
     </div>
 
 
     <div class="row spacer">
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/hdr-icon.png" />
             <h4>HDR Painting</h4> 
             <p>Krita is the only dedicated painting application that lets you open, save, edit and author HDR and scene-referred images. Furthermore, with OCIO and OpenEXR support, you can manipulate the view to examine HDR images, and use it in the most cutting edge workflows from the film and visual effects industries.</p>
-            <a href="https://docs.krita.org/en/reference_manual/hdr_display.html">Learn more</a>
+            <a href="https://docs.krita.org/en/reference_manual/hdr_display.html" class="button">Learn more</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/transform-icon.png" />
             <h4>Python Scripting</h4>
             <p>Powerful API for creating your own widgets and extending Krita. With using PyQt and Krita's own API, there are many possibilities. A number of plugins come pre-installed for your reference.</p>
-            <a href="https://docs.krita.org/en/user_manual/python_scripting.html">Learn more</a>
+            <a href="https://docs.krita.org/en/user_manual/python_scripting.html" class="button">Learn more</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 productivity-section">
             <img src="images/pages/training-icon.png" />
             <h4>Training Resources</h4>
             <p>In addition to training and educational material found on the Internet, Krita produces its own training material to help you learn all of the tools fast.</p>
-            <a href="https://docs.krita.org/en/index.html">Learn more</a>
+            <a href="https://docs.krita.org/en/index.html" class="button">Learn more</a>
         </div>
     </div>
 
@@ -341,37 +355,6 @@
 </main>
 
 
-<style>
-
-	footer {
-		margin-top: 5rem;
-		text-align: center;
-		background: #324148;
-		padding: 1rem;
-	}
-
-	footer p {
-		color: #a8a5a5;
-	}
-
-	footer a {
-		display: block;
-		text-align: left;
-		color: #91b3c3;
-		text-decoration: none;
-	}
-	footer a:hover {
-		text-decoration: underline;
-		color: #91b3c3; 
-	}
-
-	footer h4 {
-		text-align: left;
-		color: white;
-	}
-</style>
-
-
 
 
    
@@ -383,84 +366,109 @@
 <div  class="container-padding">
 
 	<div class="row">
-		<div class="col-md-3">
-			<h4>Software</h4>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/report-a-bug">Report a Bug</a>	
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/roadmap">Roadmap</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/release-history">Release History</a>	
+		<div class="col-md-3 footer-section">
+			<h4>Software (FR)</h4>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/report-a-bug">Report a bug (FR)</a>	
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/roadmap">Roadmap (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/release-history">Release History (FR)</a>	
 
 		</div>
-		<div class="col-md-3">
-			<h4>Education</h4>
-			<a href="https://docs.krita.org/fr/">Documentation</a>
-			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/privacy-statement">Privacy Statement</a>	
-			<a href="https://docs.krita.org/fr/tutorials.html">Tutorials</a>
+		<div class="col-md-3 footer-section">
+			<h4>Education (FR)</h4>
+			<a href="https://docs.krita.org/fr/"></a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/privacy-statement">Privacy Statement (FR)</a>	
+			<a href="https://docs.krita.org/fr/tutorials.html">Tutorials (FR)</a>
 
 		</div>
-		<div class="col-md-4">
-			<h4>Foundation</h4>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/about">About</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/donations">Donations</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/get-involved">Get Involved</a>
+		<div class="col-md-4 footer-section">
+			<h4>Foundation (FR)</h4>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/about">About (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/donations">Donate (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/get-involved">Get Involved (FR)</a>
 			
-			<a href="https://userbase.kde.org/What_is_KDE/fr">What is KDE</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/website">Website Licenses</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/contact">Contact</a>
+			<a href="https://userbase.kde.org/What_is_KDE/fr">What is KDE (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/website">Website license (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/contact">Contact (FR)</a>
 
 
 		</div>
 
 		<div class="col-md-2">
-			<select onchange="languageSwitched(this)" >
-				<option value="">Language</option>
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuLangauge" data-bs-toggle="dropdown" aria-expanded="false">
+				Language
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuLangauge">
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/">English</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/">English</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/fr/">French</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/fr/">French</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/zh/">Chinese</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/zh/">Chinese</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/zh-hk/">Chinese (HK)</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/zh-hk/">Chinese (HK)</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/zh-tw/">Chinese (TW)</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/zh-tw/">Chinese (TW)</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/jp/">Japanese</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/jp/">Japanese</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/es/">Spanish</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/es/">Spanish</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/ko/">Korean</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/ko/">Korean</a>
+				</li>
 				
-			</select>
+			</ul>
 			
 		</div>
 	</div>
 
 </div>
 
+</footer>
 
 
 
-<style>
-	select {
-		background: none;
-		border: 1px solid grey;
-		padding: 0.25rem;
-		border-radius: 3px;
-		color: white;
-	}
-</style>
 
-<script>
-	function languageSwitched (selectedObject) {
-		location.href = selectedObject.value; 
-	};
+<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['setCookieDomain', '*.krita.org']);
+	_paq.push(['setDomains', '*.krita.org']); 
+	_paq.push(['setDocumentTitle', document.domain + "/" + document.title]);
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//stats.kde.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', 13]);
+		var d=document, g=d.createElement('script'),
+	s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true;
+	g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
 </script>
 
+<noscript>
+	<p>
+		<img src="//stats.kde.org/piwik.php?idsite=13" style="border:0;" alt="" />
+	</p>
+</noscript>
 
 
-
-</footer>
 
 </body>
 </html>

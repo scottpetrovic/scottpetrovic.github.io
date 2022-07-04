@@ -16,6 +16,7 @@
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Site Title">
 
+	<script src="js/popper.min.js" crossorigin="anonymous"></script>  	
 	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 		
 	
@@ -38,7 +39,7 @@
       </li>
 
       <li class="donate-button">
-        <a href="https://fund.krita.org" class="button">Donate(FR)</a>
+        <a href="https://fund.krita.org" class="button">Donate (FR)</a>
       </li>
 
      
@@ -51,7 +52,7 @@
 <main class="content">
 
 
-<h1 style="margin-top: 2rem">Recent Posts(FR)</h1>
+<h1 style="margin-top: 2rem"></h1>
 
 
 
@@ -65,37 +66,6 @@
 </main>
 
 
-<style>
-
-	footer {
-		margin-top: 5rem;
-		text-align: center;
-		background: #324148;
-		padding: 1rem;
-	}
-
-	footer p {
-		color: #a8a5a5;
-	}
-
-	footer a {
-		display: block;
-		text-align: left;
-		color: #91b3c3;
-		text-decoration: none;
-	}
-	footer a:hover {
-		text-decoration: underline;
-		color: #91b3c3; 
-	}
-
-	footer h4 {
-		text-align: left;
-		color: white;
-	}
-</style>
-
-
 
 
    
@@ -107,84 +77,109 @@
 <div  class="container-padding">
 
 	<div class="row">
-		<div class="col-md-3">
-			<h4>Software</h4>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/report-a-bug">Report a Bug</a>	
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/roadmap">Roadmap</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/release-history">Release History</a>	
+		<div class="col-md-3 footer-section">
+			<h4>Software (FR)</h4>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/report-a-bug">Report a bug (FR)</a>	
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/roadmap">Roadmap (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/release-history">Release History (FR)</a>	
 
 		</div>
-		<div class="col-md-3">
-			<h4>Education</h4>
-			<a href="https://docs.krita.org/fr/">Documentation</a>
-			<a href="https://docs.krita.org/KritaFAQ.html">FAQ</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/privacy-statement">Privacy Statement</a>	
-			<a href="https://docs.krita.org/fr/tutorials.html">Tutorials</a>
+		<div class="col-md-3 footer-section">
+			<h4>Education (FR)</h4>
+			<a href="https://docs.krita.org/fr/"></a>
+			<a href="https://docs.krita.org/KritaFAQ.html">FAQ (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/privacy-statement">Privacy Statement (FR)</a>	
+			<a href="https://docs.krita.org/fr/tutorials.html">Tutorials (FR)</a>
 
 		</div>
-		<div class="col-md-4">
-			<h4>Foundation</h4>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/about">About</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/donations">Donations</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/get-involved">Get Involved</a>
+		<div class="col-md-4 footer-section">
+			<h4>Foundation (FR)</h4>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/about">About (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/donations">Donate (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/get-involved">Get Involved (FR)</a>
 			
-			<a href="https://userbase.kde.org/What_is_KDE/fr">What is KDE</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/website">Website Licenses</a>
-			<a href="https://scottpetrovic.github.io/krita-hugo/fr/contact">Contact</a>
+			<a href="https://userbase.kde.org/What_is_KDE/fr">What is KDE (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/website">Website license (FR)</a>
+			<a href="https://scottpetrovic.github.io/krita-hugo/fr/contact">Contact (FR)</a>
 
 
 		</div>
 
 		<div class="col-md-2">
-			<select onchange="languageSwitched(this)" >
-				<option value="">Language</option>
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuLangauge" data-bs-toggle="dropdown" aria-expanded="false">
+				Language
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuLangauge">
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/">English</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/">English</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/fr/">French</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/fr/">French</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/zh/">Chinese</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/zh/">Chinese</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/zh-hk/">Chinese (HK)</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/zh-hk/">Chinese (HK)</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/zh-tw/">Chinese (TW)</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/zh-tw/">Chinese (TW)</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/jp/">Japanese</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/jp/">Japanese</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/es/">Spanish</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/es/">Spanish</a>
+				</li>
 				
-					<option value="https://scottpetrovic.github.io/krita-hugo/ko/">Korean</option>
+				<li>
+					<a class="dropdown-item" href="https://scottpetrovic.github.io/krita-hugo/ko/">Korean</a>
+				</li>
 				
-			</select>
+			</ul>
 			
 		</div>
 	</div>
 
 </div>
 
+</footer>
 
 
 
-<style>
-	select {
-		background: none;
-		border: 1px solid grey;
-		padding: 0.25rem;
-		border-radius: 3px;
-		color: white;
-	}
-</style>
 
-<script>
-	function languageSwitched (selectedObject) {
-		location.href = selectedObject.value; 
-	};
+<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['setCookieDomain', '*.krita.org']);
+	_paq.push(['setDomains', '*.krita.org']); 
+	_paq.push(['setDocumentTitle', document.domain + "/" + document.title]);
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//stats.kde.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', 13]);
+		var d=document, g=d.createElement('script'),
+	s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true;
+	g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
 </script>
 
+<noscript>
+	<p>
+		<img src="//stats.kde.org/piwik.php?idsite=13" style="border:0;" alt="" />
+	</p>
+</noscript>
 
 
-
-</footer>
 
 </body>
 </html>
