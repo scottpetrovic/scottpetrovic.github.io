@@ -1,56 +1,61 @@
 import React, { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Box, OrbitControls } from "@react-three/drei";
+import { Box, ContactShadows, OrbitControls } from "@react-three/drei";
 import "./styles.css";
 import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-const Scene = ( ) => {
+import libraryData from './data.json';
 
-  let model_data = useLoader(GLTFLoader, '/ambulance.glb');
+const Scene = ( {params} ) => {
+
+  console.log(params);  
+
+  let model_data = useLoader(GLTFLoader, `./library/${params.directory}/${params.glbFile}`);
 
   const scene = useRef();
 
   useFrame(() => {
     scene.current.rotation.y += 0.005;
-    scene.current.rotation.z = 2;
+    scene.current.rotation.z = 0.2;
   });
   return (
     <>
-      <directionalLight intensity={1.5} position={[0,1,1]}  />
-      <ambientLight intensity={0.05} />
+      <directionalLight intensity={1.5} position={[1,1,1]}  />
+      <directionalLight intensity={1.5} position={[-1,-1,-1]}  />
       <group ref={scene}>
-        {/* <Suspense fallback={null}>
+        <Suspense fallback={null}>
           <primitive object={model_data.scene} />
-        </Suspense> */}
-        
-
-        <Box>
-          <meshLambertMaterial color="white" />
-        </Box>
+        </Suspense>
       </group>
     </>
 
   );
 };
 
-const CanvasObject = ( ) => {
+const CanvasObject = ( {params} ) => {
+
+  console.log(params);
 
   return (
-    <>
-    <div className="object-item">
-      <Canvas>
-        <Scene />
-        <OrbitControls />
-      </Canvas>
-      <div style={{ marginTop: 5 }}>Name</div>
-    </div>
-     
-    </>
+  
+    <div className="col" align="center">
+        <div className="object-item">
+        <Canvas>
+          <Scene params={params} />
+          <OrbitControls />
+        </Canvas>
+        <div style={{ marginTop: 5 }}>{ params.friendlyName }</div>
+      </div>
+    </div>  
   )
 }
 
 export default function App() {
+
+  // load up JSON file with data
+  let models_to_load = libraryData.slice(0, 10);
+
   return (
     <>
     <div className="container-fluid nav mb-5">
@@ -62,40 +67,12 @@ export default function App() {
     </div>
 
     <div className="container">
-      <div className="row">
-        <div className="col" align="center">
-            <CanvasObject />           
-        </div>
-        <div className="col" align="center">
-            <CanvasObject />
-        </div>
-        <div className="col" align="center">
-            <CanvasObject  />
-        </div>
-        <div className="col" align="center">
-            <CanvasObject  />
-        </div>
-
-        <div className="col" align="center">
-            <CanvasObject />           
-        </div>
-        <div className="col" align="center">
-            <CanvasObject />
-        </div>
-        <div className="col" align="center">
-            <CanvasObject />
-        </div>
-        <div className="col" align="center">
-            <CanvasObject />
-        </div>
+      <div className="row model-list">
+        { models_to_load.map((entry, i) => (  
+           <CanvasObject key={entry.id } params={entry}  />
+        ))};
       </div>
-
-
-    </div>
-
-
-
-   
+    </div>  
 
     </>
 
