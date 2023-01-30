@@ -1,0 +1,29 @@
+
+
+body {
+  background: #dfe2e7 !important;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+
+.object-item {
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  display: block;
+  box-shadow: 1px 3px 5px #bfbfbf;
+  margin-bottom: 4rem;
+  background: white;
+}
+
+.nav {
+  background: rgb(255, 127, 172);
+  padding: 1rem;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,4187 @@
+[
+    {
+        "glb-file": "anime-girl-base-meshes.glb",
+        "directory": "base-meshes/human",
+        "friendly-name": "Anime girl base meshes"
+    },
+    {
+        "glb-file": "base-human-meshs.glb",
+        "directory": "base-meshes/human",
+        "friendly-name": "Base human meshs"
+    },
+    {
+        "glb-file": "ambulance.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Ambulance"
+    },
+    {
+        "glb-file": "delivery.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Delivery"
+    },
+    {
+        "glb-file": "deliveryFlat.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Delivery flat"
+    },
+    {
+        "glb-file": "firetruck.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Firetruck"
+    },
+    {
+        "glb-file": "garbageTruck.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Garbage truck"
+    },
+    {
+        "glb-file": "hatchbackSports.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Hatchback sports"
+    },
+    {
+        "glb-file": "police.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Police"
+    },
+    {
+        "glb-file": "race.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Race"
+    },
+    {
+        "glb-file": "raceFuture.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Race future"
+    },
+    {
+        "glb-file": "sedan.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Sedan"
+    },
+    {
+        "glb-file": "sedanSports.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Sedan sports"
+    },
+    {
+        "glb-file": "suv.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Suv"
+    },
+    {
+        "glb-file": "suvLuxury.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Suv luxury"
+    },
+    {
+        "glb-file": "taxi.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Taxi"
+    },
+    {
+        "glb-file": "tractor.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Tractor"
+    },
+    {
+        "glb-file": "tractorPolice.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Tractor police"
+    },
+    {
+        "glb-file": "tractorShovel.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Tractor shovel"
+    },
+    {
+        "glb-file": "truck.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Truck"
+    },
+    {
+        "glb-file": "truckFlat.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Truck flat"
+    },
+    {
+        "glb-file": "van.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Van"
+    },
+    {
+        "glb-file": "wheelDark.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel dark"
+    },
+    {
+        "glb-file": "wheelDefault.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel default"
+    },
+    {
+        "glb-file": "wheelRacing.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel racing"
+    },
+    {
+        "glb-file": "wheelTractorBack.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel tractor back"
+    },
+    {
+        "glb-file": "wheelTractorDarkBack.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel tractor dark back"
+    },
+    {
+        "glb-file": "wheelTractorDarkFront.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel tractor dark front"
+    },
+    {
+        "glb-file": "wheelTractorFront.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel tractor front"
+    },
+    {
+        "glb-file": "wheelTruck.glb",
+        "directory": "kenney/car-kit",
+        "friendly-name": "Wheel truck"
+    },
+    {
+        "glb-file": "detail_awning.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Detail awning"
+    },
+    {
+        "glb-file": "detail_awningWide.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Detail awning wide"
+    },
+    {
+        "glb-file": "detail_overhang.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Detail overhang"
+    },
+    {
+        "glb-file": "detail_overhangWide.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Detail overhang wide"
+    },
+    {
+        "glb-file": "detail_umbrella.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Detail umbrella"
+    },
+    {
+        "glb-file": "detail_umbrellaDetailed.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Detail umbrella detailed"
+    },
+    {
+        "glb-file": "large_buildingA.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Large building a"
+    },
+    {
+        "glb-file": "large_buildingB.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Large building b"
+    },
+    {
+        "glb-file": "large_buildingC.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Large building c"
+    },
+    {
+        "glb-file": "large_buildingD.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Large building d"
+    },
+    {
+        "glb-file": "large_buildingE.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Large building e"
+    },
+    {
+        "glb-file": "large_buildingF.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Large building f"
+    },
+    {
+        "glb-file": "large_buildingG.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Large building g"
+    },
+    {
+        "glb-file": "low_buildingA.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building a"
+    },
+    {
+        "glb-file": "low_buildingB.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building b"
+    },
+    {
+        "glb-file": "low_buildingC.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building c"
+    },
+    {
+        "glb-file": "low_buildingD.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building d"
+    },
+    {
+        "glb-file": "low_buildingE.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building e"
+    },
+    {
+        "glb-file": "low_buildingF.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building f"
+    },
+    {
+        "glb-file": "low_buildingG.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building g"
+    },
+    {
+        "glb-file": "low_buildingH.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building h"
+    },
+    {
+        "glb-file": "low_buildingI.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building i"
+    },
+    {
+        "glb-file": "low_buildingJ.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building j"
+    },
+    {
+        "glb-file": "low_buildingK.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building k"
+    },
+    {
+        "glb-file": "low_buildingL.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building l"
+    },
+    {
+        "glb-file": "low_buildingM.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building m"
+    },
+    {
+        "glb-file": "low_buildingN.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low building n"
+    },
+    {
+        "glb-file": "low_wideA.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low wide a"
+    },
+    {
+        "glb-file": "low_wideB.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Low wide b"
+    },
+    {
+        "glb-file": "roof_center.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Roof center"
+    },
+    {
+        "glb-file": "roof_corner.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Roof corner"
+    },
+    {
+        "glb-file": "roof_overhang.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Roof overhang"
+    },
+    {
+        "glb-file": "roof_side.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Roof side"
+    },
+    {
+        "glb-file": "sign_billboard.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Sign billboard"
+    },
+    {
+        "glb-file": "sign_hospital.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Sign hospital"
+    },
+    {
+        "glb-file": "skyscraperA.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Skyscraper a"
+    },
+    {
+        "glb-file": "skyscraperB.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Skyscraper b"
+    },
+    {
+        "glb-file": "skyscraperC.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Skyscraper c"
+    },
+    {
+        "glb-file": "skyscraperD.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Skyscraper d"
+    },
+    {
+        "glb-file": "skyscraperE.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Skyscraper e"
+    },
+    {
+        "glb-file": "skyscraperF.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Skyscraper f"
+    },
+    {
+        "glb-file": "small_buildingA.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Small building a"
+    },
+    {
+        "glb-file": "small_buildingB.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Small building b"
+    },
+    {
+        "glb-file": "small_buildingC.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Small building c"
+    },
+    {
+        "glb-file": "small_buildingD.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Small building d"
+    },
+    {
+        "glb-file": "small_buildingE.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Small building e"
+    },
+    {
+        "glb-file": "small_buildingF.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Small building f"
+    },
+    {
+        "glb-file": "wall_doorA.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall door a"
+    },
+    {
+        "glb-file": "wall_doorB.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall door b"
+    },
+    {
+        "glb-file": "wall_solid.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall solid"
+    },
+    {
+        "glb-file": "wall_windowA.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall window a"
+    },
+    {
+        "glb-file": "wall_windowB.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall window b"
+    },
+    {
+        "glb-file": "wall_windowC.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall window c"
+    },
+    {
+        "glb-file": "wall_windowD.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall window d"
+    },
+    {
+        "glb-file": "wall_windowE.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall window e"
+    },
+    {
+        "glb-file": "wall_windowF.glb",
+        "directory": "kenney/city-commercial-kit",
+        "friendly-name": "Wall window f"
+    },
+    {
+        "glb-file": "driveway_long.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Driveway long"
+    },
+    {
+        "glb-file": "driveway_short.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Driveway short"
+    },
+    {
+        "glb-file": "fence_large.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Fence large"
+    },
+    {
+        "glb-file": "fence_medium.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Fence medium"
+    },
+    {
+        "glb-file": "fence_open.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Fence open"
+    },
+    {
+        "glb-file": "fence_rectangle.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Fence rectangle"
+    },
+    {
+        "glb-file": "fence_short.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Fence short"
+    },
+    {
+        "glb-file": "fence_small.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Fence small"
+    },
+    {
+        "glb-file": "fence_wide.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Fence wide"
+    },
+    {
+        "glb-file": "house_type01.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type01"
+    },
+    {
+        "glb-file": "house_type02.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type02"
+    },
+    {
+        "glb-file": "house_type03.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type03"
+    },
+    {
+        "glb-file": "house_type04.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type04"
+    },
+    {
+        "glb-file": "house_type05.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type05"
+    },
+    {
+        "glb-file": "house_type06.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type06"
+    },
+    {
+        "glb-file": "house_type07.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type07"
+    },
+    {
+        "glb-file": "house_type08.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type08"
+    },
+    {
+        "glb-file": "house_type09.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type09"
+    },
+    {
+        "glb-file": "house_type10.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type10"
+    },
+    {
+        "glb-file": "house_type11.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type11"
+    },
+    {
+        "glb-file": "house_type12.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type12"
+    },
+    {
+        "glb-file": "house_type13.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type13"
+    },
+    {
+        "glb-file": "house_type14.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type14"
+    },
+    {
+        "glb-file": "house_type15.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type15"
+    },
+    {
+        "glb-file": "house_type16.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type16"
+    },
+    {
+        "glb-file": "house_type17.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type17"
+    },
+    {
+        "glb-file": "house_type18.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type18"
+    },
+    {
+        "glb-file": "house_type19.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type19"
+    },
+    {
+        "glb-file": "house_type20.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type20"
+    },
+    {
+        "glb-file": "house_type21.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "House type21"
+    },
+    {
+        "glb-file": "path_long.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Path long"
+    },
+    {
+        "glb-file": "path_short.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Path short"
+    },
+    {
+        "glb-file": "path_tilesLong.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Path tiles long"
+    },
+    {
+        "glb-file": "path_tilesShort.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Path tiles short"
+    },
+    {
+        "glb-file": "tree_large.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Tree large"
+    },
+    {
+        "glb-file": "tree_small.glb",
+        "directory": "kenney/city-suburban-kit",
+        "friendly-name": "Tree small"
+    },
+    {
+        "glb-file": "arrow.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Arrow"
+    },
+    {
+        "glb-file": "box-large.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Box large"
+    },
+    {
+        "glb-file": "box-long.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Box long"
+    },
+    {
+        "glb-file": "box-small.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Box small"
+    },
+    {
+        "glb-file": "box-wide.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Box wide"
+    },
+    {
+        "glb-file": "conveyor-bars-fence.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars fence"
+    },
+    {
+        "glb-file": "conveyor-bars-high.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars high"
+    },
+    {
+        "glb-file": "conveyor-bars-sides.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars sides"
+    },
+    {
+        "glb-file": "conveyor-bars-stripe-fence.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars stripe fence"
+    },
+    {
+        "glb-file": "conveyor-bars-stripe-high.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars stripe high"
+    },
+    {
+        "glb-file": "conveyor-bars-stripe-side.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars stripe side"
+    },
+    {
+        "glb-file": "conveyor-bars-stripe.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars stripe"
+    },
+    {
+        "glb-file": "conveyor-bars.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor bars"
+    },
+    {
+        "glb-file": "conveyor-long-sides.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor long sides"
+    },
+    {
+        "glb-file": "conveyor-long-stripe-sides.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor long stripe sides"
+    },
+    {
+        "glb-file": "conveyor-long-stripe.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor long stripe"
+    },
+    {
+        "glb-file": "conveyor-long.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor long"
+    },
+    {
+        "glb-file": "conveyor-sides.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor sides"
+    },
+    {
+        "glb-file": "conveyor-stripe-sides.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor stripe sides"
+    },
+    {
+        "glb-file": "conveyor-stripe.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor stripe"
+    },
+    {
+        "glb-file": "conveyor.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Conveyor"
+    },
+    {
+        "glb-file": "cover-bar.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover bar"
+    },
+    {
+        "glb-file": "cover-corner.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover corner"
+    },
+    {
+        "glb-file": "cover-hopper.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover hopper"
+    },
+    {
+        "glb-file": "cover-stripe-bar.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover stripe bar"
+    },
+    {
+        "glb-file": "cover-stripe-corner.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover stripe corner"
+    },
+    {
+        "glb-file": "cover-stripe-hopper.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover stripe hopper"
+    },
+    {
+        "glb-file": "cover-stripe-top.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover stripe top"
+    },
+    {
+        "glb-file": "cover-stripe-window.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover stripe window"
+    },
+    {
+        "glb-file": "cover-stripe.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover stripe"
+    },
+    {
+        "glb-file": "cover-top.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover top"
+    },
+    {
+        "glb-file": "cover-window.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover window"
+    },
+    {
+        "glb-file": "cover.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Cover"
+    },
+    {
+        "glb-file": "door-wide-closed.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Door wide closed"
+    },
+    {
+        "glb-file": "door-wide-half.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Door wide half"
+    },
+    {
+        "glb-file": "door-wide-open.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Door wide open"
+    },
+    {
+        "glb-file": "door.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Door"
+    },
+    {
+        "glb-file": "floor-large.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Floor large"
+    },
+    {
+        "glb-file": "floor.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Floor"
+    },
+    {
+        "glb-file": "structure-corner-inner.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure corner inner"
+    },
+    {
+        "glb-file": "structure-corner-outer.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure corner outer"
+    },
+    {
+        "glb-file": "structure-doorway-wide.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure doorway wide"
+    },
+    {
+        "glb-file": "structure-doorway.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure doorway"
+    },
+    {
+        "glb-file": "structure-high.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure high"
+    },
+    {
+        "glb-file": "structure-medium.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure medium"
+    },
+    {
+        "glb-file": "structure-short.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure short"
+    },
+    {
+        "glb-file": "structure-tall.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure tall"
+    },
+    {
+        "glb-file": "structure-wall.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure wall"
+    },
+    {
+        "glb-file": "structure-window-wide.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure window wide"
+    },
+    {
+        "glb-file": "structure-window.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure window"
+    },
+    {
+        "glb-file": "structure-yellow-high.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure yellow high"
+    },
+    {
+        "glb-file": "structure-yellow-medium.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure yellow medium"
+    },
+    {
+        "glb-file": "structure-yellow-short.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure yellow short"
+    },
+    {
+        "glb-file": "structure-yellow-tall.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Structure yellow tall"
+    },
+    {
+        "glb-file": "top-large.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Top large"
+    },
+    {
+        "glb-file": "top.glb",
+        "directory": "kenney/conveyor-kit",
+        "friendly-name": "Top"
+    },
+    {
+        "glb-file": "apple.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Apple"
+    },
+    {
+        "glb-file": "appleHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Apple half"
+    },
+    {
+        "glb-file": "avocado.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Avocado"
+    },
+    {
+        "glb-file": "avocadoHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Avocado half"
+    },
+    {
+        "glb-file": "bacon.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bacon"
+    },
+    {
+        "glb-file": "baconRaw.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bacon raw"
+    },
+    {
+        "glb-file": "bag.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bag"
+    },
+    {
+        "glb-file": "bagFlat.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bag flat"
+    },
+    {
+        "glb-file": "banana.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Banana"
+    },
+    {
+        "glb-file": "barrel.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Barrel"
+    },
+    {
+        "glb-file": "beet.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Beet"
+    },
+    {
+        "glb-file": "bottleKetchup.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bottle ketchup"
+    },
+    {
+        "glb-file": "bottleMusterd.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bottle musterd"
+    },
+    {
+        "glb-file": "bottleOil.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bottle oil"
+    },
+    {
+        "glb-file": "bowl.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bowl"
+    },
+    {
+        "glb-file": "bowlBroth.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bowl broth"
+    },
+    {
+        "glb-file": "bowlCereal.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bowl cereal"
+    },
+    {
+        "glb-file": "bowlSoup.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bowl soup"
+    },
+    {
+        "glb-file": "bread.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Bread"
+    },
+    {
+        "glb-file": "broccoli.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Broccoli"
+    },
+    {
+        "glb-file": "burger.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Burger"
+    },
+    {
+        "glb-file": "burgerCheese.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Burger cheese"
+    },
+    {
+        "glb-file": "burgerCheeseDouble.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Burger cheese double"
+    },
+    {
+        "glb-file": "burgerDouble.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Burger double"
+    },
+    {
+        "glb-file": "cabbage.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cabbage"
+    },
+    {
+        "glb-file": "cake.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cake"
+    },
+    {
+        "glb-file": "cakeBirthday.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cake birthday"
+    },
+    {
+        "glb-file": "cakeSlicer.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cake slicer"
+    },
+    {
+        "glb-file": "can.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Can"
+    },
+    {
+        "glb-file": "candyBar.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Candy bar"
+    },
+    {
+        "glb-file": "candyBarWrapper.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Candy bar wrapper"
+    },
+    {
+        "glb-file": "canOpen.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Can open"
+    },
+    {
+        "glb-file": "canSmall.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Can small"
+    },
+    {
+        "glb-file": "carrot.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Carrot"
+    },
+    {
+        "glb-file": "carton.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Carton"
+    },
+    {
+        "glb-file": "cartonSmall.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Carton small"
+    },
+    {
+        "glb-file": "cauliflower.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cauliflower"
+    },
+    {
+        "glb-file": "celeryStick.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Celery stick"
+    },
+    {
+        "glb-file": "cheese.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cheese"
+    },
+    {
+        "glb-file": "cheeseCut.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cheese cut"
+    },
+    {
+        "glb-file": "cheeseSlicer.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cheese slicer"
+    },
+    {
+        "glb-file": "cherries.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cherries"
+    },
+    {
+        "glb-file": "chinese.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Chinese"
+    },
+    {
+        "glb-file": "chocolate.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Chocolate"
+    },
+    {
+        "glb-file": "chocolateWrapper.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Chocolate wrapper"
+    },
+    {
+        "glb-file": "chopstick.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Chopstick"
+    },
+    {
+        "glb-file": "chopstickFancy.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Chopstick fancy"
+    },
+    {
+        "glb-file": "cocktail.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cocktail"
+    },
+    {
+        "glb-file": "coconut.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Coconut"
+    },
+    {
+        "glb-file": "coconutHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Coconut half"
+    },
+    {
+        "glb-file": "cookie.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cookie"
+    },
+    {
+        "glb-file": "cookieChocolate.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cookie chocolate"
+    },
+    {
+        "glb-file": "cookingFork.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cooking fork"
+    },
+    {
+        "glb-file": "cookingKnife.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cooking knife"
+    },
+    {
+        "glb-file": "cookingKnifeChopping.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cooking knife chopping"
+    },
+    {
+        "glb-file": "cookingSpatula.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cooking spatula"
+    },
+    {
+        "glb-file": "cookingSpoon.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cooking spoon"
+    },
+    {
+        "glb-file": "corn.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Corn"
+    },
+    {
+        "glb-file": "cornDog.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Corn dog"
+    },
+    {
+        "glb-file": "croissant.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Croissant"
+    },
+    {
+        "glb-file": "cup.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cup"
+    },
+    {
+        "glb-file": "cupcake.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cupcake"
+    },
+    {
+        "glb-file": "cupSaucer.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cup saucer"
+    },
+    {
+        "glb-file": "cupTea.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cup tea"
+    },
+    {
+        "glb-file": "cupThea.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cup thea"
+    },
+    {
+        "glb-file": "cuttingBoard.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cutting board"
+    },
+    {
+        "glb-file": "cuttingBoardJapanese.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cutting board japanese"
+    },
+    {
+        "glb-file": "cuttingBoardRound.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Cutting board round"
+    },
+    {
+        "glb-file": "dimSum.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Dim sum"
+    },
+    {
+        "glb-file": "donut.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Donut"
+    },
+    {
+        "glb-file": "donutChocolate.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Donut chocolate"
+    },
+    {
+        "glb-file": "donutSprinkles.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Donut sprinkles"
+    },
+    {
+        "glb-file": "egg.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Egg"
+    },
+    {
+        "glb-file": "eggCooked.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Egg cooked"
+    },
+    {
+        "glb-file": "eggCup.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Egg cup"
+    },
+    {
+        "glb-file": "eggHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Egg half"
+    },
+    {
+        "glb-file": "eggplant.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Eggplant"
+    },
+    {
+        "glb-file": "fish.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Fish"
+    },
+    {
+        "glb-file": "fishBones.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Fish bones"
+    },
+    {
+        "glb-file": "frappe.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Frappe"
+    },
+    {
+        "glb-file": "fries.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Fries"
+    },
+    {
+        "glb-file": "friesEmpty.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Fries empty"
+    },
+    {
+        "glb-file": "frikandelSpeciaal.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Frikandel speciaal"
+    },
+    {
+        "glb-file": "fryingPan.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Frying pan"
+    },
+    {
+        "glb-file": "fryingPanLid.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Frying pan lid"
+    },
+    {
+        "glb-file": "gingerBread.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Ginger bread"
+    },
+    {
+        "glb-file": "gingerBreadCutter.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Ginger bread cutter"
+    },
+    {
+        "glb-file": "glass.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Glass"
+    },
+    {
+        "glb-file": "glassWine.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Glass wine"
+    },
+    {
+        "glb-file": "grapes.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Grapes"
+    },
+    {
+        "glb-file": "honey.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Honey"
+    },
+    {
+        "glb-file": "hotDog.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Hot dog"
+    },
+    {
+        "glb-file": "hotDogRaw.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Hot dog raw"
+    },
+    {
+        "glb-file": "iceCream.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Ice cream"
+    },
+    {
+        "glb-file": "iceCreamCone.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Ice cream cone"
+    },
+    {
+        "glb-file": "iceCreamCup.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Ice cream cup"
+    },
+    {
+        "glb-file": "iceCreamScoop.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Ice cream scoop"
+    },
+    {
+        "glb-file": "iceCreamScoopMint.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Ice cream scoop mint"
+    },
+    {
+        "glb-file": "knifeBlock.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Knife block"
+    },
+    {
+        "glb-file": "leek.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Leek"
+    },
+    {
+        "glb-file": "lemon.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Lemon"
+    },
+    {
+        "glb-file": "lemonHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Lemon half"
+    },
+    {
+        "glb-file": "loaf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Loaf"
+    },
+    {
+        "glb-file": "loafBaguette.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Loaf baguette"
+    },
+    {
+        "glb-file": "loafRound.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Loaf round"
+    },
+    {
+        "glb-file": "lollypop.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Lollypop"
+    },
+    {
+        "glb-file": "makiRoe.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Maki roe"
+    },
+    {
+        "glb-file": "makiSalmon.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Maki salmon"
+    },
+    {
+        "glb-file": "makiVegetable.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Maki vegetable"
+    },
+    {
+        "glb-file": "meatCooked.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Meat cooked"
+    },
+    {
+        "glb-file": "meatPatty.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Meat patty"
+    },
+    {
+        "glb-file": "meatRaw.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Meat raw"
+    },
+    {
+        "glb-file": "meatRibs.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Meat ribs"
+    },
+    {
+        "glb-file": "meatSausage.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Meat sausage"
+    },
+    {
+        "glb-file": "meatTenderizer.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Meat tenderizer"
+    },
+    {
+        "glb-file": "mincemeatPie.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mincemeat pie"
+    },
+    {
+        "glb-file": "mortar.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mortar"
+    },
+    {
+        "glb-file": "mortarPestle.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mortar pestle"
+    },
+    {
+        "glb-file": "muffin.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Muffin"
+    },
+    {
+        "glb-file": "mug.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mug"
+    },
+    {
+        "glb-file": "mushroom.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mushroom"
+    },
+    {
+        "glb-file": "mushroomHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mushroom half"
+    },
+    {
+        "glb-file": "mussel.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mussel"
+    },
+    {
+        "glb-file": "musselOpen.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Mussel open"
+    },
+    {
+        "glb-file": "onion.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Onion"
+    },
+    {
+        "glb-file": "onionHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Onion half"
+    },
+    {
+        "glb-file": "orange.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Orange"
+    },
+    {
+        "glb-file": "pan.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pan"
+    },
+    {
+        "glb-file": "pancakes.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pancakes"
+    },
+    {
+        "glb-file": "panStew.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pan stew"
+    },
+    {
+        "glb-file": "paprika.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Paprika"
+    },
+    {
+        "glb-file": "paprikaSlice.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Paprika slice"
+    },
+    {
+        "glb-file": "peanutButter.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Peanut butter"
+    },
+    {
+        "glb-file": "pear.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pear"
+    },
+    {
+        "glb-file": "pearHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pear half"
+    },
+    {
+        "glb-file": "pepper.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pepper"
+    },
+    {
+        "glb-file": "pepperMill.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pepper mill"
+    },
+    {
+        "glb-file": "pie.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pie"
+    },
+    {
+        "glb-file": "pineapple.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pineapple"
+    },
+    {
+        "glb-file": "pizza.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pizza"
+    },
+    {
+        "glb-file": "pizzaBox.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pizza box"
+    },
+    {
+        "glb-file": "pizzaCutter.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pizza cutter"
+    },
+    {
+        "glb-file": "plate.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Plate"
+    },
+    {
+        "glb-file": "plateBroken.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Plate broken"
+    },
+    {
+        "glb-file": "plateDeep.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Plate deep"
+    },
+    {
+        "glb-file": "plateDinner.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Plate dinner"
+    },
+    {
+        "glb-file": "plateRectangle.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Plate rectangle"
+    },
+    {
+        "glb-file": "plateSauerkraut.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Plate sauerkraut"
+    },
+    {
+        "glb-file": "popsicle.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Popsicle"
+    },
+    {
+        "glb-file": "popsicleChocolate.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Popsicle chocolate"
+    },
+    {
+        "glb-file": "popsicleStick.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Popsicle stick"
+    },
+    {
+        "glb-file": "pot.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pot"
+    },
+    {
+        "glb-file": "potLid.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pot lid"
+    },
+    {
+        "glb-file": "potStew.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pot stew"
+    },
+    {
+        "glb-file": "potStewLid.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pot stew lid"
+    },
+    {
+        "glb-file": "pudding.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pudding"
+    },
+    {
+        "glb-file": "pumpkin.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pumpkin"
+    },
+    {
+        "glb-file": "pumpkinBasic.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Pumpkin basic"
+    },
+    {
+        "glb-file": "radish.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Radish"
+    },
+    {
+        "glb-file": "riceBall.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Rice ball"
+    },
+    {
+        "glb-file": "rollingPin.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Rolling pin"
+    },
+    {
+        "glb-file": "salad.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Salad"
+    },
+    {
+        "glb-file": "sandwich.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Sandwich"
+    },
+    {
+        "glb-file": "sausage.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Sausage"
+    },
+    {
+        "glb-file": "sausageHalf.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Sausage half"
+    },
+    {
+        "glb-file": "shakerPepper.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Shaker pepper"
+    },
+    {
+        "glb-file": "shakerSalt.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Shaker salt"
+    },
+    {
+        "glb-file": "skewer.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Skewer"
+    },
+    {
+        "glb-file": "skewerVegetables.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Skewer vegetables"
+    },
+    {
+        "glb-file": "soda.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Soda"
+    },
+    {
+        "glb-file": "sodaBottle.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Soda bottle"
+    },
+    {
+        "glb-file": "sodaCan.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Soda can"
+    },
+    {
+        "glb-file": "sodaCanCrushed.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Soda can crushed"
+    },
+    {
+        "glb-file": "sodaGlass.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Soda glass"
+    },
+    {
+        "glb-file": "soy.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Soy"
+    },
+    {
+        "glb-file": "steamer.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Steamer"
+    },
+    {
+        "glb-file": "strawberry.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Strawberry"
+    },
+    {
+        "glb-file": "styrofoam.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Styrofoam"
+    },
+    {
+        "glb-file": "styrofoamDinner.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Styrofoam dinner"
+    },
+    {
+        "glb-file": "sub.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Sub"
+    },
+    {
+        "glb-file": "sundae.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Sundae"
+    },
+    {
+        "glb-file": "sushiEgg.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Sushi egg"
+    },
+    {
+        "glb-file": "sushiSalmon.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Sushi salmon"
+    },
+    {
+        "glb-file": "taco.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Taco"
+    },
+    {
+        "glb-file": "tajine.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Tajine"
+    },
+    {
+        "glb-file": "tajineLid.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Tajine lid"
+    },
+    {
+        "glb-file": "tomato.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Tomato"
+    },
+    {
+        "glb-file": "tomatoSlice.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Tomato slice"
+    },
+    {
+        "glb-file": "turkey.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Turkey"
+    },
+    {
+        "glb-file": "utensilFork.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Utensil fork"
+    },
+    {
+        "glb-file": "utensilKnife.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Utensil knife"
+    },
+    {
+        "glb-file": "utensilSpoon.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Utensil spoon"
+    },
+    {
+        "glb-file": "waffle.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Waffle"
+    },
+    {
+        "glb-file": "watermelon.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Watermelon"
+    },
+    {
+        "glb-file": "whippedCream.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Whipped cream"
+    },
+    {
+        "glb-file": "whisk.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Whisk"
+    },
+    {
+        "glb-file": "wholeHam.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Whole ham"
+    },
+    {
+        "glb-file": "wholerHam.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Wholer ham"
+    },
+    {
+        "glb-file": "wineRed.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Wine red"
+    },
+    {
+        "glb-file": "wineWhite.glb",
+        "directory": "kenney/food-kit",
+        "friendly-name": "Wine white"
+    },
+    {
+        "glb-file": "bench.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Bench"
+    },
+    {
+        "glb-file": "cabinCorner.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin corner"
+    },
+    {
+        "glb-file": "cabinDoor.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin door"
+    },
+    {
+        "glb-file": "cabinFloor.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin floor"
+    },
+    {
+        "glb-file": "cabinRoof.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin roof"
+    },
+    {
+        "glb-file": "cabinRoofCenter.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin roof center"
+    },
+    {
+        "glb-file": "cabinRoofChimney.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin roof chimney"
+    },
+    {
+        "glb-file": "cabinRoofCorner.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin roof corner"
+    },
+    {
+        "glb-file": "cabinRoofFlat.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin roof flat"
+    },
+    {
+        "glb-file": "cabinSide.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin side"
+    },
+    {
+        "glb-file": "cabinSideCenter.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin side center"
+    },
+    {
+        "glb-file": "cabinWall.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin wall"
+    },
+    {
+        "glb-file": "cabinWallHalf.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin wall half"
+    },
+    {
+        "glb-file": "cabinWindow.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin window"
+    },
+    {
+        "glb-file": "cabinWindowHalf.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin window half"
+    },
+    {
+        "glb-file": "cabinWindowLarge.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Cabin window large"
+    },
+    {
+        "glb-file": "candyCane.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Candy cane"
+    },
+    {
+        "glb-file": "candyCaneMint.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Candy cane mint"
+    },
+    {
+        "glb-file": "festivusPole.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Festivus pole"
+    },
+    {
+        "glb-file": "hanukkahDreidel.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Hanukkah dreidel"
+    },
+    {
+        "glb-file": "hanukkahMenorah.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Hanukkah menorah"
+    },
+    {
+        "glb-file": "kwanzaaKikombe.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Kwanzaa kikombe"
+    },
+    {
+        "glb-file": "kwanzaaKinara.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Kwanzaa kinara"
+    },
+    {
+        "glb-file": "kwanzaaKinaraAlternative.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Kwanzaa kinara alternative"
+    },
+    {
+        "glb-file": "lightpost.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Lightpost"
+    },
+    {
+        "glb-file": "lightpostHanging.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Lightpost hanging"
+    },
+    {
+        "glb-file": "lightsGreen.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Lights green"
+    },
+    {
+        "glb-file": "lightsMulti.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Lights multi"
+    },
+    {
+        "glb-file": "lightsRed.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Lights red"
+    },
+    {
+        "glb-file": "present.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Present"
+    },
+    {
+        "glb-file": "presentGreen.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Present green"
+    },
+    {
+        "glb-file": "presentGreenLow.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Present green low"
+    },
+    {
+        "glb-file": "presentGreenRound.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Present green round"
+    },
+    {
+        "glb-file": "presentLow.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Present low"
+    },
+    {
+        "glb-file": "presentRound.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Present round"
+    },
+    {
+        "glb-file": "rockFormationLarge.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Rock formation large"
+    },
+    {
+        "glb-file": "rockFormationMedium.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Rock formation medium"
+    },
+    {
+        "glb-file": "rockFormationSmall.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Rock formation small"
+    },
+    {
+        "glb-file": "sled.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Sled"
+    },
+    {
+        "glb-file": "snowFort.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Snow fort"
+    },
+    {
+        "glb-file": "snowman.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Snowman"
+    },
+    {
+        "glb-file": "snowmanFancy.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Snowman fancy"
+    },
+    {
+        "glb-file": "snowPatch.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Snow patch"
+    },
+    {
+        "glb-file": "trackCornerLarge.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Track corner large"
+    },
+    {
+        "glb-file": "trackCornerSmall.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Track corner small"
+    },
+    {
+        "glb-file": "trackSimpleCornerLarge.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Track simple corner large"
+    },
+    {
+        "glb-file": "trackSimpleCornerSmall.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Track simple corner small"
+    },
+    {
+        "glb-file": "trackSimpleStraight.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Track simple straight"
+    },
+    {
+        "glb-file": "trackStraight.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Track straight"
+    },
+    {
+        "glb-file": "trainLocomotive.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Train locomotive"
+    },
+    {
+        "glb-file": "trainTender.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Train tender"
+    },
+    {
+        "glb-file": "trainWagon.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Train wagon"
+    },
+    {
+        "glb-file": "trainWagonFlat.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Train wagon flat"
+    },
+    {
+        "glb-file": "trainWagonShort.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Train wagon short"
+    },
+    {
+        "glb-file": "treeDecorated.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Tree decorated"
+    },
+    {
+        "glb-file": "treePine.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Tree pine"
+    },
+    {
+        "glb-file": "treePineSnow.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Tree pine snow"
+    },
+    {
+        "glb-file": "treePineSnowed.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Tree pine snowed"
+    },
+    {
+        "glb-file": "treePineSnowRound.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Tree pine snow round"
+    },
+    {
+        "glb-file": "wreath.glb",
+        "directory": "kenney/holiday-kit",
+        "friendly-name": "Wreath"
+    },
+    {
+        "glb-file": "ball_blue.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ball blue"
+    },
+    {
+        "glb-file": "ball_green.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ball green"
+    },
+    {
+        "glb-file": "ball_red.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ball red"
+    },
+    {
+        "glb-file": "block.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Block"
+    },
+    {
+        "glb-file": "bump.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Bump"
+    },
+    {
+        "glb-file": "bumpDown.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Bump down"
+    },
+    {
+        "glb-file": "bumpDownWalls.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Bump down walls"
+    },
+    {
+        "glb-file": "bumpWalls.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Bump walls"
+    },
+    {
+        "glb-file": "castle.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Castle"
+    },
+    {
+        "glb-file": "club_blue.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Club blue"
+    },
+    {
+        "glb-file": "club_green.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Club green"
+    },
+    {
+        "glb-file": "club_red.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Club red"
+    },
+    {
+        "glb-file": "corner.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Corner"
+    },
+    {
+        "glb-file": "crest.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Crest"
+    },
+    {
+        "glb-file": "end.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "End"
+    },
+    {
+        "glb-file": "flag_blue.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Flag blue"
+    },
+    {
+        "glb-file": "flag_green.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Flag green"
+    },
+    {
+        "glb-file": "flag_red.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Flag red"
+    },
+    {
+        "glb-file": "gap.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Gap"
+    },
+    {
+        "glb-file": "hillCorner.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Hill corner"
+    },
+    {
+        "glb-file": "hillRound.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Hill round"
+    },
+    {
+        "glb-file": "hillSquare.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Hill square"
+    },
+    {
+        "glb-file": "holeOpen.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Hole open"
+    },
+    {
+        "glb-file": "holeRound.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Hole round"
+    },
+    {
+        "glb-file": "holeSquare.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Hole square"
+    },
+    {
+        "glb-file": "innerCorner.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Inner corner"
+    },
+    {
+        "glb-file": "narrowBlock.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Narrow block"
+    },
+    {
+        "glb-file": "narrowRound.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Narrow round"
+    },
+    {
+        "glb-file": "narrowSquare.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Narrow square"
+    },
+    {
+        "glb-file": "obstacleBlock.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Obstacle block"
+    },
+    {
+        "glb-file": "obstacleDiamond.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Obstacle diamond"
+    },
+    {
+        "glb-file": "obstacleTriangle.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Obstacle triangle"
+    },
+    {
+        "glb-file": "open.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Open"
+    },
+    {
+        "glb-file": "ramp.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp"
+    },
+    {
+        "glb-file": "rampA.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp a"
+    },
+    {
+        "glb-file": "rampB.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp b"
+    },
+    {
+        "glb-file": "rampC.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp c"
+    },
+    {
+        "glb-file": "rampD.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp d"
+    },
+    {
+        "glb-file": "rampLarge.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp large"
+    },
+    {
+        "glb-file": "rampLargeSide.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp large side"
+    },
+    {
+        "glb-file": "rampSharp.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp sharp"
+    },
+    {
+        "glb-file": "rampSide.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp side"
+    },
+    {
+        "glb-file": "rampSquare.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Ramp square"
+    },
+    {
+        "glb-file": "roundCornerA.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Round corner a"
+    },
+    {
+        "glb-file": "roundCornerB.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Round corner b"
+    },
+    {
+        "glb-file": "roundCornerC.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Round corner c"
+    },
+    {
+        "glb-file": "roundLargeCorner.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Round large corner"
+    },
+    {
+        "glb-file": "roundLargeCornerOpen.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Round large corner open"
+    },
+    {
+        "glb-file": "side.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Side"
+    },
+    {
+        "glb-file": "skewCorner.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Skew corner"
+    },
+    {
+        "glb-file": "skewLargeCorner.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Skew large corner"
+    },
+    {
+        "glb-file": "skewLargeCornerOpen.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Skew large corner open"
+    },
+    {
+        "glb-file": "split.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Split"
+    },
+    {
+        "glb-file": "splitStart.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Split start"
+    },
+    {
+        "glb-file": "splitT.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Split t"
+    },
+    {
+        "glb-file": "splitWallsToOpen.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Split walls to open"
+    },
+    {
+        "glb-file": "squareCornerA.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Square corner a"
+    },
+    {
+        "glb-file": "start.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Start"
+    },
+    {
+        "glb-file": "straight.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Straight"
+    },
+    {
+        "glb-file": "support.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Support"
+    },
+    {
+        "glb-file": "supports.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Supports"
+    },
+    {
+        "glb-file": "supports_bottom.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Supports bottom"
+    },
+    {
+        "glb-file": "support_bottom.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Support bottom"
+    },
+    {
+        "glb-file": "tunnelDouble.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Tunnel double"
+    },
+    {
+        "glb-file": "tunnelNarrow.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Tunnel narrow"
+    },
+    {
+        "glb-file": "tunnelWide.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Tunnel wide"
+    },
+    {
+        "glb-file": "wallLeft.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Wall left"
+    },
+    {
+        "glb-file": "wallRight.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Wall right"
+    },
+    {
+        "glb-file": "wallsToOpen.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Walls to open"
+    },
+    {
+        "glb-file": "windmill.glb",
+        "directory": "kenney/minigolf-kit",
+        "friendly-name": "Windmill"
+    },
+    {
+        "glb-file": "bed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bed"
+    },
+    {
+        "glb-file": "bed_floor.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bed floor"
+    },
+    {
+        "glb-file": "bridge_center_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge center stone"
+    },
+    {
+        "glb-file": "bridge_center_stoneRound.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge center stone round"
+    },
+    {
+        "glb-file": "bridge_center_wood.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge center wood"
+    },
+    {
+        "glb-file": "bridge_center_woodRound.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge center wood round"
+    },
+    {
+        "glb-file": "bridge_side_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge side stone"
+    },
+    {
+        "glb-file": "bridge_side_stoneRound.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge side stone round"
+    },
+    {
+        "glb-file": "bridge_side_wood.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge side wood"
+    },
+    {
+        "glb-file": "bridge_side_woodRound.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge side wood round"
+    },
+    {
+        "glb-file": "bridge_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge stone"
+    },
+    {
+        "glb-file": "bridge_stoneNarrow.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge stone narrow"
+    },
+    {
+        "glb-file": "bridge_stoneRound.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge stone round"
+    },
+    {
+        "glb-file": "bridge_stoneRoundNarrow.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge stone round narrow"
+    },
+    {
+        "glb-file": "bridge_wood.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge wood"
+    },
+    {
+        "glb-file": "bridge_woodNarrow.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge wood narrow"
+    },
+    {
+        "glb-file": "bridge_woodRound.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge wood round"
+    },
+    {
+        "glb-file": "bridge_woodRoundNarrow.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Bridge wood round narrow"
+    },
+    {
+        "glb-file": "cactus_short.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cactus short"
+    },
+    {
+        "glb-file": "cactus_tall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cactus tall"
+    },
+    {
+        "glb-file": "campfire_bricks.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Campfire bricks"
+    },
+    {
+        "glb-file": "campfire_logs.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Campfire logs"
+    },
+    {
+        "glb-file": "campfire_planks.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Campfire planks"
+    },
+    {
+        "glb-file": "campfire_stones.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Campfire stones"
+    },
+    {
+        "glb-file": "canoe.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Canoe"
+    },
+    {
+        "glb-file": "canoe_paddle.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Canoe paddle"
+    },
+    {
+        "glb-file": "cliff_blockCave_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block cave rock"
+    },
+    {
+        "glb-file": "cliff_blockCave_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block cave stone"
+    },
+    {
+        "glb-file": "cliff_blockDiagonal_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block diagonal rock"
+    },
+    {
+        "glb-file": "cliff_blockDiagonal_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block diagonal stone"
+    },
+    {
+        "glb-file": "cliff_blockHalf_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block half rock"
+    },
+    {
+        "glb-file": "cliff_blockHalf_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block half stone"
+    },
+    {
+        "glb-file": "cliff_blockQuarter_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block quarter rock"
+    },
+    {
+        "glb-file": "cliff_blockQuarter_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block quarter stone"
+    },
+    {
+        "glb-file": "cliff_blockSlopeHalfWalls_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block slope half walls rock"
+    },
+    {
+        "glb-file": "cliff_blockSlopeHalfWalls_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block slope half walls stone"
+    },
+    {
+        "glb-file": "cliff_blockSlopeWalls_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block slope walls rock"
+    },
+    {
+        "glb-file": "cliff_blockSlopeWalls_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block slope walls stone"
+    },
+    {
+        "glb-file": "cliff_blockSlope_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block slope rock"
+    },
+    {
+        "glb-file": "cliff_blockSlope_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block slope stone"
+    },
+    {
+        "glb-file": "cliff_block_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block rock"
+    },
+    {
+        "glb-file": "cliff_block_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff block stone"
+    },
+    {
+        "glb-file": "cliff_cave_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff cave rock"
+    },
+    {
+        "glb-file": "cliff_cave_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff cave stone"
+    },
+    {
+        "glb-file": "cliff_cornerInnerLarge_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner inner large rock"
+    },
+    {
+        "glb-file": "cliff_cornerInnerLarge_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner inner large stone"
+    },
+    {
+        "glb-file": "cliff_cornerInnerTop_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner inner top rock"
+    },
+    {
+        "glb-file": "cliff_cornerInnerTop_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner inner top stone"
+    },
+    {
+        "glb-file": "cliff_cornerInner_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner inner rock"
+    },
+    {
+        "glb-file": "cliff_cornerInner_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner inner stone"
+    },
+    {
+        "glb-file": "cliff_cornerLarge_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner large rock"
+    },
+    {
+        "glb-file": "cliff_cornerLarge_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner large stone"
+    },
+    {
+        "glb-file": "cliff_cornerTop_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner top rock"
+    },
+    {
+        "glb-file": "cliff_cornerTop_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner top stone"
+    },
+    {
+        "glb-file": "cliff_corner_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner rock"
+    },
+    {
+        "glb-file": "cliff_corner_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff corner stone"
+    },
+    {
+        "glb-file": "cliff_diagonal_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff diagonal rock"
+    },
+    {
+        "glb-file": "cliff_diagonal_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff diagonal stone"
+    },
+    {
+        "glb-file": "cliff_halfCornerInner_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff half corner inner rock"
+    },
+    {
+        "glb-file": "cliff_halfCornerInner_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff half corner inner stone"
+    },
+    {
+        "glb-file": "cliff_halfCorner_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff half corner rock"
+    },
+    {
+        "glb-file": "cliff_halfCorner_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff half corner stone"
+    },
+    {
+        "glb-file": "cliff_half_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff half rock"
+    },
+    {
+        "glb-file": "cliff_half_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff half stone"
+    },
+    {
+        "glb-file": "cliff_large_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff large rock"
+    },
+    {
+        "glb-file": "cliff_large_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff large stone"
+    },
+    {
+        "glb-file": "cliff_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff rock"
+    },
+    {
+        "glb-file": "cliff_stepsCornerInner_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff steps corner inner rock"
+    },
+    {
+        "glb-file": "cliff_stepsCornerInner_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff steps corner inner stone"
+    },
+    {
+        "glb-file": "cliff_stepsCorner_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff steps corner rock"
+    },
+    {
+        "glb-file": "cliff_stepsCorner_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff steps corner stone"
+    },
+    {
+        "glb-file": "cliff_steps_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff steps rock"
+    },
+    {
+        "glb-file": "cliff_steps_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff steps stone"
+    },
+    {
+        "glb-file": "cliff_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff stone"
+    },
+    {
+        "glb-file": "cliff_topDiagonal_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff top diagonal rock"
+    },
+    {
+        "glb-file": "cliff_topDiagonal_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff top diagonal stone"
+    },
+    {
+        "glb-file": "cliff_top_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff top rock"
+    },
+    {
+        "glb-file": "cliff_top_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff top stone"
+    },
+    {
+        "glb-file": "cliff_waterfallTop_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff waterfall top rock"
+    },
+    {
+        "glb-file": "cliff_waterfallTop_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff waterfall top stone"
+    },
+    {
+        "glb-file": "cliff_waterfall_rock.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff waterfall rock"
+    },
+    {
+        "glb-file": "cliff_waterfall_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Cliff waterfall stone"
+    },
+    {
+        "glb-file": "crops_bambooStageA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops bamboo stage a"
+    },
+    {
+        "glb-file": "crops_bambooStageB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops bamboo stage b"
+    },
+    {
+        "glb-file": "crops_cornStageA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops corn stage a"
+    },
+    {
+        "glb-file": "crops_cornStageB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops corn stage b"
+    },
+    {
+        "glb-file": "crops_cornStageC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops corn stage c"
+    },
+    {
+        "glb-file": "crops_cornStageD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops corn stage d"
+    },
+    {
+        "glb-file": "crops_dirtDoubleRow.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops dirt double row"
+    },
+    {
+        "glb-file": "crops_dirtDoubleRowCorner.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops dirt double row corner"
+    },
+    {
+        "glb-file": "crops_dirtDoubleRowEnd.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops dirt double row end"
+    },
+    {
+        "glb-file": "crops_dirtRow.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops dirt row"
+    },
+    {
+        "glb-file": "crops_dirtRowCorner.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops dirt row corner"
+    },
+    {
+        "glb-file": "crops_dirtRowEnd.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops dirt row end"
+    },
+    {
+        "glb-file": "crops_dirtSingle.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops dirt single"
+    },
+    {
+        "glb-file": "crops_leafsStageA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops leafs stage a"
+    },
+    {
+        "glb-file": "crops_leafsStageB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops leafs stage b"
+    },
+    {
+        "glb-file": "crops_wheatStageA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops wheat stage a"
+    },
+    {
+        "glb-file": "crops_wheatStageB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crops wheat stage b"
+    },
+    {
+        "glb-file": "crop_carrot.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crop carrot"
+    },
+    {
+        "glb-file": "crop_melon.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crop melon"
+    },
+    {
+        "glb-file": "crop_pumpkin.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crop pumpkin"
+    },
+    {
+        "glb-file": "crop_turnip.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Crop turnip"
+    },
+    {
+        "glb-file": "fence_bend.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence bend"
+    },
+    {
+        "glb-file": "fence_bendCenter.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence bend center"
+    },
+    {
+        "glb-file": "fence_corner.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence corner"
+    },
+    {
+        "glb-file": "fence_gate.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence gate"
+    },
+    {
+        "glb-file": "fence_planks.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence planks"
+    },
+    {
+        "glb-file": "fence_planksDouble.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence planks double"
+    },
+    {
+        "glb-file": "fence_simple.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence simple"
+    },
+    {
+        "glb-file": "fence_simpleCenter.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence simple center"
+    },
+    {
+        "glb-file": "fence_simpleDiagonal.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence simple diagonal"
+    },
+    {
+        "glb-file": "fence_simpleDiagonalCenter.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence simple diagonal center"
+    },
+    {
+        "glb-file": "fence_simpleHigh.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence simple high"
+    },
+    {
+        "glb-file": "fence_simpleLow.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Fence simple low"
+    },
+    {
+        "glb-file": "flower_purpleA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower purple a"
+    },
+    {
+        "glb-file": "flower_purpleB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower purple b"
+    },
+    {
+        "glb-file": "flower_purpleC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower purple c"
+    },
+    {
+        "glb-file": "flower_redA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower red a"
+    },
+    {
+        "glb-file": "flower_redB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower red b"
+    },
+    {
+        "glb-file": "flower_redC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower red c"
+    },
+    {
+        "glb-file": "flower_yellowA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower yellow a"
+    },
+    {
+        "glb-file": "flower_yellowB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower yellow b"
+    },
+    {
+        "glb-file": "flower_yellowC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Flower yellow c"
+    },
+    {
+        "glb-file": "grass.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Grass"
+    },
+    {
+        "glb-file": "grass_large.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Grass large"
+    },
+    {
+        "glb-file": "grass_leafs.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Grass leafs"
+    },
+    {
+        "glb-file": "grass_leafsLarge.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Grass leafs large"
+    },
+    {
+        "glb-file": "ground_grass.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground grass"
+    },
+    {
+        "glb-file": "ground_pathBend.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path bend"
+    },
+    {
+        "glb-file": "ground_pathBendBank.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path bend bank"
+    },
+    {
+        "glb-file": "ground_pathCorner.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path corner"
+    },
+    {
+        "glb-file": "ground_pathCornerSmall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path corner small"
+    },
+    {
+        "glb-file": "ground_pathCross.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path cross"
+    },
+    {
+        "glb-file": "ground_pathEnd.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path end"
+    },
+    {
+        "glb-file": "ground_pathEndClosed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path end closed"
+    },
+    {
+        "glb-file": "ground_pathOpen.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path open"
+    },
+    {
+        "glb-file": "ground_pathRocks.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path rocks"
+    },
+    {
+        "glb-file": "ground_pathSide.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path side"
+    },
+    {
+        "glb-file": "ground_pathSideOpen.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path side open"
+    },
+    {
+        "glb-file": "ground_pathSplit.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path split"
+    },
+    {
+        "glb-file": "ground_pathStraight.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path straight"
+    },
+    {
+        "glb-file": "ground_pathTile.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground path tile"
+    },
+    {
+        "glb-file": "ground_riverBend.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river bend"
+    },
+    {
+        "glb-file": "ground_riverBendBank.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river bend bank"
+    },
+    {
+        "glb-file": "ground_riverCorner.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river corner"
+    },
+    {
+        "glb-file": "ground_riverCornerSmall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river corner small"
+    },
+    {
+        "glb-file": "ground_riverCross.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river cross"
+    },
+    {
+        "glb-file": "ground_riverEnd.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river end"
+    },
+    {
+        "glb-file": "ground_riverEndClosed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river end closed"
+    },
+    {
+        "glb-file": "ground_riverOpen.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river open"
+    },
+    {
+        "glb-file": "ground_riverRocks.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river rocks"
+    },
+    {
+        "glb-file": "ground_riverSide.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river side"
+    },
+    {
+        "glb-file": "ground_riverSideOpen.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river side open"
+    },
+    {
+        "glb-file": "ground_riverSplit.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river split"
+    },
+    {
+        "glb-file": "ground_riverStraight.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river straight"
+    },
+    {
+        "glb-file": "ground_riverTile.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Ground river tile"
+    },
+    {
+        "glb-file": "hanging_moss.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Hanging moss"
+    },
+    {
+        "glb-file": "lily_large.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Lily large"
+    },
+    {
+        "glb-file": "lily_small.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Lily small"
+    },
+    {
+        "glb-file": "log.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Log"
+    },
+    {
+        "glb-file": "log_large.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Log large"
+    },
+    {
+        "glb-file": "log_stack.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Log stack"
+    },
+    {
+        "glb-file": "log_stackLarge.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Log stack large"
+    },
+    {
+        "glb-file": "mushroom_red.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Mushroom red"
+    },
+    {
+        "glb-file": "mushroom_redGroup.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Mushroom red group"
+    },
+    {
+        "glb-file": "mushroom_redTall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Mushroom red tall"
+    },
+    {
+        "glb-file": "mushroom_tan.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Mushroom tan"
+    },
+    {
+        "glb-file": "mushroom_tanGroup.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Mushroom tan group"
+    },
+    {
+        "glb-file": "mushroom_tanTall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Mushroom tan tall"
+    },
+    {
+        "glb-file": "path_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Path stone"
+    },
+    {
+        "glb-file": "path_stoneCircle.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Path stone circle"
+    },
+    {
+        "glb-file": "path_stoneCorner.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Path stone corner"
+    },
+    {
+        "glb-file": "path_stoneEnd.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Path stone end"
+    },
+    {
+        "glb-file": "path_wood.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Path wood"
+    },
+    {
+        "glb-file": "path_woodCorner.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Path wood corner"
+    },
+    {
+        "glb-file": "path_woodEnd.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Path wood end"
+    },
+    {
+        "glb-file": "plant_bush.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant bush"
+    },
+    {
+        "glb-file": "plant_bushDetailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant bush detailed"
+    },
+    {
+        "glb-file": "plant_bushLarge.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant bush large"
+    },
+    {
+        "glb-file": "plant_bushLargeTriangle.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant bush large triangle"
+    },
+    {
+        "glb-file": "plant_bushSmall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant bush small"
+    },
+    {
+        "glb-file": "plant_bushTriangle.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant bush triangle"
+    },
+    {
+        "glb-file": "plant_flatShort.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant flat short"
+    },
+    {
+        "glb-file": "plant_flatTall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Plant flat tall"
+    },
+    {
+        "glb-file": "platform_beach.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Platform beach"
+    },
+    {
+        "glb-file": "platform_grass.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Platform grass"
+    },
+    {
+        "glb-file": "platform_stone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Platform stone"
+    },
+    {
+        "glb-file": "pot_large.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Pot large"
+    },
+    {
+        "glb-file": "pot_small.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Pot small"
+    },
+    {
+        "glb-file": "rock_largeA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock large a"
+    },
+    {
+        "glb-file": "rock_largeB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock large b"
+    },
+    {
+        "glb-file": "rock_largeC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock large c"
+    },
+    {
+        "glb-file": "rock_largeD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock large d"
+    },
+    {
+        "glb-file": "rock_largeE.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock large e"
+    },
+    {
+        "glb-file": "rock_largeF.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock large f"
+    },
+    {
+        "glb-file": "rock_smallA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small a"
+    },
+    {
+        "glb-file": "rock_smallB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small b"
+    },
+    {
+        "glb-file": "rock_smallC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small c"
+    },
+    {
+        "glb-file": "rock_smallD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small d"
+    },
+    {
+        "glb-file": "rock_smallE.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small e"
+    },
+    {
+        "glb-file": "rock_smallF.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small f"
+    },
+    {
+        "glb-file": "rock_smallFlatA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small flat a"
+    },
+    {
+        "glb-file": "rock_smallFlatB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small flat b"
+    },
+    {
+        "glb-file": "rock_smallFlatC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small flat c"
+    },
+    {
+        "glb-file": "rock_smallG.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small g"
+    },
+    {
+        "glb-file": "rock_smallH.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small h"
+    },
+    {
+        "glb-file": "rock_smallI.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small i"
+    },
+    {
+        "glb-file": "rock_smallTopA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small top a"
+    },
+    {
+        "glb-file": "rock_smallTopB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock small top b"
+    },
+    {
+        "glb-file": "rock_tallA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall a"
+    },
+    {
+        "glb-file": "rock_tallB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall b"
+    },
+    {
+        "glb-file": "rock_tallC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall c"
+    },
+    {
+        "glb-file": "rock_tallD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall d"
+    },
+    {
+        "glb-file": "rock_tallE.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall e"
+    },
+    {
+        "glb-file": "rock_tallF.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall f"
+    },
+    {
+        "glb-file": "rock_tallG.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall g"
+    },
+    {
+        "glb-file": "rock_tallH.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall h"
+    },
+    {
+        "glb-file": "rock_tallI.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall i"
+    },
+    {
+        "glb-file": "rock_tallJ.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Rock tall j"
+    },
+    {
+        "glb-file": "sign.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Sign"
+    },
+    {
+        "glb-file": "statue_block.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Statue block"
+    },
+    {
+        "glb-file": "statue_column.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Statue column"
+    },
+    {
+        "glb-file": "statue_columnDamaged.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Statue column damaged"
+    },
+    {
+        "glb-file": "statue_head.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Statue head"
+    },
+    {
+        "glb-file": "statue_obelisk.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Statue obelisk"
+    },
+    {
+        "glb-file": "statue_ring.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Statue ring"
+    },
+    {
+        "glb-file": "stone_largeA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone large a"
+    },
+    {
+        "glb-file": "stone_largeB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone large b"
+    },
+    {
+        "glb-file": "stone_largeC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone large c"
+    },
+    {
+        "glb-file": "stone_largeD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone large d"
+    },
+    {
+        "glb-file": "stone_largeE.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone large e"
+    },
+    {
+        "glb-file": "stone_largeF.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone large f"
+    },
+    {
+        "glb-file": "stone_smallA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small a"
+    },
+    {
+        "glb-file": "stone_smallB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small b"
+    },
+    {
+        "glb-file": "stone_smallC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small c"
+    },
+    {
+        "glb-file": "stone_smallD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small d"
+    },
+    {
+        "glb-file": "stone_smallE.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small e"
+    },
+    {
+        "glb-file": "stone_smallF.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small f"
+    },
+    {
+        "glb-file": "stone_smallFlatA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small flat a"
+    },
+    {
+        "glb-file": "stone_smallFlatB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small flat b"
+    },
+    {
+        "glb-file": "stone_smallFlatC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small flat c"
+    },
+    {
+        "glb-file": "stone_smallG.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small g"
+    },
+    {
+        "glb-file": "stone_smallH.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small h"
+    },
+    {
+        "glb-file": "stone_smallI.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small i"
+    },
+    {
+        "glb-file": "stone_smallTopA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small top a"
+    },
+    {
+        "glb-file": "stone_smallTopB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone small top b"
+    },
+    {
+        "glb-file": "stone_tallA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall a"
+    },
+    {
+        "glb-file": "stone_tallB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall b"
+    },
+    {
+        "glb-file": "stone_tallC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall c"
+    },
+    {
+        "glb-file": "stone_tallD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall d"
+    },
+    {
+        "glb-file": "stone_tallE.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall e"
+    },
+    {
+        "glb-file": "stone_tallF.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall f"
+    },
+    {
+        "glb-file": "stone_tallG.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall g"
+    },
+    {
+        "glb-file": "stone_tallH.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall h"
+    },
+    {
+        "glb-file": "stone_tallI.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall i"
+    },
+    {
+        "glb-file": "stone_tallJ.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stone tall j"
+    },
+    {
+        "glb-file": "stump_old.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stump old"
+    },
+    {
+        "glb-file": "stump_oldTall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stump old tall"
+    },
+    {
+        "glb-file": "stump_round.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stump round"
+    },
+    {
+        "glb-file": "stump_roundDetailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stump round detailed"
+    },
+    {
+        "glb-file": "stump_square.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stump square"
+    },
+    {
+        "glb-file": "stump_squareDetailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stump square detailed"
+    },
+    {
+        "glb-file": "stump_squareDetailedWide.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Stump square detailed wide"
+    },
+    {
+        "glb-file": "tent_detailedClosed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tent detailed closed"
+    },
+    {
+        "glb-file": "tent_detailedOpen.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tent detailed open"
+    },
+    {
+        "glb-file": "tent_smallClosed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tent small closed"
+    },
+    {
+        "glb-file": "tent_smallOpen.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tent small open"
+    },
+    {
+        "glb-file": "tree_blocks.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree blocks"
+    },
+    {
+        "glb-file": "tree_blocks_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree blocks dark"
+    },
+    {
+        "glb-file": "tree_blocks_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree blocks fall"
+    },
+    {
+        "glb-file": "tree_cone.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree cone"
+    },
+    {
+        "glb-file": "tree_cone_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree cone dark"
+    },
+    {
+        "glb-file": "tree_cone_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree cone fall"
+    },
+    {
+        "glb-file": "tree_default.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree default"
+    },
+    {
+        "glb-file": "tree_default_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree default dark"
+    },
+    {
+        "glb-file": "tree_default_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree default fall"
+    },
+    {
+        "glb-file": "tree_detailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree detailed"
+    },
+    {
+        "glb-file": "tree_detailed_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree detailed dark"
+    },
+    {
+        "glb-file": "tree_detailed_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree detailed fall"
+    },
+    {
+        "glb-file": "tree_fat.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree fat"
+    },
+    {
+        "glb-file": "tree_fat_darkh.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree fat darkh"
+    },
+    {
+        "glb-file": "tree_fat_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree fat fall"
+    },
+    {
+        "glb-file": "tree_oak.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree oak"
+    },
+    {
+        "glb-file": "tree_oak_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree oak dark"
+    },
+    {
+        "glb-file": "tree_oak_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree oak fall"
+    },
+    {
+        "glb-file": "tree_palm.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree palm"
+    },
+    {
+        "glb-file": "tree_palmBend.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree palm bend"
+    },
+    {
+        "glb-file": "tree_palmDetailedShort.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree palm detailed short"
+    },
+    {
+        "glb-file": "tree_palmDetailedTall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree palm detailed tall"
+    },
+    {
+        "glb-file": "tree_palmShort.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree palm short"
+    },
+    {
+        "glb-file": "tree_palmTall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree palm tall"
+    },
+    {
+        "glb-file": "tree_pineDefaultA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine default a"
+    },
+    {
+        "glb-file": "tree_pineDefaultB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine default b"
+    },
+    {
+        "glb-file": "tree_pineGroundA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine ground a"
+    },
+    {
+        "glb-file": "tree_pineGroundB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine ground b"
+    },
+    {
+        "glb-file": "tree_pineRoundA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine round a"
+    },
+    {
+        "glb-file": "tree_pineRoundB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine round b"
+    },
+    {
+        "glb-file": "tree_pineRoundC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine round c"
+    },
+    {
+        "glb-file": "tree_pineRoundD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine round d"
+    },
+    {
+        "glb-file": "tree_pineRoundE.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine round e"
+    },
+    {
+        "glb-file": "tree_pineRoundF.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine round f"
+    },
+    {
+        "glb-file": "tree_pineSmallA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine small a"
+    },
+    {
+        "glb-file": "tree_pineSmallB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine small b"
+    },
+    {
+        "glb-file": "tree_pineSmallC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine small c"
+    },
+    {
+        "glb-file": "tree_pineSmallD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine small d"
+    },
+    {
+        "glb-file": "tree_pineTallA.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall a"
+    },
+    {
+        "glb-file": "tree_pineTallA_detailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall a detailed"
+    },
+    {
+        "glb-file": "tree_pineTallB.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall b"
+    },
+    {
+        "glb-file": "tree_pineTallB_detailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall b detailed"
+    },
+    {
+        "glb-file": "tree_pineTallC.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall c"
+    },
+    {
+        "glb-file": "tree_pineTallC_detailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall c detailed"
+    },
+    {
+        "glb-file": "tree_pineTallD.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall d"
+    },
+    {
+        "glb-file": "tree_pineTallD_detailed.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree pine tall d detailed"
+    },
+    {
+        "glb-file": "tree_plateau.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree plateau"
+    },
+    {
+        "glb-file": "tree_plateau_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree plateau dark"
+    },
+    {
+        "glb-file": "tree_plateau_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree plateau fall"
+    },
+    {
+        "glb-file": "tree_simple.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree simple"
+    },
+    {
+        "glb-file": "tree_simple_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree simple dark"
+    },
+    {
+        "glb-file": "tree_simple_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree simple fall"
+    },
+    {
+        "glb-file": "tree_small.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree small"
+    },
+    {
+        "glb-file": "tree_small_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree small dark"
+    },
+    {
+        "glb-file": "tree_small_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree small fall"
+    },
+    {
+        "glb-file": "tree_tall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree tall"
+    },
+    {
+        "glb-file": "tree_tall_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree tall dark"
+    },
+    {
+        "glb-file": "tree_tall_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree tall fall"
+    },
+    {
+        "glb-file": "tree_thin.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree thin"
+    },
+    {
+        "glb-file": "tree_thin_dark.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree thin dark"
+    },
+    {
+        "glb-file": "tree_thin_fall.glb",
+        "directory": "kenney/nature-kit",
+        "friendly-name": "Tree thin fall"
+    }
+]
