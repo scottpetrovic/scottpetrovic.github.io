@@ -1,7 +1,7 @@
 ---
 title: "The perfect length of a book"
 date: "2020-10-08"
-featured: "./images/04.gif"
+featured: "/images/04.gif"
 categories: 
   - "life"
 ---

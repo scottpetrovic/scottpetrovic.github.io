@@ -1,13 +1,13 @@
 ---
 title: "Twelve and a Half Book Review"
 date: "2021-04-19"
-featured_image: "./images/twelve-and-a-half-cover.jpg"
+featured_image: "/images/twelve-and-a-half-cover.jpg"
 categories: 
   - "computer"
   - "illustration"
 ---
 
-![](./images/twelve-and-a-half-cover.jpg)
+![](/images/twelve-and-a-half-cover.jpg)
 
 Gary Vaynerchuk is a guy that is all over YouTube if you are get into marketing. He is similar to a Seth Godin type of thought leader. Sharing nuggets of wisdom from his experience as a business owner and entrepreneur. Where he differs a bit from Seth Godin is that he spend more time on concrete examples and real life situations to help teach his message and ideas. Seth always seemed kind of in a higher, ideological, plain of existence at times with his ideas. 
 

@@ -1,7 +1,7 @@
 ---
 title: "Large enemy: Bang-Bang"
 date: "2011-06-01"
-featured_image: "./images/bang-bang-1.jpg"
+featured_image: "/images/bang-bang-1.jpg"
 categories: 
   - "art"
   - "game"
@@ -18,7 +18,7 @@ For the animations, I am thinking just an idle, walk, run, and a couple of punch
 
 Here is a few screenshots of the progressions.
 
-![](./images/bang-bang-1.jpg "bang-bang-1")![](./images/bang-bang-2.jpg "bang-bang-2")![](./images/bang-bangs.jpg "bang-bangs")
+![](/images/bang-bang-1.jpg "bang-bang-1")![](/images/bang-bang-2.jpg "bang-bang-2")![](/images/bang-bangs.jpg "bang-bangs")
 
 Menacing indeed. I could have spent a little more time refining the detail, but I am not getting paid for it, so mehhh..
 

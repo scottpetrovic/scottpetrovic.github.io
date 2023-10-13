@@ -1,14 +1,14 @@
 ---
 title: "Experimental Samurai Illustration"
 date: "2009-03-13"
-featured_image: "./images/final_samurai_small.jpg"
+featured_image: "/images/final_samurai_small.jpg"
 categories: 
   - "art"
   - "computer"
   - "illustration"
 ---
 
-![final_samurai_small](./images/final_samurai_small.jpg "final_samurai_small")
+![final_samurai_small](/images/final_samurai_small.jpg "final_samurai_small")
 
 I have had an itching to do something a little more creative and unorthodox lately. I am usually very self-concious about my artistic skills and always think that the only way I can make something good is by following someone elses' example.
 
@@ -22,7 +22,7 @@ Anyway, I will explain how I created this illustration from start to finish.
 
 ### Ideation and rough concepts
 
-![samurai_sketch](./images/samurai_sketch.jpg "samurai_sketch")
+![samurai_sketch](/images/samurai_sketch.jpg "samurai_sketch")
 
 Art and design is all about the idea, everything else is just details. I love doing digital art that feels natural and free-flowing, so I start things off on a sketch pad. At first I wanted to copy an existing character, but couldn't find a pose and character that really evoked what I wanted to convey.
 
@@ -34,20 +34,20 @@ I don't like over-the-top or stereotypical characters. Stereotypes are rigid in
 
 I scanned in a rough version of my drawing at 150dpi, where I would clean it up a little. I don't like photo-realistic art, so I wanted to keep it loose. I took a pen and traced over it on a seperate layer. I started painting the samurai with an artistic brush in Painter X.
 
-![artistbrush_sample](./images/artistbrush_sample.jpg "artistbrush_sample")
+![artistbrush_sample](/images/artistbrush_sample.jpg "artistbrush_sample")
 
 I really have fallen in love with the Artists' Oils brush category. The brushes run out of ink during the strokes and begin mixing simultaneously with your existing paint underneath.
 
 They really give it a more expressionistic and traditional feel. Doesn't the brush strokes above look so natural and beautiful. I didn't create any variant of the brush. It is all just the default settings. No blending used as well. Fantastic!
 
-![samurai_painter](./images/samurai_painter.jpg "samurai_painter")
+![samurai_painter](/images/samurai_painter.jpg "samurai_painter")
 
 I added an aura around him using a waterbrush. By using salt and water brushes sparingly, you can create a nice looking entourage. At this point, I didn't know if I needed to develop it any further, so I brought it into Illustrator where I continued.
 
  
 ### Illustrator
 
-![samurai_illustrator](./images/samurai_illustrator.jpg "samurai_illustrator")
+![samurai_illustrator](/images/samurai_illustrator.jpg "samurai_illustrator")
 
 In the ImagineFX magazine I read, most concept artists seem to go back and forth between Photoshop and Painter, but I thought Illustrator has really fantastic tools to help as well. I popped the graphic  in Illustrator and started playing around. There was a nice road sign symbol in the symbol libraries, so I thought I would use that.
 

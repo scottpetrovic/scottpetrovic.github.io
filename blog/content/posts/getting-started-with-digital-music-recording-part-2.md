@@ -1,13 +1,13 @@
 ---
 title: "Getting Started with Digital Music Recording: Part 2"
 date: "2011-10-01"
-featured_image: "./images/cello-detail.jpg"
+featured_image: "/images/cello-detail.jpg"
 categories: 
   - "game"
   - "music-recording"
 ---
 
-![](./images/cello-detail.jpg "cello-detail")
+![](/images/cello-detail.jpg "cello-detail")
 
 A continuation from [part 1](/posts/getting-started-with-digital-music-recording-part-1/ "Getting started with digital music recording: Part 1") of this two part post. This post will continue discussing getting set up for doing audio recording. At this point, you probably have all of the gear you need to get started, but there are still some technical hurdles that you may need to jump through to get everything working right.
 

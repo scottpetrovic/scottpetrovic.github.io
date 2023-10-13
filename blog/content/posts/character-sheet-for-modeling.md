@@ -1,7 +1,7 @@
 ---
 title: "Character sheet for modeling"
 date: "2012-01-03"
-featured_image: "./images/witch-character-detail.jpg"
+featured_image: "/images/witch-character-detail.jpg"
 categories: 
   - "blender"
   - "computer"
@@ -13,11 +13,11 @@ I have read through the first seven chapters of the [Character Development in Bl
 
 Here is the illustration that I did for the modeling. It took me about 20 hours to do. Most of the time was spent dealing with the character details and balancing the different aspects of what I think is in good character design.
 
-![witch modeling sheet](./images/modeling-sheet.jpg "witch modeling sheet")
+![witch modeling sheet](/images/modeling-sheet.jpg "witch modeling sheet")
 
 One of the parts that gave me the most trouble was the scarf, which had a texture and feel that I really struggled with. The first few rounds of trying to paint it, I was taking a pointillism approach to simulate the fibers. The approach was making it too detailed, and gave too much attention to it. I later started creating custom brushes that took woven crocheted patterns. This created some of the feel that I was going after. I later emphasized the highlighs and shadows using more of the pointillism approach. I tried making the color stripes fairly soft along the edges to help it be consistent with the rest of the scarf.
 
-![witch-character-detail](./images/witch-character-detail.jpg "witch-character-detail")
+![witch-character-detail](/images/witch-character-detail.jpg "witch-character-detail")
 
 I really liked the original example and how it shows the details of the arms. Showing the arms at different positions and angles is better than showing the classic "T" pose you see in other work.
 

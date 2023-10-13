@@ -1,13 +1,13 @@
 ---
 title: "Unity 3 Game Development Hotshot book - Chapter 1 Review"
 date: "2011-10-10"
-featured_image: "./images/unity-3-hotshotBook.jpg"
+featured_image: "/images/unity-3-hotshotBook.jpg"
 categories: 
   - "life"
   - "unity3d"
 ---
 
-![Unity 3 Game Development - HOTSHOT](./images/unity-3-hotshotBook.jpg "unity-3-hotshotBook")
+![Unity 3 Game Development - HOTSHOT](/images/unity-3-hotshotBook.jpg "unity-3-hotshotBook")
 
 I was just browsing Amazon last weekend and this book came up along with the sea of beginner books for Unity3D.
 

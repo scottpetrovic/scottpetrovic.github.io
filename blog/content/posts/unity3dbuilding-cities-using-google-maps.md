@@ -10,7 +10,7 @@ categories:
 
 I was stumped for a while trying to figure out the best way to make sure everything was in proportion and to scale. Creating models individually seemed very scary since I had to pay a lot more attention to units of measurement every time I created anything. A better way I am finding is to create the whole city in a 3d scene and export the whole thing out. What I am doing for as a base right now is taking a snapshot of a Google maps view. I just import the image as a texture and use it as a reference to model on top of.
 
-![](./images/building-cities.jpg "building-cities")
+![](/images/building-cities.jpg "building-cities")
 
 To accomplish this, it is just a matter of going into top view where you can create all of the geometry based off the topography. I didn't model the roads for now, they are just part of the ground terrain. It is hard to see it in this picture, but the city sidewalks are part of the city block. This does a good job zoning the city and seeing where things go. I worked pretty small in Blender, so I just scaled it in Unity3d at 60 times. It got really big and everything seems good and in proportion.
 

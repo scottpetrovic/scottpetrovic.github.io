@@ -1,7 +1,7 @@
 ---
 title: "Building Krita for Windows in 2023"
 date: "2023-10-11"
-featured_image: "./images/winner-graphic.jpg"
+featured_image: "/images/winner-graphic.jpg"
 ---
 
 If you want to start developing for the Krita drawing and painting  (krita.org), developing on Windows is the easiest path in 2023.  This is the general guide for building Krita from the source code.

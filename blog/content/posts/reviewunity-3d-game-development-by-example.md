@@ -1,14 +1,14 @@
 ---
 title: "Review:Unity 3D Game Development by Example"
 date: "2010-10-09"
-featured_image: "./images/0546_MockupCover_Beginers-guide-243x300.jpg"
+featured_image: "/images/0546_MockupCover_Beginers-guide-243x300.jpg"
 categories: 
   - "computer"
   - "game"
   - "unity3d"
 ---
 
-![](./images/0546_MockupCover_Beginers-guide-243x300.jpg "0546_MockupCover_Beginers guide")
+![](/images/0546_MockupCover_Beginers-guide-243x300.jpg "0546_MockupCover_Beginers guide")
 
 I feel like I am in 3rd grade again writing book reviews. Yes...it makes me feel like I am still young at heart. Before I give the review, I want to make a couple of points.
 

@@ -1,12 +1,12 @@
 ---
 title: "Foundation Framework and Updated Portfolio Site"
 date: "2012-07-29"
-featured_image: "./images/foundation-framework1.jpg"
+featured_image: "/images/foundation-framework1.jpg"
 categories: 
   - "web-design"
 ---
 
-![](./images/foundation-framework1.jpg "foundation-framework")
+![](/images/foundation-framework1.jpg "foundation-framework")
 
 I heard about a new responsive web framework called "Foundation" a few weeks ago. I recently have been reading responsive/adaptive web design and thought I might give the framework a go. Portfolio sites are always a great place to experiment with new technologies... so here we go.
 
@@ -28,7 +28,7 @@ IE9 doesn't support feature like CSS3 transitions and CSS gradients, so the expe
 
 Another point is that background images don't scale when things are getting resized. This meant I usually created background images taller than I needed. When the screen is smaller, it makes the containers taller, which affect the background images. I just created background images taller than necessary to adjust for screen resizing.
 
-![](./images/responsive-website.jpg "responsive-website")
+![](/images/responsive-website.jpg "responsive-website")
 
 If you check out [the website](http://www.scottpetrovic.com) and look at the source code, you can see some more comments that I made.
 

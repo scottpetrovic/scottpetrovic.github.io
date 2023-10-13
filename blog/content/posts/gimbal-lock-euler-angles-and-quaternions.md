@@ -6,7 +6,7 @@ categories:
   - "game"
 ---
 
-![Mr. Gimbal Lock](./images/mrGimbalLock.gif "Mr. Gimbal Lock")
+![Mr. Gimbal Lock](/images/mrGimbalLock.gif "Mr. Gimbal Lock")
 
 I have been reading a 3d Math book and have been trying to learn some 3d concepts and how they operate. It talks a lot about the pros and cons of using different models of angular displacement such as Euler angles and Quaternions.
 

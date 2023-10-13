@@ -1,7 +1,7 @@
 ---
 title: "Say no to CSS expressions and live a happier life"
 date: "2009-04-04"
-featured_image: "./images/dontcrygirl.jpg"
+featured_image: "/images/dontcrygirl.jpg"
 categories: 
   - "computer"
   - "life"
@@ -10,7 +10,7 @@ tags:
   - "css-expressions"
 ---
 
-![Don't cry, it is only CSS](./images/dontcrygirl.jpg "dontcrygirl")
+![Don't cry, it is only CSS](/images/dontcrygirl.jpg "dontcrygirl")
 
 This past week I have been reading a lot about these things called "CSS expressions" that I have never heard of. I read quite a bit about web trends and different techniques, but I have never run across this topic until this week.
 

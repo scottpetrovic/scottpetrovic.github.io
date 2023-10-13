@@ -6,7 +6,7 @@ categories:
   - "unity3d"
 ---
 
-![](./images/unityLogo.jpg "unityLogo")
+![](/images/unityLogo.jpg "unityLogo")
 
 With Unity 3 being released a little while ago, my adrenaline is pumping. I know that if I had a PRO version of it, I could have been on the beta list a long time ago. But since I am not making any money with this, I don't see it being economical to spend the money right now. Most people that are just starting in game development probably won't buy the pro version. The download is 403 MB, which is WAY bigger than the 167MB download for Unity2.6. That must say a lot about how big this release is.
 

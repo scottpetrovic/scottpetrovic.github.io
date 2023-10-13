@@ -1,12 +1,12 @@
 ---
 title: "Communication skills and Emotional Intelligence"
 date: "2009-05-15"
-featured_image: "./images/girl_talking.jpg"
+featured_image: "/images/girl_talking.jpg"
 categories: 
   - "life"
 ---
 
-![girl_talking](./images/girl_talking.jpg "girl_talking")
+![girl_talking](/images/girl_talking.jpg "girl_talking")
 
 I have worked at a few different jobs so far in my life, but noticed that the biggest reason why things go wrong is poor communication. I have heard it from a number of different sources, but it is becoming more and more true as the years roll by. It is easy to forget about things when you are consumed with trying to meet deadlines, or juggling multiple different projects.
 
@@ -32,6 +32,6 @@ While suppressing bad emotions isn't healthy,  it isn't professional to express
 
 ### My EI Score
 
-![ei-test](./images/ei-test.gif "ei-test")
+![ei-test](/images/ei-test.gif "ei-test")
 
 I went to [queendom.com](http://www.queendom.com/tests/access_page/index.htm?idRegTest=1121) and took a questionnaire about emotional intelligence and this was the results. Be aware that it is a long 106 questions. Some of the sections show you a series of people and it tells asks you what they are feeling. Fun! My average EQ shows that I have much to learn in this area. How exciting!

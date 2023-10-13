@@ -1,7 +1,7 @@
 ---
 title: "Krita: The Best Art Program You've Never Heard Of"
 date: "2014-02-06"
-featured_image: "./images/krita-mascot.jpg"
+featured_image: "/images/krita-mascot.jpg"
 categories: 
   - "art"
   - "computer"
@@ -9,7 +9,7 @@ categories:
   - "life"
 ---
 
-![](./images/krita-mascot.jpg)
+![](/images/krita-mascot.jpg)
 
 No, I didn't draw that - it is [Krita's](http://krita.org/) mascot!
 

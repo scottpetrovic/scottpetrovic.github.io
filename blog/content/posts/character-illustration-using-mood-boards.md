@@ -1,14 +1,14 @@
 ---
 title: "Character Illustration using mood boards"
 date: "2009-05-23"
-featured_image: "./images/tactics_illustration1.jpg"
+featured_image: "/images/tactics_illustration1.jpg"
 categories: 
   - "art"
   - "illustration"
   - "life"
 ---
 
-![moodboard](./images/moodboard.jpg "moodboard")
+![moodboard](/images/moodboard.jpg "moodboard")
 
 When designing websites, print design pieces, or anything else creative, there is almost always some type of direction to follow. Mood boards are excellent ways to follow a certain style or feel for something. Mood boards are basically an amalgamation of drawings, designs, photography, or anything else similar.
 
@@ -24,7 +24,7 @@ Color is also a big consideration when developing the costumes. Too many differe
 
 ## Final Character design
 
-![tactics_illustration1](./images/tactics_illustration1.jpg "tactics_illustration1")
+![tactics_illustration1](/images/tactics_illustration1.jpg "tactics_illustration1")
 
 I tried to use strong colors like in most of the other samples. She has a little scythe that she is holding upside down. I thought it would add more stability to her pose by putting it upside down. It looks pretty heavy, so she would probably have to carry it on her shoulders if she wanted a comfortable pose standing still.
 

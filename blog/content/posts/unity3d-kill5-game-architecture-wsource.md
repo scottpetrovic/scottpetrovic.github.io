@@ -29,7 +29,7 @@ I made these into folders and wanted to try to keep each area contained. The gam
 
 You can see a basic object structure where I try to keep everything separated. If I want to change something related to the enemy, I can go into that folder and know all of the main enemy scripts will be contained in there. I also know there will be scripts and features that I have not created yet, so it will be easier to know what needs to be updated and referenced if I can keep them all together.
 
-![Folder structure in my solution explorer (VS2008)](./images/folder-structure.gif "folder-structure")
+![Folder structure in my solution explorer (VS2008)](/images/folder-structure.gif "folder-structure")
 
 When trying to build a game for the first time, there will be areas of the game that you really didn't think about. Things like managing cameras, game optimization scripts, or shaders will pop up. You have to make a decision if it is complicated enough to need its own area or folder. One of the important parts to learning about architecture is learning by doing. Sure, you will mess up and have to re-factor or move things, but that is part of learning how to manage things.
 

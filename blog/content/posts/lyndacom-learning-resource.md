@@ -1,12 +1,12 @@
 ---
 title: "Lynda.com learning resource"
 date: "2009-01-30"
-featured_image: "./images/images.jpeg"
+featured_image: "/images/images.jpeg"
 categories: 
   - "reviews"
 ---
 
-![](./images/images.jpeg "Lynda.com")
+![](/images/images.jpeg "Lynda.com")
 
 Since March of 2007, I have been watching a lot of internet videos on Lynda.com. If you don't know much about Lynda.com, it is a video training database for learning applications, programs, and programming languages.
 

@@ -1,12 +1,12 @@
 ---
 title: "Stepping in the shoes of the Disney CEO for a week"
 date: "2020-05-05"
-featured_image: "./images/ride-of-lifetime-1.png"
+featured_image: "/images/ride-of-lifetime-1.png"
 categories: 
   - "life"
 ---
 
-![](./images/ride-of-lifetime-1.png)
+![](/images/ride-of-lifetime-1.png)
 
 Recently I finished the _Ride of a Lifetime: Lessons Learning from 15 Years as CEO of the Walt Disney Company_ autobiography by Bob Iger. A lot of the book is about business acquisitions and all the tribulations it took to make them happen. Over the course of Bob's tenure at Disney, they purchased many companies including Pixar, Marvel, LucasFilms, and 21st Centry/Fox.
 

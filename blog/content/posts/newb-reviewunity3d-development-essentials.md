@@ -1,7 +1,7 @@
 ---
 title: "Noob Review:Unity3D Development Essentials"
 date: "2009-10-27"
-featured_image: "./images/1111790_study_hard_2.jpg"
+featured_image: "/images/1111790_study_hard_2.jpg"
 categories: 
   - "computer"
   - "game"
@@ -10,7 +10,7 @@ categories:
   - "unity3d"
 ---
 
-![1111790_study_hard_2](./images/1111790_study_hard_2.jpg "1111790_study_hard_2")
+![1111790_study_hard_2](/images/1111790_study_hard_2.jpg "1111790_study_hard_2")
 
 I have been feeling really ambitious and decided to delve into Will Goldstone's new book: [_Unity Game Development Essentials_](http://www.packtpub.com/unity-2-5-game-development-guide/mid/231009vv93w4?utm_source=scottpetrovic.com%2Fblog&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_001181) (that is NOT me in the picture).
 
@@ -36,7 +36,7 @@ I feel a lot more comfortable working with Unity and understanding the whole "ob
 
 ## Conclusion
 
-![184719818X](./images/184719818X.png "184719818X")
+![184719818X](/images/184719818X.png "184719818X")
 
 After reading this book, you begin to see why some games take huge amounts of teams to get things done. Having all of the models, textures, and animations handed to you with the code still takes a while to go through. I am sure trying to do something like this on my own would have taken me 10 times longer easily.
 

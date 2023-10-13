@@ -20,7 +20,7 @@ I didn't thoroughly test it, but naming the bones the same as the Unity mecanim 
 
 One point that helps auto-setup work is having either bones be perfectly straight up/down, or perfectly left/right. Having the trapezius area or fingers at 45 degree angles can mess up the calculations. A good way to test is to configure the rig and move bones around.
 
-![](./images/t-pose-setup.jpg "t-pose-setup")
+![](/images/t-pose-setup.jpg "t-pose-setup")
 
 It is easy to move the bones around until you get the rotation correct. You can see in the image above that the rotation is not correct for the left shoulder. Using the rotate tool in Unity, you can see exactly what needs to be done to the armature to put it in the correct T-Pose. Unity does come with an option to automatically fix the pose, but I think it is better to start it off correctly. It is good to have a model that imports perfectly into Unity to streamline the process.
 
@@ -30,7 +30,7 @@ A very important part of Mecanim that hasn't had much explanation is the animati
 
 Selecting an animation from the clips will present options on how you want Unity to handle the animations. For my purpose, I am creating the motion inside of my 3d modeling tool. Unity will use the character translations and move the game object based off of it. This type of motion is considered "Root Motion".
 
-![](./images/mecanim-animation-baking.jpg "mecanim-animation-baking")
+![](/images/mecanim-animation-baking.jpg "mecanim-animation-baking")
 
 Each Root Transform feature has  "Bake int Pose" checkbox. This checkbox tells Unity how it should handle animation changes to movement and rotation. If it is unchecked, it means Unity will use the data and update the transform of the game object inside of Unity. If checked, Unity will not update the game object's transform.
 

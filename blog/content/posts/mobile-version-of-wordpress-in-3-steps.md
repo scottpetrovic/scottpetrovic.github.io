@@ -20,7 +20,7 @@ I just spent 15 minutes getting a mobile version of the blog to work. It was dea
 
 ## Testing to see if it works if you don't have a mobile device
 
-![final_mobile](./images/final_mobile.gif "final_mobile")
+![final_mobile](/images/final_mobile.gif "final_mobile")
 
 If you don't have a good way to test it, run Firefox and get the extension [User Agent Switcher addon](https://addons.mozilla.org/en-US/firefox/addon/59). This will allow Firefox to trick websites to thinking you are running anything from IE4 to iPhone 3.0 .  The default list doesn't have many agents, so [download this bigger list](/data/switcher.xml) I found in the forum and import it.
 

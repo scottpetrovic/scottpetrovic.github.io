@@ -22,7 +22,7 @@ Flash is starting to get some heavy competition with other technologies that do 
 
 ## Competition
 
-![jquery_logo](./images/jquery_logo.jpg "jquery_logo")
+![jquery_logo](/images/jquery_logo.jpg "jquery_logo")
 
 Google has been working with Adobe to help the indexing, but I don't think that is good enough. Things like jQuery, AJAX, and ASP.net can do flash-like functionality without too much code. Using Flash is being less and less necessary for doing many things on the web. The main areas where Flash shines and nothing else can really compete very well is:
 
@@ -36,7 +36,7 @@ If I was Adobe, I would invest heavily into the 3d channel and really create a p
 
 **Papervision's complexity**
 
-![logopapervision3d](./images/logopapervision3d.gif "logopapervision3d")
+![logopapervision3d](/images/logopapervision3d.gif "logopapervision3d")
 
 The framework has been around for a little while, but it is still evolving at a fast pace. It is coming out with new revisions about twice a month. The revisions are hosted on [Google Code](http://code.google.com/p/papervision3d/). Anything that uses [SVN](http://en.wikipedia.org/wiki/Subversion_(software)) is going to change fast, so it is terribly difficult to update tutorials and documentation. Even while I try to learn simple things using tutorials, I am finding that classes get moved or functions take on different parameters than the tutorial explains.  Browsing through Amazon, I only found [one book](http://www.amazon.com/s/ref=nb_ss_gw_0_7?url=search-alias%3Daps&field-keywords=papervision&sprefix=papervi) about it that isn't out.
 

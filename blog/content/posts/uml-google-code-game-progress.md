@@ -9,7 +9,7 @@ categories:
 
 I have been starting to work on the game and it is getting to the point where I need to really start to outline the class structure for all of the code. I downloaded a free copy of [OpenModelSphere](http://www.modelsphere.org/) where I could do some UML work. I have never used the program before, but it only took about a half an hour to figure out how to do most of the things I need. Here is a preliminary diagram of the game structure. Click on it to see it at its full size.
 
-![UML Statechart Diagram](./images/UML-Statechart-Diagram-227x300.jpg "UML Statechart Diagram")
+![UML Statechart Diagram](/images/UML-Statechart-Diagram-227x300.jpg "UML Statechart Diagram")
 
 I am debating on whether I should integrate the sound calls from inside other scripts, or have another section in the diagram which would handle everything. I don't have all of this coded yet, but it should be a good start to how I want to break communication throughout the system. I am sure it will get more complicated and change when I start working on the areas more.
 

@@ -1,7 +1,7 @@
 ---
 title: "My \"web analytics\" story"
 date: "2009-02-12"
-featured_image: "./images/web_analytics_book.jpg"
+featured_image: "/images/web_analytics_book.jpg"
 categories: 
   - "computer"
   - "web-analytics"
@@ -9,7 +9,7 @@ tags:
   - "web-analytics"
 ---
 
-![i_love_nerds](./images/i_love_nerds-233x300.jpg "i_love_nerds")
+![i_love_nerds](/images/i_love_nerds-233x300.jpg "i_love_nerds")
 
 I thought this story is exceptionally nerdy/geeky, but that is who I am! I found this image on [sxc.hu](http://www.sxc.hu/), so I thought it would make it a little more interesting. Onward!
 
@@ -27,7 +27,7 @@ What I found out is that web analytics is more than just looking at numbers and 
 
 ## Enter Avinash Kaushik
 
-![web_analytics_book](./images/web_analytics_book.jpg "web_analytics_book")
+![web_analytics_book](/images/web_analytics_book.jpg "web_analytics_book")
 
 The book says an hour a day, but I just couldn't put it down when I started. I took out my trusty highlighter and blew through the whole book (480 pages) in about a month. This isn't a book review, but I knew I would need to highlight it because there was no way I would be able to retain everything the first time through. It went from the ground up from implentation stategies to custom segmenting and multivariate testing. I enjoyed it so much, I subscribed to his RSS feed [blog](http://www.kaushik.net/avinash/) and make comments when applicable. He has even answered my questions on his blog posts. [My question is #3](http://www.kaushik.net/avinash/2009/02/dear-avinash-bounces-optimal-abandonment-ratios-data-drops.html) (go Avinash!)
 
@@ -45,7 +45,7 @@ Recently (Q4 2008), Google released some great improvements to their analytics t
 
 We also linked up our PPC campaigns  to our Adwords account so we can finally see how our paid search is performing. It was all lumped in organic search (free) prior, so we couldn't receive any data on our paid traffic.
 
-![4q](./images/4q.jpg "4q")
+![4q](/images/4q.jpg "4q")
 
 Another thing is putting on an [on-exit survey](http://4q.iperceptions.com/default.aspx?c=en-US) to get customer feedback. For the short couple weeks it was on, we got over 800 people sending suggestions and complaints to make the site better. How cool is that!? It will go back on after we have made all of the improvements.
 

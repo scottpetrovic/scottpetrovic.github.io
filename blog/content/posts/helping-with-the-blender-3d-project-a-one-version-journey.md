@@ -1,11 +1,11 @@
 ---
 title: "Helping with the Blender 3D Project: A One Version Journey"
 date: "2014-04-18"
-featured_image: "./images/blender-logo.jpg"
+featured_image: "/images/blender-logo.jpg"
 categories: 
   - "life"
 ---
-![](./images/blender-logo.jpg)
+![](/images/blender-logo.jpg)
 
 I have been wanting to get more involved with the open source community for a while. It is great to have free options for people that don't have a lot of money - especially college kids who are more focused on finishing school than owning a real copy of Photoshop. The type of people that work on these open source projects appear to be selfless individuals who really care about having software available to everyone. It sounds like a cause I want to be a part of.
 
@@ -21,7 +21,7 @@ Come on guys!
 
 I might let them know later. It looks nice though (especially for an open source project).
 
-[![blender-site](./images/blender-site.jpg)]
+[![blender-site](/images/blender-site.jpg)]
 
 ## Post Website
 
@@ -31,7 +31,7 @@ Unless I wanted to be a content writer, I thought now would be a good time to ma
 
 Blender is a huge application, so every part of it has a "module owner", which makes the final decisions on the direction and features that are approved. You can usually get this distinction after years of helping with the project.
 
-![blender-phabricator](./images/blender-phabricator.jpg "Phabricator")
+![blender-phabricator](/images/blender-phabricator.jpg "Phabricator")
 
 Developer portal for Blender (using Phabricator)
 
@@ -47,7 +47,7 @@ Instead of getting too technical in this post, I am going to highlight some ecos
 
 ## Mailing lists
 
-[![blender-mailing-list](./images/blender-mailing-list.jpeg)]
+[![blender-mailing-list](/images/blender-mailing-list.jpeg)]
 
 At first, I thought this type of thing was very old fashioned, but later came to realize how valuable and powerful these are. If you don't know how they work, you can subscribe to a mailing list with a topic or area you are interested in. Any time someone in that area needs to let everyone know of something important, you will get an email with their message.
 
@@ -57,7 +57,7 @@ The nicest things about communication using mailing lists is that you have a cen
 
 ## IRC
 
-[![blender-irc](./images/blender-irc.jpeg)]
+[![blender-irc](/images/blender-irc.jpeg)]
 
 Another open source favorite. There are a ton of IRC clients out there, but I am using one called Chatzilla. It is just a Firefox plug in. The extension just opens a window where you specify a network and channel. This is where developers go to ask questions, as well as where Blender holds there weekly status updates.
 
@@ -67,7 +67,7 @@ The most complicated part of the Blender meetings is that everyone that contribu
 
 ## Documentation
 
-[![blender-wiki](./images/blender-wiki.jpeg)]
+[![blender-wiki](/images/blender-wiki.jpeg)]
 
 One of the most difficult things almost everyone agrees on in Blender is how hard it is to keep [documentation](http://wiki.blender.org/index.php/Dev:Contents) up to date. The code base changes at such a frenetic pace, that it can be difficult to always update the documentation.
 
@@ -77,7 +77,7 @@ I am always a big advocate of commenting your code well. While reading some docu
 
 ## Learning the code base
 
-[![blender-ide](./images/blender-ide.jpeg)]
+[![blender-ide](/images/blender-ide.jpeg)]
 
 Getting up to speed in the Blender code base is quite a feat in itself. After talking to a couple of the developers, they let me know it takes about a year for someone to start feeling like they are actually useful.
 

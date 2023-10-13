@@ -1,7 +1,7 @@
 ---
 title: "ThinkPad and SketchBook Pro"
 date: "2012-11-10"
-featured_image: "./images/620-thinkpad-tablet1.jpg"
+featured_image: "/images/620-thinkpad-tablet1.jpg"
 categories: 
   - "art"
   - "illustration"
@@ -9,7 +9,7 @@ categories:
 
 Tablets are everywhere. The amount of choices can make it a real burden to find one that is a good fit. There is always the iPad to default to, but with new entries popping up every couple of months, it is worth to take a step back and weigh your options. Out of all of the tablets that I looked at, the ThinkPad seems to be superior for what I wanted. I mainly am interested in artwork, drawing, and painting skills. The ThinkPad seems to have the competition beat with my research. Read on to find out why I think so.
 
-![](./images/620-thinkpad-tablet1.jpg "620-thinkpad-tablet1") 
+![](/images/620-thinkpad-tablet1.jpg "620-thinkpad-tablet1") 
 
 Sure the latest version of iPad has a higher resolution, faster processor, and more apps in the market -- but those don't matter when all you want to do is draw! The benefits that really sell the ThinkPad as an artist tablet are the following:
 
@@ -31,7 +31,7 @@ They both seem to work, but when comparing the prices, the ThinkPad is considera
 
 ## SketchBook Pro
 
-![](./images/app_sketchbook_pro.jpg "app_sketchbook_pro")
+![](/images/app_sketchbook_pro.jpg "app_sketchbook_pro")
 
 There are multiple flavors of this application on the web: Sketchbook Mobile and Sketchbook Pro. Some people get confused that the mobile version is for all mobile devices. This is not true. The mobile version is for smaller mobile devices like an iPhone.  The screens and interfaces are much larger and are designed for smaller screens. The interface is always in portrait mode with the mobile version.
 
@@ -41,7 +41,7 @@ The differences between the free "Express" version and the paid "Pro" version ar
 
 There are quite a few "hidden" features that are are hard to know about unless you try to swipe every UI element or hold others down. There are also some nice options in the preferences that can allow you to turn off/on various settings.
 
-![sketchbook Pro figure drawing](./images/Screenshot_2012-11-09-18-53-54-1024x640.png "sketchbook Pro figure drawing")
+![sketchbook Pro figure drawing](/images/Screenshot_2012-11-09-18-53-54-1024x640.png "sketchbook Pro figure drawing")
 
 There are a lot of buttons and brushes, but when it came time for me to do some figure drawing, I felt like most features in the application simply were too much for my taste.
 
@@ -66,8 +66,8 @@ How does the photoshop app compare? I would love to see some drawings if anyone 
 
 Here are a few more drawings from the model in different poses.
 
-![](./images/Sketch8421741-1024x601.jpg "Sketch842174")
+![](/images/Sketch8421741-1024x601.jpg "Sketch842174")
 
-![](./images/Sketch8422124.png "Sketch8422124")
+![](/images/Sketch8422124.png "Sketch8422124")
 
-![](./images/Sketch8419553.png "Sketch8419553")
+![](/images/Sketch8419553.png "Sketch8419553")

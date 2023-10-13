@@ -1,12 +1,12 @@
 ---
 title: "East West Symphonic Orchestra Install Process"
 date: "2012-02-25"
-featured_image: "./images/EWQLSO-box.jpg"
+featured_image: "/images/EWQLSO-box.jpg"
 categories: 
   - "music-recording"
 ---
 
-![](./images/EWQLSO-box.jpg "EWQLSO-box")
+![](/images/EWQLSO-box.jpg "EWQLSO-box")
 
 During the Valentine's Day bonanza this year, [East West](http://www.soundsonline.com/) had a 50% off sale on almost all of their products. I was wanting to get an orchestral [VST](http://en.wikipedia.org/wiki/Virtual_Studio_Technology) pack for a little while, and thought I would jump on the opportunity. To use the software, you also need to have an [iLok](http://ilok.com/) for it to work - will explain more about iLoks later.
 
@@ -28,7 +28,7 @@ At this point, I knew this was going to be an epic install. This post talks abou
 
 I won't bore you with all of the steps and frustration I had trying to get it all set up. I will just provide information on what you need to do if you would ever want to install the East West Symphonic Orchestra (Gold edition in my case).
 
-![](./images/iLok-device.jpg "iLok-device")
+![](/images/iLok-device.jpg "iLok-device")
 
 Probably the best thing you can do at the start is go over to iLok.com and register your USB drive. If you aren't familiar with iLok, it is a new serial key process where you can put serial keys on a USB drive and install your software on any computer you want. It is kind of a cool concept, but the execution of the idea is a pain. Download the driver install and the client install to get your system to recognize the USB stick. The client install helps connect the iLok to the website.
 
@@ -64,7 +64,7 @@ Now that you have authorized the software, you can now use the PLAY software for
 
 If you open the PLAY software (called EWQLSO player on my desktop) , you will see the product you purchases on the lower right (not shown in screenshot below). You need to hit the browser button on the top right to see which products you have authorized.  You still need to transfer all of the files for it to work though.
 
-![](./images/EWQLSO-player.jpg "EWQLSO-player")
+![](/images/EWQLSO-player.jpg "EWQLSO-player")
  
 
 ## Transferring Content

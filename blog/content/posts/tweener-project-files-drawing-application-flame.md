@@ -1,7 +1,7 @@
 ---
 title: "Tweener project files & drawing application \"Flame\""
 date: "2010-03-18"
-featured_image: "./images/flame_sketch.jpg"
+featured_image: "/images/flame_sketch.jpg"
 categories: 
   - "art"
   - "game"
@@ -60,7 +60,7 @@ This is the main script file that does everything. You assign the main camera vi
 
 ## Flame Drawing
 
-![flame_sketch](./images/flame_sketch.jpg "flame_sketch")
+![flame_sketch](/images/flame_sketch.jpg "flame_sketch")
 
 Coolest program I have seen in a while for drawing smoke/flame things. Not Unity related, but awesome none the less. I think I will try to integrate this with some paintings I try to do in the future. It is built with a programming language called _processing_ that is built on Java.  It takes a while to get use to what looks good. Loose and fast seems to give better results than tight and slow strokes. [Make something magical](http://www.escapemotions.com/experiments/flame/index.html#top) with it. (needs Java installed to work)
 

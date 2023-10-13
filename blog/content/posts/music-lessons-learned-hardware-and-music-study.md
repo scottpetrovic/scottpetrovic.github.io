@@ -1,7 +1,7 @@
 ---
 title: "Music Lessons Learned: Hardware and Music Study"
 date: "2012-09-01"
-featured_image: "./images/shadow-of-the-colossus-pic2.jpg"
+featured_image: "/images/shadow-of-the-colossus-pic2.jpg"
 categories: 
   - "life"
   - "music-recording"
@@ -29,7 +29,7 @@ Those are the most important hardware concerns that I have seen and experienced 
 
 ## Shadow of the Colossus Study
 
-![](./images/shadow-of-the-colossus-pic2.jpg "shadow-of-the-colossus-pic2")
+![](/images/shadow-of-the-colossus-pic2.jpg "shadow-of-the-colossus-pic2")
 
 I have always heard from a lot of people how great this game was, so I picked it up about 6 months ago and played through about half of it. If a game takes longer than 8 hours to beat, I get tired of playing it. Grinding and spending hours doing repetitive tasks is something that I relate to work, not play. That is my excuse for not beating it anyway. :)
 

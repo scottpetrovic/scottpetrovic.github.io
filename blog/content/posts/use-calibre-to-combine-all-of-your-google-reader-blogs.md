@@ -1,7 +1,7 @@
 ---
 title: "Use Calibre to combine all of your Google Reader blogs"
 date: "2011-07-16"
-featured_image: "./images/calibre-logo.jpg"
+featured_image: "/images/calibre-logo.jpg"
 categories: 
   - "life"
 ---
@@ -10,7 +10,7 @@ If you are anything like me, you love to read about a variety of topics. There i
 
 Enter [Calibre](http://calibre-ebook.com/)! (It's free)
 
-![Calibre - ebook management](./images/calibre-logo.jpg "calibre-logo")
+![Calibre - ebook management](/images/calibre-logo.jpg "calibre-logo")
 
 If you haven't heard of Calibre before, it is a great tool for aggregating and managing e-books and other digital reading content. I was introduced to it a few months back by the CIO of my company. It has changed the way I manage and think about reading content online.
 

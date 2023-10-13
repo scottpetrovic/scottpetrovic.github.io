@@ -1,7 +1,7 @@
 ---
 title: "Cross-browser testing in 2009"
 date: "2009-03-27"
-featured_image: "./images/greenery.jpg"
+featured_image: "/images/greenery.jpg"
 categories: 
   - "web-design"
 tags: 
@@ -11,7 +11,7 @@ tags:
   - "web-design"
 ---
 
-![greenery](./images/greenery.jpg "greenery")
+![greenery](/images/greenery.jpg "greenery")
 
 When I first started out doing web design, I  didn't really think about all of the different people that are going to visit my sites. I thought that if I can see it in Firefox3, it is good enough. After all, I did some crazy CSS to get it to working right. It is their fault for not using a standards-compliant browser. Besides, I didn't learn this in school too much, so it must not be that important.
 
@@ -25,7 +25,7 @@ Here is a list of how I test and what software or methods I use to try to get th
 
 First step is to install all of the different browsers. If you have no idea which ones to install, a good place to start is[http://marketshare.hitslink.com/browser-market-share.aspx?qprid=2](http://marketshare.hitslink.com/browser-market-share.aspx?qprid=2)
 
-![browser_marketshare](./images/browser_marketshare.gif "browser_marketshare")
+![browser_marketshare](/images/browser_marketshare.gif "browser_marketshare")
 
 This screenshot was taken for February 2009. That will give a good breakdown of the top browsers. This isn't the only source you should use though. I would only use this if you have no idea what type of visitors are coming to your site.
 
@@ -33,7 +33,7 @@ Without question, you need to install analytics software like [Google Analytics,
 
 Redesigns and changes should go strictly off your clickstream data. Everyone doesn't use your site - only the people that search for it. If its not a blog site, you can filter out the bounce traffic to get a better idea of people that use it.
 
-![ga_browsers](./images/ga_browsers.gif "ga_browsers")
+![ga_browsers](/images/ga_browsers.gif "ga_browsers")
 
 The image above has the statistics for a site I monitor.
 
@@ -57,7 +57,7 @@ Yes, there are more I could list, but this covers 99% of the browsers. If it wor
 
 ### ACID tests
 
-![acid2_reference1](./images/acid2_reference1.png "acid2_reference1")
+![acid2_reference1](/images/acid2_reference1.png "acid2_reference1")
 
 Before the ACID test, there was little in terms of standards with how browsers rendered content and processed CSS. When the ACID test came around, it helped browser makers standardize and formalize the "proper" way to render elements. This is a great test indeed!
 

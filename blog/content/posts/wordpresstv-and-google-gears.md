@@ -13,7 +13,7 @@ I sent them an email about some ideas and got a nice response from [Michael Pick
 
 I looked through the website and still and couldn't find anything, so it must be hidden somewhere. You can see who submitted it if you look at the "producer" section on the site.
 
-![wordpresstv](./images/wordpresstv.jpg "wordpresstv")
+![wordpresstv](/images/wordpresstv.jpg "wordpresstv")
 
 Michael seems to have done a lot of the videos now (~70 at the time of writing), but I found a few by some other authors.
 
@@ -27,7 +27,7 @@ If they can't make videos easy and fast to submit, it will quickly make the webs
 
 ### Google Gears
 
-![Google Gears](./images/google_gears_logo1.jpg "Google Gears")
+![Google Gears](/images/google_gears_logo1.jpg "Google Gears")
 
 I watched a Wordpress video on [Google Gears](http://gears.google.com/) and how it can speed up your browser experience. What it basically does is store more files on your desktop and allow your computer to do some of the processing.
 

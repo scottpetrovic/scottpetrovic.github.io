@@ -1,13 +1,13 @@
 ---
 title: "FontJazz text replacement for web"
 date: "2009-06-02"
-featured_image: "./images/fontjazz.png"
+featured_image: "/images/fontjazz.png"
 categories: 
   - "computer"
   - "web-design"
 ---
 
-![fontjazz](./images/fontjazz.png "fontjazz")
+![fontjazz](/images/fontjazz.png "fontjazz")
 
 I stumbled upon [FontJazz](http://fontjazz.com/) this week, a lightweight javascript engine that replaces text with custom fonts. There are other text replacement technologies, most notably sIFR ands CSS3 embed fonts, but they are sometimes slow or aren't fully supported.
 

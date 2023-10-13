@@ -1,12 +1,12 @@
 ---
 title: "Don't Think Outside the Box...Expand It"
 date: "2010-04-30"
-featured_image: "./images/boxThinking1.jpg"
+featured_image: "/images/boxThinking1.jpg"
 categories: 
   - "life"
 ---
 
-![](./images/boxThinking1.jpg "boxThinking")
+![](/images/boxThinking1.jpg "boxThinking")
 
 Learning about new subjects is important to me. This month I have been reading a book on a topic that gets a lot of people like me turned off and offended every time I hear the word : **Sales.**
 

@@ -1,7 +1,7 @@
 ---
 title: "Unity 3d 2.5 Part One"
 date: "2009-06-15"
-featured_image: "./images/unityLogo.jpg"
+featured_image: "/images/unityLogo.jpg"
 categories: 
   - "art"
   - "computer"
@@ -13,7 +13,7 @@ tags:
   - "unity-3d"
 ---
 
-![unityLogo](./images/unityLogo.jpg "unityLogo")
+![unityLogo](/images/unityLogo.jpg "unityLogo")
 
 There has been a lot of buzz about  [Unity3D](http://unity3d.com/), a new plugin that handles 3d much better than flash. It now works for Windows and can output to a lot of different platforms (Windows, Mac, Web, iPhone, Wii, etc). I read a few reviews on it from a couple different sources and it was a pretty mixed bag in terms of quality and use. I thought I would give it a try.
 
@@ -25,7 +25,7 @@ After learning how everything is organized on the application, it was time to st
 
 All the functionality of everything is based on components, which make static models have collision detection, move, or affect the game in any way. There is a huge amount of components - so it makes the learning curve a little steep to get something up and running. Everything is object-oriented, so it is easy to drag walking scripts or physics colliders onto your player model. The object components then have parameters that you can change.
 
-![unity_screenshot](./images/unity_screenshot.jpg "unity_screenshot")
+![unity_screenshot](/images/unity_screenshot.jpg "unity_screenshot")
 
 I was hoping to have a little demo of something I made, but I need to spend some more time with it learning how games are put together. I am working through the [3d platform game tutorial](http://unity3d.com/support/resources/tutorials/3d-platform-game) that they provide,  so I will have more later.  There is a free 30-day trial on their site, so that is what I am using.
 

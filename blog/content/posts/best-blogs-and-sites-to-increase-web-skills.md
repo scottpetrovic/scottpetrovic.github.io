@@ -1,14 +1,14 @@
 ---
 title: "Best blogs and sites to increase web skills"
 date: "2009-02-18"
-featured_image: "./images/reading_book.jpg"
+featured_image: "/images/reading_book.jpg"
 categories: 
   - "life"
   - "reviews"
   - "web-design"
 ---
 
-![reading_book](./images/reading_book.jpg "reading_book")
+![reading_book](/images/reading_book.jpg "reading_book")
 
 There are so many great sites and blogs out there that have content and tutorials on learning things, there is little need for buying internet books at Borders or Barnes & Nobles.
 

@@ -1,7 +1,7 @@
 ---
 title: "the Holiday week."
 date: "2009-01-06"
-featured_image: "./images/513edyszzcl_sl500_aa240_.jpg"
+featured_image: "/images/513edyszzcl_sl500_aa240_.jpg"
 categories: 
   - "life"
 ---
@@ -10,7 +10,7 @@ The holidays blew by fast this year - don't they always. I was working most of t
 
 My downtime consisted of buying a couple books at Borders and reading up on them. One of my birthday resolutions in Novemeber was to build my art skills a lot more. I thought of no better way to do this than subscribe to ImagineFX and pick up a copy of **The Essential Blender**. (pic from Amazon)
 
-![The Essential Blender book](./images/513edyszzcl_sl500_aa240_.jpg "The Essential Blender book")
+![The Essential Blender book](/images/513edyszzcl_sl500_aa240_.jpg "The Essential Blender book")
 
 I have gotten through about 50 pages as of today and I am very impressed as to what it can do (especially being FREE). I am hoping it can help with my scene construction and composition when I work on my art skills. I will post anything that I use for it. Maybe something I can stick it on my portfolio site as well. I took some modeling and animation classes in college, so hopefully I can pick it up pretty quick.
 

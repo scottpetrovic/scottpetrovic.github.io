@@ -1,7 +1,7 @@
 ---
 title: "Getting started with digital music recording: Part 1"
 date: "2011-09-26"
-featured_image: "./images/juno-di.jpg"
+featured_image: "/images/juno-di.jpg"
 categories: 
   - "computer"
   - "music-recording"
@@ -17,7 +17,7 @@ The first thing that you need is some type of instrument that could talk to the 
 - have a bunch of instruments for variety
 - easy for computers to translate into digital format
 
-![Roland Juno-Di](./images/juno-di.jpg "Roland Juno-Di")
+![Roland Juno-Di](/images/juno-di.jpg "Roland Juno-Di")
 
 So I bought a Roland Juno Di Synthesizer and started reading about all of the different buttons and knobs to know what it can do. It only takes a few hours hours of playing around and reading the manual to understand how it works.
 
@@ -38,7 +38,7 @@ To get the instruments on the keyboard to work right, I needed two things
 
 Audio interfaces are boxes that you plug instruments into and it can convert an analog signal to a digital signal. That translates to making my keyboard sounds be heard by the computer. Not only can it take my keyboard's sound, but it can take an electric guitar, microphone, or a number of different input devices.
 
-![](./images/audio-interface.jpg "audio-interface")
+![](/images/audio-interface.jpg "audio-interface")
 
  
 
@@ -54,7 +54,7 @@ I got the [Lexicon Alpha](http://www.sweetwater.com/store/detail/Alpha/). It is 
 
 With an audio interface, there are a few ways to hook up your instrument. The simplest way is to use a 1/4" cable and go from the mono out of your keyboard to the audio interface mono in. I have two 1/4" cables and use the stereo out to plug it in. My keyboard sounds seem like they were made for stereo out, because it sounds better. Either work though. I bought a nice set of monitor headphones (I bought mine for $40 from Tony off Craigslist). [Monitor headphones](http://www.google.com/search?q=monitor+headphones&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:en-US:official&client=firefox-a#q=monitor+headphones&hl=en&client=firefox-a&hs=qH1&rls=org.mozilla:en-US:official&prmd=imvns&source=univ&tbm=shop&tbo=u&sa=X&ei=rdl_TuyJJ-eMsALeovxM&ved=0CHIQrQQ&bav=on.2,or.r_gc.r_pw.&fp=53109c92d744947c&biw=1200&bih=601) are just nice headphones that reproduce the sound more accurately than ear buds or cheap headphones.
 
-![1/8" to 1/4" converter](./images/plug-converter.jpg "plug-converter")
+![1/8" to 1/4" converter](/images/plug-converter.jpg "plug-converter")
 
 The audio interface is really a sound card, so when you plug it in, it will override everything and take control of all of the sound. You will have to put your headphone jack into the audio interface to hear anything.
 
