@@ -9,7 +9,7 @@
 
       {{ range ( where .Pages "Type" "posts" | first 35 ) }}
 
-      <a class="card" href="{{ .RelPermalink }}">
+      <a class="card" href="{{ .Permalink  }}">
         <article class="post-snippet preview">
 
           {{/* Some fancy code that grabs a feature image on the post if it exists */}}
