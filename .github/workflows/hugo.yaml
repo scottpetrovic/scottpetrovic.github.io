@@ -71,11 +71,13 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/blog"
+        # each step gets a fresh command line, so we should be back at the root directory
+        # -r flag gets all child files and directories
       - name: Package all files for site
         run: |
-          mkdir publish
-          cp ./portfolio ./publish/portfolio
-          cp ./blog/public ./publish/blog
+          mkdir ./publish
+          cp -r ./portfolio ./publish/portfolio
+          cp -r ./blog/public ./publish/blog
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
