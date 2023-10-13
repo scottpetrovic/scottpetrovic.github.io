@@ -16,7 +16,7 @@
           {{/* It is always a square, so it will stretch width to fill the space */}}
           {{ $thumbnailPreview :=  print .Site.BaseURL "/images/thumbnail-placeholder.webp" }}
           {{ if .Params.featured_image }}
-            {{ $thumbnailPreview = .Params.featured_image }}
+            {{ $thumbnailPreview =  print .Site.BaseURL .Params.featured_image }}
           {{ end }}
           <span class="thumbnail-container section"
             style="background-size: cover; background-image: url(  {{ $thumbnailPreview  }} )"
