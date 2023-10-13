@@ -1,53 +1,29 @@
-## About
-This is a github page, but is also a web host serving up content. Right now I am using it to come up with my Oculus Quest 2 VR projects as I am learning how to create interactions on the web. The public base URL to get to HTML version of the page is  https://scottpetrovic.github.io/
+# Scott Petrovic blog
 
-The project(s) use https://aframe.io/ to build out the experiences. This library is an abstraction layer on top of https://threejs.org/. It is said to have easy access to THREE.js functionality if needed, so it should be easy to extend needed. I have been either testing this in the Firefox Reality browser (downloaded in store for free), or the Oculus browser (pre-installed).
+This is a personal blog. It is built using Hugo. Hugo is a static site generator that is really fast.
 
+## Dependencies
 
-## Current Test Projects
-![Image](./meta-quest-logo.png)
+- Hugo: Command line tool used to build project'. https://github.com/gohugoio/hugo
 
-A note about using VR experiences in web browser. Most of the time there is no easy way to get out with X, or exit button. To get out, I tap the "Oculus button" on the controller. This brings up an overlay that allows you to exit. It looks like you are exiting the entire web browser, but it only gets you out of the full experience mode. There is probably a better and more user friendly way to exit out that is less confusing.
+Linux command: sudo apt install hugo
+Windows: Hugo is a command line tool. Download the executable (exe) file and put it in a place where you can run it. This is usually done by adding it to your environment variables, or putting the executable in a location that already is in your environment variables. I have a location of C:\platform-tools that I put all my commonly needed tools in.
 
-- [A-frame test project](https://scottpetrovic.github.io/aframe/min.html) - A bare bones VR experience with a static cube. If you are on an Oculus Quest 2 and visit this page, there will be a "VR" button in the bottom right in the browser. Clicking it will go full screen. See note in description about exiting.
-- TODO - Controller recognition and button triggers
-- TODO - Controller interaction with grabbing and releasing objects
-- TODO - Better user experience option for exiting VR
+## Building and launching
 
+Open the root location in something like Visual Studio Code. Open the command prompt up and type the following:
 
-## Updating and building new versions of the site
-The homepage (this page) is built using a [Jekyll](https://jekyllrb.com/) static site generator. Github has it setup to build automatically, so all you have to do is update the README file. After you make a commit, the page will update in about a minute as it rebuilds.
+    hugo server -D
 
-It is the README file on the project. I am using https://dillinger.io/ to preview what the results will be. I just copy the markdown code into it, do my editing, then copy back over to github and save.
+This will build and run the project under a localhost. Hugo also has a watch process, so changes that are done will be updated. The -D flag includes posts that are marked as drafts
 
-### Markdown
+## Adding or editing posts
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Add a new MD file to the content > posts area. See other markdown files for reference. If you are running the build, the project should automatically update.
 
-```markdown
-Syntax highlighted code block
+## Final production build
 
-# Header 1
-## Header 2
-### Header 3
+Run the command: 
+    hugo
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/scottpetrovic/scottpetrovic.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The files will be generated to the Public folder. You should be able to copy that to the web server.

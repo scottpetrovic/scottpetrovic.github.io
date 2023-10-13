@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap');
+
+/* LAYOUT */
+
+* {
+  font-family: sans-serif;
+  color: #403f58;
+}
+
+audio {
+  display: block;
+  width: 100%;
+}
+
+figure {
+  text-align: center;
+}
+figcaption {
+  margin: 0.5rem;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 300%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  margin: 1rem 0;
+  margin-top: 3rem;
+  font-size: 240%;
+
+}
+
+h3 {
+  font-size: 200%;
+}
+
+p {
+  line-height: 141%;
+  font-size: 1.25rem;
+}
+
+ol, ul, li {
+  font-size: 109%;
+  line-height: 140%;
+}
+
+a {
+  color: #44a9c2;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+pre {
+  background: #4a5765;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+code {
+    color: #d1e0e2;
+    line-height: 148%;
+}
+
+
+
+ul.main-menu {
+  display: inline-block;
+  margin: 0;
+}
+@media only screen and (max-width: 800px) {
+  ul.main-menu {
+   padding: 0;
+  }
+}
+
+
+ul.main-menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
+ul.main-menu li a {
+  color: white;
+  font-size: 1rem;
+}
+ul.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+
+nav.site-nav {
+  background: rgb(82,144,208);
+  box-shadow: 0px 4px 9px 0px #b3b3b3;
+  padding: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  nav.site-nav {
+    text-align: center;
+  }
+}
+
+
+
+nav.site-nav a {
+  text-decoration: none;
+}
+
+
+.logo {
+  font-family: 'Saira Extra Condensed', sans-serif;
+
+  font-size: 1.8rem;
+  color: white;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+footer p {
+  color: #a8a5a5;
+}
+
+
+/* LISTS */
+
+.thumbnail-container {
+  width: 15rem;
+  height: 15rem;
+  box-shadow: 3px 3px 3px #868686;
+  margin: auto;
+}
+@media only screen and (max-width: 800px) {
+  .thumbnail-container {
+    width: 100%;
+    height: 230px;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+
+.post {
+  margin: 0 19%;
+}
+@media only screen and (max-width: 800px) {
+  .post {
+    margin: 0 8%;
+  }
+}
+
+.tertiary-data span {
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .tertiary-data {
+    line-height: 157%;
+    text-align: center;
+  }
+
+  .post .tertiary-data span {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+
+
+.posts-listing {
+  display: grid;
+  column-gap: 4%;
+  margin: 0%;
+}
+.posts-listing a {
+  color: black;
+  font-weight: normal;
+}
+.posts-listing a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .posts-listing {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 1%;
+  }
+
+}
+
+.post-snippet {
+  padding: 2rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .post-snippet {
+   padding: 1rem;
+  }
+}
+
+.post-snippet h2 {
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.post-snippet a {
+  font-size: 1.5rem;
+}
+
+.card {
+  text-decoration: none;
+}
+.card article {
+  transition: all 0.2s ease-in;
+}
+.card article:hover {
+  background: #f2f3f3;
+}
+.card article:hover h2 {
+  text-decoration: underline;
+}
+
+.preview {
+  display: grid;
+  column-gap: 25px;
+}
+@media only screen and (max-width: 800px) {
+  .preview {
+    display: block;
+  }
+
+}
+
+
+.section {
+  grid-row: 1 / span 2;
+}
+
+.button {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: #b9f2f8;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-in;
+}
+.button:hover {
+  background: #aed8dd;
+}

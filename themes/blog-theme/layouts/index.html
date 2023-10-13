@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+
+<h1>Recent Posts</h1>
+
+{{ .Content }}
+
+<div class="posts-listing">
+  {{ range .Pages  }}
+
+      {{ range ( where .Pages "Type" "posts" | first 35 ) }}
+
+      <a class="card" href="{{ .RelPermalink }}">
+        <article class="post-snippet preview">
+
+          {{/* Some fancy code that grabs a feature image on the post if it exists */}}
+          {{/* It is always a square, so it will stretch width to fill the space */}}
+          {{ $thumbnailPreview := "/images/thumbnail-placeholder.webp" }}
+          {{ if .Params.featured_image }}
+            {{ $thumbnailPreview = .Params.featured_image }}
+          {{ end }}
+          <span class="thumbnail-container section"
+            style="background-size: cover; background-image: url({{$thumbnailPreview}} )"
+          ></span>
+
+          <span class="section">
+            <h2>{{ .Title }}</h2>
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .Date.Format "January 2, 2006" }} 
+            <span style="margin-left: 1rem">{{ .ReadingTime }} minute read</span>
+            </time>
+            <p>{{ .Summary }}</p>
+          </span>
+
+        </article>
+      </a>
+
+      {{ end }}
+
+
+  {{ end }}
+
+  <a class="button" href="/posts">See All Posts</a>
+</div>
+
+
+
+{{ partial "footer.html" . }}

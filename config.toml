@@ -1,0 +1,6 @@
+baseURL = 'https://blog.scottpetrovic.com/'
+languageCode = 'en-us'
+title = 'Aberrant Investigations'
+theme = 'blog-theme' 
+
+# sectionPagesMenu = "main"
