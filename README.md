@@ -1,6 +1,6 @@
-# Scott Petrovic blog
+# Scott Petrovic's portfolio and blog
 
-This is a personal blog. It is built using Hugo. Hugo is a static site generator that is really fast.
+This is a personal blog and portfolio site. It is built using Hugo. Hugo is a static site generator that is really fast.
 
 ## Dependencies
 
