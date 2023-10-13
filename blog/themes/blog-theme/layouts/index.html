@@ -14,12 +14,12 @@
 
           {{/* Some fancy code that grabs a feature image on the post if it exists */}}
           {{/* It is always a square, so it will stretch width to fill the space */}}
-          {{ $thumbnailPreview := "/images/thumbnail-placeholder.webp" }}
+          {{ $thumbnailPreview :=  print .Site.BaseURL "/images/thumbnail-placeholder.webp" }}
           {{ if .Params.featured_image }}
             {{ $thumbnailPreview = .Params.featured_image }}
           {{ end }}
           <span class="thumbnail-container section"
-            style="background-size: cover; background-image: url({{$thumbnailPreview}} )"
+            style="background-size: cover; background-image: url(  {{ $thumbnailPreview  }} )"
           ></span>
 
           <span class="section">
