@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy everything to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -71,7 +71,6 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/blog"
-          cp ./public 
       - name: Package all files for site
         run: |
           mkdir publish
