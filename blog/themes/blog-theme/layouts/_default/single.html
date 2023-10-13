@@ -6,7 +6,7 @@
     <div class="tertiary-data">
         <span>{{ .Date | time.Format ":date_long" }}</span>
         <span style="font-style:italic">Length: {{ .ReadingTime }} min</em></span>
-        <span><a href="/">Back to Posts</a></span>
+        <span><a href="{{ .Site.BaseURL }}">Back to Posts</a></span>
     </div>
 
     {{ .Content }}

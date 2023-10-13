@@ -1,5 +1,6 @@
 baseURL = 'localhost'
 languageCode = 'en-us'
+relativeURLs = 'true'
 title = 'Aberrant Investigations'
 theme = 'blog-theme' 
 
