@@ -1,4 +1,4 @@
-baseURL = 'https://blog.scottpetrovic.com/'
+baseURL = 'localhost'
 languageCode = 'en-us'
 title = 'Aberrant Investigations'
 theme = 'blog-theme' 

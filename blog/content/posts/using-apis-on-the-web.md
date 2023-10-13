@@ -1,7 +1,7 @@
 ---
 title: "Using APIs on the web"
 date: "2009-04-11"
-featured_image: "/images/ape_figure.jpg"
+featured_image: "./images/ape_figure.jpg"
 categories: 
   - "computer"
   - "web-design"
@@ -9,7 +9,7 @@ tags:
   - "api"
 ---
 
-![ape_figure](/images/ape_figure.jpg "ape_figure")
+![ape_figure](./images/ape_figure.jpg "ape_figure")
 
 APIs use to be a topic that I would shun away from anytime I would hear it mentioned. I knew it stood for "application programming interface", but had no idea what it really meant or how it worked beyond that.
 

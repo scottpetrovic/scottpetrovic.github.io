@@ -15,7 +15,7 @@ tags:
   - "unity3d"
 ---
 
-![u3dobject logo](/images/u3dobj_logo.png "u3dobject logo")
+![u3dobject logo](./images/u3dobj_logo.png "u3dobject logo")
 
 I have been working with U3DObject for a a few weeks now and have been getting familiar with it. Because there is so little documentation with it, it is a little hard to figure out how everything works and is organized. The company that created this isn't an English company, so some of their English is a little bit hard to interpret in their documentation. In this post, I will try to explain the structure of the U3DObject framework as well as talk about the API.  A small stripped down demo project was made to better help understand the concepts. Take a look at [the demo project](http://www.scottpetrovic.com/demo/u3dObject/) that I will be going over.
 
@@ -23,11 +23,11 @@ I have been working with U3DObject for a a few weeks now and have been getting f
 
 One of the things that was the most frustrating was that some of the files in the Google Code version are off. There is a lot of extra files that are confusing and a couple javascript calls in the API were wrong. First,  grab the source project I made and look it over.
 
-![get_source_button](/images/get_source_button.png "get_source_button")
+![get_source_button](./images/get_source_button.png "get_source_button")
 
 ## Folder Structure and organization
 
-![u3dObject_sections](/images/u3dObject_sections.gif)
+![u3dObject_sections](./images/u3dObject_sections.gif)
 
 If you open up the BasicExample folder, you will see three sections: flash, html, and unity. The flash and unity sections have the source files that will have the different assets and scripts needed to build the swf and unity3d files. These folders are where you will spend most of your time in. The html section has the final web files that will be uploaded to the server. I set the system up so that when you publish your flash files, it will export to the swf folder of the html section. Likewise, when you build your unity3d application, you will build it in the unity folder of the html section.
 

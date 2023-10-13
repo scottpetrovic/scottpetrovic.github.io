@@ -1,12 +1,12 @@
 ---
 title: "Unity 2.5 (Blender lessons): Part Two"
 date: "2009-07-11"
-featured_image: "/images/maka_blender_model.jpg"
+featured_image: "./images/maka_blender_model.jpg"
 categories: 
   - "life"
 ---
 
-![maka_blender_model](/images/maka_blender_model.jpg "maka_blender_model")
+![maka_blender_model](./images/maka_blender_model.jpg "maka_blender_model")
 
 I have been fervently working with Unity 2.5 for Windows, or more precisely Blender 2.48b. Eventually you can't use all of the preset models and animations that Unity gives you, so I wanted to make my own and import it into Unity . This is no simple feat if you haven't done it before. My 3d package of choice right now is [Blender](http://www.blender.org/) since it is free and I have a [book](http://www.amazon.com/Essential-Blender-Guide-Creation-Source/dp/1593271662/ref=sr_1_3?ie=UTF8&s=books&qid=1247315838&sr=8-3) on it. I will go back and do some fine tuning with detail later, but I think I have the technical parts down good enough to try and import the model into Unity.
 

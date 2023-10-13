@@ -1,7 +1,7 @@
 ---
 title: "Death of Witch Training Game?"
 date: "2011-12-04"
-featured_image: "/images/51x0-qlfAPL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg"
+featured_image: "./images/51x0-qlfAPL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg"
 categories: 
   - "blender"
   - "computer"
@@ -12,7 +12,7 @@ I went back to my witch training game I had under source control and am finding 
 
 To make me feel better I spent some money buying a new [character development book using Blender 2.5](http://www.amazon.com/Character-Development-Blender-Jonathan-Williamson/dp/1435456254/ref=sr_1_1?ie=UTF8&qid=1323028170&sr=8-1). I have never actually read a book on modeling and rigging a character before, so I am hoping it will give my next characters some much needed polish. I have only taken one 3D modeling class in college, so I am pretty excited to take my modeling skills to the next level.
 
-![Character Development with Blender 2.5](/images/51x0-qlfAPL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg "Character Development with Blender 2.5")
+![Character Development with Blender 2.5](./images/51x0-qlfAPL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg "Character Development with Blender 2.5")
 
 As for witch training, I still have all of the code and I really liked the direction it was going. I might make a new witch character (a sexy one!) and start rebuilding it and refactoring the code.
 

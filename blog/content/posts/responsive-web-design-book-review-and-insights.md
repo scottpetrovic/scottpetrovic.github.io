@@ -1,14 +1,14 @@
 ---
 title: "Responsive Web Design Book Review and Insights"
 date: "2012-04-17"
-featured_image: "/images/responsive-web-design-cover.jpg"
+featured_image: "./images/responsive-web-design-cover.jpg"
 categories: 
   - "interaction-design"
   - "reviews"
   - "web-design"
 ---
 
-![](/images/responsive-web-design-cover.jpg "responsive-web-design-cover")
+![](./images/responsive-web-design-cover.jpg "responsive-web-design-cover")
 
 I recently finished a couple of books from A List Apart titled "Mobile First" and "Responsive Web Design". They are shorter books ( ~150 pages each), but they are concise and to the point. The mobile first was more of a sales book promoting why web designers need to consider mobile devices first and some common practices for thinking about the user expierience of a mobile user.
 
@@ -86,7 +86,7 @@ I did a little test trying to see how small web browsers would go. The CSS rules
 
 **Chrome 18** - 135 pixels
 
-![](/images/responsive-design-browser-min-width.png "responsive-design-browser-min-width")
+![](./images/responsive-design-browser-min-width.png "responsive-design-browser-min-width")
 
 I doubt many mobile devices have a width of 135 pixels, but is something to keep in the back of your mind. I was banging my head against a wall for a little bit with Firefox's inability to make the CSS respond to a smaller size. I started to revise my portfolio site to make it more responsive.  I am still playing with the technical and structural elements, so it should be looking pretty good once I can focus on the creative aspects of it.
 
@@ -98,7 +98,7 @@ http://forefathersgroup.com/
 
 This website has a great creative use of colors and does an excellent job of looking good at every dimension. There is no size that drastically changes the layout. It slowly morphs the layout as the browser gets smaller.
 
-![](/images/responsive-design-sample.jpg "responsive-design-sample")
+![](./images/responsive-design-sample.jpg "responsive-design-sample")
 
 ## The Boston Globe
 
@@ -106,7 +106,7 @@ http://www.bostonglobe.com/
 
 Creative websites are good, but what about websites that just have a ton of content like the Boston Globe. Instead of eliminating content, they go the approach of just wrapping the column content into less columns. It works well. You have to scroll a lot to see everything as one column, but all of the content is still presented well and browsing is still enjoyable.
 
-![](/images/boston-globe-responsive.jpg "boston-globe-responsive")
+![](./images/boston-globe-responsive.jpg "boston-globe-responsive")
 
 
 ## Conclusion

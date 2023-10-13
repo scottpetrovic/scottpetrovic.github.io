@@ -25,7 +25,7 @@ The bazooka addition to my character is coming along, but it still needs work. O
 
 The head look controller does a great job making your character look at an object. The problem I was having was when the target goes into an arbitrary point in space that isn't in the ground. Looking up into the sky has no colliders or objects, so the character had no where to focus on. What I ended up doing was creating a hidden collider in front of the character that would only work with the mouse cursor. The mouse can collide with the "sky" collider as well as the ground in the world. See image below.
 
-![Ray casting onto a target collider](/images/sky-cursor.jpg "sky-cursor")
+![Ray casting onto a target collider](./images/sky-cursor.jpg "sky-cursor")
 
 The blue line coming from the right is a ray that is being drawn from the camera. This is used to find out where the target is at. The only that is used in the end is the collision point on the green box collider.  This can also be used as a good way to limit the distance that your character can "lock on" to outside enemies. The missile ignores the collider with the **Physics.ignoreCollider()**, so nothing else will affect it.
 

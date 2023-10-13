@@ -1,14 +1,14 @@
 ---
 title: "Unity 3 Game Development Hotshot Book Review"
 date: "2011-11-13"
-featured_image: "/images/unity-3-hotshotBook.jpg"
+featured_image: "./images/unity-3-hotshotBook.jpg"
 categories: 
   - "computer"
   - "game"
   - "unity3d"
 ---
 
-![Unity 3 Game Development - HOTSHOT](/images/unity-3-hotshotBook.jpg "unity-3-hotshotBook")
+![Unity 3 Game Development - HOTSHOT](./images/unity-3-hotshotBook.jpg "unity-3-hotshotBook")
 
 The Unity 3 Game Development Hotshot book has been released and it had my name on it. I was wondering what type of "hotshot" advice it could help me with. I always love learning new things, so I picked up the Kindle version and started going at it.
 
@@ -39,7 +39,7 @@ Certain topics were very engrossing like the 2D sprite character, RPG GUI system
 
 Some topics I haven't seen before were the RPG GUI system and the sprite animation system. They are both pretty code heavy, but I thought they were particularly interesting. I haven't seen many "sophisticated" GUI system examples or tutorials, so it was nice to see how the writer architected the code to make it readable and flexible with the different screens.
 
-![Hot Shots books GUI RPG system](/images/gui-hotshots-book.jpg "gui-hotshots-book")
+![Hot Shots books GUI RPG system](./images/gui-hotshots-book.jpg "gui-hotshots-book")
 
 The first chapter that goes over the 2D sprite framework was also pretty good - especially the engine that managed all of the different states of each animation.
 
@@ -55,4 +55,4 @@ One of the things that is good to know going into this book is that some section
 
 For the price, I would recommend the book highly. I am sure you will have a different experience based off what you already know about Unity3d. If some of the topics he covers pique your interest, it is worth the money to grab a copy.  Speaking of topics, knowing what topics are covered in the book is essential to know if it will be a good fit for you. I don't do 3d programming for my job, so there were plenty of concepts that were new to me. My criteria for a good book is based off how much I learn -- and I think this book did a pretty good job.
 
-### Final Score: ![4 star rating](/images/4-star-rating.jpg "4-star-rating")
+### Final Score: ![4 star rating](./images/4-star-rating.jpg "4-star-rating")

@@ -1,13 +1,13 @@
 ---
 title: "Facebook status blog integration"
 date: "2009-02-05"
-featured_image: "/images/facebook_logo-150x150.jpg"
+featured_image: "./images/facebook_logo-150x150.jpg"
 categories: 
   - "computer"
   - "site-update"
 ---
 
-![facebook_logo](/images/facebook_logo-150x150.jpg "facebook_logo")
+![facebook_logo](./images/facebook_logo-150x150.jpg "facebook_logo")
 
 Wouldn't it be a great way to customize your blog better by integrating social networking data into it? I was reading a tutorial about using [JSON](http://en.wikipedia.org/wiki/JSON) to incorporate my Twitter status and I thought it would be better if I had my facebook status monitored on my blog - it will make stalking me that much easier!
 

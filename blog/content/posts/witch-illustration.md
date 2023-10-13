@@ -1,7 +1,7 @@
 ---
 title: "Witch Illustration"
 date: "2009-01-18"
-featured_image: "/images/witch_color3_008-150x150.jpg"
+featured_image: "./images/witch_color3_008-150x150.jpg"
 categories: 
   - "art"
   - "illustration"
@@ -12,7 +12,7 @@ tags:
   - "personal"
 ---
 
-![chasing witches](/images/witch_color3_008-150x150.jpg "witch_color3_008")
+![chasing witches](./images/witch_color3_008-150x150.jpg "witch_color3_008")
 
 I have been working hard on a personal illustration that I have been doing. I really have never taken a painting class before, but I read quite a bit and am hoping that my art skills can continue to improve. To see the image, click on the picture thumbnail.
 

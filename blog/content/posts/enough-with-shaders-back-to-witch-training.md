@@ -1,7 +1,7 @@
 ---
 title: "Enough with shaders - back to Witch Training"
 date: "2011-05-19"
-featured_image: "/images/659363_panda_3-150x150.jpg"
+featured_image: "./images/659363_panda_3-150x150.jpg"
 categories: 
   - "computer"
   - "game"
@@ -10,7 +10,7 @@ categories:
   - "web-design"
 ---
 
-![](/images/659363_panda_3-150x150.jpg "659363_panda_3")
+![](./images/659363_panda_3-150x150.jpg "659363_panda_3")
 
 I have been going through different phases trying to learn about shaders. They are very important for learning about how 3d engines works.  I have read about half of the FREE [CG book](http://developer.nvidia.com/node/76) from NVidia as well as the OpenGL ES 2.0 book. The CG book author does a great job explaining everything. The OpenGL ES book wasn't that great for a beginning. There aren't any good books that teach you by writing a lot of scripts.
 

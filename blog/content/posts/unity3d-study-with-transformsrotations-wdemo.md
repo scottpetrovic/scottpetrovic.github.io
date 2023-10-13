@@ -1,7 +1,7 @@
 ---
 title: "Unity3d: Study with transforms,rotations w/demo"
 date: "2009-11-09"
-featured_image: "/images/Unity3d_OSD1.gif"
+featured_image: "./images/Unity3d_OSD1.gif"
 categories: 
   - "computer"
   - "game"
@@ -12,7 +12,7 @@ Trying to understand what is going on when things are moving, rotating, and scal
 
 I thought the best way to learn more about how these things interact is having a little application that will show properties dynamically changing as objects move and rotate.
 
-![Unity3d_movement_demo_](/images/Unity3d_OSD1.gif "Unity3d_movement_demo_")
+![Unity3d_movement_demo_](./images/Unity3d_OSD1.gif "Unity3d_movement_demo_")
 
 I am monitoring two different objects, Box and BoxChild(very creative, I know). Box child is nested inside of the bigger box, so properties work a little differently with that.
 

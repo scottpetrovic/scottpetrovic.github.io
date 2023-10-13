@@ -1,7 +1,7 @@
 ---
 title: "Orchestral Study with East West Symphony"
 date: "2012-03-04"
-featured_image: "/images/saber-mainWindow.jpg"
+featured_image: "./images/saber-mainWindow.jpg"
 categories: 
   - "life"
 ---
@@ -10,7 +10,7 @@ After installing the whole [East West orchestral](http://www.soundsonline.com/Sy
 
 When he recorded the song originally, he actually combined a live orchestra with programmed instruments, so it is going to be pretty hard to reproduce exactly. This post is talking about some of the journey I took in trying to learn the new tool and recreating an existing song from scratch.
 
-![](/images/saber-mainWindow.jpg "saber-mainWindow")
+![](./images/saber-mainWindow.jpg "saber-mainWindow")
 
 Dealing with a lot of different tracks and instruments can get messy fast. I found it is best to really start organizing your instruments and put them into groups. I separated the instruments into brass, woodwinds, percussion, and strings sections. Using different articulations with instruments required separate tracks, so it I always tried to put the articulations of an instrument in the name if there were multiple types. I also color coded the instruments to visually be able to tell what the sections were.
 
@@ -22,13 +22,13 @@ I am starting to develop a process on composing/studying songs.  The main steps
 2. instrument pitch recordings (emphasis on pitch)
 3. mixing (emphasis on volume and emphasis) - screenshot below
 
-![](/images/saber-mixing.jpg "saber-mixing")
+![](./images/saber-mixing.jpg "saber-mixing")
 
 Saber's edge took a little while to get the time signature down because it changed 5 or 6 times throughout the song. Each section changed a time signature. There was also a couple bars that had odd time signatures like one with 7/4 time followed by one bar with 5/4 time, then going to 6/4 time afterwards. It had a pretty steady beats per minute(BPM) of 156, so that didn't take too long to figure out.
 
 ## How does an Instrument Sound?
 
-![](/images/question-instrument.jpg "question-instrument")
+![](./images/question-instrument.jpg "question-instrument")
 
 One of the difficult parts of recreating a song is hearing an instrument and knowing exactly which instrument is playing. There seems to be many instruments that have similar range and timbre, so I really had to listen to the sounds to hear overtones and other characteristics that make an instrument distinct.
 

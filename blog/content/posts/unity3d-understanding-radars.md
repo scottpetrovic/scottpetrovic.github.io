@@ -1,7 +1,7 @@
 ---
 title: "Unity3d: Understanding Radars"
 date: "2011-05-24"
-featured_image: "/images/radar-diagram.jpg"
+featured_image: "./images/radar-diagram.jpg"
 categories: 
   - "life"
 ---
@@ -12,7 +12,7 @@ Radars come in all different shapes and sizes. Some are square, some are circles
 
 Understanding the structure of how radars are made is the first step in the process. Instead of giving a long-winded explanation, it is better to show a diagram explaining how things are set up.
 
-![Radar diagram setup - Unity 3D](/images/radar-diagram.jpg "radar-diagram")
+![Radar diagram setup - Unity 3D](./images/radar-diagram.jpg "radar-diagram")
 
 I didn't spend a lot of time drawing this, but you get the idea.  If you would zoom out of your scene in Unity3d or any other engine, it would look like the picture above. Your radar information is below the entire level. That way, you don't have to worry about culling it or using special logic to hide it from your main camera.  The orthographic (ortho) camera needs to be that way since it will display the map accurately. Distance has a negative effect on textures, so making it an orthographic camera will help that.
 

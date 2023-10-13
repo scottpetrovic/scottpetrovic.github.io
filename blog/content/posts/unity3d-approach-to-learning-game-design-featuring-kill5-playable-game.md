@@ -1,13 +1,13 @@
 ---
 title: "Unity3d: Approach to learning game design featuring \"Kill5\" playable game"
 date: "2010-02-22"
-featured_image: "/images/unity3d_cooperation.jpg"
+featured_image: "./images/unity3d_cooperation.jpg"
 categories: 
   - "game"
   - "unity3d"
 ---
 
-![unity3d_cooperation](/images/unity3d_cooperation.jpg "unity3d_cooperation")
+![unity3d_cooperation](./images/unity3d_cooperation.jpg "unity3d_cooperation")
 
 With games being so complex, it is intimidating to know where to start when it comes to putting together a game. Even after reading game architecture resources, it still feels like you don't know the best way to delve in and make something cool. Since I have started learning Unity, I am forming my own view on learning the whole process if you are new to the whole game development thing. I am still a beginner, so if something in this post isn't perfectly right, don't get mad at me - let me know so I can learn!
 

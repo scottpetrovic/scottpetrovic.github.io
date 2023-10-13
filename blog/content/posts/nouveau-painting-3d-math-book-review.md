@@ -9,7 +9,7 @@ categories:
   - "reviews"
 ---
 
-![Art Nouveau Painting](/images/art-nouveau-painting.jpg "art-nouveau-painting")
+![Art Nouveau Painting](./images/art-nouveau-painting.jpg "art-nouveau-painting")
 
 I finally put enough time into my painting that I feel ok to press the stop button on it. I am sure a couple of month will roll by and I will find mistakes — but there is no better way to document your progress as an artist! That is how I rationalize it anyway.
 

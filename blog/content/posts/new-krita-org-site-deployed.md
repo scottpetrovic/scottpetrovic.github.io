@@ -1,13 +1,13 @@
 ---
 title: "New Krita.org Site Deployed!"
 date: "2014-08-09"
-featured_image: "/images/krita-site-thumb1.jpg"
+featured_image: "./images/krita-site-thumb1.jpg"
 categories: 
   - "interaction-design"
   - "web-design"
 ---
 
-[![krita-site-thumb](/images/krita-site-thumb1.jpg)]
+[![krita-site-thumb](./images/krita-site-thumb1.jpg)]
 
 I have been spending the past couple of months working with the community reorganizing, rethinking, and re-designing the Krita marketing website. It was really fun working with the community, artists, and other developers to make this happen.
 

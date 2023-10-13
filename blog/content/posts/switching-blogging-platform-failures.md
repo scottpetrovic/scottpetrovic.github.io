@@ -1,7 +1,7 @@
 ---
 title: "Switching blogging platform failures"
 date: "2020-04-22"
-featured_image: "/images/gatsby-logo.png"
+featured_image: "./images/gatsby-logo.png"
 categories: 
   - "life"
 ---
@@ -10,7 +10,7 @@ My roommate gave me an idea to start back up blogging to get some ideas flowing.
 
 ## Moving to Gatsby
 
-![](/images/gatsby-logo.png)
+![](./images/gatsby-logo.png)
 
 Static site generators have been around for a while now. They are a web system to "easily" create websites and blogs if you have some web development skills. The tutorials make it sound like you don't need to be technical. After going through the tutorials on their site, though, that couldn't be further from the truth. While I have web development experience and understood the material, I don't see a non-technical person ever building a site with something like Gatsby. Is it something I could use though since I do have a technical background?
 

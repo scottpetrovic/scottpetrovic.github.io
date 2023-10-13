@@ -1,14 +1,14 @@
 ---
 title: "OpenGL ES 2.0: Trying to demystify shaders"
 date: "2011-03-04"
-featured_image: "/images/openGL-es-20.jpg"
+featured_image: "./images/openGL-es-20.jpg"
 categories: 
   - "computer"
   - "interaction-design"
   - "life"
 ---
 
-![OpenGL ES 2.0 book](/images/openGL-es-20.jpg "openGL-es-20")
+![OpenGL ES 2.0 book](./images/openGL-es-20.jpg "openGL-es-20")
 
 Does learning about shaders make you a programmer? Gosh, I don't know, but I sure feel like it trying to get through this book. I have been getting comfortable at my new job, as well as getting an apartment - so that will mean more time for 3d stuff.
 

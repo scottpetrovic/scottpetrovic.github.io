@@ -1,7 +1,7 @@
 ---
 title: "Evolving Your Illustration Workflow through Mental Modeling"
 date: "2011-07-30"
-featured_image: "/images/imagineFX-workflow.jpg"
+featured_image: "./images/imagineFX-workflow.jpg"
 categories: 
   - "art"
   - "illustration"
@@ -27,7 +27,7 @@ The real key isn't just to watch him paint, but understand _why_ and _how_ he is
 
 ## Video Study - Gonzalo
 
-![](/images/imagineFX-workflow.jpg "imagineFX-workflow")
+![](./images/imagineFX-workflow.jpg "imagineFX-workflow")
 
 I took a video from the magazine "ImagineFX" and popped it in my PS3. Most of the videos from this magazine don't have any audio, so it is usually best to watch it at 1.5x speed at the least. This issue has a reported 22 hours of video training. At a liquidation price from my closest Borders, this was a steal. This is the best magazine I have ever seen when it comes to developing and improving your art skills. The illustrator for the cover, Gonzalo, does an entire screen capture of his painting.
 
@@ -62,7 +62,7 @@ An important note that with these steps, they are more specific to things that I
 
 Here is a little painting I did using his workflow. It definitely isn't the most exciting and dynamic painting I have ever done. But you know what...I learned a lot. That is the most important thing when it comes to mastering a difficult skill.
 
-![Mail Girl Illustration](/images/mail-girl.jpg "mail-girl")
+![Mail Girl Illustration](./images/mail-girl.jpg "mail-girl")
 
 ## Conclusion
 

@@ -1,7 +1,7 @@
 ---
 title: "Win Free Copies of Unity Books"
 date: "2012-02-13"
-featured_image: "/images/unity-3-essentials-cover.jpg"
+featured_image: "./images/unity-3-essentials-cover.jpg"
 categories: 
   - "unity3d"
 ---
@@ -13,7 +13,7 @@ Readers will be pleased to know that we have teamed up with Packt Publishing and
 
 ## Unity 3.x Game Development Essentials
 
-![](/images/unity-3-essentials-cover.jpg "unity-3-essentials-cover")
+![](./images/unity-3-essentials-cover.jpg "unity-3-essentials-cover")
 
 - Kick start your game development, and build ready-to-play 3D games with ease.
 - Understand key concepts in game design including scripting, physics, instantiation, particle effects, and more.
@@ -23,7 +23,7 @@ Readers will be pleased to know that we have teamed up with Packt Publishing and
 
 ## Unity iOS Essentials:
 
-![](/images/unity-iOS-cover.jpg "unity-iOS-cover")
+![](./images/unity-iOS-cover.jpg "unity-iOS-cover")
 
 - Learn key strategies and follow practical guidelines for creating Unity 3D games for iOS devices.
 - Learn how to plan your game levels to optimize performance on iOS devices using advanced game concepts.

@@ -1,7 +1,7 @@
 ---
 title: "Unity3D: new character and animations with full source"
 date: "2009-08-24"
-featured_image: "/images/unity3d_gameCharacter.jpg"
+featured_image: "./images/unity3d_gameCharacter.jpg"
 categories: 
   - "art"
   - "computer"
@@ -14,7 +14,7 @@ tags:
   - "unity3d"
 ---
 
-![unity3d gameCharacter](/images/unity3d_gameCharacter.jpg "unity3d_gameCharacter")
+![unity3d gameCharacter](./images/unity3d_gameCharacter.jpg "unity3d_gameCharacter")
 
 So I have a cool idea for a character, and the ability to do some neat things like have different degrees of running, flamethrowers, etc. - but my box man was making me unmotivated. I decided to design and model a new character (again) and import him in.
 
@@ -58,7 +58,7 @@ It would be great if you give me credit if you use my model at all, but this is 
 
 ## Working on next
 
-![flame_broom](/images/flame_broom.jpg "flame_broom")
+![flame_broom](./images/flame_broom.jpg "flame_broom")
 
 I saw a cartoon a while ago and thought this concept would be pretty cool. I want my character to have a flamethrower, but it would also serve as a flying device like a witch's broom. You could turn it over and shoot it down where it would propel you up. I will see how hard this is. I might have to implement mouse controls depending on how hard it is to handle.
 

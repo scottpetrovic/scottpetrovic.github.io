@@ -1,7 +1,7 @@
 ---
 title: "Game Design: harder than tutorials make it appear"
 date: "2010-01-07"
-featured_image: "/images/game-coding-complete.jpg"
+featured_image: "./images/game-coding-complete.jpg"
 categories: 
   - "computer"
   - "game"
@@ -19,7 +19,7 @@ I thought the best place to learn would be getting a regular game programming bo
 
 ## Game Programming book
 
-![game-coding-complete](/images/game-coding-complete.jpg "game-coding-complete")
+![game-coding-complete](./images/game-coding-complete.jpg "game-coding-complete")
 
 I picked up a copy of [Game Coding Complete](http://www.amazon.com/gp/product/1584506806/ref=s9_simp_gw_s2_p14_i1?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=1Q2EWFKVMMGYYCGZHEQY&pf_rd_t=101&pf_rd_p=470938631&pf_rd_i=507846) over the holdays and started trudging through it. It is written with C++, so some things it talks about are irrelevant if you code with C#.  The first part of the book doesn't have much coding, but a lot of patterns and principles when putting together games. Just what I wanted. It goes into a lot of depth about organizing projects and how to seperate your code and assets using versioning tools.
 

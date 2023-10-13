@@ -1,7 +1,7 @@
 ---
 title: "Mecanim: Directional Blend Trees + Concept Art For My Game"
 date: "2013-03-20"
-featured_image: "/images/movement-blend-tree.jpg"
+featured_image: "./images/movement-blend-tree.jpg"
 categories: 
   - "art"
   - "game"
@@ -11,7 +11,7 @@ categories:
 
 After installing the update for Unity 4.1 a few days ago, I saw a release note about different types of [blend trees](http://docs.unity3d.com/Documentation/Manual/2DBlending.html) you can do with Mecanim. After playing with the different blend state types for a while , I have found that they solve a lot of issues that I struggled with before. They are very powerful and reduce the amount of code dramatically.
 
-[![movement-blend-tree](/images/movement-blend-tree.jpg)]
+[![movement-blend-tree](./images/movement-blend-tree.jpg)]
 
 Here is a setup that I am currently using for idle/walk/run/turn.
 
@@ -19,7 +19,7 @@ Yes, that is right. You can do them all with one blend tree.
 
 It is amazing that you can have a single blend state to manage everything. Just create a new blend tree like normal. The idle animation has a blue connection in the image above -- indicating that it is the current animation that is playing. It is cool to see it changing dynamically as you test the game. Below is how to set up an 2D Directional blend tree.
 
-[![blend-tree-directions](/images/blend-tree-directions.jpg)]
+[![blend-tree-directions](./images/blend-tree-directions.jpg)]
 
  
 
@@ -90,7 +90,7 @@ There isn't that much to it. Since root motions are applied to the animations, I
 
 All this Unity stuff is my feeble attempt to get back into game development after a little break. I have been working on some concept art recently to help motivate me to learn more about game development.
 
-[![olivette-character-study](/images/olivette-character-study.jpg)]
+[![olivette-character-study](./images/olivette-character-study.jpg)]
 
  
 
@@ -98,7 +98,7 @@ All this Unity stuff is my feeble attempt to get back into game development afte
 
 I have a lot more of the story fleshed out in my mind. The basic idea for the game is that you are a pissed off girl trying to destroy the world. Get ready for lots of explosions and blowing stuff up!
 
-[![environmental-shot](/images/environmental-shot.jpg)]
+[![environmental-shot](./images/environmental-shot.jpg)]
 
 I  started building out the 3d  city and getting some basic game play mechanics roughed out. I thought it would be cool to have the setting at sunset -- kind of foreshadowing that the "end is near". I was originally thinking to have my target platform be on iOS or an Android tablet, but the controls are quickly getting too complex to support it. I will probably have to opt for desktop or an [Ouya](http://www.ouya.tv/).
 

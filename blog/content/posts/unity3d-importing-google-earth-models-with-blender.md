@@ -24,7 +24,7 @@ Start up Google Sketchup and to **File > 3d Warehouse > Get Models**.
 
 This will open up a new window where you can browse the [3d Google database](http://sketchup.google.com/3dwarehouse/) for all kinds of models. They have buildings, objects, and other stuff. I haven't spent that long looking at everything, but it is a pretty impressive amount of models.
 
-![02](/images/02.jpg "02")
+![02](./images/02.jpg "02")
 
 Peruse around and find a file that you want to import. I found a car model that I would like to use for this article. It will ask you if you want to import it directly into Sketchup.
 
@@ -36,7 +36,7 @@ The best way to delete them all is going into _Window > Outliner_ where it will 
 
 ## Exporting to Blender
 
-![03](/images/03.gif "03")
+![03](./images/03.gif "03")
 
 I don't know if you have to do this, butI have better luck when I have done this step.  Go to _File > Save As_ and for save as type do "Sketchup version 5". It is OK to save over the existing file if you want. Next click _File > Export > 3d Model_. Change the export type to COLLADA (dae) in the settings. To the right of that drop down list, there will be an options panel. Click it and make sure it looks like the above  left image.
 
@@ -55,7 +55,7 @@ If the model has a really high poly count, you can use the Modifer [Decimate](ht
 
 Make sure to save the blend file (Unity natively can import blend files) and drag the model along with the textures folder if needed. The texture folder was spit out when you exported the object from Google Sketchup. You can use those to link up textures if need be.
 
-![06](/images/06.jpg "06")
+![06](./images/06.jpg "06")
 
 I didn't spend the time in Blender to seperate the objects for texturing, so it all has to be red for now.
 

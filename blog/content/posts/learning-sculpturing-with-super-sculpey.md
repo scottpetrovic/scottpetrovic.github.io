@@ -1,12 +1,12 @@
 ---
 title: "Learning Sculpturing with Super Sculpey"
 date: "2012-07-15"
-featured_image: "/images/mythical-creatures-book.jpg"
+featured_image: "./images/mythical-creatures-book.jpg"
 categories: 
   - "art"
 ---
 
-![](/images/mythical-creatures-book.jpg "mythical-creatures-book")
+![](./images/mythical-creatures-book.jpg "mythical-creatures-book")
 
 I bought the book _[Sculpturing Mythical Creatures out of Polymer Clay](http://www.amazon.com/Sculpting-Mythical-Creatures-Polymer-Clay/dp/1592535143/ref=sr_1_1?s=books&ie=UTF8&qid=1342364961&sr=1-1&keywords=sculpting+mythical+creatures+out+of+polymer+clay)_ for my Kindle a couple of weeks ago. I have been taking a Java class this summer and am starting to get a little burnt out on programming, so I wanted to do something artistic that didn't involve a computer. I bought some [Super Sculpey](http://www.sculpey.com/products/clays/super-sculpey) clay a while ago, but was just trying to teach myself at the time. It didn't turn out so well, so I shelved the hobby for a few years.
 
@@ -16,7 +16,7 @@ I have only gone through the first two projects, but really feel a sense of acco
 
 ## Gnome Project: ( ~ 1 hour )
 
-![sculpey lawn gnome](/images/lawn-gnome.jpg "lawn-gnome")
+![sculpey lawn gnome](./images/lawn-gnome.jpg "lawn-gnome")
 
  
 
@@ -28,7 +28,7 @@ Most shapes start off as a ball or snake, and are modified from there using fing
 
 ## Pixie Project: ( ~ 2 hours )
 
-![](/images/sculpy-pixie.jpg "sculpy-pixie")
+![](./images/sculpy-pixie.jpg "sculpy-pixie")
 
 First thing you might notice is that I realized how poor my backdrop was for the first model. I took a pillow case that had a nice subdued horizontal pattern and draped it from my wall. Looks a little better than the gnome does sitting on my workspace. I tried to iron out all of the wrinkles, but I couldn't get them all.
 

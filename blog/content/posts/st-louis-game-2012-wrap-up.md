@@ -1,14 +1,14 @@
 ---
 title: "St. Louis Game Jam 2012 Wrap-Up"
 date: "2012-01-30"
-featured_image: "/images/game-jam2012-logo.jpg"
+featured_image: "./images/game-jam2012-logo.jpg"
 categories: 
   - "computer"
   - "life"
   - "music-recording"
 ---
 
-![](/images/game-jam2012-logo.jpg "game-jam2012-logo")
+![](./images/game-jam2012-logo.jpg "game-jam2012-logo")
 
 I just came back from the St. Louis game jam and had such a blast. It was held this year at the University of Missouri - St. Louis campus by the airport. It started on Friday and ended on Sunday night. There was a great turnout with 70+ people. St. Louis was in the top 10% of participants worldwide this year, which made it even more fun to meet even more people and see more games!
 
