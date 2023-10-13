@@ -33,6 +33,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.115.4
+    # node/npm have default versions if not specified...which changes
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [18.x]
     steps:
       - name: Install Hugo CLI
         run: |
@@ -40,6 +45,10 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
       - name: Checkout
         uses: actions/checkout@v3
         with:
