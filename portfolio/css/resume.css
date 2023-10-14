@@ -45,6 +45,10 @@ h2{
 .list-icons{
     font-size:3rem
 }
+.list-inline-item:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
 .list-icons .list-inline-item i:hover{
     color:#5290d0
 }
