@@ -1,17 +1,76 @@
 {{ partial "header.html" . }}
 
-<div class="post">
-    <h1>{{ .Title }}</h1>
+<style>
+    .post-container {
+        display: flex;
+    }
 
-    <div class="tertiary-data">
-        <span>{{ .Date | time.Format ":date_long" }}</span>
-        <span style="font-style:italic">Length: {{ .ReadingTime }} min</em></span>
-        <span><a href="{{ .Site.BaseURL }}">Back to Posts</a></span>
-    </div>
+    .content-section {
+        display: flex;
+        flex: 2.2;
+        padding: 2rem;
+        flex-direction: column;
+    }
 
-    {{ .Content }}
+    .bio-section {
+        display: flex;
+        flex: 1.1;
+        padding: 2rem;
+        flex-direction: column;
+    }
+    .profile-image {
+        border-radius: 14rem;
+        border: 8px solid #a1cfff;
+        box-shadow: 3px 3px 3px grey;
+        margin-bottom: 1rem;
+    }
+
+    .profile-container {
+        border: 1px solid grey;
+        padding: 1.5rem;      
+        border-style: dashed;
+    }
+
+    .profile-container .title {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Saira Extra Condensed';
+        font-weight: bold;
+        color: #92aeb7;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .post-container {
+            flex-direction: column;
+        }
+    }
+
+
+</style>
+
+<div class="post-container">
+    <div class="content-section">
+
+        <h1>{{ .Title }}</h1>
+        <div class="tertiary-data">
+            <span>{{ .Date | time.Format ":date_long" }}</span>
+            <span style="font-style:italic">Length: {{ .ReadingTime }} min</em></span>
+            <span><a href="{{ .Site.BaseURL }}">Back to Posts</a></span>
+        </div>
+       
+        {{ .Content }}
 </div>
+ 
+    
+    <div class="bio-section">
+        <img class="profile-image " src="/images/2023/profile.jpg" />
 
+        <span class="profile-container">
+            <div class="title">Hi, I'm Scott</div>
+            <p style="font-size: 15px">I mostly keep this blog to help me remember things. Writing is also a great way to remember things more long-term. I would highly recommend it if you don't write at all.</p>
+        </span>
+    </div>
+</div>
 
 
 {{ partial "footer.html" . }}

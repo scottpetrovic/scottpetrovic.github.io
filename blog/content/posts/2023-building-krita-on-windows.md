@@ -1,7 +1,7 @@
 ---
 title: "Building Krita for Windows in 2023"
 date: "2023-10-11"
-featured_image: "/images/winner-graphic.jpg"
+
 ---
 
 If you want to start developing for the Krita drawing and painting  (krita.org), developing on Windows is the easiest path in 2023.  This is the general guide for building Krita from the source code.
@@ -31,10 +31,10 @@ After you install cmake, try this
     cmake --version
 *Tip - This might be a portable version. In my version, I made a folder called 'C:\platform-tools' where I dropped the folder.  I then added an environment variable pointing to the bin folder inside this that contains the cmake.exe .*
 
-After you install mingw, try this
+After you install LLVM MinGW, try this
 
     mingw32-make --version
-*Tip - This is a portable version like cmake. You will need to make an environment variable pointing to the executable files. Mine is located here 'C:\llvm-mingw\bin'*
+*Tip - LLVM MinGW a portable version like cmake. You will need to make an environment variable pointing to the executable files. Mine is located here 'C:\llvm-mingw\bin'*
  
  ## Install PyEnv and Python 3.10
  Python is usually a system install, but projects have a tendency to switch versions frequently. This tool makes it easy to switch your system's Python version without having to uninstall, finding a new version online, and installing that.
