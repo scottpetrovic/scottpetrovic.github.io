@@ -103,8 +103,10 @@ pre {
 }
 
 code {
-    color: #d1e0e2;
-    line-height: 148%;
+  color: #d1e0e2;
+  line-height: 148%;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 
 
