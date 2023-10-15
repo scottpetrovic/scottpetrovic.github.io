@@ -3,6 +3,11 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+ :root {
+    --accent-color: #6ec3e7;
+  }
+
+
  body{
     font-family:'Open Sans',serif;
     padding-top:54px;
@@ -11,7 +16,7 @@
 @media (min-width:992px){
     body{
         padding-top:0;
-        padding-left:17rem
+        padding-left: 12rem
     }
 }
 h1,h2,h3,h4,h5,h6{
@@ -24,6 +29,13 @@ h1{
     font-size:6rem;
     line-height:5.5rem
 }
+@media (max-width:992px){
+    h1{
+        font-size: 5rem;
+    } 
+}
+
+
 h2{
     font-size:3.5rem
 }
@@ -33,10 +45,10 @@ h2{
     font-size: 1.9rem
 }
 .list-social-icons a{
-    color:#5290d0
+    color: var(--accent-color);
 }
 .list-social-icons a:hover{
-    color:#5290d0
+    color: var(--accent-color);
 }
 .list-social-icons a .fa-lg{
     font-size:1.75rem
@@ -49,33 +61,30 @@ h2{
 }
 
 .list-icons .list-inline-item i:hover{
-    color:#5290d0
+    color: var(--accent-color);
 }
 #sideNav .navbar-nav .nav-item .nav-link{
     font-weight:600;
     text-transform:uppercase
 }
 @media (min-width:992px){
-    #sideNav{
-        text-align:center;
-        position:fixed;
-        top:0;
-        left:0;
-        display:flex;
-        flex-direction:column;
+    #sideNav{        
+        position: fixed;
+        top: 25%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
         width: 10rem;
-        height:100vh
+        height: 17rem;
+        background: #e8edf4 !important;
+        box-shadow: 1px 1px 7px 0px #c1c2e3;
     }
     #sideNav .navbar-brand{
         display:flex;
         margin:auto auto 0;
         padding:.5rem
     }
-    #sideNav .navbar-brand .img-profile{
-        max-width:10rem;
-        max-height:10rem;
-        border:.5rem solid rgba(255,255,255,.2)
-    }
+
     #sideNav .navbar-collapse{
         display:flex;
         align-items:flex-start;
@@ -117,19 +126,21 @@ section.resume-section .resume-item .resume-date{
     }
 }
 .bg-primary{
-    background-color:#5290d0!important
+    background-color: white !important;
 }
 .text-primary{
-    color:#5290d0!important
+    color: var(--accent-color) !important;
 }
 a{
-    color:#5290d0
+    color: var(--accent-color);
 }
 a:active,a:focus,a:hover{
-    color:#5290d0
+    color: var(--accent-color);
 }
 
-
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--accent-color);
+}
 
 
  /* custom styles */
@@ -142,6 +153,39 @@ a:active,a:focus,a:hover{
  }
 a.nav-link {
     text-decoration: none;
+}
+
+.img-profile{
+    flex: 1;
+    display: inline-flex;
+    border: 5px solid  var(--accent-color);;
+    border-radius: 50%;
+    height: fit-content;
+    max-width: 200px;
+    box-shadow: 3px 4px 4px 0px #747cc1;
+    margin-bottom: 2rem;
+}
+
+.about-container {
+    display: flex; 
+    column-gap: 3rem;
+}
+@media (max-width:992px){
+ 
+    .about-container {
+        display: inline-block; 
+    }
+     
+}
+
+li.nav-item a.nav-link.js-scroll-trigger.active {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus
+ {
+    color: rgb(38, 99, 142);
 }
 
 
@@ -157,7 +201,6 @@ img {
     max-width: 100%;
 }
 
- /* custom */
  img.portfolio {
      border: 1px solid #d2d2d2;
      margin: 2rem 0;
@@ -190,7 +233,7 @@ img {
     display: inline-block;
     padding: 0.4rem 1rem;
     background: #bff1ff;
-    background: linear-gradient(0deg, rgba(212,255,255,1) 0%, rgba(121,245,236,1) 100%);
+    background: linear-gradient(0deg, rgba(212,255,255,1) 0%, rgb(218 243 241) 100%);
     border-radius: 7px;
     box-shadow: -1px 2px 3px 0px #86b6e3;
     margin-right: 0.4rem;
