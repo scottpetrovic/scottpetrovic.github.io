@@ -29,9 +29,8 @@ h2{
 }
 .subheading{
     text-transform:uppercase;
-    font-weight:500;
     font-family:'Saira Extra Condensed',serif;
-    font-size:1.35rem
+    font-size: 1.9rem
 }
 .list-social-icons a{
     color:#5290d0
@@ -64,7 +63,7 @@ h2{
         left:0;
         display:flex;
         flex-direction:column;
-        width:17rem;
+        width: 10rem;
         height:100vh
     }
     #sideNav .navbar-brand{
@@ -161,6 +160,7 @@ img {
  /* custom */
  img.portfolio {
      border: 1px solid #d2d2d2;
+     margin: 2rem 0;
  }
  
  .end-section-space {
@@ -174,7 +174,25 @@ img {
  @media (min-width:992px){
  
     .single-column {
-        width: 75%;   
+         
     }
      
+}
+
+/*   Skills table */
+
+.project-skills-table {
+    display: inline-block;
+    padding: 0;
+}
+
+.project-skills-table span {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: #bff1ff;
+    background: linear-gradient(0deg, rgba(212,255,255,1) 0%, rgba(121,245,236,1) 100%);
+    border-radius: 7px;
+    box-shadow: -1px 2px 3px 0px #86b6e3;
+    margin-right: 0.4rem;
+    margin-bottom: 1rem;
 }
