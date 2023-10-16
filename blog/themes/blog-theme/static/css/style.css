@@ -162,8 +162,8 @@ nav.site-nav a {
 }
 
 .content {
-  max-width: 1100px;
-  margin: 0 3rem;
+  max-width: 1000px;
+  margin: auto; /* centers content */
 }
 
 footer {
