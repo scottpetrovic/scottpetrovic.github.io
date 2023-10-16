@@ -44,6 +44,17 @@ h2{
     font-family:'Saira Extra Condensed',serif;
     font-size: 1.9rem
 }
+@media (max-width:992px){
+    .subheading{
+        font-size: 1.2rem
+    }
+}
+
+.container-fluid {
+    max-width: 900px !important;
+}
+
+
 .list-social-icons a{
     color: var(--accent-color);
 }
@@ -70,7 +81,7 @@ h2{
 @media (min-width:992px){
     #sideNav{        
         position: fixed;
-        top: 25%;
+        top: calc(50% - 140px);
         left: 0;
         display: flex;
         flex-direction: column;
@@ -104,9 +115,10 @@ h2{
     }
 }
 section.resume-section{
-    border-bottom:1px solid #dee2e6;
-    padding-top:5rem!important;
-    padding-bottom:5rem!important
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem!important;
+    padding-bottom: 5rem!important;
+    padding: 5rem 2rem !important;
 }
 section.resume-section .resume-item .resume-date{
     min-width:none
@@ -202,9 +214,16 @@ img {
 }
 
  img.portfolio {
-     border: 1px solid #d2d2d2;
-     margin: 2rem 0;
+    border: 1px solid #d2d2d2;
+    margin: 2rem 0;
+    transform: perspective(94px) rotateY(-1deg) translateX(-65px);
+    box-shadow: 5px 4px 11px 0px #8f9695;
+    transition: transform 1s cubic-bezier(0,.5,.51,1.01);
  }
+ img.portfolio:hover {
+    transform: perspective(94px) rotateY(0deg) translateX(-15px) scale3d(1.05, 1.05, 1.05);
+    box-shadow: 5px 4px 11px 0px #8f9695;
+  }
  
  .end-section-space {
         margin-bottom: 10em;
@@ -213,16 +232,17 @@ img {
  
  /* this will stop a row from being too long for reading
   * I don't like when people have to read really long rows of text */
- 
- @media (min-width:992px){
+  .single-column {
+         column-count: 2;
+         margin-bottom: 2.5rem;
+  }
+ @media (max-width:992px){
  
     .single-column {
-         
+        column-count: 1;
     }
      
 }
-
-/*   Skills table */
 
 .project-skills-table {
     display: inline-block;
