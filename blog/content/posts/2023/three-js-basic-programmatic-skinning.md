@@ -1,8 +1,10 @@
 ---
 title: "Programmatic weight painting example with three.js"
 date: "2023-10-13"
-
+featured_image: "/images/2023/three-js-logo.webp"
 ---
+
+![](/images/2023/three-js-logo.webp "Three.js logo")
 
 Earlier in the year, I went through a great three.js training course learning more about WebGL and the WebGL framework three.js. You get a certificate that you can share with people for resum&eacute; purposes (e.g. https://threejs-journey.com/certificate/view/27115). It is a really good course. While I don't really use this at my day job, it is a fascinating area in web technology. 
 
