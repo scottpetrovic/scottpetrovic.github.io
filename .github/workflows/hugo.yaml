@@ -87,7 +87,7 @@ jobs:
           mkdir ./publish
           cp -r ./portfolio ./publish/portfolio
           cp -r ./blog/public ./publish/blog
-          cp -r ./external/ModelMotionizer ./publish/model-motionizer
+          cp -r ./external/ModelMotionizer/dist ./publish/model-motionizer
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
