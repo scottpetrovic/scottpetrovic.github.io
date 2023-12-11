@@ -49,6 +49,8 @@ jobs:
         uses: actions/setup-node@v3.8.1
         with:
           node-version: ${{ matrix.node-version }}
+      
+      # Checkout and bring in repositories...and any sub-modules
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -73,11 +75,19 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/blog"
         # each step gets a fresh command line, so we should be back at the root directory
         # -r flag gets all child files and directories
+      
+      # Build Model Motionizer repository
+      - name: Install and build Model Motionizer
+        run: |
+          npm install
+          npm run build
+        working-directory: external/ModelMotionizer
       - name: Package all files for site
         run: |
           mkdir ./publish
           cp -r ./portfolio ./publish/portfolio
           cp -r ./blog/public ./publish/blog
+          cp -r ./external/ModelMotionizer ./publish/model-motionizer
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
