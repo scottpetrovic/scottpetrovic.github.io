@@ -1,0 +1,4 @@
+[submodule "external/ModelMotionizer"]
+	path = external/ModelMotionizer
+	url = git@github.com:scottpetrovic/ModelMotionizer.git
+	branch = main
