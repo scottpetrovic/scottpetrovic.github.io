@@ -79,7 +79,6 @@ jobs:
       # Build portfolio site. Builds everything into a "dist" directory
       - name: Build portfolio site
         run: |
-          cd portfolio
           npm install
           npm run build
         working-directory: portfolio
