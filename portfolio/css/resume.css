@@ -4,14 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
  :root {
-    --accent-color: #6ec3e7;
+    --accent-color: #3781a0;
   }
 
 
  body{
     font-family:'Open Sans',serif;
     padding-top:54px;
-    color:#868e96
+    color: #3b4147
 }
 @media (min-width:992px){
     body{
@@ -93,10 +93,14 @@ h2{
         display: flex;
         flex-direction: column;
         width: 10rem;
-        height: 17rem;
-        background: #e8edf4 !important;
+        height: 18rem;
+        background: #ffffff4a !important;
         box-shadow: 1px 1px 7px 0px #c1c2e3;
+
+        border-top-right-radius: 37px;
+        border-bottom-right-radius: 37px;
     }
+
     #sideNav .navbar-brand{
         display:flex;
         margin:auto auto 0;
@@ -112,7 +116,8 @@ h2{
     }
     #sideNav .navbar-collapse .navbar-nav{
         flex-direction:column;
-        width:100%
+        width:100%;
+        margin-top: 1.0rem;
     }
     #sideNav .navbar-collapse .navbar-nav .nav-item{
         display:block
@@ -122,7 +127,7 @@ h2{
     }
 }
 section.resume-section{
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid var(--accent-color);;
     padding-top: 5rem!important;
     padding-bottom: 5rem!important;
     padding: 5rem 2rem !important;
@@ -283,9 +288,20 @@ img {
     display: inline-block;
     padding: 0.4rem 1rem;
     background: #bff1ff;
-    background: linear-gradient(0deg, rgba(212,255,255,1) 0%, rgb(218 243 241) 100%);
+    background: linear-gradient(0deg, rgb(212 255 255 / 0%) 0%, rgb(255 255 255) 100%);
     border-radius: 7px;
-    box-shadow: -1px 2px 3px 0px #86b6e3;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     margin-right: 0.4rem;
     margin-bottom: 1rem;
 }
+
+
+/* Background effect canvas */
+canvas {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
