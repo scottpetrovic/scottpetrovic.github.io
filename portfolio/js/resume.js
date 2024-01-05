@@ -3,18 +3,35 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
-!function(e) {
-    "use strict";
-    e('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-            var t = e(this.hash);
-            if ((t = t.length ? t : e("[name=" + this.hash.slice(1) + "]")).length) return e("html, body").animate({
-                scrollTop: t.offset().top
-            }, 1e3, "easeInOutExpo"), !1
-        }
-    }), e(".js-scroll-trigger").click(function() {
-        e(".navbar-collapse").collapse("hide")
-    }), e("body").scrollspy({
-        target: "#sideNav"
-    })
-}(jQuery);
+import { ScrollSpy, Collapse } from 'bootstrap';
+
+// Define a function to smoothly scroll to a section
+const smoothScroll = (event) => {
+  event.preventDefault();
+  const targetId = event.currentTarget.getAttribute("href");
+  window.scrollTo({
+    top: document.querySelector(targetId).offsetTop,
+    behavior: "smooth"
+  });
+};
+
+// Attach the smoothScroll function to click events on links with the js-scroll-trigger class
+document.querySelectorAll('a.js-scroll-trigger[href*="#"]:not([href="#"])').forEach((link) => {
+  link.addEventListener('click', smoothScroll);
+});
+
+// Collapse the navbar after click on a js-scroll-trigger class link
+document.querySelectorAll('.js-scroll-trigger').forEach((link) => {
+  link.addEventListener('click', () => {
+    let navbarToggler = document.querySelector('.navbar-toggler');
+    let bsCollapse = Collapse.getInstance(navbarToggler);
+    if(bsCollapse && bsCollapse._isShown) {
+      bsCollapse.toggle();
+    }
+  });
+});
+
+// Initialize Scrollspy
+new ScrollSpy(document.body, {
+  target: '#sideNav'
+});
