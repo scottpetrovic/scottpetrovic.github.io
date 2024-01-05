@@ -75,6 +75,10 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/blog"
         # each step gets a fresh command line, so we should be back at the root directory
         # -r flag gets all child files and directories
+
+      # Open environment.js and replace BUILD_NUMBER with the actual build number
+      - name: Set build number
+        run: sed -i 's/0.0.1/'"$GITHUB_RUN_NUMBER"'/' external/ModelMotionizer/src/environment.js
       
       # Build Model Motionizer repository
       - name: Install and build Model Motionizer
