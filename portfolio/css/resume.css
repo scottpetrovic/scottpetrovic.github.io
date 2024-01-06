@@ -176,6 +176,7 @@ a:active,a:focus,a:hover{
 .navbar-dark .navbar-toggler {
     background: #6ec3e7;
     width: 100%;
+    border-radius: 0;
 }
 
 
