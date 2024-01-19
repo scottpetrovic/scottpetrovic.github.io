@@ -96,6 +96,7 @@ jobs:
       - name: Package all files for site
         run: |
           mkdir ./publish
+          cp -r ./index.html ./publish
           cp -r ./portfolio/dist ./publish/portfolio
           cp -r ./blog/public ./publish/blog
           cp -r ./external/ModelMotionizer/dist ./publish/model-motionizer

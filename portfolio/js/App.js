@@ -1,4 +1,4 @@
-import "./resume.js";
+import { add_scroll_triggers } from "./resume.js";
 
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
@@ -9,8 +9,15 @@ import { vertexShader, fragmentShader } from "./shaders.js";
 // From Console run this to build (git actions will do this when publishing): npm run build
 
 export class App {
+
+  _konami_code_sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+  _user_sequence = [];
+
   constructor() {
     this._generate_background();
+    window.addEventListener('keydown', (event) => this._check_konami_code(event));
+
+    add_scroll_triggers();
   }
 
   _generate_background() {
@@ -91,6 +98,39 @@ export class App {
       false
     );
   }
+
+  _check_konami_code(event) {
+    this._user_sequence.push(event.key);
+    if (this._user_sequence.length > this._konami_code_sequence.length) {
+      this._user_sequence.shift();
+    }
+    if (this._user_sequence.join() === this._konami_code_sequence.join()) {
+      this._konami_code_enabled();
+    }
+  }
+
+  _konami_code_enabled() {
+    // Perform some action when the Konami code is entered
+    console.log('Konami code entered!');
+
+    var navbarNav = document.querySelector('.navbar-nav');
+    var newLi = document.createElement('li');
+    newLi.classList.add('nav-item');
+    newLi.innerHTML = `
+    <a id="konami" class="nav-link js-scroll-trigger" href="#projects">
+      <span class="star">&#9734;</span> Projects
+      </a>
+    `;
+    navbarNav.appendChild(newLi);
+
+    // re-add scroll triggers so pojects link will work
+    add_scroll_triggers();
+
+    // show projects area
+    document.querySelector('#projects').setAttribute('style', 'display: block !important;');
+
+  }
+
 }
 
 // bootstrap and start application
