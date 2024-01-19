@@ -98,6 +98,7 @@ jobs:
           mkdir ./publish
           cp -r ./index.html ./publish
           cp -r ./portfolio/dist ./publish/portfolio
+          cp -r ./portfolio/projects ./publish/portfolio/projects
           cp -r ./blog/public ./publish/blog
           cp -r ./external/ModelMotionizer/dist ./publish/model-motionizer
       - name: Upload artifact
