@@ -32,6 +32,7 @@ h1{
 @media (max-width:992px){
     h1{
         font-size: 5rem;
+        text-align: center;
     } 
 }
 
@@ -39,14 +40,17 @@ h1{
 h2{
     font-size:3.5rem
 }
+
 .subheading{
     text-transform:uppercase;
     font-family:'Saira Extra Condensed',serif;
-    font-size: 1.9rem
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+
 }
 @media (max-width:992px){
     .subheading{
-        font-size: 1.2rem
+        text-align: center;
     }
 }
 
@@ -218,14 +222,10 @@ a.nav-link {
 }
 
 .img-profile{
-    flex: 1;
-    display: inline-flex;
-    border: 5px solid  var(--accent-color);
+    border: 5px solid var(--accent-color);
     border-radius: 50%;
-    height: fit-content;
-    max-width: 200px;
     box-shadow: 3px 4px 4px 0px #747cc1;
-    margin-bottom: 2rem;
+    align-self: center;
 }
 
 .about-container {
@@ -235,7 +235,7 @@ a.nav-link {
 @media (max-width:992px){
  
     .about-container {
-        display: inline-block; 
+        flex-direction: column; 
     }
      
 }
