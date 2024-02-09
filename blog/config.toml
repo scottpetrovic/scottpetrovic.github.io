@@ -1,7 +1,7 @@
 baseURL = 'localhost'
 languageCode = 'en-us'
 relativeURLs = 'true'
-title = 'Aberrant Investigations'
+title = 'Beyond Form Fields'
 theme = 'blog-theme' 
 
 # sectionPagesMenu = "main"

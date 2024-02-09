@@ -116,6 +116,7 @@ code {
 ul.main-menu {
   display: inline-block;
   margin: 0;
+  padding: 0;
 }
 @media only screen and (max-width: 800px) {
   ul.main-menu {
@@ -158,7 +159,7 @@ nav.site-nav a {
 
 .logo {
   font-family: 'Saira Extra Condensed', sans-serif;
-  padding: 2rem;
+  padding: 0.2rem 2rem;
   font-size: 2.0rem;
   font-weight: bold;
 }
