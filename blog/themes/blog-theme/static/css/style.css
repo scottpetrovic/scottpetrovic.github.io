@@ -49,7 +49,7 @@ h3 {
 
 p {
   line-height: 141%;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 ol, ul {
@@ -59,6 +59,21 @@ ol, ul {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+
+#table-of-contents {
+  position: sticky;
+  top: 0;
+}
+#TableOfContents ul {
+  border-top: 0;
+  border-bottom: 0;
+}
+#TableOfContents ul a {
+  background: none;
+}
+
+
 
 ol li ol, ul li ul {
   border: 0;
