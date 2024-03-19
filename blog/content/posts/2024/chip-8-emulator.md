@@ -4,15 +4,16 @@ date: "2024-02-09"
 featured_image: "/images/2024/chip-8.png"
 ---
 
-I do web development and design all day at work. I come home, eat a bit, then start thinking if/when my skills will become irrelevant. I browse a few YouTube 'expert' influencer types. Look through the news to see what technologies are the cool kids on the block. After a short time with the infinite scroll, it begins to settle that the landscape of web development is . Then I hear a voice...
+I do web development and design all day at work. I come home, eat a bit, then start dwelling on my current skills becoming irrelevant. I browse a few YouTube 'expert' influencer types. Look through the news to see what technologies are shiny. After a short time infinite scrolling, it begins to settle that the landscape of web development is too disorganized. I take a step back, sit in silence, and hear a distant voice....
 
 > What type of project gets you excited
 
-My gut whispers these words to me to help give me direction and drive. I frequently slam into this question as my career has progressed. With the endless selection of languages and things to do, the seemingly simple question creates fear and confusion. 
+My gut (maybe 'the universe') whispers these words. I frequently encounter this question as my career has progressed. With the endless selection of programming languages and projects to work on, trying to stay passionate and curious about technology can lose its luster at times.
 
 - Do I want to learn a new language
 - Do I need to learn a new area in technology like AI, site reliability engineer, DevOps
 - Should I spent more time working on more artistic related fields like design trends, UI, or UX
+- Maybe learn a skill not related to computers or technology like gardening, electrical work, or building physical things
 
 My mind is racing and getting nowhere, so I decide to meditate for a little bit. 
 
@@ -22,7 +23,7 @@ A surprising amount of time, emptying my mind gives me the best ideas. An idea n
 
 ## Creating an Emulator
 
-One aspect of programming that has mystified me for a long time is emulator programming. Playing those retro games in the web browser. How does that even work. It is fascinating how people can get systems working somehow just with javascript. I thought to myself, there has to be some good project out there to teach the basics.
+One aspect of programming that has mystified me for a long time is emulator programming. Playing those retro games in the web browser. How does that even work. It is fascinating how people can get these old systems recreated somehow just with javascript. I thought to myself, there has to be some good project out there to teach the basics.
 
 After a short amount of time, I stumbled upon a free code camp project that does just this teaching how to re-create a CHIP-8 emulator. The CHIP-8 system was before my time and computers were more primitive. This system is not going to win any awards for beauty, but it seemed like the perfect learning path. Here is the tutorial:  [Free code camp tutorial](https://www.freecodecamp.org/news/creating-your-very-own-chip-8-emulator/)
 
