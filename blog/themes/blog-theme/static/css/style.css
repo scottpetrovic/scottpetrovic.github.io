@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
+
+
 /* LAYOUT */
 
 * {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #403f58;
 }
 
@@ -49,7 +52,7 @@ h3 {
 
 p {
   line-height: 141%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 ol, ul {
@@ -156,7 +159,14 @@ ul.main-menu li a:hover {
 
 
 nav.site-nav {
-    background: #ddddf8
+    background: #ddddf8;
+    background: linear-gradient(90deg, 
+      rgba(242,183,255,1) 0%, 
+      rgba(255,144,144,1) 41%,
+      rgba(168,242,255,1) 100%,
+      rgba(255,228,189,1) 100%);
+
+      box-shadow: 0px 2px 7px #a3a3a3;
 }
 @media only screen and (max-width: 800px) {
   nav.site-nav {
@@ -169,6 +179,7 @@ nav.site-nav {
 nav.site-nav a {
   text-decoration: none;
   background: none;
+  color: white;
 }
 
 
@@ -199,8 +210,10 @@ footer p {
 .thumbnail-container {
   width: 15rem;
   height: 21rem;
-  box-shadow: 3px 3px 3px #868686;
+  box-shadow: 3px 3px 3px #b8cfea;
   margin: auto;
+  border: 2px dotted #9aeccb;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 800px) {
   .thumbnail-container {
@@ -291,6 +304,12 @@ footer p {
 }
 .card article:hover {
   background: #f2f3f3;
+  background: linear-gradient(90deg, 
+    rgba(251,232,255,1) 0%, 
+    rgba(255,228,228,1) 41%, 
+    rgba(222,250,255,1) 100%, 
+    rgba(255,228,189,1) 100%);
+
 }
 .card article:hover h2 {
   
@@ -298,7 +317,7 @@ footer p {
 
 .preview {
   display: grid;
-  column-gap: 25px;
+  column-gap: 3rem;
 }
 @media only screen and (max-width: 800px) {
   .preview {
