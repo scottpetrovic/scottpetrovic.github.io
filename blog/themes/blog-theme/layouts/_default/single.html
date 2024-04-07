@@ -23,7 +23,9 @@
         border-radius: 14rem;
         border: 8px solid #a1cfff;
         box-shadow: 3px 3px 3px grey;
-        margin-bottom: 1rem;
+        margin: 2rem;
+        margin-bottom: -1rem;
+        z-index: 0;
     }
 
     .profile-container {
@@ -64,20 +66,18 @@
  
     
     <div class="bio-section">
+        <div id="table-of-contents">
+            <h3> Page Contents</h3>
+            {{ .TableOfContents }}  
+        </div>
+
         <img class="profile-image " src="/images/2023/profile.jpg" />
 
         <span class="profile-container">
             <div class="title">Hi, I'm Scott</div>
             <p style="font-size: 15px">I mostly keep this blog to help me remember things. Writing is also a great way to understand things at a deeper level. I would highly recommend it if you don't write at all.</p>
         </span>
-
-
-        <div id="table-of-contents">
-            <h3> Page Contents</h3>
-            {{ .TableOfContents }}  
-        </div>
-
-
+        
     </div>
 </div>
 

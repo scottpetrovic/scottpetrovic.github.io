@@ -51,7 +51,7 @@ h3 {
 }
 
 p {
-  line-height: 141%;
+  line-height: 150%;
   font-size: 1.2rem;
 }
 
@@ -64,13 +64,19 @@ ol, ul {
 }
 
 
-#table-of-contents {
+/* #table-of-contents {
   position: sticky;
   top: 0;
-}
+} */
 #TableOfContents ul {
   border-top: 0;
   border-bottom: 0;
+  list-style: lower-roman;
+  padding: 1.2rem;
+}
+#TableOfContents li {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 #TableOfContents ul a {
   background: none;
@@ -193,6 +199,7 @@ nav.site-nav a {
 .content {
   max-width: 1000px;
   margin: auto; /* centers content */
+  word-break: break-word; /* helps reduce long links */
 }
 
 footer {
