@@ -62,6 +62,7 @@ jobs:
         # nothing uses node.js deps, but leave it here for now in case
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -72,7 +73,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url.replace('http://', 'https://') }}/blog"  
+            --baseURL "https://$GITHUB_REPOSITORY_OWNER.github.io/blog/"  
         # each step gets a fresh command line, so we should be back at the root directory
         # -r flag gets all child files and directories
 
