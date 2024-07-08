@@ -76,6 +76,11 @@ jobs:
         # each step gets a fresh command line, so we should be back at the root directory
         # -r flag gets all child files and directories
 
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+
       # Build portfolio site. Builds everything into a "dist" directory
       - name: Build portfolio site
         run: |
