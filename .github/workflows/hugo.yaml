@@ -72,7 +72,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/blog"
+            --baseURL "${{ steps.pages.outputs.base_url.replace('http://', 'https://') }}/blog"  
         # each step gets a fresh command line, so we should be back at the root directory
         # -r flag gets all child files and directories
 
