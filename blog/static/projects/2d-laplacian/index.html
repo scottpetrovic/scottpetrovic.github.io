@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Laplacian Spline Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        #splineCanvas { border: 1px solid #ddd;  }
+        button, label { margin: 10px 5px 10px 0; }
+        h1 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-time 2D Laplacian Spline Demo</h1>
+    <p>Drag points to move them. The Laplacian smoothing is applied in real-time as you drag. I only hooked up mouse pointers, so finger touching doesn't work with this demo</p>
+    <canvas id="splineCanvas"></canvas>
+    <br>
+
+    <label>Smoothing Strength: 
+        <input type="range" id="smoothingStrength" min="0" max="1" step="0.1" value="0.5" oninput="updateStrengthValue()">
+    </label>
+    <span id="strengthValue">0.5</span>
+
+    <script>
+        const canvas = document.getElementById('splineCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 400;
+        canvas.height = 300;
+
+        let originalPoints = [
+            {x: 50, y: 200},
+            {x: 120, y: 100},
+            {x: 200, y: 200},
+            {x: 220, y: 150},
+            {x: 250, y: 250},
+            {x: 300, y: 200}
+        ];
+
+        let points = JSON.parse(JSON.stringify(originalPoints));
+
+        let isDragging = false;
+        let dragIndex = -1;
+
+
+        function updateStrengthValue() {
+            const strength = document.getElementById('smoothingStrength').value;
+            document.getElementById('strengthValue').textContent = strength;
+            drawSpline();
+        }
+
+        function drawSpline() {
+            // Clear the entire canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+           
+            // Draw the current smoothed curve in blue
+            drawCurve(points, 'blue');
+
+            // Draw each point on the canvas
+            points.forEach((point, index) => {
+                // Begin a new path for the point
+                ctx.beginPath();
+                // Draw a circle (arc) at the point's coordinates with a radius of 5
+                ctx.arc(point.x, point.y, 5, 0, Math.PI * 2);
+                // Set the fill color to red if the point is being dragged, otherwise black
+                ctx.fillStyle = index === dragIndex ? 'red' : 'black';
+                // Fill the circle with the specified color
+                ctx.fill();
+            });
+        }
+
+        // draw connecting line segment between all our points on canvas
+        function drawCurve(curvePoints, color) {
+            ctx.beginPath();
+            ctx.moveTo(curvePoints[0].x, curvePoints[0].y);
+            for (let i = 1; i < curvePoints.length; i++) {
+                ctx.lineTo(curvePoints[i].x, curvePoints[i].y);
+            }
+            ctx.strokeStyle = color;
+            ctx.stroke();
+        }
+
+        /*
+          generates a new set of points by applying Laplacian smoothing, 
+          which adjusts each point's position based on its neighbors, 
+          except for the first and last points
+        */
+        function calculateLaplacianPoints() {
+
+            return points.map((point, i) => {
+                // Create a new array of points by mapping over the existing points array
+                // The first and last points in the chain should not be affeced
+                if (i === 0 || i === points.length - 1) return point;
+
+                // Get the previous and next point for the current iteration
+                const prev = points[i - 1];
+                const next = points[i + 1];
+
+                // Calculate the new position of the current point using the Laplacian 
+                // smoothing formula. Retrieve the smoothing strength value from the input 
+                // element and convert it to a floating-point number
+                const strength = parseFloat(document.getElementById('smoothingStrength').value);
+                return {
+                    x: point.x + strength * ((prev.x + next.x) / 2 - point.x),
+                    y: point.y + strength * ((prev.y + next.y) / 2 - point.y)
+                };
+            });
+        }
+
+
+
+        function getMousePos(canvas, evt) {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                x: evt.clientX - rect.left,
+                y: evt.clientY - rect.top
+            };
+        }
+
+        canvas.addEventListener('mousedown', (e) => {
+            const mousePos = getMousePos(canvas, e);
+            dragIndex = points.findIndex(p => 
+                Math.sqrt((p.x - mousePos.x)**2 + (p.y - mousePos.y)**2) < 10
+            );
+            if (dragIndex !== -1) {
+                isDragging = true;
+                originalPoints = JSON.parse(JSON.stringify(points));
+            }
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (isDragging && dragIndex !== -1) {
+
+                // get the current mouse position and assign to selected point
+                const mousePos = getMousePos(canvas, e);
+                points[dragIndex].x = mousePos.x;
+                points[dragIndex].y = mousePos.y;
+
+                // overwrite the original point positions with the new smoothed ones
+                points = calculateLaplacianPoints();
+                drawSpline();
+            }
+        });
+
+        canvas.addEventListener('mouseup', () => {
+            isDragging = false;
+            dragIndex = -1;
+        });
+
+        drawSpline();
+    </script>
+</body>
+</html>
