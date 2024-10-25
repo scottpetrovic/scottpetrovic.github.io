@@ -68,20 +68,6 @@ function openTab(evt, tabName) {
   }
 }
 
-// This is for calculating social security payout
-function calculateAverageMonthlyIncomeOverLife(data) {
-
-    if (data.length === 0) {
-        return 0; // Check if the array is empty
-    }
-
-    // Use reduce to sum up all income values
-    const totalIncome = data.reduce((sum, entry) => sum + entry.income, 0);
-
-    // Calculate and return the average
-    const yearlyAverageIncom = totalIncome / data.length;
-    return yearlyAverageIncom / 12;
-}
 
 function calculateAccumulationPhase() {
   const inputs = getAccumulationInputValues();
@@ -93,11 +79,15 @@ function calculateAccumulationPhase() {
     currentYear: new Date().getFullYear(),
   };
 
+  // get filing status which affects how taxes are calculated
+  const filingStatusSelect = document.getElementById('filing-status-input');
+
   for (let age = inputs.currentAge; age <= inputs.retirementAge; age++) {
     const yearData = calculateAccumulationYearlyData(
       age,
       inputs,
-      currentValues
+      currentValues,
+      filingStatusSelect.value
     );
     accumulationData.push(yearData);
 
@@ -123,6 +113,8 @@ function calculateAccumulationPhase() {
 
   updateAccumulationChart(accumulationData);
   updateAccumulationTable(accumulationData);
+  updatePreretirementTaxTable(accumulationData);
+  updateCostOfLivingTaxTable(accumulationData);
 
   // put the final amount that we saved for retirement in a couple areas
   document.getElementById("retirementSavings").value = Math.round(
@@ -135,18 +127,25 @@ function calculateDistributionPhase() {
   const inputs = getDistributionInputValues();
   const distributionData = [];
 
-  // calculate starting social security amount. fill
-  // in the DOM element and provide a bit of info about this
-  const aime = calculateAverageMonthlyIncomeOverLife(accumulationData); // Average Indexed Monthly Earnings
-  const fra = 67; // Full Retirement Age
-  const retirementAge = getAccumulationInputValues().retirementAge
-  socialSecurityStartingMonthlyBenefit = estimateSocialSecurityBenefit(aime, fra, retirementAge);
-  document.getElementById("monthlySocialSecurity").value = currencyFormatter.format(socialSecurityStartingMonthlyBenefit)
 
+  // calculate all the social security stuff
+  var ssCalculator = new SocialSecurityCalculator();
+  var earningsHistory = accumulationData.map((year) => year.income);
+  //var aime2 = ssCalculator.calculateAIME(earningsHistory);  // Average Indexed Monthly Earnings
+
+
+  const accumulation_inputs = getAccumulationInputValues();
+  var birthYear = new Date().getFullYear() - accumulation_inputs.currentAge;
+  var fullRetirement_Year = ssCalculator.getFullRetirementAge(birthYear);
+
+  socialSecurityStartingMonthlyBenefit = ssCalculator.calculateRetirementBenefits(birthYear, inputs.retirementAge , earningsHistory);
+  document.getElementById("monthlySocialSecurity").value = currencyFormatter.format(socialSecurityStartingMonthlyBenefit)
+  
 
   let currentValues = {
     savings: inputs.retirementSavings,
     age: inputs.retirementAge,
+    fullRetirementYear: fullRetirement_Year,
     currentYear:
       new Date().getFullYear() +
       (inputs.retirementAge - getAccumulationInputValues().currentAge),
@@ -164,6 +163,7 @@ function calculateDistributionPhase() {
       savings: yearData.remainingSavings,
       age: age + 1,
       currentYear: yearData.year + 1,
+      fullRetirementYear: fullRetirement_Year
     };
 
     if (yearData.remainingSavings <= 0) {
@@ -171,6 +171,8 @@ function calculateDistributionPhase() {
       break;
     }
   }
+
+
 
   // update the DOM element with the final value from the distrubution data with our final savings retirementLastDistribution ID
   document.getElementById("retirementLastDistribution").innerHTML = Math.round(distributionData[distributionData.length - 1].remainingSavings).toLocaleString("en-US");
@@ -237,8 +239,8 @@ function getDistributionInputValues() {
   };
 }
 
-function calculateAccumulationYearlyData(age, inputs, currentValues) {
-  const { preReturnRate, inflationRate, incomeIncrease } = inputs;
+function calculateAccumulationYearlyData(age, inputs, currentValues, taxFilingStatus) {
+  const { preReturnRate, inflationRate, incomeIncrease, currentMonthlyExpenses, currentAge } = inputs;
   const { savings, income, contributions, currentYear } = currentValues;
 
   const startAmount = savings;
@@ -247,14 +249,22 @@ function calculateAccumulationYearlyData(age, inputs, currentValues) {
   const newIncome = income * (1 + incomeIncrease);
   const newContributions = contributions ; // flat contributions
 
+
+  // options are: single, marriedJointly, marriedSeparately, headOfHousehold
   const tax_calculator = new TaxCalculator();
-  const taxInformationForYear = tax_calculator.calculateEffectiveTaxRate(newIncome, currentYear);
+  const taxInformationForYear = tax_calculator.calculateEffectiveTaxRate(newIncome, currentYear, taxFilingStatus);
+
+  // calculate data needed for living expenses
+  let annualExpenses = currentMonthlyExpenses * 12;
+  annualExpenses *= Math.pow(1 + inflationRate, age - currentAge);
+  const compoundMultiplier = Math.pow(1 + inflationRate, age - currentAge)
 
   return {
     year: currentYear,
     age: age,
     income: newIncome,
     taxedIncome: taxInformationForYear,
+    livingExpenses: { annualExpenses, compoundMultiplier },
     contributions: newContributions,
     investmentIncome: investmentIncome,
     startAmount: startAmount,
@@ -263,16 +273,23 @@ function calculateAccumulationYearlyData(age, inputs, currentValues) {
 }
 
 function calculateDistributionYearlyData(age, inputs, currentValues) {
-  const { otherIncome, postReturnRate, inflationRate } =
-    inputs;
-  
-  const { savings, currentYear } = currentValues;
+  const { otherIncome, postReturnRate, inflationRate } =  inputs;
+  const { savings, currentYear, fullRetirementYear } = currentValues;
+
+
+  let annualSocialSecurity = socialSecurityStartingMonthlyBenefit * 12 *
+      Math.pow(1 + inflationRate, age - inputs.retirementAge);
+
+
+  if (age < fullRetirementYear) {
+    annualSocialSecurity = 0;
+  }
+
   
   const annualExpenses =  projectedMonthlyExpensesAtRetirement * 12 *
      Math.pow(1 + inflationRate, age - inputs.retirementAge);
 
-  const annualSocialSecurity = socialSecurityStartingMonthlyBenefit * 12 *
-      Math.pow(1 + inflationRate, age - inputs.retirementAge);
+
   
   const annualOtherIncome = otherIncome * 12 * 
       Math.pow(1 + inflationRate, age - inputs.retirementAge);
@@ -337,6 +354,9 @@ function updateAccumulationChart(data) {
     options: {
       responsive: true,
       plugins: {
+        legend: {
+          display: false, // Hide the legend
+        },
         tooltip: {
             backgroundColor: 'rgba(240, 240, 240, 1.0)', // Background color
             titleColor: '#000', // Title text color
@@ -418,6 +438,9 @@ function updateDistributionChart(data) {
     options: {
       responsive: true,
       plugins: {
+        legend: {
+          display: false, // Hide the legend
+        },
         tooltip: {
             backgroundColor: 'rgba(240, 240, 240, 1.0)', // Background color
             titleColor: '#000', // Title text color
@@ -461,6 +484,101 @@ function updateDistributionChart(data) {
   });
 }
 
+function decimalToPercentage(decimal) {
+  const percentage = decimal * 100;
+  return percentage.toFixed(1) + '%';
+}
+
+const formatTaxBracket = (bracket, nextBracket) => {
+  const rate = decimalToPercentage(bracket.rate);
+  const minAmount = currencyFormatter.format(bracket.min);
+  const maxAmount = nextBracket ? currencyFormatter.format(nextBracket.min - 0.01) : "and above";
+  
+  return ` ${rate} : ${minAmount} to ${maxAmount}`;
+};
+
+function updatePreretirementTaxTable(data) {
+
+  const template = document.getElementById("taxesPreretirementTemplate");
+  const content = template.content 
+  const tbody = content.querySelector('tbody');
+  tbody.innerHTML = "";
+
+  data.forEach((row) => {
+
+    // format/show estimated tax bracket breakdown
+    const taxBracketBreakdown = row.taxedIncome.brackets
+    .map((bracket, index, array) => {
+      const nextBracket = array[index + 1];
+      return formatTaxBracket(bracket, nextBracket);
+    })
+    .join("<br>");
+
+
+  const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${row.year}</td>
+        <td>${row.age}</td>
+        <td>${currencyFormatter.format(row.income) }</td> <!-- pretax income -->
+        <td>${ currencyFormatter.format(row.taxedIncome.incomeAfterTax)   }</td>
+        <td>${ currencyFormatter.format(row.taxedIncome.totalTax)   }</td>
+        <td>${ row.taxedIncome.effectiveRatePercentage }</td>
+        <td>${ row.taxedIncome.marginalRatePercentage }</td>
+        <td>        
+            <span class="tooltip-container">
+                  <span class="tooltip-icon"> i </span>
+                  <span class="tooltip-text">${taxBracketBreakdown}</span>
+            </span>        
+        </td>
+      `;
+      tbody.appendChild(tr);
+  });
+
+}
+
+
+function updateCostOfLivingTaxTable(data) {
+
+  const template = document.getElementById("livingCostsTemplate");
+  const content = template.content 
+  const tbody = content.querySelector('tbody');
+  tbody.innerHTML = "";
+
+  console.log(data)
+
+  data.forEach((row) => {
+
+
+    // format/show estimated tax bracket breakdown
+    const taxBracketBreakdown = row.taxedIncome.brackets
+    .map((bracket, index, array) => {
+      const nextBracket = array[index + 1];
+      return formatTaxBracket(bracket, nextBracket);
+    })
+    .join("<br>");
+
+    // https://fred.stlouisfed.org/series/APU0000708111
+    let average_cost_of_eggs_2024 = 3.81; 
+    
+    // https://www.empower.com/the-currency/life/gas-prices-by-state#:~:text=In%20June%202023%2C%20the%20national,Premium%3A%20%244.331
+    let average_cost_of_gas_2023 = 3.583;
+    
+    
+  const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${row.year}</td>
+        <td>${row.age}</td>   
+        <td>${currencyFormatter.format(row.livingExpenses.annualExpenses/12)}</td>
+        <td>${currencyFormatter.format(row.livingExpenses.annualExpenses)}</td>
+        <td>$${ (row.livingExpenses.compoundMultiplier * average_cost_of_eggs_2024).toFixed(2)  }/dozen</td>   
+        <td>$${ (row.livingExpenses.compoundMultiplier * average_cost_of_gas_2023).toFixed(2)  }/gallon</td>   
+      `;
+      tbody.appendChild(tr);
+  });
+
+}
+
+
 function updateAccumulationTable(data) {
   const tbody = document.querySelector("#accumulationTable tbody");
   tbody.innerHTML = "";
@@ -470,9 +588,8 @@ function updateAccumulationTable(data) {
     tr.innerHTML = `
           <td>${row.year}</td>
           <td>${row.age}</td>
-          <td>
-            ${currencyFormatter.format(row.income)}  
-            <span class="small-notes">(${row.taxedIncome.effectiveRatePercentage} effective tax)</span>
+          <td>${currencyFormatter.format(row.income)} 
+             <span class="small-notes">(${row.taxedIncome.effectiveRatePercentage} effective tax)</span>
           </td>
           <td>${currencyFormatter.format(row.contributions)}</td>
           <td>${currencyFormatter.format(row.investmentIncome)}</td>
@@ -480,6 +597,7 @@ function updateAccumulationTable(data) {
       `;
     tbody.appendChild(tr);
   });
+
 }
 
 function updateDistributionTable(data) {
@@ -539,12 +657,10 @@ function addCalculatorEventListeners() {
       calculateDistributionPhase();
     });
 
-  // Trigger distribution phase calculation when switching to the distribution tab
-  document
-    .querySelector(".tab[onclick=\"openTab(event, 'distribution')\"]")
-    .addEventListener("click", function () {
-      calculateDistributionPhase();
-    });
+    document.getElementById('filing-status-input').addEventListener('change', function() {
+      calculateAccumulationPhase()
+  });
+
 }
 
 function createAccordionUIElements() {

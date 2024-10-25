@@ -17,7 +17,6 @@
     <link rel="stylesheet"  href="tooltip.css" />
     <link rel="stylesheet"  href="dialog.css" />
 
-
 </head>
 <body>
     <div class="container">
@@ -27,68 +26,12 @@
                 <h1 style="margin: 0">Life Purpose Calculator</h1>
                 <!-- instructions go here with to be seen with a dialog -->
                 <p style="margin-top: 0">
-                    Learn more about the <a href="#" class="open-dialog-link" id="openDialog">philosophy of retirement and money</a>.
+                    Learn more about the <a href="#" data-open-dialog="overview" >philosophy of retirement and money</a>. 
+                    
                 </p>
             </span>
 
-            <div class="tabs">
-                <button class="tab active" onclick="openTab(event, 'accumulation')">Accumulation Phase</button>
-                <button class="tab" onclick="openTab(event, 'distribution')">Distribution Phase</button>
-            </div>
         </div>
-
-      
-
-        <div id="dialogOverlay" class="dialog-overlay">
-            <div class="dialog">
-                <div class="dialog-header">
-                    <h2 class="dialog-title">Building Wealth vs. Living in the Moment</h2>
-                    <span class="close-button" id="closeDialog">&times;</span>
-                </div>
-                <div class="dialog-content">
-
-                    <div class="retirement-perspectives">
-                      
-                        <p>This retirement calculator is broken apart into two distinct sections. Most calculators have everything in one graph, but this is not the best approach. There are two very different mindsets you need to think about with each one. Combining each mindset into one graph loses the essense with what retirement is.</p>
-                      
-                        <section class="perspective">
-                          <h2>Accumulation - Creating Wealth and Freedom</h2>
-                          <p>This approach emphasizes long-term financial growth and security.</p>
-                      
-                           <ul>
-                            <li>Prioritize saving and investing early in life</li>
-                            <li>Maximize contributions to retirement accounts (401(k)s, IRAs)</li>
-                            <li>Invest in a diversified portfolio for potential higher returns</li>
-                            <li>Delay gratification now for potentially greater financial freedom later</li>
-                            <li>Aim for a large nest egg to support a comfortable retirement lifestyle</li>
-                          </ul>      
-                        </section>
-                      
-                        <section class="perspective">
-                          <h2>Distribution - Enjoying Life Now</h2>
-                          <p>You have worked hard fulfilling someone else's business or dream. Now is time to do what you want. Think hard about spending money to help fulfill your dreams and aspirations.</p>
-                      
-                          <ul>
-                            <li>Accelerate your dreams by leveraging your accumulated wealth</li>
-                            <li>Invest in experiences that you've always wanted but couldn't afford before</li>
-                            <li>Use your financial power to create lasting memories and impacts</li>
-                            <li>Explore new passions or hobbies without financial constraints</li>
-                            <li>Consider how your wealth can open doors to new opportunities and adventures</li>
-                            <li>Balance enjoying your wealth now with ensuring long-term financial stability</li>
-                            <li>Use your resources to make meaningful changes in your life and others'</li>
-                          </ul>
-                                                 
-                        </section>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- end dialog with instructions -->
-
-
-
 
 
         <div id="accumulation" class="tab-content active">
@@ -113,12 +56,34 @@
                                 <span class="tooltip-text">Doesn't affect retirement calculations . Uses effective tax rate in table as opposed to marginal tax rate. </span>
                             </span>
                             
-                        </label>
+                       </label>
                         <span>
                             <span class="dollar-sign">$</span>
                             <input type="text" id="annualIncome" value="60000" required>
-                        </span>                       
+                        </span>
+
+                        <a href="#" data-open-dialog="taxesPreretirement">See estimated tax table</a>
+                        
                     </div>
+
+                    <div class="parameter-input-container">
+                        <label for="filing-status-input">
+                            How do you file your taxes
+
+                          <span class="tooltip-container">
+                                <span class="tooltip-icon"> i </span>
+                                <span class="tooltip-text">This affects your effective tax rate. Head of household - This could happen when unmarried people are living together, or if you are supporting children without being married.</span>
+                          </span>   
+
+                        </label>
+                        <select name="filing-status-input" id="filing-status-input">
+                            <option value="single">Single</option>
+                            <option value="marriedJointly">Married Jointly</option>
+                            <option value="marriedSeparately">Married Separate</option>
+                            <option value="headOfHousehold">Head of Household</option>
+                          </select>
+                    </div>
+
                     <div class="parameter-input-container">
                         <label for="currentSavings">Current Retirement Savings</label>
                         <span>
@@ -149,6 +114,9 @@
                             <input type="text" id="currentMonthlyExpenses" value="2000" required>
                         </span>
                         <span id="monthlyExpensesAtRetirement" class="small-notes"></span>
+
+                        <a href="#" data-open-dialog="livingCosts">See expenses breakdown</a>
+
                     </div>
 
                     <div class="parameter-input-container">
@@ -177,6 +145,9 @@
                 
                 <div id="accumulationResults">
                     <canvas id="accumulationChart"></canvas>
+
+                    <h2>Pre-retirement years</h2>
+
                     <table id="accumulationTable">
                         <thead>
                             <tr>
@@ -216,12 +187,16 @@
                     <p class="large-callout-amount"><span style="margin-right: 0.5rem; opacity: 0.5">$</span><span id="retirementLastAccumulation">234,000</span></p>
                 </div>
 
+                <button class="primary" onclick="openTab(event, 'distribution')">Continue to retirement 
+                    <img src="./img/back-icon.svg" width="20px" height="20px" style="transform: rotateZ(180deg);" />
+                </button>
+
                 <h2>What does this mean?</h2>
 
 
                 <div class="accordion">
                     <button class="accordion-header">I don't think I have enough</button>
-                    <div class="accordion-content">   
+                    <div class="accordion-content">
                         <ul>
                             <li>Start small: Remember, even minor savings can compound over time. Begin with what you can manage consistently.</li>
                             <li>Automate your savings: Set up automatic transfers to your savings account, no matter how small the amount.</li>
@@ -310,6 +285,8 @@
             <div class="results-section">
                 <div id="distributionResults">
                     <canvas id="distributionChart"></canvas>
+
+                    <h2>Retirement years</h2>
                     <table id="distributionTable">
                         <thead>
                             <tr>
@@ -349,6 +326,10 @@
                     <h3 id="ran-out-of-money-message"></h3> <!-- javascript populates this if you run out early-->
                     <p id="distribution-final-amount" class="large-callout-amount"><span style="margin-right: 0.5rem; opacity: 0.5">$</span><span id="retirementLastDistribution">0</span></p>
                 </div>
+
+                <button class="primary" onclick="openTab(event, 'accumulation')">
+                    <img src="./img/back-icon.svg" width="20px" height="20px" />
+                    Back to pre-retirement</button>
 
                 <h2>Budgeting or Dreaming</h2>
 
@@ -400,14 +381,107 @@
         </div>
     </div>
 
+
+
+
     <a id="github-link" href="https://github.com/scottpetrovic/life-purpose-calculator" target="_blank">
         <img src="./img/github-logo.png" width="80px" />
     </a>
 
 
+    <div id="mainDialog" class="dialog">
+        <div class="dialog-contents">
+            <div class="dialog-content"></div>
+            <button id="closeDialog">+</button>    
+        </div>
+  
+    </div>
+
+    <!-- dialog content -->
+    <template id="overviewTemplate">
+        <h2 class="dialog-title">Building Wealth vs. Living in the Moment</h2>
+        <div class="retirement-perspectives">
+                  
+            <p>This retirement calculator is broken apart into two distinct sections. Most calculators have everything in one graph, but this is not the best approach. There are two very different mindsets you need to think about with each one. Combining each mindset into one graph loses the essense with what retirement is.</p>
+          
+            <section class="perspective">
+              <h2>Accumulation - Creating Wealth and Freedom</h2>
+              <p>This approach emphasizes long-term financial growth and security.</p>
+          
+               <ul>
+                <li>Prioritize saving and investing early in life</li>
+                <li>Maximize contributions to retirement accounts (401(k)s, IRAs)</li>
+                <li>Invest in a diversified portfolio for potential higher returns</li>
+                <li>Delay gratification now for potentially greater financial freedom later</li>
+                <li>Aim for a large nest egg to support a comfortable retirement lifestyle</li>
+              </ul>      
+            </section>
+          
+            <section class="perspective">
+              <h2>Distribution - Enjoying Life Now</h2>
+              <p>You have worked hard fulfilling someone else's business or dream. Now is time to do what you want. Think hard about spending money to help fulfill your dreams and aspirations.</p>
+          
+              <ul>
+                <li>Accelerate your dreams by leveraging your accumulated wealth</li>
+                <li>Invest in experiences that you've always wanted but couldn't afford before</li>
+                <li>Use your financial power to create lasting memories and impacts</li>
+                <li>Explore new passions or hobbies without financial constraints</li>
+                <li>Consider how your wealth can open doors to new opportunities and adventures</li>
+                <li>Balance enjoying your wealth now with ensuring long-term financial stability</li>
+                <li>Use your resources to make meaningful changes in your life and others'</li>
+              </ul>
+                                     
+            </section>
+
+        </div>
+    </template>
+
+
+    <template id="taxesPreretirementTemplate">
+        <h2>Pre-retirement Taxes</h2>
+        <p>See expected taxes and increases based on inflation. Tax bracket values are estimates based on current inflation</p>
+        <table id="preretirementTaxTable">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Age</th>
+                    <th>Pre-tax Income</th>
+                    <th>Post-tax Income</th>
+                    <th>Tax Amount</th>
+                    <th>Effective Rate</th>
+                    <th>Marginal Rate</th>
+                    <th>Tax Bracket breakdown</th>
+                  </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </template>
+
+
+    <template id="livingCostsTemplate">
+        <h2>Living costs table</h2>
+        <p> Estimated costs are based off the inflation rate you provided. The expectatin is that you will be living with the same lifestyle as you currently are.</p>
+        <table id="livingCostsTaxTable">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Age</th>
+                    <th>Monthly expenses</th>
+                    <th>Yearly expenses</th>
+                    <th>Eggs</th>
+                    <th>Unleaded Gas</th>
+                </tr>
+            </thead>
+            <tbody></tbody>    
+        </table>
+    </template>
+
+
+    <script src="SocialSecurityCalculator.js"></script> <!-- logic to help determine Social Security benefits -->
     <script src="TaxCalculator.js"></script> <!-- logic to help determine taxes -->
     <script src="dialog.js"></script> <!-- logic to show and close learning dialog -->
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- main application logic-->
 
 </body>
 </html>
+

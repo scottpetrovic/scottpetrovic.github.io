@@ -25,6 +25,16 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+a {
+  text-decoration: underline;
+  color: rgb(102, 190, 231);
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none
+}
+
+
 canvas {
   max-height: 25rem;
 }
@@ -103,6 +113,12 @@ input[type="number"] {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+select {
+  padding: 0.5rem;
+  border: none;
+  background: #f3f3f3;
+}
+
 button.tab {
     background: #e6f9f4;
 }
@@ -188,6 +204,7 @@ th {
   text-align: center;
   background: #7dc2ff;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 .main-section-callout h3 {
   color: white;
@@ -205,7 +222,7 @@ th {
   color: white;
 }
 
-button.calculate-button {
+button.calculate-button, button.primary {
   background: linear-gradient(180deg, rgba(238, 255, 238, 1) 0%, rgba(184, 250, 184, 1) 100%);
   padding: 1rem 2rem;
   color: #16352b;
@@ -217,11 +234,14 @@ button.calculate-button {
   display: flex;
   justify-content: center;
   column-gap: 7px;
+  width: 100%;
 }
-button.calculate-button:hover {
+button.calculate-button:hover, button.primary:hover {
   background: rgb(238,255,238);
   background: linear-gradient(0deg, rgba(238,255,238,1) 0%, rgba(184,250,184,1) 100%);
 }
+
+
 
 
 /* accordion styles */
