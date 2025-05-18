@@ -87,30 +87,7 @@ jobs:
         run: |
           npm install
           npm run build
-        working-directory: portfolio
-
-      # Open environment.js and replace BUILD_NUMBER with the actual build number
-      - name: Set build number
-        run: sed -i 's/BUILD_VERSION/'"$GITHUB_RUN_NUMBER $(git rev-parse --short "$GITHUB_SHA")"'/' external/ModelMotionizer/src/environment.js
-      
-      # Build Model Motionizer repository
-      - name: Install and build Model Motionizer
-        run: |
-          npm install
-          npm run build
-        working-directory: external/ModelMotionizer
-      - name: Package all files for site
-        run: |
-          mkdir ./publish
-          cp -r ./index.html ./publish
-          cp -r ./portfolio/dist ./publish/portfolio
-          cp -r ./portfolio/projects ./publish/portfolio/projects
-          cp -r ./blog/public ./publish/blog
-          cp -r ./external/ModelMotionizer/dist ./publish/model-motionizer
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./publish
+        working-directory: portfolio   
 
   # Deployment job
   deploy:
